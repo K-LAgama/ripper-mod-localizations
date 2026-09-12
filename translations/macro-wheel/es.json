@@ -1,0 +1,77 @@
+{
+    "macro-wheel": {
+        "bindings": {
+            "open": {
+                "name": "Abrir/Cerrar la rueda de macros"
+            }
+        },
+        "settings": {
+            "folderSize": {
+                "name": "Tamaño del botón de carpeta",
+                "hint": "Tamaño en píxeles de los botones de las carpetas de la rueda de macros."
+            },
+            "macroSize": {
+                "name": "Tamaño del botón de macro",
+                "hint": "Tamaño, en píxeles, de los botones de macros de la rueda de macros."
+            },
+            "closeOnClick": {
+                "name": "Cerrar al hacer clic",
+                "hint": "Cierra la rueda de macros al hacer clic en una macro. Puedes mantener pulsada la tecla Ctrl para que la rueda permanezca abierta."
+            },
+            "enableTooltips": {
+                "name": "Activar información sobre herramientas",
+                "hint": "Mostrar información de ayuda al pasar el cursor por encima de una macro o una carpeta."
+            },
+            "useRoot": {
+                "name": "Utilizar la carpeta raíz",
+                "hint": "Utiliza todo el directorio de macros como raíz para la rueda de macros."
+            },
+            "addHotbar": {
+                "name": "Mostrar macros de la barra de acceso rápido",
+                "hint": "Añade las macros de la barra de acceso rápido a la rueda de macros."
+            },
+            "useMiddleMouse": {
+                "name": "Utiliza el botón central del ratón",
+                "hint": "Utiliza el botón central del ratón para abrir la rueda de macros."
+            },
+            "hoverDelay": {
+                "name": "Retardo al pasar el cursor",
+                "hint": "Retardo en milisegundos antes de que se abra la rueda de macros al pasar el cursor por encima de una carpeta de ruedas de macros."
+            }
+        },
+        "flags": {
+            "header": "Rueda de macro",
+            "folderImg": {
+                "name": "Imagen"
+            },
+            "condition": {
+                "name": "Condición personalizada",
+                "placeholder": "Script de condiciones"
+            },
+            "activeCondition": {
+                "name": "Condición activa",
+                "hint": "Esta condición sirve para determinar si la macro está activa. Se utilizará para determinar el color del anillo que rodea la macro en la rueda de macros, con el fin de comprobar rápidamente su estado."
+            },
+            "presetCondition": {
+                "name": "Condición",
+                "options": {
+                    "custom": "Personalizado",
+                    "tokens": "Capa activa: tokens",
+                    "tiles": "Capa activa: Mosaicos",
+                    "walls": "Capa activa: Paredes",
+                    "sounds": "Capa activa: Sonidos",
+                    "notes": "Capa activa: Notas",
+                    "lights": "Capa activa: Iluminación",
+                    "templates": "Capa activa: Plantillas",
+                    "drawings": "Capa activa: Dibujos",
+                    "selectedtoken": "Token seleccionado",
+                    "combat": "En combate",
+                    "enabled3d": "3D Canvas activado"
+                }
+            }
+        },
+        "errors": {
+            "no-folder": "MacroWheel: No se ha encontrado la carpeta «MacroWheel». Crea una carpeta llamada «MacroWheel» en tu carpeta «Macro» o activa la opción «Usar carpeta raíz» para desactivar esta notificación. Dentro de la carpeta «MacroWheel», crea subcarpetas para cada rueda que quieras añadir y, a continuación, añade las macros a esas carpetas."
+        }
+    }
+}

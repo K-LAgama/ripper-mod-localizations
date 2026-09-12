@@ -1,0 +1,72 @@
+{
+    "party-monitor-dock": {
+        "app": {
+            "buttons": {
+                "context": {
+                    "epicRoll": "必須\nロール",
+                    "follow": "フォローする",
+                    "mount": "マウント",
+                    "raise-hand": "手を上げる"
+                },
+                "enlarge": "サイズを大きくする",
+                "reduce": "サイズを小さくする",
+                "start-follow": "フォローを開始",
+                "stop-follow": "フォローをやめる",
+                "toggle-dock": "ドックの切り替え",
+                "toggle-nav": "ナビゲーションボタンの切り替え"
+            }
+        },
+        "notifications": {
+            "dismounted": "下馬しました",
+            "follow": "今フォロー中",
+            "mounted": "マウントしました",
+            "unfollow": "もうフォローしていません"
+        },
+        "settings": {
+            "cornerImage": {
+                "hint": "ドックの隅に使用する画像 無効にするには空白のままにします。",
+                "name": "コーナーイメージ"
+            },
+            "dockAlignment": {
+                "choices": {
+                    "center": "中心",
+                    "flex-end": "底",
+                    "flex-start": "上"
+                },
+                "hint": "画面上の HUD の位置合わせ",
+                "name": "HUD の調整"
+            },
+            "edgeImage": {
+                "hint": "ドックの角の間のスペースを埋めるために使用する画像。\n無効にするには空白のままにします。",
+                "name": "エッジ画像"
+            },
+            "hideCompanions": {
+                "hint": "パーティーメンバーリストからコンパニオンを非表示にする",
+                "name": "コンパニオンを非表示にする"
+            },
+            "hideInCombat": {
+                "hint": "戦闘がアクティブなときは HUD を非表示にします",
+                "name": "戦闘中に隠れる"
+            },
+            "onlyConnected": {
+                "hint": "サーバーに接続しているプレーヤーのみを表示します",
+                "name": "接続されているプレーヤーのみを表示する"
+            },
+            "portraitSize": {
+                "hint": "ドック内のポートレートのサイズ",
+                "name": "縦長サイズ"
+            },
+            "position": {
+                "choices": {
+                    "docked": "ドッキング済み",
+                    "hidden": "隠された",
+                    "horizontal": "水平（フローティング）",
+                    "vertical": "垂直（フローティング）"
+                },
+                "hint": "画面上のドックの位置",
+                "name": "ドック位置"
+            }
+        },
+        "title": "パーティーモニタードック"
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "recycle-bin": {
+        "app": {
+            "title": "🗑️ Papierkorb",
+            "restore-item": "Artikel wiederherstellen",
+            "preview-item": "Vorschauelement",
+            "permanently-delete": "Element dauerhaft löschen",
+            "noParent": "Primärdokument",
+            "search": "Suchen",
+            "time": "Vor {Zeit} gelöscht",
+            "deleteOnRefresh": "Dieses Element wird bei der Aktualisierung endgültig gelöscht.",
+            "deleteOnRefreshTitle": "Ein oder mehrere Elemente müssen gelöscht werden"
+        },
+        "settings": {
+            "maxPermanentItems": {
+                "name": "Maximaler permanenter Verlauf",
+                "hint": "Anzahl der Elemente, die zwischen Neuladevorgängen gespeichert werden."
+            },
+            "maxTemporaryItems": {
+                "name": "Maximaler temporärer Verlauf",
+                "hint": "Anzahl der Elemente, die gespeichert werden. \nTemporäre Gegenstände, die den „Maximum Permanent History“ überschreiten, gehen beim Neuladen verloren."
+            }
+        },
+        "error": {
+            "restore": "{item} konnte nicht wiederhergestellt werden. \nÜbergeordnetes Element nicht gefunden:",
+            "preview": "Die Vorschau von {item} ist fehlgeschlagen. \nÜbergeordnetes Element nicht gefunden."
+        },
+        "success": {
+            "restore": "{item} erfolgreich wiederhergestellt."
+        },
+        "dialog": {
+            "restoreParent": {
+                "title": "Übergeordnetes Element wiederherstellen",
+                "content": "Das übergeordnete Element dieses Elements konnte in Ihrer Welt nicht gefunden werden, befindet sich jedoch im Papierkorb. \nMöchten Sie es wiederherstellen?"
+            },
+            "permanentlyDelete": {
+                "title": "Permanent löschen",
+                "content": "Sind Sie sicher, dass Sie dieses Element dauerhaft löschen möchten? \nDiese Aktion kann nicht rückgängig gemacht werden."
+            }
+        }
+    }
+}

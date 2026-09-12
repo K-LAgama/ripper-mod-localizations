@@ -1,0 +1,11 @@
+{
+    "tokenz": {
+        "tokenconfig": {
+            "zindex": "Desviación del índice Z"
+        },
+        "send-to-back": {
+            "name": "Enviar token a Back",
+            "hint": "Cuando pases el ratón por encima de una pila de fichas, pulsa esta tecla para que la ficha que está más arriba pase a la parte inferior de la pila."
+        }
+    }
+}

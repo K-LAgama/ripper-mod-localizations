@@ -1,0 +1,54 @@
+{
+    "filepicker-plus": {
+        "settings": {
+            "sidebarFilepicker": {
+                "name": "Activar la pestaña Filepicker Sidebar",
+                "hint": "Añade una nueva pestaña a la barra lateral que te permita examinar y cargar archivos, así como arrastrar y soltar imágenes/modelos 3D en la escena."
+            },
+            "placeastokens": {
+                "name": "Colocar imágenes como fichas",
+                "hint": "Al arrastrar una imagen a la escena, colócala como ficha en lugar de como mosaico si estás en la capa de fichas (sólo en el selector de barras laterales)."
+            },
+            "size": {
+                "name": "Tamaño del Filepicker",
+                "hint": "Anchura del filepicker",
+                "choices": {
+                    "default": "Por defecto",
+                    "large": "Grande",
+                    "extraLarge": "Extra grande",
+                    "massive": "Enorme"
+                }
+            },
+            "imagepreview": {
+                "name": "Previsualización de imágenes y vídeos",
+                "hint": "Mostrar la vista previa de la imagen o el vídeo al pasar el ratón sobre ellos en el selector de archivos."
+            },
+            "threepreview": {
+                "name": "Vista previa en 3D",
+                "hint": "Mostrar previsualizaciones 3D, requiere Retratos 3D. Si este ajuste está desactivado, se utilizará en su lugar la miniatura de archivo 3D (si está presente)."
+            },
+            "audiopreview": {
+                "name": "Vista previa de audio",
+                "hint": "Reproducción de una vista previa de audio al pasar el ratón por encima de los sonidos en el selector de archivos."
+            },
+            "audiopreviewdelay": {
+                "name": "Retraso de previsualización de audio",
+                "hint": "Retraso en ms antes de que empiece a sonar el sonido de previsualización"
+            },
+            "audiopreviewvol": {
+                "name": "Volumen de previsualización de audio",
+                "hint": "Volumen del sonido de previsualización"
+            },
+            "enablecolortheme": {
+                "name": "Activar tema de color",
+                "hint": "Activa el tema de color oscuro para el filepicker, si tienes un módulo o sistema que aplica un tema al filepicker, puede que quieras desactivar esto."
+            }
+        },
+        "app": {},
+        "flags": {},
+        "sidebar": {
+            "no-filepicker": "El Navegador de Archivos se abre en una ventana independiente. El Navegador de archivos volverá a la barra lateral una vez que se cierre la ventana.",
+            "open": "La barra lateral del Navegador de Archivos está activa, el Navegador de Archivos seleccionado se abrió en la barra lateral."
+        }
+    }
+}

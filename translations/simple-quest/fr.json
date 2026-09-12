@@ -1,0 +1,896 @@
+{
+    "TYPES.JournalEntryPage": {
+        "simple-quest": {
+            "quest": "SQ Quest",
+            "character": "Personnage SQ",
+            "lore": "L'univers de SQ",
+            "map": "Carte SQ",
+            "event": "Événement SQ",
+            "era": "L'ère SQ",
+            "achievement": "Réalisations de SQ",
+            "creature": "SQ Créature",
+            "location": "Emplacement SQ",
+            "faction": "Faction SQ",
+            "investigation": "Enquête de la SQ"
+        }
+    },
+    "simple-quest": {
+        "tutorialTips": {
+            "tipsExplaination": {
+                "title": "Conseils pour les tutoriels",
+                "text": "Il s'agit d'une astuce du tutoriel. Vous pouvez désactiver les astuces dans les paramètres du module. Cliquez sur le bouton « Fermer » pour masquer les astuces jusqu'au prochain rafraîchissement, ou cliquez sur le bouton en forme de dé pour lire une autre astuce."
+            },
+            "quickVisibility": {
+                "title": "Visibilité immédiate",
+                "text": "Utilisez <kbd>Alt + clic gauche</kbd> pour masquer ou afficher rapidement les éléments de Simple Quest destinés aux joueurs. Dans la barre latérale, <kbd>Alt + clic gauche</kbd> sur une page pour activer ou désactiver son autorisation « Observateur ». Vous pouvez également <kbd>appuyer sur Alt + clic gauche</kbd> sur la case à cocher d'un objectif de quête pour activer ou désactiver son statut « masqué », et faire de même pour les marqueurs sur les pages de carte de Simple Quest."
+            },
+            "quickModal": {
+                "title": "Ouvrir dans une fenêtre modale",
+                "text": "Utilisez <kbd>Alt + clic gauche</kbd> sur les liens de contenu pour ouvrir une fenêtre modale à partir d’une page Simple Quest. Cela ouvrira la page dans une fenêtre modale, vous permettant ainsi de consulter son contenu sans changer de page active. Vous pouvez <kbd>faire un double clic gauche</kbd> n'importe où ou cliquer sur le bouton X en haut à droite pour fermer la fenêtre modale."
+            },
+            "questRecap": {
+                "title": "Résumé de la quête",
+                "text": "Cliquez sur le bouton « Récapitulatif » dans la barre latérale de l'onglet « Quêtes » pour regrouper les quêtes par statut (En cours, Terminées, Échouées et Non découvertes) au lieu de parcourir l'arborescence des dossiers. Chaque groupe peut être développé ou réduit, et son état (développé ou réduit) est mémorisé pour votre prochaine visite."
+            },
+            "tabContextMenu": {
+                "title": "Personnalisation des onglets",
+                "text": "<kbd>Cliquez avec le bouton droit</kbd> sur l'en-tête d'un onglet pour ouvrir le menu contextuel « Dossier ». Vous pouvez également créer un nouveau sous-dossier dans le répertoire racine de Simple Quest. Le nouveau dossier apparaîtra sous la forme d'un nouvel onglet dynamique."
+            },
+            "staticTabs": {
+                "title": "Répertoires spéciaux",
+                "text": "Les quatre onglets illustrés en haut de la barre latérale (« Mon journal », « Journal de fête », « Chronologie » et « Réalisations ») sont des onglets statiques spéciaux liés à des dossiers dédiés créés lors de la configuration initiale. <kbd>Cliquez avec le bouton droit</kbd> sur n'importe quel onglet statique pour modifier le dossier qui lui est associé. Un onglet apparaîtra en gris si son dossier n'a pas encore été créé. Vous pouvez désigner un dossier comme répertoire spécial dans la fenêtre de configuration des dossiers."
+            },
+            "sectionOrder": {
+                "title": "Sections de commande",
+                "text": "Lorsque vous modifiez une page de journal, chaque section structurée (liste d'icônes, fiche de caractéristiques ou tableau, par exemple) comporte un champ « Ordre ». Saisissez un nombre pour définir la position d'affichage de cette section sur la page. Les sections associées aux nombres les plus bas apparaissent en premier."
+            },
+            "insertPage": {
+                "title": "Autres styles de texte",
+                "text": "Vous pouvez utiliser les menus déroulants « Callout » et « Page Insert » de la barre d'outils ProseMirror pour ajouter des styles de texte thématiques, tels que des encadrés colorés pour l'univers, les créatures ou les PNJ, ainsi que des notes décoratives sur parchemin ou des parchemins."
+            },
+            "sectionHidden": {
+                "title": "Masquer des sections",
+                "text": "Chaque section structurée d'une page de journal comporte une case à cocher « Masqué ». Lorsque cette case est cochée, la section est masquée pour les joueurs qui ne sont pas propriétaires de la page. En tant que propriétaire de la page, vous continuerez à voir la section, mais celle-ci sera entourée d'une bordure en pointillés indiquant qu'elle est masquée pour vos joueurs."
+            },
+            "pageVisibility": {
+                "title": "Visibilité de la page",
+                "text": "Les points colorés affichés à droite des entrées du journal et des pages dans la barre latérale indiquent quels joueurs peuvent voir le document. Si une page ne comporte aucun point, aucun joueur ne peut la voir. Chaque point représente un utilisateur dont les droits diffèrent de ceux par défaut. Un point correspondant à « Tous les joueurs » apparaît lorsque les droits par défaut sont supérieurs à « Aucun ». Ces indicateurs ne sont visibles que par le maître de jeu et peuvent être activés ou désactivés via le paramètre « Afficher la propriété du journal »."
+            }
+        },
+        "collapseSidebar": {
+            "collapse": "Réduire la barre latérale",
+            "expand": "Déplier la barre latérale"
+        },
+        "givePermission": {
+            "none": "{pageName} a été masqué aux joueurs",
+            "observer": "{pageName} est désormais accessible aux joueurs"
+        },
+        "modal": {
+            "doubleClickToClose": "Double-cliquez pour fermer"
+        },
+        "app": {
+            "title": "Une quête simple",
+            "myJournal": "Mon journal intime",
+            "partyJournal": "Journal de la fête",
+            "timeline": "Chronologie",
+            "achievements": "Réalisations",
+            "search": "Rechercher"
+        },
+        "achievements": {
+            "openAll": "Tout afficher",
+            "uncategorized": "Non classé"
+        },
+        "ColorHtmlBlock": {
+            "color": "Couleur HTML",
+            "order": "Commande",
+            "hidden": "Caché"
+        },
+        "HtmlBlock": {
+            "order": "Commande",
+            "hidden": "Caché"
+        },
+        "createExtendedStructure": {
+            "title": "Créer une structure étendue",
+            "content": "Cela créera une nouvelle structure de dossiers pour Simple Quest. Cette option est recommandée si vous êtes un nouvel utilisateur et/ou si vous souhaitez explorer tout le potentiel de ce module."
+        },
+        "IconListBlock": {
+            "label": "Étiquette de la liste d'icônes",
+            "name": "Nom",
+            "description": "Description",
+            "icon": "Icône",
+            "hidden": "Caché",
+            "order": "Commande"
+        },
+        "StatsBlock": {
+            "label": "Étiquette « Statistiques »",
+            "name": "Nom",
+            "color": "Couleur",
+            "value": "Valeur",
+            "min": "Minimum",
+            "max": "Maximum",
+            "hidden": "Caché",
+            "order": "Commande"
+        },
+        "TableBlock": {
+            "label": "Intitulé du tableau",
+            "name": "Nom",
+            "value": "Valeur",
+            "icon": "Icône",
+            "hidden": "Caché",
+            "order": "Commande"
+        },
+        "ColorTagsBlock": {
+            "label": "Étiquettes de couleur",
+            "tag": "Balise",
+            "color": "Couleur",
+            "hidden": "Caché",
+            "order": "Commande"
+        },
+        "ResourcesBlock": {
+            "label": "Étiquette « Ressources »",
+            "name": "Nom",
+            "current": "Actuel",
+            "max": "Maximum",
+            "color": "Couleur",
+            "hidden": "Caché",
+            "order": "Commande"
+        },
+        "MainTagBlock": {
+            "color": "Couleur principale des balises",
+            "value": "Texte principal de la balise",
+            "hidden": "Caché"
+        },
+        "data-model-config": {
+            "title": "Configuration de l'article"
+        },
+        "journal": {
+            "name": "Nom",
+            "description": "Description",
+            "header": "En-tête",
+            "subtitle": "Sous-titre",
+            "tags": "Mots-clés",
+            "status": "Statut",
+            "rename": "Modifier le nom",
+            "color": "Couleur",
+            "image": "Image",
+            "caption": "Légende",
+            "type": "Type",
+            "width": "Largeur",
+            "height": "Hauteur",
+            "aspectRatio": {
+                "label": "Format d'image",
+                "auto": "Original",
+                "landscape": "Paysage",
+                "portrait": "Portrait",
+                "square": "Carré"
+            },
+            "imageFilter": {
+                "label": "Filtre d'image"
+            },
+            "checkbox": {
+                "tooltip": "Clic gauche pour afficher/masquer les tâches terminées <br> Clic droit pour afficher/masquer les tâches ayant échoué",
+                "tooltip-hide": "<br>Alt + clic gauche pour afficher/masquer le contenu caché"
+            },
+            "location": {
+                "population": "Population",
+                "area": "Zone",
+                "government": "Gouvernement",
+                "demonym": "Démonyme",
+                "ruler": "Règle",
+                "founded": "Fondée"
+            },
+            "faction": {
+                "leader": "Responsable",
+                "headquarters": "Siège social",
+                "memberCount": "Nombre de membres",
+                "alignment": "Alignement",
+                "goals": "Objectifs",
+                "rivals": "Rivaux",
+                "allies": "Alliés"
+            },
+            "awardedTo": {
+                "label": "Décerné à",
+                "hint": "Sélectionnez les utilisateurs qui ont obtenu ce succès."
+            },
+            "showTitle": {
+                "label": "Afficher le titre",
+                "hint": "Afficher le titre du succès aux joueurs qui ne l'ont pas encore obtenu."
+            },
+            "showContent": {
+                "label": "Afficher le contenu",
+                "hint": "Afficher la description du succès aux joueurs qui ne l'ont pas encore obtenu."
+            },
+            "showImage": {
+                "label": "Afficher l'image",
+                "hint": "Afficher l'image du succès aux joueurs qui ne l'ont pas encore obtenu."
+            },
+            "showColor": {
+                "label": "Afficher la couleur",
+                "hint": "Afficher la couleur de mise en évidence du succès aux joueurs qui ne l'ont pas encore obtenu."
+            },
+            "assign": {
+                "title": "Tu en es sûr ?",
+                "add": "Accorder ce succès à {name} ?",
+                "remove": "Supprimer ce succès de {name} ?"
+            },
+            "observerObjectivePermission": {
+                "label": "Observateur – Objectif – Autorisation",
+                "hint": "Remplace le paramètre global. L'option « Par défaut » suit le paramètre du module, tandis que les options « Autoriser » et « Refuser » le remplacent.",
+                "choices": {
+                    "default": "Par défaut (suivre le paramètre)",
+                    "allow": "Autoriser",
+                    "deny": "Refuser"
+                }
+            },
+            "quest": {
+                "questGiver": "Donneur de quêtes",
+                "location": "Lieu",
+                "difficulty": "Difficulté",
+                "deadline": "Date limite"
+            },
+            "event": {
+                "year": "Année",
+                "duration": "Durée (années)",
+                "icon": "Icône",
+                "flipped": "Inversé",
+                "offset": "Décalage (px)",
+                "banner": "Bannière",
+                "label": "Étiquette",
+                "hidden": "Caché"
+            },
+            "era": {
+                "eraStart": "Le début d'une nouvelle ère",
+                "eraEnd": "La fin d'une époque",
+                "color": "Couleur",
+                "banner": "Bannière",
+                "label": "Étiquette",
+                "hidden": "Caché"
+            },
+            "investigation": {
+                "saveViewport": "Enregistrer la fenêtre d'affichage",
+                "tools": "Outils",
+                "background": "Contexte",
+                "backgroundType": {
+                    "label": "Type d'arrière-plan",
+                    "choices": {
+                        "centered": "Centré",
+                        "repeating": "Répétition",
+                        "pattern": "Motif"
+                    }
+                },
+                "stamp": {
+                    "completed": "Cachet : Terminé",
+                    "failed": "Timbres : Échec",
+                    "skull": "Timbre : Crâne"
+                },
+                "tooltip": {
+                    "createConnection": "Établir une connexion",
+                    "edit": "Modifier l'élément",
+                    "duplicate": "Élément en double",
+                    "delete": "Supprimer l'élément"
+                },
+                "add": "Ajouter un article",
+                "type": {
+                    "polaroid": "Polaroid",
+                    "newspaper": "Journal",
+                    "sticky-note": "Note autocollante",
+                    "note": "Remarque",
+                    "card": "Carte"
+                },
+                "color": "Couleur",
+                "thickness": "Épaisseur",
+                "text": "Texte",
+                "item": {
+                    "title": "Configuration de l'article",
+                    "name": "Nom",
+                    "color": "Couleur",
+                    "textColor": "Couleur du texte",
+                    "image": "Image",
+                    "caption": "Légende",
+                    "width": "Largeur",
+                    "height": "Hauteur",
+                    "rotation": "Rotation",
+                    "order": "Commande",
+                    "delete": {
+                        "title": "Supprimer cet élément ?",
+                        "content": "Êtes-vous sûr de vouloir supprimer cet élément ? Cette action ne peut pas être annulée."
+                    },
+                    "type": {
+                        "label": "Type",
+                        "default": "Notions de base",
+                        "polaroid": "Polaroid",
+                        "newspaper": "Journal",
+                        "sticky-note": "Note autocollante",
+                        "note": "Remarque",
+                        "simple-label": "Étiquette simple",
+                        "paper-sheet": "Feuille de papier",
+                        "image": "Image"
+                    },
+                    "x": "X",
+                    "y": "Y",
+                    "description": "Description",
+                    "hidden": "Caché"
+                },
+                "connection": {
+                    "title": "Configuration de la connexion",
+                    "origin": {
+                        "id": "Origine",
+                        "anchorX": "Ancre X",
+                        "anchorY": "Ancre Y",
+                        "locked": "Verrouillé"
+                    },
+                    "destination": {
+                        "id": "Destination",
+                        "anchorX": "Ancre X",
+                        "anchorY": "Ancre Y",
+                        "locked": "Verrouillé"
+                    },
+                    "color": "Couleur",
+                    "thickness": "Épaisseur",
+                    "text": "Texte",
+                    "physics": {
+                        "label": "Physique",
+                        "choices": {
+                            "straight": "Hétéro",
+                            "droopy": "Droopy",
+                            "very-droopy": "Très tombant"
+                        }
+                    },
+                    "style": {
+                        "label": "Style",
+                        "choices": {
+                            "solid": "Solide",
+                            "dashed": "En pointillés",
+                            "dotted": "Pointillé"
+                        }
+                    }
+                }
+            }
+        },
+        "deleteItem": {
+            "title": "Supprimer ?",
+            "content": "Êtes-vous sûr de vouloir supprimer cet élément ? Cette action ne peut pas être annulée."
+        },
+        "settings": {
+            "betterOwnership": {
+                "name": "Gestion simple des autorisations dans les quêtes",
+                "hint": "Lors de la création d'une nouvelle page, définissez automatiquement le niveau de propriété par défaut sur « Aucun ». La boîte de dialogue « Gestion des autorisations » n'apparaîtra pas lors de l'affichage d'une page dans la barre latérale.",
+                "dialog": {
+                    "title": "Gestion des autorisations",
+                    "content": "Vous êtes en train d'afficher une page, mais son journal a pour autorisation par défaut « Aucune ». Les joueurs ne pourront pas voir cette page. Souhaitez-vous modifier l'autorisation par défaut du journal pour la définir sur « Observateur » et celle des autres pages héritées sur « Aucune » ?"
+                }
+            },
+            "showHistory": {
+                "name": "Afficher l'historique",
+                "hint": "Afficher une barre d'historique en haut de la fenêtre « Simple Quest »."
+            },
+            "showJournalOwnership": {
+                "name": "Afficher les informations relatives à la propriété du journal",
+                "hint": "Afficher des points colorés indiquant le propriétaire sous les écritures comptables et les pages dans la barre latérale."
+            },
+            "tabConfig": {
+                "name": "Configuration des onglets",
+                "hint": "Configurer les noms des onglets de Simple Quest.",
+                "label": "Configurer les noms des onglets"
+            },
+            "themeConfig": {
+                "name": "Configuration du thème",
+                "hint": "Configurer le thème « Simple Quest ».",
+                "label": "Configurer le thème"
+            },
+            "allowObserverCheckboxToggle": {
+                "name": "Autoriser les observateurs à remplir les objectifs",
+                "hint": "Les joueurs disposant du droit « Observateur » sur la page d'une quête peuvent cocher ou décocher les cases correspondant aux objectifs. Ce comportement peut être modifié pour chaque quête."
+            },
+            "rootDir": {
+                "name": "Répertoire racine",
+                "hint": "Nom du dossier racine de Simple Quest. Les onglets dynamiques sont des sous-dossiers de ce répertoire.",
+                "default": "quête simple"
+            },
+            "partyJournalDir": {
+                "name": "Annuaire des journaux de fête",
+                "hint": "Nom du dossier correspondant à l'onglet « Journal de la fête ».",
+                "default": "Fête"
+            },
+            "timelineDir": {
+                "name": "Répertoire de la chronologie",
+                "hint": "Nom du dossier pour l'onglet « Timeline ».",
+                "default": "Chronologie"
+            },
+            "achievementsDir": {
+                "name": "Répertoire des réalisations",
+                "hint": "Nom du dossier correspondant à l'onglet « Réalisations ».",
+                "default": "Réalisations"
+            },
+            "backgroundColor": {
+                "name": "Couleur d'arrière-plan",
+                "hint": "Couleur d'arrière-plan de Simple Quest"
+            },
+            "backgroundImage": {
+                "name": "Image d'arrière-plan",
+                "hint": "Image d'arrière-plan de Simple Quest"
+            },
+            "labelColor": {
+                "name": "Couleur globale des étiquettes",
+                "hint": "Si cette option est activée, la couleur de toutes les étiquettes de la carte sera remplacée par cette couleur. Saisissez « none » pour désactiver cette option."
+            },
+            "matchJournalStyle": {
+                "name": "Style « Journal de match »",
+                "hint": "Si cette option est activée, le système tentera de reproduire les styles spéciaux appliqués aux journaux. Cela peut entraîner des effets indésirables selon le thème utilisé."
+            },
+            "textColor": {
+                "name": "Couleur du texte",
+                "hint": "Couleur du texte de « Simple Quest »"
+            },
+            "secretColor": {
+                "name": "Couleur secrète",
+                "hint": "Couleur de Simple Quest pour les objectifs de quêtes secrètes"
+            },
+            "failedColor": {
+                "name": "Couleur incorrecte",
+                "hint": "Couleur utilisée par Simple Quest pour les objectifs de quête non atteints"
+            },
+            "hideFolderFromPlayers": {
+                "name": "Masquer un dossier aux joueurs",
+                "hint": "Faut-il masquer le dossier « Simple Quest » aux joueurs ?"
+            },
+            "fontFamily": {
+                "name": "Famille de polices",
+                "hint": "La famille de polices à utiliser pour Simple Quest"
+            },
+            "showQuestNotifications": {
+                "name": "Afficher les notifications de quêtes",
+                "hint": "Afficher ou non des notifications lorsqu'une quête est mise à jour ou partagée dans le chat"
+            },
+            "newQuestSoundEffect": {
+                "name": "Nouvel effet sonore de quête",
+                "hint": "L'effet sonore à lire lorsqu'une notification de nouvelle quête s'affiche"
+            },
+            "updateQuestSoundEffect": {
+                "name": "Mise à jour des effets sonores de quête",
+                "hint": "L'effet sonore à lire lorsqu'une notification de mise à jour de quête s'affiche"
+            },
+            "matchJournalPermission": {
+                "name": "Autorisation relative au journal des matchs",
+                "hint": "L'option « Simple Quest » doit correspondre aux autorisations des utilisateurs pour les quêtes, en plus de leur statut « caché ». Lorsque ce paramètre est désactivé, toutes les quêtes seront visibles par tous les joueurs, sauf si elles ont été définies comme « cachées ». Notez qu'en activant ce paramètre, les joueurs pourront voir les objectifs de quêtes cachées en ouvrant le journal habituel."
+            },
+            "openJournalPinsAsModals": {
+                "name": "Ouvrir les marqueurs de carte dans des fenêtres modales",
+                "hint": "Si un marqueur de carte est associé à une page du journal et que cette page n'est pas une page de quête simple, ouvrez la page dans une fenêtre modale par-dessus la carte, plutôt que de l'ouvrir dans le journal."
+            },
+            "enableQuests": {
+                "name": "Activer les quêtes",
+                "hint": "Activer ou non l'onglet « Quêtes »"
+            },
+            "enablePartyJournal": {
+                "name": "Activer le journal de la fête",
+                "hint": "Faut-il activer l'onglet « Journal du groupe » ?"
+            },
+            "enableMyJournal": {
+                "name": "Activer « Mon journal »",
+                "hint": "Activer ou non l'onglet « Mon journal »"
+            },
+            "enableMaps": {
+                "name": "Activer Maps",
+                "hint": "Faut-il activer l'onglet « Cartes » ?"
+            },
+            "enableTimeline": {
+                "name": "Activer la chronologie",
+                "hint": "Faut-il activer l'onglet « Chronologie » ?"
+            },
+            "enableAchievements": {
+                "name": "Activer les succès",
+                "hint": "Activer ou non l'onglet « Réalisations »"
+            },
+            "enableLore": {
+                "name": "Activer l'univers du jeu",
+                "hint": "Faut-il activer l'onglet « Lore » ?"
+            },
+            "headerOnlyFont": {
+                "name": "Police de l'en-tête",
+                "hint": "Police à utiliser pour les en-têtes ; si « par défaut » est sélectionné, la police par défaut sera utilisée"
+            },
+            "imagePageMask": {
+                "name": "Image « Le brouillard de guerre »",
+                "hint": "Le masque à utiliser pour le brouillard de guerre. Laissez ce champ vide pour obtenir un masque noir."
+            },
+            "secondaryFontSize": {
+                "name": "Taille de police secondaire",
+                "hint": "La taille de police des éléments secondaires."
+            },
+            "showTutorialTips": {
+                "name": "Afficher les conseils du didacticiel",
+                "choices": {
+                    "always": "Oui",
+                    "never": "Non",
+                    "reset": "Réinitialiser"
+                }
+            }
+        },
+        "simple-quest": {
+            "title": "Une quête simple",
+            "windowedModeToggle": "Activer/désactiver le mode fenêtré",
+            "tabs": {
+                "quests": "Quêtes",
+                "map": "Carte",
+                "lore": "Lore",
+                "timeline": "Chronologie",
+                "achievements": "Réalisations",
+                "my-journal": "Mon journal",
+                "party-journal": "Journal de la fête",
+                "tab": "Onglet"
+            },
+            "move-to": "Aller à...",
+            "moveQuest": {
+                "error": "Vous n'avez pas l'autorisation de déplacer des quêtes vers cette catégorie."
+            },
+            "tooltip": {
+                "add-quest": "Ajouter une quête",
+                "add-map": "Ajouter une carte",
+                "add-lore": "Ajouter des informations sur l'univers",
+                "add-page": "Ajouter une page",
+                "edit-lore": "Modifier l'univers",
+                "configure-lore-permissions": "Configurer les autorisations",
+                "map-help": "Comment utiliser l'onglet « Cartes »",
+                "edit-quest": "Modifier la quête",
+                "delete-quest": "Supprimer la quête",
+                "delete-lore": "Supprimer l'histoire",
+                "share-quest": "Envoyer dans la discussion",
+                "duplicate-quest": "Quête en double",
+                "duplicate-map": "Carte en double",
+                "delete-map": "Supprimer la carte",
+                "duplicate-lore": "Lore en double",
+                "mark-updated": "Marquer « Quest » comme mis à jour",
+                "add-category": "Ajouter une catégorie",
+                "edit-map": "Modifier la carte",
+                "reset-fow": "Réinitialiser/Activer le « brouillard de guerre »",
+                "fow-brush-size": "Taille du pinceau « Brouillard de guerre »",
+                "measure": "100 px = 1 mi",
+                "lock-pins": "Verrouiller / Déverrouiller les marqueurs",
+                "show-players": "Ouvert aux joueurs",
+                "edit": "Modifier",
+                "duplicate": "En double",
+                "delete": "Supprimer",
+                "toggle-completed": "Série terminée"
+            }
+        },
+        "timeline": {
+            "addEvent": "Ajouter un événement",
+            "addEra": "Ajouter une époque",
+            "create": "Créer une chronologie",
+            "delete": "Supprimer la chronologie",
+            "edit": "Modifier la chronologie"
+        },
+        "timeline-config": {
+            "title": "Modifier un événement de la chronologie",
+            "label": "Étiquette",
+            "labelNote": "Le titre de l'événement. Il s'affichera au-dessus de l'année. Il peut être utilisé pour indiquer une date précise ou d'autres informations.",
+            "banner": "Bannière",
+            "hidden": "Caché",
+            "year": "Année",
+            "duration": "Durée (années)",
+            "era": "Époque",
+            "event": "Événement",
+            "general": "Mondial",
+            "to": "à",
+            "generalNote": "Ces paramètres s'appliqueront à l'ensemble de la timeline.",
+            "icon": "Icône",
+            "isEra": "C'est Era ?",
+            "eraStart": "Le début d'une nouvelle ère",
+            "eraEnd": "La fin d'une époque",
+            "flipped": "Inversé",
+            "offset": "Décalage (px)",
+            "description": "Modifier le sommaire",
+            "negativeAbb": "Abréviation de l'année négative",
+            "showMinus": "Afficher le signe moins",
+            "positiveAbb": "Abréviation d'une année positive",
+            "timeScale": "Échelle de temps",
+            "dynamicTimeScale": "Échelle de temps dynamique",
+            "dynamicTimeScaleNote": "Au lieu d'être dimensionnée de manière absolue, la frise chronologique sera dimensionnée en fonction du nombre d'événements de chaque époque, tout en restant multipliée par l'échelle de temps.",
+            "content": "Visibilité du contenu",
+            "ignoreDataValidation": "Ignorer la validation des données",
+            "ignoreDataValidationNote": "Si vous devez réorganiser les époques, vous pouvez ignorer la validation des données afin de permettre un chevauchement temporaire entre les époques pendant que vous les réorganisez.",
+            "contentChoices": {
+                "always": "Toujours afficher",
+                "toggleOn": "Basculer (déplié par défaut)",
+                "toggleOff": "Afficher/Masquer (masqué par défaut)"
+            },
+            "errors": {
+                "noEra": "Aucune période n'a été trouvée. Veuillez d'abord créer une période.",
+                "noYear": "Aucune année trouvée. Vous devez indiquer une année pour cet événement.",
+                "yearOutOfBounds": "L'année doit appartenir à une ère.",
+                "noEraStart": "Aucune date de début d'époque n'a été trouvée. Vous devez définir une date de début pour l'époque.",
+                "noEraEnd": "Aucune date de fin d'ère n'a été trouvée. Vous devez définir une date de fin pour l'ère.",
+                "eraStartAfterEnd": "La date de début de l'ère doit être antérieure à la date de fin de l'ère.",
+                "eraNotConnected": "Le début ou la fin d'une époque doit être lié(e) à une autre époque.",
+                "eraOverlap": "Une ère ne peut pas se chevaucher avec une autre ère."
+            }
+        },
+        "tab-config": {
+            "title": "Configuration des onglets"
+        },
+        "theme-config": {
+            "title": "Configuration du thème",
+            "info": "Les thèmes appliquent certains paramètres prédéfinis. Si vous le souhaitez, vous pouvez accéder à ce menu depuis les paramètres du module, où vous pourrez également personnaliser chaque aspect du thème individuellement.",
+            "themes": {
+                "default": "Une quête simple",
+                "classicFantasy": "Fantastique classique",
+                "basicDark": "Basic Dark",
+                "basicLight": "Éclairage de base",
+                "foundryDark": "Foundry Dark",
+                "foundryLight": "Éclairage de fonderie",
+                "redDragon": "Dragon rouge",
+                "typewriter": "Machine à écrire",
+                "postApocalypticWasteland": "Terre désolée post-apocalyptique",
+                "galacticAdventure": "Aventure galactique",
+                "steampunkWorkshop": "Atelier Steampunk",
+                "dystopianFuture": "Un avenir dystopique",
+                "virtualRealityOasis": "Oasis de réalité virtuelle",
+                "mysticForest": "La forêt mystique",
+                "vintageFilmNoir": "Film noir vintage",
+                "sciFiConsole": "Console de science-fiction",
+                "futuristicTech": "Technologies futuristes",
+                "alienInvasion": "Invasion extraterrestre",
+                "ancientScrolls": "Parchemins anciens",
+                "crtTerminal": "Terminal",
+                "crtScreen": "Écran CRT"
+            }
+        },
+        "importQuests": {
+            "title": "Quêtes d'importation : ",
+            "content": "Êtes-vous sûr de vouloir importer les quêtes de ce journal ? Si une catégorie portant le même nom existe déjà, les quêtes y seront ajoutées."
+        },
+        "markerConfig": {
+            "title": "Configuration des marqueurs",
+            "icon": "Icône",
+            "journal": "Déposez ici un journal ou une page",
+            "hidden": "Caché",
+            "displayLabel": "Toujours afficher l'étiquette",
+            "fixedScale": "Échelle fixe"
+        },
+        "mapControls": {
+            "addMarker": "Ajouter un repère",
+            "editMarker": "Modifier le marqueur",
+            "deleteMarker": "Supprimer le marqueur"
+        },
+        "deleteQuest": {
+            "title": "Supprimer la quête ? - ",
+            "content": "Êtes-vous sûr de vouloir supprimer cette quête ? Cette action ne peut pas être annulée."
+        },
+        "deleteLore": {
+            "title": "Supprimer l'univers ? - ",
+            "content": "Êtes-vous sûr de vouloir supprimer cette description ? Cette action est irréversible."
+        },
+        "deleteMap": {
+            "title": "Supprimer la carte ? - ",
+            "content": "Êtes-vous sûr de vouloir supprimer cette carte ? Cette action ne peut pas être annulée."
+        },
+        "deletePage": {
+            "title": "Supprimer la page ? - ",
+            "content": "Êtes-vous sûr de vouloir supprimer cette page ? Cette action ne peut pas être annulée."
+        },
+        "shareQuest": {
+            "title": "Envoyer la page dans la discussion",
+            "content": "Êtes-vous sûr de vouloir envoyer la notification « Nouvelle page » dans la conversation ?",
+            "changeOwnership": "<p class='notification info'>Le niveau d'accès de « Tous les joueurs » sera modifié en « Observateur » pour cette page.</p>",
+            "chatMessage": "Nouvelle page {questType} disponible : {questName}",
+            "shareMessage": "Nouveau {questType} débloqué !"
+        },
+        "shareLore": {
+            "title": "Envoyer Lore dans le chat",
+            "content": "Êtes-vous sûr de vouloir envoyer la notification « Nouvelle histoire » dans le chat ?",
+            "chatMessage": "De nouveaux éléments de l'univers du jeu ont été dévoilés !"
+        },
+        "shareAchievement": {
+            "title": "Envoyer le succès dans le chat",
+            "content": "Êtes-vous sûr de vouloir envoyer la notification « Nouvelle réussite » dans le chat ?",
+            "chatMessage": "Vous avez débloqué un succès : {questName}"
+        },
+        "showQuest": {
+            "title": "Afficher la quête"
+        },
+        "welcomeScreen": {
+            "title": "Bienvenue sur Simple Quest !",
+            "content": "Bienvenue dans Simple Quest !<hr>Appuyez sur <span class='hotkey'>J</span> pour ouvrir la fenêtre de Simple Quest."
+        },
+        "welcomeMaps": {
+            "title": "Quête simple : onglet « Carte »",
+            "content": "Bienvenue dans l'onglet « Cartes » !<hr><span class='hotkey'>Clic droit + glisser</span> pour faire défiler la carte.<br><span class='hotkey'>Faire défiler</span> pour zoomer sur la carte.<br><span class='hotkey'>Clic gauche</span> pour ajouter un repère.<br><span class='hotkey'>Clic gauche</span> pour ouvrir les notes ou la quête associées à un repère.<br><span class='hotkey'>Clic droit</span> sur un repère pour le modifier.<hr>Brouillard de guerre<hr><span class='hotkey'>Maj + clic gauche</span> pour masquer la carte.<br><span class='hotkey'>Maj + clic droit</span> pour afficher la carte.<hr>Mesurer<hr> <span class='hotkey'>Ctrl + clic gauche</span> pour mesurer."
+        },
+        "flags": {},
+        "noPermission": "Vous n'êtes pas autorisé(e) à consulter ce document.",
+        "time-enricher": {
+            "expired": "Périmé"
+        },
+        "questNotification": {
+            "text": "Page {questType} : {questName} a été mise à jour"
+        },
+        "hotkeys": {
+            "toggleSimpleQuest": {
+                "name": "Afficher/masquer « Simple Quest »"
+            }
+        },
+        "notifications": {
+            "defaultStructureCreated": "Quête simple : création de la structure par défaut des dossiers et du journal.",
+            "playerJournalUpdated": "Quête simple : mise à jour du journal du joueur.",
+            "noPage": "Quête simple : veuillez sélectionner une page à supprimer.",
+            "uuidNotFound": "Simple Quest : page introuvable pour l'uuid {{uuid}}",
+            "noTab": "Quête simple : aucun onglet trouvé pour « {{tab}} »."
+        },
+        "resetFow": {
+            "title": "Réinitialiser le « brouillard de guerre » ?",
+            "content": "Êtes-vous sûr de vouloir réinitialiser/activer le « brouillard de guerre » pour cette carte ? Cette action est irréversible."
+        },
+        "proseMirrorMenu": {
+            "callout": {
+                "title": "Légende",
+                "callout-lore": "Lore",
+                "callout-magic": "Magie",
+                "callout-item": "Article",
+                "callout-creature": "Créature",
+                "callout-event": "Événement",
+                "callout-time": "Heure",
+                "callout-npc": "PNJ",
+                "callout-location": "Lieu"
+            },
+            "pageInsert": {
+                "title": "Insérer une page",
+                "parchment-note-1": "Note sur le parchemin n° 1",
+                "parchment-note-2": "Note sur le parchemin n° 2",
+                "parchment-note-3": "Note sur le parchemin n° 3",
+                "parchment-note-4": "Note sur le parchemin n° 4",
+                "parchment-book-1": "Livre 1",
+                "parchment-book-2": "Livre 2",
+                "parchment-scroll-1": "Faire défiler"
+            },
+            "text": {
+                "initial": "Grande initiale"
+            }
+        },
+        "page-template": {
+            "label": "Modèle de page",
+            "description": "Voici une collection de modèles HTML permettant de mettre en forme les pages de votre journal. Cette mise en forme restera effective même si le module Simple Quest est désactivé. Cliquez sur un bouton pour ajouter le modèle à la fin de la page."
+        },
+        "injected": {
+            "fowMask": {
+                "label": "Quête simple : Masque du brouillard de guerre"
+            }
+        },
+        "tours": {
+            "interface": {
+                "1": {
+                    "title": "Rubriques",
+                    "content": "Cette zone présente les différentes sections de Simple Quest. Vous pouvez cliquer sur une section pour y accéder, faire un clic droit pour modifier le nom des onglets et passer la souris sur le coin supérieur droit pour afficher le bouton « Passer en plein écran »."
+                },
+                "2": {
+                    "title": "Liste des quêtes",
+                    "content": "Cette section affiche la liste des catégories de quêtes ainsi que les quêtes qu'elles contiennent. Vous pouvez cliquer avec le bouton droit sur une catégorie pour modifier son nom. En haut à droite, vous trouverez les boutons permettant d'ajouter une nouvelle quête et d'ajouter une nouvelle catégorie. Passez la souris sur le côté gauche du titre d'une quête pour faire apparaître le bouton « Afficher/Masquer »."
+                },
+                "3": {
+                    "title": "Détails de la quête",
+                    "content": "Cette zone affiche les détails de la quête sélectionnée. Dans le coin supérieur droit, vous trouverez des boutons permettant de gérer la quête ; vous pouvez passer la souris dessus pour afficher une infobulle expliquant leur fonction."
+                },
+                "4": {
+                    "title": "Taille de la police",
+                    "content": "Cette section vous permet de modifier la taille de la police de Simple Quest"
+                },
+                "name": "Présentation de l'interface et onglet « Quêtes »",
+                "description": "Cette visite guidée vous montrera comment utiliser l'interface principale de Simple Quest et l'onglet « Quêtes »."
+            },
+            "lore-tab": {
+                "1": {
+                    "title": "Onglet « Histoire »",
+                    "content": "L'onglet « Lore » affiche tous les journaux présents dans le dossier « Lore » au sein de l'interface « Simple Quest ». Bien que cet onglet n'offre aucune fonctionnalité particulière, il constitue un moyen pratique d'accéder à votre univers narratif. Les autorisations d'accès aux pages « Lore » reprennent celles définies pour les journaux dans Core Foundry."
+                },
+                "2": {
+                    "title": "Liste des histoires",
+                    "content": "Cette section affiche la liste des catégories de contenu et les éléments qui les composent. Vous pouvez cliquer avec le bouton droit sur une catégorie pour modifier son nom. En haut à droite, vous trouverez les boutons permettant d'ajouter un nouvel élément de contenu et de créer une nouvelle catégorie. Passez la souris sur le côté gauche du titre d'un élément de contenu pour faire apparaître le bouton « Afficher/Masquer »."
+                },
+                "3": {
+                    "title": "Détails de l'univers",
+                    "content": "Cette section présente les détails de l'histoire sélectionnée. Dans le coin supérieur droit, vous trouverez des boutons permettant de gérer l'histoire ; vous pouvez passer la souris dessus pour afficher une infobulle expliquant leur fonction."
+                },
+                "name": "Onglet « Histoire »",
+                "description": "Cette visite guidée vous montrera comment utiliser l'onglet « Lore »."
+            },
+            "map-tab": {
+                "1": {
+                    "title": "Onglet « Carte »",
+                    "content": "L'onglet « Cartes » affiche toutes les cartes présentes dans le journal des cartes, situé dans le dossier « Quêtes »."
+                },
+                "2": {
+                    "title": "Liste des cartes",
+                    "content": "Cette section affiche la liste des cartes. En haut à droite, vous trouverez un bouton permettant d'ajouter une nouvelle carte et un autre bouton qui vous expliquera les commandes avancées. Passez la souris sur le côté gauche du titre d'une carte pour faire apparaître le bouton « Afficher/Masquer »."
+                },
+                "3": {
+                    "title": "Détails de la carte",
+                    "content": "Cette zone affiche la carte sélectionnée. Vous pouvez faire défiler la carte en cliquant et en faisant glisser le curseur, et zoomer ou dézoomer à l'aide de la molette de la souris. Dans le coin supérieur droit, vous trouverez des boutons permettant de gérer la carte ; passez la souris dessus pour afficher une infobulle expliquant leur fonction."
+                },
+                "4": {
+                    "title": "Marqueurs",
+                    "content": "Vous pouvez cliquer avec le bouton droit de la souris (ou maintenir le bouton enfoncé pour obtenir un aperçu) sur la carte pour ajouter un marqueur. Vous pouvez également cliquer avec le bouton droit sur un marqueur pour le modifier, ou cliquer avec le bouton droit et faire glisser un marqueur pour le déplacer. Vous pouvez cliquer avec le bouton gauche sur un marqueur pour ouvrir ses notes, sa quête ou le document associé. Glisser-déposer n'importe quel document sur la carte créera un marqueur lié à ce document."
+                },
+                "5": {
+                    "title": "Le brouillard de guerre",
+                    "content": "Vous pouvez maintenir la touche Maj enfoncée pour afficher le pinceau « Brouillard de guerre ». Cliquez avec le bouton gauche pour masquer la carte et avec le bouton droit pour la réafficher."
+                },
+                "6": {
+                    "title": "Mesure",
+                    "content": "Vous pouvez maintenir la touche Ctrl enfoncée pour activer l'outil de mesure. Tout en maintenant la touche Ctrl enfoncée, cliquez avec le bouton gauche de la souris et faites glisser pour effectuer la mesure."
+                },
+                "name": "Onglet « Carte »",
+                "description": "Cette visite guidée vous montrera comment utiliser l'onglet « Carte »."
+            },
+            "my-journal-tab": {
+                "1": {
+                    "title": "Onglet « Mon journal »",
+                    "content": "L'onglet « Mon journal » affiche un journal personnel que seuls vous et le maître de jeu pouvez consulter."
+                },
+                "2": {
+                    "title": "Table des matières",
+                    "content": "Cette section affiche la table des matières de votre journal. Tous les titres que vous créez dans votre journal s'afficheront ici pour faciliter la navigation."
+                },
+                "3": {
+                    "title": "Contenu du journal",
+                    "content": "Cette section affiche le contenu de votre journal. Vous pouvez modifier le contenu de votre journal en cliquant sur le bouton « Modifier » situé dans le coin supérieur droit."
+                },
+                "name": "Onglet « Mon journal »",
+                "description": "Cette visite guidée vous montrera comment utiliser l'onglet « Mon journal »."
+            },
+            "party-journal-tab": {
+                "1": {
+                    "title": "Onglet « Journal de la fête »",
+                    "content": "L'onglet « Journal de la fête » affiche un journal accessible et modifiable par tous les utilisateurs."
+                },
+                "2": {
+                    "title": "Table des matières",
+                    "content": "Cette section affiche la table des matières de votre « Party Journal ». Tous les titres que vous créerez dans ce journal s'afficheront ici pour faciliter la navigation."
+                },
+                "3": {
+                    "title": "Contenu du journal",
+                    "content": "Cette section affiche le contenu du journal du parti. Vous pouvez modifier le contenu de ce journal en cliquant sur le bouton « Modifier » situé dans le coin supérieur droit."
+                },
+                "name": "Onglet « Journal des fêtes »",
+                "description": "Cette visite guidée vous montrera comment utiliser l'onglet « Journal de la fête »."
+            },
+            "journal-page": {
+                "1": {
+                    "title": "Modèles de page",
+                    "content": "Simple Quest propose désormais des modèles de page. Une fonctionnalité pratique qui vous permet d'ajouter rapidement un modèle ou une section préformatée à la page de votre journal. Cliquez sur ce bouton pour voir les modèles disponibles."
+                },
+                "2": {
+                    "title": "Mise en forme",
+                    "content": "Dans ce menu déroulant, vous trouverez les nouvelles options « Légende » et « Insertion de page », qui vous permettront d'apporter une touche d'originalité à vos documents."
+                },
+                "name": "Fonctionnalités des pages du journal",
+                "description": "Cette visite guidée vous montrera comment utiliser la page « Journal »."
+            },
+            "timeline-tab": {
+                "1": {
+                    "title": "Onglet « Chronologie »",
+                    "content": "L'onglet « Chronologie » affiche une chronologie des événements."
+                },
+                "2": {
+                    "title": "Liste des dates clés",
+                    "content": "Cette section présente la liste des événements et des époques. Vous pouvez cliquer dessus pour accéder directement à l'événement ou à l'époque en question, ou faire un clic droit pour le modifier."
+                },
+                "3": {
+                    "title": "Ajouter un événement ou une période",
+                    "content": "Ce bouton est tout ce dont vous avez besoin pour ajouter un nouvel événement ou une nouvelle époque à la frise chronologique. Le formulaire de configuration vous permettra de définir les détails de l'événement ou de l'époque. Pour commencer, créez une époque."
+                },
+                "name": "Onglet « Chronologie »",
+                "description": "Cette visite guidée vous montrera comment utiliser l'onglet « Chronologie »."
+            }
+        },
+        "default-structure": {
+            "in-progress": "En cours",
+            "completed": "Terminé",
+            "failed": "Échec",
+            "locations": "Lieux",
+            "npcs": "PNJ",
+            "organizations": "Organisations",
+            "history": "Histoire",
+            "bestiary": "Bestiaire"
+        }
+    }
+}

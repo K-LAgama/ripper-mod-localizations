@@ -1,0 +1,19 @@
+{
+    "levels.controls.toggleCylinder.name": "Zylinder anstelle einer Kugel platzieren",
+    "levels.controls.toggleVolumetric.name": "Volumenvorlage",
+    "levelsvolumetrictemplates.settings.volPercent.name": "Volumenprozent",
+    "levelsvolumetrictemplates.settings.volPercent.hint": "Der prozentuale Anteil des Volumens oder der Fläche, der als gültiges Ziel gilt",
+    "levelsvolumetrictemplates.settings.checkCollision.name": "Auf Kollision prüfen",
+    "levelsvolumetrictemplates.settings.checkCollision.hint": "Prüfe, ob es zu einer Kollision mit Wänden und Böden zwischen dem Ursprung der Vorlage und dem Mittelpunkt des Tokens kommt",
+    "levelsvolumetrictemplates.settings.3dtemplatedefault.name": "Volumetrische Vorlagen standardmäßig aktivieren",
+    "levelsvolumetrictemplates.settings.3dtemplatedefault.hint": "Legt fest, ob die volumetrischen Vorlagen beim Laden der Welt aktiviert werden sollen oder nicht",
+    "levelsvolumetrictemplates.settings.handModeDefault.name": "Handmodus standardmäßig aktivieren",
+    "levelsvolumetrictemplates.settings.handModeDefault.hint": "Wenn diese Option aktiviert ist, wird der Handmodus beim Laden der Welt aktiviert. Ist dieser Modus aktiviert, werden Vorlagen standardmäßig auf der Höhe der Hand des Tokens platziert und nicht auf dessen Höhe.",
+    "levelsvolumetrictemplates.settings.dynamicSwap.name": "Dynamischer automatischer Austausch",
+    "levelsvolumetrictemplates.settings.dynamicSwap.hint": "Es wird automatisch ermittelt, ob eine Volumen- oder eine Flächenvorlage verwendet werden soll. Wenn dieser Modus aktiv ist, werden Kreise und Kegel immer als Volumenobjekte dargestellt, und Kegel werden automatisch auf Handhöhe berechnet.",
+    "levelsvolumetrictemplates.settings.debugMode.name": "Debug-Modus",
+    "levelsvolumetrictemplates.settings.debugMode.hint": "Volumen-/Flächenanteile auf den Token beim Platzieren von Vorlagen anzeigen",
+    "levels.controls.handMode.name": "Legen Sie die Vorlagen in Handhöhe bereit",
+    "levels.controls.ignoreSelf.name": "„Selbst“ ignorieren",
+    "levels.controls.ignoreFriendly.name": "Freundliche Charaktere ignorieren"
+}

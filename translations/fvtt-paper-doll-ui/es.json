@@ -1,0 +1,98 @@
+{
+    "fvtt-paper-doll-ui": {
+        "settings": {
+            "globalConfigMenu": {
+                "name": "Configuración global de muñeca de papel",
+                "hint": "Personaliza imágenes vacías y el número de espacios para cada tipo.",
+                "label": "Configurar muñeca de papel"
+            },
+            "hideActorHeaderText": {
+                "name": "Ocultar texto del botón del encabezado del actor",
+                "hint": "Oculta el texto en el botón del encabezado del actor."
+            },
+            "paperDollPosition": {
+                "name": "Posición de la muñeca de papel",
+                "hint": "Posición del muñeco de papel al abrirlo. \nTenga en cuenta que si el espacio no es suficiente a la izquierda o a la derecha, la muñeca de papel se colocará en el medio.",
+                "label": "Posición",
+                "choices": {
+                    "left": "Izquierda",
+                    "right": "Bien",
+                    "center": "Centro"
+                }
+            },
+            "autoOpen": {
+                "name": "Apertura automática",
+                "hint": "Abre automáticamente la muñeca de papel cuando se abre una hoja de actor."
+            },
+            "allowNonOwned": {
+                "name": "Permitir artículos que no son de propiedad",
+                "hint": "Permita que se agreguen a la muñeca de papel artículos que no sean de su propiedad (p. ej., artículos de la barra lateral o del compendio). \nEsta configuración está destinada a sistemas personalizados que no tienen un sistema de inventario y, por lo general, deben omitirse."
+            },
+            "playerOwnedOnly": {
+                "name": "Solo propiedad del jugador",
+                "hint": "Habilite Paper Doll solo para actores propiedad del jugador."
+            }
+        },
+        "app": {
+            "paper-doll": {
+                "title": "Muñeca de papel",
+                "config": "Configuración",
+                "disallowed": "No se permite equipar este artículo en esta ranura."
+            },
+            "actor-config": {
+                "title": "Configuración de actores",
+                "img": {
+                    "label": "Imagen",
+                    "placeholder": "Usar imagen de actor"
+                },
+                "objectFit": {
+                    "label": "Ajuste de imagen",
+                    "contain": "Contener",
+                    "cover": "Cubrir"
+                },
+                "autoOpen": {
+                    "label": "Apertura automática",
+                    "useDefault": "Uso por defecto",
+                    "true": "Siempre",
+                    "false": "Nunca"
+                },
+                "playerOwnedOnly": {
+                    "label": "Solo propiedad del jugador",
+                    "hint": "Habilite Paper Doll solo para actores propiedad del jugador."
+                }
+            },
+            "paper-doll-global-config": {
+                "title": "Configuración global de muñeca de papel",
+                "img": "Icono",
+                "filter": {
+                    "label": "Filtro personalizado",
+                    "hint": "Un script utilizado para crear una ventana con elementos que se pueden equipar en esta ranura. \n'artículo' se refiere al artículo que se está verificando. \nEjemplo: devolver item.type === 'arma';"
+                },
+                "simpleFilter": {
+                    "label": "Filtro básico",
+                    "hint": "Filtre solo los artículos que tengan este tipo."
+                },
+                "how": {
+                    "add": "Agregue una nueva ranura haciendo clic en el botón \"Agregar\".",
+                    "remove": "Elimina una ranura haciendo clic derecho sobre ella.",
+                    "image": "Seleccione una imagen para la ranura haciendo clic izquierdo sobre ella."
+                },
+                "HUE_ROTATE": {
+                    "label": "Matiz"
+                },
+                "EQUIPPED_PATH": {
+                    "label": "Camino equipado"
+                },
+                "MAIN_COLOR": {
+                    "label": "Color"
+                }
+            }
+        },
+        "hotkeys": {
+            "togglePaperDoll": {
+                "name": "Alternar muñeca de papel"
+            }
+        },
+        "flags": {}
+    }
+}

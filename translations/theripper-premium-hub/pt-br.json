@@ -1,0 +1,63 @@
+{
+    "theripper-premium-hub": {
+        "settings": {
+            "autoCheck": {
+                "name": "Verificar se há atualizações na inicialização",
+                "hint": "Verificar automaticamente, ao carregar o mundo, se algum dos meus módulos premium tem atualizações."
+            },
+            "checkDisabled": {
+                "name": "Módulos de verificação não ativados",
+                "hint": "Verifique se há atualizações para os módulos que estão instalados, mas não ativados."
+            }
+        },
+        "tweaks-menu": {
+            "title": "Ajustes",
+            "label": "Configurar ajustes",
+            "hint": "Configure alguns recursos que facilitam o dia a dia, como macros de inicialização, botões para limpar o cabeçalho e ajustes de CSS.",
+            "tabs": {
+                "misc": "Diversos",
+                "startup-macros": "Macros de inicialização",
+                "css-tweaks": "Ajustes em CSS"
+            },
+            "initMacros": {
+                "name": "Macros de inicialização",
+                "hint": "Executar macros ao carregar o mundo. As macros são executadas na ordem em que estão listadas aqui."
+            },
+            "readyMacros": {
+                "name": "Macros prontas",
+                "hint": "Execute as macros quando o cliente estiver pronto. As macros são executadas na ordem em que estão listadas aqui."
+            },
+            "cssTweak": {
+                "name": "Ajustes em CSS",
+                "hint": "Escreva CSS personalizado para modificar os estilos do Foundry ou dos Módulos. São disponibilizados três campos para organização, mas você também pode usar apenas um campo."
+            },
+            "cleanHeaderButtons": {
+                "name": "Botões de cabeçalho limpos",
+                "hint": "Remova o texto dos botões dos cabeçalhos para deixá-los mais simples. Se você usar muitos dos meus módulos, pode acabar com vários botões nos cabeçalhos das janelas; essa opção remove o texto deles. (Requer o LibWrapper)"
+            },
+            "compactSidebar": {
+                "name": "Barra lateral compacta",
+                "hint": "Diminua o tamanho dos itens da barra lateral para que caibam mais itens na tela."
+            },
+            "enableSettingsSwap": {
+                "name": "Configurações obrigatórias do cliente",
+                "hint": "Habilite a opção de alterar as configurações do cliente para as configurações globais. Isso forçará as configurações selecionadas para todos os clientes, e os jogadores também não poderão mais visualizar essas configurações."
+            },
+            "diceTray": {
+                "name": "Bandeja para dados",
+                "hint": "Adicione uma bandeja de dados ao histórico de bate-papo. Isso permitirá que você lance os dados e aplique modificadores a eles."
+            },
+            "autoRotate": {
+                "name": "Rotação automática",
+                "hint": "Gire automaticamente as fichas para que fiquem voltadas para a direção do movimento e para a ficha alvo.",
+                "none": "Desativado",
+                "defaultOn": "Ativado (padrão: ativado)",
+                "defaultOff": "Ativado (padrão: desativado)",
+                "on": "Ativado",
+                "off": "Desativado",
+                "default": "Padrão"
+            }
+        },
+        "wtcNotification": "A configuração de {paramêtero} foi definida como {valor}. Recarregue o jogo para que as alterações entrem em vigor. As alterações na configuração não serão salvas até a próxima recarga."
+    }
+}

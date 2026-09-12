@@ -1,0 +1,42 @@
+{
+    "fvtt-youtube-player": {
+        "TOOLTIP": {
+            "add-to-playlist": "プレイリストに追加する",
+            "create-playlist": "プレイリストの作成",
+            "delete-playlist": "プレイリストの削除",
+            "delete-track": "トラックの削除",
+            "loop": "繰り返しの切り替え",
+            "play": "遊ぶ",
+            "rename-playlist": "名前を変更するには「Enter」を押してください",
+            "search": "YouTube を検索",
+            "stop": "停止",
+            "toggle-playlist": "自動再生の切り替え",
+            "toggle-playlists": "プレイリストの切り替え"
+        },
+        "deletePlaylist": "プレイリストを削除しますか?",
+        "deletePlaylistContent": "このプレイリストを削除してもよろしいですか?",
+        "deleteTrack": "トラックを削除しますか?",
+        "deleteTrackContent": "このトラックを削除してもよろしいですか?",
+        "fetchingTitle": "ビデオのタイトルを取得しています...",
+        "import-export": {
+            "export": "輸出",
+            "import": "輸入",
+            "imported": "プレイリストは正常にインポートされました",
+            "title": "プレイリストのインポート/エクスポート"
+        },
+        "noApiKey": "警告: API キーが設定されていません。\n検索機能にアクセスするには、モジュール設定で YouTube API キーを設定する必要があります。\n詳細については Wiki を確認してください。",
+        "playlistName": "プレイリスト名",
+        "playlistNameContent": "プレイリストをインポートしています。\n新しいプレイリストを作成しますか、それとも現在のプレイリストにトラックを追加しますか?\n現在のプレイリストに追加するには、フィールドを空のままにしておきます。",
+        "settings": {
+            "googleApiKey": {
+                "hint": "リクエストは私のサーバー経由でルーティングされますが、独自の API キーを使用してレート制限を回避できます。 \nhttps://console.developers.google.com/apis/credentials で取得します。",
+                "name": "YouTube APIキー"
+            },
+            "importExport": {
+                "hint": "プレイリストをインポートまたはエクスポートする",
+                "label": "インポート/エクスポートダイアログを開く",
+                "name": "インポート・エクスポート"
+            }
+        }
+    }
+}

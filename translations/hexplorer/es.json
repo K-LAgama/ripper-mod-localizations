@@ -1,0 +1,180 @@
+{
+    "hexplorer": {
+        "request": {
+            "explore": "Explorar",
+            "reveal": "Revelar",
+            "advance-time": "Tiempo de avance",
+            "total-time": "Tiempo total",
+            "roll-tables": "Rollo sobre la mesa",
+            "move": "Mover",
+            "journal-entry": "Revelar página",
+            "not-in-scene": "Heexplorer: Debes estar en la misma escena que el movimiento solicitado para poder confirmarlo.",
+            "player-message": "Solicitud de movimiento enviada al Game Master."
+        },
+        "fog": {
+            "showColor": "Alternar visualización de colores de celda en celdas reveladas"
+        },
+        "scene": {
+            "enable": {
+                "name": "Habilitar Heexplorer"
+            }
+        },
+        "token": {
+            "enable": {
+                "name": "¿Es Heexplorer?"
+            },
+            "revealRadius": {
+                "name": "Radio de revelación",
+                "hint": "El radio del área revelada en hexágonos. \n0 significa que solo se revela el hexágono en el que se encuentra la ficha."
+            },
+            "speed": {
+                "name": "Velocidad",
+                "hint": "La velocidad de movimiento de la ficha de heexplorador en unidades de escena por hora. \nEsto se utiliza para calcular el avance del tiempo."
+            }
+        },
+        "settings": {
+            "hexTime": {
+                "name": "Animación de movimiento",
+                "hint": "El tiempo de animación en milisegundos para mover una celda."
+            },
+            "autoTriggerExplore": {
+                "name": "Acción de exploración de disparo automático",
+                "hint": "Activa automáticamente las actividades de exploración cuando un token ingresa a una celda. \nSi su sistema requiere una acción manual de los jugadores para explorar una celda, esto se puede desactivar."
+            }
+        },
+        "hexplorer-app": {
+            "title": "heexplorador",
+            "brushes": {
+                "legend": "Pinceles",
+                "radius": "Radio del cepillo",
+                "hint": "Haga clic en una celda del lienzo para configurarla y/o guardarla como pincel. \nHaga clic en las celdas con un pincel seleccionado para pintar celdas en lugar de configurarlas.",
+                "apply": {
+                    "title": "Aplicar pincel",
+                    "sameColor": "Mismo color",
+                    "sameColorHint": "Aplicar pincel a todas las celdas del mismo color.",
+                    "sameName": "Mismo nombre",
+                    "sameNameHint": "Aplicar pincel a todas las celdas con el mismo nombre de región",
+                    "tooltip": "Aplicar pincel",
+                    "notification": "Pincel aplicado a {count} celdas."
+                }
+            },
+            "settings": {
+                "legend": "Ajustes",
+                "show-color": {
+                    "label": "Mostrar colores de celda en celdas reveladas"
+                },
+                "always-banner": {
+                    "label": "Mostrar siempre el banner de la región"
+                }
+            },
+            "reset-fow": {
+                "label": "Restablecer celdas reveladas",
+                "title": "¿Restablecer celdas reveladas?",
+                "content": "¿Está seguro de que desea restablecer las celdas reveladas? \nEsta acción no se puede deshacer."
+            },
+            "reset-discovered": {
+                "label": "Restablecer las regiones descubiertas",
+                "title": "¿Restablecer las regiones descubiertas?",
+                "content": "¿Estás seguro de que quieres restablecer las regiones detectadas? El banner volverá a aparecer la primera vez que entres en las regiones."
+            }
+        },
+        "cell-config": {
+            "title": "Configurar celda",
+            "tabs": {
+                "basic": {
+                    "label": "Básico"
+                },
+                "activities": {
+                    "label": "Actividades"
+                },
+                "discover-activities": {
+                    "label": "Explorar actividades",
+                    "hint": "Estas actividades se ejecutarán cuando el heexplorador pase por la celda o finalice su movimiento en ella. \nAlgunas actividades sólo se pueden ejecutar la primera vez que el heexplorador se mueve a la celda."
+                },
+                "explore-activities": {
+                    "label": "Revelar actividades",
+                    "hint": "Estas actividades se ejecutarán cuando la celda se revele por primera vez."
+                }
+            },
+            "revealed": {
+                "label": "Reveló",
+                "hint": "Una celda revelada será visible para los jugadores."
+            },
+            "revealRadius": {
+                "label": "Radio de revelación",
+                "hint": "El radio que se revelará alrededor de esta celda al revelarla. \nUn valor de 0 o más anulará la configuración del token de heexplorer."
+            },
+            "discovered": {
+                "label": "explorado",
+                "hint": "Una celda explorada ha sido atravesada por una ficha de heexplorador."
+            },
+            "execute-only-on-explore": {
+                "label": "Ejecutar solo en explorar",
+                "hint": "Ejecute las actividades de la celda solo si la celda no fue explorada previamente."
+            },
+            "first-time-only": {
+                "label": "Sólo la primera vez",
+                "hint": "Solo ejecute la actividad anterior la primera vez que el heexplorador se mueva a esta celda."
+            },
+            "reveal-tooltip": {
+                "label": "Mostrar información sobre herramientas",
+                "hint": "Otorgue permiso de observador a los jugadores para la página del diario asociada con la información sobre herramientas."
+            },
+            "reveal-journal-entry": {
+                "label": "Revelar entrada de diario",
+                "hint": "Permita que los jugadores abran la entrada del diario asociada con esta celda en la pestaña General."
+            },
+            "reveal-map-notes": {
+                "label": "Revelar notas del mapa",
+                "hint": "Otorgue permiso de observador a los jugadores para todas las notas del mapa de escena presentes dentro de esta celda."
+            },
+            "color": {
+                "label": "Color"
+            },
+            "region": {
+                "label": "Región"
+            },
+            "reveal": {
+                "label": "Revelar células",
+                "hint": "Lista separada por comas de celdas para revelar. \nMayús Haga clic en el lienzo para agregar celdas.",
+                "notification": "Celda agregada a la lista de revelación."
+            },
+            "remove-hidden": {
+                "label": "Quitar Oculto",
+                "hint": "Documentos para eliminar el estado oculto a partir del momento en que se ejecute esta actividad. \nPueden ser luces, mosaicos, sonidos, fichas, etc."
+            },
+            "macros": {
+                "label": "macros",
+                "hint": "Macros que se ejecutarán cuando se ejecute esta actividad."
+            },
+            "speed-multiplier": {
+                "label": "Multiplicador de velocidad"
+            },
+            "roll-tables": {
+                "label": "Mesas rodantes",
+                "hint": "Rollo de Tablas para rodar al entrar o recorrer la celda."
+            },
+            "tooltip": {
+                "label": "Información sobre herramientas"
+            },
+            "journal-entry": {
+                "label": "Entrada de diario",
+                "hint": "Entrada de diario para abrir al hacer clic."
+            },
+            "brush-name": {
+                "label": "Nombre del pincel"
+            },
+            "save-as-brush": {
+                "label": "Guardar como pincel"
+            },
+            "discover-button": {
+                "label": "Activar acción de exploración",
+                "no-token": "No se encontró ninguna ficha de heexplorador."
+            }
+        },
+        "flags": {},
+        "err": {
+            "gridless": "Heexplorer no es compatible con escenas sin cuadrícula. \nSeleccione un tipo de cuadrícula."
+        }
+    }
+}

@@ -1,0 +1,335 @@
+{
+    "puzzle-locks": {
+        "settings": {},
+        "general-lock-config": {
+            "header-buttons": {
+                "copyContentLink": "Copier le lien vers le contenu",
+                "unlock": "Puzzle ouvert"
+            },
+            "title": "Configuration générale des verrous",
+            "permissionWarning": "La propriété par défaut de ce document n'est pas définie sur « Aucune ». Les joueurs pourraient contourner le verrouillage dans certaines circonstances. Il est recommandé de définir la propriété par défaut sur « Aucune ».",
+            "fixPermission": "Corriger la propriété",
+            "label": {
+                "label": "Étiquette",
+                "placeholder": "Système de sécurité pour portes"
+            },
+            "description": {
+                "label": "Description",
+                "placeholder": "Il s'agit d'un système de sécurité pour la porte."
+            },
+            "unlocked": {
+                "label": "Débloqué"
+            },
+            "attempts": {
+                "label": "Tentatives",
+                "notes": "Nombre de tentatives autorisées ; définir cette valeur sur -1 pour un nombre illimité."
+            },
+            "lockType": {
+                "label": "Type de serrure",
+                "configure": "Configurer",
+                "none": "Aucun (désactivé)",
+                "optgroupContext": "Nécessite un contexte",
+                "optgroupNoContext": "Aucun contexte requis",
+                "notes": "Le type de verrou qui sera utilisé pour sécuriser le document. Certains verrous nécessitent des informations contextuelles pour être déverrouillés, tandis que d'autres peuvent être déverrouillés sans aucune information externe."
+            },
+            "unlockSound": {
+                "label": "Débloquer le son"
+            },
+            "interactionSound": {
+                "label": "Son d'interaction"
+            },
+            "backgroundImage": {
+                "label": "Image d'arrière-plan"
+            },
+            "glow": {
+                "label": "Effet lumineux",
+                "notes": "Activez les effets de lueur et d'ombre sur les bordures et le texte ; cela rendra le thème plus adapté aux univers de science-fiction."
+            },
+            "textColor": {
+                "label": "Couleur du texte"
+            },
+            "primaryColor": {
+                "label": "Couleur primaire",
+                "notes": "Certains types de verrous peuvent ne pas utiliser cette couleur. Laissez ce champ vide pour utiliser la couleur par défaut du verrou."
+            },
+            "secondaryColor": {
+                "label": "Couleur secondaire",
+                "notes": "Certains types de verrous peuvent ne pas utiliser cette couleur. Laissez ce champ vide pour utiliser la couleur par défaut du verrou."
+            },
+            "primaryFont": {
+                "label": "Police principale"
+            },
+            "secondaryFont": {
+                "label": "Police secondaire",
+                "notes": "Il se peut que certains types de serrures n'utilisent pas cette police."
+            },
+            "font": {
+                "inherit": "Hériter"
+            },
+            "unlockMacro": {
+                "label": "Déverrouiller la macro",
+                "notes": "Macro à exécuter lorsque le verrouillage est désactivé. Dans cette macro, vous pouvez accéder à « object » pour obtenir le document dont le verrouillage a été désactivé et à « user » pour obtenir le nom de l'utilisateur qui l'a déverrouillé."
+            },
+            "permission": {
+                "label": "À propos des autorisations de déverrouillage",
+                "notes": "Détermine le niveau d'autorisation dont bénéficie un joueur sur le document lorsqu'il le déverrouille, et si cette autorisation doit être accordée uniquement au joueur qui l'a déverrouillé ou à tous les joueurs. Si le document est une porte, ce paramètre sera ignoré et la porte sera déverrouillée.",
+                "noChange": "Pas de changement",
+                "all": "Tous les joueurs",
+                "unlocking": "Débloquer un joueur"
+            }
+        },
+        "number-lock": {
+            "name": "Chiffre/Symbole",
+            "description": "Un verrou fonctionnant comme un code PIN. Le joueur doit saisir le bon code pour déverrouiller le document. Vous pouvez remplacer les chiffres par des symboles ou des images afin de créer un verrou plus en phase avec le thème.",
+            "playerInfo": "Comme il ne s'agit pas d'une énigme, le MJ devra donner aux joueurs des indices ou des instructions pour qu'ils puissent saisir le code correct.",
+            "code": {
+                "label": "Code"
+            },
+            "keypad": {
+                "label": "Clavier numérique"
+            }
+        },
+        "password-lock": {
+            "name": "Mot de passe",
+            "description": "Un simple verrouillage par mot de passe. L'utilisateur doit saisir le mot de passe correct pour déverrouiller le document.",
+            "playerInfo": "Comme il ne s'agit pas d'une énigme, le MJ devra donner aux joueurs des indices ou des instructions pour qu'ils puissent saisir le mot de passe correct.",
+            "password": {
+                "label": "Mot de passe",
+                "placeholder": "a$$w0rd"
+            }
+        },
+        "item-lock": {
+            "name": "Article",
+            "description": "Un cadenas qui oblige le joueur à glisser-déposer un ou plusieurs objets dans les emplacements appropriés pour déverrouiller le document.",
+            "playerInfo": "Pour résoudre cette énigme, vous pouvez soit fournir aux joueurs des indices contextuels ou des astuces leur permettant de savoir où placer chaque objet, soit utiliser des images spécifiques pour les emplacements, qui leur donneront les informations nécessaires pour deviner les bons objets.",
+            "item": {
+                "label": "Nom de l'article"
+            },
+            "itemImage": {
+                "label": "Image de la machine à sous"
+            },
+            "deleteItems": {
+                "label": "Supprimer des éléments",
+                "notes": "Si cette case est cochée, les objets seront supprimés de l'inventaire du joueur lorsque le cadenas sera déverrouillé."
+            }
+        },
+        "switches-lock": {
+            "name": "Commutateurs",
+            "description": "Un verrou qui oblige le joueur à régler une série de commutateurs binaires dans la bonne position pour déverrouiller le document.",
+            "playerInfo": "Comme il ne s'agit pas d'une énigme, le MJ devra donner aux joueurs des indices ou des instructions pour qu'ils puissent configurer correctement les interrupteurs.",
+            "switchesSolution": {
+                "label": "Configuration des commutateurs",
+                "notes": "La solution correspond à la configuration des interrupteurs au format « 0110 ». Chaque chiffre représente un interrupteur : 0 signifie « éteint » et 1 signifie « allumé ». Vous pouvez avoir autant d'interrupteurs que vous le souhaitez."
+            },
+            "showSwitches": {
+                "label": "Afficher les commutateurs",
+                "notes": "Afficher ou non les boutons de l'interrupteur. Si cette option est désactivée, seuls les voyants d'état (marche/arrêt) s'afficheront."
+            }
+        },
+        "cryptex-lock": {
+            "name": "Cryptex",
+            "description": "Une serrure qui oblige le joueur à faire tourner un ensemble de cylindres jusqu'à la bonne position afin de trouver la solution. Des emojis ou des glyphes peuvent être utilisés pour représenter les caractères figurant sur les cylindres. Chaque cylindre peut comporter un ensemble de caractères différent.",
+            "playerInfo": "Pour résoudre cette énigme, vous pouvez soit fournir aux joueurs des indices contextuels externes leur permettant de reconnaître certains ou tous les caractères, soit, en limitant le nombre de caractères par cylindre, laisser les joueurs deviner la solution par essais et erreurs.",
+            "solution": {
+                "label": "Solution"
+            },
+            "cylinder": {
+                "label": "Cylindre",
+                "notes": "Le cylindre utilisé par le cryptex. Chaque caractère du cylindre doit être séparé par une virgule."
+            },
+            "glyphs": {
+                "label": "Glyphes",
+                "notes": "Les glyphes pouvant être utilisés dans le cryptex. Chaque glyphe doit être séparé par une virgule."
+            }
+        },
+        "sudoku-lock": {
+            "name": "Sudoku",
+            "description": "Un verrou qui oblige le joueur à résoudre un sudoku pour déverrouiller le document. Les chiffres par défaut peuvent être remplacés par des images ou des glyphes afin de créer un verrou plus en phase avec le thème.",
+            "playerInfo": "Pour résoudre cette énigme, les joueurs devront disposer de connaissances générales sur les règles du sudoku ; vous pouvez également leur donner un indice ou des instructions pour les aider à la résoudre.",
+            "generate": "Générer un Sudoku",
+            "difficulty": {
+                "label": "Difficulté"
+            },
+            "grid": {
+                "4": "4x4",
+                "9": "9 × 9",
+                "label": "Grille"
+            },
+            "sudoku": {
+                "label": "Sudoku"
+            },
+            "key": {
+                "label": "Clé"
+            }
+        },
+        "image-wheel": {
+            "name": "Roue d'images",
+            "description": "Une serrure qui oblige le joueur à faire tourner un ensemble d'anneaux concentriques jusqu'à la bonne position afin d'aligner l'image.",
+            "playerInfo": "Aucun contexte extérieur n'est nécessaire pour résoudre cette énigme : il suffit aux joueurs de faire tourner les roues jusqu'à ce que l'image soit alignée.",
+            "image": {
+                "label": "Image"
+            },
+            "wheelCount": {
+                "label": "Nombre de roues"
+            },
+            "angleStep": {
+                "label": "Marche en angle"
+            },
+            "fixed": {
+                "label": "Vélo à pignon fixe",
+                "notes": "La roue qui ne doit pas être tournée. Où 1 correspond à la roue la plus à l'extérieur."
+            }
+        },
+        "mastermind-lock": {
+            "name": "Le cerveau de l'opération",
+            "description": "Un cadenas qui oblige le joueur à deviner la bonne combinaison de couleurs ou de lettres pour déverrouiller le document. À chaque tentative de déverrouillage, le joueur reçoit des indications sur le nombre de couleurs ou de lettres correctes et correctement placées. Le vert indique une couleur et une position correctes, le jaune indique une couleur correcte mais une position erronée, et le rouge indique une couleur incorrecte.",
+            "playerInfo": "Pour résoudre cette énigme, les joueurs peuvent s'appuyer sur les retours d'expérience tirés de leurs tentatives précédentes afin d'émettre des hypothèses éclairées sur la bonne combinaison. Bien que les connaissances méta ne soient pas strictement nécessaires, elles peuvent aider les joueurs à formuler des hypothèses plus fondées.",
+            "reset": "Réinitialiser",
+            "solution": {
+                "label": "Solution",
+                "notes": "La solution pour le casse-tête « Mastermind ». Chaque couleur ou lettre doit être séparée par une virgule. Vous pouvez utiliser des couleurs CSS telles que « red » ou des codes hexadécimaux tels que « #ff0000 »."
+            },
+            "pipOptions": {
+                "label": "Piquets",
+                "notes": "Les couleurs ou les lettres que le joueur peut utiliser pour deviner la solution. Chaque couleur ou lettre doit être séparée par une virgule. Vous pouvez utiliser des couleurs CSS telles que « red » ou des codes hexadécimaux tels que « #ff0000 »."
+            }
+        },
+        "fill-blanks-lock": {
+            "name": "Complétez les espaces vides",
+            "description": "Un verrou qui oblige le joueur à compléter les espaces vides d'un texte pour déverrouiller le document. Le joueur doit saisir les caractères corrects dans le bon ordre.",
+            "playerInfo": "Pour résoudre cette énigme, les joueurs peuvent s'appuyer sur le contexte de l'énigme pour remplir les cases vides. Vous pouvez également leur donner des indices ou des instructions pour les aider à la résoudre.",
+            "solution": {
+                "label": "Solution",
+                "notes": "La solution à l'exercice de type « remplir les espaces vides ». Il devrait s'agir du texte complet, avec les espaces vides remplis.",
+                "placeholder": "Le renard brun et vif saute par-dessus le chien paresseux."
+            },
+            "text": {
+                "label": "Texte",
+                "notes": "Le texte comportant les espaces vides que le joueur doit compléter. Utilisez des traits de soulignement pour représenter les espaces vides.",
+                "placeholder": "Le renard brun _____ saute par-dessus le chien ____."
+            },
+            "caseSensitive": {
+                "label": "Distinction entre majuscules et minuscules"
+            }
+        },
+        "mosaic-lock": {
+            "name": "Mosaïque",
+            "description": "Un verrou qui oblige le joueur à résoudre un puzzle de mosaïque pour déverrouiller le document. Le joueur doit cliquer sur les tuiles pour les faire pivoter et reconstituer l'image.",
+            "playerInfo": "Aucun contexte extérieur n'est nécessaire pour résoudre ce casse-tête : il suffit aux joueurs de faire pivoter les pièces jusqu'à ce que l'image soit complète.",
+            "mosaicImage": {
+                "label": "Image en mosaïque",
+                "notes": "L'image que le joueur doit compléter. Il est recommandé d'utiliser une image carrée pour obtenir de meilleurs résultats."
+            },
+            "mosaicSize": {
+                "label": "Taille de la mosaïque",
+                "notes": "Le nombre de lignes et de colonnes de la mosaïque."
+            }
+        },
+        "sound-lock": {
+            "name": "Mélodie",
+            "description": "Une serrure qui oblige le joueur à écouter une mélodie et à saisir la bonne séquence de notes pour déverrouiller le document.",
+            "playerInfo": "Même si aucune connaissance extérieure n'est nécessaire pour résoudre cette énigme, les joueurs devront avoir une bonne oreille musicale pour y parvenir. Ceux qui maîtrisent mieux la théorie musicale n'auront aucun mal à résoudre cette énigme.",
+            "sequence": {
+                "label": "Séquence",
+                "notes": "La séquence de notes que l'utilisateur doit saisir pour déverrouiller le document. Chaque note doit être séparée par une virgule. Vous pouvez utiliser les notes suivantes : Do, Do dièse, Ré, Ré dièse, Mi, Fa, Fa dièse, Sol, Sol dièse, La, La dièse, si. Vous pouvez également utiliser la notation suivante pour augmenter ou diminuer l'octave : +Do, -Do, ++La, --Si. Pour définir une durée personnalisée par note (en millisecondes), vous pouvez utiliser la notation suivante : Do500, Ré#1000."
+            },
+            "chordDuration": {
+                "label": "Durée",
+                "notes": "La durée de chaque note, exprimée en millisecondes."
+            },
+            "pauseBetweenNotes": {
+                "label": "Pause entre les notes",
+                "notes": "Durée de la pause entre chaque note, exprimée en millisecondes."
+            }
+        },
+        "fifteen-lock": {
+            "name": "Carreaux coulissants",
+            "description": "Une serrure qui oblige le joueur à résoudre un casse-tête à tuiles pour déverrouiller le document. Le joueur doit faire glisser les tuiles pour reconstituer l'image correcte. La tuile vide doit se trouver dans le coin inférieur droit pour déverrouiller le document.",
+            "playerInfo": "Aucun contexte extérieur n'est nécessaire pour résoudre ce puzzle ; les joueurs n'ont qu'à faire glisser les tuiles jusqu'à ce que l'image soit complète.",
+            "shuffleDialog": "Mouvements aléatoires :",
+            "image": {
+                "label": "Image",
+                "notes": "L'image que le joueur doit reconstituer en faisant glisser les tuiles. Il est recommandé d'utiliser une image carrée pour obtenir de meilleurs résultats."
+            },
+            "size": {
+                "label": "Grille",
+                "notes": "Le nombre de lignes et de colonnes du puzzle coulissant."
+            }
+        },
+        "four-by-four-lock": {
+            "name": "Pions et étoiles",
+            "description": "Un casse-tête dans lequel le joueur doit placer des pions sur une grille afin de former un motif spécifique. Certaines cases contiennent des étoiles qui doivent être recouvertes par des pions ; le nombre d’étoiles à recouvrir est indiqué ci-dessous et dépend de la taille de la grille. Chaque ligne et chaque colonne doit contenir exactement le nombre de pions indiqué dans l’en-tête de la colonne ou de la ligne correspondante.",
+            "playerInfo": "Si les étoiles sont activées, les joueurs auront besoin d'un indice pour savoir combien d'étoiles ils doivent recouvrir. Sinon, il est possible de résoudre le casse-tête sans aucune information extérieure.",
+            "pawnImage": {
+                "label": "Image du pion",
+                "notes": "L'image qui représente les pions."
+            },
+            "starImage": {
+                "label": "Image d'une étoile",
+                "notes": "L'image qui représente les étoiles."
+            },
+            "noStars": {
+                "label": "Ignorer les étoiles",
+                "notes": "Si cette case est cochée, les étoiles seront supprimées et le joueur n'aura plus qu'à placer les pions aux bons emplacements."
+            },
+            "gridSize": {
+                "label": "Taille de la grille",
+                "notes": "Le nombre de lignes et de colonnes de la grille."
+            },
+            "generate": "Générer un puzzle",
+            "puzzleGrid": {
+                "label": "Grille de puzzle",
+                "notes": "La grille du puzzle. Veuillez respecter la syntaxe d'un puzzle généré si vous souhaitez créer le vôtre. Ci-dessous, la grille est présentée dans son état résolu : 0 correspond à une case vide, 1 à un pion, 2 à une étoile et 3 à un pion placé sur une étoile."
+            },
+            "pawnNumber": "Pions à placer",
+            "starNumber": "Étoiles à couvrir"
+        },
+        "match-lock": {
+            "name": "Association mot/image",
+            "description": "Un verrou qui oblige le joueur à trouver les mots correspondants pour déverrouiller le document. Si un mot secret est défini, les lettres incorrectes seront barrées et les lettres restantes formeront le mot secret. Dans ce cas, les joueurs doivent saisir le mot secret pour déverrouiller le document.",
+            "playerInfo": "Pour résoudre cette énigme, les joueurs peuvent s'appuyer sur le contexte de l'énigme pour associer les mots. Vous pouvez également leur donner des indices ou des instructions pour les aider à la résoudre.",
+            "enterSecretWord": "Entrez le mot secret.",
+            "matchTable": {
+                "label": "Tableau des matchs",
+                "notes": "Le tableau contient les mots à associer ; vous pouvez également utiliser des chemins d'accès à des images à la place des mots. La première colonne contient les mots à associer, la deuxième colonne les mots auxquels ils doivent correspondre. Chaque paire de mots doit être séparée par le caractère « | » (barre verticale).\nLa colonne de gauche s'affichera telle quelle, tandis que celle de droite sera mélangée."
+            },
+            "secretWord": {
+                "label": "Mot secret",
+                "notes": "Si cette option est activée, des lettres aléatoires seront dispersées dans la zone centrale du puzzle. Une fois que le joueur aura trouvé les mots corrects, les lettres incorrectes seront barrées et les lettres restantes formeront le mot secret."
+            },
+            "dictionary": {
+                "label": "Dictionnaire",
+                "notes": "Le dictionnaire qui sera utilisé pour les lettres aléatoires."
+            }
+        },
+        "flags": {},
+        "attempts": "Tentatives restantes",
+        "headerConfig": "Serrure à casse-tête",
+        "unlocked": "Débloqué",
+        "how-to": "Comment ça marche ?",
+        "how-to-player": "Instructions pour les joueurs",
+        "chatMessage": "tente de déverrouiller",
+        "sidebar-buttons": {
+            "unlock": "Tenter le déverrouillage",
+            "configure": "Configurer le verrouillage",
+            "shareToChat": "Partager dans la discussion",
+            "zoomPlus": "Agrandir",
+            "zoomMinus": "Réduire l'échelle",
+            "shuffle": "Puzzle de mélange",
+            "close": "Fermer"
+        },
+        "notifications": {
+            "noLock": "Ce document n'a pas été verrouillé.",
+            "alreadyUnlocked": "Ce document est déjà déverrouillé.",
+            "noLockSelected": "Aucun type de verrouillage n'a été sélectionné.",
+            "unlocked": "Débloqué.",
+            "noGM": "Vous devez être connecté en tant que GM pour pouvoir débloquer ce document.",
+            "failedAttempt": "Échec du déverrouillage.",
+            "contentLinkCopied": "Le lien vers le contenu a été copié dans le presse-papiers.",
+            "locked": "Ce document est verrouillé. En tant que MJ, vous pouvez l'ouvrir normalement.",
+            "resetSuccess": "La réinitialisation du puzzle s'est déroulée avec succès.",
+            "ownershipFixed": "La propriété par défaut est définie sur « Aucune ».",
+            "noAttempts": "Il ne reste plus aucune tentative."
+        }
+    }
+}

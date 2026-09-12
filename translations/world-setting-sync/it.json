@@ -1,0 +1,87 @@
+{
+    "world-setting-sync": {
+        "settings": {
+            "autoCheckSync": {
+                "hint": "Se abilitato, questo mondo controllerà automaticamente le modifiche alle impostazioni agnostiche e di sistema all'avvio.",
+                "name": "Sincronizzazione controllo automatico"
+            },
+            "autoPerformSync": {
+                "hint": "Se abilitato, questo mondo salverà automaticamente le impostazioni agnostiche e di sistema su file all'avvio.",
+                "name": "Esegui automaticamente la sincronizzazione"
+            },
+            "exclusionList": {
+                "core": "Nucleo",
+                "coreSystem": "Nucleo",
+                "hint": "Apri l'elenco di esclusione per escludere moduli, utenti e impostazioni dalla sincronizzazione.",
+                "info": "Questo elenco verrà utilizzato per escludere moduli, sistema e impostazioni principali dalla sincronizzazione.<br>In un mondo Master, le esclusioni non verranno salvate nel file di sincronizzazione.<br>In un mondo non Master, le esclusioni verranno ignorate quando \ncaricamento delle impostazioni dal file di sincronizzazione.",
+                "label": "Apri elenco esclusioni",
+                "modules": "Moduli",
+                "name": "Elenco di esclusione",
+                "title": "Elenco di esclusione",
+                "users": "Utenti"
+            },
+            "masterAgnostic": {
+                "hint": "Se abilitato, questo mondo sarà il mondo principale per impostazioni, utenti e moduli indipendenti dal sistema.",
+                "name": "Master World è per ambienti agnostici?"
+            },
+            "masterSystem": {
+                "hint": "Se abilitato, questo mondo sarà il mondo principale per le impostazioni di sistema, gli utenti e i moduli di sistema.",
+                "name": "Master World è per le impostazioni di sistema?"
+            },
+            "settingsSync": {
+                "hint": "Aprire il gestore della sincronizzazione per salvare o caricare le impostazioni agnostiche e di sistema.",
+                "label": "Apri Gestione sincronizzazione",
+                "name": "Gestore della sincronizzazione"
+            },
+            "silentUpload": {
+                "hint": "Se abilitato, questo mondo non ti avviserà quando salvi le impostazioni agnostiche e di sistema su file.",
+                "name": "Caricamento silenzioso"
+            },
+            "syncModules": {
+                "hint": "Se abilitato, questo mondo sincronizzerà i moduli attivi.",
+                "name": "Sincronizza moduli"
+            },
+            "syncSettings": {
+                "hint": "Se abilitato, questo mondo sincronizzerà le impostazioni.",
+                "name": "Sincronizza impostazioni"
+            },
+            "syncUsers": {
+                "hint": "Se abilitato, questo mondo sincronizzerà gli utenti tra.",
+                "name": "Sincronizza gli utenti"
+            }
+        },
+        "settings-sync": {
+            "actions": {
+                "saveConfigurations": "Salva manualmente le impostazioni su file",
+                "syncAgnostic": "Sincronizzazione agnostica",
+                "syncAll": "Sincronizza tutto",
+                "syncModules": "Moduli di sincronizzazione",
+                "syncSystem": "Sistema di sincronizzazione",
+                "syncUsers": "Sincronizza utenti"
+            },
+            "activate": "Attivare",
+            "apply": "Fare domanda a?",
+            "change": "Modifica",
+            "confirm": {
+                "content": "Sei sicuro di voler procedere? \nQuesta operazione non è reversibile.",
+                "syncAgnostic": "Sincronizza le impostazioni agnostiche",
+                "syncAll": "Sincronizza tutto",
+                "syncModules": "Sincronizza moduli",
+                "syncSystem": "Sincronizza le impostazioni di sistema",
+                "syncUsers": "Sincronizza gli utenti"
+            },
+            "deactivate": "Disattivare",
+            "expand": "Fare clic per espandere",
+            "namespace": "Spazio dei nomi",
+            "setting": "Collocamento",
+            "tabs": {
+                "modules": "Moduli",
+                "settingsAgnostic": "Impostazioni agnostiche",
+                "settingsSystem": "Impostazioni di sistema",
+                "users": "Utenti"
+            },
+            "title": "Sincronizzazione delle impostazioni",
+            "user": "Utente"
+        }
+    }
+}

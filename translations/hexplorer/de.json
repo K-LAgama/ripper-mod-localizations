@@ -1,0 +1,180 @@
+{
+    "hexplorer": {
+        "request": {
+            "explore": "Erkunden",
+            "reveal": "Aufdecken",
+            "advance-time": "Vorlaufzeit",
+            "total-time": "Gesamtzeit",
+            "roll-tables": "Auf dem Tisch rollen",
+            "move": "Bewegen",
+            "journal-entry": "Seite enthüllen",
+            "not-in-scene": "Hexplorer: Sie müssen sich in derselben Szene wie die angeforderte Bewegung befinden, um diese zu bestätigen.",
+            "player-message": "Bewegungswunsch wird an den Game Master weitergeleitet."
+        },
+        "fog": {
+            "showColor": "Schalten Sie die Anzeige der Zellenfarben in angezeigten Zellen um"
+        },
+        "scene": {
+            "enable": {
+                "name": "Aktivieren Sie Hexplorer"
+            }
+        },
+        "token": {
+            "enable": {
+                "name": "Ist Hexplorer?"
+            },
+            "revealRadius": {
+                "name": "Radius anzeigen",
+                "hint": "Der Radius des aufgedeckten Bereichs in Hexfeldern. \n0 bedeutet, dass nur das Hexfeld angezeigt wird, auf dem sich der Token befindet."
+            },
+            "speed": {
+                "name": "Geschwindigkeit",
+                "hint": "Die Bewegungsgeschwindigkeit des Hexlorer-Tokens in Szeneneinheiten pro Stunde. \nDies wird zur Berechnung des Zeitvorlaufs verwendet."
+            }
+        },
+        "settings": {
+            "hexTime": {
+                "name": "Bewegungsanimation",
+                "hint": "Die Animationszeit in Millisekunden zum Verschieben einer Zelle."
+            },
+            "autoTriggerExplore": {
+                "name": "Automatische Trigger-Erkundungsaktion",
+                "hint": "Lösen Sie die Erkundungsaktivitäten automatisch aus, wenn ein Token in eine Zelle verschoben wird. \nWenn Ihr System eine manuelle Aktion von Spielern erfordert, um eine Zelle zu erkunden, kann dies deaktiviert werden."
+            }
+        },
+        "hexplorer-app": {
+            "title": "Hexplorer",
+            "brushes": {
+                "legend": "Pinsel",
+                "radius": "Pinselradius",
+                "hint": "Klicken Sie auf eine Zelle auf der Leinwand, um sie zu konfigurieren und/oder als Pinsel zu speichern. \nKlicken Sie mit einem ausgewählten Pinsel auf Zellen, um Zellen zu malen, anstatt sie zu konfigurieren.",
+                "apply": {
+                    "title": "Pinsel auftragen",
+                    "sameColor": "Gleiche Farbe",
+                    "sameColorHint": "Tragen Sie den Pinsel auf alle Zellen mit der gleichen Farbe auf",
+                    "sameName": "Gleicher Name",
+                    "sameNameHint": "Wenden Sie den Pinsel auf alle Zellen mit demselben Regionsnamen an",
+                    "tooltip": "Pinsel auftragen",
+                    "notification": "Pinsel auf {count} Zellen aufgetragen."
+                }
+            },
+            "settings": {
+                "legend": "Einstellungen",
+                "show-color": {
+                    "label": "Zellenfarben in sichtbaren Zellen anzeigen"
+                },
+                "always-banner": {
+                    "label": "Regionsbanner immer anzeigen"
+                }
+            },
+            "reset-fow": {
+                "label": "Aufgedeckte Zellen zurücksetzen",
+                "title": "Aufgedeckte Zellen zurücksetzen?",
+                "content": "Sind Sie sicher, dass Sie die angezeigten Zellen zurücksetzen möchten? \nDiese Aktion kann nicht rückgängig gemacht werden."
+            },
+            "reset-discovered": {
+                "label": "Entdeckte Regionen zurücksetzen",
+                "title": "Entdeckte Regionen zurücksetzen?",
+                "content": "Möchten Sie die erkannten Regionen wirklich zurücksetzen? Das Banner wird beim ersten Betreten der Regionen erneut angezeigt."
+            }
+        },
+        "cell-config": {
+            "title": "Zelle konfigurieren",
+            "tabs": {
+                "basic": {
+                    "label": "Grundlagen"
+                },
+                "activities": {
+                    "label": "Aktivitäten"
+                },
+                "discover-activities": {
+                    "label": "Entdecken Sie Aktivitäten",
+                    "hint": "Diese Aktivitäten werden ausgeführt, wenn der Hexlorer die Zelle passiert oder seine Bewegung darin beendet. \nEinige Aktivitäten können nur ausgeführt werden, wenn der Hexlorer zum ersten Mal in die Zelle wechselt."
+                },
+                "explore-activities": {
+                    "label": "Aktivitäten aufdecken",
+                    "hint": "Diese Aktivitäten werden ausgeführt, wenn die Zelle zum ersten Mal geöffnet wird."
+                }
+            },
+            "revealed": {
+                "label": "Enthüllt",
+                "hint": "Eine aufgedeckte Zelle wird für die Spieler sichtbar sein."
+            },
+            "revealRadius": {
+                "label": "Radius anzeigen",
+                "hint": "Der Radius, der beim Aufdecken um diese Zelle herum angezeigt werden soll. \nEin Wert von 0 oder mehr überschreibt die Hexlorer-Token-Einstellung."
+            },
+            "discovered": {
+                "label": "Erkundet",
+                "hint": "Eine erkundete Zelle wurde von einem Hexlorer-Token durchquert."
+            },
+            "execute-only-on-explore": {
+                "label": "Nur beim Erkunden ausführen",
+                "hint": "Führen Sie die Zellaktivitäten nur aus, wenn die Zelle zuvor nicht erkundet wurde."
+            },
+            "first-time-only": {
+                "label": "Nur beim ersten Mal",
+                "hint": "Führen Sie die obige Aktivität nur aus, wenn der Hexlorer zum ersten Mal in diese Zelle wechselt."
+            },
+            "reveal-tooltip": {
+                "label": "Tooltip anzeigen",
+                "hint": "Erteilen Sie den Spielern die Beobachterberechtigung für die mit dem Tooltip verknüpfte Tagebuchseite."
+            },
+            "reveal-journal-entry": {
+                "label": "Journaleintrag aufdecken",
+                "hint": "Erlauben Sie Spielern, den mit dieser Zelle verknüpften Journaleintrag auf der Registerkarte „Allgemein“ zu öffnen."
+            },
+            "reveal-map-notes": {
+                "label": "Kartennotizen anzeigen",
+                "hint": "Erteilen Sie den Spielern die Beobachterberechtigung für alle in dieser Zelle vorhandenen Szenenkartennotizen."
+            },
+            "color": {
+                "label": "Farbe"
+            },
+            "region": {
+                "label": "Region"
+            },
+            "reveal": {
+                "label": "Zellen aufdecken",
+                "hint": "Durch Kommas getrennte Liste der anzuzeigenden Zellen. \nUmschalttaste Klicken Sie auf die Leinwand, um Zellen hinzuzufügen.",
+                "notification": "Zelle zur Enthüllungsliste hinzugefügt."
+            },
+            "remove-hidden": {
+                "label": "Versteckt entfernen",
+                "hint": "Dokumente zum Entfernen des ausgeblendeten Status, wenn diese Aktivität ausgeführt wird. \nKann aus Lichtern, Kacheln, Geräuschen, Spielsteinen usw. bestehen."
+            },
+            "macros": {
+                "label": "Makros",
+                "hint": "Makros, die ausgeführt werden sollen, wenn diese Aktivität ausgeführt wird."
+            },
+            "speed-multiplier": {
+                "label": "Geschwindigkeitsmultiplikator"
+            },
+            "roll-tables": {
+                "label": "Rolltische",
+                "hint": "Rolltische zum Rollen beim Betreten oder Durchqueren der Zelle."
+            },
+            "tooltip": {
+                "label": "Tooltip"
+            },
+            "journal-entry": {
+                "label": "Tagebucheintrag",
+                "hint": "Journaleintrag zum Öffnen per Klick."
+            },
+            "brush-name": {
+                "label": "Pinselname"
+            },
+            "save-as-brush": {
+                "label": "Als Pinsel speichern"
+            },
+            "discover-button": {
+                "label": "Erkunden-Aktion auslösen",
+                "no-token": "Kein Hexlorer-Token gefunden."
+            }
+        },
+        "flags": {},
+        "err": {
+            "gridless": "Hexplorer ist nicht mit rasterlosen Szenen kompatibel. \nBitte wählen Sie einen Rastertyp aus."
+        }
+    }
+}

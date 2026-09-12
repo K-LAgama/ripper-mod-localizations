@@ -1,0 +1,67 @@
+{
+    "tidbits": {
+        "message": {
+            "didYouKnow": "Le saviez-vous ?",
+            "tidbits": "Astuces",
+            "reroll": "Une autre !"
+        },
+        "settings": {
+            "showChatMessage": {
+                "name": "Afficher le message dans le chat",
+                "hint": "Afficher une astuce dans le chat comme un chuchotement à la connexion",
+                "choices": {
+                    "everyone": "Tout le monde",
+                    "players": "Joueurs",
+                    "gamemaster": "Maître du jeu",
+                    "none": "Aucun"
+                }
+            },
+            "showLoadingScreen": {
+                "name": "Afficher l'écran de chargement",
+                "hint": "Afficher une astuce pendant le chargement d'une scène",
+                "choices": {
+                    "everyone": "Tout le monde",
+                    "players": "Joueurs",
+                    "gamemaster": "Maître du jeu",
+                    "none": "Aucun"
+                }
+            },
+            "startupLoadingScreen": {
+                "name": "Durée de l'astuce au démarrage",
+                "hint": "Temps en secondes pour masquer l'astuce de démarrage, 0 pour désactiver"
+            },
+            "loadingScreenMinimumDuration": {
+                "name": "Délai de disparition de l'écran de chargement",
+                "hint": "Le temps en secondes pour maintenir l'écran de chargement visible après le chargement de la scène"
+            },
+            "loadingScreenGradient": {
+                "name": "Dégradé de l'écran de chargement",
+                "hint": "Couvrir la moitié de l'image avec un dégradé pour rendre le texte plus lisible et appliquer un filtre de flou à l'image"
+            },
+            "pauseText": {
+                "name": "Texte de pause",
+                "hint": "Afficher des astuces au lieu du texte 'Jeu en pause'"
+            },
+            "useDefaultSources": {
+                "name": "Utiliser les sources par défaut",
+                "hint": "Utiliser les sources d'astuces par défaut"
+            },
+            "customSource": {
+                "name": "Source personnalisée",
+                "hint": "Fichier JSON personnalisé à utiliser comme source d'astuces, laisser vide pour désactiver."
+            },
+            "imageSource": {
+                "name": "Source d'image",
+                "hint": "Dossier à utiliser dans les écrans de chargement, laisser vide pour désactiver."
+            },
+            "autoCycle": {
+                "name": "Cycle automatique",
+                "hint": "Temps en secondes après lequel parcourir les informations dans le texte de pause. \n0 pour désactiver."
+            },
+            "didYouKnowText": {
+                "name": "Saviez-vous le texte",
+                "hint": "Texte personnalisé à utiliser à la place du « Le saviez-vous ? » par défaut. \ntexte."
+            }
+        }
+    }
+}

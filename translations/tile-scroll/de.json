@@ -1,0 +1,16 @@
+{
+    "tile-scroll": {
+        "flags": {
+            "header": "Kachel-Bildlauf",
+            "enableScroll": "Scrollen",
+            "enabled": "Aktiviert",
+            "scrollSpeed": "Geschwindigkeit",
+            "scrollDirection": "Richtung",
+            "enableRotate": "Drehung aktivieren",
+            "repeat": "Texturwiederholung",
+            "pivot": "Drehpunkt",
+            "offset": "Versatz",
+            "parallax": "Parallax-Stärke"
+        }
+    }
+}

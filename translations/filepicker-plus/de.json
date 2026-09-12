@@ -1,0 +1,54 @@
+{
+    "filepicker-plus": {
+        "settings": {
+            "sidebarFilepicker": {
+                "name": "Sidebar-Registerkarte \"Filepicker\" aktivieren",
+                "hint": "Fügen Sie der Seitenleiste eine neue Registerkarte hinzu, mit der Sie Dateien durchsuchen und hochladen sowie Bilder/3D-Modelle per Drag & Drop auf die Szene ziehen können."
+            },
+            "placeastokens": {
+                "name": "Bilder als Token platzieren",
+                "hint": "Wenn Sie ein Bild auf die Szene ziehen, platzieren Sie es als Token anstelle einer Kachel, wenn Sie sich auf der Token-Ebene befinden (nur Seitenleistenauswahl)"
+            },
+            "size": {
+                "name": "Filepicker Größe",
+                "hint": "Breite des Filepickers",
+                "choices": {
+                    "default": "Standard",
+                    "large": "Groß",
+                    "extraLarge": "Extra groß",
+                    "massive": "Massiv"
+                }
+            },
+            "imagepreview": {
+                "name": "Bild-Video-Vorschau",
+                "hint": "Anzeige der Bild- oder Videovorschau, wenn man mit dem Mauszeiger über die Datei fährt"
+            },
+            "threepreview": {
+                "name": "3D-Vorschau",
+                "hint": "3D-Vorschauen anzeigen, erfordert 3D-Porträts. Wenn diese Einstellung deaktiviert ist, wird stattdessen die 3D-Datei-Miniaturansicht verwendet (falls vorhanden)."
+            },
+            "audiopreview": {
+                "name": "Audio-Vorschau",
+                "hint": "Abspielen einer Audiovorschau, wenn der Mauszeiger über Sounds in der Dateiauswahl bewegt wird"
+            },
+            "audiopreviewdelay": {
+                "name": "Audio-Vorschauverzögerung",
+                "hint": "Verzögerung in ms, bevor der Vorhörton abgespielt wird"
+            },
+            "audiopreviewvol": {
+                "name": "Lautstärke der Audiovorschau",
+                "hint": "Lautstärke des Vorhörtons"
+            },
+            "enablecolortheme": {
+                "name": "Farbthema einschalten",
+                "hint": "Aktivieren Sie das dunkle Farbthema für den Filepicker. Wenn Sie ein Modul oder System haben, das ein Thema auf den Filepicker anwendet, möchten Sie dies vielleicht deaktivieren."
+            }
+        },
+        "app": {},
+        "flags": {},
+        "sidebar": {
+            "no-filepicker": "Der Dateibrowser ist in einem separaten Fenster geöffnet. Der Dateibrowser kehrt in die Seitenleiste zurück, sobald das Fenster geschlossen wird.",
+            "open": "Die Seitenleiste des Dateibrowsers ist aktiv, der ausgewählte Dateibrowser wurde in der Seitenleiste geöffnet."
+        }
+    }
+}

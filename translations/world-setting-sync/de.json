@@ -1,0 +1,88 @@
+{
+    "world-setting-sync": {
+        "settings": {
+            "masterAgnostic": {
+                "name": "Ist Master World für agnostische Einstellungen?",
+                "hint": "Wenn aktiviert, ist diese Welt die Masterwelt für systemunabhängige Einstellungen, Benutzer und systemunabhängige Module."
+            },
+            "masterSystem": {
+                "name": "Ist Master World für Systemeinstellungen?",
+                "hint": "Wenn aktiviert, ist diese Welt die Masterwelt für Systemeinstellungen, Benutzer und Systemmodule."
+            },
+            "autoCheckSync": {
+                "name": "Automatische Überprüfung der Synchronisierung",
+                "hint": "Wenn diese Option aktiviert ist, prüft diese Welt beim Start automatisch, ob Änderungen an den Agnostik- und Systemeinstellungen vorgenommen wurden."
+            },
+            "autoPerformSync": {
+                "name": "Automatische Synchronisierung durchführen",
+                "hint": "Wenn diese Option aktiviert ist, speichert diese Welt beim Start automatisch Agnostiker- und Systemeinstellungen in einer Datei."
+            },
+            "silentUpload": {
+                "name": "Stiller Upload",
+                "hint": "Wenn diese Option aktiviert ist, werden Sie von dieser Welt nicht benachrichtigt, wenn Agnostik- und Systemeinstellungen in einer Datei gespeichert werden."
+            },
+            "settingsSync": {
+                "name": "Synchronisationsmanager",
+                "label": "Öffnen Sie den Synchronisierungsmanager",
+                "hint": "Öffnen Sie den Synchronisierungsmanager, um Agnostik- und Systemeinstellungen zu speichern oder zu laden."
+            },
+            "syncModules": {
+                "name": "Module synchronisieren",
+                "hint": "Wenn aktiviert, synchronisiert diese Welt aktive Module."
+            },
+            "syncUsers": {
+                "name": "Benutzer synchronisieren",
+                "hint": "Wenn diese Option aktiviert ist, synchronisiert diese Welt Benutzer zwischen ihnen."
+            },
+            "syncSettings": {
+                "name": "Einstellungen synchronisieren",
+                "hint": "Wenn diese Option aktiviert ist, synchronisiert diese Welt die Einstellungen."
+            },
+            "exclusionList": {
+                "name": "Ausschlussliste",
+                "label": "Ausschlussliste öffnen",
+                "hint": "Öffnen Sie die Ausschlussliste, um Module, Benutzer und Einstellungen von der Synchronisierung auszuschließen.",
+                "title": "Ausschlussliste",
+                "info": "Diese Liste wird verwendet, um Module, System- und Kerneinstellungen von der Synchronisierung auszuschließen.<br>Auf einer Master-Welt werden Ausschlüsse nicht in der Synchronisierungsdatei gespeichert.<br>Auf einer Nicht-Master-Welt werden Ausschlüsse ignoriert, wenn \nLaden der Einstellungen aus der Synchronisierungsdatei.",
+                "core": "Kern",
+                "coreSystem": "Kern",
+                "modules": "Module",
+                "users": "Benutzer"
+            }
+        },
+        "settings-sync": {
+            "title": "Einstellungen synchronisieren",
+            "activate": "aktivieren Sie",
+            "deactivate": "Deaktivieren",
+            "expand": "Zum erweitern klicken",
+            "namespace": "Namensraum",
+            "setting": "Einstellung",
+            "user": "Benutzer",
+            "change": "Ändern",
+            "apply": "Anwenden?",
+            "confirm": {
+                "syncAll": "Alles synchronisieren",
+                "syncAgnostic": "Agnostische Einstellungen synchronisieren",
+                "syncSystem": "Systemeinstellungen synchronisieren",
+                "syncModules": "Module synchronisieren",
+                "syncUsers": "Benutzer synchronisieren",
+                "content": "Sind Sie sicher, dass Sie fortfahren möchten? \nDieser Vorgang ist nicht rückgängig zu machen."
+            },
+            "tabs": {
+                "modules": "Module",
+                "users": "Benutzer",
+                "settingsAgnostic": "Agnostische Einstellungen",
+                "settingsSystem": "Systemeinstellungen"
+            },
+            "actions": {
+                "syncAll": "Alles synchroniesieren",
+                "syncAgnostic": "Agnostisch synchronisieren",
+                "syncSystem": "Synchronisierungssystem",
+                "syncModules": "Module synchronisieren",
+                "syncUsers": "Benutzer synchronisieren",
+                "saveConfigurations": "Speichern Sie die Einstellungen manuell in einer Datei"
+            }
+        },
+        "flags": {}
+    }
+}

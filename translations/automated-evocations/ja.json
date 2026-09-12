@@ -1,0 +1,49 @@
+{
+    "AE": {
+        "actorSheetBtn": "コンパニオン設定",
+        "animations": {
+            "air": "風",
+            "darkness": "闇",
+            "energy1": "波動",
+            "fire": "炎",
+            "fourelements": "四大元素",
+            "heart": "ドキドキ",
+            "ice1": "氷",
+            "lightning": "雷",
+            "lightning2": "竜巻",
+            "magic1": "魔法",
+            "magic2": "コンジャンクション",
+            "music": "クレッシェンド",
+            "music2": "コード",
+            "water": "水"
+        },
+        "dialogs": {
+            "companionManager": {
+                "confirm": {
+                    "content": "<p>本当にこのコンパニオンを削除してよろしいですか？</p>",
+                    "title": "コンパニオンを削除"
+                },
+                "title": "コンパニオンの管理"
+            }
+        },
+        "groups": {
+            "elemental": "エレメンタル",
+            "magical": "魔法",
+            "z-none": "その他"
+        },
+        "settings": {
+            "autoclose": {
+                "hint": "召喚後に自動的にコンパニオンのウインドウを自動で閉じる。 ",
+                "title": "自動的に閉じる"
+            },
+            "enableautomations": {
+                "hint": "呪文を使用時、コンパニオンの自動召喚機能を有効化します。",
+                "title": "オートメーションを有効化"
+            },
+            "storeonactor": {
+                "hint": "ユーザーではなくアクターにコンパニオンを設定します。",
+                "title": "アクターにコンパニオンを設定"
+            }
+        }
+    }
+}

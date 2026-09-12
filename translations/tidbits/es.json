@@ -1,0 +1,67 @@
+{
+    "tidbits": {
+        "message": {
+            "didYouKnow": "¿Sabías?",
+            "tidbits": "Cositas",
+            "reroll": "¡Otro!"
+        },
+        "settings": {
+            "showChatMessage": {
+                "name": "Mostrar mensaje de chat",
+                "hint": "Mostrar un dato en el chat como un susurro al iniciar sesión",
+                "choices": {
+                    "everyone": "Todos",
+                    "players": "Jugadores",
+                    "gamemaster": "Maestro del juego",
+                    "none": "Ninguno"
+                }
+            },
+            "showLoadingScreen": {
+                "name": "Mostrar pantalla de carga",
+                "hint": "Muestra un dato mientras cargas una escena.",
+                "choices": {
+                    "everyone": "Todos",
+                    "players": "Jugadores",
+                    "gamemaster": "Maestro del juego",
+                    "none": "Ninguno"
+                }
+            },
+            "startupLoadingScreen": {
+                "name": "Tiempo de inicio",
+                "hint": "Tiempo en segundos para ocultar el Tidbit de inicio, 0 para desactivarlo"
+            },
+            "loadingScreenMinimumDuration": {
+                "name": "Retraso en el desvanecimiento de la pantalla de carga",
+                "hint": "El tiempo en segundos para mantener visible la pantalla de carga después de cargar la escena."
+            },
+            "loadingScreenGradient": {
+                "name": "Cargando gradiente de pantalla",
+                "hint": "Cubra la mitad de la imagen con un degradado para que el texto sea más legible y aplique un filtro de desenfoque a la imagen."
+            },
+            "pauseText": {
+                "name": "Pausar texto",
+                "hint": "Mostrar Tidbits en lugar del texto \"Juego en pausa\""
+            },
+            "useDefaultSources": {
+                "name": "Usar fuentes predeterminadas",
+                "hint": "Utilice las fuentes de información predeterminadas"
+            },
+            "customSource": {
+                "name": "Fuente personalizada",
+                "hint": "Archivo JSON personalizado para usar como fuente de información, déjelo vacío para deshabilitarlo."
+            },
+            "imageSource": {
+                "name": "Fuente de imagen",
+                "hint": "Carpeta para usar en las pantallas de carga, déjela vacía para desactivarla."
+            },
+            "autoCycle": {
+                "name": "ciclo automático",
+                "hint": "Tiempo en segundos tras el cual recorrer los fragmentos del texto de pausa. \n0 para desactivar."
+            },
+            "didYouKnowText": {
+                "name": "¿Sabías que el texto?",
+                "hint": "Texto personalizado para usar en lugar del predeterminado \"¿Sabías que?\" \ntexto."
+            }
+        }
+    }
+}

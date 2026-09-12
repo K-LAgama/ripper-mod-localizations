@@ -1,0 +1,70 @@
+{
+    "bossbar": {
+        "controls": {
+            "bossUI": {
+                "name": "Boss-Leiste umschalten",
+                "warn": "Kein Token ausgewählt. \nBitte wählen Sie einen oder mehrere Token aus und versuchen Sie es erneut"
+            }
+        },
+        "settings": {
+            "barStyle": {
+                "classic": "Klassiker",
+                "matchingImages": "Passende Bilder"
+            },
+            "currentHpPath": {
+                "name": "Aktueller HP-Pfad",
+                "hint": "Datenpfad zum aktuellen HP eines Akteurs"
+            },
+            "maxHpPath": {
+                "name": "Max. HP-Pfad",
+                "hint": "Datenpfad zur maximalen HP eines Akteurs"
+            },
+            "BarStyleConfiguration": {
+                "name": "Boss Bar-Stile",
+                "label": "Konfigurieren Sie Stile"
+            },
+            "resetPosition": {
+                "name": "Position zurücksetzen",
+                "hint": "Setzen Sie die Position der Boss-Leiste auf die Standardeinstellung zurück"
+            },
+            "textAlign": {
+                "left": "Links",
+                "center": "Mitte",
+                "right": "Rechts"
+            },
+            "woundsSystem": {
+                "name": "Wundsystem",
+                "hint": "Wenn Ihr System Wunden anstelle von Trefferpunkten verwendet, aktivieren Sie diese Option."
+            }
+        },
+        "bar-style-configuration": {
+            "add": "Stil hinzufügen",
+            "title": "Konfiguration des Boss-Bar-Stils",
+            "delete-title": "Stil löschen",
+            "delete-confirm": "Möchten Sie diesen Stil wirklich löschen?",
+            "edit": "Stil bearbeiten",
+            "background": "Hintergrundbild",
+            "foreground": "Vordergrundbild",
+            "bar": "Balkenbild",
+            "tempBarColor": "Temporäre Farbe der Gesundheitsleiste",
+            "tempBarAlpha": "Temporäre Gesundheitsleiste Alpha",
+            "barHeight": "Boss-Bar-Höhe",
+            "font": "Schriftfamilie",
+            "textSize": "Schriftgröße",
+            "textAlign": "Text ausrichten",
+            "type": "Stiltyp",
+            "type-hint": "Wählen Sie den Stiltyp aus"
+        },
+        "boss-bar-configuration": {
+            "title": "Boss-Bar-Konfiguration",
+            "no-actors": "Keine Schauspieler ausgewählt oder in der Szene anwesend.",
+            "no-scene": "Keine Szene verfügbar. \nBitte sehen Sie sich eine Szene an und versuchen Sie es erneut",
+            "save-pan": "Speichern",
+            "edit-themes": "Schließen",
+            "hideNameHint": "Verstecken Sie den Namen des Schauspielers in der Boss Bar"
+        },
+        "boss-bar": {
+            "title": "Boss-Bar"
+        }
+    }
+}

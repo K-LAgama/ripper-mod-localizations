@@ -1,0 +1,16 @@
+{
+    "tile-scroll": {
+        "flags": {
+            "header": "Défilement des vignettes",
+            "enableScroll": "Faire défiler",
+            "enabled": "Activé",
+            "scrollSpeed": "Vitesse",
+            "scrollDirection": "Direction",
+            "enableRotate": "Activer la rotation",
+            "repeat": "Répétition de la texture",
+            "pivot": "Pivot de rotation",
+            "offset": "Décalage",
+            "parallax": "Force de parallaxe"
+        }
+    }
+}

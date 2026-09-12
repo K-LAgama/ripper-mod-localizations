@@ -1,0 +1,11 @@
+{
+    "tokenz": {
+        "tokenconfig": {
+            "zindex": "Décalage de l'indice Z"
+        },
+        "send-to-back": {
+            "name": "Envoyer le jeton à Back",
+            "hint": "Lorsque vous passez la souris sur une pile de jetons, appuyez sur cette touche pour que le jeton du haut passe en bas de la pile."
+        }
+    }
+}

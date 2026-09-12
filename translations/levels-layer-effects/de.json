@@ -1,0 +1,10 @@
+{
+    "levels-layer-effects": {
+        "settings": {
+            "disableBlur": {
+                "name": "Unschärfe deaktivieren",
+                "hint": "Blur-Effekt deaktivieren; aktivieren Sie diese Option auf Geräten mit geringer Leistung."
+            }
+        }
+    }
+}

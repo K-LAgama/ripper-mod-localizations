@@ -1,0 +1,98 @@
+{
+    "fvtt-paper-doll-ui": {
+        "settings": {
+            "globalConfigMenu": {
+                "name": "Paramètres globaux de Paper Doll",
+                "hint": "Personnalisez les images vides et le nombre d'emplacements pour chaque type.",
+                "label": "Configurer la poupée de papier"
+            },
+            "hideActorHeaderText": {
+                "name": "Masquer le texte du bouton d’en-tête d’acteur",
+                "hint": "Masquez le texte dans le bouton d'en-tête de l'acteur."
+            },
+            "paperDollPosition": {
+                "name": "Position de la poupée de papier",
+                "hint": "Position de la poupée de papier une fois ouverte. \nA noter que si l'espace n'est pas suffisant à gauche ou à droite, la poupée en papier sera placée au milieu.",
+                "label": "Poste",
+                "choices": {
+                    "left": "Gauche",
+                    "right": "Droite",
+                    "center": "Centre"
+                }
+            },
+            "autoOpen": {
+                "name": "Ouverture automatique",
+                "hint": "Ouvrez automatiquement la poupée de papier lorsqu'une feuille d'acteur est ouverte."
+            },
+            "allowNonOwned": {
+                "name": "Autoriser les objets n'appartenant pas",
+                "hint": "Autoriser l'ajout d'éléments n'appartenant pas à la poupée de papier (par exemple, les éléments de la barre latérale ou du recueil). \nCe paramètre est destiné aux systèmes personnalisés qui ne disposent pas de système d'inventaire et doit généralement être laissé de côté."
+            },
+            "playerOwnedOnly": {
+                "name": "Propriété du joueur uniquement",
+                "hint": "Activez Paper Doll uniquement pour les acteurs appartenant aux joueurs."
+            }
+        },
+        "app": {
+            "paper-doll": {
+                "title": "Poupée de papier",
+                "config": "Configuration",
+                "disallowed": "Cet objet ne peut pas être équipé sur cet emplacement."
+            },
+            "actor-config": {
+                "title": "Configuration de l'acteur",
+                "img": {
+                    "label": "Image",
+                    "placeholder": "Utiliser l'image de l'acteur"
+                },
+                "objectFit": {
+                    "label": "Ajustement de l'image",
+                    "contain": "Contenir",
+                    "cover": "Couverture"
+                },
+                "autoOpen": {
+                    "label": "Ouverture automatique",
+                    "useDefault": "L'utilisation par défaut",
+                    "true": "Toujours",
+                    "false": "Jamais"
+                },
+                "playerOwnedOnly": {
+                    "label": "Propriété du joueur uniquement",
+                    "hint": "Activez Paper Doll uniquement pour les acteurs appartenant aux joueurs."
+                }
+            },
+            "paper-doll-global-config": {
+                "title": "Configuration globale de la poupée de papier",
+                "img": "Icône",
+                "filter": {
+                    "label": "Filtre personnalisé",
+                    "hint": "Un script utilisé pour créer une fenêtre avec des éléments pouvant être équipés sur cet emplacement. \n« élément » fait référence à l'élément en cours de vérification. \nExemple : return item.type === 'weapon';"
+                },
+                "simpleFilter": {
+                    "label": "Filtre de base",
+                    "hint": "Filtrez uniquement les éléments de ce type."
+                },
+                "how": {
+                    "add": "Ajoutez un nouvel emplacement en cliquant sur le bouton « Ajouter ».",
+                    "remove": "Supprimez un emplacement en faisant un clic droit dessus.",
+                    "image": "Sélectionnez une image pour l'emplacement en cliquant dessus avec le bouton gauche."
+                },
+                "HUE_ROTATE": {
+                    "label": "Teinte"
+                },
+                "EQUIPPED_PATH": {
+                    "label": "Chemin équipé"
+                },
+                "MAIN_COLOR": {
+                    "label": "Couleur"
+                }
+            }
+        },
+        "hotkeys": {
+            "togglePaperDoll": {
+                "name": "Basculer la poupée en papier"
+            }
+        },
+        "flags": {}
+    }
+}

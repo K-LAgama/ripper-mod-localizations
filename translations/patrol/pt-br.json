@@ -1,0 +1,113 @@
+{
+    "patrol": {
+        "patrol-app": {
+            "title": "Painel de Patrulha",
+            "selectAll": "Selecionar tudo",
+            "selectSingle": "Etapa selecionada",
+            "stepBackward": "Um passo para trás",
+            "stepForward": "Dê um passo à frente",
+            "toggleStepping": "Alternar Patrulha",
+            "toggleSteppingDisabled": "A Patrulha Automática fica desativada durante o combate e ao avançar por fichas individuais"
+        },
+        "settings": {
+            "patrolMaxSuspicious": {
+                "name": "Número máximo de passos suspeitos",
+                "hint": "Número de passos que um token dá ao redor antes de tentar perseguir um PC"
+            },
+            "patrolMaxAlerted": {
+                "name": "Número máximo de passos para alerta",
+                "hint": "Número de passos durante os quais um token deve manter linha de visão sobre um PC perseguido antes de realmente avistá-lo"
+            },
+            "patrolSound": {
+                "name": "Som Manchado",
+                "hint": "Som a ser reproduzido quando um PC for detectado por um inimigo"
+            },
+            "patrolAlert": {
+                "name": "Som de alerta",
+                "hint": "Som a ser reproduzido quando um inimigo é alertado por um personagem do jogador"
+            },
+            "openApplication": {
+                "name": "Painel de Patrulha",
+                "hint": "Abra o Painel de Patrulha. Você também pode clicar com o botão esquerdo do mouse enquanto mantém a tecla Alt pressionada no botão “Patrulha” nos Controles de Cena do Token ou usar o comando de macro 'ui.patrolApp.render({ force: true })'.",
+                "label": "Abrir o Painel de Patrulha"
+            },
+            "minStepDelay": {
+                "name": "Atraso mínimo por passo",
+                "hint": "Atraso mínimo entre etapas, em milissegundos. O tempo real entre os movimentos dependerá das atualizações do Token do Foundry e do deslocamento do Token no mapa. Valores mais baixos podem exigir um uso intenso de recursos."
+            },
+            "hidePatrolButtonInSidebar": {
+                "name": "Ocultar o botão “Painel de Patrulha” na barra lateral",
+                "hint": "Oculte o botão “Patrol Panel” na barra lateral do Diretório de Atores. Você ainda poderá usar o comando de macro 'ui.patrolApp.render({ force: true })' ou clicar com a tecla Alt pressionada no botão “Patrol” nos Controles de Cena do Token."
+            },
+            "migrateOnStartupDialog": {
+                "name": "Abrir a caixa de diálogo de migração na inicialização",
+                "hint": "Se ativado, o módulo abrirá uma caixa de diálogo para migrar os dados da estrutura V13 para a V14 na inicialização."
+            }
+        },
+        "tokenConfig": {
+            "enablePatrol": {
+                "name": "Ativar Patrulha"
+            },
+            "enableSpotting": {
+                "name": "Identificar Personagens Jogadores",
+                "hint": "Ter várias fichas de marcação pode consumir muitos recursos. Tenha cuidado ao usá-las."
+            },
+            "doorBehavior": {
+                "name": "Consegue passar pelas portas?",
+                "choices": {
+                    "useRegionSettings": "Usar as configurações da região (também utiliza a opção “Deixar a porta aberta” da região)",
+                    "unlocked": "Portas destrancadas",
+                    "locked": "Portas trancadas",
+                    "secret": "Portas secretas"
+                }
+            },
+            "leaveDoorOpen": {
+                "name": "Deixe a porta aberta",
+                "hint": "Probabilidade de o Token deixar uma porta aberta após passar por ela"
+            }
+        },
+        "statusEffects": {
+            "patrolundetectable": {
+                "name": "Patrulha - Indetectável"
+            }
+        },
+        "tools": {
+            "patrolToggle": {
+                "app": "Alternar o painel de patrulha",
+                "stepping": "Ativar/desativar a Patrulha de Tokens"
+            }
+        }
+    },
+    "TYPES": {
+        "RegionBehavior": {
+            "patrol": {
+                "patrolArea": "Área de patrulha",
+                "whitelist": "Lista de permissões",
+                "blacklist": "Lista negra",
+                "type": {
+                    "label": "Tipo",
+                    "hint": "Escolha se os tokens vão patrulhar a área ou vigiar seus limites",
+                    "choices": {
+                        "area": "Área",
+                        "edge": "Borda"
+                    }
+                },
+                "weight": {
+                    "label": "Peso",
+                    "hint": "Qual é o peso que essa área tem no algoritmo de patrulhamento. Pesos maiores serão preferidos em relação aos menores."
+                },
+                "darkness": {
+                    "min": {
+                        "label": "Escuridão Mín.",
+                        "hint": "Nível mínimo de escuridão para que esta área seja considerada para patrulhamento."
+                    },
+                    "max": {
+                        "label": "Darkness Max",
+                        "hint": "Nível máximo de escuridão para que esta área seja considerada para patrulhamento."
+                    },
+                    "validationError": "O valor mínimo de escuridão deve ser menor que o valor máximo de escuridão."
+                }
+            }
+        }
+    }
+}

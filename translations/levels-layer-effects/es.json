@@ -1,0 +1,10 @@
+{
+    "levels-layer-effects": {
+        "settings": {
+            "disableBlur": {
+                "name": "Desactivar el desenfoque",
+                "hint": "Desactivar el efecto de desenfoque; activa esta opción en dispositivos de gama baja."
+            }
+        }
+    }
+}

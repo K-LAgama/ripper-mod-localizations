@@ -1,0 +1,328 @@
+{
+    "simple-timekeeping": {
+        "app": {
+            "controls": {
+                "configure": {
+                    "tooltip": "配置"
+                },
+                "create-event": {
+                    "tooltip": "创建活动"
+                },
+                "day-back": {
+                    "tooltip": "返回一天（Ctrl 1 周，Shift 3 天，Alt 2 天）"
+                },
+                "day-forward": {
+                    "tooltip": "提前一天（Ctrl 1 周，Shift 3 天，Alt 2 天）"
+                },
+                "hour-back": {
+                    "tooltip": "返回一小时（Ctrl 30 分钟，Shift 10 分钟，Alt 5 分钟）"
+                },
+                "hour-forward": {
+                    "tooltip": "提前一小时（Ctrl 30 分钟，Shift 10 分钟，Alt 5 分钟）"
+                },
+                "midday": {
+                    "tooltip": "中午"
+                },
+                "midnight": {
+                    "tooltip": "午夜"
+                },
+                "sunrise": {
+                    "tooltip": "日出"
+                },
+                "sunset": {
+                    "tooltip": "日落"
+                },
+                "toggle-events": {
+                    "tooltip": "活动"
+                }
+            },
+            "create-event": {
+                "duration": {
+                    "label": "活动持续时间（小时）"
+                },
+                "edit": {
+                    "label": "编辑活动日期/时间"
+                },
+                "eventEnd": {
+                    "label": "活动结束（可选）"
+                },
+                "eventTime": {
+                    "label": "活动开始"
+                },
+                "repeat": {
+                    "label": "重复",
+                    "options": {
+                        "day": "每天",
+                        "month": "每月",
+                        "none": "不要重复",
+                        "week": "每周",
+                        "year": "每年"
+                    }
+                }
+            },
+            "searchEvents": "搜索活动",
+            "weather": {
+                "generate": "生成"
+            }
+        },
+        "calendar-dusk-dawn": "该日历包括黎明和黄昏时间，在设置中或根据气候区设置的任何值都将被忽略，并将使用日历值。",
+        "configuration": {
+            "badgeColor": {
+                "label": "颜色"
+            },
+            "badgeLabel": {
+                "label": "标签"
+            },
+            "calendar": {
+                "custom": "定制",
+                "default": "系统默认值",
+                "hint": "自定义日历 JSON 中定义的自定义日历",
+                "label": "日历"
+            },
+            "climateData": {
+                "hint": "生成天气和温度的 JSON 定义。不支持自定义气候或如何设置 JSON 文件。",
+                "label": "气候数据"
+            },
+            "clockSeconds": {
+                "label": "更新频率（秒）"
+            },
+            "copyButton": {
+                "label": "从当前配置复制（保存并重新打开以进行格式化）"
+            },
+            "customBadge": {
+                "label": "定制徽章"
+            },
+            "customCalendar": {
+                "error": "自定义日历的 JSON 格式无效，设置已恢复到先前状态。请查看控制台了解详情。",
+                "hint": "自定义日历的 JSON 定义。没有为自定义日历或如何设置 JSON 文件提供支持。您可以在维基上找到一些日历示例。",
+                "label": "自定义日历 JSON"
+            },
+            "customMoons": {
+                "error": "自定义月亮的 JSON 格式无效，设置已恢复到先前状态。详情请查看控制台。",
+                "hint": "自定义月亮的 JSON 定义。虽然月亮也可以在日历 JSON 中定义，但在使用系统或其他模块定义的日历并想在其中添加月亮的情况下，这使您无需更改日历 JSON 即可覆盖月亮。我们不支持自定义月亮，也不支持如何设置 JSON 文件，请参阅 wiki 获取示例。",
+                "label": "自定义月亮 JSON"
+            },
+            "darknessSync": {
+                "hint": "同步可以在灯光选项卡底部的每个场景中进行配置。",
+                "label": "同步场景暗度和天气",
+                "options": {
+                    "darknessOnly": "仅同步黑暗",
+                    "default": "使用全局默认值",
+                    "noSync": "不同步",
+                    "sync": "同步",
+                    "weatherOnly": "仅同步天气"
+                }
+            },
+            "dawn": {
+                "hint": "一天的时间（以百分比表示），例如，如果一天是 24 小时，0.5 表示 12:00，0.25 表示 06:00",
+                "label": "黎明"
+            },
+            "dawnMacros": {
+                "label": "黎明宏"
+            },
+            "dayColor": {
+                "label": "日间色调"
+            },
+            "dayOffset": {
+                "hint": "使用 \"天数显示 \"中的 \"自日历开始 \"选项时，应用于天数的偏移量",
+                "label": "起始日偏移"
+            },
+            "daysDisplay": {
+                "label": "天数显示",
+                "options": {
+                    "dayOfYear": "年月日",
+                    "none": "无",
+                    "sinceEpoch": "自日历开始"
+                }
+            },
+            "dusk": {
+                "hint": "一天中的时间（以百分比表示），例如，如果一天是 24 小时，0.5 表示 12:00，0.75 表示 18:00",
+                "label": "黄昏"
+            },
+            "duskMacros": {
+                "label": "黄昏宏"
+            },
+            "firstTimeTitle": "首次设置",
+            "genWeather": {
+                "hint": "每天生成新天气利用纬度确定气候。",
+                "label": "生成天气",
+                "options": {
+                    "no": "没有",
+                    "noTemp": "是（无温度）",
+                    "tempC": "是 + 摄氏度",
+                    "tempF": "是 + 华氏度"
+                }
+            },
+            "hideExpired": {
+                "label": "隐藏过期活动"
+            },
+            "hideInCombat": {
+                "label": "战斗中隐藏"
+            },
+            "hueIntensity": {
+                "hint": "当简单计时设置暗度时，它还会根据白天和黑夜的颜色对场景应用色调。",
+                "label": "场景色调强度"
+            },
+            "journalEntryEvents": {
+                "label": "事件日志条目名称"
+            },
+            "latitude": {
+                "hint": "如果设置的纬度不同于 0，黄昏和黎明值将被忽略，而是根据纬度动态计算。纬度也将用于计算天气。典型的纬度范围赤道（0-15°）、热带（15-23.5°）、亚热带（23.5-35°）、温带（35-55°）、亚极地（55-66.5°）和极地（66.5-90°）。",
+                "label": "纬度",
+                "options": {
+                    "boreal": "北方地区",
+                    "coolTemperate": "冷温带",
+                    "disabled": "残疾",
+                    "equatorial": "赤道地区",
+                    "hotDesert": "炎热沙漠",
+                    "mediterranean": "地中海",
+                    "subpolar": "次极地",
+                    "subtropical": "亚热带",
+                    "temperate": "温带",
+                    "tropical": "热带地区"
+                }
+            },
+            "macrosFieldset": {
+                "hint": "在一天的特定时间运行宏。宏将针对所有有运行权限的连接用户执行。",
+                "label": "自动化宏"
+            },
+            "middayMacros": {
+                "label": "午间巨集"
+            },
+            "moonAutomation": {
+                "hint": "如果在日历 JSON 中定义了月亮，简单计时会自动更新月亮徽章。",
+                "label": "同步月球徽章"
+            },
+            "moonColor": {
+                "label": "月相颜色"
+            },
+            "moonLabel": {
+                "label": "月相标签"
+            },
+            "newDayMacros": {
+                "label": "新的一天巨集"
+            },
+            "nightColor": {
+                "label": "夜色"
+            },
+            "noPills": {
+                "label": "朴素风格"
+            },
+            "seasons": {
+                "label": "季节色彩"
+            },
+            "secondsPerRealSecond": {
+                "label": "每实时秒"
+            },
+            "secondsPerRound": {
+                "label": "每战斗回合秒数"
+            },
+            "setDateTime": {
+                "label": "设置当前日期/时间"
+            },
+            "showFullDate": {
+                "label": "显示完整日期徽章"
+            },
+            "tabs": {
+                "aspect": "方面",
+                "automation": "自动化",
+                "badges": "徽章",
+                "calendar": "日历",
+                "configuration": "配置",
+                "environment": "环境",
+                "time": "时间",
+                "visibility": "可见性"
+            },
+            "title": "配置菜单",
+            "topOffset": {
+                "label": "顶部边距（px）"
+            },
+            "use24HourClock": {
+                "label": "使用 24 小时时钟"
+            },
+            "useCustomMoons": {
+                "label": "自定义月亮"
+            },
+            "useFullWidth": {
+                "label": "力的最大宽度"
+            },
+            "useMonospace": {
+                "label": "使用空格字体"
+            },
+            "weatherColor": {
+                "label": "天气颜色"
+            },
+            "weatherLabel": {
+                "label": "天气标签"
+            },
+            "weatherOverlay": {
+                "label": "天气动画"
+            },
+            "wideLetterSpacing": {
+                "label": "宽字母间距"
+            }
+        },
+        "day": "日",
+        "days": "天数",
+        "in-progress": "进行中",
+        "moonPhase": {
+            "bloodMoon": "血月",
+            "celestialAlignment": "天体排列",
+            "eclipse": "日蚀",
+            "firstQuarter": "第一季度",
+            "full": "满月",
+            "lastQuarter": "上一季度",
+            "manaMoon": "玛娜之月",
+            "new": "新月",
+            "shatteredMoon": "破碎的月亮",
+            "spiritMoon": "灵月",
+            "twinMoons": "双月",
+            "voidMoon": "虚无之月",
+            "waningCrescent": "月牙形",
+            "waningGibbous": "万年吉卜赛",
+            "waxingCrescent": "腊月新月",
+            "waxingGibbous": "腊月吉卜赛"
+        },
+        "paused": "暂停",
+        "paused-info": "简单计时 - 时间前进暂停，点击即可恢复。",
+        "settings": {
+            "config-menu": {
+                "hint": "配置模块设置。",
+                "label": "配置",
+                "name": "配置"
+            }
+        },
+        "unpaused-info": "简单计时 - 时间恢复前进，点击暂停。如果游戏暂停或战斗激活，时间仍将暂停。",
+        "weather": {
+            "arcaneFog": "奥术迷雾",
+            "ashfall": "灰瀑",
+            "blizzard": "暴雪",
+            "bloodRain": "血雨",
+            "celestialEclipse": "天蚀",
+            "clear": "清晰",
+            "cloudy": "多云",
+            "drizzle": "细雨",
+            "etherealDrizzle": "缥缈细雨",
+            "fog": "雾",
+            "frozenHell": "冰冻地狱",
+            "hail": "万岁",
+            "hurricane": "飓风",
+            "luminousSky": "夜光天空",
+            "manaStorm": "法力风暴",
+            "meteorShower": "流星雨",
+            "mist": "雾",
+            "overcast": "阴天",
+            "partlyCloudy": "多云",
+            "rain": "雨",
+            "sandstorm": "沙尘暴",
+            "snow": "雪",
+            "spectralStorm": "光谱风暴",
+            "sunshower": "太阳雨",
+            "thunderstorm": "雷雨",
+            "tornado": "龙卷风",
+            "voidstorm": "虚空风暴",
+            "wildMagicWinds": "狂野魔风",
+            "windy": "电梯"
+        }
+    }
+}

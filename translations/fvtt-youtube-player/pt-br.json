@@ -1,0 +1,71 @@
+{
+    "fvtt-youtube-player": {
+        "deleteTrack": "Excluir Vídeo?",
+        "deleteTrackContent": "Tem certeza que quer excluir este vídeo?",
+        "deletePlaylist": "Excluir Playlist?",
+        "deletePlaylistContent": "Tem certeza que quer excluir esta playlist?",
+        "fetchingTitle": "Buscando título do vídeo...",
+        "playlistName": "Nome da Playlist",
+        "playlistNameContent": "Você está importando uma playlist. Deseja criar uma nova playlist ou adicionar faixas à playlist atual? Deixe o campo vazio para adicionar à playlist atual.",
+        "TOOLTIP": {
+            "play": "Tocar",
+            "stop": "Pausar",
+            "toggle-playlists": "Alternar Playlists",
+            "add-to-playlist": "Adicionar à Playlist",
+            "create-playlist": "Criar Playlist",
+            "delete-playlist": "Excluir Playlist",
+            "delete-track": "Excluir Vídeo",
+            "rename-playlist": "Pressione 'Enter' para renomear",
+            "sound-library": "Biblioteca de sons",
+            "loop": "Alternar Repetir",
+            "toggle-playlist": "Alternar Auto-Play",
+            "search": "Procurar no YouTube",
+            "copy-url": "Copiar URL",
+            "configure-track": "Configurar a pista",
+            "add-to-sound-library": "Adicionar à biblioteca de sons"
+        },
+        "settings": {
+            "googleApiKey": {
+                "name": "Chave API do YouTube",
+                "hint": "A API é usada para analisar playlists e realizar pesquisas. A solicitação será encaminhada através dos meus servidores, mas você pode usar sua própria chave de API para evitar limitação de banda. Uma chave de API é necessária para a funcionalidade de pesquisa. Obtenha uma em https://console.developers.google.com/apis/credentials"
+            },
+            "importExport": {
+                "name": "Importar/Exportar",
+                "label": "Abrir Diálogo Importar/Exportar",
+                "hint": "Importe or exporte playlists"
+            }
+        },
+        "import-export": {
+            "title": "Importar/Exportar Playlists",
+            "import": "Importar",
+            "export": "Exportar",
+            "imported": "Playlists importadas com sucesso"
+        },
+        "track-configuration": {
+            "title": "Configuração da pista",
+            "track-title": "Título da faixa",
+            "track-url": "URL ou ID da faixa",
+            "url": "URL",
+            "tags": "Tags",
+            "rename-track": "Renomear faixa"
+        },
+        "tags-configuration": {
+            "title": "Configuração de tags",
+            "create-tag": "Criar etiqueta",
+            "tag-name": "Nome da tag",
+            "tag-color": "Cor da etiqueta",
+            "tag-label": "Nome da tag",
+            "delete-tag": "Excluir etiqueta",
+            "create-tag-error": "Insira o nome e a cor da etiqueta"
+        },
+        "sound-library": {
+            "title": "Biblioteca de sons",
+            "add-tracks": "Adicionar faixas",
+            "import-tracks": "Importar faixas",
+            "import-tracks-textarea": "Cole aqui os links ou IDs das faixas/listas de reprodução"
+        },
+        "app": {},
+        "flags": {},
+        "noApiKey": "Aviso: Nenhuma chave de API definida. Para acessar a funcionalidade de pesquisa, você precisa definir uma chave API do YouTube nas configurações do módulo. Você pode verificar a Wiki para mais informações."
+    }
+}

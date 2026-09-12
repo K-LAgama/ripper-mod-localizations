@@ -1,0 +1,91 @@
+{
+    "hp": {
+        "settings": {
+            "disable": {
+                "name": "Désactiver le minuteur",
+                "hint": "Désactiver le chronomètre de combat"
+            },
+            "timerDuration": {
+                "name": "Durée du minuteur",
+                "hint": "Durée du minuteur en secondes"
+            },
+            "style": {
+                "name": "Style",
+                "hint": "Style du minuteur",
+                "digits": "Chiffres",
+                "circle": "Cercle",
+                "sand": "Sable"
+            },
+            "countup": {
+                "name": "Faire le compte",
+                "hint": "Le minuteur compte à la hausse au lieu de compter à la baisse (styles « Chiffres » et « Cercle » uniquement)"
+            },
+            "overtime": {
+                "name": "Heures supplémentaires",
+                "hint": "Le minuteur continue de fonctionner une fois la durée maximale écoulée"
+            },
+            "size": {
+                "name": "Taille",
+                "hint": "Durée de la minuterie"
+            },
+            "secondary-size": {
+                "name": "Taille secondaire",
+                "hint": "Taille des minuteries secondaires"
+            },
+            "secondary-direction": {
+                "name": "Direction secondaire",
+                "hint": "Sens de marche des minuteries secondaires"
+            },
+            "windowless": {
+                "name": "Sans fenêtre",
+                "hint": "Afficher le minuteur sans fenêtre"
+            },
+            "critical": {
+                "name": "Seuil critique",
+                "hint": "Seuil à partir duquel le minuteur passe en mode d'alerte et commence à clignoter"
+            },
+            "secondsInsteadOfPercentage": {
+                "name": "Pour le temps critique, utilisez les secondes plutôt que les pourcentages",
+                "hint": "Par défaut, le seuil critique est exprimé en pourcentage du temps total. En cochant cette option, il est alors exprimé en secondes."
+            },
+            "goNext": {
+                "name": "Continuer",
+                "hint": "Passe au combattant suivant à la fin du chronomètre. Ne se déclenche pas lorsque les prolongations sont autorisées."
+            },
+            "runForNpc": {
+                "name": "Courir pour le NPC",
+                "hint": "Lancer le chronomètre au tour des PNJ"
+            },
+            "showOnUpdateCombatOnly": {
+                "name": "Première diffusion au prochain tour",
+                "hint": "Afficher d'abord le chronomètre de combat lorsque l'on clique sur « Commencer le combat », « Tour suivant » ou « Fin du tour »."
+            },
+            "critSoundPath": {
+                "name": "Critique musicale",
+                "hint": "Son à diffuser lorsque le compte à rebours atteint son seuil critique"
+            },
+            "endSoundPath": {
+                "name": "Fin du son",
+                "hint": "Son à diffuser à la fin du compte à rebours"
+            },
+            "soundVol": {
+                "name": "Volume sonore",
+                "hint": "Volume des sons diffusés"
+            }
+        },
+        "contextMenu": {
+            "pause": "Pause",
+            "unpause": "CV",
+            "reset": "Réinitialiser",
+            "close": "Fermer"
+        },
+        "create": {
+            "title": "Dépêche-toi !",
+            "paused": "En pause",
+            "time": "Heure",
+            "timeError": "La valeur « time » doit être un nombre supérieur à 0.",
+            "name": "Nom",
+            "color": "Couleur"
+        }
+    }
+}

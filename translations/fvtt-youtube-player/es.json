@@ -1,0 +1,71 @@
+{
+    "fvtt-youtube-player": {
+        "deleteTrack": "¿Eliminar pista?",
+        "deleteTrackContent": "¿Estás seguro de que quieres eliminar esta pista?",
+        "deletePlaylist": "¿Eliminar lista de reproducción?",
+        "deletePlaylistContent": "¿Estás seguro de que quieres eliminar esta lista de reproducción?",
+        "fetchingTitle": "Obteniendo título del vídeo...",
+        "playlistName": "Nombre de la lista de reproducción",
+        "playlistNameContent": "Estás importando una lista de reproducción. \n¿Quieres crear una nueva lista de reproducción o agregar las pistas a la lista de reproducción actual? \nDeje el campo vacío para agregarlo a la lista de reproducción actual.",
+        "TOOLTIP": {
+            "play": "Jugar",
+            "stop": "Detener",
+            "toggle-playlists": "Alternar listas de reproducción",
+            "add-to-playlist": "Agregar a la lista de reproducción",
+            "create-playlist": "Crear lista de reproducción",
+            "delete-playlist": "Eliminar lista de reproducción",
+            "delete-track": "Eliminar pista",
+            "rename-playlist": "Presione 'Entrar' para cambiar el nombre",
+            "sound-library": "Biblioteca de sonidos",
+            "loop": "Alternar repetición",
+            "toggle-playlist": "Alternar reproducción automática",
+            "search": "Buscar YouTube",
+            "copy-url": "Copiar URL",
+            "configure-track": "Configurar pista",
+            "add-to-sound-library": "Añadir a la biblioteca de sonidos"
+        },
+        "settings": {
+            "googleApiKey": {
+                "name": "Clave API de YouTube",
+                "hint": "La solicitud se enrutará a través de mis servidores, pero puedes usar tu propia clave API para evitar límites de velocidad. \nObtenga uno en https://console.developers.google.com/apis/credentials"
+            },
+            "importExport": {
+                "name": "Importación y exportación",
+                "label": "Abrir el cuadro de diálogo Importar/Exportar",
+                "hint": "Importar o exportar listas de reproducción"
+            }
+        },
+        "import-export": {
+            "title": "Importar/exportar listas de reproducción",
+            "import": "Importar",
+            "export": "Exportar",
+            "imported": "Listas de reproducción importadas correctamente"
+        },
+        "track-configuration": {
+            "title": "Configuración de la pista",
+            "track-title": "Título de la canción",
+            "track-url": "URL o ID de la pista",
+            "url": "URL",
+            "tags": "Etiquetas",
+            "rename-track": "Cambiar el nombre de la pista"
+        },
+        "tags-configuration": {
+            "title": "Configuración de etiquetas",
+            "create-tag": "Crear etiqueta",
+            "tag-name": "Nombre de la etiqueta",
+            "tag-color": "Color de la etiqueta",
+            "tag-label": "Nombre de la etiqueta",
+            "delete-tag": "Eliminar etiqueta",
+            "create-tag-error": "Introduce un nombre y un color para la etiqueta"
+        },
+        "sound-library": {
+            "title": "Biblioteca de sonidos",
+            "add-tracks": "Añadir pistas",
+            "import-tracks": "Importar pistas",
+            "import-tracks-textarea": "Pega aquí las URL o los ID de las canciones o listas de reproducción"
+        },
+        "app": {},
+        "flags": {},
+        "noApiKey": "Advertencia: No se ha establecido ninguna clave API. \nPara acceder a la función de búsqueda, debe configurar una clave API de YouTube en la configuración del módulo. \nPuedes consultar la Wiki para obtener más información."
+    }
+}

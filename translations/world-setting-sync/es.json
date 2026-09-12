@@ -1,0 +1,88 @@
+{
+    "world-setting-sync": {
+        "settings": {
+            "masterAgnostic": {
+                "name": "¿Master World es para entornos agnósticos?",
+                "hint": "Si está habilitado, este mundo será el mundo maestro para configuraciones, usuarios y módulos independientes del sistema."
+            },
+            "masterSystem": {
+                "name": "¿Es Master World para la configuración del sistema?",
+                "hint": "Si está habilitado, este mundo será el mundo maestro para la configuración del sistema, los usuarios y los módulos del sistema."
+            },
+            "autoCheckSync": {
+                "name": "Sincronización de verificación automática",
+                "hint": "Si está habilitado, este mundo buscará automáticamente cambios en la configuración independiente y del sistema al iniciar."
+            },
+            "autoPerformSync": {
+                "name": "Sincronización automática",
+                "hint": "Si está habilitado, este mundo guardará automáticamente la configuración independiente y del sistema en un archivo al inicio."
+            },
+            "silentUpload": {
+                "name": "Carga silenciosa",
+                "hint": "Si está habilitado, este mundo no le notificará cuando guarde configuraciones independientes y del sistema en un archivo."
+            },
+            "settingsSync": {
+                "name": "Administrador de sincronización",
+                "label": "Abrir Administrador de sincronización",
+                "hint": "Abra el administrador de sincronización para guardar o cargar configuraciones independientes y del sistema."
+            },
+            "syncModules": {
+                "name": "Sincronizar módulos",
+                "hint": "Si está habilitado, este mundo sincronizará los módulos activos."
+            },
+            "syncUsers": {
+                "name": "Sincronizar usuarios",
+                "hint": "Si está habilitado, este mundo sincronizará a los usuarios entre sí."
+            },
+            "syncSettings": {
+                "name": "Sincronizar configuración",
+                "hint": "Si está habilitado, este mundo sincronizará la configuración."
+            },
+            "exclusionList": {
+                "name": "Lista de exclusion",
+                "label": "Abrir lista de exclusión",
+                "hint": "Abra la lista de exclusión para excluir módulos, usuarios y configuraciones de la sincronización.",
+                "title": "Lista de exclusion",
+                "info": "Esta lista se utilizará para excluir módulos, sistema y configuraciones principales de la sincronización.<br>En un mundo Master, las exclusiones no se guardarán en el archivo de sincronización.<br>En un mundo que no sea Master, las exclusiones se ignorarán cuando \ncargando la configuración desde el archivo de sincronización.",
+                "core": "Centro",
+                "coreSystem": "Centro",
+                "modules": "Módulos",
+                "users": "Usuarios"
+            }
+        },
+        "settings-sync": {
+            "title": "Sincronización de configuración",
+            "activate": "Activar",
+            "deactivate": "Desactivar",
+            "expand": "Haga clic para ampliar",
+            "namespace": "Espacio de nombres",
+            "setting": "Configuración",
+            "user": "Usuario",
+            "change": "Cambiar",
+            "apply": "¿Aplicar?",
+            "confirm": {
+                "syncAll": "Sincronizar todo",
+                "syncAgnostic": "Sincronizar configuraciones independientes",
+                "syncSystem": "Sincronizar la configuración del sistema",
+                "syncModules": "Sincronizar módulos",
+                "syncUsers": "Sincronizar usuarios",
+                "content": "¿Estás seguro de que quieres continuar? \nEsta operación no es reversible."
+            },
+            "tabs": {
+                "modules": "Módulos",
+                "users": "Usuarios",
+                "settingsAgnostic": "Configuraciones agnósticas",
+                "settingsSystem": "Ajustes del sistema"
+            },
+            "actions": {
+                "syncAll": "Sincronizar todo",
+                "syncAgnostic": "Agnóstico de sincronización",
+                "syncSystem": "Sistema de sincronización",
+                "syncModules": "Módulos de sincronización",
+                "syncUsers": "Sincronizar usuarios",
+                "saveConfigurations": "Guardar manualmente la configuración en un archivo"
+            }
+        },
+        "flags": {}
+    }
+}

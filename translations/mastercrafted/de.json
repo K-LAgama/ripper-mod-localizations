@@ -1,0 +1,205 @@
+{
+    "mastercrafted": {
+        "mastercrafted": "Meisterhaftes Rezept",
+        "craft": "Basteln",
+        "show-recipes": "Rezepte anzeigen",
+        "craftDialog": {
+            "title": "Basteln",
+            "craft": "Handwerk",
+            "cancel": "Stornieren",
+            "consumes": "Verbraucht",
+            "crafts": "Kunsthandwerk",
+            "crafted": "Gefertigt"
+        },
+        "componentEditForm": {
+            "title": "Komponentenkonfiguration",
+            "name": {
+                "label": "Name",
+                "hint": "Name, der verwendet wird, um den Gegenstand zuzuordnen, der als Komponente für die Herstellung verwendet wird."
+            },
+            "img": "Bild",
+            "quantity": "Menge",
+            "uuid": {
+                "label": "Auch",
+                "hint": "Element, das beim Klicken angezeigt wird. Beachten Sie, dass durch Ändern dieses Elements weder der Name noch das Bild der Komponente aktualisiert werden."
+            },
+            "resourcePath": {
+                "title": "Ressourcenkonfiguration",
+                "hint": "Der Pfad zu einer Schauspieler-Ressource. Wenn das Element nicht im Inventar vorhanden ist, wird beim Herstellen die Ressource des herstellenden Schauspielers statt des Elements verbraucht.",
+                "label": "Ressourcenpfad"
+            },
+            "tags": {
+                "title": "Tags Konfiguration",
+                "hint": "Eine Liste von Tags, die alternative Gegenstände für diese Komponente definieren. Wenn der Hauptgegenstand nicht im Inventar vorhanden ist, werden beim Herstellen Gegenstände verwendet, die mindestens einem Tag im Modus „Einige“ oder allen Tags im Modus „Alle“ entsprechen.",
+                "label": "Stichwörter",
+                "mode": {
+                    "label": "Erforderlich",
+                    "every": "Jeder",
+                    "some": "Einige"
+                }
+            }
+        },
+        "recipeApp": {
+            "errors": {
+                "namemissing": "Namensfeld erforderlich!",
+                "alreadyingredient": "Dieser Artikel ist bereits in einer Zutat dieses Rezepts enthalten!",
+                "noJournal": "Öffnen Sie ein Buch, um Kategorien zu konfigurieren."
+            },
+            "bookcontext": {
+                "add": "Rezept hinzufügen",
+                "edit": "Bearbeiten",
+                "delete": "Löschen",
+                "inspect": "Inspizieren",
+                "duplicate": "Duplikat",
+                "export": "Exportieren",
+                "import": "Importieren"
+            },
+            "editcreatebook": {
+                "title": "Buch bearbeiten/erstellen",
+                "name": "Name",
+                "namep": "Neues Buch",
+                "description": "Beschreibung",
+                "image": "Bild",
+                "sound": "Klang",
+                "confirm": "Bestätigen",
+                "tools": "Werkzeug",
+                "toolsplaceholder": "Kommagetrennte Liste von Werkzeugnamen",
+                "macro": "Zustand",
+                "macroplaceholder": "Makroname oder Befehl",
+                "time": "Zeit",
+                "timeplaceholder": "Herstellungszeit in Minuten",
+                "edit": "Bearbeiten",
+                "create": "Erstellen",
+                "book": "Buch",
+                "recipe": "Rezept",
+                "permission": "Spielerberechtigung",
+                "expression": {
+                    "label": "Ausdruck",
+                    "placeholder": "Ausdruck"
+                },
+                "abilityDc": {
+                    "label": "Distrikt von Columbia",
+                    "placeholder": "Distrikt von Columbia"
+                },
+                "toolCheck": {
+                    "label": "Werkzeugprüfung",
+                    "placeholder": "Werkzeugprüfung"
+                },
+                "toolDc": {
+                    "label": "Distrikt von Columbia",
+                    "placeholder": "Distrikt von Columbia"
+                },
+                "abilityCheck": {
+                    "label": "Systemfähigkeit",
+                    "placeholder": "Systemfähigkeit"
+                },
+                "modifierList": {
+                    "add": "Hinzufügen Bearbeiten",
+                    "hint": "Wenn entweder das Würfelergebnis oder der vom Ausdruck zurückgegebene Wert gleich oder größer als die Schwierigkeitsklasse (DC) ist (wobei der höhere Wert verwendet wird), wird die Anzahl der gesammelten Gegenstände entsprechend dem Modifikatorausdruck geändert. Sie können am Anfang des Modifikators einen mathematischen Operator einfügen; wenn keiner angegeben ist, wird standardmäßig ein Pluszeichen (+) angenommen. Beispielsweise multipliziert *1d4 die Anzahl der gesammelten Gegenstände mit 1d4.",
+                    "label": "Bearbeiten"
+                }
+            },
+            "configbookrecipe": {
+                "permissions": {
+                    "default": "Standard",
+                    "allow": "Erlauben",
+                    "deny": "Leugnen"
+                }
+            },
+            "recipeconfig": {
+                "inheritTools": "Werkzeuge erben",
+                "ingredientsInspection": "Inhaltskontrolle",
+                "productInspection": "Produktinspektion",
+                "ingredients": "Zutaten",
+                "result": "Ergebnis"
+            },
+            "title": "Meisterhaft",
+            "recipeBooks": "Rezeptbücher",
+            "addRecipeBook": "Rezeptbuch hinzufügen",
+            "filter": "Schalte Alle/Herstellbar um",
+            "relinked": "Bei einem oder mehreren Artikeln fehlten Referenzen und sie wurden neu verknüpft.",
+            "craft": "Fertigen - Halten Sie die Strg-Taste gedrückt, um schnell zu erstellen",
+            "searchRecipe": "Suchrezept",
+            "tools": "notwendige Werkzeuge",
+            "time": "Zeit zum Basteln",
+            "minutes": "Protokoll",
+            "craftError": "Bastelfehler",
+            "craftSuccess": "Basteln erfolgreich! \nZum Inventar hinzugefügt:",
+            "craftSuccessTimed": "Basteln erfolgreich! \nDie folgenden Gegenstände werden hinzugefügt, sobald die Herstellung abgeschlossen ist:",
+            "timedCraftCompleted": "Basteln abgeschlossen! \nZum Inventar hinzugefügt:",
+            "craftFailConsumed": "Basteln fehlgeschlagen! \nDie Bedingung war nicht erfüllt und die Zutaten wurden verbraucht.",
+            "craftFailNotConsumed": "Basteln fehlgeschlagen! \nDie Bedingung war nicht erfüllt und die Zutaten wurden nicht verbraucht.",
+            "noTools": "Werkzeug fehlt! \nSie benötigen eines von:",
+            "noProficiency": "Sie beherrschen Folgendes nicht: ",
+            "ingredientsTooltip": "Klicken Sie mit der linken Maustaste, um Zutaten auszuwählen, und mit der rechten Maustaste, um eine Zutat zu überprüfen.",
+            "resultTooltip": "Klicken Sie mit der linken Maustaste auf das Feld, um das Ergebnis auszuwählen, und mit der rechten Maustaste auf das Element, um es zu überprüfen.",
+            "ingredientsEditInfo": "Ziehen Sie einen Gegenstand auf eine Box, um ihn als Handwerkskomponente hinzuzufügen. Klicken Sie auf die Schaltfläche „+“, um eine leere Komponente hinzuzufügen. Mehrere Komponenten in derselben Box können austauschbar verwendet werden. Zum Handwerken ist mindestens eine Komponente pro Box erforderlich.",
+            "resultEditInfo": "Ziehen Sie einen Gegenstand auf eine Box, um ihn als Handwerksergebnis hinzuzufügen. Mehrere Gegenstände in derselben Box werden alle beim Handwerk vergeben. Während des Handwerks kann nur eine Box als Ergebnis ausgewählt werden.",
+            "cauldron": "Kessel",
+            "timedCrafting": "Fortschritt beim Basteln",
+            "readyIn": "Fertig in: ",
+            "onlyCraftable": "Nur herstellbar",
+            "all": "Alle",
+            "useCraftingActor": "Verwende Crafting-Actor",
+            "editMode": "Bearbeiten",
+            "useInventory": "Bestand verwenden",
+            "craftAs": "Handwerk als",
+            "useInventoryInfo": "Gegenstände aus dem Inventar dieses Akteurs werden für das Handwerk verwendet. Handwerksergebnisse und verzögerte Handwerksergebnisse werden ebenfalls im Inventar dieses Akteurs abgelegt.",
+            "craftAsInfo": "Dieser Akteur führt die Handwerksarbeiten durch, und alle Handwerksprüfungen (Werkzeuge, Fähigkeiten usw.) werden von diesem Akteur durchgeführt.",
+            "ingredient": "Zutat",
+            "product": "Produkt",
+            "component": "Komponente"
+        },
+        "cauldronApp": {
+            "title": "Kessel",
+            "noIngredients": "Um ein Rezept zu finden, müssen Sie mindestens zwei Zutaten mischen!",
+            "brewFail": "Brühen fehlgeschlagen! \nIhre Mischung hat sich nicht gut vermischen lassen. \nDie Zutaten wurden verbraucht.",
+            "hint": "Ziehen Sie die Zutaten per Drag-and-Drop in den Kessel, um sie zu vermischen. \nKlicken Sie auf eine Zutat, um sie aus dem Kessel zu entfernen. \nKlicken Sie auf die Schaltfläche „Zutaten mischen“, um die Zutaten miteinander zu vermischen. \nWenn sich die Zutaten gut vermischen, entdecken Sie ein neues Rezept. \nDie Zutaten werden verbraucht.",
+            "discovered": "Du hast ein neues Rezept entdeckt!",
+            "gmConfirm": "Ein Spielleiter muss diese Entdeckung bestätigen, bevor sie verwendet werden kann.",
+            "confirm": "Bestätigen",
+            "partial": {
+                "consumed": "Verbraucht:",
+                "extra1": "Es war so nah! \nDu hattest es fast geschafft! \nVielleicht hast du etwas zu viel hinzugefügt.",
+                "extra2": "Es sah so aus, als würde es funktionieren, aber das tat es nicht. \nVielleicht hast du zu viel hinzugefügt.",
+                "missing1": "Es war so nah! \nDu hattest es fast geschafft! \nVielleicht braucht es noch ein bisschen mehr.",
+                "missing2": "Es sah so aus, als würde es funktionieren, aber das tat es nicht. \nVielleicht braucht es mehr von etwas.",
+                "extra1missing1": "Es sah so aus, als würde es funktionieren, aber das tat es nicht. \nVielleicht haben Sie von etwas zu viel und von etwas anderem zu wenig hinzugefügt."
+            }
+        },
+        "itemConfig": {
+            "title": "Meisterhaft gefertigt – Artikelkonfiguration",
+            "sheetButton": "",
+            "attributePath": {
+                "label": "Attributpfad"
+            },
+            "tags": {
+                "label": "Stichwörter",
+                "notes": "Durch Kommas getrennte Liste von Tags. Beim Herstellen muss der Spieler Gegenstände mit mindestens einem dieser Tags in seinem Inventar haben."
+            }
+        },
+        "UI": {
+            "open-recipe-app": "Rezeptmanager",
+            "delete-recipe-book-title": "Rezeptbuch löschen",
+            "delete-recipe-book-content": "Möchten Sie dieses Rezeptbuch wirklich löschen?",
+            "delete-recipe-title": "Rezept löschen",
+            "delete-recipe-content": "Möchten Sie dieses Rezept wirklich löschen?",
+            "default-recipe-name": "Neues Rezept",
+            "no-permission": "Sie sind nicht berechtigt, dieses Rezept oder Buch zu öffnen."
+        },
+        "settings": {
+            "enableCauldron": {
+                "name": "Aktivieren Sie Kessel",
+                "hint": "Aktivieren Sie die Cauldron-Schnittstelle. \nAuf diese Weise können Spieler beliebige Zutaten miteinander mischen, um Rezepte zu entdecken."
+            },
+            "customQuantityPath": {
+                "name": "Benutzerdefinierter Mengenpfad",
+                "hint": "Der Pfad zum Datenwert der Artikelmenge (der Datenpfad beginnt bei „system“. Wenn Ihre Menge beispielsweise in item.system.itemQuantity.value gespeichert ist, würden Sie „itemQuantity.value“ in diese Einstellung einfügen). \nLassen Sie das Feld leer, um den Standardpfad zu verwenden. Passen Sie es nur an, wenn Ihr System nicht den allgemeinen Pfad verwendet."
+            },
+            "migrateOnStartup": {
+                "name": "Einstellungen beim Start migrieren",
+                "hint": "Wenn diese Option aktiviert ist, migriert das Modul die Journal-Daten beim Start. Mit dem Makro „game.modules.get(„mastercrafted“).API.migration.showManualMigrationDialog()“ können Sie Ihre Einstellungen manuell migrieren."
+            }
+        }
+    }
+}

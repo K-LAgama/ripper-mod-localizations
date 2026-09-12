@@ -1,0 +1,180 @@
+{
+    "hexplorer": {
+        "request": {
+            "explore": "Explorer",
+            "reveal": "Révéler",
+            "advance-time": "Temps d'avance",
+            "total-time": "Durée totale",
+            "roll-tables": "Rouler sur la table",
+            "move": "Se déplacer",
+            "journal-entry": "Révéler la page",
+            "not-in-scene": "Hexplorer : Vous devez être dans la même scène que le mouvement demandé afin de le confirmer.",
+            "player-message": "Demande de mouvement transmise au Game Master."
+        },
+        "fog": {
+            "showColor": "Basculer l'affichage des couleurs des cellules dans les cellules révélées"
+        },
+        "scene": {
+            "enable": {
+                "name": "Activer Hexplorer"
+            }
+        },
+        "token": {
+            "enable": {
+                "name": "Est-ce que Hexplorer ?"
+            },
+            "revealRadius": {
+                "name": "Révéler le rayon",
+                "hint": "Le rayon de la zone révélée en hexs. \n0 signifie que seul l’hex sur lequel se trouve le jeton est révélé."
+            },
+            "speed": {
+                "name": "Vitesse",
+                "hint": "La vitesse de déplacement du jeton hexplorer en unités de scène par heure. \nCeci est utilisé pour calculer l’avancement du temps."
+            }
+        },
+        "settings": {
+            "hexTime": {
+                "name": "Animation de mouvement",
+                "hint": "Le temps d'animation en millisecondes pour déplacer une cellule."
+            },
+            "autoTriggerExplore": {
+                "name": "Action d'exploration du déclencheur automatique",
+                "hint": "Déclenchez automatiquement les activités d'exploration lorsqu'un jeton entre dans une cellule. \nSi votre système nécessite une action manuelle des joueurs pour explorer une cellule, cela peut être désactivé."
+            }
+        },
+        "hexplorer-app": {
+            "title": "Hexplorer",
+            "brushes": {
+                "legend": "Pinceaux",
+                "radius": "Rayon de la brosse",
+                "hint": "Cliquez sur une cellule du canevas pour la configurer et/ou l'enregistrer sous forme de pinceau. \nCliquez sur les cellules avec un pinceau sélectionné pour peindre les cellules au lieu de les configurer.",
+                "apply": {
+                    "title": "Appliquer le pinceau",
+                    "sameColor": "Même couleur",
+                    "sameColorHint": "Appliquer le pinceau sur toutes les cellules de la même couleur",
+                    "sameName": "Même nom",
+                    "sameNameHint": "Appliquer le pinceau à toutes les cellules portant le même nom de région",
+                    "tooltip": "Appliquer le pinceau",
+                    "notification": "Pinceau appliqué à {count} cellules."
+                }
+            },
+            "settings": {
+                "legend": "Paramètres",
+                "show-color": {
+                    "label": "Afficher les couleurs des cellules dans les cellules révélées"
+                },
+                "always-banner": {
+                    "label": "Toujours afficher la bannière régionale"
+                }
+            },
+            "reset-fow": {
+                "label": "Réinitialiser les cellules révélées",
+                "title": "Réinitialiser les cellules révélées ?",
+                "content": "Êtes-vous sûr de vouloir réinitialiser les cellules révélées ? \nCette action ne peut pas être annulée."
+            },
+            "reset-discovered": {
+                "label": "Réinitialiser les régions découvertes",
+                "title": "Réinitialiser les régions découvertes ?",
+                "content": "Êtes-vous sûr de vouloir réinitialiser les régions découvertes ? La bannière s'affichera à nouveau lors de votre première visite dans ces régions."
+            }
+        },
+        "cell-config": {
+            "title": "Configurer la cellule",
+            "tabs": {
+                "basic": {
+                    "label": "Basique"
+                },
+                "activities": {
+                    "label": "Activités"
+                },
+                "discover-activities": {
+                    "label": "Explorer les activités",
+                    "hint": "Ces activités seront exécutées lorsque le hexplorer traversera la cellule ou y terminera son mouvement. \nCertaines activités ne peuvent être exécutées que la première fois que le hexplorer se déplace vers la cellule."
+                },
+                "explore-activities": {
+                    "label": "Révéler les activités",
+                    "hint": "Ces activités seront exécutées lorsque la cellule sera révélée pour la première fois."
+                }
+            },
+            "revealed": {
+                "label": "Révélé",
+                "hint": "Une cellule révélée sera visible par les joueurs."
+            },
+            "revealRadius": {
+                "label": "Révéler le rayon",
+                "hint": "Le rayon à révéler autour de cette cellule lors de sa révélation. \nUne valeur de 0 ou plus remplacera le paramètre du jeton hexplorer."
+            },
+            "discovered": {
+                "label": "Exploré",
+                "hint": "Une cellule explorée a été traversée par un jeton hexplorer."
+            },
+            "execute-only-on-explore": {
+                "label": "Exécuter uniquement lors de l'exploration",
+                "hint": "Exécutez les activités cellulaires uniquement si la cellule n’a pas été explorée auparavant."
+            },
+            "first-time-only": {
+                "label": "Première fois seulement",
+                "hint": "N'exécutez l'activité ci-dessus que la première fois que hexplorer se déplace vers cette cellule."
+            },
+            "reveal-tooltip": {
+                "label": "Révéler l'info-bulle",
+                "hint": "Donnez l'autorisation d'observateur aux joueurs pour la page de journal associée à l'info-bulle."
+            },
+            "reveal-journal-entry": {
+                "label": "Révéler une entrée de journal",
+                "hint": "Autoriser les joueurs à ouvrir l'entrée de journal associée à cette cellule dans l'onglet Général."
+            },
+            "reveal-map-notes": {
+                "label": "Révéler les notes de la carte",
+                "hint": "Donnez aux joueurs la permission d'observer toutes les notes de la carte de scène présentes dans cette cellule."
+            },
+            "color": {
+                "label": "Couleur"
+            },
+            "region": {
+                "label": "Région"
+            },
+            "reveal": {
+                "label": "Révéler les cellules",
+                "hint": "Liste de cellules séparées par des virgules à révéler. \nMaj Cliquez sur le canevas pour ajouter des cellules.",
+                "notification": "Cellule ajoutée pour révéler la liste."
+            },
+            "remove-hidden": {
+                "label": "Supprimer le masqué",
+                "hint": "Documents pour supprimer le statut masqué lors de l'exécution de cette activité. \nPeut être des lumières, des tuiles, des sons, des jetons, etc."
+            },
+            "macros": {
+                "label": "Macro",
+                "hint": "Macros à exécuter lorsque cette activité est exécutée."
+            },
+            "speed-multiplier": {
+                "label": "Multiplicateur de vitesse"
+            },
+            "roll-tables": {
+                "label": "Tables roulantes",
+                "hint": "Roulez les tables pour rouler lorsque vous entrez ou voyagez à travers la cellule."
+            },
+            "tooltip": {
+                "label": "Info-bulle"
+            },
+            "journal-entry": {
+                "label": "Entrée de journal",
+                "hint": "Entrée de journal à ouvrir en un clic."
+            },
+            "brush-name": {
+                "label": "Nom du pinceau"
+            },
+            "save-as-brush": {
+                "label": "Enregistrer sous forme de pinceau"
+            },
+            "discover-button": {
+                "label": "Déclencher l’action Explorer",
+                "no-token": "Aucun jeton hexplorer trouvé."
+            }
+        },
+        "flags": {},
+        "err": {
+            "gridless": "Hexplorer n'est pas compatible avec les scènes sans grille. \nVeuillez sélectionner un type de grille."
+        }
+    }
+}

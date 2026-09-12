@@ -1,0 +1,83 @@
+{
+    "epic-rolls-5e": {
+        "check": "Test",
+        "save": "Sauvegarde",
+        "death": "Mort",
+        "success": "Succès",
+        "failure": "Échec",
+        "button-tooltip": "Configurer Epic Roll<hr>Clic-droit pour les jets récents",
+        "complete-roll": "Conclure Epic Roll",
+        "epicRoll": "Lancer épique",
+        "settings": {
+            "introSound": {
+                "name": "Son d'introduction",
+                "hint": "Le son à jouer lorsque le jet démarre"
+            },
+            "successSound": {
+                "name": "Son de réussite",
+                "hint": "Le son à jouer lorsque le lancer est réussi"
+            },
+            "failureSound": {
+                "name": "Son d'échec",
+                "hint": "Le son à jouer lorsque le lancer est un échec"
+            },
+            "recapMessage": {
+                "name": "Message récapitulatif",
+                "hint": "Configurer qui peut voir le message affiché à la completion de l'Epic Roll",
+                "options": {
+                    "none": "Aucun",
+                    "gm": "MJ",
+                    "public": "Public"
+                }
+            },
+            "cleanupMessages": {
+                "name": "Nettoyer les messages",
+                "hint": "Supprimer les messages du jet après la complétion de l'Epic roll"
+            }
+        },
+        "get-roll-data": {
+            "customFormula": "Formule personnalisée",
+            "customLabel": "Étiquette",
+            "customLabelNotes": "Étiquette d'introduction personnalisée pour le rouleau",
+            "formula": "Formule",
+            "title": "Configurer Epic Roll",
+            "startRoll": "Démarrer un Epic Roll",
+            "macro": "Enregistrer dans une macro",
+            "save-macro": "Création de la macro Epic Roll pour ",
+            "player": "Personnage joueur",
+            "npc": "Personnage non joueur",
+            "selected": "Choisi",
+            "available": "Disponible",
+            "rollOptions": "Options de jet",
+            "VsDCNotes": "Le DD pour le jet de dés",
+            "showDC": "Afficher le DD",
+            "showDCNotes": "Lorsqu'il est activé, le DD sera visible par les joueurs",
+            "useAverage": "Utiliser la moyenne",
+            "useAverageNotes": "Utilisez la moyenne de tous les résultats pour déterminer le succès ou l’échec",
+            "allowReroll": "Autoriser la relance",
+            "allowRerollNotes": "Permettre aux joueurs de relancer leur jet",
+            "showRollResults": "Afficher les résultats du lancer",
+            "showRollResultsNotes": "S'il faut afficher le texte de sortie Succès/Échec",
+            "blindRoll": "Jet aveugle",
+            "blindRollNotes": "Masquer les résultats des lancers aux joueurs",
+            "hideNames": "Masquer les noms",
+            "hideNamesNotes": "Masquer les noms des acteurs n'appartenant pas aux joueurs",
+            "color": "Couleur",
+            "colorNotes": "La couleur de la bannière du jet",
+            "autoColor": "Couleur automatique",
+            "autoColorNotes": "Colorie automatiquement la banière du jet en fonction du type de jet",
+            "contest": "Opposition",
+            "contestInfo": "Pour sélectionner les participants, faits un clic-droit sur un acteur et/ou un jet",
+            "saveDefaultOptions": "Sauvegarder par défaut",
+            "saveDefaultOptionsNotification": "Options actuelles sauvegardées comme options par défaut",
+            "ERROR": {
+                "noActors": "Aucun acteur sélectionné pour le jet, veuillez sélectionner au moins un acteur",
+                "noType": "Aucun type sélectionné pour le rouleau, veuillez sélectionner un type",
+                "noContestants": "Un type de jet opposé a été sélectionné mais aucun concurrent n'a été sélectionné",
+                "noContest": "Les concurrents ont été sélectionnés mais aucun type de jet opposé n'a été sélectionné",
+                "noDC": "Aucun DD n'a été saisi pour le rôle, veuillez saisir un DD"
+            }
+        },
+        "flags": {}
+    }
+}

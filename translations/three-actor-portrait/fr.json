@@ -1,0 +1,45 @@
+{
+    "three-actor-portrait": {
+        "settings": {
+            "authKey": {
+                "name": "Clé d'authentification HeroForge",
+                "hint": "Entrez votre clé d'authentification ici. Vous pouvez la trouver dans les paramètres de votre compte HeroForge (Account -> Personal Info -> Access Key). Si vous changez votre mot de passe HeroForge, vous devrez mettre à jour la clé d'authentification."
+            },
+            "disablePortrait": {
+                "name": "Désactive 3D Portraits",
+                "hint": "Désactive 3D Portraits pour tous les joueurs. Recommandé pour les appareils peu performants et les réseaux à faible vitesse."
+            },
+            "playerCanEditPortrait": {
+                "name": "Permet aux joueurs de modifier la position de la caméra",
+                "hint": "Permettre aux joueurs de modifier le positionnement de la caméra autours des portraits 3D."
+            },
+            "autoRotate": {
+                "name": "Rotation automatique",
+                "hint": "Rotation automatique de l'appareil photo autours des Portraits 3D."
+            },
+            "rotationSpeed": {
+                "name": "Vitesse de rotation",
+                "hint": "La vitesse à laquelle l'appareil photo tourne autours des Portraits 3D."
+            },
+            "license-agreement": {
+                "name": "Accepter les conditions d'utilisation",
+                "hint": "En activant ce paramètre, vous acceptez les conditions de service de 3D Portraits. Ce module utilise l'API HeroForge, toute tentative de rétroconception, d'extraction ou d'utilisation de l'API sans l'autorisation de Sky Castle Studio est contraire aux conditions d'utilisation. Si vous souhaitez utiliser l'API HeroForge pour votre propre projet, veuillez contacter Sky Castle Studio à l'adresse suivante support@heroforge.com."
+            },
+            "maxContexts": {
+                "name": "Nombre maximum de portraits simultanés",
+                "hint": "Le nombre maximum de portraits qui peuvent être affichés en même temps. D'autres modules ou d'autres onglets de navigateur peuvent utiliser des contextes de toile, si vous rencontrez des plantages de webgl, vous pouvez vouloir diminuer cette valeur. WebGl a une limite maximale de 16 contextes."
+            }
+        },
+        "portrait-preview": {
+            "save-pose": "Sauvegarde la pose",
+            "download": "Télécharger",
+            "toggle-rotate": "Basculer la rotation automatique",
+            "camera-position-saved": "Sauvegarde de la position de la caméra",
+            "topdown": "Vue de dessus",
+            "outline": "Afficher/masquer la structure"
+        },
+        "notifications": {
+            "maxContextExceeded": "Vous avez atteint le nombre maximum de portraits 3D que vous pouvez afficher simultanément, le plus ancien a été fermé. Vous pouvez changer cela dans les paramètres du module."
+        }
+    }
+}

@@ -1,0 +1,121 @@
+{
+    "TYPES": {
+        "JournalEntryPage": {
+            "gatherer": {
+                "gatherer": "Sammler"
+            }
+        }
+    },
+    "gatherer": {
+        "gatherer": "Sammler",
+        "gathered": "Gesammelt",
+        "found": "Gefunden",
+        "quantity": "Anzahl",
+        "minigame": {
+            "title": "Minispiel „Gatherer“"
+        },
+        "sheet": {
+            "err": {
+                "noDraws": "Dieser Treffpunkt ist erschöpft und kann erst wieder genutzt werden, wenn er zurückgesetzt wurde.",
+                "noActor": "Es ist kein Akteur vorhanden, der die Sammlung ausführen kann. Bitte wähle ein Token aus oder weise dir selbst einen Charakter zu.",
+                "noReq": "Sie erfüllen die Voraussetzungen für eine Versammlung an diesem Ort nicht. Es fehlt: ",
+                "noItem": "Der Eintrag wurde nicht gefunden. Bitte überprüfen Sie die Schreibweise und versuchen Sie es erneut.",
+                "noExp": "Du hast an dieser Stelle keine Ressourcen gesammelt...",
+                "noGM": "Ein GM-Benutzer muss verbunden sein, um Daten zu erfassen."
+            },
+            "gather": "Sammeln",
+            "reset": "Zurücksetzen",
+            "edit": "Bearbeiten",
+            "remaining": "Verbleibende Züge",
+            "time": "Zurücksetzen in",
+            "quantity": "Anzahl",
+            "waitingFirst": "Warten auf die erste Auslosung"
+        },
+        "flags": {
+            "table": {
+                "label": "Zusammenklappbarer Tisch"
+            },
+            "time": {
+                "label": "Zeit",
+                "placeholder": "Zeit bis zum Zurücksetzen in Stunden"
+            },
+            "quantity": {
+                "label": "Anzahl",
+                "placeholder": "Zahl- oder Roll-Ausdruck"
+            },
+            "draws": {
+                "label": "Zugkräfte",
+                "placeholder": "Zieht, bevor die Stelle erschöpft ist",
+                "notes": "Lassen Sie das Feld leer, um die Daten von der entsprechenden Gatherer-Seite zu übernehmen."
+            },
+            "require": {
+                "label": "Erfordert",
+                "placeholder": "Durch Kommas getrennte Liste von Elementen"
+            },
+            "minigame": {
+                "label": "Minispiel",
+                "placeholder": "Zeit für das Minispiel in Millisekunden"
+            },
+            "expression": {
+                "label": "Ausdruck",
+                "placeholder": "Bedingung für die Ausführung des Makros"
+            },
+            "systemAbil": {
+                "label": "Überprüfen"
+            },
+            "DC": {
+                "label": "DC",
+                "placeholder": "DC"
+            },
+            "toolCheck": {
+                "label": "Werkzeug",
+                "placeholder": "Name des Tools"
+            },
+            "toolDC": {
+                "label": "DC",
+                "placeholder": "DC"
+            },
+            "gatherSheet": {
+                "label": "Ernteprotokoll",
+                "placeholder": "Seite „Drop Gatherer“ hier"
+            },
+            "modifierList": {
+                "label": "Modifikator",
+                "add": "Modifikator hinzufügen",
+                "hint": "Wenn entweder das Würfelergebnis oder der vom Ausdruck zurückgegebene Wert gleich oder größer als die Schwierigkeitsklasse (DC) ist (wobei der höhere Wert gilt), wird die Anzahl der gesammelten Gegenstände entsprechend dem Modifikatorausdruck angepasst. Du kannst am Anfang des Modifikators einen mathematischen Operator angeben; wird keiner angegeben, wird standardmäßig ein Pluszeichen (+) angenommen. Beispielsweise multipliziert *1d4 die Anzahl der gesammelten Gegenstände mit 1d4."
+            }
+        },
+        "gatherer-actor-config": {
+            "title": "Konfiguration des Gatherers",
+            "notes": "Um ein bestimmtes Token zu sammeln, erstellen Sie ein Makro mit folgendem Inhalt:",
+            "notes2": "Oder verwenden Sie die Tastenkombination: "
+        },
+        "error": {
+            "notGatherer": "Dies ist kein „Gatherer Sheet“. Bitte wählen Sie ein „Gatherer Sheet“ aus und versuchen Sie es erneut.",
+            "noDraws": "Von dieser Kreatur lassen sich keine Ressourcen mehr sammeln.",
+            "noJournal": "Zu diesem Token ist kein Treffpunkt zugeordnet. Bitte wähle ein Token mit einem gültigen Treffpunkt aus und versuche es erneut.",
+            "cantHarvest": "Die Bedingungen für den Erhalt dieses Tokens sind nicht erfüllt"
+        },
+        "settings": {
+            "resourcePath": {
+                "name": "Ressourcenpfad „Ernte“",
+                "hint": "Pfad, um zu prüfen, ob ein „Harvesting“ möglich ist. Bei DnD5e wäre dies beispielsweise „attributes.hp.value“, um zu prüfen, ob das Token noch am Leben ist."
+            },
+            "quantityPath": {
+                "name": "Mengenpfad",
+                "hint": "Datenpfad zur Artikelmenge. Beginnend mit „system“ (ausgenommen). Bei DnD5e wäre dies beispielsweise „quantity“."
+            },
+            "resourceValue": {
+                "name": "Wert der Ernteerträge",
+                "hint": "Wert, mit dem geprüft wird, ob „Harvesting“ möglich ist. Bei DnD5e wäre dies beispielsweise „0“, um zu prüfen, ob das Spielstein keine HP mehr hat."
+            },
+            "enableHarvesting": {
+                "name": "Ernte aktivieren"
+            },
+            "migrateOnStartup": {
+                "name": "Einstellungen beim Systemstart migrieren",
+                "hint": "Wenn diese Option aktiviert ist, migriert das Modul beim Start die Journal-Daten. Mit dem Makro „game.modules.get(\"gatherer\").API.migration.showManualMigrationDialog()“ kannst du deine Einstellungen manuell migrieren."
+            }
+        }
+    }
+}

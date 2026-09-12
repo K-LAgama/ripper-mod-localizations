@@ -1,0 +1,73 @@
+{
+    "party-monitor-dock": {
+        "title": "Base de monitorización para fiestas",
+        "settings": {
+            "onlyConnected": {
+                "name": "Mostrar solo jugadores conectados",
+                "hint": "Mostrar solo jugadores que estén conectados al servidor"
+            },
+            "portraitSize": {
+                "name": "Tamaño vertical",
+                "hint": "El tamaño de los retratos en el banquillo."
+            },
+            "position": {
+                "name": "Posición del muelle",
+                "hint": "La posición del muelle en la pantalla",
+                "choices": {
+                    "docked": "Atracado",
+                    "horizontal": "Horizontal (flotante)",
+                    "vertical": "Vertical (flotante)",
+                    "hidden": "Oculto"
+                }
+            },
+            "dockAlignment": {
+                "name": "Alineación del HUD",
+                "hint": "La alineación del HUD en la pantalla.",
+                "choices": {
+                    "flex-start": "Arriba",
+                    "center": "Centro",
+                    "flex-end": "Abajo"
+                }
+            },
+            "hideInCombat": {
+                "name": "Esconderse en combate",
+                "hint": "Ocultar el HUD cuando hay un combate activo"
+            },
+            "hideCompanions": {
+                "name": "Ocultar compañeros",
+                "hint": "Ocultar compañeros de la lista de miembros del grupo"
+            },
+            "cornerImage": {
+                "name": "Imagen de esquina",
+                "hint": "La imagen que se utilizará en las esquinas del muelle. Déjela en blanco para desactivarla."
+            },
+            "edgeImage": {
+                "name": "Imagen de borde",
+                "hint": "La imagen que se utilizará para llenar el espacio entre las esquinas del muelle. \nDéjelo en blanco para desactivarlo."
+            }
+        },
+        "app": {
+            "buttons": {
+                "toggle-nav": "Alternar botones de navegación",
+                "toggle-dock": "Alternar muelle",
+                "reduce": "Disminuir tamaño",
+                "enlarge": "Aumentar tamaño",
+                "start-follow": "Empezar a seguir",
+                "stop-follow": "Dejar de seguir",
+                "context": {
+                    "follow": "Seguir",
+                    "mount": "Montar",
+                    "epicRoll": "Requerido \nRollo",
+                    "raise-hand": "Levantar la mano"
+                }
+            }
+        },
+        "flags": {},
+        "notifications": {
+            "follow": "ahora siguiendo",
+            "unfollow": "ya no sigue",
+            "mounted": "ha montado",
+            "dismounted": "ha desmontado"
+        }
+    }
+}

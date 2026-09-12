@@ -1,0 +1,335 @@
+{
+    "puzzle-locks": {
+        "settings": {},
+        "general-lock-config": {
+            "header-buttons": {
+                "copyContentLink": "Inhaltslink kopieren",
+                "unlock": "Puzzle öffnen"
+            },
+            "title": "Allgemeine Sperrkonfiguration",
+            "permissionWarning": "Die Standard-Eigentumsrechte für dieses Dokument sind nicht auf „Keine“ gesetzt. Unter bestimmten Umständen könnten Spieler die Sperre möglicherweise umgehen. Es wird empfohlen, die Standard-Eigentumsrechte auf „Keine“ zu setzen.",
+            "fixPermission": "Eigentumsverhältnisse klären",
+            "label": {
+                "label": "Bezeichnung",
+                "placeholder": "Türsicherheitssystem"
+            },
+            "description": {
+                "label": "Beschreibung",
+                "placeholder": "Dies ist ein Sicherheitssystem für die Tür."
+            },
+            "unlocked": {
+                "label": "Freigeschaltet"
+            },
+            "attempts": {
+                "label": "Versuche",
+                "notes": "Anzahl der zulässigen Versuche; auf -1 setzen, um eine unbegrenzte Anzahl zuzulassen."
+            },
+            "lockType": {
+                "label": "Schlossart",
+                "configure": "Konfigurieren",
+                "none": "Keine (deaktiviert)",
+                "optgroupContext": "Erfordert Kontext",
+                "optgroupNoContext": "Kein Kontext erforderlich",
+                "notes": "Die Art der Sperre, mit der das Dokument gesichert wird. Bei manchen Sperren muss der Kontext berücksichtigt werden, um sie zu lösen, während andere ohne jegliche externen Informationen gelöst werden können."
+            },
+            "unlockSound": {
+                "label": "Sound freischalten"
+            },
+            "interactionSound": {
+                "label": "Interaktionsgeräusche"
+            },
+            "backgroundImage": {
+                "label": "Hintergrundbild"
+            },
+            "glow": {
+                "label": "Leuchteffekt",
+                "notes": "Aktivieren Sie Rahmen- sowie Text-Leucht- und Schatteneffekte – dadurch passt das Design besser zu Science-Fiction-Umgebungen."
+            },
+            "textColor": {
+                "label": "Textfarbe"
+            },
+            "primaryColor": {
+                "label": "Grundfarbe",
+                "notes": "Bei einigen Schlossarten wird diese Farbe möglicherweise nicht verwendet. Lassen Sie das Feld leer, um die Standardfarbe des Schlosses zu verwenden."
+            },
+            "secondaryColor": {
+                "label": "Sekundärfarbe",
+                "notes": "Bei einigen Schlossarten wird diese Farbe möglicherweise nicht verwendet. Lassen Sie das Feld leer, um die Standardfarbe des Schlosses zu verwenden."
+            },
+            "primaryFont": {
+                "label": "Primäre Schriftart"
+            },
+            "secondaryFont": {
+                "label": "Sekundäre Schriftart",
+                "notes": "Bei einigen Schlossarten wird diese Schriftart möglicherweise nicht verwendet."
+            },
+            "font": {
+                "inherit": "Erben"
+            },
+            "unlockMacro": {
+                "label": "Makro entsperren",
+                "notes": "Makro, das ausgeführt wird, wenn die Sperre aufgehoben wird. Innerhalb des Makros können Sie auf „object“ zugreifen, um das entsperrte Dokument abzurufen, und auf „user“, um den Benutzer abzurufen, der die Sperre aufgehoben hat."
+            },
+            "permission": {
+                "label": "Zu den Freigabeberechtigungen",
+                "notes": "Legt fest, welche Berechtigungsstufe ein Spieler für das Dokument erhält, wenn er es freischaltet, und ob diese Berechtigung nur dem Spieler gewährt wird, der es freigeschaltet hat, oder allen Spielern. Handelt es sich bei dem Dokument um eine Tür, wird diese Einstellung ignoriert und die Tür wird freigeschaltet.",
+                "noChange": "Keine Änderung",
+                "all": "Alle Spieler",
+                "unlocking": "Spieler freischalten"
+            }
+        },
+        "number-lock": {
+            "name": "Zahl/Zeichen",
+            "description": "Ein Schloss im Stil eines PIN-Codes. Der Spieler muss den richtigen Code eingeben, um das Dokument zu entsperren. Sie können die Zahlen durch Symbole oder Bilder ersetzen, um das Schloss thematisch besser anzupassen.",
+            "playerInfo": "Da es sich hierbei nicht um ein Rätsel handelt, muss der Spielleiter den Spielern Hinweise oder Anweisungen geben, damit sie den richtigen Code eingeben können.",
+            "code": {
+                "label": "Code"
+            },
+            "keypad": {
+                "label": "Tastatur"
+            }
+        },
+        "password-lock": {
+            "name": "Passwort",
+            "description": "Eine einfache Passwortsperre. Der Spieler muss das richtige Passwort eingeben, um das Dokument zu entsperren.",
+            "playerInfo": "Da es sich hierbei nicht um ein Rätsel handelt, muss der Spielleiter den Spielern Hinweise oder Anweisungen geben, damit sie das richtige Passwort eingeben können.",
+            "password": {
+                "label": "Passwort",
+                "placeholder": "a$$w0rd"
+            }
+        },
+        "item-lock": {
+            "name": "Artikel",
+            "description": "Ein Schloss, bei dem der Spieler einen oder mehrere Gegenstände per Drag & Drop in die richtigen Felder ziehen muss, um das Dokument zu entsperren.",
+            "playerInfo": "Um dieses Rätsel zu lösen, kannst du den Spielern entweder Kontexthinweise oder Hinweise geben, damit sie wissen, welche Gegenstände wohin gehören, oder du kannst für die Felder bestimmte Bilder verwenden, die die notwendigen Informationen liefern, um die richtigen Gegenstände zu erraten.",
+            "item": {
+                "label": "Artikelname"
+            },
+            "itemImage": {
+                "label": "Slot-Bild"
+            },
+            "deleteItems": {
+                "label": "Elemente löschen",
+                "notes": "Wenn dieses Kontrollkästchen aktiviert ist, werden die Gegenstände aus dem Inventar des Spielers gelöscht, sobald das Schloss entriegelt wird."
+            }
+        },
+        "switches-lock": {
+            "name": "Schalter",
+            "description": "Ein Schloss, bei dem der Spieler eine Reihe von binären Schaltern in die richtige Position bringen muss, um das Dokument zu entsperren.",
+            "playerInfo": "Da es sich hierbei nicht um ein Rätsel handelt, muss der Spielleiter den Spielern Hinweise oder Anweisungen geben, damit sie die Schalter richtig einstellen können.",
+            "switchesSolution": {
+                "label": "Konfiguration der Switches",
+                "notes": "Die Lösung besteht aus der Konfiguration der Schalter im Format „0110“. Jede Ziffer steht für einen Schalter, wobei 0 für „aus“ und 1 für „ein“ steht. Sie können beliebig viele Schalter verwenden."
+            },
+            "showSwitches": {
+                "label": "Schalter anzeigen",
+                "notes": "Ob die Schaltertasten angezeigt werden sollen. Bei deaktivierter Option werden nur die Anzeigen für den Ein-/Aus-Zustand angezeigt."
+            }
+        },
+        "cryptex-lock": {
+            "name": "Cryptex",
+            "description": "Ein Schloss, bei dem der Spieler eine Reihe von Zylindern in die richtige Position drehen muss, um die Lösung zu finden. Zur Darstellung der Zeichen auf den Zylindern können Emojis oder Glyphen verwendet werden. Verschiedene Zylinder können unterschiedliche Zeichensätze aufweisen.",
+            "playerInfo": "Um dieses Rätsel zu lösen, können Sie den Spielern entweder externe Kontexthinweise geben, damit sie einige oder alle Zeichen erkennen, oder – indem Sie die Anzahl der Zeichen pro Zylinder begrenzen – den Spielern ermöglichen, die Lösung durch Ausprobieren zu erraten.",
+            "solution": {
+                "label": "Lösung"
+            },
+            "cylinder": {
+                "label": "Zylinder",
+                "notes": "Der Zylinder, den das Kryptex verwendet. Die einzelnen Zeichen des Zylinders sollten durch Kommas voneinander getrennt werden."
+            },
+            "glyphs": {
+                "label": "Glyphen",
+                "notes": "Die Glyphen, die im Kryptex verwendet werden können. Die einzelnen Glyphen sollten durch ein Komma voneinander getrennt werden."
+            }
+        },
+        "sudoku-lock": {
+            "name": "Sudoku",
+            "description": "Ein Schloss, bei dem der Spieler ein Sudoku-Rätsel lösen muss, um das Dokument freizuschalten. Die Standardzahlen können durch Bilder oder Symbole ersetzt werden, um das Schloss thematisch besser anzupassen.",
+            "playerInfo": "Um dieses Rätsel zu lösen, benötigen die Spieler Metawissen über die Sudoku-Regeln, oder Sie können ihnen einen Hinweis oder eine Anleitung zur Lösung geben.",
+            "generate": "Sudoku erstellen",
+            "difficulty": {
+                "label": "Schwierigkeitsgrad"
+            },
+            "grid": {
+                "4": "4x4",
+                "9": "9×9",
+                "label": "Raster"
+            },
+            "sudoku": {
+                "label": "Sudoku"
+            },
+            "key": {
+                "label": "Schlüssel"
+            }
+        },
+        "image-wheel": {
+            "name": "Bildrad",
+            "description": "Ein Schloss, bei dem der Spieler eine Reihe konzentrischer Ringe in die richtige Position drehen muss, um das Bild auszurichten.",
+            "playerInfo": "Zur Lösung dieses Rätsels ist kein zusätzlicher Kontext erforderlich; die Spieler können einfach die Räder drehen, bis das Bild richtig ausgerichtet ist.",
+            "image": {
+                "label": "Bild"
+            },
+            "wheelCount": {
+                "label": "Anzahl der Räder"
+            },
+            "angleStep": {
+                "label": "Winkelschritt"
+            },
+            "fixed": {
+                "label": "Festrad",
+                "notes": "Das Rad, das nicht gedreht werden darf. Dabei ist 1 das äußerste Rad."
+            }
+        },
+        "mastermind-lock": {
+            "name": "Drahtzieher",
+            "description": "Ein Schloss, bei dem der Spieler die richtige Kombination aus Farben oder Buchstaben erraten muss, um das Dokument zu entsperren. Bei jedem Entsperrversuch erhält der Spieler eine Rückmeldung darüber, wie viele Farben oder Buchstaben richtig sind und sich an der richtigen Position befinden. Grün steht für eine richtige Farbe und Position, Gelb für eine richtige Farbe, aber eine falsche Position, und Rot für eine falsche Farbe.",
+            "playerInfo": "Um dieses Rätsel zu lösen, können die Spieler die Erkenntnisse aus früheren Versuchen nutzen, um fundierte Vermutungen über die richtige Kombination anzustellen. Auch wenn Metawissen nicht unbedingt erforderlich ist, kann es den Spielern helfen, fundiertere Vermutungen anzustellen.",
+            "reset": "Zurücksetzen",
+            "solution": {
+                "label": "Lösung",
+                "notes": "Die Lösung für das „Mastermind“-Rätsel. Jede Farbe bzw. jeder Buchstabe sollte durch ein Komma getrennt werden. Du kannst CSS-Farben wie „red“ oder Hex-Codes wie „#ff0000“ verwenden."
+            },
+            "pipOptions": {
+                "label": "Stifte",
+                "notes": "Die Farben oder Buchstaben, die der Spieler zum Erraten der Lösung verwenden kann. Jede Farbe bzw. jeder Buchstabe sollte durch ein Komma getrennt werden. Du kannst CSS-Farben wie „red“ oder Hex-Codes wie „#ff0000“ verwenden."
+            }
+        },
+        "fill-blanks-lock": {
+            "name": "Fülle die Lücken aus",
+            "description": "Ein Schloss, bei dem der Spieler die Lücken in einem Text ausfüllen muss, um das Dokument zu entsperren. Der Spieler muss die richtigen Zeichen in der richtigen Reihenfolge eingeben.",
+            "playerInfo": "Um dieses Rätsel zu lösen, können die Spieler den Kontext des Rätsels nutzen, um die Lücken auszufüllen. Sie können ihnen auch Hinweise oder Anweisungen zur Lösung geben.",
+            "solution": {
+                "label": "Lösung",
+                "notes": "Die Lösung für die Lückentext-Aufgabe. Dies sollte der vollständige Text mit ausgefüllten Lücken sein.",
+                "placeholder": "Der schnelle braune Fuchs springt über den faulen Hund."
+            },
+            "text": {
+                "label": "Text",
+                "notes": "Der Text mit den Lücken, die der Spieler ausfüllen muss. Verwende Unterstriche, um die Lücken darzustellen.",
+                "placeholder": "Der _____ braune Fuchs springt über den ____ Hund."
+            },
+            "caseSensitive": {
+                "label": "Groß-/Kleinschreibung beachten"
+            }
+        },
+        "mosaic-lock": {
+            "name": "Mosaik",
+            "description": "Ein Schloss, bei dem der Spieler ein Mosaik-Rätsel lösen muss, um das Dokument freizuschalten. Der Spieler muss auf die Kacheln klicken, um sie zu drehen und das Bild zu vervollständigen.",
+            "playerInfo": "Zur Lösung dieses Puzzles ist kein zusätzlicher Kontext erforderlich; die Spieler können die Teile einfach so lange drehen, bis das Bild vollständig ist.",
+            "mosaicImage": {
+                "label": "Mosaikbild",
+                "notes": "Das Bild, das der Spieler vervollständigen muss. Für optimale Ergebnisse wird empfohlen, ein quadratisches Bild zu verwenden."
+            },
+            "mosaicSize": {
+                "label": "Mosaikgröße",
+                "notes": "Die Anzahl der Zeilen und Spalten im Mosaik."
+            }
+        },
+        "sound-lock": {
+            "name": "Melodie",
+            "description": "Ein Schloss, bei dem der Spieler eine Melodie anhören und die richtige Notenfolge eingeben muss, um das Dokument freizuschalten.",
+            "playerInfo": "Zwar sind zur Lösung dieses Rätsels keine zusätzlichen Hintergrundkenntnisse erforderlich, doch benötigen die Spieler ein gutes Gehör für Musik, um es zu lösen. Spielern, die sich besser mit Musiktheorie auskennen, wird die Lösung dieses Rätsels leichter fallen.",
+            "sequence": {
+                "label": "Sequenz",
+                "notes": "Die Notenfolge, die der Spieler eingeben muss, um das Dokument freizuschalten. Die einzelnen Noten sollten durch ein Komma getrennt werden. Sie können folgende Noten verwenden: C, C#, D, D#, E, F, F#, G, G#, A, A#, H. Sie können außerdem die folgende Notation verwenden, um die Oktave zu erhöhen oder zu senken: +C, -C, ++A, --H. Um eine benutzerdefinierte Dauer pro Note (in Millisekunden) festzulegen, können Sie die folgende Notation verwenden: C500, D#1000."
+            },
+            "chordDuration": {
+                "label": "Dauer",
+                "notes": "Die Dauer jeder Note in Millisekunden."
+            },
+            "pauseBetweenNotes": {
+                "label": "Pause zwischen den Noten",
+                "notes": "Die Dauer der Pause zwischen den einzelnen Noten in Millisekunden."
+            }
+        },
+        "fifteen-lock": {
+            "name": "Schiebekacheln",
+            "description": "Ein Schloss, bei dem der Spieler ein Schiebepuzzle lösen muss, um das Dokument freizuschalten. Der Spieler muss die Kacheln verschieben, um das richtige Bild zu bilden. Die leere Kachel muss sich in der rechten unteren Ecke befinden, damit das Dokument freigeschaltet wird.",
+            "playerInfo": "Zur Lösung dieses Rätsels ist kein zusätzlicher Kontext erforderlich; die Spieler können die Kacheln einfach so lange verschieben, bis das Bild vollständig ist.",
+            "shuffleDialog": "Zufällige Züge:",
+            "image": {
+                "label": "Bild",
+                "notes": "Das Bild, das der Spieler durch das Verschieben der Kacheln zusammenstellen muss. Für optimale Ergebnisse wird empfohlen, ein quadratisches Bild zu verwenden."
+            },
+            "size": {
+                "label": "Raster",
+                "notes": "Die Anzahl der Zeilen und Spalten im Schiebepuzzle."
+            }
+        },
+        "four-by-four-lock": {
+            "name": "Bauern und Sterne",
+            "description": "Ein Rätsel, bei dem der Spieler Spielsteine auf einem Raster so platzieren muss, dass ein bestimmtes Muster entsteht. Bestimmte Felder enthalten Sterne, die mit Spielsteinen abgedeckt werden müssen; die Anzahl der Sterne, die abgedeckt werden müssen, ist unten angegeben und hängt von der Größe des Rasters ab. Jede Zeile und jede Spalte muss genau die Anzahl an Spielsteinen enthalten, die in den Zeilen- bzw. Spaltenüberschriften angegeben ist.",
+            "playerInfo": "Wenn Sterne aktiviert sind, benötigen die Spieler einen Hinweis, um zu erfahren, wie viele Sterne sie abdecken müssen. Andernfalls lässt sich das Rätsel ohne jegliche externe Informationen lösen.",
+            "pawnImage": {
+                "label": "Bauernbild",
+                "notes": "Das Bild, das die Bauern darstellt."
+            },
+            "starImage": {
+                "label": "Sternbild",
+                "notes": "Das Bild, das die Sterne darstellt."
+            },
+            "noStars": {
+                "label": "Sterne ignorieren",
+                "notes": "Wenn dieses Kontrollkästchen aktiviert ist, werden die Sterne entfernt, und der Spieler muss die Spielfiguren lediglich an die richtigen Positionen setzen."
+            },
+            "gridSize": {
+                "label": "Gittergröße",
+                "notes": "Die Anzahl der Zeilen und Spalten im Raster."
+            },
+            "generate": "Puzzle erstellen",
+            "puzzleGrid": {
+                "label": "Puzzle-Raster",
+                "notes": "Das Rätselgitter. Bitte halten Sie sich an die Syntax eines generierten Rätsels, wenn Sie ein eigenes erstellen möchten. Hier ist der gelöste Zustand dargestellt, wobei 0 für eine leere Zelle, 1 für einen Spielstein, 2 für einen Stern und 3 für einen Spielstein auf einem Stern steht."
+            },
+            "pawnNumber": "Bauern zum Aufstellen",
+            "starNumber": "Zu behandelnde Themen"
+        },
+        "match-lock": {
+            "name": "Wort-Bild-Zuordnung",
+            "description": "Ein Schloss, bei dem der Spieler Wörter zuordnen muss, um das Dokument zu entsperren. Wenn ein Geheimwort festgelegt ist, werden die falschen Buchstaben durchgestrichen, und die verbleibenden Buchstaben bilden das Geheimwort. In diesem Fall müssen die Spieler das Geheimwort eingeben, um das Dokument zu entsperren.",
+            "playerInfo": "Um dieses Rätsel zu lösen, können die Spieler den Kontext des Rätsels nutzen, um die Wörter zuzuordnen. Sie können ihnen auch Hinweise oder Anweisungen zur Lösung geben.",
+            "enterSecretWord": "Gib das Passwort ein.",
+            "matchTable": {
+                "label": "Spielplan",
+                "notes": "In der Tabelle, die die zuzuordnenden Wörter enthält, können Sie anstelle von Wörtern auch Bildpfade verwenden. In der ersten Spalte stehen die zuzuordnenden Wörter, in der zweiten Spalte die Wörter, denen sie zugeordnet werden sollen. Jedes Wortpaar sollte durch das Zeichen „|“ (Pipe) getrennt werden.\nDie linke Spalte wird unverändert angezeigt, die rechte Spalte wird durcheinandergewürfelt."
+            },
+            "secretWord": {
+                "label": "Geheimes Wort",
+                "notes": "Wenn diese Option aktiviert ist, werden zufällige Buchstaben im mittleren Bereich des Rätsels verteilt. Sobald der Spieler die Wörter richtig zugeordnet hat, werden die falschen Buchstaben durchgestrichen und die verbleibenden Buchstaben bilden das Geheimwort."
+            },
+            "dictionary": {
+                "label": "Wörterbuch",
+                "notes": "Das Wörterbuch, das für die Zufallsbuchstaben verwendet wird."
+            }
+        },
+        "flags": {},
+        "attempts": "Verbleibende Versuche",
+        "headerConfig": "Puzzle-Schloss",
+        "unlocked": "Freigeschaltet",
+        "how-to": "Wie funktioniert das?",
+        "how-to-player": "Anleitung für Spieler",
+        "chatMessage": "versucht, zu entsperren",
+        "sidebar-buttons": {
+            "unlock": "Entsperrversuch",
+            "configure": "Sperre konfigurieren",
+            "shareToChat": "Im Chat teilen",
+            "zoomPlus": "Vergrößern",
+            "zoomMinus": "Vergrößern",
+            "shuffle": "Mischpuzzle",
+            "close": "Schließen"
+        },
+        "notifications": {
+            "noLock": "Dieses Dokument wurde nicht gesperrt.",
+            "alreadyUnlocked": "Dieses Dokument ist bereits freigeschaltet.",
+            "noLockSelected": "Es wurde kein Schloss-Typ ausgewählt.",
+            "unlocked": "Freigeschaltet.",
+            "noGM": "Sie müssen als GM angemeldet sein, um dieses Dokument freischalten zu können.",
+            "failedAttempt": "Das Entsperren ist fehlgeschlagen.",
+            "contentLinkCopied": "Der Link zum Inhalt wurde in die Zwischenablage kopiert.",
+            "locked": "Dieses Dokument ist gesperrt. Als Spielleiter kannst du es wie gewohnt öffnen.",
+            "resetSuccess": "Das Puzzle wurde erfolgreich zurückgesetzt.",
+            "ownershipFixed": "Die Eigentumsrechte sind standardmäßig auf „Keine“ gesetzt.",
+            "noAttempts": "Es sind keine Versuche mehr übrig."
+        }
+    }
+}

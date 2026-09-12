@@ -1,0 +1,91 @@
+{
+    "hp": {
+        "settings": {
+            "disable": {
+                "name": "Desativar o temporizador",
+                "hint": "Desativar o cronômetro de combate"
+            },
+            "timerDuration": {
+                "name": "Duração do temporizador",
+                "hint": "Duração do temporizador em segundos"
+            },
+            "style": {
+                "name": "Estilo",
+                "hint": "Estilo do cronômetro",
+                "digits": "Dígitos",
+                "circle": "Círculo",
+                "sand": "Areia"
+            },
+            "countup": {
+                "name": "Contagem acumulada",
+                "hint": "O cronômetro conta para cima em vez de para baixo (apenas nos estilos “Digits” e “Circle”)"
+            },
+            "overtime": {
+                "name": "Horas extras",
+                "hint": "O cronômetro continua funcionando após o tempo máximo permitido"
+            },
+            "size": {
+                "name": "Tamanho",
+                "hint": "Tamanho do cronômetro"
+            },
+            "secondary-size": {
+                "name": "Tamanho secundário",
+                "hint": "Tamanho dos temporizadores secundários"
+            },
+            "secondary-direction": {
+                "name": "Direção secundária",
+                "hint": "Direção dos temporizadores secundários"
+            },
+            "windowless": {
+                "name": "Sem janelas",
+                "hint": "Exibir o cronômetro sem uma janela"
+            },
+            "critical": {
+                "name": "Limite crítico",
+                "hint": "Limite a partir do qual o temporizador entrará no estado crítico e começará a piscar"
+            },
+            "secondsInsteadOfPercentage": {
+                "name": "O tempo crítico é medido em segundos, em vez de porcentagem",
+                "hint": "Por padrão, o limite crítico é definido em porcentagem do tempo total. Ao marcar essa opção, o limite passa a ser definido em segundos."
+            },
+            "goNext": {
+                "name": "Seguir em frente",
+                "hint": "Passa para o próximo combatente quando o tempo acabar. Não é acionado quando for permitida a prorrogação."
+            },
+            "runForNpc": {
+                "name": "Concorra ao NPC",
+                "hint": "Ative o cronômetro no turno dos NPCs"
+            },
+            "showOnUpdateCombatOnly": {
+                "name": "Primeiro temporizador de exibição no próximo turno",
+                "hint": "Primeiro, exiba o cronômetro de combate quando for selecionado “Iniciar Combate”, “Próximo Turno” ou “Fim do Turno”"
+            },
+            "critSoundPath": {
+                "name": "Som Crítico",
+                "hint": "Som a ser reproduzido quando o temporizador atingir o nível crítico"
+            },
+            "endSoundPath": {
+                "name": "Fim do som",
+                "hint": "Som a ser reproduzido quando o cronômetro terminar"
+            },
+            "soundVol": {
+                "name": "Volume do som",
+                "hint": "Volume dos sons reproduzidos"
+            }
+        },
+        "contextMenu": {
+            "pause": "Pausa",
+            "unpause": "Currículo",
+            "reset": "Redefinir",
+            "close": "Fechar"
+        },
+        "create": {
+            "title": "Depressa!",
+            "paused": "Em pausa",
+            "time": "Hora",
+            "timeError": "O tempo deve ser um número maior que 0",
+            "name": "Nome",
+            "color": "Cor"
+        }
+    }
+}

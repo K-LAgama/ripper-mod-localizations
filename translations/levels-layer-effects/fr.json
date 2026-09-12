@@ -1,0 +1,10 @@
+{
+    "levels-layer-effects": {
+        "settings": {
+            "disableBlur": {
+                "name": "Désactiver le flou",
+                "hint": "Désactiver l'effet de flou ; activez cette option sur les appareils peu performants."
+            }
+        }
+    }
+}

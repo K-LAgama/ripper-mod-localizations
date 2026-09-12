@@ -1,0 +1,896 @@
+{
+    "TYPES.JournalEntryPage": {
+        "simple-quest": {
+            "quest": "SQ Quest",
+            "character": "SQ-Zeichen",
+            "lore": "SQ-Hintergrundgeschichte",
+            "map": "SQ-Karte",
+            "event": "SQ-Veranstaltung",
+            "era": "SQ-Ära",
+            "achievement": "SQ-Erfolge",
+            "creature": "SQ-Kreatur",
+            "location": "SQ-Standort",
+            "faction": "SQ-Fraktion",
+            "investigation": "SQ-Untersuchung"
+        }
+    },
+    "simple-quest": {
+        "tutorialTips": {
+            "tipsExplaination": {
+                "title": "Tipps zum Tutorial",
+                "text": "Dies ist ein Tipp aus dem Tutorial. Sie können die Tipps in den Moduleinstellungen deaktivieren. Klicken Sie auf die Schaltfläche „Schließen“, um die Tipps bis zur nächsten Aktualisierung auszublenden, oder klicken Sie auf die Würfel-Schaltfläche, um einen weiteren Tipp zu lesen."
+            },
+            "quickVisibility": {
+                "title": "Schneller Überblick",
+                "text": "Verwenden Sie <kbd>Alt + Linksklick</kbd>, um Elemente von „Simple Quest“ für Spieler schnell ein- oder auszublenden. Klicken Sie in der Seitenleiste mit <kbd>Alt + Linksklick</kbd> auf eine Seite, um deren „Beobachter“-Berechtigung umzuschalten. Sie können außerdem <kbd>Alt + Linksklick</kbd> auf das Kontrollkästchen eines Questziels ausführen, um dessen Ausblendstatus umzuschalten, und dasselbe für Markierungen auf den „Simple Quest“-Kartenseiten tun."
+            },
+            "quickModal": {
+                "title": "Als Modalfenster öffnen",
+                "text": "Verwenden Sie <kbd>Alt + Linksklick</kbd> auf Inhaltslinks, um ein Modalfenster von einer „Simple Quest“-Seite aus zu öffnen. Dadurch wird die Seite in einem Modalfenster geöffnet, sodass Sie den Inhalt der Seite sehen können, ohne die aktive Seite zu wechseln. Sie können <kbd>doppelt mit der linken Maustaste</kbd> an einer beliebigen Stelle klicken oder auf die Schaltfläche „X“ oben rechts klicken, um das Modalfenster zu schließen."
+            },
+            "questRecap": {
+                "title": "Zusammenfassung der Quest",
+                "text": "Aktivieren Sie die Schaltfläche „Zusammenfassung“ in der Seitenleiste des Reiters „Quests“, um Quests nach ihrem Status (In Bearbeitung, Abgeschlossen, Gescheitert und Unentdeckt) zu gruppieren, anstatt die Ordnerstruktur zu durchsuchen. Jede Gruppe kann ein- oder ausgeklappt werden, und der eingeklappte Zustand wird für Ihren nächsten Besuch gespeichert."
+            },
+            "tabContextMenu": {
+                "title": "Anpassung der Registerkarten",
+                "text": "<kbd>Klicken Sie mit der rechten Maustaste</kbd> auf eine beliebige Registerkartenüberschrift, um das Kontextmenü „Ordner“ zu öffnen. Sie können auch einen neuen Unterordner im Stammverzeichnis von Simple Quest erstellen. Der neue Ordner wird als neue dynamische Registerkarte angezeigt."
+            },
+            "staticTabs": {
+                "title": "Spezielle Verzeichnisse",
+                "text": "Die vier Symbolregisterkarten oben in der Seitenleiste („Mein Tagebuch“, „Party-Tagebuch“, „Zeitleiste“ und „Erfolge“) sind spezielle statische Registerkarten, die mit bestimmten Ordnern verknüpft sind, die bei der Ersteinrichtung angelegt wurden. <kbd>Klicken Sie mit der rechten Maustaste</kbd> auf eine beliebige statische Registerkarte, um den zugehörigen Ordner zu bearbeiten. Eine Registerkarte wird ausgegraut angezeigt, wenn der zugehörige Ordner noch nicht erstellt wurde. Sie können einen Ordner im Ordnerkonfigurationsfenster als spezielles Verzeichnis festlegen."
+            },
+            "sectionOrder": {
+                "title": "Abschnitte anordnen",
+                "text": "Beim Bearbeiten einer Tagebuchseite verfügt jeder strukturierte Abschnitt, wie beispielsweise Symbollisten, Statistikblöcke oder Tabellen, über ein Feld „Reihenfolge“. Geben Sie eine Zahl ein, um die Anzeigeposition dieses Abschnitts auf der Seite festzulegen. Abschnitte mit niedrigeren Zahlen werden zuerst angezeigt."
+            },
+            "insertPage": {
+                "title": "Weitere Textvarianten",
+                "text": "Über die Dropdown-Menüs „Callout“ und „Page Insert“ in der ProseMirror-Symbolleiste kannst du themenbezogene Textformatierungen hinzufügen, wie beispielsweise farbige Callouts für Hintergrundinformationen, Kreaturen oder NPCs sowie dekorative Pergamentnotizen oder Schriftrollen."
+            },
+            "sectionHidden": {
+                "title": "Abschnitte ausblenden",
+                "text": "Jeder strukturierte Abschnitt auf einer Tagebuchseite verfügt über ein Kontrollkästchen „Ausblenden“. Wenn dieses Kontrollkästchen aktiviert ist, wird der Abschnitt für Spieler, die nicht der Eigentümer sind, ausgeblendet. Als Eigentümer der Seite sehen Sie den Abschnitt weiterhin, allerdings mit einem gestrichelten Rahmen, der anzeigt, dass er für Ihre Spieler ausgeblendet ist."
+            },
+            "pageVisibility": {
+                "title": "Sichtbarkeit der Seite",
+                "text": "Farbige Punkte, die rechts neben Tagebucheinträgen und Seiten in der Seitenleiste angezeigt werden, geben an, welche Spieler das Dokument sehen können. Wenn eine Seite keine Punkte aufweist, kann kein Spieler sie sehen. Jeder Punkt steht für einen Benutzer, dessen Berechtigung von der Standardberechtigung abweicht. Ein Punkt für „Alle Spieler“ erscheint, wenn die Standardberechtigung höher als „Keine“ ist. Diese Anzeigen sind nur für den Spielleiter sichtbar und können über die Einstellung „Tagebuch-Inhaberschaft anzeigen“ ein- und ausgeschaltet werden."
+            }
+        },
+        "collapseSidebar": {
+            "collapse": "Seitenleiste ausblenden",
+            "expand": "Seitenleiste erweitern"
+        },
+        "givePermission": {
+            "none": "{pageName} wurde vor den Spielern ausgeblendet",
+            "observer": "{pageName} wurde für die Spieler freigeschaltet"
+        },
+        "modal": {
+            "doubleClickToClose": "Zum Schließen doppelklicken"
+        },
+        "app": {
+            "title": "Einfache Quest",
+            "myJournal": "Mein Tagebuch",
+            "partyJournal": "Party-Tagebuch",
+            "timeline": "Zeitleiste",
+            "achievements": "Erfolge",
+            "search": "Suche"
+        },
+        "achievements": {
+            "openAll": "Alle anzeigen",
+            "uncategorized": "Unkategorisiert"
+        },
+        "ColorHtmlBlock": {
+            "color": "HTML-Farbe",
+            "order": "Bestellung",
+            "hidden": "Versteckt"
+        },
+        "HtmlBlock": {
+            "order": "Bestellung",
+            "hidden": "Versteckt"
+        },
+        "createExtendedStructure": {
+            "title": "Erweiterte Struktur erstellen",
+            "content": "Dadurch wird eine neue Ordnerstruktur für Simple Quest erstellt. Dies wird empfohlen, wenn Sie ein neuer Benutzer sind und/oder das volle Potenzial dieses Moduls ausschöpfen möchten."
+        },
+        "IconListBlock": {
+            "label": "Beschriftung der Symbolliste",
+            "name": "Name",
+            "description": "Beschreibung",
+            "icon": "Symbol",
+            "hidden": "Versteckt",
+            "order": "Bestellung"
+        },
+        "StatsBlock": {
+            "label": "Statistik-Bezeichnung",
+            "name": "Name",
+            "color": "Farbe",
+            "value": "Wert",
+            "min": "Minimum",
+            "max": "Maximal",
+            "hidden": "Versteckt",
+            "order": "Bestellung"
+        },
+        "TableBlock": {
+            "label": "Tabellenbezeichnung",
+            "name": "Name",
+            "value": "Wert",
+            "icon": "Symbol",
+            "hidden": "Versteckt",
+            "order": "Bestellung"
+        },
+        "ColorTagsBlock": {
+            "label": "Farbkennzeichnung",
+            "tag": "Tag",
+            "color": "Farbe",
+            "hidden": "Versteckt",
+            "order": "Bestellung"
+        },
+        "ResourcesBlock": {
+            "label": "Ressourcen-Label",
+            "name": "Name",
+            "current": "Aktuell",
+            "max": "Maximal",
+            "color": "Farbe",
+            "hidden": "Versteckt",
+            "order": "Bestellung"
+        },
+        "MainTagBlock": {
+            "color": "Farbe des Haupt-Tags",
+            "value": "Haupttext des Tags",
+            "hidden": "Versteckt"
+        },
+        "data-model-config": {
+            "title": "Artikelkonfiguration"
+        },
+        "journal": {
+            "name": "Name",
+            "description": "Beschreibung",
+            "header": "Kopfzeile",
+            "subtitle": "Untertitel",
+            "tags": "Stichwörter",
+            "status": "Status",
+            "rename": "Name bearbeiten",
+            "color": "Farbe",
+            "image": "Bild",
+            "caption": "Bildunterschrift",
+            "type": "Typ",
+            "width": "Breite",
+            "height": "Höhe",
+            "aspectRatio": {
+                "label": "Seitenverhältnis",
+                "auto": "Original",
+                "landscape": "Landschaft",
+                "portrait": "Porträt",
+                "square": "Quadrat"
+            },
+            "imageFilter": {
+                "label": "Bildfilter"
+            },
+            "checkbox": {
+                "tooltip": "Linksklick zum Umschalten zwischen „abgeschlossen“ <br> und „fehlgeschlagen“ Rechtsklick zum Umschalten zwischen „abgeschlossen“ und „fehlgeschlagen“",
+                "tooltip-hide": "<br>Alt + Linksklick zum Ein- und Ausblenden"
+            },
+            "location": {
+                "population": "Bevölkerung",
+                "area": "Fläche",
+                "government": "Regierung",
+                "demonym": "Bezeichnung der Einwohner",
+                "ruler": "Lineal",
+                "founded": "Gegründet"
+            },
+            "faction": {
+                "leader": "Leiter",
+                "headquarters": "Hauptsitz",
+                "memberCount": "Mitgliederzahl",
+                "alignment": "Ausrichtung",
+                "goals": "Ziele",
+                "rivals": "Rivalen",
+                "allies": "Verbündete"
+            },
+            "awardedTo": {
+                "label": "Verliehen an",
+                "hint": "Wählen Sie die Benutzer aus, die diese Errungenschaft vorweisen können."
+            },
+            "showTitle": {
+                "label": "Titel anzeigen",
+                "hint": "Zeige den Titel des Erfolges den Spielern an, die ihn noch nicht haben."
+            },
+            "showContent": {
+                "label": "Inhalt anzeigen",
+                "hint": "Zeige die Beschreibung des Erfolges den Spielern an, die ihn noch nicht erreicht haben."
+            },
+            "showImage": {
+                "label": "Bild anzeigen",
+                "hint": "Zeige das Bild des Erfolges den Spielern an, die ihn noch nicht haben."
+            },
+            "showColor": {
+                "label": "Farbe anzeigen",
+                "hint": "Zeige Spielern, die diese Errungenschaft noch nicht haben, die Akzentfarbe dieser Errungenschaft an."
+            },
+            "assign": {
+                "title": "Bist du dir sicher?",
+                "add": "Soll {name} diese Errungenschaft erhalten?",
+                "remove": "Diese Errungenschaft von {name} entfernen?"
+            },
+            "observerObjectivePermission": {
+                "label": "Beobachter – Ziel – Erlaubnis",
+                "hint": "Überschreibt die globale Einstellung. „Standard“ folgt der Moduleinstellung, „Zulassen“ und „Verweigern“ überschreiben diese.",
+                "choices": {
+                    "default": "Standard (Einstellung übernehmen)",
+                    "allow": "Zulassen",
+                    "deny": "Ablehnen"
+                }
+            },
+            "quest": {
+                "questGiver": "Auftragsgeber",
+                "location": "Standort",
+                "difficulty": "Schwierigkeitsgrad",
+                "deadline": "Frist"
+            },
+            "event": {
+                "year": "Jahr",
+                "duration": "Dauer (Jahre)",
+                "icon": "Symbol",
+                "flipped": "Umgedreht",
+                "offset": "Versatz (px)",
+                "banner": "Banner",
+                "label": "Bezeichnung",
+                "hidden": "Versteckt"
+            },
+            "era": {
+                "eraStart": "Beginn einer Ära",
+                "eraEnd": "Das Ende einer Ära",
+                "color": "Farbe",
+                "banner": "Banner",
+                "label": "Bezeichnung",
+                "hidden": "Versteckt"
+            },
+            "investigation": {
+                "saveViewport": "Ansichtsfenster speichern",
+                "tools": "Werkzeuge",
+                "background": "Hintergrund",
+                "backgroundType": {
+                    "label": "Hintergrundtyp",
+                    "choices": {
+                        "centered": "Zentriert",
+                        "repeating": "Wiederholen",
+                        "pattern": "Muster"
+                    }
+                },
+                "stamp": {
+                    "completed": "Stempel: Erledigt",
+                    "failed": "Stempel: Fehlgeschlagen",
+                    "skull": "Stempel: Totenkopf"
+                },
+                "tooltip": {
+                    "createConnection": "Verbindung herstellen",
+                    "edit": "Eintrag bearbeiten",
+                    "duplicate": "Doppelte Position",
+                    "delete": "Element löschen"
+                },
+                "add": "Artikel hinzufügen",
+                "type": {
+                    "polaroid": "Polaroid",
+                    "newspaper": "Zeitung",
+                    "sticky-note": "Haftnotiz",
+                    "note": "Anmerkung",
+                    "card": "Karte"
+                },
+                "color": "Farbe",
+                "thickness": "Dicke",
+                "text": "Text",
+                "item": {
+                    "title": "Artikelkonfiguration",
+                    "name": "Name",
+                    "color": "Farbe",
+                    "textColor": "Textfarbe",
+                    "image": "Bild",
+                    "caption": "Bildunterschrift",
+                    "width": "Breite",
+                    "height": "Höhe",
+                    "rotation": "Rotation",
+                    "order": "Bestellung",
+                    "delete": {
+                        "title": "Element löschen?",
+                        "content": "Möchten Sie diesen Eintrag wirklich löschen? Dieser Vorgang kann nicht rückgängig gemacht werden."
+                    },
+                    "type": {
+                        "label": "Typ",
+                        "default": "Grundlagen",
+                        "polaroid": "Polaroid",
+                        "newspaper": "Zeitung",
+                        "sticky-note": "Haftnotiz",
+                        "note": "Anmerkung",
+                        "simple-label": "Einfaches Etikett",
+                        "paper-sheet": "Papierbogen",
+                        "image": "Bild"
+                    },
+                    "x": "X",
+                    "y": "Y",
+                    "description": "Beschreibung",
+                    "hidden": "Versteckt"
+                },
+                "connection": {
+                    "title": "Verbindungskonfiguration",
+                    "origin": {
+                        "id": "Herkunft",
+                        "anchorX": "Anker X",
+                        "anchorY": "Anker Y",
+                        "locked": "Gesperrt"
+                    },
+                    "destination": {
+                        "id": "Reiseziel",
+                        "anchorX": "Anker X",
+                        "anchorY": "Anker Y",
+                        "locked": "Gesperrt"
+                    },
+                    "color": "Farbe",
+                    "thickness": "Dicke",
+                    "text": "Text",
+                    "physics": {
+                        "label": "Physik",
+                        "choices": {
+                            "straight": "Heterosexuell",
+                            "droopy": "Schlaff",
+                            "very-droopy": "Sehr schlaff"
+                        }
+                    },
+                    "style": {
+                        "label": "Stil",
+                        "choices": {
+                            "solid": "Massiv",
+                            "dashed": "Gestrichelt",
+                            "dotted": "Gepunktet"
+                        }
+                    }
+                }
+            }
+        },
+        "deleteItem": {
+            "title": "Löschen?",
+            "content": "Möchten Sie diesen Eintrag wirklich löschen? Dieser Vorgang kann nicht rückgängig gemacht werden."
+        },
+        "settings": {
+            "betterOwnership": {
+                "name": "Einfache Verwaltung von Quest-Berechtigungen",
+                "hint": "Beim Erstellen einer neuen Seite wird die Standard-Berechtigungsstufe automatisch auf „Keine“ gesetzt. Der Dialog „Berechtigungsverwaltung“ wird übersprungen, wenn eine Seite in der Seitenleiste angezeigt wird.",
+                "dialog": {
+                    "title": "Umgang mit Berechtigungen",
+                    "content": "Sie geben eine Seite frei, deren Tagebuch jedoch standardmäßig die Berechtigung „Keine“ hat. Spieler können diese Seite nicht sehen. Möchten Sie die Standardberechtigung des Tagebuchs auf „Beobachter“ ändern und die Berechtigung der anderen Seiten, die diese Berechtigung erben, auf „Keine“ setzen?"
+                }
+            },
+            "showHistory": {
+                "name": "Verlauf anzeigen",
+                "hint": "Zeige oben im Fenster „Simple Quest“ eine Verlaufsleiste an."
+            },
+            "showJournalOwnership": {
+                "name": "Eigentumsverhältnisse der Zeitschrift anzeigen",
+                "hint": "Farbige Punkte zur Kennzeichnung der Eigentumsverhältnisse unter den Journalbuchungen und Seiten in der Seitenleiste anzeigen."
+            },
+            "tabConfig": {
+                "name": "Registerkartenkonfiguration",
+                "hint": "Konfigurieren Sie die Namen der Registerkarten in „Simple Quest“.",
+                "label": "Registerkartennamen konfigurieren"
+            },
+            "themeConfig": {
+                "name": "Themenkonfiguration",
+                "hint": "Konfigurieren Sie das „Simple Quest“-Design.",
+                "label": "Design konfigurieren"
+            },
+            "allowObserverCheckboxToggle": {
+                "name": "Beobachtern das Erfüllen von Zielen ermöglichen",
+                "hint": "Spieler mit der Berechtigung „Beobachter“ auf einer Questseite können die Kontrollkästchen für die Ziele aktivieren oder deaktivieren. Dies kann für jede Quest einzeln überschrieben werden."
+            },
+            "rootDir": {
+                "name": "Stammverzeichnis",
+                "hint": "Der Name des Stammordners für „Simple Quest“. Dynamische Registerkarten sind Unterordner dieses Verzeichnisses.",
+                "default": "einfache Aufgabe"
+            },
+            "partyJournalDir": {
+                "name": "Verzeichnis der Party-Zeitschriften",
+                "hint": "Der Ordnername für die Registerkarte „Party-Tagebuch“.",
+                "default": "Party"
+            },
+            "timelineDir": {
+                "name": "Zeitleiste – Verzeichnis",
+                "hint": "Der Ordnername für die Registerkarte „Zeitleiste“.",
+                "default": "Zeitleiste"
+            },
+            "achievementsDir": {
+                "name": "Verzeichnis der Erfolge",
+                "hint": "Der Ordnername für die Registerkarte „Erfolge“.",
+                "default": "Erfolge"
+            },
+            "backgroundColor": {
+                "name": "Hintergrundfarbe",
+                "hint": "Hintergrundfarbe von „Simple Quest“"
+            },
+            "backgroundImage": {
+                "name": "Hintergrundbild",
+                "hint": "Hintergrundbild von „Simple Quest“"
+            },
+            "labelColor": {
+                "name": "Globale Beschriftungsfarbe",
+                "hint": "Wenn diese Option aktiviert ist, werden alle Farben der Kartenbeschriftungen durch diese Farbe überschrieben. Geben Sie „none“ ein, um die Option zu deaktivieren."
+            },
+            "matchJournalStyle": {
+                "name": "Stil des Spielberichts",
+                "hint": "Wenn diese Option aktiviert ist, wird versucht, spezielle Stile anzupassen, die auf Zeitschriften angewendet werden. Je nach Theme kann dies zu Nebenwirkungen führen."
+            },
+            "textColor": {
+                "name": "Textfarbe",
+                "hint": "Textfarbe von „Simple Quest“"
+            },
+            "secretColor": {
+                "name": "Geheime Farbe",
+                "hint": "Die Farbe von „Simple Quest“ für geheime Questziele"
+            },
+            "failedColor": {
+                "name": "Fehlerhafte Farbe",
+                "hint": "Die Farbe von „Simple Quest“ für nicht erfüllte Questziele"
+            },
+            "hideFolderFromPlayers": {
+                "name": "Ordner vor Spielern verbergen",
+                "hint": "Ob der Ordner „Simple Quest“ vor den Spielern verborgen werden soll"
+            },
+            "fontFamily": {
+                "name": "Schriftfamilie",
+                "hint": "Die für „Simple Quest“ zu verwendende Schriftfamilie"
+            },
+            "showQuestNotifications": {
+                "name": "Quest-Benachrichtigungen anzeigen",
+                "hint": "Ob Benachrichtigungen angezeigt werden sollen, wenn eine Quest aktualisiert oder im Chat geteilt wird"
+            },
+            "newQuestSoundEffect": {
+                "name": "Neuer Soundeffekt für Quests",
+                "hint": "Der Soundeffekt, der abgespielt werden soll, wenn eine Benachrichtigung über eine neue Quest angezeigt wird"
+            },
+            "updateQuestSoundEffect": {
+                "name": "Soundeffekt für Quest aktualisieren",
+                "hint": "Der Soundeffekt, der abgespielt werden soll, wenn eine Benachrichtigung über eine Quest-Aktualisierung angezeigt wird"
+            },
+            "matchJournalPermission": {
+                "name": "Berechtigung für das Spielprotokoll",
+                "hint": "Die Option „Simple Quest“ sollte nicht nur den Status „Verborgen“ berücksichtigen, sondern auch die Benutzerberechtigungen für Quests. Wenn diese Einstellung deaktiviert ist, sind alle Quests für alle Spieler sichtbar, sofern sie nicht als „verborgen“ markiert wurden. Beachten Sie, dass Spieler durch Aktivieren dieser Einstellung versteckte Questziele sehen können, indem sie das normale Tagebuch öffnen."
+            },
+            "openJournalPinsAsModals": {
+                "name": "Kartenmarkierungen als Modalfenster öffnen",
+                "hint": "Wenn ein Kartenmarker mit einer Tagebuchseite verknüpft ist und es sich bei dieser Seite nicht um eine „Simple Quest“-Seite handelt, öffne die Seite als modales Fenster über der Karte, anstatt sie im Tagebuch zu öffnen."
+            },
+            "enableQuests": {
+                "name": "Quests aktivieren",
+                "hint": "Ob die Registerkarte „Quests“ aktiviert werden soll"
+            },
+            "enablePartyJournal": {
+                "name": "„Party Journal“ aktivieren",
+                "hint": "Ob die Registerkarte „Party-Tagebuch“ aktiviert werden soll"
+            },
+            "enableMyJournal": {
+                "name": "„Mein Tagebuch“ aktivieren",
+                "hint": "Ob die Registerkarte „Mein Tagebuch“ aktiviert werden soll"
+            },
+            "enableMaps": {
+                "name": "Karten aktivieren",
+                "hint": "Ob die Registerkarte „Karten“ aktiviert werden soll"
+            },
+            "enableTimeline": {
+                "name": "Zeitleiste aktivieren",
+                "hint": "Ob die Registerkarte „Zeitleiste“ aktiviert werden soll"
+            },
+            "enableAchievements": {
+                "name": "Erfolge aktivieren",
+                "hint": "Ob die Registerkarte „Erfolge“ aktiviert werden soll"
+            },
+            "enableLore": {
+                "name": "„Lore“ aktivieren",
+                "hint": "Ob die Registerkarte „Hintergrund“ aktiviert werden soll"
+            },
+            "headerOnlyFont": {
+                "name": "Schriftart der Kopfzeile",
+                "hint": "Zu verwendende Schriftart für Überschriften; wenn „Standard“ ausgewählt ist, wird die Standardschriftart verwendet"
+            },
+            "imagePageMask": {
+                "name": "Bild zum Thema „Nebel des Krieges“",
+                "hint": "Die Maske, die für den „Nebel des Krieges“ verwendet werden soll. Für eine schwarze Maske bitte leer lassen."
+            },
+            "secondaryFontSize": {
+                "name": "Sekundäre Schriftgröße",
+                "hint": "Die Schriftgröße für sekundäre Elemente."
+            },
+            "showTutorialTips": {
+                "name": "Tipps zum Tutorial anzeigen",
+                "choices": {
+                    "always": "Ja",
+                    "never": "Nein",
+                    "reset": "Zurücksetzen"
+                }
+            }
+        },
+        "simple-quest": {
+            "title": "Einfache Quest",
+            "windowedModeToggle": "Fenstermodus umschalten",
+            "tabs": {
+                "quests": "Quests",
+                "map": "Karte",
+                "lore": "Hintergrundgeschichte",
+                "timeline": "Zeitleiste",
+                "achievements": "Erfolge",
+                "my-journal": "Mein Tagebuch",
+                "party-journal": "Party-Tagebuch",
+                "tab": "Registerkarte"
+            },
+            "move-to": "Weiter zu...",
+            "moveQuest": {
+                "error": "Du hast keine Berechtigung, Quests in diese Kategorie zu verschieben."
+            },
+            "tooltip": {
+                "add-quest": "Quest hinzufügen",
+                "add-map": "Karte hinzufügen",
+                "add-lore": "Hintergrundinformationen hinzufügen",
+                "add-page": "Seite hinzufügen",
+                "edit-lore": "Hintergrundgeschichte bearbeiten",
+                "configure-lore-permissions": "Berechtigungen konfigurieren",
+                "map-help": "So verwenden Sie die Registerkarte „Karten“",
+                "edit-quest": "Quest bearbeiten",
+                "delete-quest": "Quest löschen",
+                "delete-lore": "„Lore“ löschen",
+                "share-quest": "An Chat senden",
+                "duplicate-quest": "Doppelte Quest",
+                "duplicate-map": "Karte duplizieren",
+                "delete-map": "Karte löschen",
+                "duplicate-lore": "Doppelte Hintergrundgeschichte",
+                "mark-updated": "„Quest“ als aktualisiert markieren",
+                "add-category": "Kategorie hinzufügen",
+                "edit-map": "Karte bearbeiten",
+                "reset-fow": "„Fog of War“ zurücksetzen/aktivieren",
+                "fow-brush-size": "Größe des „Fog of War“-Pinsels",
+                "measure": "100 px = 1 mi",
+                "lock-pins": "Markierungen sperren / entsperren",
+                "show-players": "Für Spieler geöffnet",
+                "edit": "Bearbeiten",
+                "duplicate": "Duplikat",
+                "delete": "Löschen",
+                "toggle-completed": "Die Ausstellung ist beendet"
+            }
+        },
+        "timeline": {
+            "addEvent": "Veranstaltung hinzufügen",
+            "addEra": "Epoche hinzufügen",
+            "create": "Zeitleiste erstellen",
+            "delete": "Zeitleiste löschen",
+            "edit": "Zeitleiste bearbeiten"
+        },
+        "timeline-config": {
+            "title": "Ereignis in der Zeitleiste bearbeiten",
+            "label": "Bezeichnung",
+            "labelNote": "Die Bezeichnung der Veranstaltung. Diese wird über der Jahresangabe angezeigt. Sie kann für ein bestimmtes Datum oder andere Informationen verwendet werden.",
+            "banner": "Banner",
+            "hidden": "Versteckt",
+            "year": "Jahr",
+            "duration": "Dauer (Jahre)",
+            "era": "Epoche",
+            "event": "Veranstaltung",
+            "general": "Weltweit",
+            "to": "zu",
+            "generalNote": "Diese Einstellungen gelten für die gesamte Zeitleiste.",
+            "icon": "Symbol",
+            "isEra": "Ist das Era?",
+            "eraStart": "Beginn einer Ära",
+            "eraEnd": "Das Ende einer Ära",
+            "flipped": "Umgedreht",
+            "offset": "Versatz (px)",
+            "description": "Inhalt bearbeiten",
+            "negativeAbb": "Abkürzung für ein negatives Jahr",
+            "showMinus": "Minuszeichen anzeigen",
+            "positiveAbb": "Abkürzung für ein positives Jahr",
+            "timeScale": "Zeitskala",
+            "dynamicTimeScale": "Dynamische Zeitskala",
+            "dynamicTimeScaleNote": "Anstatt die Zeitleiste absolut zu skalieren, wird ihre Größe anhand der Anzahl der Ereignisse in jeder Epoche bestimmt und weiterhin mit dem Zeitskalierungsfaktor multipliziert.",
+            "content": "Sichtbarkeit von Inhalten",
+            "ignoreDataValidation": "Datenüberprüfung ignorieren",
+            "ignoreDataValidationNote": "Falls Sie die Epochen neu anordnen müssen, können Sie die Datenüberprüfung ignorieren, damit sich die Epochen während der Neuordnung vorübergehend überschneiden können.",
+            "contentChoices": {
+                "always": "Immer anzeigen",
+                "toggleOn": "Umschalten (standardmäßig erweitert)",
+                "toggleOff": "Umschalten (standardmäßig ausgeblendet)"
+            },
+            "errors": {
+                "noEra": "Es wurden keine Epochen gefunden. Bitte legen Sie zunächst eine Epoche an.",
+                "noYear": "Es wurde kein Jahr gefunden. Sie müssen ein Jahr für die Veranstaltung angeben.",
+                "yearOutOfBounds": "Das Jahr muss zu einer Epoche gehören.",
+                "noEraStart": "Es wurde kein Beginn der Epoche gefunden. Sie müssen einen Beginn für die Epoche festlegen.",
+                "noEraEnd": "Es wurde kein Ende der Ära gefunden. Sie müssen ein Ende für die Ära festlegen.",
+                "eraStartAfterEnd": "Der Beginn der Epoche muss vor dem Ende der Epoche liegen.",
+                "eraNotConnected": "„Beginn“ oder „Ende“ einer Epoche muss mit einer anderen Epoche verknüpft sein.",
+                "eraOverlap": "Eine Ära darf sich nicht mit einer anderen Ära überschneiden."
+            }
+        },
+        "tab-config": {
+            "title": "Registerkartenkonfiguration"
+        },
+        "theme-config": {
+            "title": "Themenkonfiguration",
+            "info": "Themes wenden bestimmte voreingestellte Einstellungen an. Wenn Sie möchten, können Sie dieses Menü über die Moduleinstellungen aufrufen, wo Sie auch jeden Aspekt des Themes individuell anpassen können.",
+            "themes": {
+                "default": "Einfache Quest",
+                "classicFantasy": "Klassische Fantasy",
+                "basicDark": "Basic Dark",
+                "basicLight": "Grundbeleuchtung",
+                "foundryDark": "Foundry Dark",
+                "foundryLight": "Gießereileuchte",
+                "redDragon": "Roter Drache",
+                "typewriter": "Schreibmaschine",
+                "postApocalypticWasteland": "Postapokalyptische Ödnis",
+                "galacticAdventure": "Galaktisches Abenteuer",
+                "steampunkWorkshop": "Steampunk-Workshop",
+                "dystopianFuture": "Dystopische Zukunft",
+                "virtualRealityOasis": "Virtual-Reality-Oase",
+                "mysticForest": "Mystischer Wald",
+                "vintageFilmNoir": "Klassischer Film Noir",
+                "sciFiConsole": "Sci-Fi-Konsole",
+                "futuristicTech": "Zukunftsweisende Technologie",
+                "alienInvasion": "Invasion durch Außerirdische",
+                "ancientScrolls": "Alte Schriftrollen",
+                "crtTerminal": "Terminal",
+                "crtScreen": "CRT-Monitor"
+            }
+        },
+        "importQuests": {
+            "title": "Import-Quests: ",
+            "content": "Möchtest du wirklich Aufgaben aus diesem Tagebuch importieren? Falls bereits eine Kategorie mit demselben Namen existiert, werden die Aufgaben dieser Kategorie hinzugefügt."
+        },
+        "markerConfig": {
+            "title": "Marker-Konfiguration",
+            "icon": "Symbol",
+            "journal": "Journal oder Seite hier ablegen",
+            "hidden": "Versteckt",
+            "displayLabel": "Beschriftung immer anzeigen",
+            "fixedScale": "Feste Skala"
+        },
+        "mapControls": {
+            "addMarker": "Markierung hinzufügen",
+            "editMarker": "Markierung bearbeiten",
+            "deleteMarker": "Markierung löschen"
+        },
+        "deleteQuest": {
+            "title": "Quest löschen? - ",
+            "content": "Möchtest du diese Quest wirklich löschen? Dieser Vorgang kann nicht rückgängig gemacht werden."
+        },
+        "deleteLore": {
+            "title": "„Lore“ löschen? – ",
+            "content": "Bist du sicher, dass du diese Hintergrundgeschichte löschen möchtest? Dieser Vorgang kann nicht rückgängig gemacht werden."
+        },
+        "deleteMap": {
+            "title": "Karte löschen? – ",
+            "content": "Möchten Sie diese Karte wirklich löschen? Dieser Vorgang kann nicht rückgängig gemacht werden."
+        },
+        "deletePage": {
+            "title": "Seite löschen? – ",
+            "content": "Möchten Sie diese Seite wirklich löschen? Dieser Vorgang kann nicht rückgängig gemacht werden."
+        },
+        "shareQuest": {
+            "title": "Seite an den Chat senden",
+            "content": "Möchtest du die Benachrichtigung „Neue Seite“ wirklich an den Chat senden?",
+            "changeOwnership": "<p class='notification info'>Die Berechtigungsstufe „Alle Spieler“ wird für diese Seite auf „Beobachter“ geändert.</p>",
+            "chatMessage": "Neue {questType}-Seite verfügbar: {questName}",
+            "shareMessage": "Neuer {questType} freigeschaltet!"
+        },
+        "shareLore": {
+            "title": "Lore an den Chat senden",
+            "content": "Möchtest du die Benachrichtigung „Neue Hintergrundgeschichte“ wirklich im Chat senden?",
+            "chatMessage": "Es wurden neue Hintergrundinformationen enthüllt!"
+        },
+        "shareAchievement": {
+            "title": "Erfolg im Chat teilen",
+            "content": "Möchtest du die Benachrichtigung „Neue Errungenschaft“ wirklich an den Chat senden?",
+            "chatMessage": "Du hast eine Errungenschaft freigeschaltet: {questName}"
+        },
+        "showQuest": {
+            "title": "Quest anzeigen"
+        },
+        "welcomeScreen": {
+            "title": "Willkommen bei Simple Quest!",
+            "content": "Willkommen bei Simple Quest!<hr>Drücke <span class='hotkey'>J</span>, um das Simple-Quest-Fenster zu öffnen."
+        },
+        "welcomeMaps": {
+            "title": "Einfache Quest: Registerkarte „Karte“",
+            "content": "Willkommen auf der Registerkarte „Karten“!<hr><span class='hotkey'>Rechtsklick + Ziehen</span>, um die Karte zu verschieben.<br><span class='hotkey'>Scrollen</span>, um die Karte zu vergrößern oder zu verkleinern.<br><span class='hotkey'>Klicke mit der linken Maustaste</span>, um eine Markierung hinzuzufügen.<br><span class='hotkey'>Klicke mit der linken Maustaste</span>, um die Notizen oder die Quest einer Markierung zu öffnen.<br><span class='hotkey'>Klicke mit der rechten Maustaste</span> auf eine Markierung, um sie zu bearbeiten.<hr>Nebel des Krieges<hr><span class='hotkey'>Umschalt + Linksklick</span>, um die Karte auszublenden.<br><span class='hotkey'>Umschalt + Rechtsklick</span>, um die Karte einzublenden.<hr>Messen<hr> <span class='hotkey'>Strg + Linksklick</span>, um zu messen."
+        },
+        "flags": {},
+        "noPermission": "Sie haben keine Berechtigung, dieses Dokument anzuzeigen.",
+        "time-enricher": {
+            "expired": "Abgelaufen"
+        },
+        "questNotification": {
+            "text": "Seite {questType}: {questName} wurde aktualisiert"
+        },
+        "hotkeys": {
+            "toggleSimpleQuest": {
+                "name": "„Einfache Quest“ umschalten"
+            }
+        },
+        "notifications": {
+            "defaultStructureCreated": "Einfache Quest: Standardordner und Journalstruktur erstellt.",
+            "playerJournalUpdated": "Einfache Quest: Das Spielertagebuch wurde aktualisiert.",
+            "noPage": "Einfache Aufgabe: Bitte wählen Sie eine Seite aus, die gelöscht werden soll.",
+            "uuidNotFound": "Simple Quest: Seite mit der UUID {{uuid}} nicht gefunden",
+            "noTab": "Einfache Quest: Für „{{tab}}“ wurde kein Reiter gefunden."
+        },
+        "resetFow": {
+            "title": "„Fog of War“ zurücksetzen?",
+            "content": "Möchtest du den „Nebel des Krieges“ für diese Karte wirklich zurücksetzen bzw. aktivieren? Dieser Vorgang kann nicht rückgängig gemacht werden."
+        },
+        "proseMirrorMenu": {
+            "callout": {
+                "title": "Hinweis",
+                "callout-lore": "Hintergrundgeschichte",
+                "callout-magic": "Magie",
+                "callout-item": "Artikel",
+                "callout-creature": "Kreatur",
+                "callout-event": "Veranstaltung",
+                "callout-time": "Zeit",
+                "callout-npc": "NPC",
+                "callout-location": "Standort"
+            },
+            "pageInsert": {
+                "title": "Seite einfügen",
+                "parchment-note-1": "Pergament-Anmerkung 1",
+                "parchment-note-2": "Pergamentnotiz 2",
+                "parchment-note-3": "Pergament-Anmerkung 3",
+                "parchment-note-4": "Pergamentnotiz 4",
+                "parchment-book-1": "Band 1",
+                "parchment-book-2": "Buch 2",
+                "parchment-scroll-1": "Scrollen"
+            },
+            "text": {
+                "initial": "Große Initiale"
+            }
+        },
+        "page-template": {
+            "label": "Seitenvorlage",
+            "description": "Dies ist eine Sammlung von HTML-Vorlagen zur Gestaltung Ihrer Tagebuchseiten. Diese Formatierung funktioniert auch dann weiterhin, wenn das Modul „Simple Quest“ deaktiviert ist. Klicken Sie auf eine Schaltfläche, um die Vorlage am Ende der Seite einzufügen."
+        },
+        "injected": {
+            "fowMask": {
+                "label": "Einfache Quest: „Nebel des Krieges“-Maske"
+            }
+        },
+        "tours": {
+            "interface": {
+                "1": {
+                    "title": "Abschnitte",
+                    "content": "In diesem Bereich werden die verschiedenen Abschnitte von „Simple Quest“ angezeigt. Sie können auf einen Abschnitt klicken, um dorthin zu navigieren, mit der rechten Maustaste klicken, um die Registerkartennamen zu bearbeiten, und mit der Maus in die obere rechte Ecke fahren, um die Schaltfläche „Vollbildmodus umschalten“ anzuzeigen."
+                },
+                "2": {
+                    "title": "Aufgabenliste",
+                    "content": "In diesem Bereich werden die Liste der Questkategorien und die darin enthaltenen Quests angezeigt. Sie können mit der rechten Maustaste auf eine Kategorie klicken, um deren Namen zu bearbeiten. Oben rechts finden Sie die Schaltflächen zum Hinzufügen einer neuen Quest und zum Hinzufügen einer neuen Kategorie. Bewegen Sie den Mauszeiger über die linke Seite eines Questtitels, um die Schaltfläche „Ausgeblendet“ anzuzeigen."
+                },
+                "3": {
+                    "title": "Quest-Details",
+                    "content": "In diesem Bereich werden die Details der ausgewählten Quest angezeigt. In der oberen rechten Ecke findest du Schaltflächen zur Verwaltung der Quest. Wenn du mit der Maus über die Schaltflächen fährst, wird ein Tooltip angezeigt, der deren Funktion erklärt."
+                },
+                "4": {
+                    "title": "Schriftgröße",
+                    "content": "In diesem Bereich können Sie die Schriftgröße von Simple Quest ändern"
+                },
+                "name": "Übersicht über die Benutzeroberfläche & Registerkarte „Quests“",
+                "description": "In dieser Tour erfahren Sie, wie Sie die Hauptoberfläche von Simple Quest und die Registerkarte „Quests“ nutzen können."
+            },
+            "lore-tab": {
+                "1": {
+                    "title": "Registerkarte „Hintergrund“",
+                    "content": "Auf der Registerkarte „Lore“ werden alle Tagebücher angezeigt, die sich im Ordner „Lore“ innerhalb der Simple-Quest-Oberfläche befinden. Diese Registerkarte bietet zwar keine besonderen Funktionen, ist jedoch eine bequeme Möglichkeit, auf Ihre Lore zuzugreifen. Die Berechtigungen zum Anzeigen von Lore-Seiten entsprechen den Berechtigungen für Tagebücher in Core Foundry."
+                },
+                "2": {
+                    "title": "Liste der Hintergrundgeschichten",
+                    "content": "In diesem Bereich werden die Liste der Hintergrundgeschichten-Kategorien und die darin enthaltenen Hintergrundgeschichten angezeigt. Du kannst mit der rechten Maustaste auf eine Kategorie klicken, um deren Namen zu bearbeiten. Oben rechts findest du Schaltflächen zum Hinzufügen einer neuen Hintergrundgeschichte und zum Hinzufügen einer neuen Kategorie. Bewege den Mauszeiger über die linke Seite eines Hintergrundgeschichten-Titels, um die Schaltfläche „Ausgeblendete anzeigen“ einzublenden."
+                },
+                "3": {
+                    "title": "Details zur Hintergrundgeschichte",
+                    "content": "In diesem Bereich werden die Details der ausgewählten Hintergrundgeschichte angezeigt. In der oberen rechten Ecke findest du Schaltflächen zur Verwaltung der Hintergrundgeschichte. Wenn du den Mauszeiger über die Schaltflächen bewegst, erscheint ein Tooltip, der deren Funktion erklärt."
+                },
+                "name": "Registerkarte „Hintergrund“",
+                "description": "In dieser Tour erfahren Sie, wie Sie die Registerkarte „Lore“ nutzen können."
+            },
+            "map-tab": {
+                "1": {
+                    "title": "Registerkarte „Karte“",
+                    "content": "Auf der Registerkarte „Karten“ werden alle Karten angezeigt, die im Kartenjournal im Ordner „Quests“ enthalten sind."
+                },
+                "2": {
+                    "title": "Kartenliste",
+                    "content": "In diesem Bereich wird die Liste der Karten angezeigt. Oben rechts finden Sie eine Schaltfläche zum Hinzufügen einer neuen Karte sowie eine Schaltfläche, über die Sie weitere Informationen zu den erweiterten Steuerungsmöglichkeiten erhalten. Bewegen Sie den Mauszeiger über die linke Seite eines Kartentitels, um die Schaltfläche „Ausgeblendete anzeigen“ anzuzeigen."
+                },
+                "3": {
+                    "title": "Kartendetails",
+                    "content": "In diesem Bereich wird die ausgewählte Karte angezeigt. Sie können die Karte durch Klicken und Ziehen verschieben und mit dem Mausrad vergrößern und verkleinern. In der oberen rechten Ecke finden Sie Schaltflächen zur Steuerung der Karte. Wenn Sie mit der Maus über die Schaltflächen fahren, wird ein Tooltip angezeigt, der deren Funktion erklärt."
+                },
+                "4": {
+                    "title": "Markierungen",
+                    "content": "Sie können mit der rechten Maustaste auf die Karte klicken (oder die Maustaste gedrückt halten, um eine Vorschau anzuzeigen), um eine Markierung hinzuzufügen. Sie können auch mit der rechten Maustaste auf eine Markierung klicken, um sie zu bearbeiten, oder mit der rechten Maustaste auf eine Markierung klicken und sie ziehen, um sie zu verschieben. Durch einen Linksklick auf eine Markierung können Sie die zugehörigen Notizen, die Quest oder das verknüpfte Dokument öffnen. Wenn Sie ein beliebiges Dokument per Drag & Drop auf die Karte ziehen, wird eine Markierung erstellt, die mit diesem Dokument verknüpft ist."
+                },
+                "5": {
+                    "title": "Kriegsnebel",
+                    "content": "Halten Sie die Umschalttaste gedrückt, um den „Fog of War“-Pinsel anzuzeigen. Klicken Sie mit der linken Maustaste, um die Karte auszublenden, und mit der rechten Maustaste, um sie wieder einzublenden."
+                },
+                "6": {
+                    "title": "Messen",
+                    "content": "Sie können die Strg-Taste gedrückt halten, um das Messwerkzeug zu aktivieren. Halten Sie die Strg-Taste gedrückt, klicken Sie mit der linken Maustaste und ziehen Sie, um zu messen."
+                },
+                "name": "Registerkarte „Karte“",
+                "description": "In dieser Tour erfahren Sie, wie Sie die Registerkarte „Karte“ nutzen können."
+            },
+            "my-journal-tab": {
+                "1": {
+                    "title": "Registerkarte „Mein Tagebuch“",
+                    "content": "Auf der Registerkarte „Mein Tagebuch“ wird ein persönliches Tagebuch angezeigt, das nur du und der Spielleiter sehen können."
+                },
+                "2": {
+                    "title": "Inhaltsverzeichnis",
+                    "content": "In diesem Bereich wird das Inhaltsverzeichnis Ihres Tagebuchs angezeigt. Alle Überschriften, die Sie in Ihrem Tagebuch erstellen, werden hier zur einfachen Navigation angezeigt."
+                },
+                "3": {
+                    "title": "Inhalt der Zeitschrift",
+                    "content": "In diesem Bereich wird der Inhalt Ihres Tagebuchs angezeigt. Sie können den Inhalt Ihres Tagebuchs bearbeiten, indem Sie oben rechts auf die Schaltfläche „Bearbeiten“ klicken."
+                },
+                "name": "Registerkarte „Mein Tagebuch“",
+                "description": "In dieser Führung erfahren Sie, wie Sie die Registerkarte „Mein Tagebuch“ nutzen können."
+            },
+            "party-journal-tab": {
+                "1": {
+                    "title": "Registerkarte „Party-Tagebuch“",
+                    "content": "Auf der Registerkarte „Party-Tagebuch“ wird ein Tagebuch angezeigt, das für alle Benutzer sichtbar und bearbeitbar ist."
+                },
+                "2": {
+                    "title": "Inhaltsverzeichnis",
+                    "content": "In diesem Bereich wird das Inhaltsverzeichnis Ihres Party-Tagebuchs angezeigt. Alle Überschriften, die Sie in diesem Tagebuch erstellen, werden hier zur einfachen Navigation angezeigt."
+                },
+                "3": {
+                    "title": "Inhalt der Zeitschrift",
+                    "content": "In diesem Bereich wird der Inhalt des Parteijournals angezeigt. Sie können den Inhalt dieses Journals bearbeiten, indem Sie oben rechts auf die Schaltfläche „Bearbeiten“ klicken."
+                },
+                "name": "Registerkarte „Party-Tagebuch“",
+                "description": "In dieser Tour erfahren Sie, wie Sie die Registerkarte „Party-Tagebuch“ nutzen können."
+            },
+            "journal-page": {
+                "1": {
+                    "title": "Seitenvorlagen",
+                    "content": "„Simple Quest“ bietet Seitenvorlagen. Eine praktische Funktion, mit der Sie Ihrer Tagebuchseite schnell eine vorformatierte Vorlage oder einen Abschnitt hinzufügen können. Klicken Sie auf diese Schaltfläche, um die verfügbaren Vorlagen anzuzeigen."
+                },
+                "2": {
+                    "title": "Formatierung",
+                    "content": "In diesem Dropdown-Menü finden Sie die neuen Optionen „Callout“ und „Page Insert“, mit denen Sie Ihren Dokumenten das gewisse Etwas verleihen können."
+                },
+                "name": "Funktionen der Tagebuchseite",
+                "description": "In dieser Führung erfahren Sie, wie Sie die Journalseite nutzen können."
+            },
+            "timeline-tab": {
+                "1": {
+                    "title": "Registerkarte „Zeitleiste“",
+                    "content": "Auf der Registerkarte „Zeitleiste“ wird eine Zeitleiste mit Ereignissen angezeigt."
+                },
+                "2": {
+                    "title": "Zeitleiste – Liste",
+                    "content": "In diesem Bereich wird die Liste der Ereignisse und Epochen angezeigt. Sie können auf ein Ereignis oder eine Epoche klicken, um dorthin zu springen, oder mit der rechten Maustaste darauf klicken, um es zu bearbeiten."
+                },
+                "3": {
+                    "title": "Ereignis oder Epoche hinzufügen",
+                    "content": "Mit dieser Schaltfläche können Sie ganz einfach ein neues Ereignis oder eine neue Epoche zur Zeitleiste hinzufügen. Im Konfigurationsformular können Sie die Details des Ereignisses oder der Epoche festlegen. Erstellen Sie zunächst eine Epoche."
+                },
+                "name": "Registerkarte „Zeitleiste“",
+                "description": "In dieser Tour erfahren Sie, wie Sie die Registerkarte „Zeitleiste“ nutzen können."
+            }
+        },
+        "default-structure": {
+            "in-progress": "In Bearbeitung",
+            "completed": "Abgeschlossen",
+            "failed": "Fehlgeschlagen",
+            "locations": "Standorte",
+            "npcs": "NPCs",
+            "organizations": "Organisationen",
+            "history": "Geschichte",
+            "bestiary": "Bestiarium"
+        }
+    }
+}

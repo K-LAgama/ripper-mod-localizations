@@ -1,0 +1,16 @@
+{
+    "tile-scroll": {
+        "flags": {
+            "header": "Desplazamiento de mosaicos",
+            "enableScroll": "Desplazarse",
+            "enabled": "Activado",
+            "scrollSpeed": "Velocidad",
+            "scrollDirection": "Dirección",
+            "enableRotate": "Habilitar rotación",
+            "repeat": "Repetición de textura",
+            "pivot": "Pivote de rotación",
+            "offset": "Desplazamiento",
+            "parallax": "Fuerza de paralaje"
+        }
+    }
+}

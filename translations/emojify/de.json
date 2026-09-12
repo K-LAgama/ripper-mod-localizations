@@ -1,0 +1,18 @@
+{
+    "emojify": {
+        "settings": {
+            "autoClose": {
+                "name": "Automatisch schließen",
+                "hint": "Schließen Sie die Emoji-Auswahl automatisch, nachdem Sie ein Emoji ausgewählt haben"
+            },
+            "preload": {
+                "name": "Vorladen",
+                "hint": "Laden Sie die Emoji-Datenbank beim Start vor. Dadurch werden etwa 500 KB Daten geladen. Wenn diese Option deaktiviert ist, wird die Datenbank bei der ersten Verwendung geladen."
+            }
+        },
+        "noTokenSelected": "Keine Token ausgewählt. Bitte wählen Sie mindestens einen Token zum Emojizieren aus.",
+        "toggleEmoji": "Öffnen Sie die Emoji-Auswahl",
+        "search": "Suchen...",
+        "welcome": "😂 ❤️ 🙌 😍 🎉 | \nWillkommen bei Emojify. Drücken Sie Umschalt V, um die Emoji-Auswahl zu öffnen. \n| \n🔥 😊 🤔 🌟 🥳"
+    }
+}

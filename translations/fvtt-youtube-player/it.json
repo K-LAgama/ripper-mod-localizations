@@ -1,0 +1,42 @@
+{
+    "fvtt-youtube-player": {
+        "TOOLTIP": {
+            "add-to-playlist": "Aggiungi a playlist",
+            "create-playlist": "Crea playlist",
+            "delete-playlist": "Elimina playlist",
+            "delete-track": "Elimina traccia",
+            "loop": "Attiva/disattiva Ripeti",
+            "play": "Giocare",
+            "rename-playlist": "Premere \"Invio\" per rinominare",
+            "search": "Cerca su YouTube",
+            "stop": "Fermare",
+            "toggle-playlist": "Attiva/disattiva la riproduzione automatica",
+            "toggle-playlists": "Attiva/disattiva playlist"
+        },
+        "deletePlaylist": "Eliminare la playlist?",
+        "deletePlaylistContent": "Sei sicuro di voler eliminare questa playlist?",
+        "deleteTrack": "Eliminare la traccia?",
+        "deleteTrackContent": "Sei sicuro di voler eliminare questa traccia?",
+        "fetchingTitle": "Recupero titolo video...",
+        "import-export": {
+            "export": "Esportare",
+            "import": "Importare",
+            "imported": "Playlist importate correttamente",
+            "title": "Importa/Esporta playlist"
+        },
+        "noApiKey": "Avviso: nessuna chiave API impostata. \nPer accedere alla funzionalità di ricerca, è necessario impostare una chiave API di YouTube nelle impostazioni del modulo. \nPuoi controllare il Wiki per ulteriori informazioni.",
+        "playlistName": "Nome della playlist",
+        "playlistNameContent": "Stai importando una playlist. \nVuoi creare una nuova playlist o aggiungere i brani alla playlist corrente? \nLascia il campo vuoto per aggiungere alla playlist corrente.",
+        "settings": {
+            "googleApiKey": {
+                "hint": "La richiesta verrà instradata attraverso i miei server, ma puoi utilizzare la tua chiave API per evitare limiti di velocità. \nOttienine uno su https://console.developers.google.com/apis/credentials",
+                "name": "Chiave API di YouTube"
+            },
+            "importExport": {
+                "hint": "Importa o esporta playlist",
+                "label": "Apri la finestra di dialogo Importa/Esporta",
+                "name": "Importa/Esporta"
+            }
+        }
+    }
+}

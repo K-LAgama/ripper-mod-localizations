@@ -1,0 +1,31 @@
+{
+    "rich-info-tooltips": {
+        "settings": {
+            "theme": {
+                "name": "Thème",
+                "hint": "Sélectionnez un thème pour les info-bulles riches en informations.",
+                "choices": {
+                    "default": "Aucun thème",
+                    "dark-fantasy": "Fantaisie sombre",
+                    "sci-fi": "Science-fiction",
+                    "retro": "Rétro",
+                    "modern": "Moderne"
+                }
+            },
+            "addTitle": {
+                "name": "Ajouter un titre aux info-bulles",
+                "hint": "Ajoutez le titre de la page d'informations à l'info-bulle sous forme d'en-tête H1."
+            },
+            "autoTooltips": {
+                "name": "Info-bulles automatiques",
+                "hint": "Ajoutez automatiquement des info-bulles à tous les liens de contenu comportant une description. \nNécessite une recharge"
+            },
+            "useImageBackground": {
+                "name": "Utiliser une image d'arrière-plan",
+                "hint": "Utilisez l'image du document (le cas échéant) comme arrière-plan de l'info-bulle."
+            }
+        },
+        "app": {},
+        "flags": {}
+    }
+}

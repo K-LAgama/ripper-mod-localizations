@@ -1,0 +1,15 @@
+{
+    "betterroofs": {
+        "tileConfig": {
+            "showInFog.name": "Desvela la «niebla de guerra»",
+            "showInFog.hint": "Cuando una ficha tiene visión de esta casilla, esta será visible a través de la «niebla de guerra». No funciona con las luces.",
+            "occlusionLinkId": "Identificador del enlace de oclusión",
+            "occlusionLinkIdHint": "Puede ser cualquier texto. Cuando una casilla con el texto «¿Fuente del enlace de oclusión?» queda oculta (tiene una ficha debajo), todas las casillas con el mismo «ID de enlace de oclusión» también quedarán ocultas. Ejemplo de uso: unir tejados entre sí.",
+            "occlusionLinkSource": "¿Fuente del enlace de oclusión?"
+        },
+        "settings": {
+            "hoverFade.name": "Desvanecimiento al pasar el cursor",
+            "hoverFade.hint": "Cuando esté activada, los tejados se desvanecerán al pasar el cursor por encima de ellos. Se trata de una función de Core Foundry VTT; esta opción simplemente te permite desactivarla."
+        }
+    }
+}

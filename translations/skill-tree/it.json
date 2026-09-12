@@ -1,0 +1,80 @@
+{
+    "skill-tree": {
+        "header-button": {
+            "label": "Albero delle abilità"
+        },
+        "settings": {
+            "skill-tree-manager": {
+                "hint": "Gestisci i tuoi alberi delle abilità",
+                "label": "Configura alberi delle abilità",
+                "name": "Gestore dell'albero delle abilità"
+            }
+        },
+        "skill-tree-actor": {
+            "added-items": "Elementi aggiunti:",
+            "mutual-exclusion-info": "È possibile sbloccare contemporaneamente solo %n abilità con gli stessi requisiti di questa abilità.",
+            "removed-items": "Elementi rimossi:",
+            "title": "Albero delle abilità:"
+        },
+        "skill-tree-application": {
+            "delete-group-content": "Sei sicuro di voler eliminare questo gruppo? \nCiò eliminerà anche tutte le abilità del gruppo.",
+            "delete-group-title": "Elimina gruppo",
+            "drop-error": "Puoi solo rilasciare oggetti o altre abilità sulla griglia",
+            "edit-group-blur-background": "Sfocatura dello sfondo",
+            "edit-group-blur-background-hint": "Se sfocare l'immagine di sfondo",
+            "edit-group-color": "Colore",
+            "edit-group-color-hint": "Il colore del gruppo",
+            "edit-group-image": "Immagine di sfondo",
+            "edit-group-image-hint": "L'immagine da utilizzare come sfondo per il gruppo",
+            "edit-group-min-cols": "Colonne minime",
+            "edit-group-min-cols-hint": "Il numero minimo di colonne nella griglia",
+            "edit-group-min-rows": "Righe minime",
+            "edit-group-min-rows-hint": "Il numero minimo di righe nella griglia",
+            "edit-group-name": "Nome",
+            "edit-group-name-hint": "Il nome del gruppo",
+            "edit-group-sound": "Effetto sonoro",
+            "edit-group-sound-hint": "L'effetto sonoro da riprodurre quando un'abilità viene sbloccata",
+            "edit-group-submit": "Salva",
+            "edit-group-title": "Modifica gruppo:",
+            "edit-skill-condition-script": "Scrittura della condizione",
+            "edit-skill-condition-script-hint": "Uno script che verrà controllato per determinare se questa abilità può essere sbloccata. \nLo script deve restituire un valore booleano. \nPuoi fare riferimento ad attore, abilità, gruppo e skillTree nella macro.",
+            "edit-skill-connected-skills": "Competenze richieste",
+            "edit-skill-connected-skills-hint": "Abilità richieste per sbloccare questa abilità. \nSegue la regola dell'abilità richiesta.",
+            "edit-skill-image": "Immagine",
+            "edit-skill-item": "Elementi collegati",
+            "edit-skill-item-hint": "Quando un'abilità viene sbloccata, gli elementi ad essa collegati vengono aggiunti all'attore; \nuna volta rimossi, vengono rimossi anche gli elementi. \nPer le abilità che richiedono più punti, gli oggetti vengono concessi in base ai punti spesi. \nAd esempio, con un'abilità da 3 punti e 3 oggetti, viene concesso un oggetto per punto. \nSe sono richiesti 5 punti per 3 elementi, viene assegnato un elemento ogni 2 punti, con l'ultimo elemento assegnato al quinto punto.",
+            "edit-skill-linked-skill-rule": "Ignora la regola dell'abilità richiesta",
+            "edit-skill-linked-skill-rule-hint": "Se impostato su un numero maggiore di 0, ciò sovrascriverà la regola dell'abilità richiesta e richiederà lo sblocco del numero specificato di abilità richieste (o più) affinché questa abilità possa essere sbloccata",
+            "edit-skill-mutual-exclusion": "Mutua esclusione",
+            "edit-skill-mutual-exclusion-hint": "Se impostato su un numero maggiore di 1, solo il numero specificato di abilità richieste dalla stessa abilità di questa può essere sbloccato contemporaneamente",
+            "edit-skill-name": "Nome",
+            "edit-skill-on-unlock": "Al cambio script",
+            "edit-skill-on-unlock-hint": "Uno script che verrà eseguito quando questa abilità viene sbloccata o quando viene speso un punto. \nPuoi fare riferimento ad attore, abilità, gruppo e skillTree nella macro.",
+            "edit-skill-points": "Punti",
+            "edit-skill-points-hint": "Il numero di punti richiesti per sbloccare questa abilità.",
+            "edit-skill-title": "Modifica abilità:",
+            "linked-skill-rule": "Regola di abilità richiesta",
+            "linked-skill-rule-all": "Tutto",
+            "linked-skill-rule-hint": "Come dovrebbero comportarsi le abilità richieste:<br> - Alcune: è necessaria una sola abilità richiesta per sbloccare un'abilità<br> - Tutte: tutte le abilità richieste devono essere sbloccate affinché un'abilità possa essere sbloccata",
+            "linked-skill-rule-some": "Alcuni",
+            "multiple-items-rule": "Regola degli elementi multipli",
+            "multiple-items-rule-all": "Tutto",
+            "multiple-items-rule-hint": "Come dovrebbero comportarsi più elementi nelle abilità a livelli:<br> - Tutti: vengono concessi tutti gli elementi<br> - Uno: viene concesso solo l'elemento corrispondente al livello corrente",
+            "multiple-items-rule-one": "Uno",
+            "new-group": "Nuovo gruppo",
+            "skill-style": "Stile di abilità",
+            "skill-style-circle": "Cerchio",
+            "skill-style-hint": "Come devono essere visualizzate le abilità:<br> - Cerchio: le abilità vengono visualizzate come cerchi<br> - Quadrato: le abilità vengono visualizzate come quadrati",
+            "skill-style-square": "Piazza",
+            "skill-tree-options": "Opzioni dell'albero delle abilità",
+            "title": "Editor dell'albero delle abilità:"
+        },
+        "skill-tree-manager": {
+            "create-new": "Crea nuovo",
+            "delete": "Eliminare",
+            "edit": "Modificare",
+            "name": "Nome",
+            "title": "Gestore dell'albero delle abilità"
+        }
+    }
+}

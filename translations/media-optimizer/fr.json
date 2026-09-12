@@ -1,0 +1,104 @@
+{
+    "media-optimizer": {
+        "converted": "Optimiseur de média : converti",
+        "conversionFailed": "Media Optimizer : Échec de la conversion, veuillez consulter le wiki pour plus d'informations.",
+        "audioConversionStarted": "Media Optimizer : conversion audio lancée, soyez patient, cela peut prendre un certain temps. \nSi vous le souhaitez, vous pouvez vérifier la progression dans la console (F12). \nDéposer:",
+        "videoConversionStarted": "Media Optimizer : conversion vidéo lancée, soyez patient, cela peut prendre un certain temps. \nSi vous le souhaitez, vous pouvez vérifier la progression dans la console (F12). \nDéposer:",
+        "settings": {
+            "bloatDetector": {
+                "name": "Détecteur de ballonnement",
+                "label": "Détecteur de ballonnement ouvert",
+                "hint": "Détecte les entrées susceptibles d'entraîner des temps de chargement lents ou des problèmes de performances."
+            },
+            "enabled": {
+                "name": "Activé",
+                "hint": "Si oui ou non l'optimiseur de média doit être activé. \nSi désactivé, les images, l'audio et la vidéo ne seront pas optimisés."
+            },
+            "compressionRatio": {
+                "name": "Qualité",
+                "hint": "La qualité à utiliser lors de l'optimisation des images. \nUne qualité supérieure se traduira par une image de meilleure qualité et une taille de fichier plus grande. \nUne qualité inférieure se traduira par une image de qualité inférieure et une taille de fichier plus petite. \nLa valeur par défaut est 0,75. \nRemarque : les taux de compression pour l'audio et la vidéo ne peuvent pas être personnalisés."
+            },
+            "maxResolution": {
+                "name": "Résolution maximale",
+                "hint": "La résolution maximale de l'image à optimiser. \nSi l'image est plus grande que cela, elle sera redimensionnée à cette résolution avant d'être optimisée. \nCeci est utile pour éviter les très hautes résolutions non prises en charge par la plupart des cartes graphiques.",
+                "choices": {
+                    "1024": "1K (1 024 px)",
+                    "2048": "2K (2 048 px)",
+                    "4096": "4K (4 096 px)",
+                    "8192": "8K (8 192 px)",
+                    "16384": "16K (16 384 px)"
+                }
+            },
+            "excludeFolders": {
+                "name": "Exclure les dossiers",
+                "hint": "Liste de dossiers séparés par des virgules à exclure de l'optimisation. \nSi des images/audio/vidéos sont téléchargées à cet emplacement, elles ne seront pas optimisées."
+            },
+            "optimizeImages": {
+                "name": "Optimiser les images",
+                "hint": "Que ce soit pour optimiser ou non les images."
+            },
+            "optimizeAudio": {
+                "name": "Optimiser le son",
+                "hint": "Que ce soit pour optimiser ou non l'audio."
+            },
+            "optimizeVideo": {
+                "name": "Optimiser les vidéos",
+                "hint": "Que ce soit pour optimiser ou non les vidéos."
+            },
+            "slugifyFileNames": {
+                "name": "Nettoyer les noms de fichiers",
+                "hint": "Que ce soit pour nettoyer ou non les noms de fichiers. \nNotez que ce paramètre s'appliquera à tout fichier traité ou créé par Media Optimizer. \nCela supprimera les caractères spéciaux et les remplacera par des tirets. \nCeci est utile pour éviter les problèmes avec les noms de fichiers sur différents systèmes d'exploitation et d'autres problèmes causés par les espaces et les caractères spéciaux."
+            }
+        },
+        "tile-combiner": {
+            "title": "Combineur de tuiles",
+            "notes": "Cette fonctionnalité apportera des modifications permanentes à la scène ! \nFaire une sauvegarde de la scène est fortement recommandé.",
+            "info": "Le Combiner utilisera les paramètres de compression globaux de Media Optimizer, vous pouvez les modifier dans les paramètres du module.",
+            "confirm": {
+                "title": "Tile Combiner : Confirmer",
+                "content": "Vous êtes sur le point de combiner des tuiles, cela apportera des changements permanents à la scène ! \nEs-tu sur de vouloir continuer?",
+                "backup": "Vous vous apprêtez à combiner sans faire de sauvegarde, ce n'est pas recommandé !"
+            },
+            "buttons": {
+                "backup-combine": "Sauvegarde",
+                "combine": "Combiner",
+                "cancel": "Annuler"
+            },
+            "mode": {
+                "label": "Mode Combiner :",
+                "background": "Carreaux de fond",
+                "foreground": "Carreaux de premier plan",
+                "selected": "Tuiles sélectionnées",
+                "all": "Toutes les tuiles"
+            },
+            "background": {
+                "label": "Inclure l'arrière-plan ?",
+                "notes": "Lorsque cette option est activée, le résultat de l'opération de combinaison sera défini comme arrière-plan de la scène."
+            },
+            "folderPath": {
+                "label": "Chemin du dossier :"
+            },
+            "fileName": {
+                "label": "Nom de fichier:"
+            },
+            "deleteTiles": {
+                "label": "Supprimer les tuiles combinées ?"
+            }
+        },
+        "file-converter": {
+            "header-button": "Optimiser les médias",
+            "title": "Optimiseur de média : Optimiseur de masse",
+            "buttons": {
+                "convert": "Optimiser la sélection",
+                "select-all": "Tout sélectionner",
+                "select-none": "Effacer la sélection"
+            }
+        },
+        "bloat-detector": {
+            "title": "Media Optimizer : Détecteur de fichiers superflus",
+            "bloat": "Entrées détectées susceptibles d'entraîner des temps de chargement lents ou des problèmes de performances. Nombre : ",
+            "no-bloat": "Aucun gonflement détecté.",
+            "large-collection": "La collection étant volumineuse, il est recommandé de déplacer les entrées inutilisées vers un recueil."
+        }
+    }
+}

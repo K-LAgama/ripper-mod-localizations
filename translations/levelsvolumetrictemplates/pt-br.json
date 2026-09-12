@@ -1,0 +1,19 @@
+{
+    "levels.controls.toggleCylinder.name": "Coloque um cilindro no lugar da esfera",
+    "levels.controls.toggleVolumetric.name": "Modelo volumétrico",
+    "levelsvolumetrictemplates.settings.volPercent.name": "Porcentagem volumétrica",
+    "levelsvolumetrictemplates.settings.volPercent.hint": "A porcentagem do volume ou da área considerada um alvo válido",
+    "levelsvolumetrictemplates.settings.checkCollision.name": "Verificar colisão",
+    "levelsvolumetrictemplates.settings.checkCollision.hint": "Verifique se há colisão com paredes e pisos entre a origem do modelo e o centro do token",
+    "levelsvolumetrictemplates.settings.3dtemplatedefault.name": "Ativar modelos volumétricos por padrão",
+    "levelsvolumetrictemplates.settings.3dtemplatedefault.hint": "Define se os modelos volumétricos devem ser ativados ao carregar o mundo ou não",
+    "levelsvolumetrictemplates.settings.handModeDefault.name": "Ativar o Modo Manual por padrão",
+    "levelsvolumetrictemplates.settings.handModeDefault.hint": "Se ativado, o modo “mão” será ativado ao carregar o mundo. Quando esse modo estiver ativado, os modelos serão posicionados, por padrão, na altura da “mão” do token, em vez de em sua elevação.",
+    "levelsvolumetrictemplates.settings.dynamicSwap.name": "Troca automática dinâmica",
+    "levelsvolumetrictemplates.settings.dynamicSwap.hint": "Determina automaticamente se deve ser usado um modelo volumétrico ou de área. Quando esse modo estiver ativo, círculos e cones serão sempre volumétricos, e os cones serão calculados automaticamente na altura da mão",
+    "levelsvolumetrictemplates.settings.debugMode.name": "Modo de depuração",
+    "levelsvolumetrictemplates.settings.debugMode.hint": "Mostrar porcentagens de volume/área nos tokens ao posicionar modelos",
+    "levels.controls.handMode.name": "Coloque os modelos na altura das mãos",
+    "levels.controls.ignoreSelf.name": "Ignorar a si mesmo",
+    "levels.controls.ignoreFriendly.name": "Ignorar personagens amigáveis"
+}

@@ -1,0 +1,83 @@
+{
+    "epic-rolls-5e": {
+        "check": "Teste",
+        "save": "Salvaguarda",
+        "death": "Morte",
+        "success": "Sucesso",
+        "failure": "Falha",
+        "button-tooltip": "Configurar Rolagem Épica<hr>Clique com o botão direito para rolagens recentes",
+        "complete-roll": "Concluir Rolagem Épica",
+        "epicRoll": "Lançamento épico",
+        "settings": {
+            "introSound": {
+                "name": "Som de Introdução",
+                "hint": "O som a ser reproduzido quando a rolagem é iniciada."
+            },
+            "successSound": {
+                "name": "Som de Sucesso",
+                "hint": "O som a ser reproduzido quando a rolagem é bem-sucedida."
+            },
+            "failureSound": {
+                "name": "Som de Falha",
+                "hint": "O som a ser reproduzido quando a rolagem é uma falha."
+            },
+            "recapMessage": {
+                "name": "Mensagem de Recapitulação",
+                "hint": "Configure quem pode ver a mensagem exibida quando a rolagem épica for concluída.",
+                "options": {
+                    "none": "Nenhum",
+                    "gm": "MJ",
+                    "public": "Público"
+                }
+            },
+            "cleanupMessages": {
+                "name": "Limpeza de Mensagens",
+                "hint": "Exclua as mensagens de rolagem após a conclusão da rolagem épica."
+            }
+        },
+        "get-roll-data": {
+            "customFormula": "Fórmula personalizada",
+            "customLabel": "Rótulo",
+            "customLabelNotes": "Etiqueta de introdução personalizada para o rolo",
+            "formula": "Fórmula",
+            "title": "Configurar Rolagem Épica",
+            "startRoll": "Começar Rolagem Épica",
+            "macro": "Salvar para Macro",
+            "save-macro": "Criada macro de Rolagem Épica para ",
+            "player": "Personagem de Jogador",
+            "npc": "Personagem Não-Jogador",
+            "selected": "Selecionado",
+            "available": "Disponível",
+            "rollOptions": "Opções de Rolagem",
+            "VsDCNotes": "A CD da rolagem",
+            "showDC": "Mostrar CD",
+            "showDCNotes": "Se habilitado, a CD será exibida aos jogadores",
+            "useAverage": "Usar Média",
+            "useAverageNotes": "Use a média de todos os resultados para determinar sucesso ou falha",
+            "allowReroll": "Permitir Re-rolagem",
+            "allowRerollNotes": "Permite que jogadores re-rolem suas jogadas",
+            "showRollResults": "Mostrar Texto Final",
+            "showRollResultsNotes": "Mostra o texto Sucesso/Falha no fim da rolagem",
+            "blindRoll": "Rolagem Cega",
+            "blindRollNotes": "Esconda o resultado da rolagem dos jogadores",
+            "hideNames": "Esconder Nomes",
+            "hideNamesNotes": "Esconda o nome dos PnJs dos jogadores",
+            "color": "Cor",
+            "colorNotes": "A cor do banner de rolagem",
+            "autoColor": "Cor Automática",
+            "autoColorNotes": "Colore automaticamente o banner com base no tipo de rolagem",
+            "contest": "Contestar",
+            "contestInfo": "Para marcar contestantes, clique com o botão direito em um ator e/ou rolagem",
+            "saveDefaultOptions": "Salvar como Padrão",
+            "saveDefaultOptionsNotification": "Opções atuais salvas como padrão",
+            "ERROR": {
+                "noActors": "Nenhum ator selecionado para a rolagem, selecione pelo menos um ator",
+                "noType": "Nenhum tipo selecionado para a rolagem, selecione um tipo",
+                "noContestants": "Um tipo de rolagem contestada foi selecionada, mas nenhum contestador foi selecionado",
+                "noContest": "Os contestadores foram selecionados, mas nenhum tipo de rolagem contestada foi selecionada",
+                "noDC": "Nenhuma CD foi definida para a rolagem, por favor insira uma CD"
+            }
+        },
+        "flags": {}
+    }
+}

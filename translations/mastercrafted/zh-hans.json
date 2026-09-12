@@ -1,0 +1,204 @@
+{
+    "mastercrafted": {
+        "UI": {
+            "default-recipe-name": "新配方",
+            "delete-recipe-book-content": "你确定要删除此配方吗？",
+            "delete-recipe-book-title": "删除配方",
+            "delete-recipe-content": "你确定要删除此配方吗？",
+            "delete-recipe-title": "删除配方",
+            "no-permission": "你没有权限打开此配方或书籍。",
+            "open-recipe-app": "配方管理器"
+        },
+        "cauldronApp": {
+            "brewFail": "酿造失败！你的混合物未成功混合。成分已消耗。",
+            "confirm": "确认",
+            "discovered": "你发现了一种新的配方！",
+            "gmConfirm": "游戏主将需要确认此发现才能使用。",
+            "hint": "将成分拖放到大锅中以将它们混合在一起。单击成分以将其从大锅中移除。单击“混合成分”按钮以将成分混合在一起。如果成分混合良好，你将发现一种新的配方。成分将被消耗。",
+            "noIngredients": "你需要混合至少两种成分才能发现配方！",
+            "partial": {
+                "consumed": "已消耗：",
+                "extra1": "就差一点！你几乎成功了！也许添加了太多。",
+                "extra1missing1": "看起来好像会成功，但没有。也许你添加了太多某种东西而太少另一种东西。",
+                "extra2": "看起来好像会成功，但没有。也许添加了太多。",
+                "missing1": "就差一点！你几乎成功了！也许需要再多一点。",
+                "missing2": "看起来好像会成功，但没有。也许需要再多一些。"
+            },
+            "title": "大锅"
+        },
+        "componentEditForm": {
+            "img": "图像",
+            "name": {
+                "hint": "用于匹配将作为合成组件消耗的物品的名称。",
+                "label": "名称"
+            },
+            "quantity": "数量",
+            "resourcePath": {
+                "hint": "通往演员资源的路径。若该物品未存在于库存中，则制作将消耗制作演员的资源而非该物品。",
+                "label": "资源路径",
+                "title": "资源配置"
+            },
+            "tags": {
+                "hint": "定义此组件替代物品的标签列表。若库存中不存在主物品，则在\"部分模式\"下将使用至少匹配一个标签的物品进行制作；在\"全部模式\"下则使用匹配所有标签的物品。",
+                "label": "标签",
+                "mode": {
+                    "every": "每",
+                    "label": "要求",
+                    "some": "某些"
+                },
+                "title": "标签配置"
+            },
+            "title": "组件配置",
+            "uuid": {
+                "hint": "点击后显示的项目。请注意，更改此项目不会更新组件的名称或图像。",
+                "label": "此外"
+            }
+        },
+        "craft": "制作",
+        "craftDialog": {
+            "cancel": "取消",
+            "consumes": "消耗",
+            "craft": "制作",
+            "crafted": "已制作",
+            "crafts": "制作",
+            "title": "制作"
+        },
+        "itemConfig": {
+            "attributePath": {
+                "label": "属性路径"
+            },
+            "tags": {
+                "label": "标签",
+                "notes": "以逗号分隔的标签列表。制作时，玩家必须在其库存中至少拥有其中一个标签的物品。"
+            },
+            "title": "大师工艺 - 物品配置"
+        },
+        "mastercrafted": "匠心配方",
+        "recipeApp": {
+            "addRecipeBook": "添加配方书",
+            "all": "所有",
+            "bookcontext": {
+                "add": "添加配方",
+                "delete": "删除",
+                "duplicate": "复制",
+                "edit": "编辑",
+                "export": "导出",
+                "import": "导入",
+                "inspect": "检查"
+            },
+            "cauldron": "大锅",
+            "component": "组件",
+            "configbookrecipe": {
+                "permissions": {
+                    "allow": "允许",
+                    "default": "默认",
+                    "deny": "拒绝"
+                }
+            },
+            "craft": "制作 - 按住 Ctrl 进行快速制作",
+            "craftAs": "工艺作为",
+            "craftAsInfo": "该角色将执行制作操作，所有制作检定（工具、能力等）均由该角色执行。",
+            "craftError": "制作错误",
+            "craftFailConsumed": "制作失败！条件未达成，成分已消耗。",
+            "craftFailNotConsumed": "制作失败！条件未达成，成分未消耗。",
+            "craftSuccess": "制作成功！已添加到库存：",
+            "craftSuccessTimed": "制作成功！完成制作后将添加以下物品：",
+            "editMode": "编辑",
+            "editcreatebook": {
+                "abilityCheck": {
+                    "label": "系统能力",
+                    "placeholder": "系统能力"
+                },
+                "abilityDc": {
+                    "label": "哥伦比亚特区",
+                    "placeholder": "哥伦比亚特区"
+                },
+                "book": "书",
+                "confirm": "确认",
+                "create": "创建",
+                "description": "描述",
+                "edit": "编辑",
+                "expression": {
+                    "label": "表达",
+                    "placeholder": "表达"
+                },
+                "image": "图像",
+                "macro": "条件",
+                "macroplaceholder": "宏名称或命令",
+                "modifierList": {
+                    "add": "添加 修改",
+                    "hint": "若骰子结果或表达式返回值等于或大于DC（取较高值），则采集物品数量将根据修饰表达式进行调整。修饰表达式开头可包含数学运算符；若未提供运算符，则默认使用加号(+)。例如，*1d4表示将采集物品数量乘以1d4。",
+                    "label": "修改"
+                },
+                "name": "名称",
+                "namep": "新书",
+                "permission": "玩家权限",
+                "recipe": "配方",
+                "sound": "声音",
+                "time": "时间",
+                "timeplaceholder": "以分钟为单位的制作时间",
+                "title": "编辑/创建书",
+                "toolCheck": {
+                    "label": "工具检查",
+                    "placeholder": "工具检查"
+                },
+                "toolDc": {
+                    "label": "哥伦比亚特区",
+                    "placeholder": "哥伦比亚特区"
+                },
+                "tools": "工具",
+                "toolsplaceholder": "以逗号分隔的工具名称列表"
+            },
+            "errors": {
+                "alreadyingredient": "该物品已在此配方的成分中！",
+                "namemissing": "名称必填！",
+                "noJournal": "打开一本书来配置类别。"
+            },
+            "filter": "切换所有/可制作的",
+            "ingredient": "成分",
+            "ingredientsEditInfo": "将物品拖拽至方框中即可将其添加为合成组件。点击+按钮可添加空组件。同一方框内的多个组件可互换使用。每个方框至少需有一个组件才能进行合成。",
+            "ingredientsTooltip": "左键点击选择食材，右键点击检查食材。",
+            "minutes": "分钟",
+            "noProficiency": "您不擅长：",
+            "noTools": "缺少工具！你需要其中之一：",
+            "onlyCraftable": "仅可制作",
+            "product": "产品",
+            "readyIn": "准备好：",
+            "recipeBooks": "食谱书",
+            "recipeconfig": {
+                "ingredients": "成分",
+                "ingredientsInspection": "成分检查",
+                "inheritTools": "继承工具",
+                "productInspection": "产品检查",
+                "result": "结果"
+            },
+            "relinked": "一个或多个物品缺少引用，已重新链接。",
+            "resultEditInfo": "将物品拖拽至方框中即可将其设为合成结果。同一方框内的多个物品将在合成时全部获得。每次合成仅可选择一个方框作为结果。",
+            "resultTooltip": "左键单击框以选择结果，右键单击项目以检查它。",
+            "searchRecipe": "搜索配方",
+            "time": "制作时间",
+            "timedCraftCompleted": "制作完成！已添加到库存：",
+            "timedCrafting": "制作进度",
+            "title": "大师工艺",
+            "tools": "所需工具",
+            "useCraftingActor": "使用制作角色",
+            "useInventory": "使用库存",
+            "useInventoryInfo": "该角色的物品栏中的物品将用于制作。制作和延迟制作的结果也将放置在此角色的物品栏中。"
+        },
+        "settings": {
+            "customQuantityPath": {
+                "hint": "项目数量数据值的路径（数据路径从'system'开始，例如，如果你的数量存储在 'item.system.itemQuantity.value' 中，则在此设置中插入'itemQuantity.value'）。如果你的系统不使用常见路径，请留空以使用默认路径，仅在你的系统不使用常见路径时自定义。",
+                "name": "自定义数量路径"
+            },
+            "enableCauldron": {
+                "hint": "启用大锅界面。这将允许玩家将任何成分混合在一起以发现配方。",
+                "name": "启用大锅"
+            },
+            "migrateOnStartup": {
+                "hint": "若启用此功能，模块将在启动时迁移日志数据。您可使用宏 'game.modules.get(\"mastercrafted\").API.migration.showManualMigrationDialog()' 手动迁移设置。",
+                "name": "启动时迁移设置"
+            }
+        },
+        "show-recipes": "显示配方"
+    }
+}

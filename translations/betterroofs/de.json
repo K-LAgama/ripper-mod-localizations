@@ -1,0 +1,15 @@
+{
+    "betterroofs": {
+        "tileConfig": {
+            "showInFog.name": "Lüftet den Nebel des Krieges",
+            "showInFog.hint": "Wenn ein Charakter Sicht auf dieses Feld hat, ist das Feld durch den Nebel des Krieges hindurch sichtbar. Funktioniert nicht mit Lichtquellen.",
+            "occlusionLinkId": "Okkusions-Link-ID",
+            "occlusionLinkIdHint": "Kann ein beliebiger Text sein. Wenn eine Kachel mit der Aufschrift „Occlusion Link Source?“ verdeckt wird (ein Spielstein darunter liegt), werden alle Kacheln mit derselben „Occlusion Link Id“ ebenfalls verdeckt. Anwendungsbeispiel: Dächer miteinander verbinden.",
+            "occlusionLinkSource": "Okklusion – Link zur Quelle?"
+        },
+        "settings": {
+            "hoverFade.name": "Hover-Überblendung",
+            "hoverFade.hint": "Wenn diese Option aktiviert ist, werden die Dächer ausgeblendet, sobald Sie mit der Maus darüber fahren. Dies ist eine Funktion von Core Foundry VTT; mit dieser Einstellung können Sie sie einfach deaktivieren."
+        }
+    }
+}

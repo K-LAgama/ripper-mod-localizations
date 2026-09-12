@@ -1,0 +1,77 @@
+{
+    "macro-wheel": {
+        "bindings": {
+            "open": {
+                "name": "Ouvrir/Fermer la molette de macro"
+            }
+        },
+        "settings": {
+            "folderSize": {
+                "name": "Taille du bouton « Dossier »",
+                "hint": "Taille en pixels des boutons de dossiers dans la molette des macros."
+            },
+            "macroSize": {
+                "name": "Taille des boutons macro",
+                "hint": "Taille en pixels des boutons de macro situés sur la molette de macro."
+            },
+            "closeOnClick": {
+                "name": "Fermer au clic",
+                "hint": "Fermez la molette des macros lorsque vous cliquez sur une macro. Vous pouvez maintenir la touche Ctrl enfoncée pour que la molette reste ouverte."
+            },
+            "enableTooltips": {
+                "name": "Activer les infobulles",
+                "hint": "Afficher des infobulles lorsque l'on passe la souris sur une macro ou un dossier."
+            },
+            "useRoot": {
+                "name": "Utiliser le dossier racine",
+                "hint": "Utilisez l'intégralité du répertoire des macros comme racine pour la molette des macros."
+            },
+            "addHotbar": {
+                "name": "Afficher les macros de la barre d'accès rapide",
+                "hint": "Ajoutez les macros de la barre d'accès rapide à la roue des macros."
+            },
+            "useMiddleMouse": {
+                "name": "Utiliser le bouton central de la souris",
+                "hint": "Utilisez le bouton central de la souris pour ouvrir la molette des macros."
+            },
+            "hoverDelay": {
+                "name": "Délai de survol",
+                "hint": "Délai, en millisecondes, avant l'ouverture de la roue des macros lorsque l'on survole un dossier de la roue des macros."
+            }
+        },
+        "flags": {
+            "header": "Molette macro",
+            "folderImg": {
+                "name": "Image"
+            },
+            "condition": {
+                "name": "Condition personnalisée",
+                "placeholder": "Script de condition"
+            },
+            "activeCondition": {
+                "name": "État actif",
+                "hint": "Cette condition permet de déterminer si la macro est active. Elle servira à définir la couleur de l'anneau entourant la macro dans la molette des macros, afin de vérifier rapidement son état."
+            },
+            "presetCondition": {
+                "name": "État",
+                "options": {
+                    "custom": "Personnalisé",
+                    "tokens": "Couche active : jetons",
+                    "tiles": "Couche active : Tuiles",
+                    "walls": "Couche active : Murs",
+                    "sounds": "Couche active : Sons",
+                    "notes": "Couche active : Remarques",
+                    "lights": "Couche active : Éclairage",
+                    "templates": "Couche active : Modèles",
+                    "drawings": "Couche active : Dessins",
+                    "selectedtoken": "Jeton sélectionné",
+                    "combat": "Au combat",
+                    "enabled3d": "Prise en charge de 3D Canvas"
+                }
+            }
+        },
+        "errors": {
+            "no-folder": "MacroWheel : le dossier « MacroWheel » est introuvable. Veuillez créer un dossier nommé « MacroWheel » dans votre dossier « Macro » ou activer l'option « Utiliser le dossier racine » pour désactiver cette notification. Dans le dossier « MacroWheel », créez des sous-dossiers pour chaque molette que vous souhaitez ajouter, puis ajoutez les macros dans ces dossiers."
+        }
+    }
+}

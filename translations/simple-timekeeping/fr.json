@@ -1,0 +1,329 @@
+{
+    "simple-timekeeping": {
+        "day": "Jour",
+        "days": "Jours",
+        "in-progress": "En cours",
+        "paused": "En pause",
+        "paused-info": "Chronométrage simple - L'avancement du temps est interrompu, cliquez pour reprendre.",
+        "unpaused-info": "Chronométrage simple - Reprise de l'avancement du temps, cliquer pour mettre en pause. Le temps sera toujours en pause si le jeu est en pause ou si le combat est actif.",
+        "calendar-dusk-dawn": "Ce calendrier inclut les heures d'aube et de crépuscule, toute valeur définie dans les paramètres ou basée sur la zone climatique sera ignorée et la valeur du calendrier sera utilisée.",
+        "settings": {
+            "config-menu": {
+                "label": "Configurer",
+                "name": "Configuration",
+                "hint": "Configurer les paramètres du module."
+            }
+        },
+        "weather": {
+            "clear": "Clair",
+            "partlyCloudy": "Partiellement nuageux",
+            "cloudy": "Nuageux",
+            "overcast": "Couvert",
+            "rain": "Pluie",
+            "thunderstorm": "Orage",
+            "drizzle": "Bruine",
+            "snow": "Neige",
+            "blizzard": "Blizzard",
+            "hail": "Grêle",
+            "fog": "Brouillard",
+            "mist": "Brume",
+            "windy": "Ascenseurs",
+            "tornado": "Tornade",
+            "hurricane": "Ouragan",
+            "ashfall": "Pluie de cendres",
+            "sandstorm": "Tempête de sable",
+            "luminousSky": "Ciel lumineux",
+            "bloodRain": "Pluie de sang",
+            "manaStorm": "Tempête de mana",
+            "arcaneFog": "Brouillard arcanique",
+            "voidstorm": "Tempête du Vide",
+            "celestialEclipse": "Eclipse céleste",
+            "meteorShower": "La pluie de météores",
+            "frozenHell": "L'enfer glacé",
+            "sunshower": "Le tournesol",
+            "spectralStorm": "Tempête spectrale",
+            "etherealDrizzle": "Bruine éthérée",
+            "wildMagicWinds": "Vents magiques et sauvages"
+        },
+        "moonPhase": {
+            "new": "Nouvelle lune",
+            "waxingCrescent": "Croissant de cire",
+            "firstQuarter": "Premier trimestre",
+            "waxingGibbous": "L'exaltation de la gibbosité",
+            "full": "Pleine lune",
+            "waningGibbous": "Le gibbeux déclinant",
+            "lastQuarter": "Dernier trimestre",
+            "waningCrescent": "Croissant décroissant",
+            "bloodMoon": "Lune de sang",
+            "eclipse": "Eclipse",
+            "voidMoon": "Lune du Vide",
+            "twinMoons": "Lunes jumelles",
+            "manaMoon": "Mana Moon",
+            "celestialAlignment": "Alignement céleste",
+            "shatteredMoon": "Lune brisée",
+            "spiritMoon": "Esprit de la lune"
+        },
+        "configuration": {
+            "title": "Menu de configuration",
+            "firstTimeTitle": "Première installation",
+            "tabs": {
+                "configuration": "Configuration",
+                "visibility": "Visibilité",
+                "aspect": "Aspect",
+                "badges": "Insignes",
+                "time": "L'heure",
+                "calendar": "Calendrier",
+                "automation": "Automatisation",
+                "environment": "Environnement"
+            },
+            "seasons": {
+                "label": "Couleurs de saison"
+            },
+            "macrosFieldset": {
+                "label": "Macros d'automatisation",
+                "hint": "Macros à exécuter à des heures spécifiques de la journée. Les macros seront exécutées pour tous les utilisateurs connectés qui ont le droit de les exécuter."
+            },
+            "newDayMacros": {
+                "label": "Macros du nouveau jour"
+            },
+            "dawnMacros": {
+                "label": "Macros de l'aube"
+            },
+            "duskMacros": {
+                "label": "Macros du crépuscule"
+            },
+            "middayMacros": {
+                "label": "Macros de midi"
+            },
+            "use24HourClock": {
+                "label": "Utiliser l'horloge 24 heures"
+            },
+            "wideLetterSpacing": {
+                "label": "Espacement large des lettres"
+            },
+            "useMonospace": {
+                "label": "Utiliser une police de caractères monospaciale"
+            },
+            "noPills": {
+                "label": "Style uni"
+            },
+            "useFullWidth": {
+                "label": "Largeur maximale de la force"
+            },
+            "hideInCombat": {
+                "label": "Se cacher pendant le combat"
+            },
+            "topOffset": {
+                "label": "Marge supérieure (px)"
+            },
+            "hideExpired": {
+                "label": "Masquer les événements expirés"
+            },
+            "copyButton": {
+                "label": "Copie de la configuration actuelle (enregistrer et rouvrir pour le formatage)"
+            },
+            "customCalendar": {
+                "label": "Calendrier personnalisé JSON",
+                "hint": "Définition JSON pour le calendrier personnalisé. Aucune assistance n'est fournie pour le calendrier personnalisé ou pour la configuration du fichier JSON. Vous trouverez des exemples de calendriers sur le wiki.",
+                "error": "Format JSON non valide pour le calendrier personnalisé, le paramètre a été ramené à l'état précédent. Veuillez consulter la console pour plus de détails."
+            },
+            "useCustomMoons": {
+                "label": "Personnaliser les lunes"
+            },
+            "customMoons": {
+                "label": "Lunes personnalisées JSON",
+                "hint": "Définition JSON pour les lunes personnalisées. Bien que les lunes puissent également être définies dans le JSON du calendrier, cela vous permet de remplacer les lunes sans avoir à modifier le JSON du calendrier dans les cas où, par exemple, vous utilisez un calendrier défini par le système ou un autre module et que vous souhaitez y ajouter des lunes. Aucun support n'est fourni pour les lunes personnalisées ou sur la façon de configurer le fichier JSON, voir le wiki pour des exemples.",
+                "error": "Format JSON non valide pour les lunes personnalisées, le paramètre a été ramené à l'état précédent. Veuillez consulter la console pour plus de détails."
+            },
+            "climateData": {
+                "label": "Données climatiques",
+                "hint": "Définition JSON pour la génération du temps et de la température. Aucune aide n'est fournie pour le climat personnalisé ou pour la configuration du fichier JSON."
+            },
+            "customBadge": {
+                "label": "Badge personnalisé"
+            },
+            "calendar": {
+                "label": "Calendrier",
+                "hint": "Calendrier personnalisé tel que défini dans le Custom Calendar JSON",
+                "default": "Système par défaut",
+                "custom": "Sur mesure"
+            },
+            "moonLabel": {
+                "label": "Étiquette des phases de la lune"
+            },
+            "moonColor": {
+                "label": "Couleur des phases de la lune"
+            },
+            "moonAutomation": {
+                "label": "Badge Sync Moon",
+                "hint": "Si des lunes sont définies dans le JSON du calendrier, Simple Timekeeping mettra automatiquement à jour le badge de la lune."
+            },
+            "weatherLabel": {
+                "label": "Étiquette météo"
+            },
+            "weatherOverlay": {
+                "label": "Animation météo"
+            },
+            "weatherColor": {
+                "label": "Couleur du temps"
+            },
+            "showFullDate": {
+                "label": "Afficher la date complète"
+            },
+            "daysDisplay": {
+                "label": "Affichage des jours",
+                "options": {
+                    "none": "Aucun",
+                    "sinceEpoch": "Depuis le début du calendrier",
+                    "dayOfYear": "Jour de l'année"
+                }
+            },
+            "dayOffset": {
+                "label": "Début Jour Décalage",
+                "hint": "Décalage à appliquer au nombre de jours lors de l'utilisation de l'option \"Depuis le début du calendrier\" dans \"Affichage des jours\"."
+            },
+            "dawn": {
+                "label": "Aube",
+                "hint": "Heure du jour en pourcentage, par exemple si votre journée est de 24 heures, 0,5 correspondra à 12:00 et 0,25 à 06:00."
+            },
+            "dusk": {
+                "label": "Crépuscule",
+                "hint": "Heure du jour en pourcentage, par exemple si votre journée est de 24 heures, 0,5 correspondra à 12:00 et 0,75 à 18:00."
+            },
+            "latitude": {
+                "label": "Latitude",
+                "hint": "Si une latitude différente de 0 est définie, les valeurs du crépuscule et de l'aube seront ignorées et calculées dynamiquement en fonction de la latitude. La latitude sera également utilisée pour calculer la météo. Plages de latitude typiques : Équatoriale (0-15°), Tropicale (15-23,5°), Subtropicale (23,5-35°), Tempérée (35-55°), Subpolaire (55-66,5°) et Polaire (66,5-90°).",
+                "options": {
+                    "disabled": "Handicapés",
+                    "equatorial": "Équatorial",
+                    "tropical": "Tropical",
+                    "subtropical": "Subtropical",
+                    "hotDesert": "Désert chaud",
+                    "mediterranean": "Méditerranée",
+                    "temperate": "Tempéré",
+                    "coolTemperate": "Frais Tempéré",
+                    "subpolar": "Subpolaire",
+                    "boreal": "Boréal"
+                }
+            },
+            "genWeather": {
+                "label": "Générer de la météo",
+                "hint": "Génère un nouveau temps chaque jour. Utilise la latitude pour déterminer le climat.",
+                "options": {
+                    "no": "Non",
+                    "noTemp": "Oui (pas de température)",
+                    "tempC": "Oui + Celsius",
+                    "tempF": "Oui + Fahrenheit"
+                }
+            },
+            "dayColor": {
+                "label": "Couleur du jour"
+            },
+            "nightColor": {
+                "label": "Couleur de nuit"
+            },
+            "hueIntensity": {
+                "label": "Intensité de la teinte de la scène",
+                "hint": "Lorsque Simple Timekeeping définit un niveau d'obscurité, il applique également une teinte à la scène en fonction des couleurs du jour et de la nuit."
+            },
+            "badgeLabel": {
+                "label": "Étiquette"
+            },
+            "badgeColor": {
+                "label": "Couleur"
+            },
+            "secondsPerRound": {
+                "label": "Secondes par round de combat"
+            },
+            "secondsPerRealSecond": {
+                "label": "Seconde par seconde en temps réel"
+            },
+            "journalEntryEvents": {
+                "label": "Nom de l'entrée du journal des événements"
+            },
+            "clockSeconds": {
+                "label": "Fréquence de mise à jour (secondes)"
+            },
+            "setDateTime": {
+                "label": "Régler la date et l'heure actuelles"
+            },
+            "darknessSync": {
+                "label": "Sync Scène Obscurité",
+                "hint": "La synchronisation peut être configurée par scène en bas de l'onglet éclairage.",
+                "options": {
+                    "default": "Utiliser la valeur par défaut globale",
+                    "sync": "Sync",
+                    "noSync": "Ne pas synchroniser",
+                    "weatherOnly": "Synchronisation météo uniquement",
+                    "darknessOnly": "Synchroniser uniquement les éléments sombres"
+                }
+            }
+        },
+        "app": {
+            "searchEvents": "Recherche d'événements",
+            "create-event": {
+                "eventTime": {
+                    "label": "Début de l'événement"
+                },
+                "eventEnd": {
+                    "label": "Fin de l'événement (facultatif)"
+                },
+                "duration": {
+                    "label": "Durée de l'événement (heures)"
+                },
+                "edit": {
+                    "label": "Modifier l'heure de l'événement"
+                },
+                "repeat": {
+                    "label": "Répéter",
+                    "options": {
+                        "none": "Ne pas répéter",
+                        "day": "Tous les jours",
+                        "week": "Chaque semaine",
+                        "month": "Tous les mois",
+                        "year": "Chaque année"
+                    }
+                }
+            },
+            "controls": {
+                "create-event": {
+                    "tooltip": "Créer un événement"
+                },
+                "day-back": {
+                    "tooltip": "Retour d'un jour"
+                },
+                "hour-back": {
+                    "tooltip": "Retour d'une heure"
+                },
+                "hour-forward": {
+                    "tooltip": "Avance d'une heure"
+                },
+                "day-forward": {
+                    "tooltip": "Avance d'un jour"
+                },
+                "sunrise": {
+                    "tooltip": "Lever de soleil"
+                },
+                "sunset": {
+                    "tooltip": "Coucher de soleil"
+                },
+                "midday": {
+                    "tooltip": "Midi"
+                },
+                "midnight": {
+                    "tooltip": "Minuit"
+                },
+                "configure": {
+                    "tooltip": "Configurer"
+                },
+                "toggle-events": {
+                    "tooltip": "Evénements"
+                }
+            },
+            "weather": {
+                "generate": "Générer"
+            }
+        },
+        "flags": {}
+    }
+}

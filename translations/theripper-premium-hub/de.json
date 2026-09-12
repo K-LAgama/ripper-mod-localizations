@@ -1,0 +1,63 @@
+{
+    "theripper-premium-hub": {
+        "settings": {
+            "autoCheck": {
+                "name": "Beim Start nach Updates suchen",
+                "hint": "Beim Laden der Welt automatisch prüfen, ob für eines meiner Premium-Module Updates vorliegen."
+            },
+            "checkDisabled": {
+                "name": "Module nicht aktiviert",
+                "hint": "Prüfen Sie, ob für installierte, aber nicht aktivierte Module Updates verfügbar sind."
+            }
+        },
+        "tweaks-menu": {
+            "title": "Optimierungen",
+            "label": "Einstellungen anpassen",
+            "hint": "Konfigurieren Sie einige Funktionen zur Verbesserung der Benutzerfreundlichkeit, wie z. B. Startmakros, Schaltflächen zum Löschen der Kopfzeile und CSS-Anpassungen.",
+            "tabs": {
+                "misc": "Verschiedenes",
+                "startup-macros": "Startmakros",
+                "css-tweaks": "CSS-Optimierungen"
+            },
+            "initMacros": {
+                "name": "Startmakros",
+                "hint": "Makros beim Laden der Welt ausführen. Die Makros werden in der Reihenfolge ausgeführt, in der sie hier aufgeführt sind."
+            },
+            "readyMacros": {
+                "name": "Vorgefertigte Makros",
+                "hint": "Makros ausführen, sobald der Client bereit ist. Makros werden in der Reihenfolge ausgeführt, in der sie hier aufgeführt sind."
+            },
+            "cssTweak": {
+                "name": "CSS-Optimierungen",
+                "hint": "Schreiben Sie benutzerdefiniertes CSS, um die Stile von Foundry oder Modules anzupassen. Zur besseren Übersicht stehen drei Felder zur Verfügung, Sie können jedoch auch nur ein Feld verwenden."
+            },
+            "cleanHeaderButtons": {
+                "name": "Schaltflächen für die Kopfzeile bereinigen",
+                "hint": "Entfernen Sie den Text aus den Schaltflächen in den Kopfzeilen, um diese übersichtlicher zu gestalten. Wenn Sie viele meiner Module verwenden, kann es sein, dass sich zahlreiche Schaltflächen in den Kopfzeilen der Fenster ansammeln; diese Option entfernt den Text aus diesen Schaltflächen. (Erfordert LibWrapper)"
+            },
+            "compactSidebar": {
+                "name": "Kompakte Seitenleiste",
+                "hint": "Verringern Sie die Größe der Einträge in der Seitenleiste, damit mehr Elemente auf den Bildschirm passen."
+            },
+            "enableSettingsSwap": {
+                "name": "Vorgeschriebene Client-Einstellungen",
+                "hint": "Aktivieren Sie die Option, Client-Einstellungen in Welteinstellungen umzuwandeln. Dadurch werden die ausgewählten Einstellungen für alle Clients erzwungen, und die Spieler können diese Einstellungen nicht mehr einsehen."
+            },
+            "diceTray": {
+                "name": "Würfelschale",
+                "hint": "Füge dem Chat-Protokoll eine Würfelschale hinzu. So kannst du würfeln und Modifikatoren hinzufügen."
+            },
+            "autoRotate": {
+                "name": "Automatische Drehung",
+                "hint": "Die Spielsteine automatisch so drehen, dass sie in Bewegungsrichtung und zum Zielspielstein ausgerichtet sind.",
+                "none": "Deaktiviert",
+                "defaultOn": "Aktiviert (Standard: Ein)",
+                "defaultOff": "Aktiviert (Standard: Aus)",
+                "on": "Aktiviert",
+                "off": "Deaktiviert",
+                "default": "Standard"
+            }
+        },
+        "wtcNotification": "Die Konfiguration für {Einstellung} wurde auf {Wert} gesetzt. Bitte lade das Spiel neu, damit die Änderungen wirksam werden. Die Änderungen an der Einstellung werden erst beim nächsten Neuladen gespeichert."
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "fvtt-youtube-player": {
+        "deleteTrack": "Titel löschen?",
+        "deleteTrackContent": "Möchten Sie diesen Titel wirklich löschen?",
+        "deletePlaylist": "Playlist löschen?",
+        "deletePlaylistContent": "Sind Sie sicher, dass Sie diese Playlist löschen möchten?",
+        "fetchingTitle": "Videotitel wird abgerufen...",
+        "playlistName": "Name der Wiedergabeliste",
+        "playlistNameContent": "Sie importieren eine Playlist. \nMöchten Sie eine neue Playlist erstellen oder die Titel zur aktuellen Playlist hinzufügen? \nLassen Sie das Feld leer, um es zur aktuellen Playlist hinzuzufügen.",
+        "TOOLTIP": {
+            "play": "Spielen",
+            "stop": "Stoppen",
+            "toggle-playlists": "Wiedergabelisten umschalten",
+            "add-to-playlist": "Zur Wiedergabeliste hinzufügen",
+            "create-playlist": "Playlist erstellen",
+            "delete-playlist": "Playlist löschen",
+            "delete-track": "Spur löschen",
+            "rename-playlist": "Drücken Sie zum Umbenennen die Eingabetaste",
+            "sound-library": "Soundbibliothek",
+            "loop": "Schalten Sie „Wiederholen“ um",
+            "toggle-playlist": "Schalten Sie die automatische Wiedergabe um",
+            "search": "Durchsuchen Sie YouTube",
+            "copy-url": "URL kopieren",
+            "configure-track": "Spur konfigurieren",
+            "add-to-sound-library": "Zur Soundbibliothek hinzufügen"
+        },
+        "settings": {
+            "googleApiKey": {
+                "name": "YouTube-API-Schlüssel",
+                "hint": "Die Anfrage wird über meine Server weitergeleitet, Sie können jedoch Ihren eigenen API-Schlüssel verwenden, um Ratenbeschränkungen zu vermeiden. \nHolen Sie sich eines unter https://console.developers.google.com/apis/credentials"
+            },
+            "importExport": {
+                "name": "Import Export",
+                "label": "Öffnen Sie den Import/Export-Dialog",
+                "hint": "Playlists importieren oder exportieren"
+            }
+        },
+        "import-export": {
+            "title": "Wiedergabelisten importieren/exportieren",
+            "import": "Importieren",
+            "export": "Exportieren",
+            "imported": "Playlists erfolgreich importiert"
+        },
+        "track-configuration": {
+            "title": "Streckenkonfiguration",
+            "track-title": "Titel des Titels",
+            "track-url": "URL oder ID des Titels",
+            "url": "URL",
+            "tags": "Stichwörter",
+            "rename-track": "Titel umbenennen"
+        },
+        "tags-configuration": {
+            "title": "Tags-Konfiguration",
+            "create-tag": "Tag erstellen",
+            "tag-name": "Tag-Name",
+            "tag-color": "Tag-Farbe",
+            "tag-label": "Tag-Name",
+            "delete-tag": "Tag löschen",
+            "create-tag-error": "Bitte geben Sie einen Tag-Namen und eine Tag-Farbe ein"
+        },
+        "sound-library": {
+            "title": "Soundbibliothek",
+            "add-tracks": "Titel hinzufügen",
+            "import-tracks": "Tracks importieren",
+            "import-tracks-textarea": "Füge hier die URLs oder IDs von Titeln/Playlists ein"
+        },
+        "app": {},
+        "flags": {},
+        "noApiKey": "Warnung: Kein API-Schlüssel festgelegt. \nUm auf die Suchfunktion zugreifen zu können, müssen Sie in den Moduleinstellungen einen YouTube-API-Schlüssel festlegen. \nWeitere Informationen finden Sie im Wiki."
+    }
+}

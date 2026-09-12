@@ -1,0 +1,83 @@
+{
+    "epic-rolls-5e": {
+        "check": "Controlar",
+        "save": "Ahorrar",
+        "death": "Muerte",
+        "success": "Éxito",
+        "failure": "Falla",
+        "button-tooltip": "Configurar Epic Roll<hr>Clic derecho para rollos recientes",
+        "complete-roll": "Concluir tirada épica",
+        "epicRoll": "Rollo épico",
+        "settings": {
+            "introSound": {
+                "name": "Sonido de introducción",
+                "hint": "El sonido que se reproducirá cuando se inicie el redoble."
+            },
+            "successSound": {
+                "name": "Sonido de éxito",
+                "hint": "El sonido que se reproducirá cuando la tirada sea exitosa."
+            },
+            "failureSound": {
+                "name": "Sonido de falla",
+                "hint": "El sonido que suena cuando la tirada falla"
+            },
+            "recapMessage": {
+                "name": "Mensaje recapitulativo",
+                "hint": "Configura quién puede ver el mensaje que se muestra una vez completada la tirada épica",
+                "options": {
+                    "none": "Ninguno",
+                    "gm": "GM",
+                    "public": "Público"
+                }
+            },
+            "cleanupMessages": {
+                "name": "Mensajes de limpieza",
+                "hint": "Elimina los mensajes de rollo después de que se complete el rollo épico."
+            }
+        },
+        "get-roll-data": {
+            "customFormula": "Fórmula personalizada",
+            "customLabel": "Etiqueta",
+            "customLabelNotes": "Etiqueta de introducción personalizada para el rollo.",
+            "formula": "Fórmula",
+            "title": "Configurar tirada épica",
+            "startRoll": "Iniciar tirada épica",
+            "macro": "Guardar en macro",
+            "save-macro": "Se creó la macro Epic Roll para",
+            "player": "Personaje del jugador",
+            "npc": "Personaje no jugador",
+            "selected": "Seleccionado",
+            "available": "Disponible",
+            "rollOptions": "Opciones de rollo",
+            "VsDCNotes": "El DC para el rollo",
+            "showDC": "Mostrar DC",
+            "showDCNotes": "Cuando esté habilitado, el DC será visible para los jugadores.",
+            "useAverage": "Usar promedio",
+            "useAverageNotes": "Utilice el promedio de todos los resultados para determinar el éxito o el fracaso.",
+            "allowReroll": "Permitir volver a lanzar",
+            "allowRerollNotes": "Permitir a los jugadores volver a tirar su tirada",
+            "showRollResults": "Mostrar resultados de tirada",
+            "showRollResultsNotes": "Si se debe mostrar el texto final de éxito/fracaso",
+            "blindRoll": "Rollo ciego",
+            "blindRollNotes": "Ocultar los resultados de las tiradas a los jugadores.",
+            "hideNames": "Ocultar nombres",
+            "hideNamesNotes": "Ocultar a los jugadores los nombres de actores que no son propiedad de los jugadores.",
+            "color": "Color",
+            "colorNotes": "El color del banner enrollable.",
+            "autoColor": "Color automático",
+            "autoColorNotes": "Colorea automáticamente el banner en rollo según el tipo de rollo",
+            "contest": "Concurso",
+            "contestInfo": "Para marcar a los concursantes, haga clic derecho en un actor y/o un rollo.",
+            "saveDefaultOptions": "Guardar por defecto",
+            "saveDefaultOptionsNotification": "Opciones actuales guardadas como predeterminadas",
+            "ERROR": {
+                "noActors": "No hay actores seleccionados para el rol, seleccione al menos un actor.",
+                "noType": "No se seleccionó ningún tipo para el rollo, seleccione un tipo",
+                "noContestants": "Se seleccionó un tipo de tirada disputada pero no se seleccionaron concursantes.",
+                "noContest": "Se seleccionaron concursantes pero no se seleccionó ningún tipo de concurso.",
+                "noDC": "No se ingresó ningún DC para la tirada, ingrese un DC"
+            }
+        },
+        "flags": {}
+    }
+}

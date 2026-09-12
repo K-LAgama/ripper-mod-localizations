@@ -1,0 +1,11 @@
+{
+    "tokenz": {
+        "tokenconfig": {
+            "zindex": "Desvio do Índice Z"
+        },
+        "send-to-back": {
+            "name": "Enviar token para o Back",
+            "hint": "Quando o mouse estiver posicionado sobre uma pilha de fichas, pressione esta tecla para que a ficha que está no topo vá para o fundo da pilha"
+        }
+    }
+}

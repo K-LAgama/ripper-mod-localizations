@@ -1,0 +1,15 @@
+{
+    "betterroofs": {
+        "settings": {
+            "hoverFade.hint": "有効にすると、屋根にカーソルを合わせると屋根がフェードアウトします。これは Foundry VTT 本体の機能で、この設定では単にその機能をオフにすることができます。",
+            "hoverFade.name": "ホバーフェード"
+        },
+        "tileConfig": {
+            "occlusionLinkId": "干渉リンクID",
+            "occlusionLinkIdHint": "任意のテキストを指定できます。「干渉リンク元」が有効なタイルが干渉された（その下にコマがある）場合、同じ「干渉リンクID」を持つすべてのタイルも干渉されます。使用例：屋根の連結",
+            "occlusionLinkSource": "干渉リンク元",
+            "showInFog.hint": "このタイルがコマの視界内にある場合、そのタイルはマスク越しに見えるようになります。ライトとは併用できません。",
+            "showInFog.name": "マスクを除去"
+        }
+    }
+}

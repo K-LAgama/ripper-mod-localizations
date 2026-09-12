@@ -22,6 +22,11 @@ jobs:
         manifest: https://github.com/${{github.repository}}/releases/latest/download/module.json
         download: https://github.com/${{github.repository}}/releases/download/${{github.event.release.tag_name}}/module.zip
 
+    # Merge the per-module files in translations/ into the languages/ folder that
+    # ships with the module (translations/<module-id>/<lang>.json -> languages/<lang>.json)
+    - name: Merge Translations Into Languages
+      run: python3 merge_translations.py
+
     # Create a zip file with all files required by the module to add to the release
     - run: zip -r ./module.zip module.json index.js index.js.map LICENSE styles/ templates/ languages/
 

@@ -1,0 +1,54 @@
+{
+    "filepicker-plus": {
+        "settings": {
+            "sidebarFilepicker": {
+                "name": "Habilitar Aba do Filepicker",
+                "hint": "Adicione uma nova aba à barra lateral, que permite navegar e carregar arquivos, bem como arrastar e soltar imagens/modelos 3D na cena."
+            },
+            "placeastokens": {
+                "name": "Colocar Imagens como Tokens",
+                "hint": "Ao arrastar uma imagem para a cena, a coloque como um token ao invés de uma peça, se você estiver na camada de token (somente seletor da barra lateral)."
+            },
+            "size": {
+                "name": "Tamanho do Filepicker",
+                "hint": "Largura do filepicker.",
+                "choices": {
+                    "default": "Padrão",
+                    "large": "Grande",
+                    "extraLarge": "Extra Grande",
+                    "massive": "Enorme"
+                }
+            },
+            "imagepreview": {
+                "name": "Visualisar Imagem/Vídeo",
+                "hint": "Exibe a pré-visualização da imagem ou vídeo ao passar o mouse sobre eles no seletor de arquivos."
+            },
+            "threepreview": {
+                "name": "Visualisação 3D",
+                "hint": "Exibe visualizações 3D (requer Retratos 3D). Se esta configuração estiver desabilitada, a Miniatura do Arquivo 3D será usada (se houver)."
+            },
+            "audiopreview": {
+                "name": "Visualisar Áudio",
+                "hint": "Reproduz uma prévia de áudio ao passar o mouse sobre os sons no seletor de arquivos."
+            },
+            "audiopreviewdelay": {
+                "name": "Atraso da Visualização de Áudio",
+                "hint": "Atraso (em ms) antes do som de pré-visualização começar a tocar."
+            },
+            "audiopreviewvol": {
+                "name": "Volume da Visualização de Áudio",
+                "hint": "Volume do som de pré-visualização."
+            },
+            "enablecolortheme": {
+                "name": "Ativar Tema de Cores",
+                "hint": "Habilita o tema de cor escura para o seletor de arquivos. Se você tiver um módulo ou sistema que aplica um tema ao seletor de arquivos, talvez você queira desabilitar isso."
+            }
+        },
+        "app": {},
+        "flags": {},
+        "sidebar": {
+            "no-filepicker": "O Navegador de Arquivos é aberto em uma janela separada. O Navegador de Arquivos retornará à barra lateral assim que a janela for fechada.",
+            "open": "A barra lateral do Navegador de Arquivos está ativa, o Navegador de Arquivos selecionado foi aberto na barra lateral."
+        }
+    }
+}

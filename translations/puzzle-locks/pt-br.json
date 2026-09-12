@@ -1,0 +1,335 @@
+{
+    "puzzle-locks": {
+        "settings": {},
+        "general-lock-config": {
+            "header-buttons": {
+                "copyContentLink": "Copiar link do conteúdo",
+                "unlock": "Quebra-cabeça aberto"
+            },
+            "title": "Configuração geral da trava",
+            "permissionWarning": "A propriedade padrão deste documento não está definida como “Nenhuma”. Os jogadores podem conseguir contornar o bloqueio em determinadas circunstâncias. Recomenda-se definir a propriedade padrão como “Nenhuma”.",
+            "fixPermission": "Corrigir propriedade",
+            "label": {
+                "label": "Etiqueta",
+                "placeholder": "Sistema de segurança para portas"
+            },
+            "description": {
+                "label": "Descrição",
+                "placeholder": "Este é um sistema de segurança para a porta."
+            },
+            "unlocked": {
+                "label": "Desbloqueado"
+            },
+            "attempts": {
+                "label": "Tentativas",
+                "notes": "Número de tentativas permitidas; defina como -1 para permitir tentativas ilimitadas."
+            },
+            "lockType": {
+                "label": "Tipo de fechadura",
+                "configure": "Configurar",
+                "none": "Nenhum (Desativado)",
+                "optgroupContext": "Requer contexto",
+                "optgroupNoContext": "Não é necessário contexto",
+                "notes": "O tipo de bloqueio que será utilizado para proteger o documento. Alguns bloqueios exigem informações contextuais para serem resolvidos, enquanto outros podem ser resolvidos sem nenhuma informação externa."
+            },
+            "unlockSound": {
+                "label": "Desbloquear o som"
+            },
+            "interactionSound": {
+                "label": "Som de interação"
+            },
+            "backgroundImage": {
+                "label": "Imagem de fundo"
+            },
+            "glow": {
+                "label": "Efeito de brilho",
+                "notes": "Ative os efeitos de brilho e sombra nas bordas e no texto; isso tornará o tema mais adequado para cenários de ficção científica."
+            },
+            "textColor": {
+                "label": "Cor do texto"
+            },
+            "primaryColor": {
+                "label": "Cor primária",
+                "notes": "Alguns tipos de cadeado podem não utilizar essa cor. Deixe em branco para usar a cor padrão do cadeado."
+            },
+            "secondaryColor": {
+                "label": "Cor secundária",
+                "notes": "Alguns tipos de cadeado podem não usar essa cor. Deixe em branco para usar a cor padrão do cadeado."
+            },
+            "primaryFont": {
+                "label": "Fonte principal"
+            },
+            "secondaryFont": {
+                "label": "Fonte secundária",
+                "notes": "Alguns tipos de cadeado podem não utilizar essa fonte."
+            },
+            "font": {
+                "inherit": "Herdar"
+            },
+            "unlockMacro": {
+                "label": "Desbloquear macro",
+                "notes": "Macro a ser executada quando o bloqueio for desbloqueado. Dentro da macro, você pode acessar ‘object’ para obter o documento que foi desbloqueado e ‘user’ para obter o usuário que o desbloqueou."
+            },
+            "permission": {
+                "label": "Sobre as permissões de desbloqueio",
+                "notes": "Determina qual nível de permissão um jogador recebe no documento ao desbloqueá-lo e se essa permissão deve ser concedida apenas ao jogador que o desbloqueou ou a todos os jogadores. Se o documento for uma porta, essa configuração será ignorada e a porta será desbloqueada.",
+                "noChange": "Sem alterações",
+                "all": "Todos os jogadores",
+                "unlocking": "Desbloquear jogador"
+            }
+        },
+        "number-lock": {
+            "name": "Número/Glifo",
+            "description": "Um bloqueio no estilo de um código PIN. O jogador deve digitar o código correto para desbloquear o documento. Você pode substituir os números por glifos ou imagens para criar um bloqueio mais temático.",
+            "playerInfo": "Como não se trata de um quebra-cabeça, o GM precisará dar dicas ou instruções aos jogadores para que digitem o código correto.",
+            "code": {
+                "label": "Código"
+            },
+            "keypad": {
+                "label": "Teclado numérico"
+            }
+        },
+        "password-lock": {
+            "name": "Senha",
+            "description": "Um bloqueio simples por senha. O usuário deve digitar a senha correta para desbloquear o documento.",
+            "playerInfo": "Como não se trata de um quebra-cabeça, o GM precisará dar dicas ou instruções aos jogadores para que digitem a senha correta.",
+            "password": {
+                "label": "Senha",
+                "placeholder": "a$$w0rd"
+            }
+        },
+        "item-lock": {
+            "name": "Item",
+            "description": "Um cadeado que exige que o jogador arraste e solte um ou mais itens nos espaços corretos para desbloquear o documento.",
+            "playerInfo": "Para resolver esse quebra-cabeça, você pode fornecer aos jogadores pistas contextuais ou dicas para que saibam quais itens devem ser colocados em cada lugar, ou pode usar imagens específicas nos espaços que forneçam as informações necessárias para adivinhar os itens corretos.",
+            "item": {
+                "label": "Nome do item"
+            },
+            "itemImage": {
+                "label": "Imagem do caça-níquel"
+            },
+            "deleteItems": {
+                "label": "Excluir itens",
+                "notes": "Se essa opção estiver marcada, os itens serão excluídos do inventário do jogador quando o cadeado for destrancado."
+            }
+        },
+        "switches-lock": {
+            "name": "Interruptores",
+            "description": "Uma trava que exige que o jogador configure um conjunto de interruptores binários na posição correta para desbloquear o documento.",
+            "playerInfo": "Como não se trata de um quebra-cabeça, o GM precisará dar dicas ou instruções aos jogadores para que configurem os interruptores corretamente.",
+            "switchesSolution": {
+                "label": "Configuração dos switches",
+                "notes": "A solução consiste na configuração dos interruptores no formato “0110”. Cada dígito representa um interruptor: 0 significa desligado e 1 significa ligado. Você pode ter quantos interruptores quiser."
+            },
+            "showSwitches": {
+                "label": "Mostrar botões",
+                "notes": "Se os botões do interruptor devem ser exibidos. Se desativado, apenas as luzes de estado (ligado/desligado) serão exibidas."
+            }
+        },
+        "cryptex-lock": {
+            "name": "Cryptex",
+            "description": "Uma fechadura que exige que o jogador gire um conjunto de cilindros até a posição correta para formar a combinação. Emojis ou glifos podem ser usados para representar os caracteres nos cilindros. Cilindros diferentes podem ter conjuntos diferentes de caracteres.",
+            "playerInfo": "Para resolver esse quebra-cabeça, você pode fornecer aos jogadores pistas contextuais externas para que eles identifiquem alguns ou todos os caracteres; ou, ao limitar a quantidade de caracteres por cilindro, os jogadores podem adivinhar a solução por tentativa e erro.",
+            "solution": {
+                "label": "Solução"
+            },
+            "cylinder": {
+                "label": "Cilindro",
+                "notes": "O cilindro utilizado pelo criptox. Cada caractere do cilindro deve ser separado por uma vírgula."
+            },
+            "glyphs": {
+                "label": "Glifos",
+                "notes": "Os glifos que podem ser usados no cryptex. Cada glifo deve ser separado por uma vírgula."
+            }
+        },
+        "sudoku-lock": {
+            "name": "Sudoku",
+            "description": "Uma trava que exige que o jogador resolva um quebra-cabeça de sudoku para desbloquear o documento. Os números padrão podem ser substituídos por imagens ou glifos para criar uma trava mais temática.",
+            "playerInfo": "Para resolver esse quebra-cabeça, os jogadores precisarão de conhecimento sobre as regras do sudoku; caso contrário, você pode dar a eles uma dica ou instruções sobre como resolvê-lo.",
+            "generate": "Gerar Sudoku",
+            "difficulty": {
+                "label": "Dificuldade"
+            },
+            "grid": {
+                "4": "4x4",
+                "9": "9x9",
+                "label": "Grade"
+            },
+            "sudoku": {
+                "label": "Sudoku"
+            },
+            "key": {
+                "label": "Chave"
+            }
+        },
+        "image-wheel": {
+            "name": "Roda de imagens",
+            "description": "Uma trava que exige que o jogador gire um conjunto de anéis concêntricos até a posição correta para alinhar a imagem.",
+            "playerInfo": "Não é necessário nenhum contexto externo para resolver este quebra-cabeça; os jogadores podem simplesmente girar as rodas até que a imagem fique alinhada.",
+            "image": {
+                "label": "Imagem"
+            },
+            "wheelCount": {
+                "label": "Número de rodas"
+            },
+            "angleStep": {
+                "label": "Ângulo de degrau"
+            },
+            "fixed": {
+                "label": "Bicicleta de roda fixa",
+                "notes": "A roda que não deve ser girada. Sendo que 1 é a roda mais externa."
+            }
+        },
+        "mastermind-lock": {
+            "name": "Mestre do plano",
+            "description": "Uma fechadura que exige que o jogador adivinhe a combinação correta de cores ou letras para desbloquear o documento. Cada vez que o jogador tentar desbloquear, receberá um feedback indicando quantas cores ou letras estão corretas e na posição certa. O verde indica cor e posição corretas, o amarelo indica cor correta, mas posição errada, e o vermelho indica cor incorreta.",
+            "playerInfo": "Para resolver esse quebra-cabeça, os jogadores podem usar o feedback das tentativas anteriores para fazer suposições fundamentadas sobre a combinação correta. Embora o metaconhecimento não seja estritamente necessário, ele pode ajudar os jogadores a fazer suposições mais bem fundamentadas.",
+            "reset": "Redefinir",
+            "solution": {
+                "label": "Solução",
+                "notes": "A solução para a fechadura do Mastermind. Cada cor ou letra deve ser separada por uma vírgula. Você pode usar cores CSS, como “red”, ou códigos hexadecimais, como “#ff0000”."
+            },
+            "pipOptions": {
+                "label": "Pinos",
+                "notes": "As cores ou letras que o jogador pode usar para adivinhar a resposta. Cada cor ou letra deve ser separada por uma vírgula. Você pode usar cores CSS, como “red”, ou códigos hexadecimais, como “#ff0000”."
+            }
+        },
+        "fill-blanks-lock": {
+            "name": "Preencha as lacunas",
+            "description": "Uma trava que exige que o jogador preencha os espaços em branco em um texto para desbloquear o documento. O jogador deve digitar os caracteres corretos na ordem correta.",
+            "playerInfo": "Para resolver esse quebra-cabeça, os jogadores podem usar o contexto do quebra-cabeça para preencher os espaços em branco. Você também pode dar a eles dicas ou instruções sobre como resolvê-lo.",
+            "solution": {
+                "label": "Solução",
+                "notes": "A solução para o exercício de preenchimento de lacunas. Este deve ser o texto completo, com as lacunas preenchidas.",
+                "placeholder": "A raposa marrom e ágil pula por cima do cachorro preguiçoso."
+            },
+            "text": {
+                "label": "Texto",
+                "notes": "O texto com os espaços em branco que o jogador deve preencher. Use sublinhados para representar os espaços em branco.",
+                "placeholder": "A raposa marrom _____ salta ____ o cachorro ____."
+            },
+            "caseSensitive": {
+                "label": "Diferencia maiúsculas de minúsculas"
+            }
+        },
+        "mosaic-lock": {
+            "name": "Mosaico",
+            "description": "Uma trava que exige que o jogador resolva um quebra-cabeça de mosaico para desbloquear o documento. O jogador deve clicar nas peças para girá-las e completar a imagem.",
+            "playerInfo": "Não é necessário nenhum contexto externo para resolver esse quebra-cabeça; os jogadores podem simplesmente girar as peças até que a imagem fique completa.",
+            "mosaicImage": {
+                "label": "Imagem em mosaico",
+                "notes": "A imagem que o jogador deve completar. Recomenda-se usar uma imagem quadrada para obter melhores resultados."
+            },
+            "mosaicSize": {
+                "label": "Tamanho do mosaico",
+                "notes": "O número de linhas e colunas do mosaico."
+            }
+        },
+        "sound-lock": {
+            "name": "Melody",
+            "description": "Uma trava que exige que o jogador ouça uma melodia e digite a sequência correta de notas para desbloquear o documento.",
+            "playerInfo": "Embora não seja necessário nenhum contexto externo para resolver esse quebra-cabeça, os jogadores precisarão ter um bom ouvido musical para resolvê-lo. Os jogadores mais familiarizados com teoria musical terão mais facilidade para resolver esse quebra-cabeça.",
+            "sequence": {
+                "label": "Sequência",
+                "notes": "A sequência de notas que o usuário deve digitar para desbloquear o documento. Cada nota deve ser separada por uma vírgula. Você pode usar as seguintes notas: C, C#, D, D#, E, F, F#, G, G#, A, A#, B. Você também pode usar a seguinte notação para aumentar ou diminuir a oitava: +C, -C, ++A, --B. Para definir uma duração personalizada por nota (em milissegundos), você pode usar a seguinte notação: C500, D#1000."
+            },
+            "chordDuration": {
+                "label": "Duração",
+                "notes": "A duração de cada nota em milissegundos."
+            },
+            "pauseBetweenNotes": {
+                "label": "Pausa entre as notas",
+                "notes": "A duração da pausa entre cada nota, em milissegundos."
+            }
+        },
+        "fifteen-lock": {
+            "name": "Ladrilhos deslizantes",
+            "description": "Uma trava que exige que o jogador resolva um quebra-cabeça deslizante para desbloquear o documento. O jogador deve deslizar as peças para formar a imagem correta. A peça vazia precisa estar no canto inferior direito para desbloquear o documento.",
+            "playerInfo": "Não é necessário nenhum contexto externo para resolver esse quebra-cabeça; os jogadores podem simplesmente deslizar as peças até que a imagem fique completa.",
+            "shuffleDialog": "Movimentos aleatórios:",
+            "image": {
+                "label": "Imagem",
+                "notes": "A imagem que o jogador deve formar ao deslizar as peças. Recomenda-se usar uma imagem quadrada para obter melhores resultados."
+            },
+            "size": {
+                "label": "Grade",
+                "notes": "O número de linhas e colunas no quebra-cabeça deslizante."
+            }
+        },
+        "four-by-four-lock": {
+            "name": "Peões e Estrelas",
+            "description": "Um quebra-cabeça em que o jogador precisa colocar peças em um tabuleiro para formar um padrão específico. Algumas casas contêm estrelas que devem ser cobertas pelas peças; a quantidade de estrelas que precisa ser coberta é especificada abaixo e depende do tamanho do tabuleiro. Cada linha e coluna deve conter exatamente o número de peças indicado nos cabeçalhos da coluna ou da linha.",
+            "playerInfo": "Se as estrelas estiverem ativadas, os jogadores precisarão de uma dica para saber quantas estrelas precisam cobrir. Caso contrário, é possível resolver o quebra-cabeça sem nenhuma informação externa.",
+            "pawnImage": {
+                "label": "Imagem do peão",
+                "notes": "A imagem que representa os peões."
+            },
+            "starImage": {
+                "label": "Imagem da Estrela",
+                "notes": "A imagem que representa as estrelas."
+            },
+            "noStars": {
+                "label": "Ignorar estrelas",
+                "notes": "Se essa opção estiver marcada, as estrelas serão removidas e o jogador precisará apenas colocar as peças nas posições corretas."
+            },
+            "gridSize": {
+                "label": "Tamanho da grade",
+                "notes": "O número de linhas e colunas da grade."
+            },
+            "generate": "Gerar quebra-cabeça",
+            "puzzleGrid": {
+                "label": "Grelha do quebra-cabeça",
+                "notes": "A grade do quebra-cabeça. Siga a sintaxe de um quebra-cabeça gerado se quiser criar o seu próprio. Isso mostra o estado resolvido, em que 0 representa uma célula vazia, 1 representa um peão, 2 representa uma estrela e 3 representa um peão sobre uma estrela."
+            },
+            "pawnNumber": "Peões a serem colocados",
+            "starNumber": "Estrelas a serem abordadas"
+        },
+        "match-lock": {
+            "name": "Correspondência entre palavras e imagens",
+            "description": "Um bloqueio que exige que o jogador combine palavras para desbloquear o documento. Se uma palavra secreta for definida, as letras incorretas serão riscadas e as letras restantes formarão a palavra secreta. Nesse caso, os jogadores devem digitar a palavra secreta para desbloquear o documento.",
+            "playerInfo": "Para resolver esse quebra-cabeça, os jogadores podem usar o contexto do quebra-cabeça para associar as palavras. Você também pode dar dicas ou instruções sobre como resolvê-lo.",
+            "enterSecretWord": "Digite a palavra secreta.",
+            "matchTable": {
+                "label": "Tabela de jogos",
+                "notes": "A tabela que contém as palavras a serem combinadas; você também pode usar caminhos de imagens em vez de palavras. A primeira coluna contém as palavras a serem combinadas, e a segunda coluna contém as palavras com as quais elas devem ser combinadas. Cada par de palavras deve ser separado pelo caractere '|' (barra vertical).\nA coluna da esquerda será exibida exatamente como está escrita, enquanto a coluna da direita será embaralhada."
+            },
+            "secretWord": {
+                "label": "Palavra secreta",
+                "notes": "Se essa opção estiver ativada, letras aleatórias serão espalhadas pela área central do quebra-cabeça; assim que o jogador acertar as palavras, as letras incorretas serão riscadas e as letras restantes formarão a palavra secreta."
+            },
+            "dictionary": {
+                "label": "Dicionário",
+                "notes": "O dicionário que será usado para as letras aleatórias."
+            }
+        },
+        "flags": {},
+        "attempts": "Tentativas restantes",
+        "headerConfig": "Fechadura de quebra-cabeça",
+        "unlocked": "Desbloqueado",
+        "how-to": "Como isso funciona?",
+        "how-to-player": "Instruções para o jogador",
+        "chatMessage": "está tentando desbloquear",
+        "sidebar-buttons": {
+            "unlock": "Tentar desbloquear",
+            "configure": "Configurar bloqueio",
+            "shareToChat": "Compartilhar no chat",
+            "zoomPlus": "Ampliar",
+            "zoomMinus": "Amenizar o zoom",
+            "shuffle": "Quebra-cabeça de embaralhamento",
+            "close": "Fechar"
+        },
+        "notifications": {
+            "noLock": "Este documento não foi bloqueado.",
+            "alreadyUnlocked": "Este documento já está desbloqueado.",
+            "noLockSelected": "Nenhum tipo de fechadura foi selecionado.",
+            "unlocked": "Desbloqueado.",
+            "noGM": "É necessário que um GM esteja conectado para que você possa desbloquear este documento.",
+            "failedAttempt": "Não foi possível desbloquear.",
+            "contentLinkCopied": "O link do conteúdo foi copiado para a área de transferência.",
+            "locked": "Este documento está bloqueado. Como GM, você pode abri-lo normalmente.",
+            "resetSuccess": "O quebra-cabeça foi reiniciado com sucesso.",
+            "ownershipFixed": "A propriedade padrão está definida como “Nenhuma”.",
+            "noAttempts": "Não há mais tentativas."
+        }
+    }
+}

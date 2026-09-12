@@ -1,0 +1,70 @@
+{
+    "bossbar": {
+        "controls": {
+            "bossUI": {
+                "name": "Basculer la barre de boss",
+                "warn": "Aucun jeton sélectionné. \nVeuillez sélectionner un ou plusieurs jetons et réessayer"
+            }
+        },
+        "settings": {
+            "barStyle": {
+                "classic": "Classique",
+                "matchingImages": "Images correspondantes"
+            },
+            "currentHpPath": {
+                "name": "Chemin HP actuel",
+                "hint": "Chemin de données vers les HP actuels d'un acteur"
+            },
+            "maxHpPath": {
+                "name": "Chemin de HP maximum",
+                "hint": "Chemin de données vers les HP max d'un acteur"
+            },
+            "BarStyleConfiguration": {
+                "name": "Styles de barre de patron",
+                "label": "Configurer les styles"
+            },
+            "resetPosition": {
+                "name": "Réinitialiser la position",
+                "hint": "Réinitialiser la position de la Boss Bar à la valeur par défaut"
+            },
+            "textAlign": {
+                "left": "Gauche",
+                "center": "Centre",
+                "right": "Droite"
+            },
+            "woundsSystem": {
+                "name": "Système de blessures",
+                "hint": "Si votre système utilise des blessures au lieu de points de vie, activez cette option."
+            }
+        },
+        "bar-style-configuration": {
+            "add": "Ajouter du style",
+            "title": "Configuration du style de barre de boss",
+            "delete-title": "Supprimer le style",
+            "delete-confirm": "Etes-vous sûr de vouloir supprimer ce style ?",
+            "edit": "Modifier le style",
+            "background": "Image d'arrière-plan",
+            "foreground": "Image de premier plan",
+            "bar": "Image de la barre",
+            "tempBarColor": "Couleur de la barre de santé temporaire",
+            "tempBarAlpha": "Barre de santé temporaire Alpha",
+            "barHeight": "Hauteur de la barre de patron",
+            "font": "Famille de polices",
+            "textSize": "Taille de la police",
+            "textAlign": "Aligner le texte",
+            "type": "Type de style",
+            "type-hint": "Sélectionnez le type de style"
+        },
+        "boss-bar-configuration": {
+            "title": "Configuration de la barre de patron",
+            "no-actors": "Aucun acteur sélectionné ou présent dans la scène.",
+            "no-scene": "Aucune scène disponible. \nVeuillez visionner une scène et réessayer",
+            "save-pan": "Sauvegarder",
+            "edit-themes": "Fermer",
+            "hideNameHint": "Cacher le nom de l'acteur dans le Boss Bar"
+        },
+        "boss-bar": {
+            "title": "Barre de patron"
+        }
+    }
+}

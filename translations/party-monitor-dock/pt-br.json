@@ -1,0 +1,73 @@
+{
+    "party-monitor-dock": {
+        "title": "Dock Monitor de Festa",
+        "settings": {
+            "onlyConnected": {
+                "name": "Mostrar apenas jogadores conectados",
+                "hint": "Mostrar apenas jogadores que estão conectados ao servidor"
+            },
+            "portraitSize": {
+                "name": "Tamanho do retrato",
+                "hint": "O tamanho dos retratos no banco dos réus"
+            },
+            "position": {
+                "name": "Posição da doca",
+                "hint": "A posição da dock na tela",
+                "choices": {
+                    "docked": "Atracado",
+                    "horizontal": "Horizontal (flutuante)",
+                    "vertical": "Vertical (flutuante)",
+                    "hidden": "Oculto"
+                }
+            },
+            "dockAlignment": {
+                "name": "Alinhamento do HUD",
+                "hint": "O alinhamento do HUD na tela",
+                "choices": {
+                    "flex-start": "Principal",
+                    "center": "Centro",
+                    "flex-end": "Fundo"
+                }
+            },
+            "hideInCombat": {
+                "name": "Esconda-se no combate",
+                "hint": "Ocultar o HUD quando um combate estiver ativo"
+            },
+            "hideCompanions": {
+                "name": "Ocultar companheiros",
+                "hint": "Ocultar companheiros da lista de membros do grupo"
+            },
+            "cornerImage": {
+                "name": "Imagem de canto",
+                "hint": "A imagem a ser usada nos cantos do dock Deixe em branco para desativar."
+            },
+            "edgeImage": {
+                "name": "Imagem de borda",
+                "hint": "A imagem a ser usada para preencher o espaço entre os cantos do encaixe. \nDeixe em branco para desabilitar."
+            }
+        },
+        "app": {
+            "buttons": {
+                "toggle-nav": "Alternar botões de navegação",
+                "toggle-dock": "Alternar doca",
+                "reduce": "Diminuir tamanho",
+                "enlarge": "Aumentar tamanho",
+                "start-follow": "Comece a seguir",
+                "stop-follow": "Pare de seguir",
+                "context": {
+                    "follow": "Seguir",
+                    "mount": "Montar",
+                    "epicRoll": "Requerido \nRolar",
+                    "raise-hand": "Levante a mão"
+                }
+            }
+        },
+        "flags": {},
+        "notifications": {
+            "follow": "agora seguindo",
+            "unfollow": "não seguindo mais",
+            "mounted": "montou",
+            "dismounted": "desmontou"
+        }
+    }
+}

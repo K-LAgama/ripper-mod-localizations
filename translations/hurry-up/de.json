@@ -1,0 +1,91 @@
+{
+    "hp": {
+        "settings": {
+            "disable": {
+                "name": "Timer deaktivieren",
+                "hint": "Den Kampftimer deaktivieren"
+            },
+            "timerDuration": {
+                "name": "Timer-Dauer",
+                "hint": "Dauer des Timers in Sekunden"
+            },
+            "style": {
+                "name": "Stil",
+                "hint": "Darstellungsweise des Timers",
+                "digits": "Ziffern",
+                "circle": "Kreis",
+                "sand": "Sand"
+            },
+            "countup": {
+                "name": "Zusammenzählen",
+                "hint": "Der Timer zählt auf statt ab (nur bei den Stilen „Ziffern“ und „Kreis“)"
+            },
+            "overtime": {
+                "name": "Überstunden",
+                "hint": "Der Timer läuft auch nach Ablauf der maximalen Zeit weiter"
+            },
+            "size": {
+                "name": "Größe",
+                "hint": "Größe des Timers"
+            },
+            "secondary-size": {
+                "name": "Sekundäre Größe",
+                "hint": "Größe der sekundären Zeitgeber"
+            },
+            "secondary-direction": {
+                "name": "Sekundäre Richtung",
+                "hint": "Richtung der Sekundärtimer"
+            },
+            "windowless": {
+                "name": "Fensterlos",
+                "hint": "Den Timer ohne Fenster anzeigen"
+            },
+            "critical": {
+                "name": "Kritischer Schwellenwert",
+                "hint": "Schwellenwert, ab dem der Timer in den kritischen Zustand wechselt und zu blinken beginnt"
+            },
+            "secondsInsteadOfPercentage": {
+                "name": "Bei der kritischen Zeit werden Sekunden statt Prozentangaben verwendet",
+                "hint": "Standardmäßig wird der kritische Schwellenwert als Prozentsatz der Gesamtzeit angegeben. Wenn Sie diese Option aktivieren, wird er stattdessen in Sekunden angegeben."
+            },
+            "goNext": {
+                "name": "Weiter",
+                "hint": "Wechsle zum nächsten Kämpfer, sobald der Timer abgelaufen ist. Wird nicht ausgelöst, wenn eine Verlängerung zulässig ist."
+            },
+            "runForNpc": {
+                "name": "Kandidatur für den NPC",
+                "hint": "Starte den Timer, wenn der NPC am Zug ist"
+            },
+            "showOnUpdateCombatOnly": {
+                "name": "Erste Anzeige des Timers in der nächsten Runde",
+                "hint": "Zeige den Kampftimer erst an, wenn „Kampf beginnen“, „Nächster Zug“ oder „Zug beenden“ gedrückt wird."
+            },
+            "critSoundPath": {
+                "name": "Kritischer Klang",
+                "hint": "Ton, der abgespielt werden soll, wenn der Timer den kritischen Wert erreicht"
+            },
+            "endSoundPath": {
+                "name": "Abschlussklang",
+                "hint": "Ton, der bei Ablauf des Timers abgespielt werden soll"
+            },
+            "soundVol": {
+                "name": "Lautstärke",
+                "hint": "Lautstärke der abgespielten Töne"
+            }
+        },
+        "contextMenu": {
+            "pause": "Pause",
+            "unpause": "Lebenslauf",
+            "reset": "Zurücksetzen",
+            "close": "Schließen"
+        },
+        "create": {
+            "title": "Beeil dich!",
+            "paused": "Angehalten",
+            "time": "Zeit",
+            "timeError": "„time“ muss eine Zahl größer als 0 sein.",
+            "name": "Name",
+            "color": "Farbe"
+        }
+    }
+}

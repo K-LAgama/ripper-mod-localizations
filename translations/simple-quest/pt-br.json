@@ -1,0 +1,896 @@
+{
+    "TYPES.JournalEntryPage": {
+        "simple-quest": {
+            "quest": "SQ Quest",
+            "character": "Personagem SQ",
+            "lore": "História da SQ",
+            "map": "Mapa da SQ",
+            "event": "Evento SQ",
+            "era": "Era SQ",
+            "achievement": "Conquistas da SQ",
+            "creature": "Criatura SQ",
+            "location": "Localização do SQ",
+            "faction": "Facção SQ",
+            "investigation": "Investigação da SQ"
+        }
+    },
+    "simple-quest": {
+        "tutorialTips": {
+            "tipsExplaination": {
+                "title": "Dicas do tutorial",
+                "text": "Esta é uma dica do tutorial. Você pode desativar as dicas nas configurações do módulo. Clique no botão “Fechar” para ocultar as dicas até a próxima atualização ou clique no botão com o dado para ler outra dica."
+            },
+            "quickVisibility": {
+                "title": "Visibilidade rápida",
+                "text": "Use <kbd>Alt + clique com o botão esquerdo</kbd> para ocultar ou exibir rapidamente os elementos do Simple Quest para os jogadores. Na barra lateral, <kbd>Alt + clique com o botão esquerdo</kbd> em uma página para ativar ou desativar sua permissão de Observador. Você também pode <kbd>Alt + clique com o botão esquerdo</kbd> na caixa de seleção de um objetivo de missão para alternar seu status de oculto e fazer o mesmo com os marcadores nas páginas de mapa do Simple Quest."
+            },
+            "quickModal": {
+                "title": "Abrir como modal",
+                "text": "Use <kbd>Alt + clique esquerdo</kbd> nos links de conteúdo para abrir uma janela modal a partir de uma página do Simple Quest. Isso abrirá a página em uma janela modal, permitindo que você veja o conteúdo da página sem alterar a página ativa. Você pode <kbd>clicar duas vezes com o botão esquerdo do mouse</kbd> em qualquer lugar ou clicar no botão X no canto superior direito para fechar a janela modal"
+            },
+            "questRecap": {
+                "title": "Resumo da missão",
+                "text": "Ative o botão “Resumo” na barra lateral da aba “Missões” para agrupar as missões de acordo com seu status (Em andamento, Concluídas, Falhadas e Não descobertas), em vez de navegar pela árvore de pastas. Cada grupo pode ser expandido ou recolhido, e o estado recolhido é salvo para sua próxima visita."
+            },
+            "tabContextMenu": {
+                "title": "Personalização da guia",
+                "text": "<kbd>Clique com o botão direito do mouse</kbd> em qualquer título de aba para abrir o menu de contexto “Pasta”. Você também pode criar uma nova subpasta dentro do diretório raiz do Simple Quest. A nova pasta aparecerá como uma nova aba dinâmica."
+            },
+            "staticTabs": {
+                "title": "Diretórios especiais",
+                "text": "As quatro abas com ícones na parte superior da barra lateral (Meu Diário, Diário da Festa, Linha do Tempo e Conquistas) são abas estáticas especiais vinculadas a pastas dedicadas criadas durante a configuração inicial. <kbd>Clique com o botão direito do mouse</kbd> em qualquer aba estática para editar a pasta correspondente. Uma aba aparecerá desativada se a pasta correspondente ainda não tiver sido criada. Você pode designar uma pasta como diretório especial na janela de configuração de pastas."
+            },
+            "sectionOrder": {
+                "title": "Seções de pedidos",
+                "text": "Ao editar uma página de diário, cada seção estruturada, como Listas de Ícones, Blocos de Estatísticas ou Tabelas, possui um campo “Ordem”. Defina um número para controlar a posição dessa seção na página. As seções com números menores aparecem primeiro."
+            },
+            "insertPage": {
+                "title": "Mais estilos de texto",
+                "text": "Você pode usar os menus suspensos “Callout” e “Page Insert” na barra de ferramentas do ProseMirror para adicionar estilos de texto temáticos, como notas coloridas para traspassos, criaturas ou PNJs, além de notas decorativas em pergaminho ou pergaminhos."
+            },
+            "sectionHidden": {
+                "title": "Ocultando seções",
+                "text": "Cada seção estruturada em uma página do diário possui uma caixa de seleção “Ocultar”. Quando marcada, a seção fica oculta para os jogadores que não são proprietários. Como proprietário da página, você ainda verá a seção com uma borda tracejada, indicando que ela está oculta para seus jogadores."
+            },
+            "pageVisibility": {
+                "title": "Visibilidade da página",
+                "text": "Os pontos coloridos exibidos à direita das entradas do diário e das páginas na barra lateral indicam quais jogadores podem ver o documento. Se uma página não tiver pontos, nenhum jogador poderá vê-la. Cada ponto representa um usuário cuja permissão difere da padrão. Um ponto para “Todos os jogadores” aparece quando a permissão padrão é superior a “Nenhuma”. Esses indicadores são visíveis apenas para o Mestre do Jogo e podem ser ativados ou desativados por meio da configuração “Mostrar propriedade do diário”."
+            }
+        },
+        "collapseSidebar": {
+            "collapse": "Minimizar a barra lateral",
+            "expand": "Expandir a barra lateral"
+        },
+        "givePermission": {
+            "none": "{pageName} foi ocultado dos jogadores",
+            "observer": "{pageName} foi disponibilizado aos jogadores"
+        },
+        "modal": {
+            "doubleClickToClose": "Clique duas vezes para fechar"
+        },
+        "app": {
+            "title": "Missão Simples",
+            "myJournal": "Meu Diário",
+            "partyJournal": "Diário da Festa",
+            "timeline": "Linha do tempo",
+            "achievements": "Conquistas",
+            "search": "Pesquisar"
+        },
+        "achievements": {
+            "openAll": "Mostrar tudo",
+            "uncategorized": "Sem categoria"
+        },
+        "ColorHtmlBlock": {
+            "color": "Cor em HTML",
+            "order": "Pedido",
+            "hidden": "Oculto"
+        },
+        "HtmlBlock": {
+            "order": "Pedido",
+            "hidden": "Oculto"
+        },
+        "createExtendedStructure": {
+            "title": "Criar estrutura ampliada",
+            "content": "Isso criará uma nova estrutura de pastas para o Simple Quest. Isso é recomendado se você for um usuário novo e/ou quiser explorar todo o potencial deste módulo."
+        },
+        "IconListBlock": {
+            "label": "Rótulo da lista de ícones",
+            "name": "Nome",
+            "description": "Descrição",
+            "icon": "Ícone",
+            "hidden": "Oculto",
+            "order": "Pedido"
+        },
+        "StatsBlock": {
+            "label": "Rótulo de estatísticas",
+            "name": "Nome",
+            "color": "Cor",
+            "value": "Valor",
+            "min": "Mínimo",
+            "max": "Máximo",
+            "hidden": "Oculto",
+            "order": "Pedido"
+        },
+        "TableBlock": {
+            "label": "Rótulo da tabela",
+            "name": "Nome",
+            "value": "Valor",
+            "icon": "Ícone",
+            "hidden": "Oculto",
+            "order": "Pedido"
+        },
+        "ColorTagsBlock": {
+            "label": "Etiqueta com cores",
+            "tag": "Tag",
+            "color": "Cor",
+            "hidden": "Oculto",
+            "order": "Pedido"
+        },
+        "ResourcesBlock": {
+            "label": "Etiqueta de recursos",
+            "name": "Nome",
+            "current": "Atual",
+            "max": "Máximo",
+            "color": "Cor",
+            "hidden": "Oculto",
+            "order": "Pedido"
+        },
+        "MainTagBlock": {
+            "color": "Cor da tag principal",
+            "value": "Texto principal da tag",
+            "hidden": "Oculto"
+        },
+        "data-model-config": {
+            "title": "Configuração do item"
+        },
+        "journal": {
+            "name": "Nome",
+            "description": "Descrição",
+            "header": "Cabeçalho",
+            "subtitle": "Legenda",
+            "tags": "Tags",
+            "status": "Status",
+            "rename": "Editar nome",
+            "color": "Cor",
+            "image": "Imagem",
+            "caption": "Legenda",
+            "type": "Tipo",
+            "width": "Largura",
+            "height": "Altura",
+            "aspectRatio": {
+                "label": "Proporção da tela",
+                "auto": "Original",
+                "landscape": "Paisagem",
+                "portrait": "Retrato",
+                "square": "Quadrado"
+            },
+            "imageFilter": {
+                "label": "Filtro de imagem"
+            },
+            "checkbox": {
+                "tooltip": "Clique com o botão esquerdo para alternar entre “concluído” <br> e “falha”; clique com o botão direito para alternar entre “concluído” e “falha”",
+                "tooltip-hide": "<br>Alt + Clique com o botão esquerdo para alternar entre exibir e ocultar"
+            },
+            "location": {
+                "population": "População",
+                "area": "Área",
+                "government": "Governo",
+                "demonym": "Demônimo",
+                "ruler": "Régua",
+                "founded": "Fundada"
+            },
+            "faction": {
+                "leader": "Líder",
+                "headquarters": "Sede",
+                "memberCount": "Número de membros",
+                "alignment": "Alinhamento",
+                "goals": "Metas",
+                "rivals": "Rivais",
+                "allies": "Aliados"
+            },
+            "awardedTo": {
+                "label": "Concedido a",
+                "hint": "Selecione os usuários que possuem essa conquista."
+            },
+            "showTitle": {
+                "label": "Mostrar título",
+                "hint": "Mostrar o título da conquista aos jogadores que ainda não a possuem."
+            },
+            "showContent": {
+                "label": "Mostrar conteúdo",
+                "hint": "Mostrar a descrição da conquista aos jogadores que ainda não a conquistaram."
+            },
+            "showImage": {
+                "label": "Mostrar imagem",
+                "hint": "Mostre a imagem da conquista aos jogadores que ainda não a possuem."
+            },
+            "showColor": {
+                "label": "Mostrar cor",
+                "hint": "Mostrar a cor de destaque da conquista aos jogadores que ainda não a conquistaram."
+            },
+            "assign": {
+                "title": "Tem certeza?",
+                "add": "Conceder essa conquista a {name}?",
+                "remove": "Remover essa conquista de {nome}?"
+            },
+            "observerObjectivePermission": {
+                "label": "Permissão para observação objetiva",
+                "hint": "Substitui a configuração global. A opção “Padrão” segue a configuração do módulo, enquanto “Permitir” e “Negar” a substituem.",
+                "choices": {
+                    "default": "Padrão (seguir configuração)",
+                    "allow": "Permitir",
+                    "deny": "Negar"
+                }
+            },
+            "quest": {
+                "questGiver": "Dador de missões",
+                "location": "Localização",
+                "difficulty": "Dificuldade",
+                "deadline": "Prazo final"
+            },
+            "event": {
+                "year": "Ano",
+                "duration": "Duração (anos)",
+                "icon": "Ícone",
+                "flipped": "Invertido",
+                "offset": "Deslocamento (px)",
+                "banner": "Banner",
+                "label": "Etiqueta",
+                "hidden": "Oculto"
+            },
+            "era": {
+                "eraStart": "Início de uma era",
+                "eraEnd": "Fim de uma Era",
+                "color": "Cor",
+                "banner": "Banner",
+                "label": "Etiqueta",
+                "hidden": "Oculto"
+            },
+            "investigation": {
+                "saveViewport": "Salvar janela de visualização",
+                "tools": "Ferramentas",
+                "background": "Contexto",
+                "backgroundType": {
+                    "label": "Tipo de plano de fundo",
+                    "choices": {
+                        "centered": "Alinhado ao centro",
+                        "repeating": "Repetindo",
+                        "pattern": "Padrão"
+                    }
+                },
+                "stamp": {
+                    "completed": "Carimbo: Concluído",
+                    "failed": "Carimbo: Falha",
+                    "skull": "Carimbo: Caveira"
+                },
+                "tooltip": {
+                    "createConnection": "Criar conexão",
+                    "edit": "Editar item",
+                    "duplicate": "Item duplicado",
+                    "delete": "Excluir item"
+                },
+                "add": "Adicionar item",
+                "type": {
+                    "polaroid": "Polaroid",
+                    "newspaper": "Jornal",
+                    "sticky-note": "Papel de nota adesiva",
+                    "note": "Nota",
+                    "card": "Cartão"
+                },
+                "color": "Cor",
+                "thickness": "Espessura",
+                "text": "Texto",
+                "item": {
+                    "title": "Configuração do item",
+                    "name": "Nome",
+                    "color": "Cor",
+                    "textColor": "Cor do texto",
+                    "image": "Imagem",
+                    "caption": "Legenda",
+                    "width": "Largura",
+                    "height": "Altura",
+                    "rotation": "Rotação",
+                    "order": "Pedido",
+                    "delete": {
+                        "title": "Excluir item?",
+                        "content": "Tem certeza de que deseja excluir este item? Essa ação não pode ser revertida."
+                    },
+                    "type": {
+                        "label": "Tipo",
+                        "default": "Básico",
+                        "polaroid": "Polaroid",
+                        "newspaper": "Jornal",
+                        "sticky-note": "Posta-it",
+                        "note": "Nota",
+                        "simple-label": "Etiqueta simples",
+                        "paper-sheet": "Folha de papel",
+                        "image": "Imagem"
+                    },
+                    "x": "X",
+                    "y": "Y",
+                    "description": "Descrição",
+                    "hidden": "Oculto"
+                },
+                "connection": {
+                    "title": "Configuração da conexão",
+                    "origin": {
+                        "id": "Origem",
+                        "anchorX": "Âncora X",
+                        "anchorY": "Âncora Y",
+                        "locked": "Bloqueado"
+                    },
+                    "destination": {
+                        "id": "Destino",
+                        "anchorX": "Âncora X",
+                        "anchorY": "Âncora Y",
+                        "locked": "Bloqueado"
+                    },
+                    "color": "Cor",
+                    "thickness": "Espessura",
+                    "text": "Texto",
+                    "physics": {
+                        "label": "Física",
+                        "choices": {
+                            "straight": "Heterossexual",
+                            "droopy": "Caído",
+                            "very-droopy": "Muito caído"
+                        }
+                    },
+                    "style": {
+                        "label": "Estilo",
+                        "choices": {
+                            "solid": "Sólido",
+                            "dashed": "Traçado",
+                            "dotted": "Pontilhado"
+                        }
+                    }
+                }
+            }
+        },
+        "deleteItem": {
+            "title": "Excluir?",
+            "content": "Tem certeza de que deseja excluir este item? Essa ação não pode ser revertida."
+        },
+        "settings": {
+            "betterOwnership": {
+                "name": "Gerenciamento simples de permissões em missões",
+                "hint": "Ao criar uma nova página, defina automaticamente o nível de propriedade padrão como “Nenhum”. Ignora a caixa de diálogo “Gerenciamento de permissões” ao exibir uma página na barra lateral.",
+                "dialog": {
+                    "title": "Gerenciamento de permissões",
+                    "content": "Você está exibindo uma Página, mas o Diário dela tem a permissão padrão “Nenhuma”. Os jogadores não poderão ver essa Página. Deseja alterar a permissão padrão do Diário para “Observador” e a das outras páginas herdadas para “Nenhuma”?"
+                }
+            },
+            "showHistory": {
+                "name": "Mostrar histórico",
+                "hint": "Exibir uma barra de histórico na parte superior da janela do Simple Quest."
+            },
+            "showJournalOwnership": {
+                "name": "Mostrar propriedade da revista",
+                "hint": "Mostrar pontos coloridos indicadores de propriedade abaixo dos lançamentos contábeis e das páginas na barra lateral."
+            },
+            "tabConfig": {
+                "name": "Configuração da guia",
+                "hint": "Configure os nomes das abas do Simple Quest.",
+                "label": "Configurar nomes das abas"
+            },
+            "themeConfig": {
+                "name": "Configuração do tema",
+                "hint": "Configure o tema Simple Quest.",
+                "label": "Configurar tema"
+            },
+            "allowObserverCheckboxToggle": {
+                "name": "Permitir que os observadores cumpram os objetivos",
+                "hint": "Os jogadores com permissão de Observador em uma página de missão podem ativar ou desativar as caixas de seleção dos objetivos. Essa configuração pode ser alterada individualmente para cada missão."
+            },
+            "rootDir": {
+                "name": "Diretório raiz",
+                "hint": "O nome da pasta raiz do Simple Quest. As guias dinâmicas são subpastas desse diretório.",
+                "default": "missão simples"
+            },
+            "partyJournalDir": {
+                "name": "Diretório de Revistas de Festas",
+                "hint": "O nome da pasta da aba “Diário da Festa”.",
+                "default": "Festa"
+            },
+            "timelineDir": {
+                "name": "Diretório da Linha do Tempo",
+                "hint": "O nome da pasta da aba “Linha do tempo”.",
+                "default": "Linha do tempo"
+            },
+            "achievementsDir": {
+                "name": "Diretório de Conquistas",
+                "hint": "O nome da pasta da aba “Conquistas”.",
+                "default": "Conquistas"
+            },
+            "backgroundColor": {
+                "name": "Cor de fundo",
+                "hint": "Cor de fundo do Simple Quest"
+            },
+            "backgroundImage": {
+                "name": "Imagem de fundo",
+                "hint": "Imagem de fundo do Simple Quest"
+            },
+            "labelColor": {
+                "name": "Cor global da etiqueta",
+                "hint": "Se definida, a cor de todas as legendas do mapa será substituída por esta cor. Digite “none” para desativar."
+            },
+            "matchJournalStyle": {
+                "name": "Estilo do Diário de Partidas",
+                "hint": "Se ativado, tentará aplicar estilos especiais aos diários. Pode causar efeitos colaterais, dependendo do tema."
+            },
+            "textColor": {
+                "name": "Cor do texto",
+                "hint": "Cor do texto do Simple Quest"
+            },
+            "secretColor": {
+                "name": "Cor Secreta",
+                "hint": "Cor do Simple Quest para objetivos secretos de missões"
+            },
+            "failedColor": {
+                "name": "Cor incorreta",
+                "hint": "Cor do Simple Quest para objetivos de missão não cumpridos"
+            },
+            "hideFolderFromPlayers": {
+                "name": "Ocultar pasta dos jogadores",
+                "hint": "Se a pasta “Simple Quest” deve ser ocultada dos jogadores"
+            },
+            "fontFamily": {
+                "name": "Família de fontes",
+                "hint": "A família de fontes a ser usada no Simple Quest"
+            },
+            "showQuestNotifications": {
+                "name": "Mostrar notificações da Quest",
+                "hint": "Se deve exibir notificações quando uma missão é atualizada ou compartilhada no chat"
+            },
+            "newQuestSoundEffect": {
+                "name": "Novo efeito sonoro de missão",
+                "hint": "O efeito sonoro a ser reproduzido quando for exibida uma notificação de nova missão"
+            },
+            "updateQuestSoundEffect": {
+                "name": "Atualizar o efeito sonoro da missão",
+                "hint": "O efeito sonoro a ser reproduzido quando uma notificação de atualização de missão for exibida"
+            },
+            "matchJournalPermission": {
+                "name": "Autorização para o Diário da Partida",
+                "hint": "A opção “Alinhar com a Missão Simples” deve corresponder às permissões do usuário para missões, além do status de ocultação. Quando essa configuração estiver desativada, todas as missões ficarão visíveis para todos os jogadores, a menos que tenham sido definidas como ocultas. Observe que, ao ativar essa configuração, os jogadores poderão ver os objetivos das missões ocultas ao abrir o diário normal."
+            },
+            "openJournalPinsAsModals": {
+                "name": "Abrir marcadores do mapa como janelas modais",
+                "hint": "Se um marcador no mapa estiver vinculado a uma página do diário e essa página não for uma página de “Missão Simples”, abra a página em uma janela modal sobre o mapa, em vez de abri-la no diário."
+            },
+            "enableQuests": {
+                "name": "Ativar missões",
+                "hint": "Se deve ativar a aba “Missões”"
+            },
+            "enablePartyJournal": {
+                "name": "Ativar o Diário da Festa",
+                "hint": "Se a guia “Diário do Grupo” deve ser ativada"
+            },
+            "enableMyJournal": {
+                "name": "Ativar “Meu Diário”",
+                "hint": "Se deve ativar a guia “Meu Diário”"
+            },
+            "enableMaps": {
+                "name": "Ativar mapas",
+                "hint": "Se deve ativar a aba “Mapas”"
+            },
+            "enableTimeline": {
+                "name": "Ativar linha do tempo",
+                "hint": "Se deve ativar a guia “Linha do tempo”"
+            },
+            "enableAchievements": {
+                "name": "Ativar conquistas",
+                "hint": "Se deve ativar a aba “Conquistas”"
+            },
+            "enableLore": {
+                "name": "Ativar Lore",
+                "hint": "Se a guia “Lore” deve ser ativada"
+            },
+            "headerOnlyFont": {
+                "name": "Fonte do cabeçalho",
+                "hint": "Fonte a ser usada nos títulos; se a opção “padrão” for selecionada, será utilizada a fonte padrão"
+            },
+            "imagePageMask": {
+                "name": "Imagem da “Névoa da Guerra”",
+                "hint": "A máscara a ser usada para a névoa de guerra. Deixe em branco para usar uma máscara preta."
+            },
+            "secondaryFontSize": {
+                "name": "Tamanho da fonte secundária",
+                "hint": "O tamanho da fonte para elementos secundários."
+            },
+            "showTutorialTips": {
+                "name": "Mostrar dicas do tutorial",
+                "choices": {
+                    "always": "Sim",
+                    "never": "Não",
+                    "reset": "Redefinir"
+                }
+            }
+        },
+        "simple-quest": {
+            "title": "Missão Simples",
+            "windowedModeToggle": "Alternar entre o modo de janela",
+            "tabs": {
+                "quests": "Missões",
+                "map": "Mapa",
+                "lore": "Tradição",
+                "timeline": "Linha do tempo",
+                "achievements": "Conquistas",
+                "my-journal": "Meu Diário",
+                "party-journal": "Diário da Festa",
+                "tab": "Guia"
+            },
+            "move-to": "Ir para...",
+            "moveQuest": {
+                "error": "Você não tem permissão para mover missões para essa categoria."
+            },
+            "tooltip": {
+                "add-quest": "Adicionar missão",
+                "add-map": "Adicionar mapa",
+                "add-lore": "Adicionar história",
+                "add-page": "Adicionar página",
+                "edit-lore": "Editar história",
+                "configure-lore-permissions": "Configurar permissões",
+                "map-help": "Como usar a aba “Mapas”",
+                "edit-quest": "Editar missão",
+                "delete-quest": "Excluir missão",
+                "delete-lore": "Excluir história",
+                "share-quest": "Enviar para o chat",
+                "duplicate-quest": "Missão duplicada",
+                "duplicate-map": "Mapa duplicado",
+                "delete-map": "Excluir mapa",
+                "duplicate-lore": "História duplicada",
+                "mark-updated": "Marcar a missão como atualizada",
+                "add-category": "Adicionar categoria",
+                "edit-map": "Editar mapa",
+                "reset-fow": "Redefinir/Ativar a Névoa da Guerra",
+                "fow-brush-size": "Tamanho do pincel “Névoa de Guerra”",
+                "measure": "100 px = 1 milha",
+                "lock-pins": "Bloquear/Desbloquear marcadores",
+                "show-players": "Aberto aos jogadores",
+                "edit": "Editar",
+                "duplicate": "Duplicado",
+                "delete": "Excluir",
+                "toggle-completed": "Programa concluído"
+            }
+        },
+        "timeline": {
+            "addEvent": "Adicionar evento",
+            "addEra": "Adicionar época",
+            "create": "Criar linha do tempo",
+            "delete": "Excluir linha do tempo",
+            "edit": "Editar linha do tempo"
+        },
+        "timeline-config": {
+            "title": "Editar evento da linha do tempo",
+            "label": "Etiqueta",
+            "labelNote": "O título do evento. Ele será exibido acima do ano. Pode ser usado para indicar uma data específica ou outras informações.",
+            "banner": "Banner",
+            "hidden": "Oculto",
+            "year": "Ano",
+            "duration": "Duração (anos)",
+            "era": "Era",
+            "event": "Evento",
+            "general": "Global",
+            "to": "para",
+            "generalNote": "Essas configurações serão aplicadas a toda a linha do tempo.",
+            "icon": "Ícone",
+            "isEra": "É a Era?",
+            "eraStart": "Início de uma era",
+            "eraEnd": "Fim de uma Era",
+            "flipped": "Invertido",
+            "offset": "Deslocamento (px)",
+            "description": "Editar o índice",
+            "negativeAbb": "Abreviação de ano negativo",
+            "showMinus": "Mostrar o sinal de menos",
+            "positiveAbb": "Abreviação de “ano positivo”",
+            "timeScale": "Escala de tempo",
+            "dynamicTimeScale": "Escala de tempo dinâmica",
+            "dynamicTimeScaleNote": "Em vez de definir o tamanho da linha do tempo de forma absoluta, ela será dimensionada com base no número de eventos em cada era, mas ainda assim será multiplicada pela escala de tempo.",
+            "content": "Visibilidade do conteúdo",
+            "ignoreDataValidation": "Ignorar a validação de dados",
+            "ignoreDataValidationNote": "Caso precise reorganizar as Eras, você pode ignorar a validação de dados para permitir que elas se sobreponham temporariamente enquanto as reorganiza.",
+            "contentChoices": {
+                "always": "Sempre exibir",
+                "toggleOn": "Alternar (padrão: expandido)",
+                "toggleOff": "Alternar (padrão: recolhido)"
+            },
+            "errors": {
+                "noEra": "Nenhuma era encontrada. Por favor, crie uma era primeiro.",
+                "noYear": "Não foi encontrado nenhum ano. É necessário definir um ano para o evento.",
+                "yearOutOfBounds": "O ano deve estar incluído em uma era.",
+                "noEraStart": "Não foi encontrada uma data de início para a Era. É necessário definir uma data de início para a Era.",
+                "noEraEnd": "Não foi encontrado nenhum fim de era. É necessário definir um fim para a era.",
+                "eraStartAfterEnd": "O início da era deve ser anterior ao fim da era.",
+                "eraNotConnected": "O início ou o fim de uma era deve estar vinculado a outra era.",
+                "eraOverlap": "Uma era não pode se sobrepor a outra."
+            }
+        },
+        "tab-config": {
+            "title": "Configuração da guia"
+        },
+        "theme-config": {
+            "title": "Configuração do tema",
+            "info": "Os temas aplicam algumas configurações predefinidas. Se desejar, você pode acessar esse menu nas configurações do módulo, onde também é possível personalizar cada aspecto do tema individualmente.",
+            "themes": {
+                "default": "Missão Simples",
+                "classicFantasy": "Fantasia Clássica",
+                "basicDark": "Escuro Básico",
+                "basicLight": "Luz básica",
+                "foundryDark": "Foundry Dark",
+                "foundryLight": "Luz da Fundição",
+                "redDragon": "Dragão Vermelho",
+                "typewriter": "Máquina de escrever",
+                "postApocalypticWasteland": "Terra devastada pós-apocalíptica",
+                "galacticAdventure": "Aventura Galáctica",
+                "steampunkWorkshop": "Oficina de Steampunk",
+                "dystopianFuture": "Futuro distópico",
+                "virtualRealityOasis": "Oásis de Realidade Virtual",
+                "mysticForest": "Floresta Mística",
+                "vintageFilmNoir": "Filme noir clássico",
+                "sciFiConsole": "Console de ficção científica",
+                "futuristicTech": "Tecnologia futurística",
+                "alienInvasion": "Invasão alienígena",
+                "ancientScrolls": "Pergaminhos Antigos",
+                "crtTerminal": "Terminal",
+                "crtScreen": "Monitor CRT"
+            }
+        },
+        "importQuests": {
+            "title": "Missões de importação: ",
+            "content": "Tem certeza de que deseja importar missões deste diário? Se já existir uma categoria com o mesmo nome, as missões serão adicionadas a ela."
+        },
+        "markerConfig": {
+            "title": "Configuração do marcador",
+            "icon": "Ícone",
+            "journal": "Arraste o diário ou a página para cá",
+            "hidden": "Oculto",
+            "displayLabel": "Sempre exibir etiqueta",
+            "fixedScale": "Escala fixa"
+        },
+        "mapControls": {
+            "addMarker": "Adicionar marcador",
+            "editMarker": "Editar marcador",
+            "deleteMarker": "Excluir marcador"
+        },
+        "deleteQuest": {
+            "title": "Excluir missão? - ",
+            "content": "Tem certeza de que deseja excluir essa missão? Essa ação não pode ser revertida."
+        },
+        "deleteLore": {
+            "title": "Excluir o Lore? - ",
+            "content": "Tem certeza de que deseja excluir essa informação? Essa ação não pode ser revertida."
+        },
+        "deleteMap": {
+            "title": "Excluir o mapa? - ",
+            "content": "Tem certeza de que deseja excluir este mapa? Essa ação não pode ser revertida."
+        },
+        "deletePage": {
+            "title": "Excluir a página? - ",
+            "content": "Tem certeza de que deseja excluir esta página? Essa ação não pode ser revertida."
+        },
+        "shareQuest": {
+            "title": "Enviar página para o chat",
+            "content": "Tem certeza de que deseja enviar a notificação “Nova página” para o chat?",
+            "changeOwnership": "<p class='notification info'>O nível de permissão de “Todos os usuários” será alterado para “Observador” nesta página.</p>",
+            "chatMessage": "Nova página de {questType} disponível: {questName}",
+            "shareMessage": "Novo {questType} desbloqueado!"
+        },
+        "shareLore": {
+            "title": "Enviar Lore para o chat",
+            "content": "Tem certeza de que deseja enviar a notificação “Nova história” para o chat?",
+            "chatMessage": "Foram revelados novos detalhes da história!"
+        },
+        "shareAchievement": {
+            "title": "Enviar conquista para o chat",
+            "content": "Tem certeza de que deseja enviar a notificação “Nova conquista” para o chat?",
+            "chatMessage": "Você conquistou uma conquista: {questName}"
+        },
+        "showQuest": {
+            "title": "Mostrar Missão"
+        },
+        "welcomeScreen": {
+            "title": "Bem-vindo ao Simple Quest!",
+            "content": "Bem-vindo ao Simple Quest!<hr>Pressione <span class='hotkey'>J</span> para abrir a janela do Simple Quest."
+        },
+        "welcomeMaps": {
+            "title": "Missão Simples: Abas do mapa",
+            "content": "Bem-vindo à aba “Mapas”!<hr><span class='hotkey'>Clique com o botão direito + arraste</span> para deslocar o mapa.<br><span class='hotkey'>Role a tela</span> para ampliar ou reduzir o mapa.<br><span class='hotkey'>Clique com o botão esquerdo</span> para adicionar um marcador.<br><span class='hotkey'>Clique com o botão esquerdo</span> para abrir as notas ou a missão de um marcador.<br><span class='hotkey'>Clique com o botão direito</span> em um marcador para editá-lo.<hr>Névoa de Guerra<hr><span class='hotkey'>Shift + Clique com o botão esquerdo</span> para ocultar o mapa.<br><span class='hotkey'>Shift + Clique com o botão direito</span> para revelar o mapa.<hr>Medir<hr> <span class='hotkey'>Ctrl + clique com o botão esquerdo</span> para medir."
+        },
+        "flags": {},
+        "noPermission": "Você não tem permissão para visualizar este documento.",
+        "time-enricher": {
+            "expired": "Vencido"
+        },
+        "questNotification": {
+            "text": "Página {questType}: {questName} foi atualizada"
+        },
+        "hotkeys": {
+            "toggleSimpleQuest": {
+                "name": "Alternar para “Missão Simples”"
+            }
+        },
+        "notifications": {
+            "defaultStructureCreated": "Missão simples: pasta padrão e estrutura de diário criadas.",
+            "playerJournalUpdated": "Missão Simples: Diário do jogador atualizado.",
+            "noPage": "Tarefa simples: Selecione uma página para excluir.",
+            "uuidNotFound": "Simple Quest: página não encontrada para o UUID {{uuid}}",
+            "noTab": "Simple Quest: Não foi encontrada nenhuma guia para '{{tab}}'."
+        },
+        "resetFow": {
+            "title": "Redefinir a “névoa de guerra”?",
+            "content": "Tem certeza de que deseja redefinir/ativar a névoa de guerra neste mapa? Essa ação não pode ser revertida."
+        },
+        "proseMirrorMenu": {
+            "callout": {
+                "title": "Nota explicativa",
+                "callout-lore": "Tradição",
+                "callout-magic": "Magia",
+                "callout-item": "Item",
+                "callout-creature": "Criatura",
+                "callout-event": "Evento",
+                "callout-time": "Hora",
+                "callout-npc": "NPC",
+                "callout-location": "Localização"
+            },
+            "pageInsert": {
+                "title": "Inserir página",
+                "parchment-note-1": "Nota em pergaminho 1",
+                "parchment-note-2": "Nota em pergaminho 2",
+                "parchment-note-3": "Nota em pergaminho 3",
+                "parchment-note-4": "Nota em pergaminho 4",
+                "parchment-book-1": "Livro 1",
+                "parchment-book-2": "Livro 2",
+                "parchment-scroll-1": "Rolar a tela"
+            },
+            "text": {
+                "initial": "Inicial maiúscula"
+            }
+        },
+        "page-template": {
+            "label": "Modelo de página",
+            "description": "Esta é uma coleção de modelos em HTML para formatar as páginas do seu diário. Essa formatação continuará funcionando mesmo que o módulo Simple Quest esteja desativado. Clique em um botão para inserir o modelo no final da página."
+        },
+        "injected": {
+            "fowMask": {
+                "label": "Missão simples: Máscara da Névoa da Guerra"
+            }
+        },
+        "tours": {
+            "interface": {
+                "1": {
+                    "title": "Seções",
+                    "content": "Esta área mostra as diversas seções do Simple Quest. Você pode clicar em uma seção para acessá-la, clicar com o botão direito do mouse para editar os nomes das abas e passar o mouse sobre o canto superior direito para exibir o botão “Alternar para tela cheia”."
+                },
+                "2": {
+                    "title": "Lista de missões",
+                    "content": "Esta área exibe a lista de categorias de missões e as missões que as compõem. Você pode clicar com o botão direito do mouse em uma categoria para editar seu nome. No canto superior direito, você encontrará os botões para adicionar uma nova missão e uma nova categoria. Passe o mouse sobre o lado esquerdo do título de uma missão para exibir o botão “Alternar ocultação”."
+                },
+                "3": {
+                    "title": "Detalhes da missão",
+                    "content": "Esta área exibe os detalhes da missão selecionada. No canto superior direito, você encontrará botões para gerenciar a missão; passe o cursor sobre os botões para ver uma dica de ferramenta explicando o que cada um faz."
+                },
+                "4": {
+                    "title": "Tamanho da fonte",
+                    "content": "Nesta seção, você pode alterar o tamanho da fonte do Simple Quest"
+                },
+                "name": "Visão geral da interface e aba “Missões”",
+                "description": "Este tour vai mostrar a você como usar a interface principal do Simple Quest e a aba “Questas”."
+            },
+            "lore-tab": {
+                "1": {
+                    "title": "Guia “História”",
+                    "content": "A aba “Lore” exibe todos os diários presentes na pasta “Lore” na interface do Simple Quest. Embora essa aba não ofereça nenhuma funcionalidade especial, ela é uma maneira prática de acessar seu lore. As permissões para visualizar as páginas de Lore são as mesmas das permissões do Core Foundry Journal."
+                },
+                "2": {
+                    "title": "Lista de Tradições",
+                    "content": "Esta área exibe a lista de categorias de histórias e as histórias contidas nelas. Você pode clicar com o botão direito do mouse em uma categoria para editar seu nome. No canto superior direito, você encontrará os botões para “Adicionar uma nova história” e “Adicionar uma nova categoria”. Passe o mouse sobre o lado esquerdo do título de uma história para exibir o botão “Mostrar/ocultar”."
+                },
+                "3": {
+                    "title": "Detalhes da história",
+                    "content": "Esta área exibe os detalhes da história selecionada. No canto superior direito, você encontrará botões para gerenciar a história; passe o mouse sobre os botões para ver uma dica explicando sua função."
+                },
+                "name": "Guia “História”",
+                "description": "Este tour vai mostrar como usar a aba “Lore”."
+            },
+            "map-tab": {
+                "1": {
+                    "title": "Guia “Mapa”",
+                    "content": "A aba “Mapas” exibe todos os mapas presentes no “Diário de Mapas”, dentro da pasta “Missões”."
+                },
+                "2": {
+                    "title": "Lista de mapas",
+                    "content": "Esta área exibe a lista de mapas. No canto superior direito, você encontrará um botão para adicionar um novo mapa e um botão que explica os controles mais avançados. Passe o mouse sobre o lado esquerdo do título de um mapa para exibir o botão “Alternar ocultação”."
+                },
+                "3": {
+                    "title": "Detalhes do mapa",
+                    "content": "Esta área exibe o mapa selecionado. Você pode deslocar o mapa clicando e arrastando, além de ampliar e reduzir a imagem com a roda do mouse. No canto superior direito, você encontrará botões para gerenciar o mapa; passe o cursor sobre os botões para ver uma dica explicando suas funções."
+                },
+                "4": {
+                    "title": "Marcadores",
+                    "content": "Você pode clicar com o botão direito do mouse (ou manter pressionado para visualizar uma pré-visualização) no mapa para adicionar um marcador. Você também pode clicar com o botão direito do mouse em um marcador para editá-lo ou clicar com o botão direito e arrastar um marcador para movê-lo. Você pode clicar com o botão esquerdo em um marcador para abrir suas anotações, missão ou documento vinculado. Arrastar e soltar qualquer documento no mapa criará um marcador vinculado a esse documento."
+                },
+                "5": {
+                    "title": "Névoa da Guerra",
+                    "content": "Você pode manter a tecla Shift pressionada para exibir o pincel “Névoa de Guerra”. Clique com o botão esquerdo para ocultar o mapa e clique com o botão direito para revelá-lo."
+                },
+                "6": {
+                    "title": "Medição",
+                    "content": "Você pode manter pressionada a tecla Ctrl para ativar a ferramenta de medição. Enquanto mantiver a tecla Ctrl pressionada, clique com o botão esquerdo e arraste para medir."
+                },
+                "name": "Guia “Mapa”",
+                "description": "Este tour vai mostrar a você como usar a aba “Mapa”."
+            },
+            "my-journal-tab": {
+                "1": {
+                    "title": "Guia “Meu Diário”",
+                    "content": "A aba “Meu Diário” exibe um diário pessoal que só você e o Mestre do Jogo podem ver."
+                },
+                "2": {
+                    "title": "Índice",
+                    "content": "Esta área exibe o índice do seu diário. Qualquer título que você criar no seu diário aparecerá aqui para facilitar a navegação."
+                },
+                "3": {
+                    "title": "Conteúdo da revista",
+                    "content": "Esta área exibe o conteúdo do seu diário. Você pode editar o conteúdo do seu diário clicando no botão “Editar”, localizado no canto superior direito."
+                },
+                "name": "Guia “Meu Diário”",
+                "description": "Este tour vai mostrar a você como usar a aba “Meu Diário”."
+            },
+            "party-journal-tab": {
+                "1": {
+                    "title": "Guia “Diário da Festa”",
+                    "content": "A guia “Diário da Festa” exibe um diário que pode ser visualizado e editado por todos os usuários."
+                },
+                "2": {
+                    "title": "Índice",
+                    "content": "Esta área exibe o índice do seu “Diário da Festa”. Qualquer título que você criar neste diário aparecerá aqui para facilitar a navegação."
+                },
+                "3": {
+                    "title": "Conteúdo da revista",
+                    "content": "Esta área exibe o conteúdo do Diário do Partido. Você pode editar o conteúdo deste diário clicando no botão “Editar”, localizado no canto superior direito."
+                },
+                "name": "Guia “Diário da Festa”",
+                "description": "Este tour vai mostrar a você como usar a aba “Diário da Festa”."
+            },
+            "journal-page": {
+                "1": {
+                    "title": "Modelos de página",
+                    "content": "O Simple Quest adiciona modelos de página. Um recurso prático para inserir rapidamente um modelo ou seção pré-formatada na sua página do diário. Clique neste botão para ver os modelos disponíveis."
+                },
+                "2": {
+                    "title": "Formatação",
+                    "content": "Nesse menu suspenso, você encontrará as novas opções “Callout” e “Inserir página” para dar um toque especial aos seus documentos."
+                },
+                "name": "Recursos das páginas do diário",
+                "description": "Este tour vai mostrar a você como usar a Página do Diário."
+            },
+            "timeline-tab": {
+                "1": {
+                    "title": "Guia “Linha do tempo”",
+                    "content": "A guia “Linha do tempo” exibe uma linha do tempo dos eventos."
+                },
+                "2": {
+                    "title": "Lista de linhas do tempo",
+                    "content": "Esta área exibe a lista de eventos e épocas; você pode clicar para acessar o evento ou a época, ou clicar com o botão direito do mouse para editá-los."
+                },
+                "3": {
+                    "title": "Adicionar evento ou época",
+                    "content": "Este botão é tudo o que você precisa para adicionar um novo evento ou época à linha do tempo. O formulário de configuração permitirá que você defina os detalhes do evento ou da época. Para começar, crie uma época."
+                },
+                "name": "Guia “Linha do tempo”",
+                "description": "Este tour vai mostrar a você como usar a aba “Linha do tempo”."
+            }
+        },
+        "default-structure": {
+            "in-progress": "Em andamento",
+            "completed": "Concluído",
+            "failed": "Falha",
+            "locations": "Locais",
+            "npcs": "PNJs",
+            "organizations": "Organizações",
+            "history": "História",
+            "bestiary": "Bestiário"
+        }
+    }
+}

@@ -1,0 +1,98 @@
+{
+    "fvtt-paper-doll-ui": {
+        "settings": {
+            "globalConfigMenu": {
+                "name": "Globale Einstellungen für Paper Doll",
+                "hint": "Passen Sie leere Bilder und die Anzahl der Slots für jeden Typ an.",
+                "label": "Papierpuppe konfigurieren"
+            },
+            "hideActorHeaderText": {
+                "name": "Text der Schaltfläche „Darsteller-Kopfzeile“ ausblenden",
+                "hint": "Blenden Sie den Text in der Kopfzeilenschaltfläche des Schauspielers aus."
+            },
+            "paperDollPosition": {
+                "name": "Papierpuppenposition",
+                "hint": "Position der Papierpuppe im geöffneten Zustand. \nBeachten Sie, dass die Papierpuppe in der Mitte platziert wird, wenn der Platz links oder rechts nicht ausreicht.",
+                "label": "Position",
+                "choices": {
+                    "left": "Links",
+                    "right": "Rechts",
+                    "center": "Mitte"
+                }
+            },
+            "autoOpen": {
+                "name": "Automatisches Öffnen",
+                "hint": "Öffnen Sie die Papierpuppe automatisch, wenn ein Schauspielerblatt geöffnet wird."
+            },
+            "allowNonOwned": {
+                "name": "Nicht im Besitz befindliche Artikel zulassen",
+                "hint": "Ermöglichen Sie das Hinzufügen nicht im Besitz befindlicher Elemente (z. B. Elemente aus der Seitenleiste oder dem Kompendium) zur Papierpuppe. \nDiese Einstellung ist für benutzerdefinierte Systeme gedacht, die kein Inventarsystem haben, und sollte generell weggelassen werden."
+            },
+            "playerOwnedOnly": {
+                "name": "Nur im Besitz von Spielern",
+                "hint": "Aktivieren Sie Paper Doll nur für spielereigene Schauspieler."
+            }
+        },
+        "app": {
+            "paper-doll": {
+                "title": "Papierpuppe",
+                "config": "Aufbau",
+                "disallowed": "Dieser Gegenstand darf in diesem Slot nicht ausgerüstet werden."
+            },
+            "actor-config": {
+                "title": "Akteurkonfiguration",
+                "img": {
+                    "label": "Bild",
+                    "placeholder": "Verwenden Sie das Schauspielerbild"
+                },
+                "objectFit": {
+                    "label": "Bildanpassung",
+                    "contain": "Enthalten",
+                    "cover": "Abdeckung"
+                },
+                "autoOpen": {
+                    "label": "Automatisches Öffnen",
+                    "useDefault": "Verwende den Standard",
+                    "true": "Stets",
+                    "false": "Niemals"
+                },
+                "playerOwnedOnly": {
+                    "label": "Nur im Besitz von Spielern",
+                    "hint": "Aktivieren Sie Paper Doll nur für spielereigene Schauspieler."
+                }
+            },
+            "paper-doll-global-config": {
+                "title": "Globale Konfiguration von Paper Doll",
+                "img": "Symbol",
+                "filter": {
+                    "label": "Benutzerdefinierte Filter",
+                    "hint": "Ein Skript, das zum Erstellen eines Fensters mit Gegenständen verwendet wird, mit denen dieser Slot ausgerüstet werden kann. \n„Artikel“ bezieht sich auf den geprüften Artikel. \nBeispiel: return item.type === 'weapon';"
+                },
+                "simpleFilter": {
+                    "label": "Basisfilter",
+                    "hint": "Filtern Sie nur Elemente, die diesen Typ haben."
+                },
+                "how": {
+                    "add": "Fügen Sie einen neuen Slot hinzu, indem Sie auf die Schaltfläche „Hinzufügen“ klicken.",
+                    "remove": "Entfernen Sie einen Slot, indem Sie mit der rechten Maustaste darauf klicken.",
+                    "image": "Wählen Sie ein Bild für den Slot aus, indem Sie mit der linken Maustaste darauf klicken."
+                },
+                "HUE_ROTATE": {
+                    "label": "Farbton"
+                },
+                "EQUIPPED_PATH": {
+                    "label": "Ausgestatteter Pfad"
+                },
+                "MAIN_COLOR": {
+                    "label": "Farbe"
+                }
+            }
+        },
+        "hotkeys": {
+            "togglePaperDoll": {
+                "name": "Papierpuppe umschalten"
+            }
+        },
+        "flags": {}
+    }
+}

@@ -1,7 +1,7 @@
 {
-  "title": "module-name",
+  "title": "Ripper Mod Localizations",
   "description": "desc",
-  "id": "module-id",
+  "id": "ripper-mod-localizations",
   "version": "1.0",
   "authors": [
     {
@@ -11,11 +11,6 @@
     }
   ],
   "languages": [
-    {
-      "lang": "en",
-      "name": "English",
-      "path": "languages/en.json"
-    },
     {
       "lang": "ja",
       "name": "日本語",
@@ -47,11 +42,6 @@
       "path": "languages/it.json"
     },
     {
-      "lang": "cn",
-      "name": "中文（简体）",
-      "path": "languages/cn.json"
-    },
-    {
       "lang": "ca",
       "name": "Català",
       "path": "languages/ca.json"
@@ -70,11 +60,6 @@
       "lang": "zh-tw",
       "name": "Taiwanese Chinese",
       "path": "languages/zh-tw.json"
-    },
-    {
-      "lang": "en-AU",
-      "name": "English (Australian)",
-      "path": "languages/en-au.json"
     },
     {
       "lang": "ru",
@@ -115,8 +100,8 @@
     "styles/module.css"
   ],
   "packs": [],
-  "url": "https://github.com/theripper93/module-id",
-  "manifest": "https://github.com/theripper93/module-id/releases/latest/download/module.json",
+  "url": "https://github.com/theripper93/ripper-mod-localizations",
+  "manifest": "https://github.com/theripper93/ripper-mod-localizations/releases/latest/download/module.json",
   "download": "",
   "relationships": {
     "requires": [

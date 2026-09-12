@@ -1,0 +1,54 @@
+{
+    "filepicker-plus": {
+        "settings": {
+            "sidebarFilepicker": {
+                "name": "Activer l'onglet Filepicker de la barre latérale",
+                "hint": "Ajouter un nouvel onglet à la barre latérale qui vous permet de parcourir et de télécharger des fichiers, ainsi que de glisser-déposer des images/modèles 3D sur la scène."
+            },
+            "placeastokens": {
+                "name": "Placez les images comme des jetons",
+                "hint": "Lorsque l'on fait glisser une image sur la scène, elle est placée comme un jeton au lieu d'une tuile si l'on se trouve sur le calque des jetons (sélecteur de barres latérales uniquement)."
+            },
+            "size": {
+                "name": "Taille du Filepicker",
+                "hint": "Largeur du sélecteur de fichiers",
+                "choices": {
+                    "default": "Défaut",
+                    "large": "Grandes dimensions",
+                    "extraLarge": "Très grand",
+                    "massive": "Énorme"
+                }
+            },
+            "imagepreview": {
+                "name": "Aperçu de l'image et de la vidéo",
+                "hint": "Afficher l'aperçu de l'image ou de la vidéo lorsque l'on passe la souris dessus dans le sélecteur de fichiers"
+            },
+            "threepreview": {
+                "name": "Aperçu 3D",
+                "hint": "Afficher les aperçus en 3D, nécessite des portraits en 3D. Si ce paramètre est désactivé, la vignette du fichier 3D sera utilisée à la place (si elle existe)."
+            },
+            "audiopreview": {
+                "name": "Aperçu audio",
+                "hint": "Jouer un aperçu audio lorsque l'on survole des sons dans le sélecteur de fichiers"
+            },
+            "audiopreviewdelay": {
+                "name": "Délai de prévisualisation audio",
+                "hint": "Délai en ms avant que le son de prévisualisation ne commence à jouer"
+            },
+            "audiopreviewvol": {
+                "name": "Volume de la prévisualisation audio",
+                "hint": "Volume du son de prévisualisation"
+            },
+            "enablecolortheme": {
+                "name": "Activer le thème de couleur",
+                "hint": "Si vous avez un module ou un système qui applique un thème au sélecteur de fichiers, vous voudrez peut-être désactiver cette option."
+            }
+        },
+        "app": {},
+        "flags": {},
+        "sidebar": {
+            "no-filepicker": "Le navigateur de fichiers est ouvert dans une fenêtre séparée. L'explorateur de fichiers revient dans la barre latérale une fois la fenêtre fermée.",
+            "open": "La barre latérale du navigateur de fichiers est active, le navigateur de fichiers sélectionné a été ouvert dans la barre latérale."
+        }
+    }
+}

@@ -1,0 +1,73 @@
+{
+    "party-monitor-dock": {
+        "title": "Party-Monitor-Dock",
+        "settings": {
+            "onlyConnected": {
+                "name": "Nur verbundene Spieler anzeigen",
+                "hint": "Zeigt nur Spieler an, die mit dem Server verbunden sind"
+            },
+            "portraitSize": {
+                "name": "Porträtgröße",
+                "hint": "Die Größe der Porträts im Dock"
+            },
+            "position": {
+                "name": "Dock-Position",
+                "hint": "Die Position des Docks auf dem Bildschirm",
+                "choices": {
+                    "docked": "Angedockt",
+                    "horizontal": "Horizontal (schwimmend)",
+                    "vertical": "Vertikal (schwimmend)",
+                    "hidden": "Versteckt"
+                }
+            },
+            "dockAlignment": {
+                "name": "HUD-Ausrichtung",
+                "hint": "Die Ausrichtung des HUD auf dem Bildschirm",
+                "choices": {
+                    "flex-start": "Spitze",
+                    "center": "Mitte",
+                    "flex-end": "Unten"
+                }
+            },
+            "hideInCombat": {
+                "name": "Verstecke dich im Kampf",
+                "hint": "Blenden Sie das HUD aus, wenn ein Kampf aktiv ist"
+            },
+            "hideCompanions": {
+                "name": "Gefährten ausblenden",
+                "hint": "Gefährten aus der Gruppenmitgliederliste ausblenden"
+            },
+            "cornerImage": {
+                "name": "Eckbild",
+                "hint": "Das in den Ecken des Docks zu verwendende Bild. Zum Deaktivieren leer lassen."
+            },
+            "edgeImage": {
+                "name": "Kantenbild",
+                "hint": "Das Bild, das zum Füllen des Raums zwischen den Ecken des Docks verwendet werden soll. \nZum Deaktivieren leer lassen."
+            }
+        },
+        "app": {
+            "buttons": {
+                "toggle-nav": "Navigationsschaltflächen umschalten",
+                "toggle-dock": "Dock umschalten",
+                "reduce": "Größe verringern",
+                "enlarge": "Größe erhöhen",
+                "start-follow": "Beginnen Sie mit dem Folgen",
+                "stop-follow": "Hör auf zu folgen",
+                "context": {
+                    "follow": "Folgen",
+                    "mount": "Montieren",
+                    "epicRoll": "Anf. \nRollen",
+                    "raise-hand": "Hand heben"
+                }
+            }
+        },
+        "flags": {},
+        "notifications": {
+            "follow": "jetzt folgt",
+            "unfollow": "folgt nicht mehr",
+            "mounted": "ist montiert",
+            "dismounted": "ist abgestiegen"
+        }
+    }
+}

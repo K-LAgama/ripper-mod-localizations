@@ -1,0 +1,77 @@
+{
+    "macro-wheel": {
+        "bindings": {
+            "open": {
+                "name": "Abrir/Fechar a roda de macros"
+            }
+        },
+        "settings": {
+            "folderSize": {
+                "name": "Tamanho do botão da pasta",
+                "hint": "Tamanho dos botões de pastas na roda de macros, em pixels."
+            },
+            "macroSize": {
+                "name": "Tamanho do botão de macro",
+                "hint": "Tamanho dos botões de macro na roda de macros, em pixels."
+            },
+            "closeOnClick": {
+                "name": "Fechar ao clicar",
+                "hint": "Feche a roda de macros ao clicar em uma macro. Você pode manter a tecla Ctrl pressionada para manter a roda aberta."
+            },
+            "enableTooltips": {
+                "name": "Ativar dicas de ferramenta",
+                "hint": "Mostrar dicas de ferramenta ao passar o mouse sobre uma macro ou pasta."
+            },
+            "useRoot": {
+                "name": "Usar a pasta raiz",
+                "hint": "Use todo o diretório de macros como raiz para a roda de macros."
+            },
+            "addHotbar": {
+                "name": "Mostrar macros da barra de atalhos",
+                "hint": "Adicione as macros da barra de atalhos à roda de macros."
+            },
+            "useMiddleMouse": {
+                "name": "Use o botão do meio do mouse",
+                "hint": "Use o botão do meio do mouse para abrir a roda de macros."
+            },
+            "hoverDelay": {
+                "name": "Atraso ao passar o mouse",
+                "hint": "Atraso em milissegundos antes que a roda de macros seja exibida ao passar o cursor sobre uma pasta da roda de macros."
+            }
+        },
+        "flags": {
+            "header": "Roda de macro",
+            "folderImg": {
+                "name": "Imagem"
+            },
+            "condition": {
+                "name": "Condição personalizada",
+                "placeholder": "Script de condição"
+            },
+            "activeCondition": {
+                "name": "Condição ativa",
+                "hint": "Essa condição é usada para determinar se a macro está ativa. Ela servirá para definir a cor do anel ao redor da macro na Roda de Macros, a fim de verificar rapidamente os estados."
+            },
+            "presetCondition": {
+                "name": "Condição",
+                "options": {
+                    "custom": "Personalizado",
+                    "tokens": "Camada ativa: tokens",
+                    "tiles": "Camada ativa: Ladrilhos",
+                    "walls": "Camada ativa: Paredes",
+                    "sounds": "Camada ativa: Sons",
+                    "notes": "Camada ativa: Notas",
+                    "lights": "Camada ativa: Iluminação",
+                    "templates": "Camada ativa: Modelos",
+                    "drawings": "Camada ativa: Desenhos",
+                    "selectedtoken": "Token selecionado",
+                    "combat": "Em combate",
+                    "enabled3d": "3D Canvas ativado"
+                }
+            }
+        },
+        "errors": {
+            "no-folder": "MacroWheel: A pasta “MacroWheel” não foi encontrada. Crie uma pasta chamada “MacroWheel” na sua pasta “Macro” ou ative a opção “Usar pasta raiz” para desativar esta notificação. Dentro da pasta “MacroWheel”, crie subpastas para cada roda que você deseja adicionar e, em seguida, adicione macros a essas pastas."
+        }
+    }
+}

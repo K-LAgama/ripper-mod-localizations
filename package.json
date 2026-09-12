@@ -1,6 +1,7 @@
 {
   "private": true,
   "dependencies": {
+    "deepl-node": "^1.28.0",
     "fs": "^0.0.1-security",
     "fs-extra": "^11.2.0",
     "path": "^0.12.7",
@@ -22,7 +23,7 @@
   },
   "scripts": {
     "translate": "node translate-all.js",
-    "init": "npm install && node init-project.js && npx webpack --config webpack.config.js --watch",
+    "translate:modules": "node translate-modules.js",
     "create": "node createApp.js",
     "watch": "npx webpack --config webpack.config.js --watch"
   }

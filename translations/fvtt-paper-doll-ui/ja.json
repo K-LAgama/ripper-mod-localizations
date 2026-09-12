@@ -1,0 +1,97 @@
+{
+    "fvtt-paper-doll-ui": {
+        "app": {
+            "actor-config": {
+                "autoOpen": {
+                    "false": "一度もない",
+                    "label": "オートオープン",
+                    "true": "いつも",
+                    "useDefault": "デフォルトを使用します"
+                },
+                "img": {
+                    "label": "画像",
+                    "placeholder": "俳優の画像を使用する"
+                },
+                "objectFit": {
+                    "contain": "含む",
+                    "cover": "カバー",
+                    "label": "画像のフィット"
+                },
+                "playerOwnedOnly": {
+                    "hint": "プレイヤーが所有するアクターに対してのみ Paper Doll を有効にします。",
+                    "label": "プレイヤーが所有するもののみ"
+                },
+                "title": "アクターの構成"
+            },
+            "paper-doll": {
+                "config": "構成",
+                "disallowed": "このアイテムはこのスロットには装備できません。",
+                "title": "紙人形"
+            },
+            "paper-doll-global-config": {
+                "EQUIPPED_PATH": {
+                    "label": "装備されたパス"
+                },
+                "HUE_ROTATE": {
+                    "label": "色相"
+                },
+                "MAIN_COLOR": {
+                    "label": "色"
+                },
+                "filter": {
+                    "hint": "このスロットに装備できるアイテムを含むウィンドウを作成するために使用されるスクリプト。 \n「item」はチェック対象の項目を指します。\n例: return item.type === 'weapon';",
+                    "label": "カスタムフィルター"
+                },
+                "how": {
+                    "add": "「追加」ボタンをクリックして、新しいスロットを追加します。",
+                    "image": "スロットの画像を左クリックして選択します。",
+                    "remove": "スロットを右クリックしてスロットを削除します。"
+                },
+                "img": "アイコン",
+                "simpleFilter": {
+                    "hint": "このタイプを持つアイテムのみをフィルターします。",
+                    "label": "基本フィルター"
+                },
+                "title": "紙人形のグローバル構成"
+            }
+        },
+        "hotkeys": {
+            "togglePaperDoll": {
+                "name": "紙人形の切り替え"
+            }
+        },
+        "settings": {
+            "allowNonOwned": {
+                "hint": "所有されていないアイテム (サイドバーや概要のアイテムなど) を紙人形に追加できるようにします。\nこの設定は、インベントリ システムを持たないカスタム システムを対象としており、通常はオフのままにする必要があります。",
+                "name": "所有されていないアイテムを許可する"
+            },
+            "autoOpen": {
+                "hint": "アクターシートを開いたときに紙人形も自動的に開きます。",
+                "name": "オートオープン"
+            },
+            "globalConfigMenu": {
+                "hint": "タイプごとに空のイメージとスロットの数をカスタマイズします。",
+                "label": "紙人形の設定",
+                "name": "紙人形のグローバル設定"
+            },
+            "hideActorHeaderText": {
+                "hint": "アクターのヘッダー ボタンのテキストを非表示にします。",
+                "name": "アクターのヘッダー ボタンのテキストを非表示にする"
+            },
+            "paperDollPosition": {
+                "choices": {
+                    "center": "中心",
+                    "left": "左",
+                    "right": "右"
+                },
+                "hint": "開いたときの紙人形の位置。\n左右のスペースが足りない場合は中央に紙人形を配置することになりますのでご了承ください。",
+                "label": "位置",
+                "name": "紙人形の位置"
+            },
+            "playerOwnedOnly": {
+                "hint": "プレイヤーが所有するアクターに対してのみ Paper Doll を有効にします。",
+                "name": "プレイヤーが所有するもののみ"
+            }
+        }
+    }
+}

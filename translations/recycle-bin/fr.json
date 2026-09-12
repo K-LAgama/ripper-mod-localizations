@@ -1,0 +1,42 @@
+{
+    "recycle-bin": {
+        "app": {
+            "title": "🗑️ Corbeille",
+            "restore-item": "Restaurer l'élément",
+            "preview-item": "Aperçu de l'élément",
+            "permanently-delete": "Supprimer définitivement l'élément",
+            "noParent": "Document principal",
+            "search": "Recherche",
+            "time": "Supprimé il y a {time}",
+            "deleteOnRefresh": "Cet élément sera définitivement supprimé lors de l'actualisation.",
+            "deleteOnRefreshTitle": "Un ou plusieurs éléments en attente de suppression"
+        },
+        "settings": {
+            "maxPermanentItems": {
+                "name": "Historique permanent maximal",
+                "hint": "Nombre d'éléments qui seront sauvegardés entre les rechargements."
+            },
+            "maxTemporaryItems": {
+                "name": "Historique temporaire maximal",
+                "hint": "Nombre d'éléments qui seront sauvegardés. \nLes objets temporaires qui dépassent l'\"Historique permanent maximum\" seront perdus lors du rechargement."
+            }
+        },
+        "error": {
+            "restore": "Échec de la restauration de {élément}. \nParent introuvable :",
+            "preview": "Échec de l'aperçu de {élément}. \nParent introuvable."
+        },
+        "success": {
+            "restore": "{item} a bien été restauré."
+        },
+        "dialog": {
+            "restoreParent": {
+                "title": "Restaurer le parent",
+                "content": "Le parent de cet élément est introuvable dans votre monde, mais il est présent dans la corbeille. \nSouhaitez-vous le restaurer ?"
+            },
+            "permanentlyDelete": {
+                "title": "Effacé définitivement",
+                "content": "Êtes-vous sûr de vouloir supprimer définitivement cet élément ? \nCette action ne peut pas être annulée."
+            }
+        }
+    }
+}

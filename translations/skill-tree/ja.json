@@ -1,0 +1,80 @@
+{
+    "skill-tree": {
+        "header-button": {
+            "label": "スキルツリー"
+        },
+        "settings": {
+            "skill-tree-manager": {
+                "hint": "スキルツリーを管理する",
+                "label": "スキルツリーの構成",
+                "name": "スキルツリーマネージャー"
+            }
+        },
+        "skill-tree-actor": {
+            "added-items": "追加されたアイテム:",
+            "mutual-exclusion-info": "このスキルと同じ要件を持つ %n スキルのみを同時にロック解除できます。",
+            "removed-items": "削除された項目:",
+            "title": "スキルツリー:"
+        },
+        "skill-tree-application": {
+            "delete-group-content": "このグループを削除してもよろしいですか?\nこれにより、グループ内のすべてのスキルも削除されます。",
+            "delete-group-title": "グループの削除",
+            "drop-error": "グリッドにドロップできるのはアイテムまたはその他のスキルのみです",
+            "edit-group-blur-background": "背景をぼかす",
+            "edit-group-blur-background-hint": "背景画像をぼかすかどうか",
+            "edit-group-color": "色",
+            "edit-group-color-hint": "グループのカラー",
+            "edit-group-image": "背景画像",
+            "edit-group-image-hint": "グループの背景として使用する画像",
+            "edit-group-min-cols": "最小列数",
+            "edit-group-min-cols-hint": "グリッド内の列の最小数",
+            "edit-group-min-rows": "最小行数",
+            "edit-group-min-rows-hint": "グリッド内の最小行数",
+            "edit-group-name": "名前",
+            "edit-group-name-hint": "グループの名前",
+            "edit-group-sound": "効果音",
+            "edit-group-sound-hint": "スキルのロックが解除されたときに再生される効果音",
+            "edit-group-submit": "保存",
+            "edit-group-title": "グループの編集:",
+            "edit-skill-condition-script": "条件スクリプト",
+            "edit-skill-condition-script-hint": "このスキルのロックを解除できるかどうかを判断するためにチェックされるスクリプト。\nスクリプトはブール値を返す必要があります。\nマクロ内でアクター、スキル、グループ、スキルツリーを参照できます。",
+            "edit-skill-connected-skills": "必要なスキル",
+            "edit-skill-connected-skills-hint": "このスキルのロックを解除するにはスキルが必要です。\n必要なスキルのルールに従います。",
+            "edit-skill-image": "画像",
+            "edit-skill-item": "リンクされたアイテム",
+            "edit-skill-item-hint": "スキルのロックが解除されると、そのリンクされたアイテムがアクターに追加されます。\n削除すると、アイテムも削除されます。\n複数のポイントを必要とするスキルの場合、消費したポイントに応じてアイテムが付与されます。\nたとえば、3 ポイントのスキルと 3 つのアイテムの場合、1 ポイントにつき 1 つのアイテムが付与されます。 \n3 つのアイテムに 5 ポイントが必要な場合、2 ポイントごとに 1 つのアイテムが付与され、最後のアイテムは 5 ポイント目に付与されます。",
+            "edit-skill-linked-skill-rule": "必須スキルルールの上書き",
+            "edit-skill-linked-skill-rule-hint": "0 より大きい数値に設定すると、必須スキル ルールがオーバーライドされ、このスキルのロックを解除するには、指定された数 (またはそれ以上) の必須スキルのロックを解除する必要があります。",
+            "edit-skill-mutual-exclusion": "相互排除",
+            "edit-skill-mutual-exclusion-hint": "1 より大きい数値に設定すると、このスキルと同じスキルで必要な指定された数のスキルのみが同時にロック解除されます。",
+            "edit-skill-name": "名前",
+            "edit-skill-on-unlock": "変更時スクリプト",
+            "edit-skill-on-unlock-hint": "このスキルのロックが解除されたとき、またはポイントが消費されたときに実行されるスクリプト。\nマクロ内でアクター、スキル、グループ、スキルツリーを参照できます。",
+            "edit-skill-points": "ポイント",
+            "edit-skill-points-hint": "このスキルのロックを解除するために必要なポイント数。",
+            "edit-skill-title": "編集スキル:",
+            "linked-skill-rule": "必須スキルルール",
+            "linked-skill-rule-all": "全て",
+            "linked-skill-rule-hint": "必須スキルの動作方法:<br> - 一部: スキルのロックを解除するには必須スキルが 1 つだけ必要です<br> - すべて: スキルのロックを解除するには、必要なスキルをすべてロック解除する必要があります",
+            "linked-skill-rule-some": "いくつかの",
+            "multiple-items-rule": "複数アイテムのルール",
+            "multiple-items-rule-all": "全て",
+            "multiple-items-rule-hint": "段階的スキルで複数のアイテムがどのように動作するか:<br> - すべて: すべてのアイテムが付与されます<br> - 1 つ: 現在の段階に対応するアイテムのみが付与されます",
+            "multiple-items-rule-one": "1つ",
+            "new-group": "新しいグループ",
+            "skill-style": "スキルスタイル",
+            "skill-style-circle": "丸",
+            "skill-style-hint": "スキルの表示方法:<br> - 円: スキルは円で表示されます<br> - 四角: スキルは四角で表示されます",
+            "skill-style-square": "四角",
+            "skill-tree-options": "スキルツリーのオプション",
+            "title": "スキルツリーエディター:"
+        },
+        "skill-tree-manager": {
+            "create-new": "新規作成",
+            "delete": "消去",
+            "edit": "編集",
+            "name": "名前",
+            "title": "スキルツリーマネージャー"
+        }
+    }
+}

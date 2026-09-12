@@ -1,0 +1,113 @@
+{
+    "patrol": {
+        "patrol-app": {
+            "title": "Patrouillen-Panel",
+            "selectAll": "Alle Schritte",
+            "selectSingle": "Schritt ausgewählt",
+            "stepBackward": "Schritt zurück",
+            "stepForward": "Einen Schritt nach vorne",
+            "toggleStepping": "Patrouille umschalten",
+            "toggleSteppingDisabled": "Die automatische Patrouille ist im Kampf und beim Bewegen einzelner Spielsteine deaktiviert."
+        },
+        "settings": {
+            "patrolMaxSuspicious": {
+                "name": "Max. Anzahl verdächtiger Schritte",
+                "hint": "Anzahl der Schritte, die ein Token sich umschaut, bevor es versucht, einen PC zu verfolgen"
+            },
+            "patrolMaxAlerted": {
+                "name": "Maximale Anzahl der Schritte, bei denen eine Benachrichtigung erfolgt",
+                "hint": "Anzahl der Schritte, über die ein Spielstein eine Sichtverbindung zu einem verfolgten Spielercharakter haben muss, bevor er diesen tatsächlich entdeckt"
+            },
+            "patrolSound": {
+                "name": "Spotted Sound",
+                "hint": "Sound, der abgespielt wird, wenn ein PC von einem Gegner entdeckt wird"
+            },
+            "patrolAlert": {
+                "name": "Alarmton",
+                "hint": "Sound, der abgespielt werden soll, wenn ein Gegner von einem Spieler alarmiert wird"
+            },
+            "openApplication": {
+                "name": "Patrouillen-Panel",
+                "hint": "Öffnen Sie das „Patrol“-Fenster. Sie können auch mit Alt+Linksklick auf die Schaltfläche „Patrol“ in den „Token Scene Controls“ klicken oder den Makrobefehl „ui.patrolApp.render({ force: true })“ verwenden.",
+                "label": "Patrouillen-Panel öffnen"
+            },
+            "minStepDelay": {
+                "name": "Mindestschrittverzögerung",
+                "hint": "Mindestverzögerung zwischen den Schritten in Millisekunden. Die tatsächliche Zeit zwischen den Bewegungen hängt von den Token-Aktualisierungen von Foundry und der Bewegung der Token auf der Karte ab. Niedrigere Werte können ressourcenintensiv sein."
+            },
+            "hidePatrolButtonInSidebar": {
+                "name": "Schaltfläche „Patrouillenbereich ausblenden“ in der Seitenleiste ausblenden",
+                "hint": "Blenden Sie die Schaltfläche „Patrol Panel“ in der Seitenleiste des „Actor Directory“ aus. Sie können weiterhin den Makrobefehl „ui.patrolApp.render({ force: true })“ verwenden oder in den „Token Scene Controls“ mit Alt+Linksklick auf die Schaltfläche „Patrol“ klicken."
+            },
+            "migrateOnStartupDialog": {
+                "name": "Migrationsdialog beim Start öffnen",
+                "hint": "Wenn diese Option aktiviert ist, öffnet das Modul beim Start einen Dialog, um die Daten von der V13-Datenstruktur in die V14-Datenstruktur zu migrieren."
+            }
+        },
+        "tokenConfig": {
+            "enablePatrol": {
+                "name": "Patrouille aktivieren"
+            },
+            "enableSpotting": {
+                "name": "Spielercharaktere erkennen",
+                "hint": "Mehrere Markierungstoken können ressourcenintensiv sein. Bitte gehen Sie damit vorsichtig um."
+            },
+            "doorBehavior": {
+                "name": "Kann er durch Türen gehen?",
+                "choices": {
+                    "useRegionSettings": "Regioneinstellungen verwenden (verwendet auch die Option „Tür offen lassen“ der Region)",
+                    "unlocked": "Offene Türen",
+                    "locked": "Verschlossene Türen",
+                    "secret": "Geheime Türen"
+                }
+            },
+            "leaveDoorOpen": {
+                "name": "Tür offen lassen",
+                "hint": "Wahrscheinlichkeit, dass das Token eine Tür offen lässt, nachdem es sie passiert hat"
+            }
+        },
+        "statusEffects": {
+            "patrolundetectable": {
+                "name": "Patrouille – Nicht nachweisbar"
+            }
+        },
+        "tools": {
+            "patrolToggle": {
+                "app": "Patrouillen-Panel ein-/ausblenden",
+                "stepping": "„Token Patrol“ umschalten"
+            }
+        }
+    },
+    "TYPES": {
+        "RegionBehavior": {
+            "patrol": {
+                "patrolArea": "Streifengebiet",
+                "whitelist": "Whitelist",
+                "blacklist": "Schwarze Liste",
+                "type": {
+                    "label": "Typ",
+                    "hint": "Wählen Sie aus, ob die Spielfiguren das Gebiet patrouillieren oder dessen Ränder bewachen sollen",
+                    "choices": {
+                        "area": "Fläche",
+                        "edge": "Kante"
+                    }
+                },
+                "weight": {
+                    "label": "Gewicht",
+                    "hint": "Wie stark dieser Bereich im Patrouillenalgorithmus gewichtet wird. Höhere Gewichtungen werden gegenüber niedrigeren bevorzugt."
+                },
+                "darkness": {
+                    "min": {
+                        "label": "Dunkelheit Min",
+                        "hint": "Mindestdunkelheitsgrad, ab dem dieses Gebiet für eine Streife in Betracht kommt."
+                    },
+                    "max": {
+                        "label": "Darkness Max",
+                        "hint": "Maximaler Dunkelheitsgrad für dieses Gebiet, das für eine Patrouille in Betracht kommt."
+                    },
+                    "validationError": "Der Mindestwert für „Dunkelheit“ muss kleiner sein als der Höchstwert für „Dunkelheit“."
+                }
+            }
+        }
+    }
+}

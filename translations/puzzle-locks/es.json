@@ -1,0 +1,335 @@
+{
+    "puzzle-locks": {
+        "settings": {},
+        "general-lock-config": {
+            "header-buttons": {
+                "copyContentLink": "Copiar enlace del contenido",
+                "unlock": "Rompecabezas abierto"
+            },
+            "title": "Configuración general de los cierres",
+            "permissionWarning": "La propiedad predeterminada de este documento no está configurada como «Ninguna». Es posible que los jugadores puedan eludir el bloqueo en determinadas circunstancias. Se recomienda configurar la propiedad predeterminada como «Ninguna».",
+            "fixPermission": "Corregir la titularidad",
+            "label": {
+                "label": "Etiqueta",
+                "placeholder": "Sistema de seguridad para puertas"
+            },
+            "description": {
+                "label": "Descripción",
+                "placeholder": "Se trata de un sistema de seguridad para la puerta."
+            },
+            "unlocked": {
+                "label": "Desbloqueado"
+            },
+            "attempts": {
+                "label": "Intentos",
+                "notes": "Número de intentos permitidos; establece el valor en -1 para que sean ilimitados."
+            },
+            "lockType": {
+                "label": "Tipo de cierre",
+                "configure": "Configurar",
+                "none": "Ninguno (desactivado)",
+                "optgroupContext": "Requiere contexto",
+                "optgroupNoContext": "No se necesita contexto",
+                "notes": "El tipo de bloqueo que se utilizará para proteger el documento. Algunos bloqueos requieren información contextual para poder resolverlos, mientras que otros pueden resolverse sin necesidad de información externa."
+            },
+            "unlockSound": {
+                "label": "Desbloquear el sonido"
+            },
+            "interactionSound": {
+                "label": "Sonido de interacción"
+            },
+            "backgroundImage": {
+                "label": "Imagen de fondo"
+            },
+            "glow": {
+                "label": "Efecto de brillo",
+                "notes": "Activa los efectos de resplandor y sombra en los bordes y el texto; así, el tema quedará más adecuado para escenarios de ciencia ficción."
+            },
+            "textColor": {
+                "label": "Color del texto"
+            },
+            "primaryColor": {
+                "label": "Color primario",
+                "notes": "Es posible que algunos tipos de cerradura no utilicen este color. Déjalo en blanco para utilizar el color predeterminado de la cerradura."
+            },
+            "secondaryColor": {
+                "label": "Color secundario",
+                "notes": "Es posible que algunos tipos de cerradura no utilicen este color. Déjalo en blanco para utilizar el color predeterminado de la cerradura."
+            },
+            "primaryFont": {
+                "label": "Fuente principal"
+            },
+            "secondaryFont": {
+                "label": "Fuente secundaria",
+                "notes": "Es posible que algunos tipos de cerraduras no utilicen esta fuente."
+            },
+            "font": {
+                "inherit": "Heredar"
+            },
+            "unlockMacro": {
+                "label": "Desbloquear macro",
+                "notes": "Macro que se ejecuta cuando se desbloquea el documento. Dentro de la macro, puedes acceder a «object» para obtener el documento que se ha desbloqueado y a «user» para obtener el usuario que lo ha desbloqueado."
+            },
+            "permission": {
+                "label": "Acerca de los permisos de desbloqueo",
+                "notes": "Determina qué nivel de permiso obtiene un jugador sobre el documento al desbloquearlo, y si ese permiso se concede únicamente al jugador que lo ha desbloqueado o a todos los jugadores. Si el documento es una puerta, esta configuración se ignorará y la puerta quedará desbloqueada.",
+                "noChange": "Sin cambios",
+                "all": "Todos los jugadores",
+                "unlocking": "Desbloquear jugador"
+            }
+        },
+        "number-lock": {
+            "name": "Número/Glifo",
+            "description": "Un candado al estilo de un código PIN. El jugador debe introducir el código correcto para desbloquear el documento. Puedes sustituir los números por símbolos o imágenes para crear un candado más acorde con la temática.",
+            "playerInfo": "Dado que no se trata de un acertijo, el GM tendrá que dar a los jugadores pistas o instrucciones para introducir el código correcto.",
+            "code": {
+                "label": "Código"
+            },
+            "keypad": {
+                "label": "Teclado numérico"
+            }
+        },
+        "password-lock": {
+            "name": "Contraseña",
+            "description": "Un sencillo bloqueo con contraseña. El usuario debe introducir la contraseña correcta para desbloquear el documento.",
+            "playerInfo": "Dado que no se trata de un acertijo, el GM tendrá que dar a los jugadores pistas o instrucciones para introducir la contraseña correcta.",
+            "password": {
+                "label": "Contraseña",
+                "placeholder": "a$$w0rd"
+            }
+        },
+        "item-lock": {
+            "name": "Artículo",
+            "description": "Un candado que obliga al jugador a arrastrar y soltar uno o más objetos en las ranuras correctas para desbloquear el documento.",
+            "playerInfo": "Para resolver este rompecabezas, puedes proporcionar a los jugadores pistas contextuales o indicaciones que les ayuden a saber qué objetos van en cada sitio, o bien puedes utilizar imágenes específicas en las casillas que ofrezcan la información necesaria para adivinar cuáles son los objetos correctos.",
+            "item": {
+                "label": "Nombre del artículo"
+            },
+            "itemImage": {
+                "label": "Imagen de la ranura"
+            },
+            "deleteItems": {
+                "label": "Eliminar elementos",
+                "notes": "Si se marca esta casilla, los objetos se eliminarán del inventario del jugador al desbloquear el candado."
+            }
+        },
+        "switches-lock": {
+            "name": "Interruptores",
+            "description": "Un candado que obliga al jugador a colocar una serie de interruptores binarios en la posición correcta para desbloquear el documento.",
+            "playerInfo": "Dado que no se trata de un acertijo, el director de juego deberá dar a los jugadores pistas o instrucciones para configurar los interruptores correctamente.",
+            "switchesSolution": {
+                "label": "Configuración de conmutadores",
+                "notes": "La solución consiste en la configuración de los interruptores en el formato «0110». Cada dígito representa un interruptor: el 0 significa «apagado» y el 1, «encendido». Puedes tener tantos interruptores como quieras."
+            },
+            "showSwitches": {
+                "label": "Mostrar interruptores",
+                "notes": "Si se muestran los botones del interruptor. Si se desactiva, solo se mostrarán las luces de estado de encendido/apagado."
+            }
+        },
+        "cryptex-lock": {
+            "name": "Cryptex",
+            "description": "Una cerradura que obliga al jugador a girar un conjunto de cilindros hasta la posición correcta para dar con la solución. Se pueden utilizar emojis o glifos para representar los caracteres de los cilindros. Cada cilindro puede tener un conjunto diferente de caracteres.",
+            "playerInfo": "Para resolver este acertijo, puedes dar a los jugadores pistas contextuales externas que les permitan identificar a algunos o a todos los personajes o, al limitar el número de personajes por cilindro, los jugadores pueden adivinar la solución por ensayo y error.",
+            "solution": {
+                "label": "Solución"
+            },
+            "cylinder": {
+                "label": "Cilindro",
+                "notes": "El cilindro que utiliza el críptico. Cada carácter del cilindro debe ir separado por una coma."
+            },
+            "glyphs": {
+                "label": "Glifos",
+                "notes": "Los glifos que se pueden utilizar en el críptico. Cada glifo debe ir separado por una coma."
+            }
+        },
+        "sudoku-lock": {
+            "name": "Sudoku",
+            "description": "Un candado que obliga al jugador a resolver un sudoku para desbloquear el documento. Los números predeterminados pueden sustituirse por imágenes o glifos para crear un candado más acorde con la temática.",
+            "playerInfo": "Para resolver este rompecabezas, los jugadores necesitarán conocimientos sobre las reglas del sudoku, o bien puedes darles una pista o instrucciones sobre cómo resolverlo.",
+            "generate": "Generar un sudoku",
+            "difficulty": {
+                "label": "Dificultad"
+            },
+            "grid": {
+                "4": "4x4",
+                "9": "9x9",
+                "label": "Cuadrícula"
+            },
+            "sudoku": {
+                "label": "Sudoku"
+            },
+            "key": {
+                "label": "Clave"
+            }
+        },
+        "image-wheel": {
+            "name": "Rueda de imágenes",
+            "description": "Un cierre que obliga al jugador a girar un conjunto de anillos concéntricos hasta la posición correcta para alinear la imagen.",
+            "playerInfo": "No se necesita ningún contexto externo para resolver este rompecabezas; los jugadores solo tienen que girar las ruedas hasta que la imagen quede alineada.",
+            "image": {
+                "label": "Imagen"
+            },
+            "wheelCount": {
+                "label": "Número de ruedas"
+            },
+            "angleStep": {
+                "label": "Paso angular"
+            },
+            "fixed": {
+                "label": "Bicicleta de piñón fijo",
+                "notes": "La rueda que no debe girarse. Siendo 1 la rueda más exterior."
+            }
+        },
+        "mastermind-lock": {
+            "name": "El cerebro",
+            "description": "Un candado que obliga al jugador a adivinar la combinación correcta de colores o letras para desbloquear el documento. Cada vez que el jugador intente desbloquearlo, recibirá información sobre cuántos colores o letras son correctos y están en la posición adecuada. El verde indica que el color y la posición son correctos; el amarillo, que el color es correcto pero la posición es errónea; y el rojo, que el color es incorrecto.",
+            "playerInfo": "Para resolver este rompecabezas, los jugadores pueden utilizar la información obtenida en intentos anteriores para hacer conjeturas fundamentadas sobre la combinación correcta. Aunque el metaconocimiento no es estrictamente necesario, puede ayudar a los jugadores a hacer conjeturas más fundamentadas.",
+            "reset": "Restablecer",
+            "solution": {
+                "label": "Solución",
+                "notes": "La solución al acertijo de la cerradura. Cada color o letra debe ir separado por una coma. Puedes utilizar colores CSS como «red» o códigos hexadecimales como «#ff0000»."
+            },
+            "pipOptions": {
+                "label": "Clavijas",
+                "notes": "Los colores o letras que el jugador puede utilizar para adivinar la solución. Cada color o letra debe ir separado por una coma. Puedes utilizar colores CSS, como «red», o códigos hexadecimales, como «#ff0000»."
+            }
+        },
+        "fill-blanks-lock": {
+            "name": "Rellena los huecos",
+            "description": "Un candado que obliga al jugador a completar los espacios en blanco de un texto para desbloquear el documento. El jugador debe introducir los caracteres correctos en el orden adecuado.",
+            "playerInfo": "Para resolver este acertijo, los jugadores pueden utilizar el contexto del mismo para rellenar los espacios en blanco. También puedes darles pistas o instrucciones sobre cómo resolverlo.",
+            "solution": {
+                "label": "Solución",
+                "notes": "La solución al ejercicio de rellenar los huecos. Este debería ser el texto completo con los huecos rellenados.",
+                "placeholder": "El zorro marrón y veloz salta por encima del perro perezoso."
+            },
+            "text": {
+                "label": "Texto",
+                "notes": "El texto con los espacios en blanco que el jugador debe completar. Utiliza guiones bajos para representar los espacios en blanco.",
+                "placeholder": "El zorro marrón _____ salta ____ el perro ____."
+            },
+            "caseSensitive": {
+                "label": "Distingue entre mayúsculas y minúsculas"
+            }
+        },
+        "mosaic-lock": {
+            "name": "Mosaico",
+            "description": "Un candado que obliga al jugador a resolver un rompecabezas de mosaico para desbloquear el documento. El jugador debe hacer clic en las fichas para girarlas y completar la imagen.",
+            "playerInfo": "No se necesita ningún contexto externo para resolver este rompecabezas; los jugadores solo tienen que girar las fichas hasta que la imagen quede completa.",
+            "mosaicImage": {
+                "label": "Imagen en mosaico",
+                "notes": "La imagen que el jugador debe completar. Se recomienda utilizar una imagen cuadrada para obtener los mejores resultados."
+            },
+            "mosaicSize": {
+                "label": "Tamaño del mosaico",
+                "notes": "El número de filas y columnas del mosaico."
+            }
+        },
+        "sound-lock": {
+            "name": "Melodía",
+            "description": "Un candado que obliga al jugador a escuchar una melodía e introducir la secuencia correcta de notas para desbloquear el documento.",
+            "playerInfo": "Aunque no se necesita ningún contexto externo para resolver este rompecabezas, los jugadores deberán tener buen oído musical para resolverlo. A los jugadores más familiarizados con la teoría musical les resultará más fácil resolverlo.",
+            "sequence": {
+                "label": "Secuencia",
+                "notes": "La secuencia de notas que el usuario debe introducir para desbloquear el documento. Cada nota debe ir separada por una coma. Puedes utilizar las siguientes notas: C, C#, D, D#, E, F, F#, G, G#, A, A#, Si. También puedes utilizar la siguiente notación para subir o bajar de octava: +C, -C, ++A, --B. Para establecer una duración personalizada por nota (en milisegundos), puedes utilizar la siguiente notación: C500, D#1000."
+            },
+            "chordDuration": {
+                "label": "Duración",
+                "notes": "La duración de cada nota en milisegundos."
+            },
+            "pauseBetweenNotes": {
+                "label": "Pausa entre notas",
+                "notes": "La duración de la pausa entre cada nota, expresada en milisegundos."
+            }
+        },
+        "fifteen-lock": {
+            "name": "Fichas deslizantes",
+            "description": "Un candado que obliga al jugador a resolver un rompecabezas de fichas deslizantes para desbloquear el documento. El jugador debe deslizar las fichas hasta formar la imagen correcta. La ficha vacía debe quedar en la esquina inferior derecha para desbloquear el documento.",
+            "playerInfo": "No hace falta ningún contexto externo para resolver este rompecabezas; los jugadores solo tienen que deslizar las fichas hasta completar la imagen.",
+            "shuffleDialog": "Movimientos aleatorios:",
+            "image": {
+                "label": "Imagen",
+                "notes": "La imagen que el jugador debe formar deslizando las fichas. Se recomienda utilizar una imagen cuadrada para obtener los mejores resultados."
+            },
+            "size": {
+                "label": "Cuadrícula",
+                "notes": "El número de filas y columnas del rompecabezas deslizante."
+            }
+        },
+        "four-by-four-lock": {
+            "name": "Peones y estrellas",
+            "description": "Un rompecabezas en el que el jugador debe colocar fichas en un tablero para formar un patrón específico. Algunas casillas contienen estrellas que deben cubrirse con fichas; el número de estrellas que hay que cubrir se indica a continuación y depende del tamaño del tablero. Cada fila y cada columna debe contener exactamente el número de fichas indicado en los encabezados de la columna o la fila.",
+            "playerInfo": "Si las estrellas están activadas, los jugadores necesitarán una pista para saber cuántas estrellas deben cubrir. De lo contrario, es posible resolver el rompecabezas sin necesidad de información externa.",
+            "pawnImage": {
+                "label": "Imagen de un peón",
+                "notes": "La imagen que representa a los peones."
+            },
+            "starImage": {
+                "label": "Imagen de una estrella",
+                "notes": "La imagen que representa las estrellas."
+            },
+            "noStars": {
+                "label": "Ignorar las estrellas",
+                "notes": "Si se marca esta casilla, se eliminarán las estrellas y el jugador solo tendrá que colocar las fichas en las posiciones correctas."
+            },
+            "gridSize": {
+                "label": "Tamaño de la cuadrícula",
+                "notes": "El número de filas y columnas de la cuadrícula."
+            },
+            "generate": "Generar rompecabezas",
+            "puzzleGrid": {
+                "label": "Cuadrícula del rompecabezas",
+                "notes": "La cuadrícula del rompecabezas. Si quieres crear tu propio rompecabezas, sigue la sintaxis de uno generado. Aquí se muestra el estado resuelto, donde 0 es una casilla vacía, 1 es una ficha, 2 es una estrella y 3 es una ficha sobre una estrella."
+            },
+            "pawnNumber": "Peones que hay que colocar",
+            "starNumber": "Estrellas que hay que cubrir"
+        },
+        "match-lock": {
+            "name": "Emparejamiento de palabras e imágenes",
+            "description": "Un candado que obliga al jugador a acertar las palabras para desbloquear el documento. Si se ha establecido una palabra secreta, las letras incorrectas se tacharán y las restantes formarán la palabra secreta. En este caso, los jugadores deben introducir la palabra secreta para desbloquear el documento.",
+            "playerInfo": "Para resolver este acertijo, los jugadores pueden utilizar el contexto del mismo para emparejar las palabras. También puedes darles pistas o instrucciones sobre cómo resolverlo.",
+            "enterSecretWord": "Introduce la palabra secreta.",
+            "matchTable": {
+                "label": "Tabla de partidos",
+                "notes": "La tabla que contiene las palabras que hay que emparejar; también puedes utilizar rutas de imágenes en lugar de palabras. La primera columna contiene las palabras que hay que emparejar, y la segunda columna, las palabras con las que hay que emparejarlas. Cada par de palabras debe ir separado por el carácter «|» (barra vertical).\nLa columna de la izquierda se mostrará tal y como está escrita, mientras que la de la derecha se mezclará."
+            },
+            "secretWord": {
+                "label": "Palabra secreta",
+                "notes": "Si se activa esta opción, aparecerán letras aleatorias repartidas por la zona central del rompecabezas; una vez que el jugador haya encajado las palabras correctamente, las letras incorrectas se tacharán y las restantes formarán la palabra secreta."
+            },
+            "dictionary": {
+                "label": "Diccionario",
+                "notes": "El diccionario que se utilizará para las letras aleatorias."
+            }
+        },
+        "flags": {},
+        "attempts": "Intentos restantes",
+        "headerConfig": "Cerradura de rompecabezas",
+        "unlocked": "Desbloqueado",
+        "how-to": "¿Cómo funciona esto?",
+        "how-to-player": "Instrucciones para los jugadores",
+        "chatMessage": "está intentando desbloquear",
+        "sidebar-buttons": {
+            "unlock": "Intentar desbloquear",
+            "configure": "Configurar el bloqueo",
+            "shareToChat": "Compartir en el chat",
+            "zoomPlus": "Acercar",
+            "zoomMinus": "Alejar la imagen",
+            "shuffle": "Rompecabezas de mezclar",
+            "close": "Cerrar"
+        },
+        "notifications": {
+            "noLock": "Este documento no está bloqueado.",
+            "alreadyUnlocked": "Este documento ya está desbloqueado.",
+            "noLockSelected": "No se ha seleccionado ningún tipo de cierre.",
+            "unlocked": "Desbloqueado.",
+            "noGM": "Es necesario que un GM haya iniciado sesión para que puedas desbloquear este documento.",
+            "failedAttempt": "No se ha podido desbloquear.",
+            "contentLinkCopied": "El enlace al contenido se ha copiado en el portapapeles.",
+            "locked": "Este documento está bloqueado. Como GM, puedes abrirlo con normalidad.",
+            "resetSuccess": "El rompecabezas se ha restablecido correctamente.",
+            "ownershipFixed": "La propiedad predeterminada está establecida en «Ninguna».",
+            "noAttempts": "Ya no quedan intentos."
+        }
+    }
+}

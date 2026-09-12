@@ -1,0 +1,184 @@
+{
+    "spotlight-omnisearch": {
+        "KEYBINDING": "Tastenbelegung",
+        "settings": {
+            "compendiumConfig": {
+                "name": "Konfiguration des Kompendiums",
+                "hint": "Legen Sie fest, welche Kompendien in die Suchergebnisse einbezogen werden sollen",
+                "label": "Kompendien konfigurieren"
+            },
+            "gmOnly": {
+                "name": "Nur für GM",
+                "hint": "Nur der Spielleiter kann die „Spotlight Omnisearch“ öffnen."
+            },
+            "compactMode": {
+                "name": "Kompaktmodus",
+                "hint": "Verwenden Sie für die Spotlight-Omnisuche ein kompaktes Layout. Dadurch werden Beschreibungen ausgeblendet und die Größe der Suchergebnisse reduziert."
+            },
+            "clickToDismiss": {
+                "name": "Zum Schließen hier klicken",
+                "hint": "Klicken Sie außerhalb des „Spotlight Omnisearch“-Fensters, um es zu schließen"
+            },
+            "saveLastSearch": {
+                "name": "Letzte Suche speichern",
+                "hint": "Die letzte Suchanfrage und die Ergebnisse für das nächste Öffnen von Spotlight Omnisearch speichern"
+            },
+            "useHistory": {
+                "name": "Suchverlauf verwenden",
+                "hint": "Verwende den Suchverlauf, um frühere Suchanfragen vorzuschlagen"
+            },
+            "enableCtrlSpace": {
+                "name": "„Strg + Leertaste“ aktivieren",
+                "hint": "Aktivieren Sie die Tastenkombination Strg + Leertaste, um die Spotlight-Omnisuche zu öffnen – da diese Tastenbelegung das Tastenbelegungssystem von Core Foundry umgeht, funktioniert sie auch in Eingabefeldern und Textbereichen."
+            },
+            "position": {
+                "name": "Position",
+                "hint": "Legen Sie die Position der Spotlight-Omnisearch auf dem Bildschirm fest",
+                "choices": {
+                    "default": "Standard (Mitte)",
+                    "save": "Letzte Position speichern",
+                    "mouse": "An der Mausposition öffnen"
+                }
+            },
+            "alwaysOnTop": {
+                "name": "Immer ganz oben",
+                "hint": "„Spotlight Omnisearch“ immer im Vordergrund anzeigen"
+            },
+            "spotlightWidth": {
+                "name": "Breite des Lichtflecks",
+                "hint": "Legen Sie die Breite der Spotlight-Omnisuche in Pixeln fest"
+            },
+            "showImages": {
+                "name": "Bilder anzeigen",
+                "hint": "Bilder in den Suchergebnissen anzeigen. Bilder verlängern die Ladezeiten der Ergebnisse und können je nach Anzahl der Ergebnisse und Größe der Bilder zu Rucklern führen."
+            },
+            "searchFiles": {
+                "name": "Dateien suchen",
+                "hint": "Dateisuchergebnisse einbeziehen (erfordert den Dateiindex aus dem Modul „Dig Down“)"
+            },
+            "searchSettings": {
+                "name": "Sucheinstellungen",
+                "hint": "Spieleinstellungen in die Suchergebnisse einbeziehen"
+            },
+            "searchCompendium": {
+                "name": "Kompendium durchsuchen",
+                "hint": "Suchergebnisse aus dem Kompendium einbeziehen"
+            },
+            "fullCompendiumJournalIndex": {
+                "name": "Vollständiger Index der Fachzeitschriften",
+                "hint": "Seiten und Kopfzeilen in die Indizierung der Zeitschriftenkompendien einbeziehen. Dies verlängert die Initialisierungszeit des Indexes. Es wird empfohlen, diese Option zu deaktivieren, wenn Sie über eine große Anzahl von Zeitschriftenkompendien verfügen."
+            },
+            "searchSidebar": {
+                "name": "Suchleiste",
+                "hint": "Suchergebnisse in die Registerkarte der Seitenleiste einbeziehen"
+            },
+            "searchUtils": {
+                "name": "Suchfunktionen",
+                "hint": "Suchergebnisse für Versorgungsunternehmen einbeziehen"
+            },
+            "useMetricForLights": {
+                "name": "Verwende metrische Maße für die Beleuchtung",
+                "hint": "Schnelle Lichteffekte mit metrischen Einheiten verwenden"
+            }
+        },
+        "hotkeys": {
+            "toggleSpotlight": {
+                "name": "Spotlight-Omnisearch umschalten"
+            }
+        },
+        "recent-searches": "Letzte Suchanfragen",
+        "recent-tooltip": "Letzte Suchanfragen löschen",
+        "app": {},
+        "flags": {},
+        "actions": {
+            "execute": "Ausführen",
+            "activate": "Aktivieren",
+            "preload": "Vorlast",
+            "view": "Anzeigen",
+            "roll-table": "Rolltisch",
+            "play-playlist": "Playlist abspielen",
+            "stop-playlist": "Playlist anhalten",
+            "use-item": "Gegenstand verwenden",
+            "playForEveryone": "Spielen für alle"
+        },
+        "notifications": {
+            "calc-clipboard": "Ergebnis in die Zwischenablage kopiert",
+            "note": "Notiz im Journal „Omnisearch Notes“ gespeichert",
+            "timer-gm": "Nur der Spielleiter kann einen Timer starten",
+            "tracker-gm": "Nur der Spielleiter kann den Erfolgs-/Misserfolgs-Zähler verwenden."
+        },
+        "special": {
+            "note": {
+                "name": "Kurzer Hinweis",
+                "local-keyword": "Anmerkung"
+            },
+            "roll": {
+                "name": "Schnellrolle",
+                "local-keyword": "Rolle"
+            },
+            "help": {
+                "name": "Hilfe",
+                "local-keyword": "Hilfe",
+                "list": [
+                    "Umschalt + Leertaste, um die Spotlight-Omnisuche zu öffnen",
+                    "Drücken Sie die Escape-Taste oder klicken Sie außerhalb des Fensters (optional, standardmäßig deaktiviert), um die Spotlight-Omnisuche zu schließen",
+                    "Drücken Sie die Eingabetaste, um das erste Ergebnis zu bestätigen",
+                    "Umschalt / Alt + Eingabetaste, um die erste oder zweite Aktion des ersten Ergebnisses auszuführen",
+                    "Sonderbefehle: „help“, „note“, „roll“, „timer“, „tracker“, „counter“ oder gib einen mathematischen Ausdruck ein, um ihn zu berechnen",
+                    "! um die Suchergebnisse nach Typ zu filtern (!item, !actor). Filter:"
+                ]
+            },
+            "timer": {
+                "name": "Timer",
+                "timeLeft": "Verbleibende Zeit",
+                "local-keyword": "Timer",
+                "expired": "Der Timer ist abgelaufen!"
+            },
+            "light": {
+                "torch": "Fackel",
+                "lantern": "Laterne",
+                "lantern-shut": "Laterne (mit Abdeckung)",
+                "off": "Licht entfernen",
+                "candle": "Kerze",
+                "magical": "Magisches Licht",
+                "flashlight": "Taschenlampe",
+                "info": "Licht auf ausgewählte Token anwenden"
+            },
+            "tracker": {
+                "name": "Erfolgs-/Misserfolgs-Tracker",
+                "local-keyword": "Tracker"
+            },
+            "counter": {
+                "name": "Zähler",
+                "local-keyword": "Zähler"
+            },
+            "kill": {
+                "name": "Töten",
+                "description": "Die ausgewählten Token löschen"
+            },
+            "heal": {
+                "name": "Heilen"
+            },
+            "damage": {
+                "name": "Schaden"
+            },
+            "restore": {
+                "name": "Wiederherstellen",
+                "description": "Die ausgewählten Token wieder vollständig auf den ursprünglichen Zustand zurücksetzen"
+            },
+            "reindex": {
+                "name": "Inhaltsverzeichnis",
+                "description": "Den Suchindex für Spotlight Omnisearch neu erstellen"
+            },
+            "darkness": {
+                "night": "Nacht",
+                "dawn": "Morgendämmerung",
+                "day": "Tag",
+                "dusk": "Abenddämmerung"
+            },
+            "attribute": {
+                "name": "Attribut"
+            }
+        }
+    }
+}

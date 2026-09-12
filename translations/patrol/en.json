@@ -1,0 +1,113 @@
+{
+    "patrol": {
+        "patrol-app": {
+            "title": "Patrol Panel",
+            "selectAll": "Step All",
+            "selectSingle": "Step Selected",
+            "stepBackward": "Step Backward",
+            "stepForward": "Step Forward",
+            "toggleStepping": "Toggle Patrol",
+            "toggleSteppingDisabled": "Auto Patrol is disabled in Combat and while stepping single Tokens"
+        },
+        "settings": {
+            "patrolMaxSuspicious": {
+                "name": "Max Suspicious Steps",
+                "hint": "Number of steps a token looks around before trying to chase a PC"
+            },
+            "patrolMaxAlerted": {
+                "name": "Max Alerted Steps",
+                "hint": "Number of steps a token must have line of sight on a chased PC before actually spotting it"
+            },
+            "patrolSound": {
+                "name": "Spotted Sound",
+                "hint": "Sound to play when a PC is spotted by an enemy"
+            },
+            "patrolAlert": {
+                "name": "Alerted Sound",
+                "hint": "Sound to play when an enemy is alerted by a PC"
+            },
+            "openApplication": {
+                "name": "Patrol Panel",
+                "hint": "Open the Patrol Panel. You can also Alt+LClick on the Patrol button in Token Scene Controls or use the 'ui.patrolApp.render({ force: true })' macro command.",
+                "label": "Open Patrol Panel"
+            },
+            "minStepDelay": {
+                "name": "Minimum Step Delay",
+                "hint": "Minimum delay between steps in milliseconds. Actual time between movements will be dependant on Foundry's Token updates and Token movement on the map. Lower values can be resource intensive."
+            },
+            "hidePatrolButtonInSidebar": {
+                "name": "Hide Patrol Panel button in Sidebar",
+                "hint": "Hide the Patrol Panel button in the Actor Directory sidebar. You can still use the 'ui.patrolApp.render({ force: true })' macro command or Alt+LClick on the Patrol button in Token Scene Controls."
+            },
+            "migrateOnStartupDialog": {
+                "name": "Open migration dialog on startup",
+                "hint": "If enabled, the module will open a dialog to migrate the data from the V13 data structure to the V14 one on startup."
+            }
+        },
+        "tokenConfig": {
+            "enablePatrol": {
+                "name": "Enable Patrol"
+            },
+            "enableSpotting": {
+                "name": "Spot Player Characters",
+                "hint": "Having multiple spotting tokens can be resource intensive. Handle with care."
+            },
+            "doorBehavior": {
+                "name": "Can Pass Doors?",
+                "choices": {
+                    "useRegionSettings": "Use Region Settings (also uses Region's 'Leave Door Open')",
+                    "unlocked": "Unlocked Doors",
+                    "locked": "Locked Doors",
+                    "secret": "Secret Doors"
+                }
+            },
+            "leaveDoorOpen": {
+                "name": "Leave Door Open",
+                "hint": "Chance that the Token will leave a door open after passing through it"
+            }
+        },
+        "statusEffects": {
+            "patrolundetectable": {
+                "name": "Patrol - Undetectable"
+            }
+        },
+        "tools": {
+            "patrolToggle": {
+                "app": "Toggle Patrol Panel",
+                "stepping": "Toggle Token Patrol"
+            }
+        }
+    },
+    "TYPES": {
+        "RegionBehavior": {
+            "patrol": {
+                "patrolArea": "Patrol Area",
+                "whitelist": "Whitelist",
+                "blacklist": "Blacklist",
+                "type": {
+                    "label": "Type",
+                    "hint": "Choose if tokens will patrol the area or guard its edges",
+                    "choices": {
+                        "area": "Area",
+                        "edge": "Edge"
+                    }
+                },
+                "weight": {
+                    "label": "Weight",
+                    "hint": "How much weight this area has in the patrol algorithm. Higher weights will be preferred over lower ones."
+                },
+                "darkness": {
+                    "min": {
+                        "label": "Darkness Min",
+                        "hint": "Minimum darkness level for this area to be considered for patrol."
+                    },
+                    "max": {
+                        "label": "Darkness Max",
+                        "hint": "Maximum darkness level for this area to be considered for patrol."
+                    },
+                    "validationError": "Darkness min must be lower than darkness max."
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+{
+    "epic-rolls-5e": {
+        "check": "Überprüfen",
+        "save": "Speichern",
+        "death": "Tod",
+        "success": "Erfolg",
+        "failure": "Versagen",
+        "button-tooltip": "Epischen Wurf konfigurieren<hr>Rechtsklick für aktuelle Würfe",
+        "complete-roll": "Schließe die epische Rolle ab",
+        "epicRoll": "Epische Rolle",
+        "settings": {
+            "introSound": {
+                "name": "Intro-Sound",
+                "hint": "Der Ton, der abgespielt wird, wenn die Rolle gestartet wird"
+            },
+            "successSound": {
+                "name": "Erfolgssound",
+                "hint": "Der Sound, der abgespielt wird, wenn der Wurf erfolgreich ist"
+            },
+            "failureSound": {
+                "name": "Fehlerton",
+                "hint": "Der Ton, der abgespielt wird, wenn der Wurf fehlschlägt"
+            },
+            "recapMessage": {
+                "name": "Zusammenfassung der Nachricht",
+                "hint": "Konfigurieren Sie, wer die angezeigte Nachricht sehen kann, sobald der epische Wurf abgeschlossen ist",
+                "options": {
+                    "none": "Keiner",
+                    "gm": "GM",
+                    "public": "Öffentlich"
+                }
+            },
+            "cleanupMessages": {
+                "name": "Bereinigungsnachrichten",
+                "hint": "Löschen Sie die Rollmeldungen, nachdem der epische Wurf abgeschlossen ist"
+            }
+        },
+        "get-roll-data": {
+            "customFormula": "Benutzerdefinierte Formel",
+            "customLabel": "Etikett",
+            "customLabelNotes": "Individuelles Einführungsetikett für die Rolle",
+            "formula": "Formel",
+            "title": "Konfigurieren Sie Epic Roll",
+            "startRoll": "Starten Sie Epic Roll",
+            "macro": "Als Makro speichern",
+            "save-macro": "Erstelltes Epic Roll-Makro für",
+            "player": "Spielercharakter",
+            "npc": "Nicht-Spieler-Charakter",
+            "selected": "Ausgewählt",
+            "available": "Verfügbar",
+            "rollOptions": "Rollenoptionen",
+            "VsDCNotes": "Der DC für die Rolle",
+            "showDC": "DC anzeigen",
+            "showDCNotes": "Wenn diese Option aktiviert ist, ist der DC für Spieler sichtbar",
+            "useAverage": "Verwenden Sie „Durchschnitt“.",
+            "useAverageNotes": "Nutzen Sie den Durchschnitt aller Ergebnisse, um Erfolg oder Misserfolg zu bestimmen",
+            "allowReroll": "Neurollen zulassen",
+            "allowRerollNotes": "Ermöglichen Sie den Spielern, ihren Wurf zu wiederholen",
+            "showRollResults": "Rollergebnisse anzeigen",
+            "showRollResultsNotes": "Ob der Outro-Text „Erfolg/Misserfolg“ angezeigt werden soll",
+            "blindRoll": "Blindrolle",
+            "blindRollNotes": "Verstecken Sie die Ergebnisse der Würfe vor den Spielern",
+            "hideNames": "Namen ausblenden",
+            "hideNamesNotes": "Verstecken Sie die Namen von Schauspielern, die nicht im Besitz des Spielers sind, vor den Spielern",
+            "color": "Farbe",
+            "colorNotes": "Die Farbe des Rollbanners",
+            "autoColor": "Automatische Farbe",
+            "autoColorNotes": "Färben Sie das Rollbanner automatisch basierend auf der Art der Rolle",
+            "contest": "Wettbewerb",
+            "contestInfo": "Um Teilnehmer zu markieren, klicken Sie mit der rechten Maustaste auf einen Schauspieler und/oder eine Rolle",
+            "saveDefaultOptions": "Als Standard speichern",
+            "saveDefaultOptionsNotification": "Aktuelle Optionen als Standard gespeichert",
+            "ERROR": {
+                "noActors": "Für die Rolle wurden keine Schauspieler ausgewählt. Bitte wählen Sie mindestens einen Schauspieler aus",
+                "noType": "Für die Rolle wurde kein Typ ausgewählt. Bitte wählen Sie einen Typ aus",
+                "noContestants": "Es wurde ein umstrittener Rollentyp ausgewählt, aber es wurden keine Teilnehmer ausgewählt",
+                "noContest": "Teilnehmer wurden ausgewählt, es wurde jedoch kein Wettbewerbstyp ausgewählt",
+                "noDC": "Für den Wurf wurde kein DC eingegeben, bitte geben Sie einen DC ein"
+            }
+        },
+        "flags": {}
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "tidbits": {
+        "message": {
+            "didYouKnow": "Wussten Sie?",
+            "tidbits": "Leckerbissen",
+            "reroll": "Noch einer!"
+        },
+        "settings": {
+            "showChatMessage": {
+                "name": "Chat-Nachricht anzeigen",
+                "hint": "Zeigen Sie einen Leckerbissen im Chat als Flüstern beim Anmelden an",
+                "choices": {
+                    "everyone": "Alle",
+                    "players": "Spieler",
+                    "gamemaster": "Spielleiter",
+                    "none": "Keiner"
+                }
+            },
+            "showLoadingScreen": {
+                "name": "Ladebildschirm anzeigen",
+                "hint": "Zeigen Sie beim Laden einer Szene einen Leckerbissen an",
+                "choices": {
+                    "everyone": "Alle",
+                    "players": "Spieler",
+                    "gamemaster": "Spielleiter",
+                    "none": "Keiner"
+                }
+            },
+            "startupLoadingScreen": {
+                "name": "Startup-Leckerbissen",
+                "hint": "Zeit in Sekunden zum Ausblenden des Startup-Leckerbissens, 0 zum Deaktivieren"
+            },
+            "loadingScreenMinimumDuration": {
+                "name": "Verzögerung beim Ausblenden des Ladebildschirms",
+                "hint": "Die Zeit in Sekunden, die der Ladebildschirm nach dem Laden der Szene sichtbar bleibt"
+            },
+            "loadingScreenGradient": {
+                "name": "Ladebildschirmverlauf",
+                "hint": "Decken Sie die Hälfte des Bildes mit einem Farbverlauf ab, um den Text besser lesbar zu machen, und wenden Sie einen Unschärfefilter auf das Bild an"
+            },
+            "pauseText": {
+                "name": "Text anhalten",
+                "hint": "Zeigen Sie Leckerbissen anstelle des Textes „Spiel pausiert“."
+            },
+            "useDefaultSources": {
+                "name": "Verwenden Sie Standardquellen",
+                "hint": "Verwenden Sie die standardmäßigen Leckerbissenquellen"
+            },
+            "customSource": {
+                "name": "Benutzerdefinierte Quelle",
+                "hint": "Benutzerdefinierte JSON-Datei zur Verwendung als Leckerbissenquelle. Zum Deaktivieren leer lassen."
+            },
+            "imageSource": {
+                "name": "Bildquelle",
+                "hint": "Ordner zur Verwendung in Ladebildschirmen, zum Deaktivieren leer lassen."
+            },
+            "autoCycle": {
+                "name": "Automatischer Zyklus",
+                "hint": "Zeit in Sekunden, nach der die Leckerbissen im Pausentext durchlaufen werden. \n0 zum Deaktivieren."
+            },
+            "didYouKnowText": {
+                "name": "Wussten Sie Text?",
+                "hint": "Benutzerdefinierter Text, der anstelle des Standardtextes „Wussten Sie schon?“ verwendet werden soll. \nText."
+            }
+        }
+    }
+}

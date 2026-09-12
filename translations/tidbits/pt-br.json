@@ -1,0 +1,67 @@
+{
+    "tidbits": {
+        "message": {
+            "didYouKnow": "Você sabia?",
+            "tidbits": "Petiscos",
+            "reroll": "Outro!"
+        },
+        "settings": {
+            "showChatMessage": {
+                "name": "Mostrar mensagem de bate-papo",
+                "hint": "Mostre um boato no bate-papo como um sussurro no login",
+                "choices": {
+                    "everyone": "Todos",
+                    "players": "Jogadoras",
+                    "gamemaster": "Mestre do jogo",
+                    "none": "Nenhum"
+                }
+            },
+            "showLoadingScreen": {
+                "name": "Mostrar tela de carregamento",
+                "hint": "Mostre um detalhe ao carregar uma cena",
+                "choices": {
+                    "everyone": "Todos",
+                    "players": "Jogadoras",
+                    "gamemaster": "Mestre do jogo",
+                    "none": "Nenhum"
+                }
+            },
+            "startupLoadingScreen": {
+                "name": "Hora do aperitivo de inicialização",
+                "hint": "Tempo em segundos para ocultar o Tidbit de inicialização, 0 para desativar"
+            },
+            "loadingScreenMinimumDuration": {
+                "name": "Atraso no fade out da tela de carregamento",
+                "hint": "O tempo em segundos para manter a tela de carregamento visível após a cena ser carregada"
+            },
+            "loadingScreenGradient": {
+                "name": "Carregando gradiente da tela",
+                "hint": "Cubra metade da imagem com um gradiente para tornar o texto mais legível e aplique um filtro de desfoque à imagem"
+            },
+            "pauseText": {
+                "name": "Pausar texto",
+                "hint": "Mostrar petiscos em vez do texto 'Jogo pausado'"
+            },
+            "useDefaultSources": {
+                "name": "Use fontes padrão",
+                "hint": "Use as fontes de informações padrão"
+            },
+            "customSource": {
+                "name": "Fonte personalizada",
+                "hint": "Arquivo JSON personalizado para usar como fonte de petiscos, deixe em branco para desativar."
+            },
+            "imageSource": {
+                "name": "Fonte da imagem",
+                "hint": "Pasta de para usar nas telas de carregamento, deixe vazia para desabilitar."
+            },
+            "autoCycle": {
+                "name": "Ciclo automático",
+                "hint": "Tempo em segundos após o qual percorrer os petiscos no texto de pausa. \n0 para desabilitar."
+            },
+            "didYouKnowText": {
+                "name": "Você sabia o texto",
+                "hint": "Texto personalizado para usar no lugar do padrão 'Você sabia?' \ntexto."
+            }
+        }
+    }
+}

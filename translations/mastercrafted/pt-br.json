@@ -1,0 +1,205 @@
+{
+    "mastercrafted": {
+        "mastercrafted": "Receita elaborada com maestria",
+        "craft": "Artesanato",
+        "show-recipes": "Mostrar receitas",
+        "craftDialog": {
+            "title": "Artesanato",
+            "craft": "Artesanato",
+            "cancel": "Cancelar",
+            "consumes": "Consome",
+            "crafts": "Artesanato",
+            "crafted": "Feito à mão"
+        },
+        "componentEditForm": {
+            "title": "Configuração de componentes",
+            "name": {
+                "label": "Nome",
+                "hint": "Nome usado para identificar o item que será consumido como componente na criação."
+            },
+            "img": "Imagem",
+            "quantity": "Quantidade",
+            "uuid": {
+                "label": "Item",
+                "hint": "Item que será exibido ao clicar. Observe que alterar esse item não atualizará o nome nem a imagem do componente."
+            },
+            "resourcePath": {
+                "title": "Configuração de recursos",
+                "hint": "O caminho para um recurso do ator. Se o item não estiver presente no inventário, a criação consumirá o recurso do ator responsável pela criação, em vez do item.",
+                "label": "Caminho do recurso"
+            },
+            "tags": {
+                "title": "Configuração de tags",
+                "hint": "Uma lista de tags que definem itens alternativos para este componente. Se o item principal não estiver presente no inventário, a criação utilizará itens que correspondam a pelo menos uma tag no modo “Algumas” ou a todas as tags no modo “Todas”.",
+                "label": "Tags",
+                "mode": {
+                    "label": "Exigir",
+                    "every": "Todo",
+                    "some": "Alguns"
+                }
+            }
+        },
+        "recipeApp": {
+            "errors": {
+                "namemissing": "O campo “Nome” é obrigatório!",
+                "alreadyingredient": "Este item já faz parte dos ingredientes desta receita!",
+                "noJournal": "Abra um livro para configurar as categorias."
+            },
+            "bookcontext": {
+                "add": "Adicionar receita",
+                "edit": "Editar",
+                "delete": "Excluir",
+                "inspect": "Inspecionar",
+                "duplicate": "Duplicado",
+                "export": "Exportar",
+                "import": "Importar"
+            },
+            "editcreatebook": {
+                "title": "Editar/Criar livro",
+                "name": "Nome",
+                "namep": "Novo livro",
+                "description": "Descrição",
+                "image": "Imagem",
+                "sound": "Som",
+                "confirm": "Confirmar",
+                "tools": "Ferramentas",
+                "toolsplaceholder": "Lista de nomes de ferramentas separados por vírgulas",
+                "macro": "Condição",
+                "macroplaceholder": "Nome da macro ou comando",
+                "time": "Hora",
+                "timeplaceholder": "Tempo de confecção em minutos",
+                "edit": "Editar",
+                "create": "Criar",
+                "book": "Livro",
+                "recipe": "Receita",
+                "permission": "Autorização do jogador",
+                "expression": {
+                    "label": "Expressão",
+                    "placeholder": "Expressão"
+                },
+                "abilityDc": {
+                    "label": "DC",
+                    "placeholder": "DC"
+                },
+                "toolCheck": {
+                    "label": "Verificação de ferramentas",
+                    "placeholder": "Verificação de ferramentas"
+                },
+                "toolDc": {
+                    "label": "DC",
+                    "placeholder": "DC"
+                },
+                "abilityCheck": {
+                    "label": "Capacidade do sistema",
+                    "placeholder": "Capacidade do sistema"
+                },
+                "modifierList": {
+                    "add": "Adicionar modificador",
+                    "hint": "Se o resultado do lançamento ou o valor retornado pela expressão for igual ou maior que a CD (considerando-se o valor mais alto), o número de itens coletados é modificado de acordo com a expressão modificadora. Você pode incluir um operador matemático no início do modificador; se nenhum for fornecido, um sinal de mais (+) é assumido por padrão. Por exemplo, *1d4 multiplica o número de itens coletados por 1d4.",
+                    "label": "Modificador"
+                }
+            },
+            "configbookrecipe": {
+                "permissions": {
+                    "default": "Padrão",
+                    "allow": "Permitir",
+                    "deny": "Negar"
+                }
+            },
+            "recipeconfig": {
+                "inheritTools": "Herdar ferramentas",
+                "ingredientsInspection": "Inspeção de ingredientes",
+                "productInspection": "Inspeção de produtos",
+                "ingredients": "Ingredientes",
+                "result": "Resultado"
+            },
+            "title": "Feito com maestria",
+            "recipeBooks": "Livros de receitas",
+            "addRecipeBook": "Adicionar livro de receitas",
+            "filter": "Alternar tudo/Itens que podem ser criados",
+            "relinked": "Um ou mais itens estavam sem referências e foram vinculados novamente.",
+            "craft": "Criação — Mantenha a tecla Ctrl pressionada para criar rapidamente",
+            "searchRecipe": "Pesquisar receita",
+            "tools": "Ferramentas necessárias",
+            "time": "Hora das atividades manuais",
+            "minutes": "minutos",
+            "craftError": "Erro na criação",
+            "craftSuccess": "Fabricação bem-sucedida! Adicionado ao inventário: ",
+            "craftSuccessTimed": "Fabricação bem-sucedida! Os seguintes itens serão adicionados assim que a fabricação for concluída: ",
+            "timedCraftCompleted": "Fabricação concluída! Adicionado ao inventário: ",
+            "craftFailConsumed": "A criação falhou! A condição não foi atendida e os ingredientes foram consumidos.",
+            "craftFailNotConsumed": "A criação falhou! A condição não foi atendida e os ingredientes não foram consumidos.",
+            "noTools": "Faltam ferramentas! Você precisa de uma das seguintes: ",
+            "noProficiency": "Você não tem proficiência em: ",
+            "ingredientsTooltip": "Clique com o botão esquerdo para selecionar ingredientes; clique com o botão direito para examinar um ingrediente.",
+            "resultTooltip": "Clique com o botão esquerdo na caixa para selecionar o resultado; clique com o botão direito no item para inspecioná-lo.",
+            "ingredientsEditInfo": "Arraste um item para dentro de uma caixa para adicioná-lo como componente de criação. Clique no botão + para adicionar um componente vazio. Vários componentes na mesma caixa podem ser usados de forma intercambiável. É necessário pelo menos um componente por caixa para criar.",
+            "resultEditInfo": "Arraste um item até uma caixa para adicioná-lo como resultado da criação. Se houver vários itens na mesma caixa, todos serão concedidos na criação. Apenas uma caixa pode ser selecionada como resultado durante a criação.",
+            "cauldron": "Caldeirão",
+            "timedCrafting": "Progresso na criação",
+            "readyIn": "Pronto em: ",
+            "onlyCraftable": "Apenas criável",
+            "all": "Todos",
+            "useCraftingActor": "Usar o Ator de Criação",
+            "editMode": "Editar",
+            "useInventory": "Usar o estoque",
+            "craftAs": "Elaborar como",
+            "useInventoryInfo": "Os itens do inventário desse personagem serão usados para criação. Os resultados da criação e da criação diferida também serão colocados no inventário desse personagem.",
+            "craftAsInfo": "Esse ator será responsável pela criação, e quaisquer testes relacionados à criação (ferramentas, habilidades etc.) serão realizados por ele.",
+            "ingredient": "Ingrediente",
+            "product": "Produto",
+            "component": "Componente"
+        },
+        "cauldronApp": {
+            "title": "Caldeirão",
+            "noIngredients": "Você precisa misturar pelo menos dois ingredientes para descobrir uma receita!",
+            "brewFail": "A preparação falhou! Sua mistura não ficou homogênea. Os ingredientes foram consumidos.",
+            "hint": "Arraste e solte os ingredientes no caldeirão para misturá-los. Clique em um ingrediente para retirá-lo do caldeirão. Clique no botão “Misturar ingredientes” para misturar os ingredientes. Se os ingredientes se misturarem bem, você descobrirá uma nova receita. Os ingredientes serão consumidos.",
+            "discovered": "Você descobriu uma nova receita!",
+            "gmConfirm": "Um Mestre de Jogo precisará confirmar essa descoberta antes que ela possa ser utilizada.",
+            "confirm": "Confirmar",
+            "partial": {
+                "consumed": "Consumido:",
+                "extra1": "Faltou tão pouco! Você quase conseguiu! Talvez tenha colocado um pouquinho a mais.",
+                "extra2": "Parecia que ia dar certo, mas não deu. Talvez você tenha colocado demais.",
+                "missing1": "Faltou tão pouco! Você quase conseguiu! Talvez precise de um pouquinho mais.",
+                "missing2": "Parecia que ia dar certo, mas não deu. Talvez precise de mais alguma coisa.",
+                "extra1missing1": "Parecia que ia dar certo, mas não deu. Talvez você tenha colocado demais de uma coisa e de menos de outra."
+            }
+        },
+        "itemConfig": {
+            "title": "Mastercrafted - Configuração do item",
+            "sheetButton": "",
+            "attributePath": {
+                "label": "Caminho do atributo"
+            },
+            "tags": {
+                "label": "Tags",
+                "notes": "Lista de tags separadas por vírgulas. Ao criar itens, o jogador deve ter itens com pelo menos uma dessas tags em seu inventário."
+            }
+        },
+        "UI": {
+            "open-recipe-app": "Gerenciador de receitas",
+            "delete-recipe-book-title": "Excluir o Livro de Receitas",
+            "delete-recipe-book-content": "Tem certeza de que deseja excluir este livro de receitas?",
+            "delete-recipe-title": "Excluir receita",
+            "delete-recipe-content": "Tem certeza de que deseja excluir esta receita?",
+            "default-recipe-name": "Nova receita",
+            "no-permission": "Você não tem permissão para abrir esta receita ou este livro."
+        },
+        "settings": {
+            "enableCauldron": {
+                "name": "Ativar o Caldeirão",
+                "hint": "Ative a interface do Caldeirão. Isso permitirá que os jogadores misturem quaisquer ingredientes para descobrir receitas."
+            },
+            "customQuantityPath": {
+                "name": "Caminho de quantidade personalizado",
+                "hint": "O caminho para o valor dos dados de quantidade do item (o caminho dos dados começa em “system”; por exemplo, se a quantidade estiver armazenada em item.system.itemQuantity.value, você deve inserir “itemQuantity.value” nesta configuração). Deixe em branco para usar o caminho padrão; personalize apenas se o seu sistema não utilizar o caminho comum."
+            },
+            "migrateOnStartup": {
+                "name": "Migrar configurações na inicialização",
+                "hint": "Se ativado, o módulo migrará os dados do diário na inicialização. Você pode usar a macro 'game.modules.get(\"mastercrafted\").API.migration.showManualMigrationDialog()' para migrar manualmente suas configurações."
+            }
+        }
+    }
+}

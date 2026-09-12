@@ -1,0 +1,34 @@
+{
+    "tokennotes": {
+        "togglenotes": "Alternar notas de token",
+        "settings": {
+            "autoopen": {
+                "name": "Auto abierto / cierre",
+                "hint": "Abra automáticamente/cierre las notas cuando el token está seleccionado/no seleccionado."
+            },
+            "allowplayers": {
+                "name": "Permisos de jugadores",
+                "hint": "Palanca de permiso en notas de token para jugadores. \nCualquier opción solo estará disponible para tokens propiedad del jugador.",
+                "options": {
+                    "none": "Ninguno",
+                    "readonly": "Solo lectura",
+                    "readwrite": "Leer/escribir"
+                }
+            },
+            "position": {
+                "name": "Posición",
+                "hint": "Posición de las notas.",
+                "options": {
+                    "bottomleft": "Abajo a la izquierda",
+                    "bottomright": "Abajo a la derecha",
+                    "topleft": "Arriba a la izquierda",
+                    "topright": "Arriba a la derecha"
+                }
+            }
+        },
+        "tooltip": {
+            "toggle-edit": "Modo de edición de al revés",
+            "toggle-token-actor": "TOKEN TOKEN/ACTOR"
+        }
+    }
+}

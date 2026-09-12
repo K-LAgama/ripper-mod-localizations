@@ -1,0 +1,91 @@
+{
+    "hp": {
+        "settings": {
+            "disable": {
+                "name": "Desactivar el temporizador",
+                "hint": "Desactivar el temporizador de combate"
+            },
+            "timerDuration": {
+                "name": "Duración del temporizador",
+                "hint": "Duración del temporizador en segundos"
+            },
+            "style": {
+                "name": "Estilo",
+                "hint": "Estilo del temporizador",
+                "digits": "Dígitos",
+                "circle": "Círculo",
+                "sand": "Arena"
+            },
+            "countup": {
+                "name": "Suma",
+                "hint": "El temporizador cuenta hacia arriba en lugar de hacia abajo (solo en los estilos «Dígitos» y «Círculo»)"
+            },
+            "overtime": {
+                "name": "Horas extras",
+                "hint": "El temporizador sigue funcionando una vez superado el tiempo máximo permitido"
+            },
+            "size": {
+                "name": "Tamaño",
+                "hint": "Tamaño del temporizador"
+            },
+            "secondary-size": {
+                "name": "Talla secundaria",
+                "hint": "Tamaño de los temporizadores secundarios"
+            },
+            "secondary-direction": {
+                "name": "Dirección secundaria",
+                "hint": "Funcionamiento de los temporizadores secundarios"
+            },
+            "windowless": {
+                "name": "Sin ventanas",
+                "hint": "Mostrar el temporizador sin ventana"
+            },
+            "critical": {
+                "name": "Umbral crítico",
+                "hint": "Umbral a partir del cual el temporizador entrará en estado crítico y comenzará a parpadear"
+            },
+            "secondsInsteadOfPercentage": {
+                "name": "En el tiempo crítico, utiliza segundos en lugar de porcentajes",
+                "hint": "Por defecto, el umbral crítico se expresa en porcentaje del tiempo total. Al marcar esta opción, se cambia a segundos."
+            },
+            "goNext": {
+                "name": "Siguiente",
+                "hint": "Pasar al siguiente combatiente cuando termine el tiempo. No se activa cuando se permite la prórroga."
+            },
+            "runForNpc": {
+                "name": "Preséntate a las elecciones del NPC",
+                "hint": "Activa el temporizador en el turno de los PNJ"
+            },
+            "showOnUpdateCombatOnly": {
+                "name": "Primera vez en el programa en el siguiente turno",
+                "hint": "Mostrar primero el temporizador de combate cuando se pulse «Comenzar combate», «Turno siguiente» o «Fin de turno»."
+            },
+            "critSoundPath": {
+                "name": "Sonido crítico",
+                "hint": "Sonido que se reproducirá cuando el temporizador llegue al límite"
+            },
+            "endSoundPath": {
+                "name": "Sonido final",
+                "hint": "Sonido que se reproducirá cuando termine el temporizador"
+            },
+            "soundVol": {
+                "name": "Volumen del sonido",
+                "hint": "Volumen de los sonidos reproducidos"
+            }
+        },
+        "contextMenu": {
+            "pause": "Pausa",
+            "unpause": "Currículum",
+            "reset": "Restablecer",
+            "close": "Cerrar"
+        },
+        "create": {
+            "title": "¡Date prisa!",
+            "paused": "En pausa",
+            "time": "Hora",
+            "timeError": "El tiempo debe ser un número mayor que 0",
+            "name": "Nombre",
+            "color": "Color"
+        }
+    }
+}

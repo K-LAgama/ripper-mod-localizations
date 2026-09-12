@@ -1,0 +1,204 @@
+{
+    "mastercrafted": {
+        "UI": {
+            "default-recipe-name": "新しいレシピ",
+            "delete-recipe-book-content": "このレシピ本を削除してもよろしいですか？",
+            "delete-recipe-book-title": "レシピブックを削除",
+            "delete-recipe-content": "本当にこのレシピを削除しますか?",
+            "delete-recipe-title": "レシピを削除",
+            "no-permission": "このレシピまたは本を開く権限がありません。",
+            "open-recipe-app": "レシピマネージャー"
+        },
+        "cauldronApp": {
+            "brewFail": "醸造に失敗しました！\nあなたの調合物はうまく混ざりませんでした。\n材料が消費されてしまいました。",
+            "confirm": "確認する",
+            "discovered": "新しいレシピを発見しました！",
+            "gmConfirm": "ゲームマスターは、この発見を使用する前に確認する必要があります。",
+            "hint": "材料を大釜にドラッグアンドドロップして混ぜます。\n材料をクリックして大釜から取り出します。 \n「材料を混ぜる」ボタンをクリックして材料を混ぜ合わせます。\n材料がうまく混ざり合えば、新しいレシピが見つかるでしょう。\n材料が消費されてしまいます。",
+            "noIngredients": "レシピを見つけるには、少なくとも 2 つの材料を混ぜる必要があります。",
+            "partial": {
+                "consumed": "消費:",
+                "extra1": "とても近かったです！\nもうほとんどそれができましたね！\n少し追加しすぎたのかもしれません。",
+                "extra1missing1": "うまくいくように見えましたが、うまくいきませんでした。\nもしかしたら、何かを追加しすぎて、他のものが足りなかったのかもしれません。",
+                "extra2": "うまくいくように見えましたが、うまくいきませんでした。\nもしかしたら追加しすぎたのかもしれません。",
+                "missing1": "とても近かったです！\nもうほとんどそれができましたね！\nもう少し必要かもしれません。",
+                "missing2": "うまくいくように見えましたが、うまくいきませんでした。\nもしかしたらもっと何かが必要なのかもしれない。"
+            },
+            "title": "大釜"
+        },
+        "componentEditForm": {
+            "img": "画像",
+            "name": {
+                "hint": "クラフトの材料として消費されるアイテムと照合するために使用される名称。",
+                "label": "名前"
+            },
+            "quantity": "数量",
+            "resourcePath": {
+                "hint": "アクターリソースへのパス。アイテムがインベントリに存在しない場合、クラフトはアイテムではなくクラフトアクターのリソースを消費します。",
+                "label": "リソースパス",
+                "title": "リソース構成"
+            },
+            "tags": {
+                "hint": "このコンポーネントの代替アイテムを定義するタグのリスト。メインアイテムがインベントリに存在しない場合、クラフトでは「一部モード」では少なくとも1つのタグに一致するアイテムが、「全てモード」では全てのタグに一致するアイテムが使用されます。",
+                "label": "タグ",
+                "mode": {
+                    "every": "すべて",
+                    "label": "要求する",
+                    "some": "いくつか"
+                },
+                "title": "タグ設定"
+            },
+            "title": "コンポーネント構成",
+            "uuid": {
+                "hint": "クリック時に表示される項目。この項目を変更しても、コンポーネントの名前や画像は更新されません。",
+                "label": "また"
+            }
+        },
+        "craft": "クラフト",
+        "craftDialog": {
+            "cancel": "キャンセル",
+            "consumes": "消費する",
+            "craft": "クラフト",
+            "crafted": "作成された",
+            "crafts": "工芸品",
+            "title": "クラフト"
+        },
+        "itemConfig": {
+            "attributePath": {
+                "label": "属性パス"
+            },
+            "tags": {
+                "label": "タグ",
+                "notes": "カンマ区切りのタグ一覧。クラフト時には、プレイヤーのインベントリにこれらのタグのいずれかが付いたアイテムが少なくとも1つ必要です。"
+            },
+            "title": "マスタークラフト - アイテム構成"
+        },
+        "mastercrafted": "匠の技が光るレシピ",
+        "recipeApp": {
+            "addRecipeBook": "レシピブックを追加",
+            "all": "すべて",
+            "bookcontext": {
+                "add": "レシピを追加",
+                "delete": "消去",
+                "duplicate": "複製",
+                "edit": "編集",
+                "export": "輸出",
+                "import": "輸入",
+                "inspect": "点検する"
+            },
+            "cauldron": "大釜",
+            "component": "コンポーネント",
+            "configbookrecipe": {
+                "permissions": {
+                    "allow": "許可する",
+                    "default": "デフォルト",
+                    "deny": "拒否"
+                }
+            },
+            "craft": "クラフト - Ctrl を押したままにすると、すばやくクラフトできます",
+            "craftAs": "クラフトとして",
+            "craftAsInfo": "このアクターが製作を実行し、あらゆる製作判定（道具、能力など）はこのアクターによって行われる。",
+            "craftError": "クラフトエラー",
+            "craftFailConsumed": "クラフト失敗！\n条件が満たされず、食材が消費されました。",
+            "craftFailNotConsumed": "クラフト失敗！\n条件が満たされず、食材が消費されませんでした。",
+            "craftSuccess": "クラフト成功！\nインベントリに追加:",
+            "craftSuccessTimed": "クラフト成功！\nクラフトが完了すると、次のアイテムが追加されます。",
+            "editMode": "編集",
+            "editcreatebook": {
+                "abilityCheck": {
+                    "label": "システム能力",
+                    "placeholder": "システム能力"
+                },
+                "abilityDc": {
+                    "label": "コロンビア特別区",
+                    "placeholder": "コロンビア特別区"
+                },
+                "book": "本",
+                "confirm": "確認",
+                "create": "作成",
+                "description": "説明",
+                "edit": "編集",
+                "expression": {
+                    "label": "表現",
+                    "placeholder": "表現"
+                },
+                "image": "画像",
+                "macro": "状態",
+                "macroplaceholder": "マクロ名またはコマンド",
+                "modifierList": {
+                    "add": "追加 編集",
+                    "hint": "ダイスロールの結果または式が返す値のいずれかがDC以上（高い値を使用）の場合、収集されるアイテム数は修正式に従って変更される。修正式の先頭に算術演算子を含めることができる。指定がない場合、デフォルトでプラス（+）が適用される。例：*1d4 は収集アイテム数を1d4倍する。",
+                    "label": "変更する"
+                },
+                "name": "名前",
+                "namep": "新しい本",
+                "permission": "プレイヤーの許可",
+                "recipe": "レシピ",
+                "sound": "音",
+                "time": "時間",
+                "timeplaceholder": "クラフト時間（分）",
+                "title": "ブックの編集/作成",
+                "toolCheck": {
+                    "label": "ツールチェック",
+                    "placeholder": "ツールチェック"
+                },
+                "toolDc": {
+                    "label": "コロンビア特別区",
+                    "placeholder": "コロンビア特別区"
+                },
+                "tools": "ツール",
+                "toolsplaceholder": "ツール名のカンマ区切りリスト"
+            },
+            "errors": {
+                "alreadyingredient": "このアイテムはすでにこのレシピの材料に含まれています!",
+                "namemissing": "お名前欄必須！",
+                "noJournal": "カテゴリを設定するには本を開いてください。"
+            },
+            "filter": "すべて/クラフト可能に切り替え",
+            "ingredient": "成分",
+            "ingredientsEditInfo": "アイテムをボックスにドラッグすると、クラフト素材として追加されます。+ボタンをクリックすると空の素材を追加できます。同じボックス内の複数の素材は互換性があります。クラフトにはボックスごとに少なくとも1つの素材が必要です。",
+            "ingredientsTooltip": "左クリックで材料を選択、右クリックで材料を調べる。",
+            "minutes": "分",
+            "noProficiency": "あなたは以下に習熟していません：",
+            "noTools": "ツールがありません！\n次のいずれかが必要です。",
+            "onlyCraftable": "クラフト専用",
+            "product": "製品",
+            "readyIn": "準備完了まで:",
+            "recipeBooks": "レシピ本",
+            "recipeconfig": {
+                "ingredients": "材料",
+                "ingredientsInspection": "成分検査",
+                "inheritTools": "ツールを継承",
+                "productInspection": "製品検査",
+                "result": "結果"
+            },
+            "relinked": "1 つまたは複数のアイテムが参照されておらず、再リンクされました。",
+            "resultEditInfo": "ボックス上のアイテムをドラッグすると、クラフト結果として追加されます。同じボックス内の複数のアイテムは、すべてクラフトで報酬として獲得できます。クラフト時には、結果として選択できるボックスは1つだけです。",
+            "resultTooltip": "ボックスを左クリックで結果を選択、項目を右クリックで検査します。",
+            "searchRecipe": "レシピ検索",
+            "time": "製作時間",
+            "timedCraftCompleted": "クラフト完成！\nインベントリに追加:",
+            "timedCrafting": "制作の進捗状況",
+            "title": "マスタークラフト",
+            "tools": "必要なツール",
+            "useCraftingActor": "クラフトアクターを使用する",
+            "useInventory": "在庫を使用する",
+            "useInventoryInfo": "このアクターのインベントリにあるアイテムはクラフトに使用されます。クラフトおよび遅延クラフトの結果も、このアクターのインベントリに配置されます。"
+        },
+        "settings": {
+            "customQuantityPath": {
+                "hint": "品目の数量データ値へのパス (データ パスは「system」から始まります。たとえば、数量が item.system.itemquantity.value に保存されている場合は、この設定に「itemquantity.value」を挿入します)。\nデフォルトのパスを使用する場合は空白のままにし、システムが共通パスを使用しない場合にのみカスタマイズします。",
+                "name": "カスタム数量パス"
+            },
+            "enableCauldron": {
+                "hint": "大釜インターフェイスを有効にします。\nこれにより、プレイヤーは任意の材料を混ぜ合わせてレシピを見つけることができます。",
+                "name": "大釜を有効にする"
+            },
+            "migrateOnStartup": {
+                "hint": "有効にすると、モジュールは起動時にジャーナルデータを移行します。設定を手動で移行するには、マクロ 'game.modules.get(\"mastercrafted\").API.migration.showManualMigrationDialog()' を使用できます。",
+                "name": "起動時に設定を移行する"
+            }
+        },
+        "show-recipes": "レシピを表示する"
+    }
+}

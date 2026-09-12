@@ -1,0 +1,63 @@
+{
+    "theripper-premium-hub": {
+        "settings": {
+            "autoCheck": {
+                "name": "Buscar actualizaciones al iniciar el sistema",
+                "hint": "Comprobar automáticamente, al cargar el mundo, si alguno de mis módulos premium tiene actualizaciones."
+            },
+            "checkDisabled": {
+                "name": "Módulos de comprobación no activados",
+                "hint": "Comprueba si hay actualizaciones disponibles para los módulos que están instalados pero no activados."
+            }
+        },
+        "tweaks-menu": {
+            "title": "Ajustes",
+            "label": "Configurar ajustes",
+            "hint": "Configura algunas funciones que mejoran la experiencia de uso, como las macros de inicio, los botones para limpiar el encabezado y los ajustes de CSS.",
+            "tabs": {
+                "misc": "Varios",
+                "startup-macros": "Macros de inicio",
+                "css-tweaks": "Ajustes de CSS"
+            },
+            "initMacros": {
+                "name": "Macros de inicio",
+                "hint": "Ejecutar macros al cargar el mundo. Las macros se ejecutan en el orden en que aparecen aquí."
+            },
+            "readyMacros": {
+                "name": "Macros listas para usar",
+                "hint": "Ejecuta las macros cuando el cliente esté listo. Las macros se ejecutan en el orden en que aparecen aquí."
+            },
+            "cssTweak": {
+                "name": "Ajustes de CSS",
+                "hint": "Escribe código CSS personalizado para modificar los estilos de Foundry o de los módulos. Se proporcionan tres campos para organizarlo, aunque también puedes utilizar solo uno."
+            },
+            "cleanHeaderButtons": {
+                "name": "Botones de encabezado limpios",
+                "hint": "Elimina el texto de los botones de los encabezados para que tengan un aspecto más limpio. Si utilizas muchos de mis módulos, es posible que acabes teniendo muchos botones en los encabezados de las ventanas; esta opción elimina el texto de los mismos. (Requiere LibWrapper)"
+            },
+            "compactSidebar": {
+                "name": "Barra lateral compacta",
+                "hint": "Reduce el tamaño de las entradas de la barra lateral para que quepan más elementos en la pantalla."
+            },
+            "enableSettingsSwap": {
+                "name": "Configuración obligatoria del cliente",
+                "hint": "Activa la opción de cambiar la configuración de los clientes a la configuración global. Esto aplicará la configuración seleccionada a todos los clientes, y los jugadores ya no podrán ver dicha configuración."
+            },
+            "diceTray": {
+                "name": "Bandeja para dados",
+                "hint": "Añade una bandeja de dados al historial de chat. Esto te permitirá lanzar los dados y aplicarles modificadores."
+            },
+            "autoRotate": {
+                "name": "Rotación automática",
+                "hint": "Girar automáticamente las fichas para que queden orientadas en la dirección del movimiento y hacia la ficha objetivo.",
+                "none": "Discapacitado",
+                "defaultOn": "Activado (activado por defecto)",
+                "defaultOff": "Activado (desactivado por defecto)",
+                "on": "Activado",
+                "off": "Discapacitado",
+                "default": "Por defecto"
+            }
+        },
+        "wtcNotification": "La configuración de {parametro} se ha establecido en {valor}. Vuelve a cargar el juego para que los cambios surtan efecto. Los cambios en la configuración no se guardarán hasta la próxima recarga."
+    }
+}

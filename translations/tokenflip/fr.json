@@ -1,0 +1,38 @@
+{
+    "tokenflip": {
+        "token-flip-config": {
+            "title": "Configurer le retournement de jeton",
+            "add": "Ajouter un nouveau visage",
+            "flip": "Retourner le jeton",
+            "model3d": "Modèle 3D",
+            "faceId": "Identification du visage",
+            "protoWarning": "AVERTISSEMENT : en raison de bugs de Core Foundry affectant les jetons prototypes, il est fortement recommandé de configurer le retournement de jeton sur un jeton dans la scène, puis d'attribuer le jeton au jeton prototype.",
+            "copiedId": "ID copié dans le presse-papiers",
+            "copyID": "Copier l'identifiant",
+            "autoFlip": {
+                "label": "Retournement automatique",
+                "none": "Aucun",
+                "inCombat": "En combat",
+                "outOfCombat": "Hors combat"
+            },
+            "transition": {
+                "label": "Transition",
+                "flip": "Retourner"
+            },
+            "autoFlipMacro": {
+                "label": "Macro à retournement automatique",
+                "hint": "Une macro exécutée lorsque l'acteur ou l'un de ses éléments est mis à jour et lorsqu'un MJ charge dans une scène. \nRenvoyez true pour retourner à ce visage. \nVoir le wiki pour plus d'informations."
+            }
+        },
+        "settings": {
+            "flipSpeed": {
+                "name": "Vitesse de retournement",
+                "hint": "À quelle vitesse les jetons se retournent. \nLa valeur par défaut est 0,1."
+            },
+            "enableAutoFlip": {
+                "name": "Activer le retournement automatique",
+                "hint": "Activer le retournement automatique des jetons. \nSi vous n'utilisez pas la fonction de retournement automatique, vous pouvez désactiver ce paramètre pour économiser certaines performances."
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "tokennotes": {
+        "togglenotes": "Token -Notizen umschalten",
+        "settings": {
+            "autoopen": {
+                "name": "Automatisch offen / schließen",
+                "hint": "Öffnen/Schließen Sie die Notizen automatisch, wenn das Token ausgewählt/nicht ausgewählt wird."
+            },
+            "allowplayers": {
+                "name": "Spielerberechtigungen",
+                "hint": "Erlaubnishebel auf Token -Notizen für Spieler. \nJede Option ist nur für Token, die dem Spieler gehören.",
+                "options": {
+                    "none": "Keiner",
+                    "readonly": "Nur lesen",
+                    "readwrite": "Lesen/Schreiben"
+                }
+            },
+            "position": {
+                "name": "Position",
+                "hint": "Position der Notizen.",
+                "options": {
+                    "bottomleft": "Unten links",
+                    "bottomright": "Unten rechts",
+                    "topleft": "Oben links",
+                    "topright": "Oben rechts"
+                }
+            }
+        },
+        "tooltip": {
+            "toggle-edit": "Bearbeitungsmodus umschalten",
+            "toggle-token-actor": "Token/Schauspieler umschalten"
+        }
+    }
+}

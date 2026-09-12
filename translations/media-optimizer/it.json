@@ -1,0 +1,89 @@
+{
+    "media-optimizer": {
+        "audioConversionStarted": "Ottimizzatore multimediale: conversione audio avviata, sii paziente, potrebbe volerci un po'. \nSe lo desideri, puoi controllare l'avanzamento nella console (F12). \nFile:",
+        "conversionFailed": "Media Optimizer: conversione non riuscita, controlla il wiki per ulteriori informazioni.",
+        "converted": "Ottimizzatore multimediale: convertito",
+        "file-converter": {
+            "buttons": {
+                "convert": "Ottimizza selezionato",
+                "select-all": "Seleziona tutto",
+                "select-none": "Cancella selezione"
+            },
+            "header-button": "Ottimizza contenuti multimediali",
+            "title": "Ottimizzatore multimediale: ottimizzatore di massa"
+        },
+        "settings": {
+            "compressionRatio": {
+                "hint": "La qualità da utilizzare durante l'ottimizzazione delle immagini. \nUna qualità superiore si tradurrà in un'immagine di qualità superiore e in file di dimensioni maggiori. \nUna qualità inferiore si tradurrà in un'immagine di qualità inferiore e in file di dimensioni inferiori. \nIl valore predefinito è 0,75. \nNota: i rapporti di compressione per audio e video non possono essere personalizzati.",
+                "name": "Qualità"
+            },
+            "enabled": {
+                "hint": "Se l'ottimizzatore multimediale deve essere abilitato o meno. \nSe disabilitato, immagini, audio e video non saranno ottimizzati.",
+                "name": "Abilitato"
+            },
+            "excludeFolders": {
+                "hint": "Elenco di cartelle separate da virgole da escludere dall'ottimizzazione. \nSe immagini/audio/video vengono caricati in questa posizione, non verranno ottimizzati.",
+                "name": "Escludi cartelle"
+            },
+            "maxResolution": {
+                "choices": {
+                    "4096": "4K (4096 pixel)"
+                },
+                "hint": "La risoluzione massima dell'immagine da ottimizzare. \nSe l'immagine è più grande di questa, verrà ridimensionata a questa risoluzione prima di essere ottimizzata. \nCiò è utile per evitare risoluzioni molto elevate non supportate dalla maggior parte delle schede grafiche.",
+                "name": "Risoluzione massima"
+            },
+            "optimizeAudio": {
+                "hint": "Se ottimizzare o meno l'audio.",
+                "name": "Ottimizza l'audio"
+            },
+            "optimizeImages": {
+                "hint": "Se ottimizzare o meno le immagini.",
+                "name": "Ottimizza le immagini"
+            },
+            "optimizeVideo": {
+                "hint": "Se ottimizzare o meno i video.",
+                "name": "Ottimizza i video"
+            },
+            "slugifyFileNames": {
+                "hint": "Se pulire o meno i nomi dei file. \nSi noti che questa impostazione si applicherà a qualsiasi file elaborato o creato da Media Optimizer. \nQuesto rimuoverà i caratteri speciali e li sostituirà con trattini. \nQuesto è utile per evitare problemi con i nomi dei file su diversi sistemi operativi e altri problemi causati da spazi e caratteri speciali.",
+                "name": "Pulisci i nomi dei file"
+            }
+        },
+        "tile-combiner": {
+            "background": {
+                "label": "Includi sfondo?",
+                "notes": "Quando questa opzione è abilitata, il risultato dell'operazione Combina verrà impostato come sfondo della scena."
+            },
+            "buttons": {
+                "backup-combine": "Backup",
+                "cancel": "Annulla",
+                "combine": "Combina"
+            },
+            "confirm": {
+                "backup": "Stai per combinare senza fare un backup, questo non è raccomandato!",
+                "content": "Stai per combinare le tessere, questo apporterà modifiche permanenti alla scena! \nSei sicuro di voler continuare?",
+                "title": "Combinatore di tessere: conferma"
+            },
+            "deleteTiles": {
+                "label": "Elimina tessere combinate?"
+            },
+            "fileName": {
+                "label": "Nome del file:"
+            },
+            "folderPath": {
+                "label": "Percorso cartella:"
+            },
+            "info": "Il Combiner utilizzerà le impostazioni di compressione globali di Media Optimizer, è possibile modificarle nelle impostazioni del modulo.",
+            "mode": {
+                "all": "Tutte le tessere",
+                "background": "Piastrelle Di Sfondo",
+                "foreground": "Piastrelle in primo piano",
+                "label": "Combina modalità:",
+                "selected": "Piastrelle selezionate"
+            },
+            "notes": "Questa funzione apporterà modifiche permanenti alla scena! \nSi consiglia vivamente di eseguire un backup della scena.",
+            "title": "Combinatore di piastrelle"
+        },
+        "videoConversionStarted": "Media Optimizer: conversione video avviata, sii paziente, potrebbe volerci un po'. \nSe lo desideri, puoi controllare l'avanzamento nella console (F12). \nFile:"
+    }
+}

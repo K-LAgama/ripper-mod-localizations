@@ -1,0 +1,113 @@
+{
+    "patrol": {
+        "patrol-app": {
+            "title": "Panneau de patrouille",
+            "selectAll": "Tout afficher",
+            "selectSingle": "Étape sélectionnée",
+            "stepBackward": "Un pas en arrière",
+            "stepForward": "Faites un pas en avant",
+            "toggleStepping": "Patouille Toggle",
+            "toggleSteppingDisabled": "La patrouille automatique est désactivée en combat et lors du déplacement d'un seul jeton."
+        },
+        "settings": {
+            "patrolMaxSuspicious": {
+                "name": "Nombre maximal de pas suspects",
+                "hint": "Nombre de pas qu'un jeton effectue pour scruter les environs avant d'essayer de poursuivre un personnage joueur"
+            },
+            "patrolMaxAlerted": {
+                "name": "Nombre maximal de pas déclenchant une alerte",
+                "hint": "Nombre de pas pendant lesquels un jeton doit avoir une ligne de vue sur un personnage poursuivi avant de pouvoir réellement le repérer"
+            },
+            "patrolSound": {
+                "name": "Spotted Sound",
+                "hint": "Son à diffuser lorsqu'un PC est repéré par un ennemi"
+            },
+            "patrolAlert": {
+                "name": "Son d'alerte",
+                "hint": "Son à lire lorsqu'un ennemi est alerté par un personnage joueur"
+            },
+            "openApplication": {
+                "name": "Panneau de patrouille",
+                "hint": "Ouvrez le panneau « Patrol ». Vous pouvez également appuyer sur Alt + clic gauche sur le bouton « Patrol » dans les commandes de scène « Token » ou utiliser la commande macro « ui.patrolApp.render({ force: true }) ».",
+                "label": "Ouvrir le panneau « Patrouille »"
+            },
+            "minStepDelay": {
+                "name": "Délai minimal par étape",
+                "hint": "Délai minimum entre les étapes, en millisecondes. Le temps réel entre les mouvements dépendra des mises à jour des jetons de Foundry et de leur déplacement sur la carte. Des valeurs trop faibles peuvent nécessiter beaucoup de ressources."
+            },
+            "hidePatrolButtonInSidebar": {
+                "name": "Masquer le bouton « Panneau de patrouille » dans la barre latérale",
+                "hint": "Masquez le bouton « Patrol Panel » dans la barre latérale du répertoire des acteurs. Vous pouvez toujours utiliser la commande macro « ui.patrolApp.render({ force: true }) » ou appuyer sur Alt + clic gauche sur le bouton « Patrol » dans les commandes de scène « Token »."
+            },
+            "migrateOnStartupDialog": {
+                "name": "Ouvrir la boîte de dialogue « Migration » au démarrage",
+                "hint": "Si cette option est activée, le module ouvrira une boîte de dialogue permettant de migrer les données de la structure V13 vers celle de la version V14 au démarrage."
+            }
+        },
+        "tokenConfig": {
+            "enablePatrol": {
+                "name": "Activer la patrouille"
+            },
+            "enableSpotting": {
+                "name": "Personnages jouables ponctuels",
+                "hint": "La présence de plusieurs jetons de repérage peut mobiliser beaucoup de ressources. À utiliser avec précaution."
+            },
+            "doorBehavior": {
+                "name": "Peut-il passer par les portes ?",
+                "choices": {
+                    "useRegionSettings": "Utiliser les paramètres de la région (utilise également l'option « Laisser la porte ouverte » de la région)",
+                    "unlocked": "Portes déverrouillées",
+                    "locked": "Portes verrouillées",
+                    "secret": "Portes secrètes"
+                }
+            },
+            "leaveDoorOpen": {
+                "name": "Laissez la porte ouverte",
+                "hint": "Probabilité que le Token laisse une porte ouverte après l'avoir franchie"
+            }
+        },
+        "statusEffects": {
+            "patrolundetectable": {
+                "name": "Patrouille - Indétectable"
+            }
+        },
+        "tools": {
+            "patrolToggle": {
+                "app": "Afficher/masquer le panneau de patrouille",
+                "stepping": "Activer/désactiver la surveillance des jetons"
+            }
+        }
+    },
+    "TYPES": {
+        "RegionBehavior": {
+            "patrol": {
+                "patrolArea": "Zone de patrouille",
+                "whitelist": "Liste blanche",
+                "blacklist": "Liste noire",
+                "type": {
+                    "label": "Type",
+                    "hint": "Choisissez si les pions doivent patrouiller dans la zone ou en surveiller les limites",
+                    "choices": {
+                        "area": "Zone",
+                        "edge": "Edge"
+                    }
+                },
+                "weight": {
+                    "label": "Poids",
+                    "hint": "Poids attribué à cette zone dans l'algorithme de patrouille. Les poids plus élevés seront privilégiés par rapport aux poids plus faibles."
+                },
+                "darkness": {
+                    "min": {
+                        "label": "Obscurité Min.",
+                        "hint": "Niveau d'obscurité minimal requis pour que cette zone soit prise en compte dans le cadre des patrouilles."
+                    },
+                    "max": {
+                        "label": "Darkness Max",
+                        "hint": "Niveau d'obscurité maximal pour que cette zone soit prise en compte pour une patrouille."
+                    },
+                    "validationError": "La valeur minimale de « Darkness » doit être inférieure à la valeur maximale de « Darkness »."
+                }
+            }
+        }
+    }
+}

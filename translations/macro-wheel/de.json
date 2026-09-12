@@ -1,0 +1,77 @@
+{
+    "macro-wheel": {
+        "bindings": {
+            "open": {
+                "name": "Makro-Rad öffnen/schließen"
+            }
+        },
+        "settings": {
+            "folderSize": {
+                "name": "Größe der Ordner-Schaltfläche",
+                "hint": "Größe der Ordner-Schaltflächen im Makro-Rad in Pixeln."
+            },
+            "macroSize": {
+                "name": "Größe der Makro-Schaltfläche",
+                "hint": "Größe der Makrotasten im Makrorad in Pixeln."
+            },
+            "closeOnClick": {
+                "name": "Beim Klicken schließen",
+                "hint": "Schließe das Makro-Rad, wenn auf ein Makro geklickt wird. Du kannst die Strg-Taste gedrückt halten, um das Rad offen zu lassen."
+            },
+            "enableTooltips": {
+                "name": "Tooltips aktivieren",
+                "hint": "Tooltips anzeigen, wenn der Mauszeiger über ein Makro oder einen Ordner bewegt wird."
+            },
+            "useRoot": {
+                "name": "Stammverzeichnis verwenden",
+                "hint": "Verwende das gesamte Makro-Verzeichnis als Stammverzeichnis für das Makro-Rad."
+            },
+            "addHotbar": {
+                "name": "Hotbar-Makros anzeigen",
+                "hint": "Füge die Hotbar-Makros zum Makro-Rad hinzu."
+            },
+            "useMiddleMouse": {
+                "name": "Mitte der Maus verwenden",
+                "hint": "Öffnen Sie das Makro-Rad mit der mittleren Maustaste."
+            },
+            "hoverDelay": {
+                "name": "Verzögerung beim Bewegen des Mauszeigers",
+                "hint": "Verzögerung in Millisekunden, bevor sich das Makrorad öffnet, wenn der Mauszeiger über einen Makrorad-Ordner bewegt wird."
+            }
+        },
+        "flags": {
+            "header": "Makro-Rad",
+            "folderImg": {
+                "name": "Bild"
+            },
+            "condition": {
+                "name": "Benutzerdefinierte Bedingung",
+                "placeholder": "Bedingungsskript"
+            },
+            "activeCondition": {
+                "name": "Aktiver Zustand",
+                "hint": "Diese Bedingung dient dazu, festzustellen, ob das Makro aktiv ist. Anhand dieser Information wird die Farbe des Rings um das Makro im Makrorad bestimmt, um den Status schnell überprüfen zu können."
+            },
+            "presetCondition": {
+                "name": "Zustand",
+                "options": {
+                    "custom": "Benutzerdefiniert",
+                    "tokens": "Aktive Ebene: Tokens",
+                    "tiles": "Aktive Ebene: Kacheln",
+                    "walls": "Aktive Ebene: Wände",
+                    "sounds": "Aktive Ebene: Sounds",
+                    "notes": "Aktive Ebene: Anmerkungen",
+                    "lights": "Aktive Ebene: Beleuchtung",
+                    "templates": "Aktive Ebene: Vorlagen",
+                    "drawings": "Aktive Ebene: Zeichnungen",
+                    "selectedtoken": "Token ausgewählt",
+                    "combat": "Im Kampf",
+                    "enabled3d": "3D-Canvas aktiviert"
+                }
+            }
+        },
+        "errors": {
+            "no-folder": "MacroWheel: Der Ordner „MacroWheel“ wurde nicht gefunden. Bitte erstellen Sie einen Ordner mit dem Namen „MacroWheel“ in Ihrem Makro-Ordner oder aktivieren Sie die Option „Stammordner verwenden“, um diese Meldung zu deaktivieren. Erstellen Sie im Ordner „MacroWheel“ Unterordner für jedes Rad, das Sie hinzufügen möchten, und fügen Sie diesen Ordnern dann Makros hinzu."
+        }
+    }
+}

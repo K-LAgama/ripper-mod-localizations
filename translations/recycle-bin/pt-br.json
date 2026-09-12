@@ -1,0 +1,42 @@
+{
+    "recycle-bin": {
+        "app": {
+            "title": "🗑️ Lixeira",
+            "restore-item": "Restaurar Item",
+            "preview-item": "Visualizar Item",
+            "permanently-delete": "Exluir Item Permanentemente",
+            "noParent": "Documento Primário",
+            "search": "Procurar",
+            "time": "Excluído {time} atrás",
+            "deleteOnRefresh": "Esse item será excluído permanentemente ao recarregar o Foundry.",
+            "deleteOnRefreshTitle": "Um ou mais itens com exclusão pendente"
+        },
+        "settings": {
+            "maxPermanentItems": {
+                "name": "Histórico Permanente Máximo",
+                "hint": "Número de itens que serão salvos entre recargas do Foundry."
+            },
+            "maxTemporaryItems": {
+                "name": "Histórico Temporário Máximo",
+                "hint": "Número de itens que serão salvos. Itens temporários que excederem o 'Histórico Permanente Máximo' serão perdidos ao recarregar o Foundry."
+            }
+        },
+        "error": {
+            "restore": "Falha ao restaurar {item}. Pai não encontrado.",
+            "preview": "Falha ao visualizar {item}. Pai não encontrado."
+        },
+        "success": {
+            "restore": "{item} restaurado com sucesso."
+        },
+        "dialog": {
+            "restoreParent": {
+                "title": "Restaurar Pai",
+                "content": "O pai deste item não foi encontrado em seu mundo, mas está presente na lixeira. Você gostaria de restaurá-lo?"
+            },
+            "permanentlyDelete": {
+                "title": "Excluir Permanentemente",
+                "content": "Tem certeza de que deseja excluir permanentemente este item? Essa ação não pode ser desfeita."
+            }
+        }
+    }
+}

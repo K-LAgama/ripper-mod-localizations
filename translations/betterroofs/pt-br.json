@@ -1,0 +1,15 @@
+{
+    "betterroofs": {
+        "tileConfig": {
+            "showInFog.name": "Revela a névoa da guerra",
+            "showInFog.hint": "Quando uma peça tem visão desse quadrado, ele fica visível através da Névoa de Guerra. Não funciona com Luzes.",
+            "occlusionLinkId": "ID do link de oclusão",
+            "occlusionLinkIdHint": "Pode ser qualquer texto. Quando um bloco com “Fonte do link de oclusão?” for ocluído (tiver um token embaixo dele), todos os blocos com o mesmo “ID do link de oclusão” também serão ocluídos. Exemplo de uso: conectar telhados entre si.",
+            "occlusionLinkSource": "Fonte do link sobre oclusão?"
+        },
+        "settings": {
+            "hoverFade.name": "Desvanecimento ao passar o mouse",
+            "hoverFade.hint": "Quando ativada, os telhados desaparecem gradualmente quando você passa o mouse sobre eles. Esse é um recurso do VTT do Core Foundry; essa configuração permite apenas desativá-lo."
+        }
+    }
+}

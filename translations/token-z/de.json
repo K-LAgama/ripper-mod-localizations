@@ -1,0 +1,11 @@
+{
+    "tokenz": {
+        "tokenconfig": {
+            "zindex": "Z-Index-Versatz"
+        },
+        "send-to-back": {
+            "name": "Token an Back senden",
+            "hint": "Wenn Sie mit der Maus über einen Stapel von Spielsteinen fahren, drücken Sie diese Taste, damit der oberste Spielstein an das Ende des Stapels verschoben wird."
+        }
+    }
+}

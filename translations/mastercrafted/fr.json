@@ -1,0 +1,205 @@
+{
+    "mastercrafted": {
+        "mastercrafted": "Recette artisanale",
+        "craft": "Artisanat",
+        "show-recipes": "Afficher les recettes",
+        "craftDialog": {
+            "title": "Artisanat",
+            "craft": "Artisanat",
+            "cancel": "Annuler",
+            "consumes": "Consomme",
+            "crafts": "Artisanat",
+            "crafted": "Fabriqué"
+        },
+        "componentEditForm": {
+            "title": "Configuration des composants",
+            "name": {
+                "label": "Nom",
+                "hint": "Nom utilisé pour correspondre à l'objet qui sera consommé comme composant pour la fabrication."
+            },
+            "img": "Image",
+            "quantity": "Quantité",
+            "uuid": {
+                "label": "Aussi",
+                "hint": "Élément qui s'affichera lorsque l'utilisateur cliquera dessus. Veuillez noter que la modification de cet élément n'entraînera pas la mise à jour du nom ou de l'image du composant."
+            },
+            "resourcePath": {
+                "title": "Configuration des ressources",
+                "hint": "Chemin d'accès à une ressource d'acteur. Si l'objet n'est pas présent dans l'inventaire, l'artisanat épuisera la ressource de l'acteur artisan au lieu de l'objet.",
+                "label": "Chemin d'accès à la ressource"
+            },
+            "tags": {
+                "title": "Configuration des balises",
+                "hint": "Liste des balises qui définissent les éléments alternatifs pour ce composant. Si l'élément principal n'est pas présent dans l'inventaire, l'artisanat utilisera les éléments qui correspondent à au moins une balise en mode « Certains » ou à toutes les balises en mode « Tous ».",
+                "label": "Balises",
+                "mode": {
+                    "label": "Exiger",
+                    "every": "Chaque",
+                    "some": "Certains"
+                }
+            }
+        },
+        "recipeApp": {
+            "errors": {
+                "namemissing": "Champ de nom obligatoire !",
+                "alreadyingredient": "Cet article est déjà dans un Ingrédient de cette recette !",
+                "noJournal": "Ouvrez un livre pour configurer les catégories."
+            },
+            "bookcontext": {
+                "add": "Ajouter une recette",
+                "edit": "Modifier",
+                "delete": "Supprimer",
+                "inspect": "Inspecter",
+                "duplicate": "Dupliquer",
+                "export": "Exporter",
+                "import": "Importer"
+            },
+            "editcreatebook": {
+                "title": "Modifier/Créer un livre",
+                "name": "Nom",
+                "namep": "Nouveau livre",
+                "description": "Description",
+                "image": "Image",
+                "sound": "Son",
+                "confirm": "Confirmer",
+                "tools": "Outils",
+                "toolsplaceholder": "Liste des noms d'outils séparés par des virgules",
+                "macro": "État",
+                "macroplaceholder": "Nom ou commande de la macro",
+                "time": "Temps",
+                "timeplaceholder": "Temps de fabrication en minutes",
+                "edit": "Modifier",
+                "create": "Créer",
+                "book": "Livre",
+                "recipe": "Recette",
+                "permission": "Autorisation du joueur",
+                "expression": {
+                    "label": "Expression",
+                    "placeholder": "Expression"
+                },
+                "abilityDc": {
+                    "label": "District de Columbia",
+                    "placeholder": "District de Columbia"
+                },
+                "toolCheck": {
+                    "label": "Vérification des outils",
+                    "placeholder": "Vérification des outils"
+                },
+                "toolDc": {
+                    "label": "District de Columbia",
+                    "placeholder": "District de Columbia"
+                },
+                "abilityCheck": {
+                    "label": "Capacité du système",
+                    "placeholder": "Capacité du système"
+                },
+                "modifierList": {
+                    "add": "Ajouter un modificateur",
+                    "hint": "Si le résultat du jet ou la valeur renvoyée par l'expression est égal ou supérieur au DC (en utilisant la valeur la plus élevée), le nombre d'objets récupérés est modifié en fonction de l'expression modificatrice. Vous pouvez inclure un opérateur mathématique au début du modificateur ; si aucun n'est fourni, un signe plus (+) est utilisé par défaut. Par exemple, *1d4 multiplie le nombre d'objets récupérés par 1d4.",
+                    "label": "Modificateur"
+                }
+            },
+            "configbookrecipe": {
+                "permissions": {
+                    "default": "Défaut",
+                    "allow": "Permettre",
+                    "deny": "Refuser"
+                }
+            },
+            "recipeconfig": {
+                "inheritTools": "Outils d'héritage",
+                "ingredientsInspection": "Contrôle des ingrédients",
+                "productInspection": "Inspection du produit",
+                "ingredients": "Ingrédients",
+                "result": "Résultat"
+            },
+            "title": "Fabriqué avec un savoir-faire exceptionnel",
+            "recipeBooks": "Livres de recettes",
+            "addRecipeBook": "Ajouter un livre de recettes",
+            "filter": "Basculer Tout/Fabriquable",
+            "relinked": "Un ou plusieurs éléments manquaient de références et ont été réassociés.",
+            "craft": "Artisanat - Maintenez Ctrl pour artisanat rapide",
+            "searchRecipe": "Rechercher une recette",
+            "tools": "Outils requis",
+            "time": "Temps de fabrication",
+            "minutes": "minutes",
+            "craftError": "Erreur de fabrication",
+            "craftSuccess": "Fabrication réussie ! \nAjouté à l'inventaire :",
+            "craftSuccessTimed": "Fabrication réussie ! \nLes objets suivants seront ajoutés une fois la fabrication terminée :",
+            "timedCraftCompleted": "Fabrication terminée ! \nAjouté à l'inventaire :",
+            "craftFailConsumed": "La fabrication a échoué ! \nLa condition n'était pas remplie et les ingrédients ont été consommés.",
+            "craftFailNotConsumed": "La fabrication a échoué ! \nLa condition n'a pas été remplie et les ingrédients n'ont pas été consommés.",
+            "noTools": "Outils manquants ! \nVous avez besoin de l'un des éléments suivants :",
+            "noProficiency": "Vous ne maîtrisez pas : ",
+            "ingredientsTooltip": "Cliquez avec le bouton gauche pour sélectionner les ingrédients, cliquez avec le bouton droit pour inspecter un ingrédient.",
+            "resultTooltip": "Cliquez avec le bouton gauche de la souris sur la case pour sélectionner le résultat, cliquez avec le bouton droit de la souris sur l'élément pour l'inspecter.",
+            "ingredientsEditInfo": "Faites glisser un objet sur une case pour l'ajouter comme composant d'artisanat. Cliquez sur le bouton + pour ajouter un composant vide. Plusieurs composants dans la même case peuvent être utilisés de manière interchangeable. Au moins un composant par case est nécessaire pour fabriquer un objet.",
+            "resultEditInfo": "Faites glisser un objet sur une boîte pour l'ajouter comme résultat d'artisanat. Plusieurs objets dans la même boîte seront tous attribués lors de l'artisanat. Une seule boîte peut être sélectionnée comme résultat lors de l'artisanat.",
+            "cauldron": "Chaudron",
+            "timedCrafting": "Progrès dans la fabrication",
+            "readyIn": "Prêt dans : ",
+            "onlyCraftable": "Uniquement fabriquable",
+            "all": "Tous",
+            "useCraftingActor": "Utiliser l'acteur Crafting",
+            "editMode": "Modifier",
+            "useInventory": "Utiliser l'inventaire",
+            "craftAs": "Artisanat comme",
+            "useInventoryInfo": "Les objets provenant de l'inventaire de cet acteur seront utilisés pour l'artisanat. Les résultats de l'artisanat et de l'artisanat différé seront également placés dans l'inventaire de cet acteur.",
+            "craftAsInfo": "Cet acteur effectuera l'artisanat et tous les contrôles d'artisanat (outils, capacités, etc.) seront effectués par cet acteur.",
+            "ingredient": "Ingrédient",
+            "product": "Produit",
+            "component": "Composant"
+        },
+        "cauldronApp": {
+            "title": "Chaudron",
+            "noIngredients": "Il faut mélanger au moins deux ingrédients pour découvrir une recette !",
+            "brewFail": "Le brassage a échoué ! \nVotre préparation ne s'est pas bien mélangée. \nLes ingrédients ont été consommés.",
+            "hint": "Faites glisser et déposez les ingrédients dans le chaudron pour les mélanger. \nCliquez sur un ingrédient pour le retirer du chaudron. \nCliquez sur le bouton « Mélanger les ingrédients » pour mélanger les ingrédients ensemble. \nSi les ingrédients se mélangent bien, vous découvrirez une nouvelle recette. \nLes ingrédients seront consommés.",
+            "discovered": "Vous avez découvert une nouvelle recette !",
+            "gmConfirm": "Un Game Master devra confirmer cette découverte avant de pouvoir l'utiliser.",
+            "confirm": "Confirmer",
+            "partial": {
+                "consumed": "Consommé :",
+                "extra1": "C'était si proche ! \nVous l'avez presque eu ! \nPeut-être que vous en avez ajouté un peu trop.",
+                "extra2": "On aurait dit que ça allait marcher, mais ce n’est pas le cas. \nPeut-être que vous en avez trop ajouté.",
+                "missing1": "C'était si proche ! \nVous l'avez presque eu ! \nIl en faut peut-être un peu plus.",
+                "missing2": "On aurait dit que ça allait marcher, mais ce n’est pas le cas. \nPeut-être qu'il a besoin de plus de quelque chose.",
+                "extra1missing1": "On aurait dit que ça allait marcher, mais ce n’est pas le cas. \nPeut-être que vous avez ajouté trop de quelque chose et pas assez d'autre chose."
+            }
+        },
+        "itemConfig": {
+            "title": "Mastercrafted - Configuration des articles",
+            "sheetButton": "",
+            "attributePath": {
+                "label": "Chemin d'accès à l'attribut"
+            },
+            "tags": {
+                "label": "Balises",
+                "notes": "Liste de balises séparées par des virgules. Lors de la fabrication, le joueur doit avoir dans son inventaire des objets comportant au moins l'une de ces balises."
+            }
+        },
+        "UI": {
+            "open-recipe-app": "Gestionnaire de recettes",
+            "delete-recipe-book-title": "Supprimer le livre de recettes",
+            "delete-recipe-book-content": "Voulez-vous vraiment supprimer ce livre de recettes ?",
+            "delete-recipe-title": "Supprimer la recette",
+            "delete-recipe-content": "Voulez-vous vraiment supprimer cette recette ?",
+            "default-recipe-name": "Nouvelle recette",
+            "no-permission": "Vous n'êtes pas autorisé à ouvrir cette recette ou ce livre."
+        },
+        "settings": {
+            "enableCauldron": {
+                "name": "Activer le chaudron",
+                "hint": "Activez l'interface du Chaudron. \nCela permettra aux joueurs de mélanger n’importe quel ingrédient pour découvrir des recettes."
+            },
+            "customQuantityPath": {
+                "name": "Chemin de quantité personnalisé",
+                "hint": "Le chemin d'accès à la valeur des données de quantité d'article (le chemin des données commence à partir de « système », par exemple, si votre quantité est stockée dans item.system.itemQuantity.value, vous insérerez « itemQuantity.value » dans ce paramètre). \nLaissez vide pour utiliser le chemin par défaut, personnalisez-le uniquement si votre système n'utilise pas le chemin commun."
+            },
+            "migrateOnStartup": {
+                "name": "Migrer les paramètres au démarrage",
+                "hint": "Si cette option est activée, le module migrera les données du journal au démarrage. Vous pouvez utiliser la macro « game.modules.get(\"mastercrafted\").API.migration.showManualMigrationDialog() » pour migrer manuellement vos paramètres."
+            }
+        }
+    }
+}

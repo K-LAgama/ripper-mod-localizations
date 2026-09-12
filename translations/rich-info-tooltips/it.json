@@ -1,0 +1,25 @@
+{
+    "rich-info-tooltips": {
+        "settings": {
+            "addTitle": {
+                "hint": "Aggiungi il titolo della pagina informativa alla descrizione comando come intestazione H1.",
+                "name": "Aggiungi titolo alle descrizioni comandi"
+            },
+            "autoTooltips": {
+                "hint": "Aggiungi automaticamente descrizioni comando a tutti i collegamenti di contenuto che hanno una descrizione. \nRichiede ricarica",
+                "name": "Suggerimenti automatici"
+            },
+            "theme": {
+                "choices": {
+                    "dark-fantasy": "Fantasia oscura",
+                    "default": "Nessun tema",
+                    "modern": "Moderno",
+                    "retro": "retrò",
+                    "sci-fi": "Fantascienza"
+                },
+                "hint": "Seleziona un tema per le descrizioni comandi ricche di informazioni.",
+                "name": "Tema"
+            }
+        }
+    }
+}

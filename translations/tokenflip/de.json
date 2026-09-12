@@ -1,0 +1,38 @@
+{
+    "tokenflip": {
+        "token-flip-config": {
+            "title": "Konfigurieren Sie den Token-Flip",
+            "add": "Neues Gesicht hinzufügen",
+            "flip": "Token umdrehen",
+            "model3d": "3D-Modell",
+            "faceId": "Gesichtserkennung",
+            "protoWarning": "WARNUNG: Aufgrund von Core Foundry-Bugs, die sich auf Prototyp-Token auswirken, wird dringend empfohlen, den Token-Flip für einen Token in der Szene einzurichten und den Token dann dem Prototyp-Token zuzuweisen.",
+            "copiedId": "ID in die Zwischenablage kopiert",
+            "copyID": "Ausweis kopieren",
+            "autoFlip": {
+                "label": "Auto-Flip",
+                "none": "Keiner",
+                "inCombat": "Im Kampf",
+                "outOfCombat": "Außerhalb des Kampfes"
+            },
+            "transition": {
+                "label": "Übergang",
+                "flip": "Umdrehen"
+            },
+            "autoFlipMacro": {
+                "label": "Auto-Flip-Makro",
+                "hint": "Ein Makro, das ausgeführt wird, wenn der Schauspieler oder eines seiner Elemente aktualisiert wird und wenn ein GM in eine Szene geladen wird. \nGeben Sie „true“ zurück, um zu diesem Gesicht zu wechseln. \nWeitere Informationen finden Sie im Wiki."
+            }
+        },
+        "settings": {
+            "flipSpeed": {
+                "name": "Flip-Geschwindigkeit",
+                "hint": "Wie schnell drehen sich die Spielsteine ​​um? \nDer Standardwert ist 0,1."
+            },
+            "enableAutoFlip": {
+                "name": "Aktivieren Sie Auto Flip",
+                "hint": "Aktivieren Sie das automatische Umdrehen von Token. \nWenn Sie die Auto-Flip-Funktion nicht verwenden, können Sie diese Einstellung deaktivieren, um etwas Leistung zu sparen."
+            }
+        }
+    }
+}

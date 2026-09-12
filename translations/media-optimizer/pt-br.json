@@ -1,0 +1,104 @@
+{
+    "media-optimizer": {
+        "converted": "Otimizador de mídia: convertido",
+        "conversionFailed": "Otimizador de mídia: falha na conversão, verifique o wiki para obter mais informações.",
+        "audioConversionStarted": "Otimizador de mídia: Conversão de áudio iniciada, seja paciente, isso pode demorar um pouco. \nSe desejar, você pode verificar o progresso no console (F12). \nArquivo:",
+        "videoConversionStarted": "Otimizador de mídia: Conversão de vídeo iniciada, seja paciente, isso pode demorar um pouco. \nSe desejar, você pode verificar o progresso no console (F12). \nArquivo:",
+        "settings": {
+            "bloatDetector": {
+                "name": "Detector de inchaço",
+                "label": "Detector de Inchaço Aberto",
+                "hint": "Detecta entradas que podem causar lentidão no carregamento ou problemas de desempenho."
+            },
+            "enabled": {
+                "name": "Habilitado",
+                "hint": "Se o otimizador de mídia deve ou não ser ativado. \nSe desativado, imagens, áudio e vídeo não serão otimizados."
+            },
+            "compressionRatio": {
+                "name": "Qualidade",
+                "hint": "A qualidade a ser usada ao otimizar imagens. \nUma qualidade mais alta resultará em uma imagem de qualidade mais alta e em um tamanho de arquivo maior. \nUma qualidade inferior resultará em uma imagem de qualidade inferior e em um tamanho de arquivo menor. \nO valor padrão é 0,75. \nObservação: as rações de compactação para áudio e vídeo não podem ser personalizadas."
+            },
+            "maxResolution": {
+                "name": "resolução máxima",
+                "hint": "A resolução máxima da imagem a ser otimizada. \nSe a imagem for maior que isso, ela será redimensionada para esta resolução antes de ser otimizada. \nIsso é útil para evitar resoluções muito altas não suportadas pela maioria das placas gráficas.",
+                "choices": {
+                    "1024": "1K (1024 px)",
+                    "2048": "2K (2.048 px)",
+                    "4096": "4K (4096 px)",
+                    "8192": "8K (8.192 px)",
+                    "16384": "16K (16.384 px)"
+                }
+            },
+            "excludeFolders": {
+                "name": "Excluir pastas",
+                "hint": "Lista separada por vírgulas de pastas a serem excluídas da otimização. \nSe imagens/áudio/vídeos forem enviados para este local, eles não serão otimizados."
+            },
+            "optimizeImages": {
+                "name": "Otimizar imagens",
+                "hint": "Se deve ou não otimizar as imagens."
+            },
+            "optimizeAudio": {
+                "name": "Otimizar áudio",
+                "hint": "Se deve ou não otimizar o áudio."
+            },
+            "optimizeVideo": {
+                "name": "Otimizar vídeos",
+                "hint": "Se deve ou não otimizar vídeos."
+            },
+            "slugifyFileNames": {
+                "name": "Nomes de arquivos limpos",
+                "hint": "Se deve ou não limpar os nomes dos arquivos. \nObserve que essa configuração será aplicada a qualquer arquivo processado ou criado pelo Media Optimizer. \nIsso removerá os caracteres especiais e os substituirá por hífens. \nIsso é útil para evitar problemas com nomes de arquivos em diferentes sistemas operacionais e outros problemas causados ​​por espaços e caracteres especiais."
+            }
+        },
+        "tile-combiner": {
+            "title": "Combinador de Azulejo",
+            "notes": "Este recurso fará alterações permanentes na cena! \nFazer um backup da cena é altamente recomendado.",
+            "info": "O Combiner usará as configurações globais de compactação do Media Optimizer, você pode alterá-las nas configurações do módulo.",
+            "confirm": {
+                "title": "Combinador de ladrilhos: confirme",
+                "content": "Você está prestes a combinar peças, isso fará alterações permanentes na cena! \nVocê tem certeza que quer continuar?",
+                "backup": "Você está prestes a combinar sem fazer um backup, isso não é recomendado!"
+            },
+            "buttons": {
+                "backup-combine": "Cópia de segurança",
+                "combine": "Combinar",
+                "cancel": "Cancelar"
+            },
+            "mode": {
+                "label": "Modo Combinado:",
+                "background": "Ladrilhos de fundo",
+                "foreground": "Ladrilhos de primeiro plano",
+                "selected": "Blocos Selecionados",
+                "all": "Todas as peças"
+            },
+            "background": {
+                "label": "Incluir plano de fundo?",
+                "notes": "Quando esta opção estiver habilitada, o resultado da operação de combinação será definido como fundo da cena."
+            },
+            "folderPath": {
+                "label": "Caminho da Pasta:"
+            },
+            "fileName": {
+                "label": "Nome do arquivo:"
+            },
+            "deleteTiles": {
+                "label": "Excluir blocos combinados?"
+            }
+        },
+        "file-converter": {
+            "header-button": "Otimizar mídia",
+            "title": "Otimizador de mídia: Otimizador de massa",
+            "buttons": {
+                "convert": "Otimizar selecionado",
+                "select-all": "Selecionar tudo",
+                "select-none": "Seleção clara"
+            }
+        },
+        "bloat-detector": {
+            "title": "Media Optimizer: Detector de arquivos desnecessários",
+            "bloat": "Foram detectadas entradas que podem causar lentidão no carregamento ou problemas de desempenho. Número: ",
+            "no-bloat": "Não foi detectado inchaço.",
+            "large-collection": "A coleção é extensa; recomenda-se transferir as entradas não utilizadas para um compêndio."
+        }
+    }
+}

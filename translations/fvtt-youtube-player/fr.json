@@ -1,0 +1,71 @@
+{
+    "fvtt-youtube-player": {
+        "deleteTrack": "Supprimer la piste ?",
+        "deleteTrackContent": "Êtes-vous sûr de vouloir supprimer cette piste ?",
+        "deletePlaylist": "Supprimer la liste de lecture ?",
+        "deletePlaylistContent": "Etes-vous sûr de vouloir supprimer cette playlist ?",
+        "fetchingTitle": "Récupération du titre de la vidéo...",
+        "playlistName": "Nom de la liste de lecture",
+        "playlistNameContent": "Vous importez une playlist. \nVoulez-vous créer une nouvelle playlist ou ajouter les pistes à la playlist actuelle ? \nLaissez le champ vide pour ajouter à la playlist actuelle.",
+        "TOOLTIP": {
+            "play": "Jouer",
+            "stop": "Arrêt",
+            "toggle-playlists": "Basculer les listes de lecture",
+            "add-to-playlist": "Ajouter à la playlist",
+            "create-playlist": "Créer une playlist",
+            "delete-playlist": "Supprimer la liste de lecture",
+            "delete-track": "Supprimer la piste",
+            "rename-playlist": "Appuyez sur « Entrée » pour renommer",
+            "sound-library": "Bibliothèque de sons",
+            "loop": "Basculer la répétition",
+            "toggle-playlist": "Activer la lecture automatique",
+            "search": "Rechercher sur YouTube",
+            "copy-url": "Copier l'URL",
+            "configure-track": "Configurer la piste",
+            "add-to-sound-library": "Ajouter à la bibliothèque de sons"
+        },
+        "settings": {
+            "googleApiKey": {
+                "name": "Clé API YouTube",
+                "hint": "La demande sera acheminée via mes serveurs, mais vous pouvez utiliser votre propre clé API pour éviter les limites de débit. \nObtenez-en un sur https://console.developers.google.com/apis/credentials"
+            },
+            "importExport": {
+                "name": "Importer / Exporter",
+                "label": "Ouvrir la boîte de dialogue Importer/Exporter",
+                "hint": "Importer ou exporter des listes de lecture"
+            }
+        },
+        "import-export": {
+            "title": "Importer/Exporter des listes de lecture",
+            "import": "Importer",
+            "export": "Exporter",
+            "imported": "Listes de lecture importées avec succès"
+        },
+        "track-configuration": {
+            "title": "Configuration de la piste",
+            "track-title": "Titre du morceau",
+            "track-url": "URL ou identifiant du morceau",
+            "url": "URL",
+            "tags": "Mots-clés",
+            "rename-track": "Renommer une piste"
+        },
+        "tags-configuration": {
+            "title": "Configuration des balises",
+            "create-tag": "Créer un tag",
+            "tag-name": "Nom du tag",
+            "tag-color": "Couleur de l'étiquette",
+            "tag-label": "Nom du tag",
+            "delete-tag": "Supprimer le tag",
+            "create-tag-error": "Veuillez saisir un nom de balise et une couleur de balise"
+        },
+        "sound-library": {
+            "title": "Bibliothèque de sons",
+            "add-tracks": "Ajouter des pistes",
+            "import-tracks": "Importer des pistes",
+            "import-tracks-textarea": "Collez ici les URL ou les identifiants des titres/listes de lecture"
+        },
+        "app": {},
+        "flags": {},
+        "noApiKey": "Avertissement : aucune clé API définie. \nPour accéder à la fonctionnalité de recherche, vous devez définir une clé API YouTube dans les paramètres du module. \nVous pouvez consulter le Wiki pour plus d'informations."
+    }
+}

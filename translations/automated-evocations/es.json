@@ -1,0 +1,74 @@
+{
+    "AE": {
+        "custombindings": {
+            "add": "Añadir encuadernación",
+            "bindingstitle": "Editar atajos personalizados",
+            "bindingtitle": "Editar enlace",
+            "tt": {
+                "spellname": "Nombre del hechizo",
+                "edit": "Editar",
+                "delete": "Eliminar",
+                "creaturename": "Nombre de la criatura"
+            },
+            "sett": {
+                "label": "Configurar enlaces personalizados",
+                "name": "Fijaciones a medida",
+                "hint": "Configurar atajos de teclado personalizados"
+            }
+        },
+        "pick3d": "Haz clic en un punto del lienzo 3D para invocar.",
+        "dialogs": {
+            "companionManager": {
+                "title": "Responsable de acompañantes",
+                "confirm": {
+                    "title": "Eliminar compañero",
+                    "content": "<p>¿Estás seguro de que quieres eliminar a este compañero?</p>"
+                }
+            }
+        },
+        "actorSheetBtn": "Compañeros",
+        "animations": {
+            "fire": "Fuego",
+            "air": "Aire",
+            "lightning": "Rayo",
+            "water": "Agua",
+            "energy1": "Energía",
+            "magic1": "Magia",
+            "heart": "Doki-Doki",
+            "music": "Crescendo",
+            "fourelements": "Los cuatro elementos",
+            "music2": "Acorde",
+            "darkness": "La oscuridad",
+            "ice1": "Hielo",
+            "magic2": "Conjuración",
+            "lightning2": "Tormenta"
+        },
+        "groups": {
+            "elemental": "Elemental",
+            "magical": "Mágico",
+            "z-none": "Otros"
+        },
+        "settings": {
+            "storeonactor": {
+                "title": "Almacenar «Companions» en «Actor»",
+                "hint": "Almacenar los compañeros en el actor en lugar de en el usuario de forma predeterminada."
+            },
+            "enableautomations": {
+                "title": "Activar automatizaciones",
+                "hint": "Activa el sistema de automatización del compañero al lanzar un hechizo."
+            },
+            "autoclose": {
+                "title": "Cierre automático",
+                "hint": "Cerrar automáticamente la ventana del compañero tras invocarlo."
+            },
+            "hidebutton": {
+                "title": "Ocultar el botón «Compañero»",
+                "hint": "Ocultar el botón de compañero en la ficha del personaje."
+            },
+            "restrictOwned": {
+                "title": "Solo actores de plantilla",
+                "hint": "Limita la lista de compañeros para que solo se muestren los actores que interpretan a compañeros de los que eres propietario."
+            }
+        }
+    }
+}

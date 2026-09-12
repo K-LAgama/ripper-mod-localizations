@@ -1,0 +1,104 @@
+{
+    "media-optimizer": {
+        "converted": "Optimizador de medios: convertido",
+        "conversionFailed": "Optimizador de medios: la conversión falló. Consulte la wiki para obtener más información.",
+        "audioConversionStarted": "Optimizador de medios: conversión de audio iniciada, sea paciente, esto puede demorar un tiempo. \nSi lo deseas puedes consultar el progreso en la consola (F12). \nArchivo:",
+        "videoConversionStarted": "Optimizador de medios: conversión de video iniciada, tenga paciencia, esto puede demorar un tiempo. \nSi lo deseas puedes consultar el progreso en la consola (F12). \nArchivo:",
+        "settings": {
+            "bloatDetector": {
+                "name": "Detector de hinchazón",
+                "label": "Detector de hinchazón abierto",
+                "hint": "Detecta entradas que podrían provocar tiempos de carga lentos o problemas de rendimiento."
+            },
+            "enabled": {
+                "name": "Activado",
+                "hint": "Si el optimizador de medios debe estar habilitado o no. \nSi está deshabilitado, las imágenes, el audio y el video no se optimizarán."
+            },
+            "compressionRatio": {
+                "name": "Calidad",
+                "hint": "La calidad a utilizar al optimizar imágenes. \nUna mayor calidad dará como resultado una imagen de mayor calidad y un tamaño de archivo más grande. \nUna calidad inferior dará como resultado una imagen de menor calidad y un tamaño de archivo más pequeño. \nEl valor predeterminado es 0,75. \nNota: las proporciones de compresión para audio y video no se pueden personalizar."
+            },
+            "maxResolution": {
+                "name": "Resolución máxima",
+                "hint": "La resolución máxima de la imagen a optimizar. \nSi la imagen es más grande que esto, se redimensionará a esta resolución antes de optimizarse. \nEsto es útil para evitar resoluciones muy altas que no son compatibles con la mayoría de las tarjetas gráficas.",
+                "choices": {
+                    "1024": "1K (1024 píxeles)",
+                    "2048": "2K (2048 píxeles)",
+                    "4096": "4K (4096 píxeles)",
+                    "8192": "8K (8192 píxeles)",
+                    "16384": "16K (16 384 píxeles)"
+                }
+            },
+            "excludeFolders": {
+                "name": "Excluir carpetas",
+                "hint": "Lista de carpetas separadas por comas para excluir de la optimización. \nSi se cargan imágenes/audio/videos en esta ubicación, no se optimizarán."
+            },
+            "optimizeImages": {
+                "name": "Optimizar Imágenes",
+                "hint": "Si optimizar o no las imágenes."
+            },
+            "optimizeAudio": {
+                "name": "Optimizar Audio",
+                "hint": "Si optimizar o no el audio."
+            },
+            "optimizeVideo": {
+                "name": "Optimizar vídeos",
+                "hint": "Si optimizar o no los videos."
+            },
+            "slugifyFileNames": {
+                "name": "Limpiar nombres de archivos",
+                "hint": "Si limpiar o no los nombres de los archivos. \nTenga en cuenta que esta configuración se aplicará a cualquier archivo procesado o creado por Media Optimizer. \nEsto eliminará los caracteres especiales y los reemplazará con guiones. \nEsto es útil para evitar problemas con los nombres de archivos en diferentes sistemas operativos y otros problemas causados ​​por espacios y caracteres especiales."
+            }
+        },
+        "tile-combiner": {
+            "title": "Combinador de azulejos",
+            "notes": "¡Esta característica hará cambios permanentes en la escena! \nSe recomienda hacer una copia de seguridad de la escena.",
+            "info": "Combiner utilizará la configuración de compresión global de Media Optimizer, puede cambiarla en la configuración del módulo.",
+            "confirm": {
+                "title": "Combinador de mosaicos: Confirmar",
+                "content": "Estás a punto de combinar mosaicos, ¡esto hará cambios permanentes en la escena! \nEstás seguro de que quieres continuar?",
+                "backup": "Está a punto de combinar sin hacer una copia de seguridad, ¡esto no es recomendable!"
+            },
+            "buttons": {
+                "backup-combine": "Respaldo",
+                "combine": "Combinar",
+                "cancel": "Cancelar"
+            },
+            "mode": {
+                "label": "Modo de combinación:",
+                "background": "Azulejos de fondo",
+                "foreground": "Azulejos de primer plano",
+                "selected": "Azulejos seleccionados",
+                "all": "Todos los mosaicos"
+            },
+            "background": {
+                "label": "¿Incluir fondo?",
+                "notes": "Cuando esta opción está habilitada, el resultado de la operación Combinar se establecerá como fondo de la escena."
+            },
+            "folderPath": {
+                "label": "Ruta de la carpeta:"
+            },
+            "fileName": {
+                "label": "Nombre del archivo:"
+            },
+            "deleteTiles": {
+                "label": "¿Eliminar mosaicos combinados?"
+            }
+        },
+        "file-converter": {
+            "header-button": "Optimizar medios",
+            "title": "Optimizador de medios: Optimizador masivo",
+            "buttons": {
+                "convert": "Optimizar seleccionado",
+                "select-all": "Seleccionar todo",
+                "select-none": "Selección clara"
+            }
+        },
+        "bloat-detector": {
+            "title": "Media Optimizer: Detector de archivos innecesarios",
+            "bloat": "Se han detectado entradas que podrían provocar tiempos de carga lentos o problemas de rendimiento. Número: ",
+            "no-bloat": "No se ha detectado hinchazón.",
+            "large-collection": "La colección es muy extensa, por lo que se recomienda trasladar las entradas que no se utilicen a un compendio."
+        }
+    }
+}

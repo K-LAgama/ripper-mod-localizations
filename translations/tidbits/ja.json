@@ -1,0 +1,67 @@
+{
+    "tidbits": {
+        "message": {
+            "didYouKnow": "知っていましたか？",
+            "reroll": "もう一つ！",
+            "tidbits": "豆知識"
+        },
+        "settings": {
+            "autoCycle": {
+                "hint": "一時停止テキスト内のヒントを循環するまでの秒数。\n無効にするには 0。",
+                "name": "オートサイクル"
+            },
+            "customSource": {
+                "hint": "ちょっとしたソースとして使用するカスタム JSON ファイル。無効にするには空のままにしておきます。",
+                "name": "カスタムソース"
+            },
+            "didYouKnowText": {
+                "hint": "デフォルトの「ご存知ですか?」の代わりに使用するカスタム テキスト。\n文章。",
+                "name": "テキストをご存知ですか"
+            },
+            "imageSource": {
+                "hint": "ロード画面で使用するフォルダー。無効にするには空のままにしておきます。",
+                "name": "画像ソース"
+            },
+            "loadingScreenGradient": {
+                "hint": "画像の半分をグラデーションで覆い、テキストを読みやすくし、画像にぼかしフィルターを適用します。",
+                "name": "ロード画面のグラデーション"
+            },
+            "loadingScreenMinimumDuration": {
+                "hint": "シーンがロードされた後にロード画面を表示し続ける時間 (秒単位)",
+                "name": "ロード画面のフェードアウト遅延"
+            },
+            "pauseText": {
+                "hint": "「ゲーム一時停止」テキストの代わりにヒントを表示する",
+                "name": "テキストを一時停止する"
+            },
+            "showChatMessage": {
+                "choices": {
+                    "everyone": "みんな",
+                    "gamemaster": "ゲームマスター",
+                    "none": "なし",
+                    "players": "選手"
+                },
+                "hint": "ログイン時のささやきとしてチャットにちょっとした情報を表示します",
+                "name": "チャットメッセージを表示"
+            },
+            "showLoadingScreen": {
+                "choices": {
+                    "everyone": "みんな",
+                    "gamemaster": "ゲームマスター",
+                    "none": "なし",
+                    "players": "選手"
+                },
+                "hint": "シーンのロード中にちょっとした情報を表示する",
+                "name": "ロード画面を表示する"
+            },
+            "startupLoadingScreen": {
+                "hint": "スタートアップ Tidbit を非表示にする秒数、無効にする場合は 0",
+                "name": "スタートアップのちょっとした時間"
+            },
+            "useDefaultSources": {
+                "hint": "デフォルトのちょっとしたソースを使用する",
+                "name": "デフォルトのソースを使用する"
+            }
+        }
+    }
+}

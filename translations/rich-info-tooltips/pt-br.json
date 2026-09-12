@@ -1,0 +1,31 @@
+{
+    "rich-info-tooltips": {
+        "settings": {
+            "theme": {
+                "name": "Tema",
+                "hint": "Selecione um tema para as dicas de ferramentas com informações detalhadas.",
+                "choices": {
+                    "default": "Sem tema",
+                    "dark-fantasy": "Fantasia negra",
+                    "sci-fi": "Ficção científica",
+                    "retro": "Retrô",
+                    "modern": "Moderno"
+                }
+            },
+            "addTitle": {
+                "name": "Adicionar título às dicas de ferramentas",
+                "hint": "Adicione o título da página de informações à dica como um título H1."
+            },
+            "autoTooltips": {
+                "name": "Dicas de ferramentas automáticas",
+                "hint": "Adicione automaticamente dicas de ferramentas a todos os links de conteúdo que possuem uma descrição. \nRequer recarga"
+            },
+            "useImageBackground": {
+                "name": "Usar fundo de imagem",
+                "hint": "Use a imagem do documento (se houver) como destaque de fundo da dica de ferramenta."
+            }
+        },
+        "app": {},
+        "flags": {}
+    }
+}

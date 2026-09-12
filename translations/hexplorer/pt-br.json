@@ -1,0 +1,180 @@
+{
+    "hexplorer": {
+        "request": {
+            "explore": "Explorar",
+            "reveal": "Revelar",
+            "advance-time": "Tempo de Avanço",
+            "total-time": "Tempo total",
+            "roll-tables": "Role na mesa",
+            "move": "Mover",
+            "journal-entry": "Revelar página",
+            "not-in-scene": "Hexplorer: Você precisa estar na mesma cena do movimento solicitado para confirmá-lo.",
+            "player-message": "Solicitação de movimento encaminhada ao Game Master."
+        },
+        "fog": {
+            "showColor": "Alternar a exibição das cores das células nas células reveladas"
+        },
+        "scene": {
+            "enable": {
+                "name": "Habilitar Hexplorer"
+            }
+        },
+        "token": {
+            "enable": {
+                "name": "É Hexplorer?"
+            },
+            "revealRadius": {
+                "name": "Revelar Raio",
+                "hint": "O raio da área revelada em hexágonos. \n0 significa que apenas o hexágono em que o token está é revelado."
+            },
+            "speed": {
+                "name": "Velocidade",
+                "hint": "A velocidade de movimento do token do Hexplorer em unidades de cena por hora. \nIsso é usado para calcular o avanço do tempo."
+            }
+        },
+        "settings": {
+            "hexTime": {
+                "name": "Animação de Movimento",
+                "hint": "O tempo de animação em milissegundos para mover uma célula."
+            },
+            "autoTriggerExplore": {
+                "name": "Ação de exploração de gatilho automático",
+                "hint": "Acione automaticamente as atividades de exploração quando um token é movido para uma célula. \nSe o seu sistema exigir uma ação manual dos jogadores para explorar uma célula, isso poderá ser desativado."
+            }
+        },
+        "hexplorer-app": {
+            "title": "Hexplorador",
+            "brushes": {
+                "legend": "Pincéis",
+                "radius": "Raio do pincel",
+                "hint": "Clique em uma célula da tela para configurá-la e/ou salvá-la como pincel. \nClique nas células com um pincel selecionado para pintar as células em vez de configurá-las.",
+                "apply": {
+                    "title": "Aplicar pincel",
+                    "sameColor": "Mesma cor",
+                    "sameColorHint": "Aplique o pincel em todas as células da mesma cor",
+                    "sameName": "Mesmo nome",
+                    "sameNameHint": "Aplique pincel a todas as células com o mesmo nome de região",
+                    "tooltip": "Aplicar pincel",
+                    "notification": "Pincel aplicado em {count} células."
+                }
+            },
+            "settings": {
+                "legend": "Configurações",
+                "show-color": {
+                    "label": "Exibir cores de células em células reveladas"
+                },
+                "always-banner": {
+                    "label": "Sempre exibir banner da região"
+                }
+            },
+            "reset-fow": {
+                "label": "Redefinir células reveladas",
+                "title": "Redefinir células reveladas?",
+                "content": "Tem certeza de que deseja redefinir as células reveladas? \nEsta ação não pode ser desfeita."
+            },
+            "reset-discovered": {
+                "label": "Redefinir regiões descobertas",
+                "title": "Redefinir regiões descobertas?",
+                "content": "Tem certeza de que deseja redefinir as regiões descobertas? O banner será exibido novamente ao entrar nessas regiões pela primeira vez."
+            }
+        },
+        "cell-config": {
+            "title": "Configurar célula",
+            "tabs": {
+                "basic": {
+                    "label": "Básico"
+                },
+                "activities": {
+                    "label": "Atividades"
+                },
+                "discover-activities": {
+                    "label": "Explorar atividades",
+                    "hint": "Essas atividades serão executadas quando o hexplorer passar pela célula ou encerrar seu movimento nela. \nAlgumas atividades podem ser executadas apenas na primeira vez que o hexplorer se move para a célula."
+                },
+                "explore-activities": {
+                    "label": "Revelar atividades",
+                    "hint": "Essas atividades serão executadas quando a célula for revelada pela primeira vez."
+                }
+            },
+            "revealed": {
+                "label": "Revelado",
+                "hint": "Uma célula revelada ficará visível para os jogadores."
+            },
+            "revealRadius": {
+                "label": "Revelar Raio",
+                "hint": "O raio a ser revelado em torno desta célula ao revelá-la. \nUm valor de 0 ou mais substituirá a configuração do token do hexplorer."
+            },
+            "discovered": {
+                "label": "Explorado",
+                "hint": "Uma célula explorada foi atravessada por um marcador de hexplorador."
+            },
+            "execute-only-on-explore": {
+                "label": "Execute apenas no explorar",
+                "hint": "Execute as atividades da célula somente se a célula não tiver sido explorada anteriormente."
+            },
+            "first-time-only": {
+                "label": "Somente pela primeira vez",
+                "hint": "Execute a atividade acima apenas na primeira vez que o hexplorer se mover para esta célula."
+            },
+            "reveal-tooltip": {
+                "label": "Revelar dica",
+                "hint": "Dê permissão de observador aos jogadores para a página do diário associada à dica de ferramenta."
+            },
+            "reveal-journal-entry": {
+                "label": "Revelar entrada de diário",
+                "hint": "Permita que os jogadores abram o lançamento contábil associado a esta célula na guia Geral."
+            },
+            "reveal-map-notes": {
+                "label": "Revelar notas do mapa",
+                "hint": "Dê permissão de observador aos jogadores para todas as notas do mapa de cena presentes nesta célula."
+            },
+            "color": {
+                "label": "Cor"
+            },
+            "region": {
+                "label": "Região"
+            },
+            "reveal": {
+                "label": "Revelar células",
+                "hint": "Lista separada por vírgulas de células a serem reveladas. \nShift Clique na tela para adicionar células.",
+                "notification": "Célula adicionada à lista de revelação."
+            },
+            "remove-hidden": {
+                "label": "Remover oculto",
+                "hint": "Documentos para remover o status oculto quando esta atividade é executada. \nPodem ser luzes, blocos, sons, tokens, etc."
+            },
+            "macros": {
+                "label": "Macros",
+                "hint": "Macros a serem executadas quando esta atividade for executada."
+            },
+            "speed-multiplier": {
+                "label": "Multiplicador de velocidade"
+            },
+            "roll-tables": {
+                "label": "Mesas rolantes",
+                "hint": "Role Mesas para rolar ao entrar ou viajar pela cela."
+            },
+            "tooltip": {
+                "label": "Dica"
+            },
+            "journal-entry": {
+                "label": "Lançamento de diário",
+                "hint": "Lançamento de diário para abrir com um clique."
+            },
+            "brush-name": {
+                "label": "Nome do pincel"
+            },
+            "save-as-brush": {
+                "label": "Salvar como pincel"
+            },
+            "discover-button": {
+                "label": "Acionar ação de exploração",
+                "no-token": "Nenhum token do hexplorer encontrado."
+            }
+        },
+        "flags": {},
+        "err": {
+            "gridless": "O Hexplorer não é compatível com cenas sem grade. \nSelecione um tipo de grade."
+        }
+    }
+}

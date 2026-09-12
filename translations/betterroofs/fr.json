@@ -1,0 +1,15 @@
+{
+    "betterroofs": {
+        "tileConfig": {
+            "showInFog.name": "Lève le voile sur le « brouillard de guerre »",
+            "showInFog.hint": "Lorsqu'un personnage a une ligne de vue sur cette case, celle-ci devient visible à travers le brouillard de guerre. Ne fonctionne pas avec les lumières.",
+            "occlusionLinkId": "Identifiant du lien d'occlusion",
+            "occlusionLinkIdHint": "Ce texte peut être n'importe quel texte. Lorsqu'une tuile portant la mention « Occlusion Link Source ? » est masquée (qu'un jeton se trouve en dessous), toutes les tuiles portant le même « Occlusion Link Id » seront également masquées. Exemple d'utilisation : relier des toits entre eux.",
+            "occlusionLinkSource": "Source du lien « Occlusion » ?"
+        },
+        "settings": {
+            "hoverFade.name": "Fondu au survol",
+            "hoverFade.hint": "Lorsque cette option est activée, les toits s'estompent lorsque vous passez la souris dessus. Il s'agit d'une fonctionnalité de Core Foundry VTT ; ce paramètre vous permet simplement de la désactiver."
+        }
+    }
+}

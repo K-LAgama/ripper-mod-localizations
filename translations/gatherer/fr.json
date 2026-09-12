@@ -1,0 +1,121 @@
+{
+    "TYPES": {
+        "JournalEntryPage": {
+            "gatherer": {
+                "gatherer": "Cueilleur"
+            }
+        }
+    },
+    "gatherer": {
+        "gatherer": "Cueilleur",
+        "gathered": "Rassemblés",
+        "found": "Trouvé",
+        "quantity": "Quantité",
+        "minigame": {
+            "title": "Mini-jeu « Gatherer »"
+        },
+        "sheet": {
+            "err": {
+                "noDraws": "Ce point de ralliement est épuisé et ne pourra plus être utilisé tant qu’il n’aura pas été réinitialisé.",
+                "noActor": "Aucun acteur n'est disponible pour exécuter la collecte. Veuillez sélectionner un jeton ou vous attribuer un personnage.",
+                "noReq": "Vous ne remplissez pas les conditions requises pour vous rassembler ici. Il manque : ",
+                "noItem": "Élément introuvable. Veuillez vérifier l'orthographe et réessayer.",
+                "noExp": "Tu n'as récolté aucune ressource à cet endroit...",
+                "noGM": "Un utilisateur GM doit être connecté pour pouvoir collecter."
+            },
+            "gather": "Rassembler",
+            "reset": "Réinitialiser",
+            "edit": "Modifier",
+            "remaining": "Tirages restants",
+            "time": "Réinitialisations en",
+            "quantity": "Quantité",
+            "waitingFirst": "En attente du premier tirage au sort"
+        },
+        "flags": {
+            "table": {
+                "label": "Table pliable"
+            },
+            "time": {
+                "label": "Heure",
+                "placeholder": "Temps restant avant la réinitialisation (en heures)"
+            },
+            "quantity": {
+                "label": "Quantité",
+                "placeholder": "Expression « nombre » ou « rouleau »"
+            },
+            "draws": {
+                "label": "Tirage",
+                "placeholder": "Effectue des tractions avant que l'endroit ne soit épuisé",
+                "notes": "Ne rien indiquer pour utiliser les extraits de la page du collecteur correspondante"
+            },
+            "require": {
+                "label": "Conditions requises",
+                "placeholder": "Liste d'éléments séparés par des virgules"
+            },
+            "minigame": {
+                "label": "Mini-jeu",
+                "placeholder": "Durée du mini-jeu en millisecondes"
+            },
+            "expression": {
+                "label": "Expression",
+                "placeholder": "Condition de la macro à exécuter"
+            },
+            "systemAbil": {
+                "label": "Vérifier"
+            },
+            "DC": {
+                "label": "DC",
+                "placeholder": "DC"
+            },
+            "toolCheck": {
+                "label": "Outil",
+                "placeholder": "Nom de l'outil"
+            },
+            "toolDC": {
+                "label": "DC",
+                "placeholder": "DC"
+            },
+            "gatherSheet": {
+                "label": "Fiche de récolte",
+                "placeholder": "Accéder à la page « Drop Gatherer » ici"
+            },
+            "modifierList": {
+                "label": "Modificateur",
+                "add": "Ajouter un modificateur",
+                "hint": "Si le résultat du jet ou la valeur renvoyée par l'expression est égal ou supérieur à la difficulté (en retenant la valeur la plus élevée), le nombre d'objets ramassés est modifié selon l'expression de modification. Vous pouvez inclure un opérateur mathématique au début du modificateur ; si aucun n’est fourni, un signe plus (+) est utilisé par défaut. Par exemple, *1d4 multiplie le nombre d’objets ramassés par 1d4."
+            }
+        },
+        "gatherer-actor-config": {
+            "title": "Configuration de Gatherer",
+            "notes": "Pour récupérer un jeton spécifique, créez une macro contenant les éléments suivants :",
+            "notes2": "Ou utilisez le raccourci clavier : "
+        },
+        "error": {
+            "notGatherer": "Ce n'est pas une fiche de collecte. Veuillez sélectionner une fiche de collecte et réessayer.",
+            "noDraws": "Il n'y a plus de ressources à récolter sur cette créature.",
+            "noJournal": "Aucun point de rassemblement n'est associé à ce jeton. Veuillez sélectionner un jeton associé à un point de rassemblement valide, puis réessayez.",
+            "cantHarvest": "Les conditions requises pour obtenir ce jeton ne sont pas remplies"
+        },
+        "settings": {
+            "resourcePath": {
+                "name": "Parcours des ressources de Harvest",
+                "hint": "Chemin d'accès permettant de vérifier si la collecte est possible. Par exemple, pour DnD5e, il s'agirait de « attributes.hp.value » pour vérifier si le jeton est en vie."
+            },
+            "quantityPath": {
+                "name": "Chemin d'accès à la quantité",
+                "hint": "Chemin d'accès aux données relatives à la quantité d'un article. À partir de « system » (exclu). Par exemple, pour DnD5e, il s'agirait de « quantity »."
+            },
+            "resourceValue": {
+                "name": "Valeur des ressources issues de la récolte",
+                "hint": "Valeur permettant de vérifier si la récolte est possible. Par exemple, dans DnD5e, cette valeur serait « 0 » pour vérifier si le jeton n'a plus aucun point de vie (PV)."
+            },
+            "enableHarvesting": {
+                "name": "Activer la collecte"
+            },
+            "migrateOnStartup": {
+                "name": "Transférer les paramètres au démarrage",
+                "hint": "Si cette option est activée, le module effectuera la migration des données du journal au démarrage. Vous pouvez utiliser la macro « game.modules.get(\"gatherer\").API.migration.showManualMigrationDialog() » pour migrer manuellement vos paramètres."
+            }
+        }
+    }
+}

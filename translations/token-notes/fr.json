@@ -1,0 +1,34 @@
+{
+    "tokennotes": {
+        "togglenotes": "Afficher/Cacher Token Notes",
+        "settings": {
+            "autoopen": {
+                "name": "Ouverture/Fermeture automatique",
+                "hint": "Ouvre/ferme automatiquement les notes lorsque le token est sélectionné/désélectionné."
+            },
+            "allowplayers": {
+                "name": "Permissions des joueurs",
+                "hint": "Niveau de permission pour les joueurs. Uniquement disponible que pour les jetons appartenant au joueur.",
+                "options": {
+                    "none": "Aucun droit",
+                    "readonly": "Lecture uniquement",
+                    "readwrite": "Lecture/Ecriture"
+                }
+            },
+            "position": {
+                "name": "Poste",
+                "hint": "Position des notes.",
+                "options": {
+                    "bottomleft": "En bas � gauche",
+                    "bottomright": "En bas � droite",
+                    "topleft": "En haut � gauche",
+                    "topright": "En bas � droite"
+                }
+            }
+        },
+        "tooltip": {
+            "toggle-edit": "Mode de modification",
+            "toggle-token-actor": "Togle / acteur à bascule"
+        }
+    }
+}

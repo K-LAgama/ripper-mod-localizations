@@ -1,0 +1,63 @@
+{
+    "theripper-premium-hub": {
+        "settings": {
+            "autoCheck": {
+                "name": "Rechercher les mises à jour au démarrage",
+                "hint": "Vérifier automatiquement, au chargement du monde, si l'un de mes modules premium dispose de mises à jour."
+            },
+            "checkDisabled": {
+                "name": "Modules de vérification non activés",
+                "hint": "Vérifiez si des mises à jour sont disponibles pour les modules installés mais non activés."
+            }
+        },
+        "tweaks-menu": {
+            "title": "Réglages",
+            "label": "Configurer les réglages avancés",
+            "hint": "Configurez certaines fonctionnalités visant à améliorer votre confort d'utilisation, telles que les macros de démarrage, les boutons de nettoyage des en-têtes et les ajustements CSS.",
+            "tabs": {
+                "misc": "Divers",
+                "startup-macros": "Macros de démarrage",
+                "css-tweaks": "Ajustements CSS"
+            },
+            "initMacros": {
+                "name": "Macros de démarrage",
+                "hint": "Exécuter les macros au chargement du monde. Les macros sont exécutées dans l'ordre dans lequel elles sont répertoriées ici."
+            },
+            "readyMacros": {
+                "name": "Macros prêtes à l'emploi",
+                "hint": "Exécuter les macros lorsque le client est prêt. Les macros sont exécutées dans l'ordre dans lequel elles sont répertoriées ici."
+            },
+            "cssTweak": {
+                "name": "Ajustements CSS",
+                "hint": "Écrivez du code CSS personnalisé pour modifier les styles de Foundry ou des modules. Trois champs sont mis à disposition pour une meilleure organisation, mais vous pouvez également n'en utiliser qu'un seul."
+            },
+            "cleanHeaderButtons": {
+                "name": "Boutons d'en-tête épurés",
+                "hint": "Supprimez le texte des boutons d'en-tête pour les rendre plus épurés. Si vous utilisez beaucoup de mes modules, vous risquez de vous retrouver avec de nombreux boutons dans les en-têtes de fenêtre ; cette option permet de supprimer le texte qui y figure. (Nécessite LibWrapper)"
+            },
+            "compactSidebar": {
+                "name": "Barre latérale compacte",
+                "hint": "Réduisez la taille des éléments de la barre latérale afin de pouvoir afficher davantage d'éléments à l'écran."
+            },
+            "enableSettingsSwap": {
+                "name": "Paramètres client imposés",
+                "hint": "Activer la possibilité de remplacer les paramètres des clients par les paramètres globaux. Cela imposera les paramètres sélectionnés à tous les clients ; les joueurs ne pourront alors plus voir ces paramètres."
+            },
+            "diceTray": {
+                "name": "Plateau à dés",
+                "hint": "Ajoutez un plateau de dés à l'historique de discussion. Cela vous permettra de lancer les dés et d'y ajouter des modificateurs."
+            },
+            "autoRotate": {
+                "name": "Rotation automatique",
+                "hint": "Faire pivoter automatiquement les pions pour qu'ils soient orientés dans le sens du déplacement et vers le pion ciblé.",
+                "none": "Personnes handicapées",
+                "defaultOn": "Activé (activé par défaut)",
+                "defaultOff": "Activé (désactivé par défaut)",
+                "on": "Activé",
+                "off": "Personnes en situation de handicap",
+                "default": "Par défaut"
+            }
+        },
+        "wtcNotification": "La configuration de {paramètre} est définie sur {valeur}. Veuillez recharger le jeu pour que les modifications prennent effet. Les modifications apportées à ce paramètre ne seront enregistrées qu'au prochain rechargement."
+    }
+}

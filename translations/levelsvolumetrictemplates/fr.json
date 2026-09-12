@@ -1,0 +1,19 @@
+{
+    "levels.controls.toggleCylinder.name": "Placer un cylindre à la place d'une sphère",
+    "levels.controls.toggleVolumetric.name": "Modèle volumétrique",
+    "levelsvolumetrictemplates.settings.volPercent.name": "Pourcentage volumique",
+    "levelsvolumetrictemplates.settings.volPercent.hint": "Le pourcentage du volume ou de la surface considéré comme une cible valide",
+    "levelsvolumetrictemplates.settings.checkCollision.name": "Vérification des collisions",
+    "levelsvolumetrictemplates.settings.checkCollision.hint": "Vérifier s'il y a collision entre les murs et les sols, entre l'origine du modèle et le centre du jeton",
+    "levelsvolumetrictemplates.settings.3dtemplatedefault.name": "Activer les modèles volumétriques par défaut",
+    "levelsvolumetrictemplates.settings.3dtemplatedefault.hint": "Détermine si les modèles volumétriques doivent être activés ou non lors du chargement du monde",
+    "levelsvolumetrictemplates.settings.handModeDefault.name": "Activer le mode manuel par défaut",
+    "levelsvolumetrictemplates.settings.handModeDefault.hint": "Si cette option est activée, le mode « main » sera activé au chargement du monde. Lorsque ce mode est activé, les modèles seront placés par défaut à la hauteur de la main du jeton plutôt qu'à son altitude.",
+    "levelsvolumetrictemplates.settings.dynamicSwap.name": "Changement automatique dynamique",
+    "levelsvolumetrictemplates.settings.dynamicSwap.hint": "Détermine automatiquement s'il faut utiliser un modèle volumétrique ou un modèle de surface. Lorsque ce mode est activé, les cercles et les cônes sont toujours volumétriques, et les cônes sont automatiquement calculés à la hauteur de la main.",
+    "levelsvolumetrictemplates.settings.debugMode.name": "Mode débogage",
+    "levelsvolumetrictemplates.settings.debugMode.hint": "Afficher les pourcentages de volume/surface sur les jetons lors du placement des modèles",
+    "levels.controls.handMode.name": "Placez les gabarits à hauteur de main",
+    "levels.controls.ignoreSelf.name": "Ignorer soi-même",
+    "levels.controls.ignoreFriendly.name": "Ignorer les personnages amis"
+}

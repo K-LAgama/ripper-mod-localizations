@@ -1,0 +1,104 @@
+{
+    "media-optimizer": {
+        "converted": "Medienoptimierer: Konvertiert",
+        "conversionFailed": "Media Optimizer: Konvertierung fehlgeschlagen. Weitere Informationen finden Sie im Wiki.",
+        "audioConversionStarted": "Media Optimizer: Audiokonvertierung gestartet, haben Sie etwas Geduld, dies kann eine Weile dauern. \nWenn Sie möchten, können Sie den Fortschritt in der Konsole überprüfen (F12). \nDatei:",
+        "videoConversionStarted": "Media Optimizer: Videokonvertierung gestartet. Seien Sie geduldig, dies kann eine Weile dauern. \nWenn Sie möchten, können Sie den Fortschritt in der Konsole überprüfen (F12). \nDatei:",
+        "settings": {
+            "bloatDetector": {
+                "name": "Blähungsdetektor",
+                "label": "Open Bloat Detector",
+                "hint": "Erkennt Einträge, die möglicherweise zu langen Ladezeiten oder Leistungsproblemen führen können."
+            },
+            "enabled": {
+                "name": "Ermöglicht",
+                "hint": "Ob der Medienoptimierer aktiviert werden soll oder nicht. \nWenn deaktiviert, werden Bilder, Audio und Video nicht optimiert."
+            },
+            "compressionRatio": {
+                "name": "Qualität",
+                "hint": "Die Qualität, die beim Optimieren von Bildern verwendet werden soll. \nEine höhere Qualität führt zu einer höheren Bildqualität und einer größeren Dateigröße. \nEine geringere Qualität führt zu einer geringeren Bildqualität und einer kleineren Dateigröße. \nDer Standardwert ist 0,75. \nHinweis: Komprimierungsverhältnisse für Audio und Video können nicht angepasst werden."
+            },
+            "maxResolution": {
+                "name": "maximale Auflösung",
+                "hint": "Die maximale Auflösung des zu optimierenden Bildes. \nWenn das Bild größer ist, wird es vor der Optimierung auf diese Auflösung angepasst. \nDies ist nützlich, um sehr hohe Auflösungen zu vermeiden, die von den meisten Grafikkarten nicht unterstützt werden.",
+                "choices": {
+                    "1024": "1K (1024 px)",
+                    "2048": "2K (2048px)",
+                    "4096": "4K (4096 px)",
+                    "8192": "8K (8192 px)",
+                    "16384": "16K (16384px)"
+                }
+            },
+            "excludeFolders": {
+                "name": "Ordner ausschließen",
+                "hint": "Durch Kommas getrennte Liste der Ordner, die von der Optimierung ausgeschlossen werden sollen. \nWenn Bilder/Audio/Videos an diesen Ort hochgeladen werden, werden sie nicht optimiert."
+            },
+            "optimizeImages": {
+                "name": "Bilder optimieren",
+                "hint": "Ob Bilder optimiert werden sollen oder nicht."
+            },
+            "optimizeAudio": {
+                "name": "Audio optimieren",
+                "hint": "Ob Audio optimiert werden soll oder nicht."
+            },
+            "optimizeVideo": {
+                "name": "Videos optimieren",
+                "hint": "Ob Videos optimiert werden sollen oder nicht."
+            },
+            "slugifyFileNames": {
+                "name": "Bereinigen Sie Dateinamen",
+                "hint": "Ob Dateinamen bereinigt werden sollen oder nicht. \nBeachten Sie, dass diese Einstellung für alle von Media Optimizer verarbeiteten oder erstellten Dateien gilt. \nDadurch werden Sonderzeichen entfernt und durch Bindestriche ersetzt. \nDies ist nützlich, um Probleme mit Dateinamen auf verschiedenen Betriebssystemen und andere Probleme zu vermeiden, die durch Leerzeichen und Sonderzeichen verursacht werden."
+            }
+        },
+        "tile-combiner": {
+            "title": "Fliesenkombinator",
+            "notes": "Diese Funktion führt zu dauerhaften Änderungen an der Szene! \nEs wird dringend empfohlen, eine Sicherungskopie der Szene zu erstellen.",
+            "info": "Der Combiner verwendet die globalen Komprimierungseinstellungen von Media Optimizer. Sie können diese in den Moduleinstellungen ändern.",
+            "confirm": {
+                "title": "Tile Combiner: Bestätigen",
+                "content": "Sie sind dabei, Kacheln zu kombinieren. Dadurch wird die Szene dauerhaft verändert! \nBist du dir sicher, dass du weitermachen willst?",
+                "backup": "Sie sind dabei, zu kombinieren, ohne ein Backup zu erstellen. Dies wird nicht empfohlen!"
+            },
+            "buttons": {
+                "backup-combine": "Sicherung",
+                "combine": "Kombinieren",
+                "cancel": "Stornieren"
+            },
+            "mode": {
+                "label": "Kombinationsmodus:",
+                "background": "Hintergrundkacheln",
+                "foreground": "Vordergrundkacheln",
+                "selected": "Ausgewählte Kacheln",
+                "all": "Alle Kacheln"
+            },
+            "background": {
+                "label": "Hintergrund einschließen?",
+                "notes": "Wenn diese Option aktiviert ist, wird das Ergebnis der Kombinationsoperation als Szenenhintergrund festgelegt."
+            },
+            "folderPath": {
+                "label": "Ordnerpfad:"
+            },
+            "fileName": {
+                "label": "Dateinamen:"
+            },
+            "deleteTiles": {
+                "label": "Kombinierte Kacheln löschen?"
+            }
+        },
+        "file-converter": {
+            "header-button": "Medien optimieren",
+            "title": "Medienoptimierer: Massenoptimierer",
+            "buttons": {
+                "convert": "Ausgewählte optimieren",
+                "select-all": "Wählen Sie Alle",
+                "select-none": "Auswahl löschen"
+            }
+        },
+        "bloat-detector": {
+            "title": "Media Optimizer: Bloat-Detektor",
+            "bloat": "Es wurden Einträge erkannt, die möglicherweise zu langen Ladezeiten oder Leistungsproblemen führen können. Anzahl: ",
+            "no-bloat": "Es wurde keine Blähung festgestellt.",
+            "large-collection": "Die Sammlung ist sehr umfangreich; es wird empfohlen, nicht verwendete Einträge in ein Kompendium zu verschieben."
+        }
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "three-actor-portrait": {
+        "settings": {
+            "authKey": {
+                "name": "Clave de autenticación de HeroForge",
+                "hint": "Introduce aquí tu clave de autenticación. La encontrarás en la configuración de tu cuenta de HeroForge (Cuenta -> Información personal -> Clave de acceso). Si cambias tu contraseña de HeroForge, tendrás que actualizar la clave de autenticación."
+            },
+            "disablePortrait": {
+                "name": "Desactivar los retratos en 3D",
+                "hint": "Desactivar los retratos en 3D de todos los actores. Recomendado para dispositivos de gama baja y velocidades de red lentas."
+            },
+            "playerCanEditPortrait": {
+                "name": "Permitir a los jugadores editar la posición de la cámara",
+                "hint": "Permitir a los jugadores modificar la posición de la cámara en los retratos en 3D."
+            },
+            "autoRotate": {
+                "name": "Rotación automática",
+                "hint": "Girar automáticamente la cámara en los retratos en 3D."
+            },
+            "rotationSpeed": {
+                "name": "Velocidad de rotación",
+                "hint": "La velocidad a la que gira la cámara en los «Retratos 3D»."
+            },
+            "license-agreement": {
+                "name": "Aceptar las condiciones de uso",
+                "hint": "Al activar esta configuración, aceptas las Condiciones de servicio de 3D Portraits. Este módulo utiliza la API de HeroForge; cualquier intento de realizar ingeniería inversa, extraer o utilizar la API sin el permiso de Sky Castle Studio incumple las Condiciones de servicio. Si deseas utilizar la API de HeroForge en tu propio proyecto, ponte en contacto con Sky Castle Studio en support@heroforge.com."
+            },
+            "maxContexts": {
+                "name": "Número máximo de retratos simultáneos",
+                "hint": "El número máximo de retratos que se pueden mostrar al mismo tiempo. Es posible que otros módulos u otras pestañas del navegador utilicen contextos de canvas; si se producen fallos en WebGL, quizá convenga reducir este valor. WebGL tiene un límite máximo de 16 contextos."
+            }
+        },
+        "portrait-preview": {
+            "save-pose": "Guardar postura",
+            "download": "Descargar",
+            "toggle-rotate": "Activar/desactivar la rotación automática",
+            "camera-position-saved": "Posición de la cámara guardada",
+            "topdown": "Vista desde arriba",
+            "outline": "Mostrar/ocultar estructura"
+        },
+        "notifications": {
+            "maxContextExceeded": "Has alcanzado el número máximo de retratos en 3D que puedes mostrar a la vez; se ha ocultado el más antiguo. Puedes modificar esta configuración en los ajustes del módulo."
+        }
+    }
+}

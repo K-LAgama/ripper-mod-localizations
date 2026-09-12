@@ -1,0 +1,38 @@
+{
+    "tokenflip": {
+        "token-flip-config": {
+            "title": "Configurar el lanzamiento de token",
+            "add": "Agregar nueva cara",
+            "flip": "Voltear ficha",
+            "model3d": "modelo 3d",
+            "faceId": "identificación facial",
+            "protoWarning": "ADVERTENCIA: Debido a errores de Core Foundry que afectan a los tokens prototipo, se recomienda encarecidamente configurar el cambio de token en un token en la escena y luego asignar el token al token prototipo.",
+            "copiedId": "Copia de identificación al portapapeles",
+            "copyID": "Copiar identificación",
+            "autoFlip": {
+                "label": "Voltear automáticamente",
+                "none": "Ninguno",
+                "inCombat": "En combate",
+                "outOfCombat": "Fuera de combate"
+            },
+            "transition": {
+                "label": "Transición",
+                "flip": "Voltear"
+            },
+            "autoFlipMacro": {
+                "label": "Macro de giro automático",
+                "hint": "Una macro se ejecuta cuando el actor o uno de sus elementos se actualiza y cuando un GM carga una escena. \nDevuelve verdadero para voltear a esta cara. \nConsulte la wiki para obtener más información."
+            }
+        },
+        "settings": {
+            "flipSpeed": {
+                "name": "Velocidad de giro",
+                "hint": "Qué tan rápido se voltean las fichas. \nEl valor predeterminado es 0,1."
+            },
+            "enableAutoFlip": {
+                "name": "Habilitar giro automático",
+                "hint": "Habilite el cambio automático de tokens. \nSi no está utilizando la función de giro automático, puede desactivar esta configuración para ahorrar algo de rendimiento."
+            }
+        }
+    }
+}

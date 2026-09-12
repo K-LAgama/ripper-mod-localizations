@@ -1,0 +1,42 @@
+{
+    "recycle-bin": {
+        "app": {
+            "title": "🗑️ Papelera de reciclaje",
+            "restore-item": "Restaurar elemento",
+            "preview-item": "Elemento de vista previa",
+            "permanently-delete": "Eliminar elemento de forma permanente",
+            "noParent": "Documento principal",
+            "search": "Buscar",
+            "time": "Eliminado hace {time}",
+            "deleteOnRefresh": "Este elemento se eliminará permanentemente al actualizar.",
+            "deleteOnRefreshTitle": "Uno o más elementos pendientes de eliminación"
+        },
+        "settings": {
+            "maxPermanentItems": {
+                "name": "Máxima Historia Permanente",
+                "hint": "Número de elementos que se guardarán entre recargas."
+            },
+            "maxTemporaryItems": {
+                "name": "Máxima Historia Temporal",
+                "hint": "Número de elementos que se guardarán. \nLos elementos temporales que excedan el 'Historial permanente máximo' se perderán al recargar."
+            }
+        },
+        "error": {
+            "restore": "No se pudo restaurar {elemento}. \nPadre no encontrado:",
+            "preview": "No se pudo obtener una vista previa de {elemento}. \nPadre no encontrado."
+        },
+        "success": {
+            "restore": "{elemento} restaurado con éxito."
+        },
+        "dialog": {
+            "restoreParent": {
+                "title": "Restaurar padre",
+                "content": "El padre de este elemento no se pudo encontrar en su mundo, pero está presente en la papelera de reciclaje. \n¿Te gustaría restaurarlo?"
+            },
+            "permanentlyDelete": {
+                "title": "Borrar permanentemente",
+                "content": "¿Está seguro de que desea eliminar este elemento de forma permanente? \nEsta acción no se puede deshacer."
+            }
+        }
+    }
+}

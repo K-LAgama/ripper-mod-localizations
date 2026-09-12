@@ -1,0 +1,74 @@
+{
+    "AE": {
+        "custombindings": {
+            "add": "Adicionar encadernação",
+            "bindingstitle": "Editar atalhos personalizados",
+            "bindingtitle": "Editar vinculação",
+            "tt": {
+                "spellname": "Nome do feitiço",
+                "edit": "Editar",
+                "delete": "Excluir",
+                "creaturename": "Nome da criatura"
+            },
+            "sett": {
+                "label": "Configurar ligações personalizadas",
+                "name": "Encadernações personalizadas",
+                "hint": "Configurar atalhos de teclado personalizados"
+            }
+        },
+        "pick3d": "Clique em um ponto na tela 3D para invocar.",
+        "dialogs": {
+            "companionManager": {
+                "title": "Gerente de Acompanhamento",
+                "confirm": {
+                    "title": "Excluir Companheiro",
+                    "content": "<p>Tem certeza de que deseja excluir este companheiro?</p>"
+                }
+            }
+        },
+        "actorSheetBtn": "Companheiros",
+        "animations": {
+            "fire": "Fogo",
+            "air": "Ar",
+            "lightning": "Relâmpago",
+            "water": "Água",
+            "energy1": "Energia",
+            "magic1": "Magia",
+            "heart": "Doki-Doki",
+            "music": "Crescendo",
+            "fourelements": "Quatro Elementos",
+            "music2": "Acorde",
+            "darkness": "Escuridão",
+            "ice1": "Gelo",
+            "magic2": "Conjuração",
+            "lightning2": "Tempestade"
+        },
+        "groups": {
+            "elemental": "Elemental",
+            "magical": "Mágico",
+            "z-none": "Outros"
+        },
+        "settings": {
+            "storeonactor": {
+                "title": "Armazenar Companheiros no Ator",
+                "hint": "Por padrão, armazene os companheiros no ator, em vez de no usuário."
+            },
+            "enableautomations": {
+                "title": "Ativar automações",
+                "hint": "Ative o sistema de automação do companheiro ao lançar o feitiço."
+            },
+            "autoclose": {
+                "title": "Fechamento automático",
+                "hint": "Fechar automaticamente a janela do companheiro após a invocação."
+            },
+            "hidebutton": {
+                "title": "Ocultar o botão “Companheiro”",
+                "hint": "Ocultar o botão de companheiro na ficha do personagem."
+            },
+            "restrictOwned": {
+                "title": "Apenas atores contratados",
+                "hint": "Restringir a lista de companheiros para mostrar apenas os atores que interpretam companheiros dos quais você é proprietário."
+            }
+        }
+    }
+}

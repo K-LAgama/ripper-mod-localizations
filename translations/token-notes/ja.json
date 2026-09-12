@@ -1,0 +1,34 @@
+{
+    "tokennotes": {
+        "settings": {
+            "allowplayers": {
+                "hint": "プレイヤー向けのトークンノートの許可のレバー。\nすべてのオプションは、プレーヤーが所有するトークンにのみ利用できます。",
+                "name": "プレーヤーの権限",
+                "options": {
+                    "none": "なし",
+                    "readonly": "読むだけです",
+                    "readwrite": "読み取り/書き込み"
+                }
+            },
+            "autoopen": {
+                "hint": "トークンが選択された/選択されていないときに、メモを自動的に開閉します。",
+                "name": "オートオープン /クローズ"
+            },
+            "position": {
+                "hint": "メモの位置。",
+                "name": "位置",
+                "options": {
+                    "bottomleft": "左下",
+                    "bottomright": "右下",
+                    "topleft": "左上",
+                    "topright": "右上"
+                }
+            }
+        },
+        "togglenotes": "トークンノートを切り替えます",
+        "tooltip": {
+            "toggle-edit": "トグル編集モード",
+            "toggle-token-actor": "トークン/俳優を切り替えます"
+        }
+    }
+}

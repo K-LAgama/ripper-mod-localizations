@@ -1,0 +1,329 @@
+{
+    "simple-timekeeping": {
+        "day": "Tag",
+        "days": "Tage",
+        "in-progress": "In Bearbeitung",
+        "paused": "Pausiert",
+        "paused-info": "Einfache Zeiterfassung - Die Zeiterfassung wird angehalten, durch Anklicken wird sie fortgesetzt.",
+        "unpaused-info": "Einfache Zeitmessung - Zeitfortschritt wird fortgesetzt, zum Anhalten anklicken. Die Zeit wird auch dann angehalten, wenn das Spiel pausiert oder ein Kampf aktiv ist.",
+        "calendar-dusk-dawn": "Dieser Kalender enthält Morgen- und Abenddämmerungszeiten. Alle Werte, die in den Einstellungen oder aufgrund der Klimazone festgelegt wurden, werden ignoriert und der Kalender wird verwendet.",
+        "settings": {
+            "config-menu": {
+                "label": "Konfigurieren Sie",
+                "name": "Konfiguration",
+                "hint": "Konfigurieren Sie die Moduleinstellungen."
+            }
+        },
+        "weather": {
+            "clear": "Klar",
+            "partlyCloudy": "Teilweise bewölkt",
+            "cloudy": "Bewölkt",
+            "overcast": "Bedeckt",
+            "rain": "Regen",
+            "thunderstorm": "Gewitter",
+            "drizzle": "Nieselregen",
+            "snow": "Schnee",
+            "blizzard": "Schneesturm",
+            "hail": "Hagel",
+            "fog": "Nebel",
+            "mist": "Dunst",
+            "windy": "Windig",
+            "tornado": "Wirbelsturm",
+            "hurricane": "Orkan",
+            "ashfall": "Ascheregen",
+            "sandstorm": "Sandsturm",
+            "luminousSky": "Leuchthimmel",
+            "bloodRain": "Blutregen",
+            "manaStorm": "Manasturm",
+            "arcaneFog": "Arkaner Nebel",
+            "voidstorm": "Leerensturm",
+            "celestialEclipse": "Himmelsfinsternis",
+            "meteorShower": "Meteoritenschauer",
+            "frozenHell": "Gefrorene Hölle",
+            "sunshower": "Sonnenregen",
+            "spectralStorm": "Spektralsturm",
+            "etherealDrizzle": "Ätherisches Nieseln",
+            "wildMagicWinds": "Winde wilder Magie"
+        },
+        "moonPhase": {
+            "new": "Neumond",
+            "waxingCrescent": "Sichel (zunehmend)",
+            "firstQuarter": "Halbmond (zunehmend)",
+            "waxingGibbous": "Zunehmend",
+            "full": "Vollmond",
+            "waningGibbous": "Abnehmend",
+            "lastQuarter": "Halbmond (abnehmend)",
+            "waningCrescent": "Sichel (abnehmend)",
+            "bloodMoon": "Blutmond",
+            "eclipse": "Mondfinsternis",
+            "voidMoon": "Leerenmond",
+            "twinMoons": "Zwillingsmonde",
+            "manaMoon": "Manamond",
+            "celestialAlignment": "Himmlische Ausrichtung",
+            "shatteredMoon": "Zerbrochener Mond",
+            "spiritMoon": "Geistmond"
+        },
+        "configuration": {
+            "title": "Menü Konfiguration",
+            "firstTimeTitle": "Erstmalige Einrichtung",
+            "tabs": {
+                "configuration": "Konfiguration",
+                "visibility": "Sichtbarkeit",
+                "aspect": "Aspekt",
+                "badges": "Abzeichen",
+                "time": "Zeit",
+                "calendar": "Kalender",
+                "automation": "Automatisierung",
+                "environment": "Umwelt"
+            },
+            "seasons": {
+                "label": "Jahreszeiten"
+            },
+            "macrosFieldset": {
+                "label": "Automatisierung Makros",
+                "hint": "Makros, die zu bestimmten Zeiten des Tages ausgeführt werden. Die Makros werden für alle verbundenen Benutzer ausgeführt, die über die entsprechenden Berechtigungen verfügen."
+            },
+            "newDayMacros": {
+                "label": "Makros Neuer Tag"
+            },
+            "dawnMacros": {
+                "label": "Morgenröte Makros"
+            },
+            "duskMacros": {
+                "label": "Dämmerungsmakros"
+            },
+            "middayMacros": {
+                "label": "Mittagsmakros"
+            },
+            "use24HourClock": {
+                "label": "24-Stunden-Uhr verwenden"
+            },
+            "wideLetterSpacing": {
+                "label": "Breiter Zeichenabstand"
+            },
+            "useMonospace": {
+                "label": "Monospace-Schriftart verwenden"
+            },
+            "noPills": {
+                "label": "Schlichter Stil"
+            },
+            "useFullWidth": {
+                "label": "Maximale Breite der Kraft"
+            },
+            "hideInCombat": {
+                "label": "Ausblenden während des Kampfes"
+            },
+            "topOffset": {
+                "label": "Oberer Rand (px)"
+            },
+            "hideExpired": {
+                "label": "Abgelaufene Ereignisse ausblenden"
+            },
+            "copyButton": {
+                "label": "Kopieren der aktuellen Konfiguration (Speichern und neu öffnen für die Formatierung)"
+            },
+            "customCalendar": {
+                "label": "Benutzerdefinierter Kalender JSON",
+                "hint": "JSON-Definition für den benutzerdefinierten Kalender. Es wird keine Unterstützung für den benutzerdefinierten Kalender oder die Einrichtung der JSON-Datei angeboten. Sie können einige Beispielkalender im Wiki finden.",
+                "error": "Ungültiges JSON-Format für den benutzerdefinierten Kalender. Die Einstellung wurde auf den vorherigen Zustand zurückgesetzt. Bitte prüfen Sie die Konsole für weitere Details."
+            },
+            "useCustomMoons": {
+                "label": "Monde anpassen"
+            },
+            "customMoons": {
+                "label": "Benutzerdefinierte Monde JSON",
+                "hint": "JSON-Definition für die benutzerdefinierten Monde. Die Monde können zwar auch im JSON des Kalenders definiert werden, aber dies ermöglicht es Ihnen, die Monde zu überschreiben, ohne das JSON des Kalenders ändern zu müssen, wenn Sie zum Beispiel einen vom System oder einem anderen Modul definierten Kalender verwenden und ihm Monde hinzufügen möchten. Es wird keine Unterstützung für die benutzerdefinierten Monde oder die Einrichtung der JSON-Datei angeboten, Beispiele finden Sie im Wiki.",
+                "error": "Ungültiges JSON-Format für die benutzerdefinierten Monde. Die Einstellung wurde auf den vorherigen Zustand zurückgesetzt. Bitte überprüfen Sie die Konsole für weitere Details."
+            },
+            "climateData": {
+                "label": "Klima-Daten",
+                "hint": "JSON-Definition für die Erzeugung von Wetter und Temperatur. Es wird keine Unterstützung für das benutzerdefinierte Klima oder die Einrichtung der JSON-Datei angeboten."
+            },
+            "customBadge": {
+                "label": "Benutzerdefiniertes Abzeichen"
+            },
+            "calendar": {
+                "label": "Kalender",
+                "hint": "Benutzerdefinierter Kalender, wie im JSON des benutzerdefinierten Kalenders definiert",
+                "default": "Systemstandard",
+                "custom": "Benutzerdefiniert"
+            },
+            "moonLabel": {
+                "label": "Mondphasen-Etikett"
+            },
+            "moonColor": {
+                "label": "Mondphase Farbe"
+            },
+            "moonAutomation": {
+                "label": "Sync Moon Abzeichen",
+                "hint": "Wenn Monde im Kalender JSON definiert sind, aktualisiert Simple Timekeeping automatisch das Mondabzeichen."
+            },
+            "weatherLabel": {
+                "label": "Wetter-Etikett"
+            },
+            "weatherOverlay": {
+                "label": "Wetter-Animation"
+            },
+            "weatherColor": {
+                "label": "Wetter Farbe"
+            },
+            "showFullDate": {
+                "label": "Vollständiges Datum anzeigen"
+            },
+            "daysDisplay": {
+                "label": "Tage Anzeige",
+                "options": {
+                    "none": "Keine",
+                    "sinceEpoch": "Seit Beginn des Kalenders",
+                    "dayOfYear": "Tag des Jahres"
+                }
+            },
+            "dayOffset": {
+                "label": "Start-Tag Offset",
+                "hint": "Offset, der auf die Anzahl der Tage anzuwenden ist, wenn die Option 'Seit Beginn des Kalenders' in 'Tage anzeigen' verwendet wird"
+            },
+            "dawn": {
+                "label": "Dämmerung",
+                "hint": "Tageszeit in Prozent, z. B. wenn der Tag 24 Stunden hat, wäre 0,5 12:00 und 0,25 06:00"
+            },
+            "dusk": {
+                "label": "Abenddämmerung",
+                "hint": "Tageszeit in Prozent, z. B. wenn der Tag 24 Stunden hat, wäre 0,5 12:00 und 0,75 18:00"
+            },
+            "latitude": {
+                "label": "Breitengrad",
+                "hint": "Wenn ein Breitengrad außer 0 eingestellt ist, werden Werte für Abend- und Morgendämmerung ignoriert und stattdessen dynamisch anhand des Breitengrads berechnet. Der Breitengrad wird auch zur Berechnung des Wetters verwendet. Typische Breitengradbereiche: Äquatorial (0-15°), Tropisch (15-23,5°), Subtropisch (23,5-35°), Gemäßigt (35-55°), Subpolar (55-66,5°) und Polar (66,5-90°).",
+                "options": {
+                    "disabled": "Behinderte",
+                    "equatorial": "Äquatoriale",
+                    "tropical": "Tropisch",
+                    "subtropical": "Subtropisch",
+                    "hotDesert": "Heiße Wüste",
+                    "mediterranean": "Mittelmeer",
+                    "temperate": "Gemäßigt",
+                    "coolTemperate": "Kühl Gemäßigt",
+                    "subpolar": "subpolar",
+                    "boreal": "Boreal"
+                }
+            },
+            "genWeather": {
+                "label": "Wetter generieren",
+                "hint": "Erzeugt jeden Tag neues Wetter. Verwendet den Breitengrad, um das Klima zu bestimmen.",
+                "options": {
+                    "no": "Nein",
+                    "noTemp": "Ja (keine Temperatur)",
+                    "tempC": "Ja + Celsius",
+                    "tempF": "Ja + Fahrenheit"
+                }
+            },
+            "dayColor": {
+                "label": "Tag Farbe"
+            },
+            "nightColor": {
+                "label": "Nachtfarbe"
+            },
+            "hueIntensity": {
+                "label": "Intensität der Tönung einer Szene",
+                "hint": "Wenn die Einfache Zeitmessung einen Dunkelheitsgrad festlegt, wird auch ein Farbton auf die Szene angewendet, der auf den Tag- und Nachtfarben basiert."
+            },
+            "badgeLabel": {
+                "label": "Etikett"
+            },
+            "badgeColor": {
+                "label": "Farbe"
+            },
+            "secondsPerRound": {
+                "label": "Sekunden pro Kampfrunde"
+            },
+            "secondsPerRealSecond": {
+                "label": "Sekunde pro Echtzeit-Sekunde"
+            },
+            "journalEntryEvents": {
+                "label": "Ereignisse Journaleintrag Name"
+            },
+            "clockSeconds": {
+                "label": "Aktualisierungshäufigkeit (Sekunden)"
+            },
+            "setDateTime": {
+                "label": "Aktuelles Datum/Uhrzeit einstellen"
+            },
+            "darknessSync": {
+                "label": "Sync-Szene Dunkelheit",
+                "hint": "Die Synchronisierung kann für jede Szene unten auf der Registerkarte Beleuchtung konfiguriert werden.",
+                "options": {
+                    "default": "Globalen Standard verwenden",
+                    "sync": "Sync",
+                    "noSync": "Nicht synchronisieren",
+                    "weatherOnly": "Nur Sync Wetter",
+                    "darknessOnly": "Nur Dunkelheit synchronisieren"
+                }
+            }
+        },
+        "app": {
+            "searchEvents": "Ereignisse suchen",
+            "create-event": {
+                "eventTime": {
+                    "label": "Beginn der Veranstaltung"
+                },
+                "eventEnd": {
+                    "label": "Ende der Veranstaltung (optional)"
+                },
+                "duration": {
+                    "label": "Veranstaltungsdauer (Stunden)"
+                },
+                "edit": {
+                    "label": "Ereigniszeit bearbeiten"
+                },
+                "repeat": {
+                    "label": "Wiederholen",
+                    "options": {
+                        "none": "Nicht wiederholen",
+                        "day": "Jeden Tag",
+                        "week": "Jede Woche",
+                        "month": "Jeden Monat",
+                        "year": "Jedes Jahr"
+                    }
+                }
+            },
+            "controls": {
+                "create-event": {
+                    "tooltip": "Ereignis erstellen"
+                },
+                "day-back": {
+                    "tooltip": "1 Tag zurück"
+                },
+                "hour-back": {
+                    "tooltip": "1 Stunde zurück"
+                },
+                "hour-forward": {
+                    "tooltip": "1 Stunde vorwärts"
+                },
+                "day-forward": {
+                    "tooltip": "1 Tag vorwärts"
+                },
+                "sunrise": {
+                    "tooltip": "Sonnenaufgang"
+                },
+                "sunset": {
+                    "tooltip": "Sonnenuntergang"
+                },
+                "midday": {
+                    "tooltip": "Mittag"
+                },
+                "midnight": {
+                    "tooltip": "Mitternacht"
+                },
+                "configure": {
+                    "tooltip": "Konfigurieren"
+                },
+                "toggle-events": {
+                    "tooltip": "Ereignisse"
+                }
+            },
+            "weather": {
+                "generate": "Erzeugen Sie"
+            }
+        },
+        "flags": {}
+    }
+}

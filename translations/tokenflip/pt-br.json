@@ -1,0 +1,38 @@
+{
+    "tokenflip": {
+        "token-flip-config": {
+            "title": "Configurar Inversão de Token",
+            "add": "Adicionar novo rosto",
+            "flip": "Inverter token",
+            "model3d": "Modelo 3D",
+            "faceId": "ID facial",
+            "protoWarning": "AVISO: Devido aos bugs do Core Foundry que afetam os Tokens de Protótipo, é altamente recomendado configurar a inversão de token em um token na cena e, em seguida, atribuir o token ao token de protótipo.",
+            "copiedId": "ID copiado para a área de transferência",
+            "copyID": "Copiar ID",
+            "autoFlip": {
+                "label": "Inversão automática",
+                "none": "Nenhum",
+                "inCombat": "Em combate",
+                "outOfCombat": "Fora de combate"
+            },
+            "transition": {
+                "label": "Transição",
+                "flip": "Virar"
+            },
+            "autoFlipMacro": {
+                "label": "Macro de inversão automática",
+                "hint": "Uma macro executada quando o ator ou um de seus itens é atualizado e quando um GM carrega em uma cena. \nRetorne true para virar para esta face. \nVeja o wiki para mais informações."
+            }
+        },
+        "settings": {
+            "flipSpeed": {
+                "name": "Velocidade de inversão",
+                "hint": "A rapidez com que os tokens mudam de face. \nO padrão é 0,1."
+            },
+            "enableAutoFlip": {
+                "name": "Ativar inversão automática",
+                "hint": "Habilite a inversão automática de tokens. \nSe você não estiver usando o recurso de inversão automática, poderá desativar essa configuração para economizar desempenho."
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+{
+    "party-monitor-dock": {
+        "title": "Station d'accueil Party Monitor",
+        "settings": {
+            "onlyConnected": {
+                "name": "Afficher uniquement les joueurs connectés",
+                "hint": "Afficher uniquement les joueurs connectés au serveur"
+            },
+            "portraitSize": {
+                "name": "Taille portrait",
+                "hint": "La taille des portraits sur le banc des accusés"
+            },
+            "position": {
+                "name": "Position du berceau",
+                "hint": "La position du dock sur l'écran",
+                "choices": {
+                    "docked": "Amarré",
+                    "horizontal": "Horizontal (flottant)",
+                    "vertical": "Vertical (flottant)",
+                    "hidden": "Caché"
+                }
+            },
+            "dockAlignment": {
+                "name": "Alignement du HUD",
+                "hint": "L'alignement du HUD sur l'écran",
+                "choices": {
+                    "flex-start": "Haut",
+                    "center": "Centre",
+                    "flex-end": "Bas"
+                }
+            },
+            "hideInCombat": {
+                "name": "Cachez-vous au combat",
+                "hint": "Cacher le HUD lorsqu'un combat est actif"
+            },
+            "hideCompanions": {
+                "name": "Masquer les compagnons",
+                "hint": "Masquer les compagnons de la liste des membres du groupe"
+            },
+            "cornerImage": {
+                "name": "Image de coin",
+                "hint": "L'image à utiliser dans les coins du dock. Laissez vide pour désactiver."
+            },
+            "edgeImage": {
+                "name": "Image de bord",
+                "hint": "L'image à utiliser pour remplir l'espace entre les coins du dock. \nLaissez vide pour désactiver."
+            }
+        },
+        "app": {
+            "buttons": {
+                "toggle-nav": "Basculer les boutons de navigation",
+                "toggle-dock": "Basculer le Dock",
+                "reduce": "Diminuer la taille",
+                "enlarge": "Augmenter la taille",
+                "start-follow": "Commencer à suivre",
+                "stop-follow": "Arrêtez de suivre",
+                "context": {
+                    "follow": "Suivre",
+                    "mount": "Monter",
+                    "epicRoll": "Exig. \nRouler",
+                    "raise-hand": "Lever la main"
+                }
+            }
+        },
+        "flags": {},
+        "notifications": {
+            "follow": "je suis maintenant",
+            "unfollow": "ne suit plus",
+            "mounted": "a monté",
+            "dismounted": "a démonté"
+        }
+    }
+}

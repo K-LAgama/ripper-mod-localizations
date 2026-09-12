@@ -1,0 +1,16 @@
+{
+    "tile-scroll": {
+        "flags": {
+            "header": "Rolagem de blocos",
+            "enableScroll": "Rolar a tela",
+            "enabled": "Ativado",
+            "scrollSpeed": "Velocidade",
+            "scrollDirection": "Direção",
+            "enableRotate": "Ativar rotação",
+            "repeat": "Repetição da textura",
+            "pivot": "Ponto de rotação",
+            "offset": "Deslocamento",
+            "parallax": "Força do Paralaxe"
+        }
+    }
+}

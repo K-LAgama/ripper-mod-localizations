@@ -1,0 +1,80 @@
+{
+    "epic-rolls-5e": {
+        "button-tooltip": "Configura Epic Roll<hr>Fai clic con il pulsante destro del mouse per i rulli recenti",
+        "check": "Controllo",
+        "complete-roll": "Concludi il tiro epico",
+        "death": "Morte",
+        "epicRoll": "Rotolo epico",
+        "failure": "Fallimento",
+        "get-roll-data": {
+            "ERROR": {
+                "noActors": "Nessun attore selezionato per il ruolo, seleziona almeno un attore",
+                "noContest": "I concorrenti sono stati selezionati ma non è stato selezionato alcun tipo di concorso",
+                "noContestants": "È stato selezionato un tipo di tiro contestato ma non è stato selezionato alcun concorrente",
+                "noDC": "Non è stata inserita alcuna DC per il tiro, inserisci una DC",
+                "noType": "Nessun tipo selezionato per il rotolo, seleziona un tipo"
+            },
+            "VsDCNotes": "La CD del tiro",
+            "allowReroll": "Consenti rilancio",
+            "allowRerollNotes": "Consenti ai giocatori di ripetere il tiro",
+            "autoColor": "Colore automatico",
+            "autoColorNotes": "Colora automaticamente il banner in rotolo in base al tipo di rotolo",
+            "available": "Disponibile",
+            "blindRoll": "Rotolo cieco",
+            "blindRollNotes": "Nascondi i risultati dei tiri ai giocatori",
+            "color": "Colore",
+            "colorNotes": "Il colore del banner roll",
+            "contest": "Concorso",
+            "contestInfo": "Per contrassegnare i concorrenti, fare clic con il pulsante destro del mouse su un attore e/o un ruolo",
+            "customFormula": "Formula personalizzata",
+            "customLabel": "Etichetta",
+            "customLabelNotes": "Etichetta introduttiva personalizzata per il rotolo",
+            "hideNames": "Nascondi nomi",
+            "hideNamesNotes": "Nascondi ai giocatori i nomi degli attori che non sono di proprietà dei giocatori",
+            "macro": "Salva in Macro",
+            "npc": "Personaggio non giocante",
+            "player": "Personaggio del giocatore",
+            "rollOptions": "Opzioni di lancio",
+            "save-macro": "Creata la macro Epic Roll per",
+            "saveDefaultOptions": "Salva come predefinito",
+            "saveDefaultOptionsNotification": "Opzioni correnti salvate come predefinite",
+            "selected": "Selezionato",
+            "showDC": "Mostra DC",
+            "showDCNotes": "Quando abilitata, la CD sarà visibile ai giocatori",
+            "showRollResults": "Mostra i risultati del tiro",
+            "showRollResultsNotes": "Se mostrare il testo conclusivo di successo/fallimento",
+            "startRoll": "Avvia il tiro epico",
+            "title": "Configura Epic Roll",
+            "useAverage": "Usa Media",
+            "useAverageNotes": "Utilizza la media di tutti i risultati per determinare il successo o il fallimento"
+        },
+        "save": "Salva",
+        "settings": {
+            "cleanupMessages": {
+                "hint": "Elimina i messaggi del lancio una volta completato il lancio epico",
+                "name": "Messaggi di pulizia"
+            },
+            "failureSound": {
+                "hint": "Il suono da riprodurre quando il tiro fallisce",
+                "name": "Suono di fallimento"
+            },
+            "introSound": {
+                "hint": "Il suono da riprodurre quando viene avviato il lancio",
+                "name": "Suono introduttivo"
+            },
+            "recapMessage": {
+                "hint": "Configura chi può vedere il messaggio visualizzato una volta completato il tiro epico",
+                "name": "Messaggio di riepilogo",
+                "options": {
+                    "none": "Nessuno",
+                    "public": "Pubblico"
+                }
+            },
+            "successSound": {
+                "hint": "Il suono da riprodurre quando il tiro ha successo",
+                "name": "Suono di successo"
+            }
+        },
+        "success": "Successo"
+    }
+}
