@@ -1,0 +1,220 @@
+{
+    "TYPES": {
+        "JournalEntryPage": {
+            "mastercrafted": {
+                "mastercrafted": "匠心獨運的食譜"
+            }
+        }
+    },
+    "mastercrafted": {
+        "mastercrafted": "匠心獨運的食譜",
+        "craft": "手工藝",
+        "show-recipes": "顯示食譜",
+        "craftDialog": {
+            "title": "手工藝",
+            "craft": "工藝",
+            "cancel": "取消",
+            "consumes": "消耗",
+            "crafts": "手工藝",
+            "crafted": "精心製作"
+        },
+        "componentEditForm": {
+            "title": "元件配置",
+            "name": {
+                "label": "姓名",
+                "hint": "用於匹配將作為製作組件被消耗的物品的名稱。"
+            },
+            "img": "圖片",
+            "quantity": "數量",
+            "uuid": {
+                "label": "項目",
+                "hint": "點擊後將顯示的項目。請注意，變更此項目並不會更新元件的名稱或圖片。"
+            },
+            "resourcePath": {
+                "title": "資源配置",
+                "hint": "通往某個資源實體的路徑。若該物品不在物品欄中，製作時將消耗製作實體的資源，而非該物品。",
+                "label": "資源路徑"
+            },
+            "tags": {
+                "title": "標籤設定",
+                "hint": "一組標籤清單，用以定義此元件的替代項目。若主要項目不在物品欄中，在「部分」模式下，合成將使用至少符合其中一個標籤的項目；在「全部」模式下，則會使用符合所有標籤的項目。",
+                "label": "標籤",
+                "mode": {
+                    "label": "必須",
+                    "every": "每個",
+                    "some": "一些"
+                }
+            }
+        },
+        "recipeApp": {
+            "errors": {
+                "namemissing": "「姓名」欄位為必填欄位！",
+                "alreadyingredient": "此食材已包含在該食譜的食材清單中！",
+                "noJournal": "開啟一本書來設定分類。"
+            },
+            "bookcontext": {
+                "add": "新增食譜",
+                "edit": "編輯",
+                "delete": "刪除",
+                "inspect": "檢查",
+                "duplicate": "重複",
+                "export": "匯出",
+                "import": "匯入"
+            },
+            "editcreatebook": {
+                "title": "編輯／建立書籍",
+                "name": "姓名",
+                "namep": "新書",
+                "description": "說明",
+                "image": "圖片",
+                "sound": "聲音",
+                "confirm": "確認",
+                "tools": "工具",
+                "toolsplaceholder": "以逗號分隔的工具名稱清單",
+                "macro": "狀況",
+                "macroplaceholder": "巨集名稱或指令",
+                "time": "時間",
+                "timeplaceholder": "製作時間（以分鐘為單位）",
+                "edit": "編輯",
+                "create": "建立",
+                "book": "書籍",
+                "recipe": "食譜",
+                "permission": "玩家權限",
+                "expression": {
+                    "label": "表達",
+                    "placeholder": "表達"
+                },
+                "abilityDc": {
+                    "label": "DC",
+                    "placeholder": "DC"
+                },
+                "toolCheck": {
+                    "label": "工具檢查",
+                    "placeholder": "工具檢查"
+                },
+                "toolDc": {
+                    "label": "DC",
+                    "placeholder": "DC"
+                },
+                "abilityCheck": {
+                    "label": "系統能力",
+                    "placeholder": "系統能力"
+                },
+                "modifierList": {
+                    "add": "新增修飾詞",
+                    "hint": "若擲骰結果或表達式所返回的數值等於或大於 DC（以較高者為準），則收集到的物品數量將根據修正值表達式進行調整。 你可以在修飾式開頭加入數學運算子；若未提供運算子，預設會視為加號 (+)。例如，*1d4 會將收集到的物品數量乘以 1d4。",
+                    "label": "修飾詞"
+                }
+            },
+            "configbookrecipe": {
+                "permissions": {
+                    "default": "預設",
+                    "allow": "允許",
+                    "deny": "拒絕"
+                }
+            },
+            "recipeconfig": {
+                "inheritTools": "繼承工具",
+                "ingredientsInspection": "原料檢驗",
+                "productInspection": "產品檢驗",
+                "ingredients": "食材",
+                "result": "結果"
+            },
+            "title": "匠心打造",
+            "recipeBooks": "食譜書",
+            "addRecipeBook": "新增食譜集",
+            "filter": "切換全部／可製作",
+            "relinked": "有一項或多項項目缺少參考資料，現已重新建立連結。",
+            "craft": "製作 - 按住 Ctrl 鍵可快速製作",
+            "searchRecipe": "搜尋食譜",
+            "tools": "所需工具",
+            "time": "手作時光",
+            "minutes": "會議記錄",
+            "craftError": "製作錯誤",
+            "craftSuccess": "合成成功！已加入物品欄：",
+            "craftSuccessTimed": "合成成功！合成完成後，將獲得以下物品：",
+            "timedCraftCompleted": "製作完成！已加入物品欄：",
+            "craftFailConsumed": "製作失敗！未滿足條件，且材料已被消耗。",
+            "craftFailNotConsumed": "製作失敗！未滿足條件，且材料未被消耗。",
+            "noTools": "缺少工具！您需要以下其中一種：",
+            "noProficiency": "你對以下內容不熟悉：",
+            "ingredientsTooltip": "左鍵點擊以選取食材，右鍵點擊以檢視食材。",
+            "resultTooltip": "左鍵點擊方框以選取結果，右鍵點擊項目以檢視其內容。",
+            "ingredientsEditInfo": "將項目拖曳至方框中，即可將其新增為製作材料。點擊「+」按鈕可新增一個空的材料槽。同一個方框中的多個材料可互換使用。每個方框至少需放置一個材料，方可進行製作。",
+            "resultEditInfo": "將物品拖曳至箱子上，即可將其新增為製作結果。同一箱子中的多個物品在製作完成時將全數獲得。製作過程中，每次僅能選擇一個箱子作為結果。",
+            "cauldron": "大鍋",
+            "timedCrafting": "製作進度",
+            "readyIn": "預計完成時間：",
+            "onlyCraftable": "僅可製作",
+            "all": "全部",
+            "useCraftingActor": "使用「製作角色」",
+            "editMode": "編輯",
+            "useInventory": "使用庫存",
+            "craftAs": "工藝作為",
+            "useInventoryInfo": "此角色背包中的物品將用於製作。製作結果及延遲製作的結果，也將放置於此角色的背包中。",
+            "craftAsInfo": "此角色將負責進行製作，且任何與製作相關的檢定（工具、能力等）均由此角色執行。",
+            "ingredient": "成分",
+            "product": "產品",
+            "component": "元件"
+        },
+        "cauldronApp": {
+            "title": "大鍋",
+            "noIngredients": "你必須混合至少兩種食材，才能發現這道食譜！",
+            "brewFail": "釀造失敗！你的調配物混合得不均勻。所有原料已被消耗。",
+            "hint": "將食材拖曳至大鍋中進行混合。點擊某種食材即可將其從大鍋中移除。點擊「混合食材」按鈕即可將食材混合。若食材混合得當，你將發現一道新食譜。此時食材將會被消耗。",
+            "discovered": "你發現了一道新食譜！",
+            "gmConfirm": "在將此發現加以利用之前，遊戲主持人必須先予以確認。",
+            "confirm": "確認",
+            "partial": {
+                "consumed": "已消耗：",
+                "extra1": "差一點就成功了！你差點就做到了！也許你加得稍微多了一點。",
+                "extra2": "看起來好像要成功了，但最後還是沒成功。也許是你加得太多了。",
+                "missing1": "差一點就成功了！你差一點就做到了！也許還需要再多一點點。",
+                "missing2": "看起來好像要成功了，但結果卻沒成功。也許還需要多一點什麼。",
+                "extra1missing1": "看起來好像會成功，但最後還是失敗了。也許是你某種成分加得太多了，而另一種成分卻加得太少了。"
+            }
+        },
+        "itemConfig": {
+            "title": "精工打造 - 商品配置",
+            "sheetButton": "",
+            "attributePath": {
+                "label": "屬性路徑"
+            },
+            "tags": {
+                "label": "標籤",
+                "notes": "以逗號分隔的標籤清單。製作時，玩家的背包中必須擁有至少帶有一個此類標籤的物品。"
+            }
+        },
+        "UI": {
+            "open-recipe-app": "食譜管理員",
+            "delete-recipe-book-title": "刪除食譜集",
+            "delete-recipe-book-content": "您確定要刪除此食譜書嗎？",
+            "delete-recipe-title": "刪除食譜",
+            "delete-recipe-content": "您確定要刪除此食譜嗎？",
+            "default-recipe-name": "新食譜",
+            "no-permission": "您沒有權限開啟這道食譜或這本書。"
+        },
+        "settings": {
+            "enableCauldron": {
+                "name": "啟用「Cauldron」",
+                "hint": "啟用「魔鍋」介面。這樣一來，玩家就能將任何材料混合在一起，以發現新食譜。"
+            },
+            "customQuantityPath": {
+                "name": "自訂數量路徑",
+                "hint": "項目數量資料值的路徑（資料路徑始於「system」；例如，若您的數量儲存於 item.system.itemQuantity.value，則應在此設定中輸入「itemQuantity.value」）。若留空則使用預設路徑，僅當您的系統未採用常見路徑時，才需進行自訂。"
+            },
+            "migrateOnStartup": {
+                "name": "在啟動時遷移設定",
+                "hint": "若啟用此功能，模組將在啟動時遷移日誌資料。您可以使用巨集 'game.modules.get(\"mastercrafted\").API.migration.showManualMigrationDialog()' 手動遷移您的設定。"
+            },
+            "dontShowButtonOnNpc": {
+                "name": "在 NPC 標題列中隱藏按鈕",
+                "hint": "若啟用此功能，NPC 資料表上將不會顯示開啟食譜書的按鈕。"
+            },
+            "mainFolderName": {
+                "name": "主資料夾名稱",
+                "hint": "若已設定資料夾名稱，Mastercrafted 介面中將僅顯示該資料夾的內容。否則，此模組將嘗試自動偵測主資料夾。"
+            }
+        }
+    }
+}

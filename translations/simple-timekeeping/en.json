@@ -249,7 +249,7 @@
             },
             "darknessSync": {
                 "label": "Sync Scene Darkness and Weather",
-                "hint": "Whether scene darkness and weather should be set automatically based on the current time and weather. This option can also be configured per scene at the bottom of the lighting tab.",
+                "hint": "Whether scene darkness and weather should be set automatically based on the current time and weather. This option can also be configured per scene at the bottom of the Environment tab.",
                 "options": {
                     "default": "Use Global Default",
                     "sync": "Sync Weather & Darkness",
@@ -273,6 +273,15 @@
                 },
                 "edit": {
                     "label": "Edit Event Date/Time"
+                },
+                "eventAlreadyEnded": {
+                    "label": "Event has already ended"
+                },
+                "eventIn": {
+                    "label": "In"
+                },
+                "eventTimeLeft": {
+                    "label": "Left"
                 },
                 "repeat": {
                     "label": "Repeat",

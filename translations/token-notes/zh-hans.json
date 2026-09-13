@@ -1,0 +1,34 @@
+{
+    "tokennotes": {
+        "togglenotes": "切换令牌备注",
+        "settings": {
+            "autoopen": {
+                "name": "自动打开/关闭",
+                "hint": "在选中/取消选中标记时，自动展开/折叠笔记。"
+            },
+            "allowplayers": {
+                "name": "玩家权限",
+                "hint": "针对玩家持有的代币票据的权限控制。任何选项仅对玩家持有的代币有效。",
+                "options": {
+                    "none": "无",
+                    "readonly": "只读",
+                    "readwrite": "读/写"
+                }
+            },
+            "position": {
+                "name": "职位",
+                "hint": "音符的位置。",
+                "options": {
+                    "bottomleft": "左下角",
+                    "bottomright": "右下角",
+                    "topleft": "左上角",
+                    "topright": "右上角"
+                }
+            }
+        },
+        "tooltip": {
+            "toggle-edit": "切换编辑模式",
+            "toggle-token-actor": "切换令牌/角色"
+        }
+    }
+}

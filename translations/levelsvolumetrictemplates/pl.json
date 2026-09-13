@@ -1,0 +1,12 @@
+{
+    "levelsvolumetrictemplates.settings.volPercent.name": "Procent objętościowy",
+    "levelsvolumetrictemplates.settings.volPercent.hint": "Odsetek objętości lub powierzchni uznawany za prawidłowy cel",
+    "levelsvolumetrictemplates.settings.ignoreSelf.name": "Zignoruj siebie",
+    "levelsvolumetrictemplates.settings.ignoreSelf.hint": "Podczas rozmieszczania regionów należy zignorować element „Self”",
+    "levelsvolumetrictemplates.settings.ignoreFriendly.name": "Ignoruj postacie przyjazne",
+    "levelsvolumetrictemplates.settings.ignoreFriendly.hint": "Podczas rozmieszczania regionów należy pominąć postacie sojusznicze",
+    "levelsvolumetrictemplates.settings.targetOnChange.name": "Skup się na zmianach",
+    "levelsvolumetrictemplates.settings.targetOnChange.hint": "Zmiana w podglądzie regionu docelowego",
+    "levelsvolumetrictemplates.settings.targetOnPlacement.name": "Cel dotyczący zatrudnienia",
+    "levelsvolumetrictemplates.settings.targetOnPlacement.hint": "Ustawienie regionu docelowego (wyłącz, aby korzystać z modułu jako API)"
+}

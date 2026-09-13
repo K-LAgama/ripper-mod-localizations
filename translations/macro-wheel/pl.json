@@ -1,0 +1,77 @@
+{
+    "macro-wheel": {
+        "bindings": {
+            "open": {
+                "name": "Otwórz/zamknij pokrętło makr"
+            }
+        },
+        "settings": {
+            "folderSize": {
+                "name": "Rozmiar przycisku folderu",
+                "hint": "Rozmiar przycisków folderów na kółku makr w pikselach."
+            },
+            "macroSize": {
+                "name": "Rozmiar przycisków makr",
+                "hint": "Rozmiar przycisków makr na kółku makr w pikselach."
+            },
+            "closeOnClick": {
+                "name": "Zamknij po kliknięciu",
+                "hint": "Po kliknięciu makra zamknij okienko makr. Możesz przytrzymać klawisz Ctrl, aby okienko pozostało otwarte."
+            },
+            "enableTooltips": {
+                "name": "Włącz podpowiedzi",
+                "hint": "Wyświetlaj podpowiedzi po najechaniu kursorem na makro lub folder."
+            },
+            "useRoot": {
+                "name": "Użyj folderu głównego",
+                "hint": "Użyj całego katalogu makr jako katalogu głównego dla koła makr."
+            },
+            "addHotbar": {
+                "name": "Pokaż makra na pasku skrótów",
+                "hint": "Dodaj makra z paska skrótów do koła makr."
+            },
+            "useMiddleMouse": {
+                "name": "Użyj środkowego przycisku myszy",
+                "hint": "Użyj środkowego przycisku myszy, aby otworzyć koło makr."
+            },
+            "hoverDelay": {
+                "name": "Opóźnienie po najechaniu kursorem",
+                "hint": "Opóźnienie w milisekundach przed otwarciem koła makr po najechaniu kursorem na folder koła makr."
+            }
+        },
+        "flags": {
+            "header": "Koło makro",
+            "folderImg": {
+                "name": "Obraz"
+            },
+            "condition": {
+                "name": "Warunek niestandardowy",
+                "placeholder": "Skrypt warunkowy"
+            },
+            "activeCondition": {
+                "name": "Stan aktywny",
+                "hint": "Ten warunek służy do ustalenia, czy makro jest aktywne. Zostanie on wykorzystany do określenia koloru pierścienia otaczającego makro na kole makr, co pozwoli na szybkie sprawdzenie jego stanu."
+            },
+            "presetCondition": {
+                "name": "Stan",
+                "options": {
+                    "custom": "Niestandardowe",
+                    "tokens": "Warstwa aktywna: tokeny",
+                    "tiles": "Warstwa aktywna: Płytki",
+                    "walls": "Warstwa aktywna: Ściany",
+                    "sounds": "Warstwa aktywna: Dźwięki",
+                    "notes": "Warstwa aktywna: Uwagi",
+                    "lights": "Warstwa aktywna: Oświetlenie",
+                    "templates": "Warstwa aktywna: Szablony",
+                    "drawings": "Warstwa aktywna: rysunki",
+                    "selectedtoken": "Wybrano token",
+                    "combat": "W walce",
+                    "enabled3d": "Włączono obsługę 3D Canvas"
+                }
+            }
+        },
+        "errors": {
+            "no-folder": "MacroWheel: Nie znaleziono folderu „MacroWheel”. Utwórz folder o nazwie „MacroWheel” w folderze „Macro” lub włącz opcję „Użyj folderu głównego”, aby wyłączyć to powiadomienie. W folderze „MacroWheel” utwórz podfoldery dla każdego kółka, które chcesz dodać, a następnie umieść makra w tych folderach."
+        }
+    }
+}

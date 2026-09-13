@@ -1,0 +1,184 @@
+{
+    "spotlight-omnisearch": {
+        "KEYBINDING": "Tasti di scelta rapida",
+        "settings": {
+            "compendiumConfig": {
+                "name": "Configurazione del compendio",
+                "hint": "Configurare quali raccolte includere nei risultati della ricerca",
+                "label": "Configurazione dei compendi"
+            },
+            "gmOnly": {
+                "name": "Solo GM",
+                "hint": "Solo il GM può aprire Spotlight Omnisearch"
+            },
+            "compactMode": {
+                "name": "Modalità compatta",
+                "hint": "Utilizza un layout compatto per Spotlight Omnisearch. In questo modo le descrizioni verranno nascoste e le dimensioni dei risultati di ricerca saranno ridotte"
+            },
+            "clickToDismiss": {
+                "name": "Clicca per chiudere",
+                "hint": "Clicca fuori dalla finestra di Spotlight Omnisearch per chiuderla"
+            },
+            "saveLastSearch": {
+                "name": "Salva l'ultima ricerca",
+                "hint": "Salva l'ultima query di ricerca e i relativi risultati per la prossima volta che verrà aperta la funzione Omnisearch di Spotlight"
+            },
+            "useHistory": {
+                "name": "Usa la cronologia delle ricerche",
+                "hint": "Utilizza la cronologia delle ricerche per suggerire ricerche precedenti"
+            },
+            "enableCtrlSpace": {
+                "name": "Abilita Ctrl + Spazio",
+                "hint": "Abilita la combinazione di tasti Ctrl + Spazio per aprire Spotlight Omnisearch: poiché questa combinazione aggira il sistema di assegnazione dei tasti di Core Foundry, funzionerà all’interno dei campi di immissione e delle aree di testo."
+            },
+            "position": {
+                "name": "Posizione",
+                "hint": "Imposta la posizione di Spotlight Omnisearch sullo schermo",
+                "choices": {
+                    "default": "Impostazione predefinita (centrata)",
+                    "save": "Salva l'ultima posizione",
+                    "mouse": "Apri nella posizione del mouse"
+                }
+            },
+            "alwaysOnTop": {
+                "name": "Sempre in primo piano",
+                "hint": "Mantieni Omnisearch di Spotlight in primo piano rispetto alle altre finestre"
+            },
+            "spotlightWidth": {
+                "name": "Larghezza del fascio luminoso",
+                "hint": "Imposta la larghezza della funzione Omnisearch di Spotlight in pixel"
+            },
+            "showImages": {
+                "name": "Mostra immagini",
+                "hint": "Visualizza le immagini nei risultati di ricerca. Le immagini aumenteranno i tempi di caricamento dei risultati e potrebbero causare un funzionamento a scatti, a seconda del numero di risultati e delle dimensioni delle immagini."
+            },
+            "searchFiles": {
+                "name": "Cerca file",
+                "hint": "Includi i risultati della ricerca nei file (richiede l'indice dei file del modulo Dig Down)"
+            },
+            "searchSettings": {
+                "name": "Impostazioni di ricerca",
+                "hint": "Includere le impostazioni di gioco nei risultati di ricerca"
+            },
+            "searchCompendium": {
+                "name": "Cerca nel Compendio",
+                "hint": "Includi i risultati della ricerca nel compendio"
+            },
+            "fullCompendiumJournalIndex": {
+                "name": "Indice completo della rivista “Compendium”",
+                "hint": "Includere pagine e intestazioni nell'indicizzazione dei compendi delle riviste. Ciò aumenterà il tempo di inizializzazione dell'indice. Si consiglia di disattivare questa opzione se si dispone di un numero elevato di compendi di riviste."
+            },
+            "searchSidebar": {
+                "name": "Barra di ricerca laterale",
+                "hint": "Includi i risultati della ricerca nella scheda della barra laterale"
+            },
+            "searchUtils": {
+                "name": "Strumenti di ricerca",
+                "hint": "Includi i risultati della ricerca delle utenze"
+            },
+            "useMetricForLights": {
+                "name": "Utilizzare il sistema metrico per le luci",
+                "hint": "Utilizza le unità metriche per effetti luminosi rapidi"
+            }
+        },
+        "hotkeys": {
+            "toggleSpotlight": {
+                "name": "Attiva/disattiva Spotlight Omnisearch"
+            }
+        },
+        "recent-searches": "Ricerche recenti",
+        "recent-tooltip": "Cancella le ricerche recenti",
+        "app": {},
+        "flags": {},
+        "actions": {
+            "execute": "Esegui",
+            "activate": "Attiva",
+            "preload": "Precaricamento",
+            "view": "Visualizza",
+            "roll-table": "Tavolo a rulli",
+            "play-playlist": "Riproduci playlist",
+            "stop-playlist": "Interrompi la playlist",
+            "use-item": "Usa oggetto",
+            "playForEveryone": "Gioco per tutti"
+        },
+        "notifications": {
+            "calc-clipboard": "Risultato copiato negli appunti",
+            "note": "Nota salvata nel diario \"Omnisearch Notes\"",
+            "timer-gm": "Solo il GM può avviare un timer",
+            "tracker-gm": "Solo il GM può utilizzare il registro dei successi e dei fallimenti"
+        },
+        "special": {
+            "note": {
+                "name": "Nota veloce",
+                "local-keyword": "nota"
+            },
+            "roll": {
+                "name": "Rotolata veloce",
+                "local-keyword": "rotolare"
+            },
+            "help": {
+                "name": "Aiuto",
+                "local-keyword": "aiuto",
+                "list": [
+                    "Shift + Barra spaziatrice per aprire la ricerca universale Spotlight",
+                    "Premi Esc o clicca fuori dall'area (opzionale, disattivato per impostazione predefinita) per chiudere Spotlight Omnisearch",
+                    "Premere Invio per confermare il primo risultato",
+                    "Shift / Alt + Invio per eseguire la prima o la seconda azione del primo risultato",
+                    "Comandi speciali: help, note, roll, timer, tracker, counter oppure digita un'espressione matematica per effettuare un calcolo",
+                    "! per filtrare i risultati della ricerca per tipo (!item, !actor). Filtri:"
+                ]
+            },
+            "timer": {
+                "name": "Timer",
+                "timeLeft": "Tempo rimanente",
+                "local-keyword": "timer",
+                "expired": "Il tempo a disposizione è scaduto!"
+            },
+            "light": {
+                "torch": "Torcia",
+                "lantern": "Lanterna",
+                "lantern-shut": "Lanterna (con copertura)",
+                "off": "Rimuovi luce",
+                "candle": "Candela",
+                "magical": "Luce magica",
+                "flashlight": "Torcia elettrica",
+                "info": "Applica la luce ai token selezionati"
+            },
+            "tracker": {
+                "name": "Monitoraggio successi/fallimenti",
+                "local-keyword": "tracker"
+            },
+            "counter": {
+                "name": "Contatore",
+                "local-keyword": "contatore"
+            },
+            "kill": {
+                "name": "Uccidere",
+                "description": "Elimina i token selezionati"
+            },
+            "heal": {
+                "name": "Guarire"
+            },
+            "damage": {
+                "name": "Danni"
+            },
+            "restore": {
+                "name": "Ripristina",
+                "description": "Ripristina lo stato di piena integrità dei token selezionati"
+            },
+            "reindex": {
+                "name": "Indice",
+                "description": "Ricostruire l'indice di ricerca per Spotlight Omnisearch"
+            },
+            "darkness": {
+                "night": "Notte",
+                "dawn": "Alba",
+                "day": "Giorno",
+                "dusk": "Tramonto"
+            },
+            "attribute": {
+                "name": "Attributo"
+            }
+        }
+    }
+}

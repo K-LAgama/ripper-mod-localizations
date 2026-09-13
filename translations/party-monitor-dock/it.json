@@ -1,72 +1,73 @@
 {
     "party-monitor-dock": {
-        "app": {
-            "buttons": {
-                "context": {
-                    "epicRoll": "Richiesto \nRotolo",
-                    "follow": "Seguire",
-                    "mount": "Montare",
-                    "raise-hand": "Alzare la mano"
-                },
-                "enlarge": "Aumenta dimensione",
-                "reduce": "Diminuisci dimensione",
-                "start-follow": "Inizia a seguire",
-                "stop-follow": "Smetti di seguire",
-                "toggle-dock": "Attiva/disattiva Dock",
-                "toggle-nav": "Attiva/disattiva i pulsanti di navigazione"
-            }
-        },
-        "notifications": {
-            "dismounted": "è smontato",
-            "follow": "ora segue",
-            "mounted": "ha montato",
-            "unfollow": "non segue più"
-        },
+        "title": "Dock monitor per feste",
         "settings": {
-            "cornerImage": {
-                "hint": "L'immagine da utilizzare negli angoli del dock Lascia vuoto per disabilitare.",
-                "name": "Immagine d'angolo"
-            },
-            "dockAlignment": {
-                "choices": {
-                    "center": "Centro",
-                    "flex-end": "Metter il fondo a",
-                    "flex-start": "Superiore"
-                },
-                "hint": "L'allineamento dell'HUD sullo schermo",
-                "name": "Allineamento dell'HUD"
-            },
-            "edgeImage": {
-                "hint": "L'immagine da utilizzare per riempire lo spazio tra gli angoli del dock. \nLascia vuoto per disabilitare.",
-                "name": "Immagine del bordo"
-            },
-            "hideCompanions": {
-                "hint": "Nascondi i compagni dall'elenco dei membri del gruppo",
-                "name": "Nascondi compagni"
-            },
-            "hideInCombat": {
-                "hint": "Nascondi l'HUD quando è attivo un combattimento",
-                "name": "Nasconditi in combattimento"
-            },
             "onlyConnected": {
-                "hint": "Mostra solo i giocatori che sono connessi al server",
-                "name": "Mostra solo i giocatori connessi"
+                "name": "Mostra solo i giocatori connessi",
+                "hint": "Mostra solo i giocatori che sono connessi al server"
             },
             "portraitSize": {
-                "hint": "La dimensione dei ritratti nel molo",
-                "name": "Formato verticale"
+                "name": "Formato verticale",
+                "hint": "La dimensione dei ritratti nel molo"
             },
             "position": {
+                "name": "Posizione della culla",
+                "hint": "La posizione del dock sullo schermo",
                 "choices": {
                     "docked": "Attraccato",
-                    "hidden": "Nascosto",
                     "horizontal": "Orizzontale (flottante)",
-                    "vertical": "Verticale (fluttuante)"
-                },
-                "hint": "La posizione del dock sullo schermo",
-                "name": "Posizione della culla"
+                    "vertical": "Verticale (fluttuante)",
+                    "hidden": "Nascosto"
+                }
+            },
+            "dockAlignment": {
+                "name": "Allineamento dell'HUD",
+                "hint": "L'allineamento dell'HUD sullo schermo",
+                "choices": {
+                    "flex-start": "Superiore",
+                    "center": "Centro",
+                    "flex-end": "Metter il fondo a"
+                }
+            },
+            "hideInCombat": {
+                "name": "Nasconditi in combattimento",
+                "hint": "Nascondi l'HUD quando è attivo un combattimento"
+            },
+            "hideCompanions": {
+                "name": "Nascondi compagni",
+                "hint": "Nascondi i compagni dall'elenco dei membri del gruppo"
+            },
+            "cornerImage": {
+                "name": "Immagine d'angolo",
+                "hint": "L'immagine da utilizzare negli angoli del dock Lascia vuoto per disabilitare."
+            },
+            "edgeImage": {
+                "name": "Immagine del bordo",
+                "hint": "L'immagine da utilizzare per riempire lo spazio tra gli angoli del dock. \nLascia vuoto per disabilitare."
             }
         },
-        "title": "Dock monitor per feste"
+        "app": {
+            "buttons": {
+                "toggle-nav": "Attiva/disattiva i pulsanti di navigazione",
+                "toggle-dock": "Attiva/disattiva Dock",
+                "reduce": "Diminuisci dimensione",
+                "enlarge": "Aumenta dimensione",
+                "start-follow": "Inizia a seguire",
+                "stop-follow": "Smetti di seguire",
+                "context": {
+                    "follow": "Seguire",
+                    "mount": "Montare",
+                    "epicRoll": "Richiesto \nRotolo",
+                    "raise-hand": "Alzare la mano"
+                }
+            }
+        },
+        "flags": {},
+        "notifications": {
+            "follow": "ora segue",
+            "unfollow": "non segue più",
+            "mounted": "ha montato",
+            "dismounted": "è smontato"
+        }
     }
 }

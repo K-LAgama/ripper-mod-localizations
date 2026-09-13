@@ -1,0 +1,15 @@
+{
+    "betterroofs": {
+        "tileConfig": {
+            "showInFog.name": "Svela la “nebbia di guerra”",
+            "showInFog.hint": "Quando un personaggio ha la visuale su questa casella, la casella sarà visibile attraverso la nebbia di guerra. Non funziona con le luci.",
+            "occlusionLinkId": "ID collegamento di occlusione",
+            "occlusionLinkIdHint": "Può essere qualsiasi testo. Quando una casella con la dicitura \"Occlusion Link Source?\" viene occlusa (ha un gettone sotto di essa), anche tutte le caselle con lo stesso \"Occlusion Link Id\" verranno occluse. Esempio di utilizzo: collegare i tetti tra loro.",
+            "occlusionLinkSource": "Fonte del collegamento di occlusione?"
+        },
+        "settings": {
+            "hoverFade.name": "Effetto di dissolvenza al passaggio del mouse",
+            "hoverFade.hint": "Se abilitata, questa opzione fa svanire gradualmente i tetti quando ci si passa sopra con il mouse. Si tratta di una funzionalità del VTT di Core Foundry; questa impostazione consente semplicemente di disattivarla."
+        }
+    }
+}

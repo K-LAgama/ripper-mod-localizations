@@ -1,0 +1,67 @@
+{
+    "tidbits": {
+        "message": {
+            "didYouKnow": "你知道嗎？",
+            "tidbits": "趣聞軼事",
+            "reroll": "又一個！"
+        },
+        "settings": {
+            "showChatMessage": {
+                "name": "顯示聊天訊息",
+                "hint": "登入時在聊天室以「耳語」形式顯示一段小趣聞",
+                "choices": {
+                    "everyone": "大家",
+                    "players": "球員",
+                    "gamemaster": "遊戲主持人",
+                    "none": "無"
+                }
+            },
+            "showLoadingScreen": {
+                "name": "顯示載入畫面",
+                "hint": "在載入場景時顯示一小段預覽",
+                "choices": {
+                    "everyone": "大家",
+                    "players": "球員",
+                    "gamemaster": "遊戲主持人",
+                    "none": "無"
+                }
+            },
+            "startupLoadingScreen": {
+                "name": "創業小知識時間",
+                "hint": "隱藏啟動提示所需的時間（單位：秒），設定為 0 即停用"
+            },
+            "loadingScreenMinimumDuration": {
+                "name": "載入畫面淡出延遲",
+                "hint": "場景載入完成後，讓載入畫面繼續顯示的時間（以秒為單位）"
+            },
+            "loadingScreenGradient": {
+                "name": "載入畫面漸層",
+                "hint": "用漸層遮蓋圖片的一半，以提升文字的可讀性，並為圖片套用模糊濾鏡"
+            },
+            "pauseText": {
+                "name": "暫停文字",
+                "hint": "顯示「趣聞」而非「遊戲已暫停」的文字"
+            },
+            "useDefaultSources": {
+                "name": "使用預設來源",
+                "hint": "使用預設的趣聞來源"
+            },
+            "customSource": {
+                "name": "自訂來源",
+                "hint": "自訂 JSON 檔案，用作「tidbit」來源；若留空則表示停用。"
+            },
+            "imageSource": {
+                "name": "圖片來源",
+                "hint": "載入畫面中要使用的資料夾，若留空則表示停用。"
+            },
+            "autoCycle": {
+                "name": "自動循環",
+                "hint": "暫停文字中的片段輪播間隔時間（以秒為單位）。設定為 0 則停用此功能。"
+            },
+            "didYouKnowText": {
+                "name": "你知道嗎？這段文字",
+                "hint": "用以取代預設「你知道嗎？」文字的自訂文字。"
+            }
+        }
+    }
+}

@@ -1,0 +1,184 @@
+{
+    "spotlight-omnisearch": {
+        "KEYBINDING": "鍵盤快捷鍵",
+        "settings": {
+            "compendiumConfig": {
+                "name": "彙編設定",
+                "hint": "設定要在搜尋結果中包含哪些彙編",
+                "label": "設定彙編"
+            },
+            "gmOnly": {
+                "name": "僅限遊戲主持人",
+                "hint": "只有遊戲主持人才能開啟「聚光燈全能搜尋」功能"
+            },
+            "compactMode": {
+                "name": "精簡模式",
+                "hint": "請為 Spotlight Omnisearch 採用緊湊的版面配置。此舉將隱藏說明文字並縮小搜尋結果的佔用空間"
+            },
+            "clickToDismiss": {
+                "name": "點擊關閉",
+                "hint": "點擊「Spotlight Omnisearch」視窗外的區域即可關閉它"
+            },
+            "saveLastSearch": {
+                "name": "儲存最後一次搜尋",
+                "hint": "將最後一次的搜尋查詢與結果儲存起來，以便下次開啟 Spotlight Omnisearch 時使用"
+            },
+            "useHistory": {
+                "name": "使用搜尋紀錄",
+                "hint": "利用搜尋紀錄來建議先前曾搜尋過的內容"
+            },
+            "enableCtrlSpace": {
+                "name": "啟用 Ctrl + Space",
+                "hint": "啟用 Ctrl + Space 快捷鍵以開啟 Spotlight 全能搜尋——由於此鍵盤綁定會繞過 Core Foundry 的鍵盤綁定系統，因此可在輸入欄位和文字區域內正常運作。"
+            },
+            "position": {
+                "name": "職位",
+                "hint": "設定「Spotlight 全域搜尋」在螢幕上的位置",
+                "choices": {
+                    "default": "預設 (居中)",
+                    "save": "儲存最後一個位置",
+                    "mouse": "在滑鼠所在位置開啟"
+                }
+            },
+            "alwaysOnTop": {
+                "name": "始終置頂",
+                "hint": "讓 Spotlight Omnisearch 始終顯示在其他視窗之上"
+            },
+            "spotlightWidth": {
+                "name": "聚光燈寬度",
+                "hint": "以像素為單位設定 Spotlight Omnisearch 的寬度"
+            },
+            "showImages": {
+                "name": "顯示圖片",
+                "hint": "在搜尋結果中顯示圖片。圖片會增加搜尋結果的載入時間，並可能導致畫面卡頓，具體情況取決於搜尋結果的數量及圖片的大小。"
+            },
+            "searchFiles": {
+                "name": "搜尋檔案",
+                "hint": "包含檔案搜尋結果（需使用「Dig Down」模組中的「檔案索引」）"
+            },
+            "searchSettings": {
+                "name": "搜尋設定",
+                "hint": "將遊戲設定納入搜尋結果中"
+            },
+            "searchCompendium": {
+                "name": "搜尋彙編",
+                "hint": "包含文獻彙編的搜尋結果"
+            },
+            "fullCompendiumJournalIndex": {
+                "name": "《全集期刊索引》",
+                "hint": "在期刊彙編的索引中包含頁碼和頁首。此舉將增加索引的初始化時間。若您擁有大量期刊彙編，建議停用此功能。"
+            },
+            "searchSidebar": {
+                "name": "搜尋側邊欄",
+                "hint": "包含側邊欄分頁的搜尋結果"
+            },
+            "searchUtils": {
+                "name": "搜尋工具",
+                "hint": "包含公用事業搜尋結果"
+            },
+            "useMetricForLights": {
+                "name": "燈具請使用公制單位",
+                "hint": "使用公制單位的快速光效"
+            }
+        },
+        "hotkeys": {
+            "toggleSpotlight": {
+                "name": "切換 Spotlight Omnisearch"
+            }
+        },
+        "recent-searches": "最近的搜尋",
+        "recent-tooltip": "清除最近的搜尋紀錄",
+        "app": {},
+        "flags": {},
+        "actions": {
+            "execute": "執行",
+            "activate": "啟用",
+            "preload": "預載",
+            "view": "檢視",
+            "roll-table": "滾動桌",
+            "play-playlist": "播放播放清單",
+            "stop-playlist": "停止播放清單",
+            "use-item": "使用項目",
+            "playForEveryone": "人人都能遊玩"
+        },
+        "notifications": {
+            "calc-clipboard": "結果已複製到剪貼簿",
+            "note": "筆記已儲存至「Omnisearch 筆記」日誌中",
+            "timer-gm": "只有遊戲主持人（GM）才能啟動計時器",
+            "tracker-gm": "只有遊戲主持人才能使用成敗追蹤表"
+        },
+        "special": {
+            "note": {
+                "name": "簡短備註",
+                "local-keyword": "註"
+            },
+            "roll": {
+                "name": "快速捲動",
+                "local-keyword": "滾動"
+            },
+            "help": {
+                "name": "幫助",
+                "local-keyword": "幫助",
+                "list": [
+                    "按下 Shift + 空格鍵，即可開啟 Spotlight 全能搜尋",
+                    "按下 Esc 鍵或點擊畫面外（可選，預設為關閉）以關閉 Spotlight 全能搜尋",
+                    "按下 Enter 鍵以確認第一個結果",
+                    "按下 Shift / Alt + Enter 鍵，即可執行第一個搜尋結果中的第一個或第二個動作",
+                    "特殊指令：help、note、roll、timer、tracker、counter，或輸入數學運算式進行計算",
+                    "! 可用於依類型篩選搜尋結果（!item、!actor）。篩選條件："
+                ]
+            },
+            "timer": {
+                "name": "計時器",
+                "timeLeft": "剩餘時間",
+                "local-keyword": "計時器",
+                "expired": "計時器已到期！"
+            },
+            "light": {
+                "torch": "火炬",
+                "lantern": "燈籠",
+                "lantern-shut": "燈籠（帶蓋）",
+                "off": "移除光源",
+                "candle": "蠟燭",
+                "magical": "神奇之光",
+                "flashlight": "手電筒",
+                "info": "對選取的代幣套用光效"
+            },
+            "tracker": {
+                "name": "成功／失敗追蹤器",
+                "local-keyword": "追蹤器"
+            },
+            "counter": {
+                "name": "計數器",
+                "local-keyword": "計數器"
+            },
+            "kill": {
+                "name": "殺死",
+                "description": "刪除所選的代幣"
+            },
+            "heal": {
+                "name": "療癒"
+            },
+            "damage": {
+                "name": "損害"
+            },
+            "restore": {
+                "name": "還原",
+                "description": "將選定的代幣恢復至滿血狀態"
+            },
+            "reindex": {
+                "name": "目錄",
+                "description": "重建 Spotlight Omnisearch 的搜尋索引"
+            },
+            "darkness": {
+                "night": "夜晚",
+                "dawn": "黎明",
+                "day": "日",
+                "dusk": "黃昏"
+            },
+            "attribute": {
+                "name": "屬性"
+            }
+        }
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "hp": {
+        "settings": {
+            "disable": {
+                "name": "Disattiva il timer",
+                "hint": "Disattiva il timer di combattimento"
+            },
+            "timerDuration": {
+                "name": "Durata del timer",
+                "hint": "Durata del timer in secondi"
+            },
+            "style": {
+                "name": "Stile",
+                "hint": "Stile del timer",
+                "digits": "Cifre",
+                "circle": "Cerchio",
+                "sand": "Sabbia"
+            },
+            "countup": {
+                "name": "Conteggio progressivo",
+                "hint": "Il timer conta in avanti anziché all'indietro (solo per gli stili \"Cifre\" e \"Cerchio\")"
+            },
+            "overtime": {
+                "name": "Straordinari",
+                "hint": "Il timer continua a funzionare anche dopo il raggiungimento del tempo massimo consentito"
+            },
+            "size": {
+                "name": "Dimensioni",
+                "hint": "Dimensioni del timer"
+            },
+            "secondary-size": {
+                "name": "Dimensione secondaria",
+                "hint": "Dimensioni dei timer secondari"
+            },
+            "secondary-direction": {
+                "name": "Direzione secondaria",
+                "hint": "Direzione dei timer secondari"
+            },
+            "windowless": {
+                "name": "Senza finestre",
+                "hint": "Visualizza il timer senza finestra"
+            },
+            "critical": {
+                "name": "Soglia critica",
+                "hint": "Soglia superata la quale il timer entrerà in stato critico e inizierà a lampeggiare"
+            },
+            "secondsInsteadOfPercentage": {
+                "name": "Per i tempi critici, utilizzare i secondi anziché le percentuali",
+                "hint": "Per impostazione predefinita, la soglia critica è espressa in percentuale del tempo totale. Selezionando questa opzione, viene invece espressa in secondi."
+            },
+            "goNext": {
+                "name": "Vai avanti",
+                "hint": "Al termine del timer, passa al combattente successivo."
+            },
+            "runForNpc": {
+                "name": "Corri per NPC",
+                "hint": "Avvia il timer durante il turno degli NPC"
+            },
+            "showOnUpdateCombatOnly": {
+                "name": "Prima volta in scena al prossimo turno",
+                "hint": "Visualizza il timer di combattimento quando si preme \"Inizia combattimento\", \"Turno successivo\" o \"Fine turno\""
+            },
+            "critSoundPath": {
+                "name": "Critical Sound",
+                "hint": "Suono da riprodurre quando il timer raggiunge il livello critico"
+            },
+            "endSoundPath": {
+                "name": "Suono finale",
+                "hint": "Suono da riprodurre allo scadere del timer"
+            },
+            "soundVol": {
+                "name": "Volume dell'audio",
+                "hint": "Volume dei suoni riprodotti"
+            }
+        },
+        "contextMenu": {
+            "pause": "Pausa",
+            "unpause": "Curriculum vitae",
+            "reset": "Reimposta",
+            "close": "Chiudi"
+        },
+        "create": {
+            "title": "Sbrigati!",
+            "paused": "In pausa",
+            "time": "Ora",
+            "timeError": "Il tempo deve essere un numero maggiore di 0",
+            "name": "Nome",
+            "color": "Colore"
+        }
+    }
+}

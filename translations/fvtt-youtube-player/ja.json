@@ -1,42 +1,71 @@
 {
     "fvtt-youtube-player": {
+        "deleteTrack": "トラックを削除しますか?",
+        "deleteTrackContent": "このトラックを削除してもよろしいですか?",
+        "deletePlaylist": "プレイリストを削除しますか?",
+        "deletePlaylistContent": "このプレイリストを削除してもよろしいですか?",
+        "fetchingTitle": "ビデオのタイトルを取得しています...",
+        "playlistName": "プレイリスト名",
+        "playlistNameContent": "プレイリストをインポートしています。\n新しいプレイリストを作成しますか、それとも現在のプレイリストにトラックを追加しますか?\n現在のプレイリストに追加するには、フィールドを空のままにしておきます。",
         "TOOLTIP": {
+            "play": "遊ぶ",
+            "stop": "停止",
+            "toggle-playlists": "プレイリストの切り替え",
             "add-to-playlist": "プレイリストに追加する",
             "create-playlist": "プレイリストの作成",
             "delete-playlist": "プレイリストの削除",
             "delete-track": "トラックの削除",
-            "loop": "繰り返しの切り替え",
-            "play": "遊ぶ",
             "rename-playlist": "名前を変更するには「Enter」を押してください",
-            "search": "YouTube を検索",
-            "stop": "停止",
+            "sound-library": "サウンドライブラリ",
+            "loop": "繰り返しの切り替え",
             "toggle-playlist": "自動再生の切り替え",
-            "toggle-playlists": "プレイリストの切り替え"
+            "search": "YouTube を検索",
+            "copy-url": "URLをコピー",
+            "configure-track": "トラックの設定",
+            "add-to-sound-library": "サウンドライブラリに追加"
         },
-        "deletePlaylist": "プレイリストを削除しますか?",
-        "deletePlaylistContent": "このプレイリストを削除してもよろしいですか?",
-        "deleteTrack": "トラックを削除しますか?",
-        "deleteTrackContent": "このトラックを削除してもよろしいですか?",
-        "fetchingTitle": "ビデオのタイトルを取得しています...",
-        "import-export": {
-            "export": "輸出",
-            "import": "輸入",
-            "imported": "プレイリストは正常にインポートされました",
-            "title": "プレイリストのインポート/エクスポート"
-        },
-        "noApiKey": "警告: API キーが設定されていません。\n検索機能にアクセスするには、モジュール設定で YouTube API キーを設定する必要があります。\n詳細については Wiki を確認してください。",
-        "playlistName": "プレイリスト名",
-        "playlistNameContent": "プレイリストをインポートしています。\n新しいプレイリストを作成しますか、それとも現在のプレイリストにトラックを追加しますか?\n現在のプレイリストに追加するには、フィールドを空のままにしておきます。",
         "settings": {
             "googleApiKey": {
-                "hint": "リクエストは私のサーバー経由でルーティングされますが、独自の API キーを使用してレート制限を回避できます。 \nhttps://console.developers.google.com/apis/credentials で取得します。",
-                "name": "YouTube APIキー"
+                "name": "YouTube APIキー",
+                "hint": "リクエストは私のサーバー経由でルーティングされますが、独自の API キーを使用してレート制限を回避できます。 \nhttps://console.developers.google.com/apis/credentials で取得します。"
             },
             "importExport": {
-                "hint": "プレイリストをインポートまたはエクスポートする",
+                "name": "インポート・エクスポート",
                 "label": "インポート/エクスポートダイアログを開く",
-                "name": "インポート・エクスポート"
+                "hint": "プレイリストをインポートまたはエクスポートする"
             }
-        }
+        },
+        "import-export": {
+            "title": "プレイリストのインポート/エクスポート",
+            "import": "輸入",
+            "export": "輸出",
+            "imported": "プレイリストは正常にインポートされました"
+        },
+        "track-configuration": {
+            "title": "線路配置",
+            "track-title": "楽曲名",
+            "track-url": "URLまたはIDを追跡する",
+            "url": "URL",
+            "tags": "タグ",
+            "rename-track": "トラックの名前を変更する"
+        },
+        "tags-configuration": {
+            "title": "タグの設定",
+            "create-tag": "タグを作成する",
+            "tag-name": "タグ名",
+            "tag-color": "タグの色",
+            "tag-label": "タグ名",
+            "delete-tag": "タグを削除",
+            "create-tag-error": "タグ名とタグの色を入力してください"
+        },
+        "sound-library": {
+            "title": "サウンドライブラリ",
+            "add-tracks": "トラックを追加",
+            "import-tracks": "トラックのインポート",
+            "import-tracks-textarea": "ここにトラックやプレイリストのURLまたはIDを貼り付けてください"
+        },
+        "app": {},
+        "flags": {},
+        "noApiKey": "警告: API キーが設定されていません。\n検索機能にアクセスするには、モジュール設定で YouTube API キーを設定する必要があります。\n詳細については Wiki を確認してください。"
     }
 }

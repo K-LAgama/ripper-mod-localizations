@@ -1,25 +1,31 @@
 {
     "rich-info-tooltips": {
         "settings": {
+            "theme": {
+                "name": "Tema",
+                "hint": "Seleziona un tema per le descrizioni comandi ricche di informazioni.",
+                "choices": {
+                    "default": "Nessun tema",
+                    "dark-fantasy": "Fantasia oscura",
+                    "sci-fi": "Fantascienza",
+                    "retro": "retrò",
+                    "modern": "Moderno"
+                }
+            },
             "addTitle": {
-                "hint": "Aggiungi il titolo della pagina informativa alla descrizione comando come intestazione H1.",
-                "name": "Aggiungi titolo alle descrizioni comandi"
+                "name": "Aggiungi titolo alle descrizioni comandi",
+                "hint": "Aggiungi il titolo della pagina informativa alla descrizione comando come intestazione H1."
             },
             "autoTooltips": {
-                "hint": "Aggiungi automaticamente descrizioni comando a tutti i collegamenti di contenuto che hanno una descrizione. \nRichiede ricarica",
-                "name": "Suggerimenti automatici"
+                "name": "Suggerimenti automatici",
+                "hint": "Aggiungi automaticamente descrizioni comando a tutti i collegamenti di contenuto che hanno una descrizione. \nRichiede ricarica"
             },
-            "theme": {
-                "choices": {
-                    "dark-fantasy": "Fantasia oscura",
-                    "default": "Nessun tema",
-                    "modern": "Moderno",
-                    "retro": "retrò",
-                    "sci-fi": "Fantascienza"
-                },
-                "hint": "Seleziona un tema per le descrizioni comandi ricche di informazioni.",
-                "name": "Tema"
+            "useImageBackground": {
+                "name": "Usa immagine di sfondo",
+                "hint": "Utilizza l'immagine del documento (se presente) come sfondo per il tooltip."
             }
-        }
+        },
+        "app": {},
+        "flags": {}
     }
 }

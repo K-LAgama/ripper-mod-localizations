@@ -1,0 +1,31 @@
+{
+    "rich-info-tooltips": {
+        "settings": {
+            "theme": {
+                "name": "Temat",
+                "hint": "Wybierz motyw dla rozbudowanych dymków informacyjnych.",
+                "choices": {
+                    "default": "Brak tematu",
+                    "dark-fantasy": "Mroczna fantastyka",
+                    "sci-fi": "Science fiction",
+                    "retro": "Retro",
+                    "modern": "Nowoczesny"
+                }
+            },
+            "addTitle": {
+                "name": "Dodaj tytuł do podpowiedzi",
+                "hint": "Dodaj tytuł strony informacyjnej do podpowiedzi jako nagłówek H1."
+            },
+            "autoTooltips": {
+                "name": "Automatyczne podpowiedzi",
+                "hint": "Automatycznie dodawaj podpowiedzi do wszystkich linków w treści, które zawierają opis. Wymagane odświeżenie strony"
+            },
+            "useImageBackground": {
+                "name": "Użyj tła obrazu",
+                "hint": "Użyj obrazu z dokumentu (jeśli taki istnieje) jako akcentu w tle podpowiedzi."
+            }
+        },
+        "app": {},
+        "flags": {}
+    }
+}

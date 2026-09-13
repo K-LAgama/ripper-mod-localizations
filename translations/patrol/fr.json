@@ -35,6 +35,10 @@
                 "name": "Délai minimal par étape",
                 "hint": "Délai minimum entre les étapes, en millisecondes. Le temps réel entre les mouvements dépendra des mises à jour des jetons de Foundry et de leur déplacement sur la carte. Des valeurs trop faibles peuvent nécessiter beaucoup de ressources."
             },
+            "animationDuration": {
+                "name": "Durée de l'animation",
+                "hint": "Durée des animations de déplacement des jetons, en millisecondes."
+            },
             "hidePatrolButtonInSidebar": {
                 "name": "Masquer le bouton « Panneau de patrouille » dans la barre latérale",
                 "hint": "Masquez le bouton « Patrol Panel » dans la barre latérale du répertoire des acteurs. Vous pouvez toujours utiliser la commande macro « ui.patrolApp.render({ force: true }) » ou appuyer sur Alt + clic gauche sur le bouton « Patrol » dans les commandes de scène « Token »."

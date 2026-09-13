@@ -1,256 +1,263 @@
 {
     "enhancedcombathud": {
-        "confirmRerollInitiativeContent": "本当にイニシアチブを再ロールしますか？",
-        "confirmRerollInitiativeTitle": "リロール・イニシアチブ",
         "controls": {
             "toggle": {
                 "title": "Argon Combat HUD切り替え",
                 "warning": "Argon Combat HUD: コマが選択されていません。コマを選択してから再び実行してください。"
             }
         },
-        "deleteEffectContent": "効果を削除してもよろしいですか？",
-        "deleteEffectTitle": "効果を削除",
-        "err": {
-            "moduleNotActive": "Argon CORE: システム固有のモジュールがインストールされていないか、有効化されていません。利用可能な場合は %m モジュールをインストールし、有効化してください。",
-            "unsupportedActorType": "Argon: アクター型 '%t' は Argon Combat HUD でサポートされていません。"
-        },
-        "hotkey": {
-            "toggle": {
-                "name": "アルゴン戦闘HUDの表示/非表示を切り替える"
+        "settings": {
+            "color": {
+                "label": "色設定",
+                "text": "メイン色",
+                "hint": "HUDの他のアクションタブの色"
+            },
+            "fore-color": {
+                "text": "テキスト色",
+                "hint": "テキスト色"
+            },
+            "color-bonus-action": {
+                "text": "ボーナス・アクション色",
+                "hint": "ボーナス・アクションタブの色"
+            },
+            "color-free-action": {
+                "text": "フリー・アクション色",
+                "hint": "フリー・アクションタブの色"
+            },
+            "color-reaction": {
+                "text": "リアクション色",
+                "hint": "リアクションタブの色"
+            },
+            "color-end-turn": {
+                "text": "ターン終了色",
+                "hint": "ターン終了タブの色"
+            },
+            "color-tooltip": {
+                "text": "ツールチップ色",
+                "hint": "セーヴ・技能・道具のツールチップの色"
+            },
+            "theme": {
+                "name": "テーマ",
+                "hint": "HUDのテーマ選択",
+                "custom": "カスタム",
+                "helium": "ヘリウム",
+                "neon": "ネオン",
+                "argon": "アルゴン",
+                "krypton": "クリプトン",
+                "xenon": "キセノン",
+                "radon": "ラドン",
+                "oganesson": "オガネソン"
+            },
+            "globalTheme": {
+                "name": "テーマモード",
+                "hint": "「クライアント」に設定すると、各プレイヤーが自身のテーマを選択できます。「ワールド」に設定すると、GMが選択したテーマが全プレイヤーに共通します。",
+                "choices": {
+                    "client": "クライアント",
+                    "world": "世界"
+                }
+            },
+            "scale": {
+                "name": "スケール",
+                "hint": "HUDの縮尺を設定します。自動スケールが使用されている場合は、それにかけ合わさる状態で使用されます。"
+            },
+            "dialogTheme": {
+                "name": "対話テーマ",
+                "hint": "HUDから開いたダイアログにArgonテーマを適用する"
+            },
+            "autoScale": {
+                "name": "自動スケール",
+                "hint": "画面サイズに基づいてHUDを自動的に拡大縮小します。拡大縮小設定は無視されます。"
+            },
+            "alwaysOn": {
+                "name": "常時接続",
+                "hint": "トークンを選択した際に自動的にHUDを表示する"
+            },
+            "leftPos": {
+                "name": "左位置",
+                "hint": "左から何ピクセルぶんずれて表示されるのかを設定します。"
+            },
+            "botPos": {
+                "name": "下位置",
+                "hint": "下から何ピクセルぶんずれて表示されるのかを設定します。"
+            },
+            "playerDetailsBottom": {
+                "name": "プレイヤー詳細の位置を下に置く",
+                "hint": "プレイヤーキャラの情報をキャラ画像の下に置きます。"
+            },
+            "preparedSpells": {
+                "name": "準備呪文のみ",
+                "hint": "準備された呪文のみを表示します。"
+            },
+            "showTooltips": {
+                "name": "ツールチップを表示",
+                "hint": "マウスホバー時にツールチップを表示"
+            },
+            "showTooltipsSpecial": {
+                "name": "特殊なアクションのツールチップを表示",
+                "hint": "離脱、回避、早足などのアクションにマウスホバーするとツールチップを表示します。"
+            },
+            "showTooltipsAbilityMenuAbilities": {
+                "name": "能力値のツールチップを表示",
+                "hint": "マウスホバー時に能力値のツールチップを表示"
+            },
+            "showTooltipsAbilityMenuSkills": {
+                "name": "技能のツールチップ表示",
+                "hint": "マウスホバー時に技能のツールチップを表示"
+            },
+            "showTooltipsAbilityMenuTools": {
+                "name": "道具のツールチップ表示",
+                "hint": "マウスホバー時に道具のツールチップを表示"
+            },
+            "fadeOutInactive": {
+                "name": "フェードアウト",
+                "hint": "５秒使用されなかったらHUDをフェードアウトさせ透明化させます。"
+            },
+            "fadeoutDelay": {
+                "name": "フェードアウトの待機時間",
+                "hint": "フェードアウトするまでの時間（秒）"
+            },
+            "fadeoutOpacity": {
+                "name": "フェードアウト時の不透明度",
+                "hint": "フェードアウト時の不透明度"
+            },
+            "hideMacroPlayers": {
+                "name": "マクロバーとプレイヤーリストを隠す",
+                "hint": "HUDが開いているとき、プレイヤーリストとマクロバーを隠します。"
+            },
+            "openCombatStart": {
+                "name": "戦闘開始時に開く",
+                "hint": "戦闘が開始したら自動的に開きます"
+            },
+            "tooltipScale": {
+                "name": "ツールチップスケール",
+                "hint": "ツールチップの縮尺"
+            },
+            "switchEquip": {
+                "name": "自動装備",
+                "hint": "セット切り替えるときにキャラクターシートでも自動的に装備します。"
+            },
+            "showWeaponsItems": {
+                "name": "武器を「アイテム使用」に表示する",
+                "hint": "武器を「アイテム使用」に表示します。武器スロットが足りないときに便利です。"
+            },
+            "noAA": {
+                "name": "アクティブ効果を適用しない",
+                "hint": "特殊なアクション（隠密、押出等）を使用したときに状態異常を付与しない。（再起動必要）"
+            },
+            "noBlur": {
+                "name": "ぼかし効果を無効にする",
+                "hint": "HUDのぼかし効果を無効化します。これはパフォーマンス設定であり、パフォーマンスの問題が発生した場合にのみ使用してください。"
+            },
+            "suppressWarnings": {
+                "name": "警告を抑制する",
+                "hint": "エラーが発生した場合、警告メッセージを表示せず、代わりに静かに失敗する。"
+            },
+            "rangefinder": {
+                "name": "3Dキャンバス - レンジファインダー",
+                "hint": "HUD内のアイテムにカーソルを合わせた際に3Dキャンバス距離測定機能を有効化します。有効化するとターゲットまでの距離が表示され、ターゲットが射程外の場合、距離は赤色で表示されます。"
+            },
+            "rangepicker": {
+                "name": "ターゲットピッカー",
+                "hint": "ターゲットを必要とするアイテムやアクションを使用する際、マウスカーソルに追従するターゲットカウンターが表示されます。必要な数のターゲットが選択されるまで、必要に応じて「+/-」キーで手動で調整してください。"
+            },
+            "rangepickerclear": {
+                "name": "ターゲットピッカー - ターゲットをクリア",
+                "hint": "ターゲットを必要とするアイテムやアクションを使用する際は、ターゲット選択モードに入る前にすべてのターゲットを解除してください。"
+            },
+            "thememenu": {
+                "name": "テーマ",
+                "hint": "Argonのテーマを選択肢、設定します。",
+                "label": "テーマ詳細設定"
             }
         },
         "hud": {
+            "pass": {
+                "name": "ステップ"
+            },
             "endturn": {
                 "name": "ターン終了"
             },
             "macro": {
                 "name": "マクロ",
                 "page": "ページ"
-            },
-            "pass": {
-                "name": "ステップ"
             }
         },
-        "settings": {
-            "alwaysOn": {
-                "hint": "トークンを選択した際に自動的にHUDを表示する",
-                "name": "常時接続"
+        "themeOptions": {
+            "save": "設定保存",
+            "export": "テーマを出力",
+            "savePermanent": {
+                "label": "すべてのユーザー向けにカスタムテーマを保存する",
+                "tooltip": "現在のカスタムテーマをモジュールのストレージに保存します。これにより、すべてのゲームおよび全プレイヤーでテーマが利用可能になります。保存したテーマを削除するには、ファイルエクスプローラーを使用して手動でファイルを削除する必要があります（移動先: modules/enhancedcombathud/storage/themes）。Foundry内からのファイル削除はサポートされていません。"
             },
-            "autoScale": {
-                "hint": "画面サイズに基づいてHUDを自動的に拡大縮小します。拡大縮小設定は無視されます。",
-                "name": "自動スケール"
+            "autoTextColorTitle": "背景から文字色を自動識別",
+            "autoTextColorHint": "自動的にテキストの色を背景とコントラストして読みやすい色に変更します。",
+            "exportThemeName": "出力テーマ名",
+            "exportTheme": {
+                "save": "保存",
+                "cancel": "キャンセル"
             },
-            "botPos": {
-                "hint": "下から何ピクセルぶんずれて表示されるのかを設定します。",
-                "name": "下位置"
-            },
-            "color": {
-                "hint": "HUDの他のアクションタブの色",
-                "label": "色設定",
-                "text": "メイン色"
-            },
-            "color-bonus-action": {
-                "hint": "ボーナス・アクションタブの色",
-                "text": "ボーナス・アクション色"
-            },
-            "color-end-turn": {
-                "hint": "ターン終了タブの色",
-                "text": "ターン終了色"
-            },
-            "color-free-action": {
-                "hint": "フリー・アクションタブの色",
-                "text": "フリー・アクション色"
-            },
-            "color-reaction": {
-                "hint": "リアクションタブの色",
-                "text": "リアクション色"
-            },
-            "color-tooltip": {
-                "hint": "セーヴ・技能・道具のツールチップの色",
-                "text": "ツールチップ色"
-            },
-            "dialogTheme": {
-                "hint": "HUDから開いたダイアログにArgonテーマを適用する",
-                "name": "対話テーマ"
-            },
-            "fadeOutInactive": {
-                "hint": "５秒使用されなかったらHUDをフェードアウトさせ透明化させます。",
-                "name": "フェードアウト"
-            },
-            "fadeoutDelay": {
-                "hint": "フェードアウトするまでの時間（秒）",
-                "name": "フェードアウトの待機時間"
-            },
-            "fadeoutOpacity": {
-                "hint": "フェードアウト時の不透明度",
-                "name": "フェードアウト時の不透明度"
-            },
-            "fore-color": {
-                "hint": "テキスト色",
-                "text": "テキスト色"
-            },
-            "globalTheme": {
-                "choices": {
-                    "client": "クライアント",
-                    "world": "世界"
-                },
-                "hint": "「クライアント」に設定すると、各プレイヤーが自身のテーマを選択できます。「ワールド」に設定すると、GMが選択したテーマが全プレイヤーに共通します。",
-                "name": "テーマモード"
-            },
-            "hideMacroPlayers": {
-                "hint": "HUDが開いているとき、プレイヤーリストとマクロバーを隠します。",
-                "name": "マクロバーとプレイヤーリストを隠す"
-            },
-            "leftPos": {
-                "hint": "左から何ピクセルぶんずれて表示されるのかを設定します。",
-                "name": "左位置"
-            },
-            "noAA": {
-                "hint": "特殊なアクション（隠密、押出等）を使用したときに状態異常を付与しない。（再起動必要）",
-                "name": "アクティブ効果を適用しない"
-            },
-            "noBlur": {
-                "hint": "HUDのぼかし効果を無効化します。これはパフォーマンス設定であり、パフォーマンスの問題が発生した場合にのみ使用してください。",
-                "name": "ぼかし効果を無効にする"
-            },
-            "openCombatStart": {
-                "hint": "戦闘が開始したら自動的に開きます",
-                "name": "戦闘開始時に開く"
-            },
-            "playerDetailsBottom": {
-                "hint": "プレイヤーキャラの情報をキャラ画像の下に置きます。",
-                "name": "プレイヤー詳細の位置を下に置く"
-            },
-            "preparedSpells": {
-                "hint": "準備された呪文のみを表示します。",
-                "name": "準備呪文のみ"
-            },
-            "rangefinder": {
-                "hint": "HUD内のアイテムにカーソルを合わせた際に3Dキャンバス距離測定機能を有効化します。有効化するとターゲットまでの距離が表示され、ターゲットが射程外の場合、距離は赤色で表示されます。",
-                "name": "3Dキャンバス - レンジファインダー"
-            },
-            "rangepicker": {
-                "hint": "ターゲットを必要とするアイテムやアクションを使用する際、マウスカーソルに追従するターゲットカウンターが表示されます。必要な数のターゲットが選択されるまで、必要に応じて「+/-」キーで手動で調整してください。",
-                "name": "ターゲットピッカー"
-            },
-            "rangepickerclear": {
-                "hint": "ターゲットを必要とするアイテムやアクションを使用する際は、ターゲット選択モードに入る前にすべてのターゲットを解除してください。",
-                "name": "ターゲットピッカー - ターゲットをクリア"
-            },
-            "scale": {
-                "hint": "HUDの縮尺を設定します。自動スケールが使用されている場合は、それにかけ合わさる状態で使用されます。",
-                "name": "スケール"
-            },
-            "showTooltips": {
-                "hint": "マウスホバー時にツールチップを表示",
-                "name": "ツールチップを表示"
-            },
-            "showTooltipsAbilityMenuAbilities": {
-                "hint": "マウスホバー時に能力値のツールチップを表示",
-                "name": "能力値のツールチップを表示"
-            },
-            "showTooltipsAbilityMenuSkills": {
-                "hint": "マウスホバー時に技能のツールチップを表示",
-                "name": "技能のツールチップ表示"
-            },
-            "showTooltipsAbilityMenuTools": {
-                "hint": "マウスホバー時に道具のツールチップを表示",
-                "name": "道具のツールチップ表示"
-            },
-            "showTooltipsSpecial": {
-                "hint": "離脱、回避、早足などのアクションにマウスホバーするとツールチップを表示します。",
-                "name": "特殊なアクションのツールチップを表示"
-            },
-            "showWeaponsItems": {
-                "hint": "武器を「アイテム使用」に表示します。武器スロットが足りないときに便利です。",
-                "name": "武器を「アイテム使用」に表示する"
-            },
-            "suppressWarnings": {
-                "hint": "エラーが発生した場合、警告メッセージを表示せず、代わりに静かに失敗する。",
-                "name": "警告を抑制する"
-            },
-            "switchEquip": {
-                "hint": "セット切り替えるときにキャラクターシートでも自動的に装備します。",
-                "name": "自動装備"
-            },
-            "theme": {
-                "custom": "カスタム",
-                "hint": "HUDのテーマ選択",
-                "name": "テーマ"
-            },
-            "thememenu": {
-                "hint": "Argonのテーマを選択肢、設定します。",
-                "label": "テーマ詳細設定",
-                "name": "テーマ"
-            },
-            "tooltipScale": {
-                "hint": "ツールチップの縮尺",
-                "name": "ツールチップスケール"
+            "themeTitle": "テーマ選択",
+            "themeHint": "テーマを選択するとそのテーマの彩色設定を引き継ぎます",
+            "portrait": "ポートレートカラーズ",
+            "mainAction": "アクション色",
+            "bonusAction": "ボーナス・アクション色",
+            "freeAction": "フリー・アクション色",
+            "reaction": "リアクション色",
+            "endTurn": "ターン終了色",
+            "tooltip": "ツールチップ色",
+            "abilityMenu": "技能メニュー色",
+            "buttons": "ボタン色",
+            "movement": "移動ボックスの色",
+            "background": "背景色",
+            "color": "テキスト色",
+            "border": "枠色",
+            "boxShadow": "枠の影の色",
+            "portraitBase": "マウスが要素上にない場合の背景色/前景色/境界線色",
+            "mainActionBase": "マウスホバーしていないときの背景/前景/枠の色",
+            "mainActionHover": "マウスホバーしているときの背景/前景/枠の色",
+            "bonusActionBase": "マウスホバーしていないときの背景/前景/枠の色",
+            "bonusActionHover": "マウスホバーしているときの背景/前景/枠の色",
+            "freeActionBase": "マウスホバーしていないときの背景/前景/枠の色",
+            "freeActionHover": "マウスホバーしているときの背景/前景/枠の色",
+            "reactionBase": "マウスホバーしていないときの背景/前景/枠の色",
+            "reactionHover": "マウスホバーしているときの背景/前景/枠の色",
+            "endTurnBase": "マウスホバーしていないときの背景/前景/枠の色",
+            "endTurnHover": "マウスホバーしているときの背景/前景/枠の色",
+            "tooltipHeader": "ツールチップやウィンドウのヘッダーの背景/前景/枠の色",
+            "tooltipSubtitle": "ツールチップやウィンドウのサブタイトルの背景/前景/枠の色",
+            "tooltipBody": "ツールチップやウィンドウ本文の背景/前景/枠の色",
+            "abilityMenuBase": "マウスホバーされていないときの前景/枠の色",
+            "abilityMenuHover": "マウスホバーされているときの前景/枠の色",
+            "buttonsBase": "マウスホバーしていないときの背景/前景/枠の色",
+            "buttonsHover": "マウスホバーしているときの背景/前景/枠の色",
+            "movementUsed": "消費した移動を示す箱の背景/枠の色",
+            "movementBaseMovement": "残りの移動を示す箱の背景/枠の色",
+            "movementDashMovement": "早足の移動ぶんを示す箱の背景/枠の色",
+            "movementDangerMovement": "超過ぶんの移動を示す箱の背景/枠の色"
+        },
+        "hotkey": {
+            "toggle": {
+                "name": "アルゴン戦闘HUDの表示/非表示を切り替える"
             }
+        },
+        "err": {
+            "unsupportedActorType": "Argon: アクター型 '%t' は Argon Combat HUD でサポートされていません。",
+            "moduleNotActive": "Argon CORE: システム固有のモジュールがインストールされていないか、有効化されていません。利用可能な場合は %m モジュールをインストールし、有効化してください。"
         },
         "targetPicker": {
             "dialog": {
+                "title": "ターゲットピッカー チュートリアル",
                 "list": {
                     "0": "選択済み/必須ターゲットの数はカーソルに追従します",
                     "1": "<span>左クリック</span> または <span>T</span> キーを押してトークンをターゲットに設定",
                     "2": "<span>右クリック</span>で対象の選択を解除します",
                     "3": "<span>+</span> または <span>-</span> キーを押すと、必要なターゲットの数を手動で増減できます"
-                },
-                "title": "ターゲットピッカー チュートリアル"
+                }
             }
         },
-        "themeOptions": {
-            "abilityMenu": "技能メニュー色",
-            "abilityMenuBase": "マウスホバーされていないときの前景/枠の色",
-            "abilityMenuHover": "マウスホバーされているときの前景/枠の色",
-            "autoTextColorHint": "自動的にテキストの色を背景とコントラストして読みやすい色に変更します。",
-            "autoTextColorTitle": "背景から文字色を自動識別",
-            "background": "背景色",
-            "bonusAction": "ボーナス・アクション色",
-            "bonusActionBase": "マウスホバーしていないときの背景/前景/枠の色",
-            "bonusActionHover": "マウスホバーしているときの背景/前景/枠の色",
-            "border": "枠色",
-            "boxShadow": "枠の影の色",
-            "buttons": "ボタン色",
-            "buttonsBase": "マウスホバーしていないときの背景/前景/枠の色",
-            "buttonsHover": "マウスホバーしているときの背景/前景/枠の色",
-            "color": "テキスト色",
-            "endTurn": "ターン終了色",
-            "endTurnBase": "マウスホバーしていないときの背景/前景/枠の色",
-            "endTurnHover": "マウスホバーしているときの背景/前景/枠の色",
-            "export": "テーマを出力",
-            "exportTheme": {
-                "cancel": "キャンセル",
-                "save": "保存"
-            },
-            "exportThemeName": "出力テーマ名",
-            "freeAction": "フリー・アクション色",
-            "freeActionBase": "マウスホバーしていないときの背景/前景/枠の色",
-            "freeActionHover": "マウスホバーしているときの背景/前景/枠の色",
-            "mainAction": "アクション色",
-            "mainActionBase": "マウスホバーしていないときの背景/前景/枠の色",
-            "mainActionHover": "マウスホバーしているときの背景/前景/枠の色",
-            "movement": "移動ボックスの色",
-            "movementBaseMovement": "残りの移動を示す箱の背景/枠の色",
-            "movementDangerMovement": "超過ぶんの移動を示す箱の背景/枠の色",
-            "movementDashMovement": "早足の移動ぶんを示す箱の背景/枠の色",
-            "movementUsed": "消費した移動を示す箱の背景/枠の色",
-            "portrait": "ポートレートカラーズ",
-            "portraitBase": "マウスが要素上にない場合の背景色/前景色/境界線色",
-            "reaction": "リアクション色",
-            "reactionBase": "マウスホバーしていないときの背景/前景/枠の色",
-            "reactionHover": "マウスホバーしているときの背景/前景/枠の色",
-            "save": "設定保存",
-            "savePermanent": {
-                "label": "すべてのユーザー向けにカスタムテーマを保存する",
-                "tooltip": "現在のカスタムテーマをモジュールのストレージに保存します。これにより、すべてのゲームおよび全プレイヤーでテーマが利用可能になります。保存したテーマを削除するには、ファイルエクスプローラーを使用して手動でファイルを削除する必要があります（移動先: modules/enhancedcombathud/storage/themes）。Foundry内からのファイル削除はサポートされていません。"
-            },
-            "themeHint": "テーマを選択するとそのテーマの彩色設定を引き継ぎます",
-            "themeTitle": "テーマ選択",
-            "tooltip": "ツールチップ色",
-            "tooltipBody": "ツールチップやウィンドウ本文の背景/前景/枠の色",
-            "tooltipHeader": "ツールチップやウィンドウのヘッダーの背景/前景/枠の色",
-            "tooltipSubtitle": "ツールチップやウィンドウのサブタイトルの背景/前景/枠の色"
-        }
+        "deleteEffectTitle": "効果を削除",
+        "deleteEffectContent": "効果を削除してもよろしいですか？",
+        "confirmRerollInitiativeTitle": "リロール・イニシアチブ",
+        "confirmRerollInitiativeContent": "本当にイニシアチブを再ロールしますか？"
     }
 }

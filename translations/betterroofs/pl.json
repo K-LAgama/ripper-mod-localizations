@@ -1,0 +1,15 @@
+{
+    "betterroofs": {
+        "tileConfig": {
+            "showInFog.name": "Odkrywa mgłę wojny",
+            "showInFog.hint": "Gdy postać ma widoczność na tę kafelkę, będzie ona widoczna pomimo mgły wojny. Nie działa w połączeniu ze światłami.",
+            "occlusionLinkId": "Identyfikator połączenia okluzji",
+            "occlusionLinkIdHint": "Może to być dowolny tekst. Gdy kafelek z napisem „Occlusion Link Source?” zostanie zasłonięty (znajdzie się pod nim żeton), wszystkie kafelki o tym samym „Occlusion Link Id” również zostaną zasłonięte. Przykład zastosowania: łączenie dachów.",
+            "occlusionLinkSource": "Źródło informacji o okluzji?"
+        },
+        "settings": {
+            "hoverFade.name": "Efekt zanikania po najechaniu kursorem",
+            "hoverFade.hint": "Po włączeniu tej opcji dachy będą się stopniowo wygaszać po najechaniu na nie kursorem. Jest to funkcja programu Core Foundry VTT; to ustawienie pozwala po prostu ją wyłączyć."
+        }
+    }
+}

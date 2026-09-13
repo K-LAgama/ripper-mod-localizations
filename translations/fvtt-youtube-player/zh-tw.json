@@ -1,0 +1,71 @@
+{
+    "fvtt-youtube-player": {
+        "deleteTrack": "刪除曲目？",
+        "deleteTrackContent": "您確定要刪除此首曲目嗎？",
+        "deletePlaylist": "刪除播放清單嗎？",
+        "deletePlaylistContent": "您確定要刪除此播放清單嗎？",
+        "fetchingTitle": "正在擷取影片標題...",
+        "playlistName": "播放清單名稱",
+        "playlistNameContent": "您正在匯入一個播放清單。您要建立新的播放清單，還是將這些曲目加入目前的播放清單？若要加入目前的播放清單，請將此欄位留空。",
+        "TOOLTIP": {
+            "play": "播放",
+            "stop": "停止",
+            "toggle-playlists": "切換播放清單",
+            "add-to-playlist": "加入播放清單",
+            "create-playlist": "建立播放清單",
+            "delete-playlist": "刪除播放清單",
+            "delete-track": "刪除曲目",
+            "rename-playlist": "重新命名播放清單",
+            "sound-library": "音效庫",
+            "loop": "切換重複播放",
+            "toggle-playlist": "切換自動播放",
+            "search": "搜尋 YouTube",
+            "copy-url": "複製網址",
+            "configure-track": "設定軌道",
+            "add-to-sound-library": "新增至音效庫"
+        },
+        "settings": {
+            "googleApiKey": {
+                "name": "YouTube API 金鑰",
+                "hint": "此 API 用於解析播放清單及執行搜尋。請求將透過我的伺服器轉發，但您可以使用自己的 API 金鑰來避免速率限制。搜尋功能必須使用 API 金鑰。請至 https://console.developers.google.com/apis/credentials 取得一個。"
+            },
+            "importExport": {
+                "name": "進口／出口",
+                "label": "開啟「匯入／匯出」對話方塊",
+                "hint": "匯入或匯出播放清單"
+            }
+        },
+        "import-export": {
+            "title": "匯入／匯出播放清單",
+            "import": "匯入",
+            "export": "匯出",
+            "imported": "播放清單已成功匯入"
+        },
+        "track-configuration": {
+            "title": "軌道配置",
+            "track-title": "曲目名稱",
+            "track-url": "追蹤網址或 ID",
+            "url": "網址",
+            "tags": "標籤",
+            "rename-track": "重新命名曲目"
+        },
+        "tags-configuration": {
+            "title": "標籤設定",
+            "create-tag": "建立標籤",
+            "tag-name": "標籤名稱",
+            "tag-color": "標籤顏色",
+            "tag-label": "標籤名稱",
+            "delete-tag": "刪除標籤",
+            "create-tag-error": "請輸入標籤名稱和標籤顏色"
+        },
+        "sound-library": {
+            "title": "音效庫",
+            "add-tracks": "新增曲目",
+            "import-tracks": "匯入音軌",
+            "import-tracks-textarea": "請將曲目／播放清單的網址或 ID 貼在此處"
+        },
+        "app": {},
+        "flags": {},
+        "noApiKey": "警告：尚未設定 API 金鑰。若要使用搜尋功能，您需要在模組設定中設定 YouTube API 金鑰。您可參閱 Wiki 以獲取更多資訊。"
+    }
+}

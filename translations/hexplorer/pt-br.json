@@ -116,6 +116,10 @@
                 "label": "Somente pela primeira vez",
                 "hint": "Execute a atividade acima apenas na primeira vez que o hexplorer se mover para esta célula."
             },
+            "hide-unrevealed-tooltip": {
+                "label": "Ocultar dica de ferramenta não exibida",
+                "hint": "Ocultar a dica de ajuda quando os jogadores passarem o mouse sobre uma célula que não esteja revelada."
+            },
             "reveal-tooltip": {
                 "label": "Revelar dica",
                 "hint": "Dê permissão de observador aos jogadores para a página do diário associada à dica de ferramenta."

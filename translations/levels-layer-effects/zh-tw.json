@@ -1,0 +1,10 @@
+{
+    "levels-layer-effects": {
+        "settings": {
+            "disableBlur": {
+                "name": "停用模糊效果",
+                "hint": "停用模糊效果，請在低階裝置上啟用此選項。"
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "theripper-premium-hub": {
+        "settings": {
+            "autoCheck": {
+                "name": "启动时检查更新",
+                "hint": "在加载世界时，自动检查我的付费模块是否有更新。"
+            },
+            "checkDisabled": {
+                "name": "未启用的模块",
+                "hint": "检查已安装但未启用的模块是否有更新。"
+            }
+        },
+        "tweaks-menu": {
+            "title": "微调",
+            "label": "配置调整项",
+            "hint": "配置一些提升使用体验的功能，例如“启动宏”、“清理标题按钮”和CSS调整。",
+            "tabs": {
+                "misc": "杂项",
+                "startup-macros": "启动宏",
+                "css-tweaks": "CSS 调整"
+            },
+            "initMacros": {
+                "name": "启动宏",
+                "hint": "在加载世界时执行宏。宏将按照此处列出的顺序执行。"
+            },
+            "readyMacros": {
+                "name": "现成宏",
+                "hint": "当客户端准备就绪时，执行宏。宏将按照此处列出的顺序执行。"
+            },
+            "cssTweak": {
+                "name": "CSS 调整",
+                "hint": "编写自定义 CSS 以修改 Foundry 或 Modules 的样式。系统提供了三个字段供您进行分类，但您也可以只使用一个字段。"
+            },
+            "cleanHeaderButtons": {
+                "name": "简洁的页眉按钮",
+                "hint": "从标题栏按钮中移除文字，使其外观更简洁。如果您使用了大量我的模块，窗口标题栏中可能会出现许多按钮，此选项可将这些按钮上的文字移除。（需要 LibWrapper）"
+            },
+            "compactSidebar": {
+                "name": "紧凑型侧边栏",
+                "hint": "将侧边栏中的条目缩小，以便在屏幕上显示更多项目。"
+            },
+            "enableSettingsSwap": {
+                "name": "强制客户端设置",
+                "hint": "启用将客户端设置更改为全服设置的功能。这将强制所有客户端采用所选设置，玩家也将无法再查看这些设置。"
+            },
+            "diceTray": {
+                "name": "骰子托盘",
+                "hint": "在聊天记录中添加一个骰子盘。这样你就可以掷骰子并为其添加修正值。"
+            },
+            "autoRotate": {
+                "name": "自动旋转",
+                "hint": "自动将单位旋转至与移动方向和目标单位相对应的方向。",
+                "none": "已禁用",
+                "defaultOn": "已启用（默认开启）",
+                "defaultOff": "已启用（默认关闭）简体中文（大陆）",
+                "on": "已启用",
+                "off": "已禁用",
+                "default": "默认"
+            }
+        },
+        "wtcNotification": "{setting} 的配置已设置为 {value}。请重新加载游戏以使更改生效。该设置的更改将在下次重新加载后才会保存。"
+    }
+}

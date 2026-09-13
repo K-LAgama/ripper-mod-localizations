@@ -274,6 +274,15 @@
                 "edit": {
                     "label": "Editar hora del evento"
                 },
+                "eventAlreadyEnded": {
+                    "label": "El evento ya ha finalizado"
+                },
+                "eventIn": {
+                    "label": "En"
+                },
+                "eventTimeLeft": {
+                    "label": "Izquierda"
+                },
                 "repeat": {
                     "label": "Repita",
                     "options": {

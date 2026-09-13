@@ -1,4 +1,11 @@
 {
+    "TYPES": {
+        "JournalEntryPage": {
+            "mastercrafted": {
+                "mastercrafted": "Une recette élaborée avec soin"
+            }
+        }
+    },
     "mastercrafted": {
         "mastercrafted": "Recette artisanale",
         "craft": "Artisanat",
@@ -199,6 +206,14 @@
             "migrateOnStartup": {
                 "name": "Migrer les paramètres au démarrage",
                 "hint": "Si cette option est activée, le module migrera les données du journal au démarrage. Vous pouvez utiliser la macro « game.modules.get(\"mastercrafted\").API.migration.showManualMigrationDialog() » pour migrer manuellement vos paramètres."
+            },
+            "dontShowButtonOnNpc": {
+                "name": "Masquer le bouton dans l'en-tête du PNJ",
+                "hint": "Si cette option est activée, le bouton permettant d'ouvrir le livre de recettes n'apparaîtra pas sur les fiches des PNJ."
+            },
+            "mainFolderName": {
+                "name": "Nom du dossier principal",
+                "hint": "Si un nom de dossier est défini, seul le contenu de ce dossier s'affichera dans l'interface de Mastercrafted. Dans le cas contraire, le module tentera de détecter automatiquement le dossier principal."
             }
         }
     }

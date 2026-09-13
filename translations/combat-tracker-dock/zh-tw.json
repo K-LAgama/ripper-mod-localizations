@@ -1,0 +1,241 @@
+{
+    "combat-tracker-dock": {
+        "configureCarousel": "設定輪播圖",
+        "combatConfig": {
+            "portraitResource": {
+                "label": "肖像酒吧",
+                "hint": "資源列將以疊加層形式顯示於人像圖片上方，若要停用，請將其設定為「無」。"
+            }
+        },
+        "settings": {
+            "systems": {
+                "crucible": {
+                    "alwaysShowActions": {
+                        "name": "顯示敵方行動點數",
+                        "hint": "若已啟用「顯示系統圖示」功能，則無論權限如何，皆會向玩家顯示行動點數。如此一來，玩家便能看到盟友與敵人擁有的總行動點數及剩餘行動點數。至於專注點數，對於無權查看的玩家而言，仍將保持隱藏狀態。"
+                    }
+                }
+            },
+            "integration": "整合",
+            "portraitSize": {
+                "name": "輪播圖尺寸",
+                "hint": "輪播圖中人物肖像的最大尺寸。請注意，若戰鬥人員數量過多以致無法全部顯示在螢幕上，系統會自動縮小人物肖像的尺寸。",
+                "choices": {
+                    "30px": "微小的",
+                    "50px": "小",
+                    "70px": "正常",
+                    "90px": "大",
+                    "110px": "特大號",
+                    "150px": "XX-Large",
+                    "180px": "XXX-Large"
+                }
+            },
+            "carouselStyle": {
+                "name": "輪播風格",
+                "hint": "肖像在輪播圖中的排列與移動方式：輪播圖 - 居中：當前作戰單位位於輪播圖中央，其他作戰單位圍繞其旋轉。\n- 輪播 - 左側：當前行動中的戰鬥者位於輪播圖的左側，其他戰鬥者圍繞其旋轉。\n- 無輪播：戰鬥者始終按先攻順序顯示，當前行動中的戰鬥者會移動，而其他戰鬥者則保持原位。",
+                "choices": {
+                    "centerCarousel": "輪播圖 - 居中",
+                    "leftCarousel": "輪播圖 - 左側",
+                    "basic": "無輪播圖"
+                }
+            },
+            "overflowStyle": {
+                "name": "溢出樣式",
+                "hint": "當戰鬥參與者過多以致無法全部顯示在螢幕上時，輪播圖的運作方式。",
+                "choices": {
+                    "hidden": "隱藏",
+                    "scroll": "捲動",
+                    "autofit": "縮小肖像"
+                }
+            },
+            "portraitAspect": {
+                "name": "人像長寬比",
+                "hint": "肖像的照片長寬比。若圖片與肖像的照片長寬比不符，圖片將會被裁切。",
+                "choices": {
+                    "square": "正方形",
+                    "portrait": "肖像",
+                    "long": "長"
+                }
+            },
+            "alignment": {
+                "name": "對齊",
+                "hint": "旋轉木馬的對齊方式。",
+                "choices": {
+                    "left": "左",
+                    "center": "中心",
+                    "right": "對"
+                }
+            },
+            "direction": {
+                "name": "方向",
+                "hint": "旋轉木馬的轉動方向。",
+                "choices": {
+                    "row": "水平",
+                    "column": "垂直"
+                }
+            },
+            "roundness": {
+                "name": "圓潤度",
+                "hint": "肖像與工具提示的圓角效果。",
+                "choices": {
+                    "sharp": "夏普",
+                    "soft": "柔軟",
+                    "round": "圓形"
+                }
+            },
+            "showDispositionColor": {
+                "name": "顯示處置顏色",
+                "hint": "請在肖像畫的底部邊框中顯示該佈局。"
+            },
+            "hideDefeated": {
+                "name": "隱藏 已被擊敗",
+                "hint": "將戰敗的對手從輪播視圖中隱藏。若您需要與他們互動，他們在一般戰鬥追蹤器中仍會顯示。"
+            },
+            "showInitiativeOnPortrait": {
+                "name": "在肖像中展現主動性",
+                "hint": "請在肖像的左上角顯示先攻值。您隨時都能在工具提示中查看先攻值！"
+            },
+            "portraitImageBorder": {
+                "name": "玩家邊框",
+                "hint": "這是一條將顯示在玩家角色周圍的特殊邊框。若要停用此功能，請留空。若您想製作自訂圖片，建議以預設圖片為參考，以確保尺寸正確。"
+            },
+            "attributeColor": {
+                "name": "屬性顏色",
+                "hint": "輪播圖中主要追蹤屬性文字與條狀區塊的顏色。您可以使用任何有效的 CSS 顏色值（例如 #ff0000、red、rgba(255,0,0,0.5) 等）。"
+            },
+            "attributeColor2": {
+                "name": "次要屬性顏色",
+                "hint": "輪播圖中次要追蹤屬性文字與條狀區塊的顏色。您可以使用任何有效的 CSS 顏色值（例如：#ff0000、red、rgba(255,0,0,0.5) 等）。"
+            },
+            "attributeColorPortrait": {
+                "name": "肖像屬性顏色",
+                "hint": "追蹤屬性肖像疊加條的顏色。您可以使用任何有效的 CSS 顏色值（例如：#ff0000、red、rgba(255,0,0,0.5) 等）。"
+            },
+            "barsPlacement": {
+                "name": "橫桿的配置",
+                "hint": "在輪播圖中，追蹤屬性欄的排列位置。",
+                "choices": {
+                    "left": "左",
+                    "right": "對",
+                    "twinned": "結為姊妹城市"
+                }
+            },
+            "attributeVisibility": {
+                "name": "屬性可見性",
+                "hint": "輪播圖中追蹤屬性的可見性。",
+                "choices": {
+                    "text": "僅文字",
+                    "bars": "僅限酒吧",
+                    "both": "文字與條形圖"
+                }
+            },
+            "playerPlayerPermission": {
+                "name": "始終顯示玩家資訊",
+                "hint": "允許所有玩家查看其他玩家的追蹤屬性、工具提示資訊及系統圖示。"
+            },
+            "displayDescriptions": {
+                "name": "顯示節目簡介",
+                "hint": "在工具提示中顯示目前生效的效果說明。",
+                "choices": {
+                    "none": "無",
+                    "owner": "所有者／觀察員",
+                    "all": "大家"
+                }
+            },
+            "tooltipColor": {
+                "name": "工具提示顏色",
+                "hint": "工具提示的配色方案。您可以使用任何有效的 CSS 顏色值（例如 #ff0000、red、rgba(255,0,0,0.5) 等）。預設值為 #888888。"
+            },
+            "portraitImage": {
+                "name": "肖像圖片",
+                "hint": "應使用「演員」或「角色」圖片作為頭像。",
+                "choices": {
+                    "actor": "演員",
+                    "token": "代幣"
+                }
+            },
+            "portraitImageBackground": {
+                "name": "肖像背景",
+                "hint": "若肖像為透明或未填滿空間時，將顯示肖像後方的背景圖片。"
+            },
+            "showSystemIcons": {
+                "name": "顯示系統圖示",
+                "hint": "在追蹤的資源下方、工具提示中，或兩者皆顯示系統圖示。請注意，此功能需要針對特定系統進行實作，且僅在部分系統上有效。",
+                "choices": {
+                    "none": "無",
+                    "tooltip": "工具提示",
+                    "resource": "肖像",
+                    "both": "兩者皆是"
+                }
+            },
+            "hideConflictingUIs": {
+                "name": "隱藏衝突的使用者介面",
+                "hint": "當「戰鬥追蹤器」浮動窗格顯示時，會自動隱藏其他停靠在螢幕頂端的介面元素，以避免介面過於雜亂。"
+            },
+            "displayName": {
+                "name": "顯示名稱",
+                "hint": "是否要在工具提示中顯示戰鬥參與者的名稱。「基於代幣」選項僅在玩家能看到該代幣名稱時，才會顯示該名稱。",
+                "choices": {
+                    "default": "永遠",
+                    "token": "基於代幣",
+                    "owner": "依據所有權"
+                }
+            },
+            "hideFirstRound": {
+                "name": "隱藏至第一回合",
+                "hint": "在敵方於戰鬥中完成首回合行動前，將其隱藏。（需搭配 LibWrapper，才能在核心戰鬥追蹤器中同樣將其隱藏。）"
+            },
+            "hideEnemyInitiative": {
+                "name": "隱藏敵方行動順序",
+                "hint": "在工具提示和角色肖像中隱藏敵方的先攻順序。"
+            },
+            "attributesMenu": {
+                "name": "工具提示屬性",
+                "label": "設定屬性",
+                "hint": "設定要在工具提示中顯示的自訂屬性。",
+                "reset": "重設為預設值",
+                "resetWarning": "您確定要將屬性重設為預設值嗎？",
+                "form": {
+                    "attr": {
+                        "name": "屬性",
+                        "choose": "選擇屬性"
+                    },
+                    "icon": {
+                        "name": "圖示"
+                    },
+                    "units": {
+                        "name": "單位"
+                    },
+                    "save": "儲存並關閉",
+                    "add": "新增屬性",
+                    "reset": "還原預設值",
+                    "notes": "若要移除該屬性，請將「屬性」欄位留空。"
+                }
+            },
+            "resource": {
+                "name": "次要資源",
+                "hint": "次要資源條。您應在戰鬥設定中進行設定。此選項是為某些系統及有經驗的使用者提供，以便他們手動調整。"
+            },
+            "portraitResource": {
+                "name": "肖像資源",
+                "hint": "此資源列將以疊加層的形式顯示於人物肖像圖上方。您應在戰鬥設定中進行此項設定。此選項是為了讓某些系統及資深使用者能手動調整而設。"
+            }
+        },
+        "hotkeys": {
+            "combatPrev": {
+                "name": "上一回合"
+            },
+            "combatNext": {
+                "name": "下一回合"
+            }
+        },
+        "add-event": {
+            "title": "新增活動",
+            "duration": "活動時長（回合）",
+            "error": "錯誤：您必須為該事件提供名稱、圖片及「倡議」值。",
+            "expired": "事件 %n 已過期。"
+        },
+        "deleteEffectTitle": "刪除效果",
+        "deleteEffectContent": "您確定要刪除此效果嗎？"
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "macro-wheel": {
+        "bindings": {
+            "open": {
+                "name": "打开/关闭宏滚轮"
+            }
+        },
+        "settings": {
+            "folderSize": {
+                "name": "文件夹按钮大小",
+                "hint": "宏轮中文件夹按钮的大小（以像素为单位）。"
+            },
+            "macroSize": {
+                "name": "宏按钮大小",
+                "hint": "宏轮中宏按钮的大小（以像素为单位）。"
+            },
+            "closeOnClick": {
+                "name": "单击关闭",
+                "hint": "点击宏时关闭宏滚轮。按住 Ctrl 键可保持滚轮打开。"
+            },
+            "enableTooltips": {
+                "name": "启用工具提示",
+                "hint": "将鼠标悬停在宏或文件夹上时显示工具提示。"
+            },
+            "useRoot": {
+                "name": "使用根目录",
+                "hint": "将整个宏目录作为宏轮的根目录。"
+            },
+            "addHotbar": {
+                "name": "显示快捷栏宏",
+                "hint": "将热键栏宏添加到宏轮中。"
+            },
+            "useMiddleMouse": {
+                "name": "使用鼠标中键",
+                "hint": "使用鼠标中键打开宏转盘。"
+            },
+            "hoverDelay": {
+                "name": "悬停延迟",
+                "hint": "将鼠标悬停在宏轮文件夹上时，宏轮打开前的延迟时间（以毫秒为单位）。"
+            }
+        },
+        "flags": {
+            "header": "微距转盘",
+            "folderImg": {
+                "name": "图片"
+            },
+            "condition": {
+                "name": "自定义条件",
+                "placeholder": "条件脚本"
+            },
+            "activeCondition": {
+                "name": "有效状态",
+                "hint": "该条件用于判断宏是否处于活动状态。这将用于确定“宏轮”中宏周围圆环的颜色，以便快速查看状态。"
+            },
+            "presetCondition": {
+                "name": "状况",
+                "options": {
+                    "custom": "自定义",
+                    "tokens": "活动层：代币",
+                    "tiles": "活动层：瓷砖",
+                    "walls": "活动层：墙壁",
+                    "sounds": "活动层：声音",
+                    "notes": "活性层：注释",
+                    "lights": "活动层：照明",
+                    "templates": "活动层：模板",
+                    "drawings": "活动层：图纸",
+                    "selectedtoken": "已选定代币",
+                    "combat": "在战斗中",
+                    "enabled3d": "已启用 3D Canvas"
+                }
+            }
+        },
+        "errors": {
+            "no-folder": "MacroWheel：未找到“MacroWheel”文件夹。请在“宏”文件夹中创建一个名为“MacroWheel”的文件夹，或启用“使用根文件夹”选项以关闭此提示。在“MacroWheel”文件夹内，为每个要添加的滚轮分别创建子文件夹，然后将宏添加到这些文件夹中。"
+        }
+    }
+}

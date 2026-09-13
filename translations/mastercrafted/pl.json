@@ -1,0 +1,220 @@
+{
+    "TYPES": {
+        "JournalEntryPage": {
+            "mastercrafted": {
+                "mastercrafted": "Przepis stworzony z mistrzowską precyzją"
+            }
+        }
+    },
+    "mastercrafted": {
+        "mastercrafted": "Przepis stworzony z mistrzowską precyzją",
+        "craft": "Rękodzieło",
+        "show-recipes": "Pokaż przepisy",
+        "craftDialog": {
+            "title": "Rękodzieło",
+            "craft": "Rękodzieło",
+            "cancel": "Anuluj",
+            "consumes": "Zużywa",
+            "crafts": "Rękodzieło",
+            "crafted": "Wykonane ręcznie"
+        },
+        "componentEditForm": {
+            "title": "Konfiguracja komponentów",
+            "name": {
+                "label": "Imię i nazwisko",
+                "hint": "Nazwa służąca do identyfikacji przedmiotu, który zostanie wykorzystany jako składnik podczas wytwarzania."
+            },
+            "img": "Obraz",
+            "quantity": "Ilość",
+            "uuid": {
+                "label": "Pozycja",
+                "hint": "Element, który zostanie wyświetlony po kliknięciu. Należy pamiętać, że zmiana tego elementu nie spowoduje aktualizacji nazwy ani obrazu komponentu."
+            },
+            "resourcePath": {
+                "title": "Konfiguracja zasobów",
+                "hint": "Ścieżka do zasobu aktora. Jeśli przedmiot nie znajduje się w ekwipunku, podczas wytwarzania zużyty zostanie zasób aktora odpowiedzialnego za wytwarzanie zamiast samego przedmiotu.",
+                "label": "Ścieżka do zasobu"
+            },
+            "tags": {
+                "title": "Konfiguracja tagów",
+                "hint": "Lista tagów określających alternatywne przedmioty dla tego komponentu. Jeśli główny przedmiot nie znajduje się w ekwipunku, podczas wytwarzania zostaną użyte przedmioty pasujące do co najmniej jednego tagu w trybie „Some” lub do wszystkich tagów w trybie „Every”.",
+                "label": "Tagi",
+                "mode": {
+                    "label": "Wymagane",
+                    "every": "Każdy",
+                    "some": "Niektóre"
+                }
+            }
+        },
+        "recipeApp": {
+            "errors": {
+                "namemissing": "Pole „Imię” jest obowiązkowe!",
+                "alreadyingredient": "Ten składnik występuje już w składzie tego przepisu!",
+                "noJournal": "Otwórz książkę, aby skonfigurować kategorie."
+            },
+            "bookcontext": {
+                "add": "Dodaj przepis",
+                "edit": "Edytuj",
+                "delete": "Usuń",
+                "inspect": "Sprawdzić",
+                "duplicate": "Duplikat",
+                "export": "Eksport",
+                "import": "Importuj"
+            },
+            "editcreatebook": {
+                "title": "Edytuj/Utwórz książkę",
+                "name": "Imię i nazwisko",
+                "namep": "Nowa książka",
+                "description": "Opis",
+                "image": "Obraz",
+                "sound": "Dźwięk",
+                "confirm": "Potwierdź",
+                "tools": "Narzędzia",
+                "toolsplaceholder": "Lista nazw narzędzi rozdzielonych przecinkami",
+                "macro": "Stan",
+                "macroplaceholder": "Nazwa makra lub polecenie",
+                "time": "Czas",
+                "timeplaceholder": "Czas wykonania w minutach",
+                "edit": "Edytuj",
+                "create": "Utwórz",
+                "book": "Książka",
+                "recipe": "Przepis",
+                "permission": "Uprawnienia gracza",
+                "expression": {
+                    "label": "Wyrażenie",
+                    "placeholder": "Wyrażenie"
+                },
+                "abilityDc": {
+                    "label": "DC",
+                    "placeholder": "DC"
+                },
+                "toolCheck": {
+                    "label": "Kontrola narzędzi",
+                    "placeholder": "Kontrola narzędzi"
+                },
+                "toolDc": {
+                    "label": "DC",
+                    "placeholder": "DC"
+                },
+                "abilityCheck": {
+                    "label": "Możliwości systemu",
+                    "placeholder": "Możliwości systemu"
+                },
+                "modifierList": {
+                    "add": "Dodaj modyfikator",
+                    "hint": "Jeśli wynik rzutu lub wartość zwrócona przez wyrażenie jest równa lub większa od DC (przyjmuje się wyższą z tych wartości), liczba zebranych przedmiotów zostaje zmodyfikowana zgodnie z wyrażeniem modyfikującym. Na początku wyrażenia modyfikującego można umieścić operator matematyczny; jeśli nie podano żadnego, domyślnie przyjmuje się znak plus (+). Na przykład *1d4 mnoży liczbę zebranych przedmiotów przez 1d4.",
+                    "label": "Modyfikator"
+                }
+            },
+            "configbookrecipe": {
+                "permissions": {
+                    "default": "Domyślne",
+                    "allow": "Zezwól",
+                    "deny": "Odrzuć"
+                }
+            },
+            "recipeconfig": {
+                "inheritTools": "Narzędzia dziedziczne",
+                "ingredientsInspection": "Kontrola składników",
+                "productInspection": "Kontrola produktu",
+                "ingredients": "Składniki",
+                "result": "Wynik"
+            },
+            "title": "Wykonane z mistrzowską precyzją",
+            "recipeBooks": "Książki z przepisami",
+            "addRecipeBook": "Dodaj książkę kucharską",
+            "filter": "Przełącz wszystko/Przedmioty do wytworzenia",
+            "relinked": "W jednym lub kilku elementach brakowało odnośników, więc zostały one ponownie powiązane.",
+            "craft": "Tworzenie przedmiotów – przytrzymaj klawisz Ctrl, aby przyspieszyć tworzenie",
+            "searchRecipe": "Wyszukaj przepis",
+            "tools": "Potrzebne narzędzia",
+            "time": "Czas na rękodzieło",
+            "minutes": "protokoły",
+            "craftError": "Błąd podczas tworzenia",
+            "craftSuccess": "Tworzenie zakończone sukcesem! Dodano do ekwipunku: ",
+            "craftSuccessTimed": "Tworzenie zakończone sukcesem! Po zakończeniu tworzenia zostaną dodane następujące przedmioty: ",
+            "timedCraftCompleted": "Tworzenie zakończone! Dodano do ekwipunku: ",
+            "craftFailConsumed": "Tworzenie nie powiodło się! Warunek nie został spełniony, a składniki zostały zużyte.",
+            "craftFailNotConsumed": "Tworzenie nie powiodło się! Warunek nie został spełniony, a składniki nie zostały zużyte.",
+            "noTools": "Brakuje narzędzi! Potrzebujesz jednego z poniższych: ",
+            "noProficiency": "Nie posiadasz biegłości w: ",
+            "ingredientsTooltip": "Kliknij lewym przyciskiem myszy, aby wybrać składniki, a prawym przyciskiem myszy, aby sprawdzić składnik.",
+            "resultTooltip": "Kliknij lewym przyciskiem myszy na polu, aby zaznaczyć wynik; kliknij prawym przyciskiem myszy na pozycji, aby ją sprawdzić.",
+            "ingredientsEditInfo": "Przeciągnij element na pole, aby dodać go jako składnik do wytworzenia. Kliknij przycisk „+”, aby dodać pusty składnik. Wiele składników w tym samym polu można stosować zamiennie. Do wytworzenia przedmiotu wymagany jest co najmniej jeden składnik na pole.",
+            "resultEditInfo": "Przeciągnij przedmiot na pole, aby dodać go jako wynik wytworzenia. Wszystkie przedmioty znajdujące się w tym samym polu zostaną przyznane w wyniku wytworzenia. Podczas wytwarzania można wybrać tylko jedno pole jako wynik.",
+            "cauldron": "Kocioł",
+            "timedCrafting": "Postępy w tworzeniu",
+            "readyIn": "Gotowe za: ",
+            "onlyCraftable": "Tylko do wytworzenia",
+            "all": "Wszystkie",
+            "useCraftingActor": "Użyj obiektu „Crafting Actor”",
+            "editMode": "Edytuj",
+            "useInventory": "Wykorzystaj zapasy",
+            "craftAs": "Rzemiosło jako",
+            "useInventoryInfo": "Przedmioty z ekwipunku tego aktora zostaną wykorzystane do rzemiosła. Wyniki rzemiosła oraz rzemiosła z opóźnieniem również trafią do ekwipunku tego aktora.",
+            "craftAsInfo": "Ten podmiot będzie wykonywał czynności rzemieślnicze, a wszelkie testy związane z rzemiosłem (narzędzia, umiejętności itp.) będą przeprowadzane przez ten podmiot.",
+            "ingredient": "Składnik",
+            "product": "Produkt",
+            "component": "Komponent"
+        },
+        "cauldronApp": {
+            "title": "Kocioł",
+            "noIngredients": "Aby odkryć przepis, musisz wymieszać co najmniej dwa składniki!",
+            "brewFail": "Warzenie się nie powiodło! Twoja mikstura nie wymieszała się prawidłowo. Składniki zostały zużyte.",
+            "hint": "Przeciągnij i upuść składniki do kotła, aby je wymieszać. Kliknij na składnik, aby go wyjąć z kotła. Kliknij przycisk „Wymieszaj składniki”, aby je wymieszać. Jeśli składniki dobrze się połączą, odkryjesz nowy przepis. Składniki zostaną zużyte.",
+            "discovered": "Odkryłeś nowy przepis!",
+            "gmConfirm": "Zanim będzie można z tego odkrycia skorzystać, musi je potwierdzić Mistrz Gry.",
+            "confirm": "Potwierdź",
+            "partial": {
+                "consumed": "Zużyto:",
+                "extra1": "Było tak blisko! Prawie ci się udało! Może dodałeś trochę za dużo.",
+                "extra2": "Wyglądało na to, że się uda, ale tak się nie stało. Może dodałeś za dużo.",
+                "missing1": "Było tak blisko! Prawie ci się udało! Może trzeba jeszcze trochę popracować.",
+                "missing2": "Wyglądało na to, że to zadziała, ale tak się nie stało. Może trzeba dodać do tego czegoś więcej.",
+                "extra1missing1": "Wyglądało na to, że to zadziała, ale tak się nie stało. Być może dodałeś za dużo jednego składnika, a za mało innego."
+            }
+        },
+        "itemConfig": {
+            "title": "Mastercrafted – Konfiguracja produktu",
+            "sheetButton": "",
+            "attributePath": {
+                "label": "Ścieżka atrybutu"
+            },
+            "tags": {
+                "label": "Tagi",
+                "notes": "Lista tagów rozdzielonych przecinkami. Podczas tworzenia przedmiotu gracz musi mieć w ekwipunku przedmioty oznaczone co najmniej jednym z tych tagów."
+            }
+        },
+        "UI": {
+            "open-recipe-app": "Menedżer przepisów",
+            "delete-recipe-book-title": "Usuń książkę kucharską",
+            "delete-recipe-book-content": "Czy na pewno chcesz usunąć tę książkę kucharską?",
+            "delete-recipe-title": "Usuń przepis",
+            "delete-recipe-content": "Czy na pewno chcesz usunąć ten przepis?",
+            "default-recipe-name": "Nowy przepis",
+            "no-permission": "Nie masz uprawnień do otwarcia tego przepisu lub książki."
+        },
+        "settings": {
+            "enableCauldron": {
+                "name": "Włącz funkcję „Cauldron”",
+                "hint": "Włącz interfejs „Kocioł”. Dzięki temu gracze będą mogli łączyć dowolne składniki, aby odkrywać przepisy."
+            },
+            "customQuantityPath": {
+                "name": "Niestandardowa ścieżka ilościowa",
+                "hint": "Ścieżka do wartości danych dotyczących ilości pozycji (ścieżka danych zaczyna się od „system”; na przykład, jeśli ilość jest zapisana w item.system.itemQuantity.value, w tym polu należy wpisać „itemQuantity.value”). Pozostaw puste pole, aby użyć ścieżki domyślnej; dostosuj ustawienie tylko wtedy, gdy Twój system nie korzysta ze standardowej ścieżki."
+            },
+            "migrateOnStartup": {
+                "name": "Przenieś ustawienia przy uruchomieniu",
+                "hint": "Jeśli opcja ta jest włączona, moduł przeprowadzi migrację danych dziennika podczas uruchamiania. Aby ręcznie przeprowadzić migrację ustawień, możesz użyć makra „game.modules.get(\"mastercrafted\").API.migration.showManualMigrationDialog()”."
+            },
+            "dontShowButtonOnNpc": {
+                "name": "Ukryj przycisk w nagłówku postaci niezależnej",
+                "hint": "Jeśli ta opcja jest włączona, przycisk otwierający książkę z przepisami nie będzie wyświetlany na kartach postaci NPC."
+            },
+            "mainFolderName": {
+                "name": "Nazwa folderu głównego",
+                "hint": "Jeśli podano nazwę folderu, w interfejsie Mastercrafted wyświetlana będzie wyłącznie zawartość tego folderu. W przeciwnym razie moduł spróbuje automatycznie wykryć folder główny."
+            }
+        }
+    }
+}

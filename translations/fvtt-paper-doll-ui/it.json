@@ -1,58 +1,91 @@
 {
     "fvtt-paper-doll-ui": {
+        "settings": {
+            "globalConfigMenu": {
+                "name": "Impostazioni globali della bambola di carta",
+                "hint": "Personalizza le immagini vuote e il numero di slot per ciascun tipo.",
+                "label": "Configura bambola di carta"
+            },
+            "hideActorHeaderText": {
+                "name": "Nascondi il testo del pulsante dell'intestazione dell'attore",
+                "hint": "Nascondi il testo nel pulsante dell'intestazione dell'attore."
+            },
+            "paperDollPosition": {
+                "name": "Posizione della bambola di carta",
+                "hint": "Posizione della bambola di carta quando è aperta. \nTieni presente che se lo spazio a sinistra o a destra non è sufficiente, la bambola di carta verrà posizionata al centro.",
+                "label": "Posizione",
+                "choices": {
+                    "left": "Sinistra",
+                    "right": "Giusto",
+                    "center": "Centro"
+                }
+            },
+            "autoOpen": {
+                "name": "Apertura automatica",
+                "hint": "Apri automaticamente la bambola di carta quando viene aperta la scheda di un attore."
+            },
+            "allowNonOwned": {
+                "name": "Consenti elementi non di proprietà",
+                "hint": "Consenti l'aggiunta di oggetti non posseduti (ad esempio, elementi dalla barra laterale o dal compendio) alla bambola di carta. \nQuesta impostazione è pensata per i sistemi personalizzati che non dispongono di un sistema di inventario e generalmente dovrebbe essere lasciata disattivata."
+            },
+            "playerOwnedOnly": {
+                "name": "Solo di proprietà del giocatore",
+                "hint": "Abilita Paper Doll solo per gli attori di proprietà dei giocatori."
+            }
+        },
         "app": {
+            "paper-doll": {
+                "title": "Bambola di carta",
+                "config": "Configurazione",
+                "disallowed": "Questo oggetto non può essere equipaggiato in questo slot."
+            },
             "actor-config": {
-                "autoOpen": {
-                    "false": "Mai",
-                    "label": "Apertura automatica",
-                    "true": "Sempre",
-                    "useDefault": "Usa predefinito"
-                },
+                "title": "Configurazione dell'attore",
                 "img": {
                     "label": "Immagine",
                     "placeholder": "Usa l'immagine dell'attore"
                 },
                 "objectFit": {
+                    "label": "Adattamento immagine",
                     "contain": "Contenere",
-                    "cover": "Copertina",
-                    "label": "Adattamento immagine"
+                    "cover": "Copertina"
+                },
+                "autoOpen": {
+                    "label": "Apertura automatica",
+                    "useDefault": "Usa predefinito",
+                    "true": "Sempre",
+                    "false": "Mai"
                 },
                 "playerOwnedOnly": {
-                    "hint": "Abilita Paper Doll solo per gli attori di proprietà dei giocatori.",
-                    "label": "Solo di proprietà del giocatore"
-                },
-                "title": "Configurazione dell'attore"
-            },
-            "paper-doll": {
-                "config": "Configurazione",
-                "disallowed": "Questo oggetto non può essere equipaggiato in questo slot.",
-                "title": "Bambola di carta"
+                    "label": "Solo di proprietà del giocatore",
+                    "hint": "Abilita Paper Doll solo per gli attori di proprietà dei giocatori."
+                }
             },
             "paper-doll-global-config": {
-                "EQUIPPED_PATH": {
-                    "label": "Sentiero Attrezzato"
+                "title": "Configurazione globale della bambola di carta",
+                "img": "Icona",
+                "filter": {
+                    "label": "Filtro personalizzato",
+                    "hint": "Uno script utilizzato per creare una finestra con oggetti che possono essere equipaggiati in questo slot. \n\"Articolo\" si riferisce all'articolo da controllare. \nEsempio: return item.type === 'arma';"
+                },
+                "simpleFilter": {
+                    "label": "Filtro di base",
+                    "hint": "Filtra solo gli elementi che hanno questo tipo."
+                },
+                "how": {
+                    "add": "Aggiungi un nuovo slot facendo clic sul pulsante \"Aggiungi\".",
+                    "remove": "Rimuovere uno slot facendo clic con il tasto destro su di esso.",
+                    "image": "Seleziona un'immagine per lo slot facendo clic su di essa con il tasto sinistro del mouse."
                 },
                 "HUE_ROTATE": {
                     "label": "Tinta"
                 },
+                "EQUIPPED_PATH": {
+                    "label": "Sentiero Attrezzato"
+                },
                 "MAIN_COLOR": {
                     "label": "Colore"
-                },
-                "filter": {
-                    "hint": "Uno script utilizzato per creare una finestra con oggetti che possono essere equipaggiati in questo slot. \n\"Articolo\" si riferisce all'articolo da controllare. \nEsempio: return item.type === 'arma';",
-                    "label": "Filtro personalizzato"
-                },
-                "how": {
-                    "add": "Aggiungi un nuovo slot facendo clic sul pulsante \"Aggiungi\".",
-                    "image": "Seleziona un'immagine per lo slot facendo clic su di essa con il tasto sinistro del mouse.",
-                    "remove": "Rimuovere uno slot facendo clic con il tasto destro su di esso."
-                },
-                "img": "Icona",
-                "simpleFilter": {
-                    "hint": "Filtra solo gli elementi che hanno questo tipo.",
-                    "label": "Filtro di base"
-                },
-                "title": "Configurazione globale della bambola di carta"
+                }
             }
         },
         "hotkeys": {
@@ -60,38 +93,6 @@
                 "name": "Attiva/disattiva la bambola di carta"
             }
         },
-        "settings": {
-            "allowNonOwned": {
-                "hint": "Consenti l'aggiunta di oggetti non posseduti (ad esempio, elementi dalla barra laterale o dal compendio) alla bambola di carta. \nQuesta impostazione è pensata per i sistemi personalizzati che non dispongono di un sistema di inventario e generalmente dovrebbe essere lasciata disattivata.",
-                "name": "Consenti elementi non di proprietà"
-            },
-            "autoOpen": {
-                "hint": "Apri automaticamente la bambola di carta quando viene aperta la scheda di un attore.",
-                "name": "Apertura automatica"
-            },
-            "globalConfigMenu": {
-                "hint": "Personalizza le immagini vuote e il numero di slot per ciascun tipo.",
-                "label": "Configura bambola di carta",
-                "name": "Impostazioni globali della bambola di carta"
-            },
-            "hideActorHeaderText": {
-                "hint": "Nascondi il testo nel pulsante dell'intestazione dell'attore.",
-                "name": "Nascondi il testo del pulsante dell'intestazione dell'attore"
-            },
-            "paperDollPosition": {
-                "choices": {
-                    "center": "Centro",
-                    "left": "Sinistra",
-                    "right": "Giusto"
-                },
-                "hint": "Posizione della bambola di carta quando è aperta. \nTieni presente che se lo spazio a sinistra o a destra non è sufficiente, la bambola di carta verrà posizionata al centro.",
-                "label": "Posizione",
-                "name": "Posizione della bambola di carta"
-            },
-            "playerOwnedOnly": {
-                "hint": "Abilita Paper Doll solo per gli attori di proprietà dei giocatori.",
-                "name": "Solo di proprietà del giocatore"
-            }
-        }
+        "flags": {}
     }
 }

@@ -1,0 +1,77 @@
+{
+    "macro-wheel": {
+        "bindings": {
+            "open": {
+                "name": "開啟／關閉巨集轉盤"
+            }
+        },
+        "settings": {
+            "folderSize": {
+                "name": "資料夾按鈕大小",
+                "hint": "巨集轉盤中資料夾按鈕的大小（以像素為單位）。"
+            },
+            "macroSize": {
+                "name": "巨型按鈕尺寸",
+                "hint": "巨集轉盤中巨集按鈕的大小（以像素為單位）。"
+            },
+            "closeOnClick": {
+                "name": "點擊後關閉",
+                "hint": "點擊巨集時，請關閉巨集選單輪。您可按住 Ctrl 鍵以保持選單輪開啟。"
+            },
+            "enableTooltips": {
+                "name": "啟用工具提示",
+                "hint": "當游標懸停在巨集或資料夾上時，顯示工具提示。"
+            },
+            "useRoot": {
+                "name": "使用根目錄",
+                "hint": "將整個巨集目錄設為巨輪的根目錄。"
+            },
+            "addHotbar": {
+                "name": "顯示快速欄巨集",
+                "hint": "將熱鍵欄巨集新增至巨集輪中。"
+            },
+            "useMiddleMouse": {
+                "name": "使用中鍵",
+                "hint": "使用滑鼠中鍵開啟巨集選單。"
+            },
+            "hoverDelay": {
+                "name": "懸停延遲",
+                "hint": "將游標懸停在巨集輪資料夾上時，巨集輪開啟前的延遲時間（以毫秒為單位）。"
+            }
+        },
+        "flags": {
+            "header": "巨輪",
+            "folderImg": {
+                "name": "圖片"
+            },
+            "condition": {
+                "name": "自訂條件",
+                "placeholder": "條件腳本"
+            },
+            "activeCondition": {
+                "name": "有效狀態",
+                "hint": "此條件用於判斷巨集是否處於活躍狀態。這將用於決定巨集輪中巨集周圍環狀圖的顏色，以便快速查看狀態。"
+            },
+            "presetCondition": {
+                "name": "狀況",
+                "options": {
+                    "custom": "自訂",
+                    "tokens": "活躍層：代幣",
+                    "tiles": "活動層：磁磚",
+                    "walls": "作用層：牆壁",
+                    "sounds": "活動層：聲音",
+                    "notes": "活性層：備註",
+                    "lights": "活動層：照明",
+                    "templates": "活動層：範本",
+                    "drawings": "「Active Layer」：繪圖",
+                    "selectedtoken": "已選取代幣",
+                    "combat": "在戰鬥中",
+                    "enabled3d": "已啟用 3D Canvas"
+                }
+            }
+        },
+        "errors": {
+            "no-folder": "MacroWheel：找不到「MacroWheel」資料夾。請在您的「Macro」資料夾中建立一個名為「MacroWheel」的資料夾，或啟用「使用根資料夾」選項以停用此通知。在「MacroWheel」資料夾內，為您要新增的每個滾輪建立子資料夾，然後將巨集新增至這些資料夾中。"
+        }
+    }
+}

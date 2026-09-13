@@ -1,0 +1,896 @@
+{
+    "TYPES.JournalEntryPage": {
+        "simple-quest": {
+            "quest": "SQ Quest",
+            "character": "SQ 角色",
+            "lore": "SQ 背景故事",
+            "map": "SQ 地圖",
+            "event": "SQ 活動",
+            "era": "SQ 時代",
+            "achievement": "SQ 成就",
+            "creature": "SQ 生物",
+            "location": "SQ 位置",
+            "faction": "SQ 派系",
+            "investigation": "SQ 調查"
+        }
+    },
+    "simple-quest": {
+        "tutorialTips": {
+            "tipsExplaination": {
+                "title": "教學提示",
+                "text": "這是一則教學提示。您可以在模組設定中關閉提示功能。點擊關閉按鈕可隱藏提示，直到下次重新整理為止；或點擊骰子按鈕閱讀另一則提示。"
+            },
+            "quickVisibility": {
+                "title": "快速掌握概況",
+                "text": "使用 <kbd>Alt + 左鍵點擊</kbd>，可快速隱藏或顯示玩家的「Simple Quest」元素。在側邊欄中，對某個頁面執行 <kbd>Alt + 左鍵點擊</kbd>，即可切換其「觀察者」權限。 您也可以 <kbd> 按下 Alt 鍵並左鍵點擊 </kbd> 任務目標的核取方塊，以切換其隱藏狀態；對於 Simple Quest 地圖頁面上的標記，亦可採用相同操作。"
+            },
+            "quickModal": {
+                "title": "以模態視窗開啟",
+                "text": "在「Simple Quest」頁面中，對內容連結使用 <kbd>Alt + 左鍵點擊</kbd> 可開啟模態視窗。此操作會將該頁面以模態視窗形式開啟，讓您能在不切換當前頁面的情況下瀏覽該頁面的內容。 您可以在任何位置 <kbd>雙擊左鍵</kbd>，或點擊右上角的 X 按鈕來關閉模態視窗"
+            },
+            "questRecap": {
+                "title": "任務回顧",
+                "text": "在「任務」分頁的側邊欄中切換「摘要」按鈕，即可將任務依其狀態（進行中、已完成、失敗及未發現）進行分組，而無需瀏覽資料夾樹狀結構。每個分組皆可展開或收合，且系統會記住收合狀態，以便您下次造訪時使用。"
+            },
+            "tabContextMenu": {
+                "title": "標籤頁自訂",
+                "text": "<kbd>右鍵點擊</kbd> 任何分頁標籤，即可開啟「資料夾」快顯選單。您也可以在 Simple Quest 的根目錄內建立新的子資料夾。新建立的資料夾將會以新的動態分頁形式顯示。"
+            },
+            "staticTabs": {
+                "title": "特殊目錄",
+                "text": "側邊欄頂端的四個圖示分頁（「我的日記」、「派對日記」、「時間軸」和「成就」）是與初始設定時建立的專用資料夾綁定的特殊靜態分頁。 <kbd>右鍵點擊</kbd> 任何靜態標籤頁，即可編輯其對應的資料夾。若該標籤頁對應的資料夾尚未建立，該標籤頁將顯示為灰色。您可以在資料夾設定視窗中，將某個資料夾指定為特殊目錄。"
+            },
+            "sectionOrder": {
+                "title": "章節編排",
+                "text": "編輯日誌頁面時，每個結構化區塊（例如圖示清單、數據塊或表格）都設有「順序」欄位。輸入數字即可控制該區塊在頁面上的顯示順序。數字較小的區塊會優先顯示。"
+            },
+            "insertPage": {
+                "title": "更多文字樣式",
+                "text": "您可以使用 ProseMirror 工具列中的「註解」和「頁面插入」下拉選單，來添加主題式文字樣式，例如用於背景故事、生物或非玩家角色的彩色註解，以及裝飾性的羊皮紙筆記或卷軸。"
+            },
+            "sectionHidden": {
+                "title": "隱藏區段",
+                "text": "日誌頁面上的每個結構化區塊都設有「隱藏」核取方塊。勾選後，該區塊將對非擁有者的玩家隱藏。身為頁面擁有者，您仍會看到該區塊，但其邊框會以虛線顯示，表示該區塊對您的玩家已隱藏。"
+            },
+            "pageVisibility": {
+                "title": "頁面可見性",
+                "text": "側邊欄中日誌條目和頁面右側顯示的彩色圓點，用以標示哪些玩家可以查看該文件。若某頁面沒有圓點，則表示沒有任何玩家可以查看該頁面。 每個圓點代表一位權限設定與預設值不同的使用者。當預設權限高於「無」時，會顯示「所有玩家」的圓點。這些標示僅對遊戲主持人可見，並可透過「顯示日誌所有權」設定進行切換。"
+            }
+        },
+        "collapseSidebar": {
+            "collapse": "收起側邊欄",
+            "expand": "展開側邊欄"
+        },
+        "givePermission": {
+            "none": "{pageName} 已被隱藏，玩家無法看到",
+            "observer": "{pageName} 已對玩家開放"
+        },
+        "modal": {
+            "doubleClickToClose": "雙擊以關閉"
+        },
+        "app": {
+            "title": "簡單的任務",
+            "myJournal": "我的日記",
+            "partyJournal": "黨刊",
+            "timeline": "時間軸",
+            "achievements": "成就",
+            "search": "搜尋"
+        },
+        "achievements": {
+            "openAll": "顯示全部",
+            "uncategorized": "未分類"
+        },
+        "ColorHtmlBlock": {
+            "color": "HTML 顏色",
+            "order": "訂單",
+            "hidden": "隱藏"
+        },
+        "HtmlBlock": {
+            "order": "訂單",
+            "hidden": "隱藏"
+        },
+        "createExtendedStructure": {
+            "title": "建立擴展結構",
+            "content": "這將為 Simple Quest 建立新的資料夾結構。如果您是新用戶，以及／或希望充分探索此模組的所有功能，建議您執行此操作。"
+        },
+        "IconListBlock": {
+            "label": "圖示清單標籤",
+            "name": "姓名",
+            "description": "說明",
+            "icon": "圖示",
+            "hidden": "隱藏",
+            "order": "訂單"
+        },
+        "StatsBlock": {
+            "label": "統計標籤",
+            "name": "姓名",
+            "color": "顏色",
+            "value": "價值",
+            "min": "最低",
+            "max": "最大值",
+            "hidden": "隱藏",
+            "order": "訂單"
+        },
+        "TableBlock": {
+            "label": "表格標籤",
+            "name": "姓名",
+            "value": "價值",
+            "icon": "圖示",
+            "hidden": "隱藏",
+            "order": "訂單"
+        },
+        "ColorTagsBlock": {
+            "label": "彩色標籤",
+            "tag": "標籤",
+            "color": "顏色",
+            "hidden": "隱藏",
+            "order": "訂單"
+        },
+        "ResourcesBlock": {
+            "label": "資源標籤",
+            "name": "姓名",
+            "current": "當前",
+            "max": "最大值",
+            "color": "顏色",
+            "hidden": "隱藏",
+            "order": "訂單"
+        },
+        "MainTagBlock": {
+            "color": "主要標籤顏色",
+            "value": "主要標籤文字",
+            "hidden": "隱藏"
+        },
+        "data-model-config": {
+            "title": "項目配置"
+        },
+        "journal": {
+            "name": "姓名",
+            "description": "說明",
+            "header": "頁首",
+            "subtitle": "副標題",
+            "tags": "標籤",
+            "status": "狀態",
+            "rename": "編輯名稱",
+            "color": "顏色",
+            "image": "圖片",
+            "caption": "圖說",
+            "type": "類型",
+            "width": "寬度",
+            "height": "高度",
+            "aspectRatio": {
+                "label": "畫面比例",
+                "auto": "原文",
+                "landscape": "風景",
+                "portrait": "肖像",
+                "square": "正方形"
+            },
+            "imageFilter": {
+                "label": "影像濾鏡"
+            },
+            "checkbox": {
+                "tooltip": "左鍵點擊以切換「已完成」狀態<br>右鍵點擊以切換「失敗」狀態",
+                "tooltip-hide": "<br>按住 Alt 鍵並左鍵點擊以切換隱藏狀態"
+            },
+            "location": {
+                "population": "人口",
+                "area": "區域",
+                "government": "政府",
+                "demonym": "地名稱謂",
+                "ruler": "尺",
+                "founded": "創立"
+            },
+            "faction": {
+                "leader": "領袖",
+                "headquarters": "總部",
+                "memberCount": "會員人數",
+                "alignment": "對齊",
+                "goals": "目標",
+                "rivals": "競爭對手",
+                "allies": "盟友"
+            },
+            "awardedTo": {
+                "label": "頒發予",
+                "hint": "請選取擁有此成就的用戶。"
+            },
+            "showTitle": {
+                "label": "顯示標題",
+                "hint": "向尚未獲得該成就的玩家顯示成就名稱。"
+            },
+            "showContent": {
+                "label": "顯示內容",
+                "hint": "向尚未解鎖該成就的玩家顯示成就描述。"
+            },
+            "showImage": {
+                "label": "顯示圖片",
+                "hint": "向尚未獲得該成就的玩家顯示成就圖片。"
+            },
+            "showColor": {
+                "label": "顯示顏色",
+                "hint": "向尚未獲得該成就的玩家顯示成就的強調色。"
+            },
+            "assign": {
+                "title": "你確定嗎？",
+                "add": "要授予 {name} 這項成就嗎？",
+                "remove": "要從 {name} 刪除此成就嗎？"
+            },
+            "observerObjectivePermission": {
+                "label": "觀察者、目標、權限",
+                "hint": "覆寫全域設定。'預設' 會遵循模組設定，'允許' 和 '拒絕' 則會覆寫該設定。",
+                "choices": {
+                    "default": "預設值（遵循設定）",
+                    "allow": "允許",
+                    "deny": "拒絕"
+                }
+            },
+            "quest": {
+                "questGiver": "任務發布者",
+                "location": "地點",
+                "difficulty": "難度",
+                "deadline": "截止日期"
+            },
+            "event": {
+                "year": "年份",
+                "duration": "持續時間（年）",
+                "icon": "圖示",
+                "flipped": "翻轉",
+                "offset": "偏移量 (px)",
+                "banner": "橫幅",
+                "label": "標籤",
+                "hidden": "隱藏"
+            },
+            "era": {
+                "eraStart": "新時代的開端",
+                "eraEnd": "一個時代的終結",
+                "color": "顏色",
+                "banner": "橫幅",
+                "label": "標籤",
+                "hidden": "隱藏"
+            },
+            "investigation": {
+                "saveViewport": "儲存視口",
+                "tools": "工具",
+                "background": "背景",
+                "backgroundType": {
+                    "label": "背景類型",
+                    "choices": {
+                        "centered": "居中",
+                        "repeating": "重複",
+                        "pattern": "圖案"
+                    }
+                },
+                "stamp": {
+                    "completed": "印章：已完成",
+                    "failed": "戳記：失敗",
+                    "skull": "郵票：骷髏頭"
+                },
+                "tooltip": {
+                    "createConnection": "建立連結",
+                    "edit": "編輯項目",
+                    "duplicate": "重複項目",
+                    "delete": "刪除項目"
+                },
+                "add": "新增項目",
+                "type": {
+                    "polaroid": "寶麗來",
+                    "newspaper": "報紙",
+                    "sticky-note": "便利貼",
+                    "note": "註",
+                    "card": "卡片"
+                },
+                "color": "顏色",
+                "thickness": "厚度",
+                "text": "文字",
+                "item": {
+                    "title": "項目配置",
+                    "name": "姓名",
+                    "color": "顏色",
+                    "textColor": "文字顏色",
+                    "image": "圖片",
+                    "caption": "圖說",
+                    "width": "寬度",
+                    "height": "高度",
+                    "rotation": "旋轉",
+                    "order": "訂單",
+                    "delete": {
+                        "title": "刪除此項目嗎？",
+                        "content": "您確定要刪除此項目嗎？此操作無法撤銷。"
+                    },
+                    "type": {
+                        "label": "類型",
+                        "default": "基礎",
+                        "polaroid": "寶麗來",
+                        "newspaper": "報紙",
+                        "sticky-note": "便利貼",
+                        "note": "註",
+                        "simple-label": "簡單標籤",
+                        "paper-sheet": "紙張",
+                        "image": "圖片"
+                    },
+                    "x": "X",
+                    "y": "Y",
+                    "description": "說明",
+                    "hidden": "隱藏"
+                },
+                "connection": {
+                    "title": "連線設定",
+                    "origin": {
+                        "id": "來源",
+                        "anchorX": "Anchor X",
+                        "anchorY": "錨 Y",
+                        "locked": "已鎖定"
+                    },
+                    "destination": {
+                        "id": "目的地",
+                        "anchorX": "Anchor X",
+                        "anchorY": "錨點 Y",
+                        "locked": "已鎖定"
+                    },
+                    "color": "顏色",
+                    "thickness": "厚度",
+                    "text": "文字",
+                    "physics": {
+                        "label": "物理學",
+                        "choices": {
+                            "straight": "直的",
+                            "droopy": "垂頭喪氣",
+                            "very-droopy": "非常下垂"
+                        }
+                    },
+                    "style": {
+                        "label": "風格",
+                        "choices": {
+                            "solid": "實心",
+                            "dashed": "虛線",
+                            "dotted": "帶點的"
+                        }
+                    }
+                }
+            }
+        },
+        "deleteItem": {
+            "title": "刪除？",
+            "content": "您確定要刪除此項目嗎？此操作無法撤銷。"
+        },
+        "settings": {
+            "betterOwnership": {
+                "name": "簡單的任務權限處理",
+                "hint": "建立新頁面時，會自動將預設擁有權層級設定為「無」。在側邊欄顯示頁面時，會跳過「權限處理」對話方塊。",
+                "dialog": {
+                    "title": "權限處理",
+                    "content": "您正在顯示一個頁面，但該頁面的「日誌」預設權限為「無」。玩家將無法查看此頁面。您是否要將「日誌」的預設權限變更為「觀察者」，並將其他「繼承」頁面的權限設為「無」？"
+                }
+            },
+            "showHistory": {
+                "name": "顯示歷史紀錄",
+                "hint": "在「簡易任務」視窗頂端顯示一個歷史記錄列。"
+            },
+            "showJournalOwnership": {
+                "name": "顯示期刊所有權",
+                "hint": "在側邊欄的日誌條目和頁面下方顯示彩色所有權指示點。"
+            },
+            "tabConfig": {
+                "name": "標籤頁設定",
+                "hint": "設定「Simple Quest」的標籤名稱。",
+                "label": "設定分頁名稱"
+            },
+            "themeConfig": {
+                "name": "主題設定",
+                "hint": "設定 Simple Quest 主題。",
+                "label": "設定主題"
+            },
+            "allowObserverCheckboxToggle": {
+                "name": "允許觀察員完成目標",
+                "hint": "在任務頁面上擁有「觀察者」權限的玩家可以切換目標的核取方塊。此設定可針對每個任務個別覆寫。"
+            },
+            "rootDir": {
+                "name": "根目錄",
+                "hint": "《Simple Quest》的根目錄名稱。動態分頁皆為此目錄的子目錄。",
+                "default": "簡單任務"
+            },
+            "partyJournalDir": {
+                "name": "派對期刊目錄",
+                "hint": "「黨刊」分頁的資料夾名稱。",
+                "default": "派對"
+            },
+            "timelineDir": {
+                "name": "時間軸目錄",
+                "hint": "「時間軸」分頁的資料夾名稱。",
+                "default": "時間軸"
+            },
+            "achievementsDir": {
+                "name": "成就目錄",
+                "hint": "「成就」分頁的資料夾名稱。",
+                "default": "成就"
+            },
+            "backgroundColor": {
+                "name": "背景顏色",
+                "hint": "《Simple Quest》的背景顏色"
+            },
+            "backgroundImage": {
+                "name": "背景圖片",
+                "hint": "《Simple Quest》的背景圖片"
+            },
+            "labelColor": {
+                "name": "全域標籤顏色",
+                "hint": "若啟用此設定，所有地圖標籤的顏色將被此顏色覆寫。輸入「none」即可停用。"
+            },
+            "matchJournalStyle": {
+                "name": "比賽日誌風格",
+                "hint": "若啟用此功能，系統將嘗試匹配套用至期刊的特殊樣式。根據主題的不同，此操作可能會產生副作用。"
+            },
+            "textColor": {
+                "name": "文字顏色",
+                "hint": "Simple Quest 的文字顏色"
+            },
+            "secretColor": {
+                "name": "秘密之色",
+                "hint": "Simple Quest 中用於標示秘密任務目標的顏色"
+            },
+            "failedColor": {
+                "name": "顏色顯示錯誤",
+                "hint": "Simple Quest 中任務目標失敗時的顏色"
+            },
+            "hideFolderFromPlayers": {
+                "name": "向玩家隱藏資料夾",
+                "hint": "是否要將「Simple Quest」資料夾隱藏起來，不讓玩家看見"
+            },
+            "fontFamily": {
+                "name": "字型家族",
+                "hint": "《Simple Quest》應使用的字型家族"
+            },
+            "showQuestNotifications": {
+                "name": "顯示任務通知",
+                "hint": "當任務更新或分享至聊天室時，是否顯示通知"
+            },
+            "newQuestSoundEffect": {
+                "name": "新任務音效",
+                "hint": "當顯示新任務通知時播放的音效"
+            },
+            "updateQuestSoundEffect": {
+                "name": "更新任務音效",
+                "hint": "當顯示任務更新通知時播放的音效"
+            },
+            "matchJournalPermission": {
+                "name": "比賽日誌權限",
+                "hint": "「是否與 Simple Quest 同步」此設定應同時考量任務的隱藏狀態及使用者權限。當此設定停用時，除非任務已被設為隱藏，否則所有任務對所有玩家皆可見。請注意，啟用此設定後，玩家將能透過開啟一般任務日誌來查看隱藏的任務目標。"
+            },
+            "openJournalPinsAsModals": {
+                "name": "以模態視窗開啟地圖標記",
+                "hint": "如果地圖標記連結至日誌頁面，且該頁面並非「簡易任務」頁面，請將該頁面以模態視窗形式顯示於地圖上方，而非在日誌中開啟該頁面。"
+            },
+            "enableQuests": {
+                "name": "啟用任務",
+                "hint": "是否要啟用「任務」分頁"
+            },
+            "enablePartyJournal": {
+                "name": "啟用「派對日誌」",
+                "hint": "是否啟用「黨刊」分頁"
+            },
+            "enableMyJournal": {
+                "name": "啟用「我的日記」",
+                "hint": "是否要啟用「我的日誌」分頁"
+            },
+            "enableMaps": {
+                "name": "啟用地圖",
+                "hint": "是否要啟用「地圖」分頁"
+            },
+            "enableTimeline": {
+                "name": "啟用時間軸",
+                "hint": "是否要啟用「時間軸」分頁"
+            },
+            "enableAchievements": {
+                "name": "啟用成就",
+                "hint": "是否要啟用「成就」分頁"
+            },
+            "enableLore": {
+                "name": "啟用背景故事",
+                "hint": "是否要啟用「背景故事」分頁"
+            },
+            "headerOnlyFont": {
+                "name": "標題字型",
+                "hint": "標題所使用的字型；若選擇「預設」，則會使用預設字型"
+            },
+            "imagePageMask": {
+                "name": "「戰爭迷霧」圖片",
+                "hint": "用於「戰場迷霧」效果的遮罩。若需黑色遮罩，請留空。"
+            },
+            "secondaryFontSize": {
+                "name": "次要字體大小",
+                "hint": "次要元素的字體大小。"
+            },
+            "showTutorialTips": {
+                "name": "顯示教學提示",
+                "choices": {
+                    "always": "是的",
+                    "never": "不",
+                    "reset": "重設"
+                }
+            }
+        },
+        "simple-quest": {
+            "title": "簡單的任務",
+            "windowedModeToggle": "切換視窗模式",
+            "tabs": {
+                "quests": "任務",
+                "map": "地圖",
+                "lore": "傳說",
+                "timeline": "時間軸",
+                "achievements": "成就",
+                "my-journal": "我的日記",
+                "party-journal": "黨刊",
+                "tab": "Tab"
+            },
+            "move-to": "移至……",
+            "moveQuest": {
+                "error": "您沒有權限將任務移至該類別。"
+            },
+            "tooltip": {
+                "add-quest": "新增任務",
+                "add-map": "新增地圖",
+                "add-lore": "新增背景故事",
+                "add-page": "新增頁面",
+                "edit-lore": "編輯背景故事",
+                "configure-lore-permissions": "設定權限",
+                "map-help": "如何使用「地圖」分頁",
+                "edit-quest": "編輯任務",
+                "delete-quest": "刪除任務",
+                "delete-lore": "刪除背景故事",
+                "share-quest": "傳送至聊天室",
+                "duplicate-quest": "重複的任務",
+                "duplicate-map": "重複地圖",
+                "delete-map": "刪除地圖",
+                "duplicate-lore": "重複的背景故事",
+                "mark-updated": "將「Quest」標記為已更新",
+                "add-category": "新增分類",
+                "edit-map": "編輯地圖",
+                "reset-fow": "重置／啟用「戰場迷霧」",
+                "fow-brush-size": "戰爭迷霧筆刷大小",
+                "measure": "100 像素 = 1 英里",
+                "lock-pins": "鎖定／解鎖標記",
+                "show-players": "開放給玩家參與",
+                "edit": "編輯",
+                "duplicate": "重複",
+                "delete": "刪除",
+                "toggle-completed": "節目已播畢"
+            }
+        },
+        "timeline": {
+            "addEvent": "新增活動",
+            "addEra": "新增時代",
+            "create": "建立時間軸",
+            "delete": "刪除時間軸",
+            "edit": "編輯時間軸"
+        },
+        "timeline-config": {
+            "title": "編輯時間軸事件",
+            "label": "標籤",
+            "labelNote": "活動標籤。此標籤將顯示於年份上方，可用於標示特定日期或其他資訊。",
+            "banner": "橫幅",
+            "hidden": "隱藏",
+            "year": "年份",
+            "duration": "持續時間（年）",
+            "era": "時代",
+            "event": "活動",
+            "general": "全球",
+            "to": "至",
+            "generalNote": "這些設定將套用至整個時間軸。",
+            "icon": "圖示",
+            "isEra": "是 Era 嗎？",
+            "eraStart": "新時代的開端",
+            "eraEnd": "一個時代的終結",
+            "flipped": "翻轉",
+            "offset": "偏移量 (px)",
+            "description": "編輯目錄",
+            "negativeAbb": "負數年份縮寫",
+            "showMinus": "顯示減號",
+            "positiveAbb": "正數年份的縮寫",
+            "timeScale": "時間尺度",
+            "dynamicTimeScale": "動態時間尺度",
+            "dynamicTimeScaleNote": "時間軸的尺寸不會以絕對值設定，而是根據每個時代的事件數量來決定，並仍會乘以時間比例。",
+            "content": "內容可見性",
+            "ignoreDataValidation": "忽略資料驗證",
+            "ignoreDataValidationNote": "若您需要重新整理「時代」，可以忽略資料驗證，以便在重新整理期間讓「時代」暫時重疊。",
+            "contentChoices": {
+                "always": "始終顯示",
+                "toggleOn": "切換（預設為展開狀態）",
+                "toggleOff": "切換（預設為收起）"
+            },
+            "errors": {
+                "noEra": "未找到任何時代。請先建立一個時代。",
+                "noYear": "未找到年份。您必須為該活動設定年份。",
+                "yearOutOfBounds": "年份必須屬於某個時代。",
+                "noEraStart": "未找到「時代」的起始時間。您必須為該「時代」設定起始時間。",
+                "noEraEnd": "未找到「時代結束」的設定。您必須為該時代設定結束時間。",
+                "eraStartAfterEnd": "「時代起始」必須早於「時代結束」。",
+                "eraNotConnected": "「時代起始」或「時代結束」必須與另一個時代相連。",
+                "eraOverlap": "一個「時代」不得與另一個「時代」重疊。"
+            }
+        },
+        "tab-config": {
+            "title": "標籤頁設定"
+        },
+        "theme-config": {
+            "title": "主題設定",
+            "info": "佈景主題會套用一些預設設定。若您有需要，可從模組設定中進入此選單，您還可以在該處個別自訂每個佈景主題的各項設定。",
+            "themes": {
+                "default": "簡單的任務",
+                "classicFantasy": "經典奇幻",
+                "basicDark": "基本深色",
+                "basicLight": "基礎燈光",
+                "foundryDark": "Foundry Dark",
+                "foundryLight": "鑄造廠之光",
+                "redDragon": "《紅龍》",
+                "typewriter": "打字機",
+                "postApocalypticWasteland": "末日後的廢土",
+                "galacticAdventure": "銀河冒險",
+                "steampunkWorkshop": "蒸汽龐克工作坊",
+                "dystopianFuture": "反烏托邦的未來",
+                "virtualRealityOasis": "虛擬實境綠洲",
+                "mysticForest": "神秘森林",
+                "vintageFilmNoir": "復古黑色電影",
+                "sciFiConsole": "科幻遊戲主機",
+                "futuristicTech": "未來科技",
+                "alienInvasion": "外星人入侵",
+                "ancientScrolls": "古代卷軸",
+                "crtTerminal": "終端機",
+                "crtScreen": "CRT 顯示器"
+            }
+        },
+        "importQuests": {
+            "title": "匯入任務：",
+            "content": "您確定要從這本日誌中匯入任務嗎？如果已經存在同名的分類，這些任務將會被加入該分類中。"
+        },
+        "markerConfig": {
+            "title": "標記設定",
+            "icon": "圖示",
+            "journal": "請將日誌或頁面拖放至此處",
+            "hidden": "隱藏",
+            "displayLabel": "始終顯示標籤",
+            "fixedScale": "固定比例尺"
+        },
+        "mapControls": {
+            "addMarker": "新增標記",
+            "editMarker": "編輯標記",
+            "deleteMarker": "刪除標記"
+        },
+        "deleteQuest": {
+            "title": "刪除任務？ -",
+            "content": "您確定要刪除此項任務嗎？此操作無法撤銷。"
+        },
+        "deleteLore": {
+            "title": "刪除背景故事？ -",
+            "content": "您確定要刪除這則背景故事嗎？此操作無法撤銷。"
+        },
+        "deleteMap": {
+            "title": "刪除地圖？ -",
+            "content": "您確定要刪除此地圖嗎？此操作無法撤銷。"
+        },
+        "deletePage": {
+            "title": "刪除頁面？ -",
+            "content": "您確定要刪除此頁面嗎？此操作無法撤銷。"
+        },
+        "shareQuest": {
+            "title": "將頁面傳送至聊天室",
+            "content": "您確定要將「新頁面」通知傳送至聊天室嗎？",
+            "changeOwnership": "<p class='notification info'>本頁面的「所有玩家」權限等級將變更為「觀察者」。</p>",
+            "chatMessage": "新增 {questType} 頁面：{questName}",
+            "shareMessage": "解鎖了新的 {questType}！"
+        },
+        "shareLore": {
+            "title": "將背景故事發送到聊天室",
+            "content": "您確定要將「新傳說」通知發送到聊天室嗎？",
+            "chatMessage": "新背景故事揭曉！"
+        },
+        "shareAchievement": {
+            "title": "將成就發送至聊天室",
+            "content": "您確定要將「新成就」通知發送至聊天室嗎？",
+            "chatMessage": "你獲得了一項成就：{questName}"
+        },
+        "showQuest": {
+            "title": "顯示任務"
+        },
+        "welcomeScreen": {
+            "title": "歡迎來到《Simple Quest》！",
+            "content": "歡迎來到 Simple Quest！<hr>按下 <span class='hotkey'>J</span> 即可開啟 Simple Quest 視窗。"
+        },
+        "welcomeMaps": {
+            "title": "《Simple Quest》：地圖分頁",
+            "content": "歡迎來到「地圖」分頁！<hr><span class='hotkey'>右鍵點擊並拖曳</span> 以平移地圖。<br><span class='hotkey'>滾動滑鼠</span> 以縮放地圖。<br><span class='hotkey'>左鍵點擊</span> 以新增標記。<br><span class='hotkey'>左鍵點擊</span> 以開啟標記的筆記或任務。<br><span class='hotkey'>右鍵點擊</span> 標記以進行編輯。<hr>戰爭迷霧<hr><span class='hotkey'>Shift + 左鍵點擊</span> 以隱藏地圖。<br><span class='hotkey'>Shift + 右鍵點擊</span> 以顯示地圖。<hr>測量<hr> <span class='hotkey'>按下 Ctrl 鍵並左鍵點擊</span> 即可進行測量。"
+        },
+        "flags": {},
+        "noPermission": "您無權檢視此文件。",
+        "time-enricher": {
+            "expired": "已過期"
+        },
+        "questNotification": {
+            "text": "{questType} 頁面：{questName} 已更新"
+        },
+        "hotkeys": {
+            "toggleSimpleQuest": {
+                "name": "切換「簡易任務」"
+            }
+        },
+        "notifications": {
+            "defaultStructureCreated": "簡單任務：已建立預設資料夾與日誌結構。",
+            "playerJournalUpdated": "《Simple Quest》：玩家日誌已更新。",
+            "noPage": "簡單任務：請選擇要刪除的頁面。",
+            "uuidNotFound": "Simple Quest：找不到 UUID {{uuid}} 對應的頁面",
+            "noTab": "簡單任務：找不到名為「{{tab}}」的分頁。"
+        },
+        "resetFow": {
+            "title": "重置「戰場迷霧」？",
+            "content": "您確定要重置／啟用此地圖的「戰霧」功能嗎？此操作無法撤銷。"
+        },
+        "proseMirrorMenu": {
+            "callout": {
+                "title": "註解",
+                "callout-lore": "傳說",
+                "callout-magic": "魔法",
+                "callout-item": "項目",
+                "callout-creature": "生物",
+                "callout-event": "活動",
+                "callout-time": "時間",
+                "callout-npc": "NPC",
+                "callout-location": "地點"
+            },
+            "pageInsert": {
+                "title": "插入頁面",
+                "parchment-note-1": "羊皮紙筆記 1",
+                "parchment-note-2": "《羊皮紙筆記》第 2 篇",
+                "parchment-note-3": "《羊皮紙筆記》第 3 篇",
+                "parchment-note-4": "《羊皮紙筆記》第 4 篇",
+                "parchment-book-1": "第一卷",
+                "parchment-book-2": "第二卷",
+                "parchment-scroll-1": "捲動"
+            },
+            "text": {
+                "initial": "大寫首字母"
+            }
+        },
+        "page-template": {
+            "label": "頁面範本",
+            "description": "這是一組用於格式化您的日誌頁面的 HTML 範本。即使停用「Simple Quest」模組，這些格式設定仍會繼續生效。點擊按鈕即可將範本附加至頁面末尾。"
+        },
+        "injected": {
+            "fowMask": {
+                "label": "簡單任務：戰霧面具"
+            }
+        },
+        "tours": {
+            "interface": {
+                "1": {
+                    "title": "章節",
+                    "content": "此區域顯示了 Simple Quest 的各個區段，您可以點擊某個區段以跳轉至該處；右鍵點擊可編輯標籤名稱；將滑鼠懸停於右上角可顯示「切換全螢幕」按鈕。"
+                },
+                "2": {
+                    "title": "任務清單",
+                    "content": "此區域顯示任務類別清單及其下的任務。您可以右鍵點擊某個類別來編輯其名稱。在右上角，您會看到「新增任務」和「新增類別」按鈕。將游標懸停在任務標題的左側，即可顯示「切換隱藏」按鈕。"
+                },
+                "3": {
+                    "title": "任務詳情",
+                    "content": "此區域顯示所選任務的詳細資訊。在右上角，您會看到用於管理任務的按鈕，將游標懸停在按鈕上即可顯示說明其功能的工具提示。"
+                },
+                "4": {
+                    "title": "字體大小",
+                    "content": "在此區域中，您可以調整《Simple Quest》的字體大小"
+                },
+                "name": "介面導覽與「任務」分頁",
+                "description": "本導覽將向您介紹如何使用 Simple Quest 的主介面以及「任務」分頁。"
+            },
+            "lore-tab": {
+                "1": {
+                    "title": "背景故事分頁",
+                    "content": "「背景故事」分頁會顯示「簡單任務」介面中「背景故事」資料夾內的所有日誌。雖然此分頁並未提供任何特殊功能，但它是查閱背景故事的便捷方式。瀏覽「背景故事」頁面的權限設定，與「Core Foundry 日誌」的權限設定完全一致。"
+                },
+                "2": {
+                    "title": "傳說清單",
+                    "content": "此區域顯示背景故事類別清單及其所包含的內容。您可以右鍵點擊某個類別來編輯其名稱。在右上角，您會看到「新增背景故事」和「新增類別」按鈕。將游標懸停在背景故事標題的左側，即可顯示「切換隱藏」按鈕。"
+                },
+                "3": {
+                    "title": "背景故事詳情",
+                    "content": "此區域顯示所選傳說的詳細資訊。在右上角，您會看到用於管理傳說的按鈕；將游標懸停在按鈕上，即可顯示說明其功能的工具提示。"
+                },
+                "name": "背景故事分頁",
+                "description": "本導覽將向您介紹如何使用「背景故事」分頁。"
+            },
+            "map-tab": {
+                "1": {
+                    "title": "「地圖」分頁",
+                    "content": "「地圖」分頁會顯示「任務」資料夾內「地圖日誌」中所有現有的地圖。"
+                },
+                "2": {
+                    "title": "地圖清單",
+                    "content": "此區域顯示地圖清單，在右上角您會看到「新增地圖」按鈕，以及一個用來說明進階控制功能的按鈕。將游標懸停在地圖標題的左側，即可顯示「切換隱藏」按鈕。"
+                },
+                "3": {
+                    "title": "地圖詳情",
+                    "content": "此區域顯示所選的地圖。您可以透過點擊並拖曳來平移地圖，並使用滑鼠滾輪進行放大或縮小。在右上角，您會看到用於管理地圖的按鈕；將游標懸停在按鈕上，即可顯示說明其功能的工具提示。"
+                },
+                "4": {
+                    "title": "標記",
+                    "content": "您可以在地圖上按右鍵（長按可預覽）來新增標記。您也可以按右鍵編輯標記，或按住右鍵並拖曳標記來移動它。 您可以左鍵點擊標記以開啟其筆記、任務或連結的文件。將任何文件拖曳至地圖上，即可建立一個與該文件連結的標記。"
+                },
+                "5": {
+                    "title": "戰爭迷霧",
+                    "content": "按住 Shift 鍵即可顯示「戰霧」畫筆。左鍵點擊可隱藏地圖，右鍵點擊則可顯示地圖。"
+                },
+                "6": {
+                    "title": "測量",
+                    "content": "您可以按住 Ctrl 鍵來啟用測量工具。按住 Ctrl 鍵的同時，點擊並拖曳即可進行測量。"
+                },
+                "name": "「地圖」分頁",
+                "description": "本導覽將向您介紹如何使用「地圖」分頁。"
+            },
+            "my-journal-tab": {
+                "1": {
+                    "title": "「我的日誌」分頁",
+                    "content": "「我的日誌」分頁會顯示一份僅有您和遊戲主持人能看到的個人日誌。"
+                },
+                "2": {
+                    "title": "目錄",
+                    "content": "此處顯示您的日誌目錄。您在日誌中建立的任何標題都會顯示於此，以便輕鬆瀏覽。"
+                },
+                "3": {
+                    "title": "期刊內容",
+                    "content": "此區域顯示您的日誌內容。您可以點擊右上角的「編輯」按鈕來編輯日誌內容。"
+                },
+                "name": "「我的日誌」分頁",
+                "description": "本導覽將向您介紹如何使用「我的日誌」分頁。"
+            },
+            "party-journal-tab": {
+                "1": {
+                    "title": "「派對日誌」標籤頁",
+                    "content": "「派對日誌」標籤頁會顯示一個日誌，所有使用者皆可查看並編輯該日誌。"
+                },
+                "2": {
+                    "title": "目錄",
+                    "content": "此處顯示您的《派對日誌》的目錄。您在該日誌中建立的任何標題都會顯示於此，以便輕鬆瀏覽。"
+                },
+                "3": {
+                    "title": "期刊內容",
+                    "content": "此區域顯示「黨刊」的內容。您可以點擊右上角的「編輯」按鈕來編輯這本黨刊的內容。"
+                },
+                "name": "「派對日誌」分頁",
+                "description": "本導覽將向您介紹如何使用「派對日誌」分頁。"
+            },
+            "journal-page": {
+                "1": {
+                    "title": "頁面範本",
+                    "content": "Simple Quest 新增了「頁面範本」功能。這是一項方便的功能，可讓您快速將預先格式化的範本或區塊附加至您的日誌頁面。點擊此按鈕即可查看可用的範本。"
+                },
+                "2": {
+                    "title": "格式設定",
+                    "content": "在此下拉選單中，您將找到新的「註解」和「插入頁面」選項，讓您的文件更顯生動。"
+                },
+                "name": "期刊頁面特色",
+                "description": "本導覽將向您介紹如何使用「日誌頁面」。"
+            },
+            "timeline-tab": {
+                "1": {
+                    "title": "「時間軸」分頁",
+                    "content": "「時間軸」分頁會顯示事件的時間軸。"
+                },
+                "2": {
+                    "title": "時間軸清單",
+                    "content": "此區域顯示事件與時代的清單，您可以點擊跳轉至該事件或時代，或右鍵點擊進行編輯。"
+                },
+                "3": {
+                    "title": "新增事件或時代",
+                    "content": "只需點擊此按鈕，即可在時間軸上新增一個事件或時代。透過設定表單，您可以設定該事件或時代的詳細資訊。要開始操作，請先建立一個時代。"
+                },
+                "name": "「時間軸」分頁",
+                "description": "本導覽將向您介紹如何使用「時間軸」分頁。"
+            }
+        },
+        "default-structure": {
+            "in-progress": "進行中",
+            "completed": "已完成",
+            "failed": "失敗",
+            "locations": "地點",
+            "npcs": "NPC",
+            "organizations": "組織",
+            "history": "歷史",
+            "bestiary": "怪物圖鑑"
+        }
+    }
+}

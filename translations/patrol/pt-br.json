@@ -35,6 +35,10 @@
                 "name": "Atraso mínimo por passo",
                 "hint": "Atraso mínimo entre etapas, em milissegundos. O tempo real entre os movimentos dependerá das atualizações do Token do Foundry e do deslocamento do Token no mapa. Valores mais baixos podem exigir um uso intenso de recursos."
             },
+            "animationDuration": {
+                "name": "Duração da animação",
+                "hint": "Duração das animações de movimento do token em milissegundos."
+            },
             "hidePatrolButtonInSidebar": {
                 "name": "Ocultar o botão “Painel de Patrulha” na barra lateral",
                 "hint": "Oculte o botão “Patrol Panel” na barra lateral do Diretório de Atores. Você ainda poderá usar o comando de macro 'ui.patrolApp.render({ force: true })' ou clicar com a tecla Alt pressionada no botão “Patrol” nos Controles de Cena do Token."

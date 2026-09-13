@@ -2,65 +2,65 @@
     "tidbits": {
         "message": {
             "didYouKnow": "Lo sapevate?",
-            "reroll": "Un altro!",
-            "tidbits": "Curiosità"
+            "tidbits": "Curiosità",
+            "reroll": "Un altro!"
         },
         "settings": {
-            "autoCycle": {
-                "hint": "Tempo in secondi dopo il quale scorrere le curiosità nel testo in pausa. \n0 per disabilitare.",
-                "name": "Ciclo automatico"
-            },
-            "customSource": {
-                "hint": "File JSON personalizzato da utilizzare come fonte di bocconcini, lascia vuoto per disabilitare.",
-                "name": "Origine personalizzata"
-            },
-            "didYouKnowText": {
-                "hint": "Testo personalizzato da utilizzare al posto del valore predefinito \"Lo sapevi?\" \ntesto.",
-                "name": "Conoscevi il testo"
-            },
-            "imageSource": {
-                "hint": "Cartella da utilizzare nelle schermate di caricamento, lasciare vuota per disabilitare.",
-                "name": "Fonte dell'immagine"
-            },
-            "loadingScreenGradient": {
-                "hint": "Copri metà dell'immagine con una sfumatura per rendere il testo più leggibile e applica un filtro sfocato all'immagine",
-                "name": "Caricamento del gradiente dello schermo"
-            },
-            "loadingScreenMinimumDuration": {
-                "hint": "Il tempo in secondi per mantenere visibile la schermata di caricamento dopo il caricamento della scena",
-                "name": "Ritardo di dissolvenza della schermata di caricamento"
-            },
-            "pauseText": {
-                "hint": "Mostra curiosità invece del testo \"Gioco in pausa\".",
-                "name": "Metti in pausa il testo"
-            },
             "showChatMessage": {
+                "name": "Mostra messaggio di chat",
+                "hint": "Mostra un bocconcino in chat come un sussurro all'accesso",
                 "choices": {
                     "everyone": "Tutti",
+                    "players": "Giocatori",
                     "gamemaster": "Direttore di gioco",
-                    "none": "Nessuno",
-                    "players": "Giocatori"
-                },
-                "hint": "Mostra un bocconcino in chat come un sussurro all'accesso",
-                "name": "Mostra messaggio di chat"
+                    "none": "Nessuno"
+                }
             },
             "showLoadingScreen": {
+                "name": "Mostra la schermata di caricamento",
+                "hint": "Mostra una notizia durante il caricamento di una scena",
                 "choices": {
                     "everyone": "Tutti",
+                    "players": "Giocatori",
                     "gamemaster": "Direttore di gioco",
-                    "none": "Nessuno",
-                    "players": "Giocatori"
-                },
-                "hint": "Mostra una notizia durante il caricamento di una scena",
-                "name": "Mostra la schermata di caricamento"
+                    "none": "Nessuno"
+                }
             },
             "startupLoadingScreen": {
-                "hint": "Tempo in secondi per nascondere il Tidbit di avvio, 0 per disabilitarlo",
-                "name": "Tempo di avvio"
+                "name": "Tempo di avvio",
+                "hint": "Tempo in secondi per nascondere il Tidbit di avvio, 0 per disabilitarlo"
+            },
+            "loadingScreenMinimumDuration": {
+                "name": "Ritardo di dissolvenza della schermata di caricamento",
+                "hint": "Il tempo in secondi per mantenere visibile la schermata di caricamento dopo il caricamento della scena"
+            },
+            "loadingScreenGradient": {
+                "name": "Caricamento del gradiente dello schermo",
+                "hint": "Copri metà dell'immagine con una sfumatura per rendere il testo più leggibile e applica un filtro sfocato all'immagine"
+            },
+            "pauseText": {
+                "name": "Metti in pausa il testo",
+                "hint": "Mostra curiosità invece del testo \"Gioco in pausa\"."
             },
             "useDefaultSources": {
-                "hint": "Utilizza le fonti di informazioni predefinite",
-                "name": "Utilizza fonti predefinite"
+                "name": "Utilizza fonti predefinite",
+                "hint": "Utilizza le fonti di informazioni predefinite"
+            },
+            "customSource": {
+                "name": "Origine personalizzata",
+                "hint": "File JSON personalizzato da utilizzare come fonte di bocconcini, lascia vuoto per disabilitare."
+            },
+            "imageSource": {
+                "name": "Fonte dell'immagine",
+                "hint": "Cartella da utilizzare nelle schermate di caricamento, lasciare vuota per disabilitare."
+            },
+            "autoCycle": {
+                "name": "Ciclo automatico",
+                "hint": "Tempo in secondi dopo il quale scorrere le curiosità nel testo in pausa. \n0 per disabilitare."
+            },
+            "didYouKnowText": {
+                "name": "Conoscevi il testo",
+                "hint": "Testo personalizzato da utilizzare al posto del valore predefinito \"Lo sapevi?\" \ntesto."
             }
         }
     }

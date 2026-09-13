@@ -36,6 +36,13 @@
             "macroPanel": {
                 "name": "Makro-Panel",
                 "hint": "Zeigt für jedes Zeichen ein Makrofenster an, das die Hotbar-Makros widerspiegelt"
+            },
+            "explodeItemActivities": {
+                "name": "Elemente in Aktivitäten aufklappen",
+                "hint": "Ob jede Aktivität als eigene Schaltfläche im HUD behandelt werden soll",
+                "only-weapons": "Nur Waffen aufklappen",
+                "always": "Immer erweitern",
+                "never": "Nie erweitern"
             }
         },
         "hud": {

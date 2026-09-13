@@ -1,0 +1,38 @@
+{
+    "tokenflip": {
+        "token-flip-config": {
+            "title": "Skonfiguruj funkcję „Token Flip”",
+            "add": "Dodaj nową twarz",
+            "flip": "Flip Token",
+            "model3d": "Model 3D",
+            "faceId": "Face ID",
+            "protoWarning": "OSTRZEŻENIE: Ze względu na błędy w Core Foundry dotyczące tokenów prototypowych zdecydowanie zaleca się skonfigurowanie funkcji „flip” dla tokenu w scenie, a następnie przypisanie tego tokenu do tokenu prototypowego.",
+            "copiedId": "Skopiowano identyfikator do schowka",
+            "copyID": "Identyfikator kopii",
+            "autoFlip": {
+                "label": "Automatyczne obracanie",
+                "none": "Brak",
+                "inCombat": "W walce",
+                "outOfCombat": "Poza walką"
+            },
+            "transition": {
+                "label": "Przejście",
+                "flip": "Flip"
+            },
+            "autoFlipMacro": {
+                "label": "Makro z automatycznym obracaniem",
+                "hint": "Makro uruchamia się, gdy aktor lub jeden z jego przedmiotów zostanie zaktualizowany oraz gdy GM wczyta się do sceny. Zwróć wartość true, aby obrócić obiekt w tę stronę. Więcej informacji znajdziesz na wiki."
+            }
+        },
+        "settings": {
+            "flipSpeed": {
+                "name": "Prędkość przewracania",
+                "hint": "Czas trwania animacji przewracania w sekundach. W przypadku animacji innych niż przewracanie wartość ta jest mnożona przez 10. Wartość domyślna to 0,1."
+            },
+            "enableAutoFlip": {
+                "name": "Włącz automatyczne obracanie",
+                "hint": "Włącz automatyczne odwracanie żetonów. Jeśli nie korzystasz z funkcji automatycznego odwracania, możesz wyłączyć to ustawienie, aby nieco poprawić wydajność."
+            }
+        }
+    }
+}

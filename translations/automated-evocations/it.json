@@ -1,0 +1,74 @@
+{
+    "AE": {
+        "custombindings": {
+            "add": "Aggiungi rilegatura",
+            "bindingstitle": "Modifica i tasti di scelta rapida personalizzati",
+            "bindingtitle": "Modifica collegamento",
+            "tt": {
+                "spellname": "Nome dell'incantesimo",
+                "edit": "Modifica",
+                "delete": "Elimina",
+                "creaturename": "Nome della creatura"
+            },
+            "sett": {
+                "label": "Configura i collegamenti personalizzati",
+                "name": "Rilegature personalizzate",
+                "hint": "Configurare i tasti di scelta rapida personalizzati"
+            }
+        },
+        "pick3d": "Fai clic su un punto dell'area di lavoro 3D per evocare.",
+        "dialogs": {
+            "companionManager": {
+                "title": "Responsabile dei collaboratori",
+                "confirm": {
+                    "title": "Elimina Companion",
+                    "content": "<p>Sei sicuro di voler eliminare questo compagno?</p>"
+                }
+            }
+        },
+        "actorSheetBtn": "Compagni",
+        "animations": {
+            "fire": "Incendio",
+            "air": "Aria",
+            "lightning": "Fulmine",
+            "water": "Acqua",
+            "energy1": "Energia",
+            "magic1": "Magia",
+            "heart": "Doki-Doki",
+            "music": "Crescendo",
+            "fourelements": "I quattro elementi",
+            "music2": "Accordo",
+            "darkness": "Oscurità",
+            "ice1": "Ghiaccio",
+            "magic2": "Evocazione",
+            "lightning2": "Tempesta"
+        },
+        "groups": {
+            "elemental": "Elementale",
+            "magical": "Magico",
+            "z-none": "Altro"
+        },
+        "settings": {
+            "storeonactor": {
+                "title": "Salva i Companion su un attore",
+                "hint": "Per impostazione predefinita, i compagni devono essere associati all’attore anziché all’utente."
+            },
+            "enableautomations": {
+                "title": "Abilita le automazioni",
+                "hint": "Attiva il sistema di automazione associato al momento del lancio dell'incantesimo."
+            },
+            "autoclose": {
+                "title": "Chiusura automatica",
+                "hint": "Chiudi automaticamente la finestra del compagno dopo averlo evocato."
+            },
+            "hidebutton": {
+                "title": "Nascondi il pulsante \"Companion\"",
+                "hint": "Nascondi il pulsante \"compagno\" nella scheda del personaggio."
+            },
+            "restrictOwned": {
+                "title": "Solo attori con diritti d’autore",
+                "hint": "Limita l'elenco dei compagni in modo che vengano visualizzati solo i personaggi che sono tuoi compagni."
+            }
+        }
+    }
+}

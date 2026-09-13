@@ -1,0 +1,54 @@
+{
+    "filepicker-plus": {
+        "settings": {
+            "sidebarFilepicker": {
+                "name": "Włącz zakładkę „Filepicker” na pasku bocznym",
+                "hint": "Dodaj nową zakładkę do paska bocznego, która umożliwi przeglądanie i przesyłanie plików, a także przeciąganie i upuszczanie obrazów/modeli 3D do sceny."
+            },
+            "placeastokens": {
+                "name": "Umieść obrazy jako tokeny",
+                "hint": "Podczas przeciągania obrazu na scenę umieść go jako token zamiast kafelka, jeśli znajdujesz się na warstwie tokenów (tylko w selektorze na pasku bocznym)"
+            },
+            "size": {
+                "name": "Rozmiar okna wyboru plików",
+                "hint": "Szerokość okna wyboru plików",
+                "choices": {
+                    "default": "Domyślnie",
+                    "large": "Duże",
+                    "extraLarge": "Bardzo duże",
+                    "massive": "Ogromny"
+                }
+            },
+            "imagepreview": {
+                "name": "Podgląd obrazu i wideo",
+                "hint": "Wyświetl podgląd obrazu lub filmu po najechaniu kursorem na dany element w oknie wyboru plików"
+            },
+            "threepreview": {
+                "name": "Podgląd 3D",
+                "hint": "Pokaż podglądy 3D – wymaga portretów 3D. Jeśli to ustawienie jest wyłączone, zamiast tego zostanie użyta miniatura pliku 3D (o ile jest dostępna)."
+            },
+            "audiopreview": {
+                "name": "Podgląd audio",
+                "hint": "Odtwarzaj podgląd audio po najechaniu kursorem na dźwięki w selektorze plików"
+            },
+            "audiopreviewdelay": {
+                "name": "Opóźnienie podglądu dźwięku",
+                "hint": "Opóźnienie w milisekundach przed rozpoczęciem odtwarzania podglądu dźwięku"
+            },
+            "audiopreviewvol": {
+                "name": "Głośność podglądu audio",
+                "hint": "Głośność podglądu dźwięku"
+            },
+            "enablecolortheme": {
+                "name": "Włącz motyw kolorystyczny",
+                "hint": "Włącz ciemny motyw kolorystyczny dla selektora plików; jeśli posiadasz moduł lub system, który stosuje motyw do selektora plików, możesz chcieć wyłączyć tę opcję."
+            }
+        },
+        "app": {},
+        "flags": {},
+        "sidebar": {
+            "no-filepicker": "Przeglądarka plików jest otwarta w osobnym oknie. Po zamknięciu okna przeglądarka plików powróci do paska bocznego.",
+            "open": "Pasek boczny przeglądarki plików jest aktywny; wybrana przeglądarka plików została otwarta w pasku bocznym."
+        }
+    }
+}

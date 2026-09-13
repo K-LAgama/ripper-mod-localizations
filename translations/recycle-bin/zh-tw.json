@@ -1,0 +1,42 @@
+{
+    "recycle-bin": {
+        "app": {
+            "title": "🗑️ 回收筒",
+            "restore-item": "還原項目",
+            "preview-item": "預覽項目",
+            "permanently-delete": "永久刪除項目",
+            "noParent": "主要文件",
+            "search": "搜尋",
+            "time": "已於 {time} 前刪除",
+            "deleteOnRefresh": "此項目將在頁面重新整理時被永久刪除。",
+            "deleteOnRefreshTitle": "有一項或多項待刪除的項目"
+        },
+        "settings": {
+            "maxPermanentItems": {
+                "name": "最大永久歷史紀錄",
+                "hint": "每次重新載入之間將儲存的項目數量。"
+            },
+            "maxTemporaryItems": {
+                "name": "暫存歷史紀錄的最大數量",
+                "hint": "將儲存的項目數量。超過「永久歷史紀錄上限」的暫存項目，在重新載入時將會遺失。"
+            }
+        },
+        "error": {
+            "restore": "無法還原 {item}。找不到父項目：",
+            "preview": "無法預覽 {item}。找不到父項目。"
+        },
+        "success": {
+            "restore": "已成功還原 {item}。"
+        },
+        "dialog": {
+            "restoreParent": {
+                "title": "還原父節點",
+                "content": "在您的世界中找不到此項目的父項目，但它目前位於回收筒中。您要還原它嗎？"
+            },
+            "permanentlyDelete": {
+                "title": "永久刪除",
+                "content": "您確定要永久刪除此項目嗎？此操作無法撤銷。"
+            }
+        }
+    }
+}

@@ -1,0 +1,117 @@
+{
+    "patrol": {
+        "patrol-app": {
+            "title": "巡邏面板",
+            "selectAll": "「全選」",
+            "selectSingle": "已選取步驟",
+            "stepBackward": "倒退一步",
+            "stepForward": "向前邁進",
+            "toggleStepping": "切換巡邏模式",
+            "toggleSteppingDisabled": "在「戰鬥」模式中以及移動單一標記時，「自動巡邏」功能將被停用"
+        },
+        "settings": {
+            "patrolMaxSuspicious": {
+                "name": "最大可疑週期",
+                "hint": "一個代幣在嘗試追擊一名玩家角色之前，會環顧四周的循環次數"
+            },
+            "patrolMaxAlerted": {
+                "name": "最大警報週期",
+                "hint": "代幣必須在追逐的玩家角色前方保持視線連續多少回合，才能實際發現該角色"
+            },
+            "patrolSound": {
+                "name": "斑點海峽",
+                "hint": "當敵方發現一臺電腦時播放的音效"
+            },
+            "patrolAlert": {
+                "name": "警示音",
+                "hint": "當敵人被玩家角色驚動時播放的音效"
+            },
+            "openApplication": {
+                "name": "巡邏面板",
+                "hint": "開啟「巡邏」面板。您也可以在「代幣場景控制」中按住 Alt 鍵並左鍵點擊「巡邏」按鈕，或使用「ui.patrolApp.render({ force: true })」巨集指令。",
+                "label": "開啟巡邏面板"
+            },
+            "minStepDelay": {
+                "name": "最小週期延遲",
+                "hint": "週期之間的最小延遲（單位：毫秒）。若此值短於「動畫持續時間」，則改以「動畫持續時間」為準。動作之間的實際間隔時間將取決於 Foundry 的代幣更新以及代幣在地圖上的移動情況。較低的數值可能會消耗較多資源。"
+            },
+            "animationDuration": {
+                "name": "動畫持續時間",
+                "hint": "圖示移動動畫的持續時間（以毫秒為單位）。"
+            },
+            "hidePatrolButtonInSidebar": {
+                "name": "在側邊欄中隱藏「巡邏面板」按鈕",
+                "hint": "在「角色目錄」側邊欄中隱藏「巡邏面板」按鈕。您仍可使用「ui.patrolApp.render({ force: true })」巨集指令，或在「代幣場景控制項」中按住 Alt 鍵並左鍵點擊「巡邏」按鈕。"
+            },
+            "migrateOnStartupDialog": {
+                "name": "啟動時開啟「遷移」對話方塊",
+                "hint": "若啟用此功能，模組將在啟動時開啟一個對話方塊，用以將資料從 V13 資料結構遷移至 V14 資料結構。"
+            }
+        },
+        "tokenConfig": {
+            "enablePatrol": {
+                "name": "啟用巡邏"
+            },
+            "enableSpotting": {
+                "name": "即興玩家角色",
+                "hint": "擁有多個標記可能會消耗大量資源。請謹慎處理。"
+            },
+            "doorBehavior": {
+                "name": "能通過門嗎？",
+                "choices": {
+                    "useRegionSettings": "使用「區域設定」（同時使用該區域的「保持門敞開」）",
+                    "unlocked": "敞開的門",
+                    "locked": "上鎖的門",
+                    "secret": "隱藏門"
+                }
+            },
+            "leaveDoorOpen": {
+                "name": "請將門敞開",
+                "hint": "代幣通過門後，該門仍保持開啟的機率"
+            }
+        },
+        "statusEffects": {
+            "patrolundetectable": {
+                "name": "巡邏 — 無法被偵測"
+            }
+        },
+        "tools": {
+            "patrolToggle": {
+                "app": "切換巡邏面板",
+                "stepping": "切換「Token Patrol」"
+            }
+        }
+    },
+    "TYPES": {
+        "RegionBehavior": {
+            "patrol": {
+                "patrolArea": "巡邏區域",
+                "whitelist": "白名單",
+                "blacklist": "黑名單",
+                "type": {
+                    "label": "類型",
+                    "hint": "選擇讓代幣在該區域內巡邏，還是守衛其邊緣",
+                    "choices": {
+                        "area": "區域",
+                        "edge": "Edge"
+                    }
+                },
+                "weight": {
+                    "label": "重量",
+                    "hint": "此區域在巡邏演算法中佔有多少權重。權重較高的將優先於權重較低的。"
+                },
+                "darkness": {
+                    "min": {
+                        "label": "黑暗之瀕",
+                        "hint": "該區域須達到此最低黑暗程度，方能納入巡邏範圍。"
+                    },
+                    "max": {
+                        "label": "黑暗極限",
+                        "hint": "此區域被納入巡邏考量範圍的最高黑暗等級。"
+                    },
+                    "validationError": "「黑暗值（最小）」必須小於「黑暗值（最大）」。"
+                }
+            }
+        }
+    }
+}

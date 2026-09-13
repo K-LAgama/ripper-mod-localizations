@@ -1,0 +1,12 @@
+{
+    "levelsvolumetrictemplates.settings.volPercent.name": "体積百分率",
+    "levelsvolumetrictemplates.settings.volPercent.hint": "有効なターゲットとみなされる体積または面積の割合",
+    "levelsvolumetrictemplates.settings.ignoreSelf.name": "「自分」を無視する",
+    "levelsvolumetrictemplates.settings.ignoreSelf.hint": "リージョンを配置する際は「Self」を無視する",
+    "levelsvolumetrictemplates.settings.ignoreFriendly.name": "味方キャラクターを無視する",
+    "levelsvolumetrictemplates.settings.ignoreFriendly.hint": "リージョンの配置時に味方キャラクターを無視する",
+    "levelsvolumetrictemplates.settings.targetOnChange.name": "「変化」に焦点を当てる",
+    "levelsvolumetrictemplates.settings.targetOnChange.hint": "地域プレビューの変更に関するターゲット",
+    "levelsvolumetrictemplates.settings.targetOnPlacement.name": "配置目標",
+    "levelsvolumetrictemplates.settings.targetOnPlacement.hint": "ターゲットの地域配置（モジュールをAPIとして使用するには無効化してください）"
+}

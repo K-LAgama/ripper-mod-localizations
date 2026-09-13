@@ -1,0 +1,7 @@
+{
+    "progress-tracker": {
+        "error": {
+            "noTracker": "Dla tej sceny nie ustawiono żadnego wskaźnika postępu. Otwórz menu „Edytuj wskaźniki postępu” i wyświetl jeden z wskaźników."
+        }
+    }
+}

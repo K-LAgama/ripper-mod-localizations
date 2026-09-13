@@ -3,7 +3,7 @@
         "portraitConfig": {
             "prepared": {
                 "label": "Prepared Spells",
-                "auto": "Auto Detect",
+                "auto": "Auto Detect (2014 rules)",
                 "preparedOnly": "Prepared Only",
                 "all": "All Spells"
             }
@@ -36,6 +36,13 @@
             "macroPanel": {
                 "name": "Macro Panel",
                 "hint": "Show a macro panel for each character that mirrors the hotbar macros"
+            },
+            "explodeItemActivities": {
+                "name": "Expand Items into Activities",
+                "hint": "Whether to treat each activity as a separate button in the HUD",
+                "only-weapons": "Only expand weapons",
+                "always": "Always expand",
+                "never": "Never expand"
             }
         },
         "hud": {

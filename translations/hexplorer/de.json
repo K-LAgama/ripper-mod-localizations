@@ -116,6 +116,10 @@
                 "label": "Nur beim ersten Mal",
                 "hint": "Führen Sie die obige Aktivität nur aus, wenn der Hexlorer zum ersten Mal in diese Zelle wechselt."
             },
+            "hide-unrevealed-tooltip": {
+                "label": "Nicht angezeigten Tooltip ausblenden",
+                "hint": "Den Tooltip ausblenden, wenn Spieler mit der Maus über eine Zelle fahren, die nicht aufgedeckt ist."
+            },
             "reveal-tooltip": {
                 "label": "Tooltip anzeigen",
                 "hint": "Erteilen Sie den Spielern die Beobachterberechtigung für die mit dem Tooltip verknüpfte Tagebuchseite."

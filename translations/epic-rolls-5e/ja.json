@@ -1,81 +1,83 @@
 {
     "epic-rolls-5e": {
-        "button-tooltip": "エピック ロールを構成する<hr>右クリックして最近のロールを表示します",
         "check": "判定",
-        "complete-roll": "エピックロールを完了する",
+        "save": "セーヴ",
         "death": "死亡",
-        "epicRoll": "エピックロール",
+        "success": "成功",
         "failure": "失敗",
-        "get-roll-data": {
-            "ERROR": {
-                "noActors": "キャラクターが選択されていません。少なくとも 1 人のっキャラクターを選択してください",
-                "noContest": "判定するキャラは選択されましたが、対抗の種類が選択されていませんでした",
-                "noContestants": "対抗するロールの種類が選択されましたが、判定するキャラが選択されませんでした",
-                "noDC": "判定の難易度が入力されていません。難易度を入力してください。",
-                "noType": "判定の種類が選択されていません。種類を選択してください"
+        "button-tooltip": "エピック ロールを構成する<hr>右クリックして最近のロールを表示します",
+        "complete-roll": "エピックロールを完了する",
+        "epicRoll": "エピックロール",
+        "settings": {
+            "introSound": {
+                "name": "イントロ音",
+                "hint": "ロール開始時に鳴る音"
             },
-            "VsDCNotes": "判定の難易度",
-            "allowReroll": "再ロールを許可する",
-            "allowRerollNotes": "プレイヤーが自分のロールを再ロールできるようにする",
-            "autoColor": "オートカラー",
-            "autoColorNotes": "ロールの種類に基づいてロール バナーを自動的に色付けします",
-            "available": "利用可能",
-            "blindRoll": "ロール結果を隠す",
-            "blindRollNotes": "ロールの結果をプレイヤーに表示しない",
-            "color": "色",
-            "colorNotes": "ロールバナーの色",
-            "contest": "コンテスト",
-            "contestInfo": "出場者をマークするには、俳優および/またはロールを右クリックします",
+            "successSound": {
+                "name": "成功音",
+                "hint": "ロールが成功したときに鳴る音"
+            },
+            "failureSound": {
+                "name": "失敗音",
+                "hint": "ロールが失敗したときに鳴る音"
+            },
+            "recapMessage": {
+                "name": "メッセージの要約",
+                "hint": "エピックロール完了後に表示されるメッセージを誰が見ることができるかを設定する",
+                "options": {
+                    "none": "なし",
+                    "gm": "GM",
+                    "public": "公共"
+                }
+            },
+            "cleanupMessages": {
+                "name": "クリーンアップメッセージ",
+                "hint": "エピックロールが完了したらロールメッセージを削除します"
+            }
+        },
+        "get-roll-data": {
             "customFormula": "カスタム式",
             "customLabel": "ラベル",
             "customLabelNotes": "ロールのカスタムイントロラベル",
             "formula": "式",
-            "hideNames": "名前を隠す",
-            "hideNamesNotes": "プレイヤーが所有していないキャラクターの名前をプレイヤーから非表示にします",
+            "title": "エピックロールの構成",
+            "startRoll": "エピックロールを開始する",
             "macro": "マクロに保存",
-            "npc": "NPC",
-            "player": "PC",
-            "rollOptions": "ロールオプション",
             "save-macro": "エピック ロール マクロを作成しました",
-            "saveDefaultOptions": "デフォルトとして保存",
-            "saveDefaultOptionsNotification": "現在のオプションがデフォルトとして保存されました",
+            "player": "PC",
+            "npc": "NPC",
             "selected": "選択済み",
+            "available": "利用可能",
+            "rollOptions": "ロールオプション",
+            "VsDCNotes": "判定の難易度",
             "showDC": "難易度を表示",
             "showDCNotes": "有効にすると、難易度がプレイヤーに表示されます",
+            "useAverage": "平均を使用",
+            "useAverageNotes": "すべての結果の平均を使用して成功か失敗を判断します。",
+            "allowReroll": "再ロールを許可する",
+            "allowRerollNotes": "プレイヤーが自分のロールを再ロールできるようにする",
             "showRollResults": "ロール結果の表示",
             "showRollResultsNotes": "成功/失敗のアウトロテキストを表示するかどうか",
-            "startRoll": "エピックロールを開始する",
-            "title": "エピックロールの構成",
-            "useAverage": "平均を使用",
-            "useAverageNotes": "すべての結果の平均を使用して成功か失敗を判断します。"
-        },
-        "save": "セーヴ",
-        "settings": {
-            "cleanupMessages": {
-                "hint": "エピックロールが完了したらロールメッセージを削除します",
-                "name": "クリーンアップメッセージ"
-            },
-            "failureSound": {
-                "hint": "ロールが失敗したときに鳴る音",
-                "name": "失敗音"
-            },
-            "introSound": {
-                "hint": "ロール開始時に鳴る音",
-                "name": "イントロ音"
-            },
-            "recapMessage": {
-                "hint": "エピックロール完了後に表示されるメッセージを誰が見ることができるかを設定する",
-                "name": "メッセージの要約",
-                "options": {
-                    "none": "なし",
-                    "public": "公共"
-                }
-            },
-            "successSound": {
-                "hint": "ロールが成功したときに鳴る音",
-                "name": "成功音"
+            "blindRoll": "ロール結果を隠す",
+            "blindRollNotes": "ロールの結果をプレイヤーに表示しない",
+            "hideNames": "名前を隠す",
+            "hideNamesNotes": "プレイヤーが所有していないキャラクターの名前をプレイヤーから非表示にします",
+            "color": "色",
+            "colorNotes": "ロールバナーの色",
+            "autoColor": "オートカラー",
+            "autoColorNotes": "ロールの種類に基づいてロール バナーを自動的に色付けします",
+            "contest": "コンテスト",
+            "contestInfo": "出場者をマークするには、俳優および/またはロールを右クリックします",
+            "saveDefaultOptions": "デフォルトとして保存",
+            "saveDefaultOptionsNotification": "現在のオプションがデフォルトとして保存されました",
+            "ERROR": {
+                "noActors": "キャラクターが選択されていません。少なくとも 1 人のっキャラクターを選択してください",
+                "noType": "判定の種類が選択されていません。種類を選択してください",
+                "noContestants": "対抗するロールの種類が選択されましたが、判定するキャラが選択されませんでした",
+                "noContest": "判定するキャラは選択されましたが、対抗の種類が選択されていませんでした",
+                "noDC": "判定の難易度が入力されていません。難易度を入力してください。"
             }
         },
-        "success": "成功"
+        "flags": {}
     }
 }

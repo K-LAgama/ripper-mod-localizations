@@ -23,7 +23,7 @@
                 "hint": "Die maximale Auflösung des zu optimierenden Bildes. \nWenn das Bild größer ist, wird es vor der Optimierung auf diese Auflösung angepasst. \nDies ist nützlich, um sehr hohe Auflösungen zu vermeiden, die von den meisten Grafikkarten nicht unterstützt werden.",
                 "choices": {
                     "1024": "1K (1024 px)",
-                    "2048": "2K (2048px)",
+                    "2048": "2K (2048 px)",
                     "4096": "4K (4096 px)",
                     "8192": "8K (8192 px)",
                     "16384": "16K (16384px)"

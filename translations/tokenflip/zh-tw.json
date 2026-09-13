@@ -1,0 +1,38 @@
+{
+    "tokenflip": {
+        "token-flip-config": {
+            "title": "設定 Token Flip",
+            "add": "新增臉部",
+            "flip": "翻轉代幣",
+            "model3d": "3D 模型",
+            "faceId": "Face ID",
+            "protoWarning": "警告：由於 Core Foundry 的錯誤會影響原型代幣，強烈建議先在場景中的某個代幣上設定「代幣翻轉」功能，然後將該代幣指派給原型代幣。",
+            "copiedId": "已將 ID 複製到剪貼簿",
+            "copyID": "複製 ID",
+            "autoFlip": {
+                "label": "自動翻轉",
+                "none": "無",
+                "inCombat": "在戰鬥中",
+                "outOfCombat": "非戰鬥狀態"
+            },
+            "transition": {
+                "label": "過渡",
+                "flip": "Flip"
+            },
+            "autoFlipMacro": {
+                "label": "自動翻轉巨距鏡頭",
+                "hint": "當角色或其其中一項物品更新時，以及當 GM 載入場景時，此巨集便會執行。若要切換至此面，請傳回 true。更多資訊請參閱維基。"
+            }
+        },
+        "settings": {
+            "flipSpeed": {
+                "name": "翻轉速度",
+                "hint": "翻轉動畫的持續時間（以秒為單位）。對於非翻轉動畫，此數值將乘以 10。預設值為 0.1。"
+            },
+            "enableAutoFlip": {
+                "name": "啟用自動翻轉",
+                "hint": "啟用代幣自動翻轉功能。若您未使用自動翻轉功能，可停用此設定以節省一些效能。"
+            }
+        }
+    }
+}

@@ -1,4 +1,11 @@
 {
+    "TYPES": {
+        "JournalEntryPage": {
+            "mastercrafted": {
+                "mastercrafted": "Mastercrafted Recipe"
+            }
+        }
+    },
     "mastercrafted": {
         "mastercrafted": "Mastercrafted Recipe",
         "craft": "Crafting",
@@ -199,6 +206,14 @@
             "migrateOnStartup": {
                 "name": "Migrate settings on startup",
                 "hint": "If enabled, the module will migrate journal data on startup. You can use the macro 'game.modules.get(\"mastercrafted\").API.migration.showManualMigrationDialog()' to manually migrate your settings."
+            },
+            "dontShowButtonOnNpc": {
+                "name": "Hide button in NPC header",
+                "hint": "If enabled, the button to open the recipe book will not be shown on NPC sheets."
+            },
+            "mainFolderName": {
+                "name": "Main folder name",
+                "hint": "If a folder name is set, only the content of said folder will be shown in the Mastercrafted interface. Otherwise, the module will attempt to automatically detect the main folder."
             }
         }
     }

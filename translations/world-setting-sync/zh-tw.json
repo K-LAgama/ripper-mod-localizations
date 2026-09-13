@@ -1,0 +1,88 @@
+{
+    "world-setting-sync": {
+        "settings": {
+            "masterAgnostic": {
+                "name": "《Master World》是否適用於不可知論設定？",
+                "hint": "若啟用此設定，此世界將成為系統無關設定、使用者及系統無關模組的主世界。"
+            },
+            "masterSystem": {
+                "name": "「Master World」是指系統設定嗎？",
+                "hint": "若啟用此選項，此世界將成為系統設定、使用者及系統模組的主世界。"
+            },
+            "autoCheckSync": {
+                "name": "自動檢查同步",
+                "hint": "若啟用此功能，該世界將在啟動時自動檢查中立設定與系統設定是否有變更。"
+            },
+            "autoPerformSync": {
+                "name": "自動執行同步",
+                "hint": "若啟用此功能，該世界將在啟動時自動將設定與系統設定儲存至檔案中。"
+            },
+            "silentUpload": {
+                "name": "靜默上傳",
+                "hint": "若啟用此設定，當將非特定設定與系統設定儲存至檔案時，此世界將不會通知您。"
+            },
+            "settingsSync": {
+                "name": "同步管理員",
+                "label": "開啟「同步管理員」",
+                "hint": "開啟同步管理員，以儲存或載入通用設定及系統設定。"
+            },
+            "syncModules": {
+                "name": "同步模組",
+                "hint": "若啟用此設定，此世界將同步已啟用的模組。"
+            },
+            "syncUsers": {
+                "name": "同步使用者",
+                "hint": "若啟用此功能，此世界將在用戶之間進行同步。"
+            },
+            "syncSettings": {
+                "name": "同步設定",
+                "hint": "若啟用此功能，此世界將同步設定。"
+            },
+            "exclusionList": {
+                "name": "排除清單",
+                "label": "公開排除清單",
+                "hint": "開啟「排除清單」，以將模組、使用者和設定從同步範圍中排除。",
+                "title": "排除清單",
+                "info": "此清單將用於將模組、系統及核心設定排除在同步範圍之外。<br>在主世界中，排除項目不會儲存至同步檔案中。<br>在非主世界中，從同步檔案載入設定時，將忽略這些排除項目。",
+                "core": "核心",
+                "coreSystem": "核心與系統",
+                "modules": "模組",
+                "users": "使用者"
+            }
+        },
+        "settings-sync": {
+            "title": "設定同步",
+            "activate": "啟用",
+            "deactivate": "停用",
+            "expand": "點擊展開",
+            "namespace": "命名空間",
+            "setting": "場景設定",
+            "user": "使用者",
+            "change": "變更",
+            "apply": "申請嗎？",
+            "confirm": {
+                "syncAll": "同步所有內容",
+                "syncAgnostic": "同步與平台無關的設定",
+                "syncSystem": "同步系統設定",
+                "syncModules": "同步模組",
+                "syncUsers": "同步使用者",
+                "content": "您確定要繼續嗎？此操作無法撤銷。"
+            },
+            "tabs": {
+                "modules": "模組",
+                "users": "使用者",
+                "settingsAgnostic": "不可知論設定",
+                "settingsSystem": "系統設定"
+            },
+            "actions": {
+                "syncAll": "同步全部",
+                "syncAgnostic": "與同步機制無關",
+                "syncSystem": "同步系統",
+                "syncModules": "同步模組",
+                "syncUsers": "同步使用者",
+                "saveConfigurations": "手動將設定儲存至檔案"
+            }
+        },
+        "flags": {}
+    }
+}

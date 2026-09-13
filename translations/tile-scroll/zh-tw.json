@@ -1,0 +1,16 @@
+{
+    "tile-scroll": {
+        "flags": {
+            "header": "瓷磚卷軸",
+            "enableScroll": "捲動",
+            "enabled": "已啟用",
+            "scrollSpeed": "速度",
+            "scrollDirection": "方向",
+            "enableRotate": "啟用旋轉功能",
+            "repeat": "紋理重複",
+            "pivot": "旋轉支點",
+            "offset": "偏移量",
+            "parallax": "視差強度"
+        }
+    }
+}

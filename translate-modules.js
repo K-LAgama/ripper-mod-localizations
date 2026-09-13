@@ -126,6 +126,16 @@ export async function runPool(items, limit, worker) {
   return results;
 }
 
+/**
+ * Order `{ task, plan }` entries cheapest-first.
+ *
+ * Used when --max-characters is set: a partial budget then covers as many
+ * modules as possible, instead of being spent on the few largest files.
+ */
+export function orderByCost(entries) {
+  return [...entries].sort((a, b) => (a.plan?.characters ?? 0) - (b.plan?.characters ?? 0));
+}
+
 // ---------------------------------------------------------------------------
 // planning: compare a source file with its translation
 // ---------------------------------------------------------------------------
@@ -133,24 +143,31 @@ export async function runPool(items, limit, worker) {
 /**
  * Walk the English source and build the translated document skeleton.
  *
- * Strings that already have a non-empty translation are reused; every other
+ * Strings that already have a real translation are reused; every other
  * non-empty string is queued in `pending` and replaced once DeepL answers.
- * Numbers, booleans, nulls and empty strings are copied as-is.
+ * A value identical to the English source counts as a stub, not a translation,
+ * so it is queued as well. Numbers, booleans, nulls and empty strings are
+ * copied as-is.
  */
 export function buildPlan(source, target, { force = false } = {}) {
   const pending = [];
-  const stats = { reused: 0 };
+  const stats = { reused: 0, stubs: 0 };
   const output = planNode(source, target, [], pending, stats, force);
-  return { output, pending, reused: stats.reused };
+  return { output, pending, reused: stats.reused, stubs: stats.stubs };
 }
 
 function planNode(sourceNode, targetNode, keyPath, pending, stats, force) {
   if (typeof sourceNode === 'string') {
     if (sourceNode.trim() === '') return sourceNode;
-    if (!force && typeof targetNode === 'string' && targetNode.trim() !== '') {
+
+    const translated =
+      typeof targetNode === 'string' && targetNode.trim() !== '' && targetNode !== sourceNode;
+    if (translated && !force) {
       stats.reused += 1;
       return targetNode;
     }
+    if (typeof targetNode === 'string' && targetNode === sourceNode) stats.stubs += 1;
+
     pending.push({ path: keyPath, text: sourceNode });
     return sourceNode; // placeholder, replaced by applyTranslations()
   }
@@ -264,6 +281,7 @@ Options:
   --module NAME         only this translations folder, repeatable (alias: --only)
   --source-lang CODE    DeepL source language (default: EN, use 'auto' to auto-detect)
   --max-characters N    stop translating once N source characters have been sent
+                        (cheapest files first, so the budget covers the most modules)
   --concurrency N       language files translated in parallel (default: ${DEFAULT_CONCURRENCY})
   --batch-size N        strings per DeepL request, max 50 (default: ${DEFAULT_BATCH_SIZE})
   --force               retranslate strings that already have a translation
@@ -328,7 +346,9 @@ export async function listModules(translationsDir, filter = []) {
  * it to DeepL, tests can inject a stub.
  */
 export async function translateTask({ task, source, target, send, options, onProgress }) {
-  const { pending, output, reused } = buildPlan(source, target.data, { force: options.force });
+  const { pending, output, reused, stubs } = buildPlan(source, target.data, {
+    force: options.force,
+  });
   const result = {
     module: task.module,
     lang: task.code,
@@ -341,6 +361,7 @@ export async function translateTask({ task, source, target, send, options, onPro
     unchanged: false,
     translated: 0,
     reused,
+    stubs,
     planned: pending.length,
     characters: 0,
     errors: [],
@@ -376,15 +397,14 @@ export async function translateTask({ task, source, target, send, options, onPro
     if (error.code !== 'ENOENT') result.errors.push(`[${task.module}/${task.code}] ${error.message}`);
   }
 
-  if (previous === null) {
+  const needsWrite = previous === null || previous !== text;
+  if (needsWrite) {
+    await fs.mkdir(path.dirname(task.file), { recursive: true });
     await fs.writeFile(task.file, text, 'utf-8');
-    result.created = true;
-  } else if (previous !== text) {
-    await fs.writeFile(task.file, text, 'utf-8');
-    result.updated = true;
-  } else {
-    result.unchanged = true;
   }
+  if (previous === null) result.created = true;
+  else if (needsWrite) result.updated = true;
+  else result.unchanged = true;
 
   if (result.created || result.updated) result.written = true;
   return result;
@@ -473,10 +493,11 @@ async function planTasks({ tasks, sources, options }) {
       return;
     }
     const target = await readJsonObject(task.file);
-    const { pending } = buildPlan(source.data, target.data, { force: options.force });
+    const { pending, stubs } = buildPlan(source.data, target.data, { force: options.force });
     plans[index] = {
       pending: pending.length,
       characters: pending.reduce((total, item) => total + item.text.length, 0),
+      stubs,
       missing: Boolean(target.missing),
       invalid: Boolean(target.error),
     };
@@ -539,13 +560,18 @@ function printPlan({ tasks, plans, targets, options }) {
   { quiet: options.quiet });
 
   const brokenSources = plans.filter((plan) => plan?.error).length;
+  const stubValues = plans.reduce((total, plan) => total + (plan?.stubs ?? 0), 0);
   if (brokenSources) warn(`\n! ${brokenSources} module(s) have an unreadable en.json source and were skipped`);
   if (badTargets) warn(`! ${badTargets} existing language file(s) are not valid JSON and will be rebuilt`);
+  if (stubValues) {
+    warn(`! ${number(stubValues)} value(s) in translations/ are still English: they are counted `
+      + `as untranslated and will be sent to DeepL`);
+  }
   log(`\n${number(tasks.length)} file(s) for ${targets.length} language(s): `
     + `${number(totalCreate)} to create, ${number(totalUpdate)} to update, `
     + `${number(totalUnchanged)} already complete`, { quiet: options.quiet });
 
-  return { totalCreate, totalUpdate, totalUnchanged, totalStrings, totalCharacters };
+  return { totalCreate, totalUpdate, totalUnchanged, totalStrings, totalCharacters, stubValues };
 }
 
 async function main(argv = process.argv.slice(2)) {
@@ -644,11 +670,12 @@ async function main(argv = process.argv.slice(2)) {
   if (!supportedTargets.length) throw new UsageError('none of the target languages is supported by DeepL');
 
   const supportedKeys = new Set(supportedTargets.map((target) => target.key));
-  const activeTasks = tasks.filter((task) => supportedKeys.has(task.code.toLowerCase()));
-  const activePlans = tasks
+  const queue = tasks
     .map((task, index) => ({ task, plan: plans[index] }))
-    .filter((entry) => supportedKeys.has(entry.task.code.toLowerCase()))
-    .map((entry) => entry.plan);
+    .filter((entry) => supportedKeys.has(entry.task.code.toLowerCase()));
+  // With a character budget, cheapest files first so the budget covers as many
+  // modules as possible instead of being eaten by the few largest files.
+  const ordered = options.maxCharacters ? orderByCost(queue) : queue;
 
   const send = async (texts, deeplCode) => {
     const response = await client.translateText(texts, options.sourceLang, deeplCode);
@@ -667,21 +694,15 @@ async function main(argv = process.argv.slice(2)) {
   }
   if (before) log(`\nDeepL before: ${before}`);
 
-  const remaining = (() => {
-    const character = null; // placeholder replaced below when usage is available
-    return character;
-  })();
-
   const budget = options.maxCharacters;
   let spent = 0;
   let skippedByBudget = 0;
-  const results = new Array(activeTasks.length);
-  const progressEvery = Math.max(10, Math.floor(activeTasks.length / 20));
+  const results = new Array(ordered.length);
+  const progressEvery = Math.max(10, Math.floor(ordered.length / 20));
   let done = 0;
   let stringsDone = 0;
 
-  await runPool(activeTasks, options.concurrency, async (task, index) => {
-    const plan = activePlans[index];
+  await runPool(ordered, options.concurrency, async ({ task, plan }, index) => {
     if (!plan || plan.error) {
       results[index] = { skipped: true, error: plan?.error };
       return;
@@ -705,14 +726,14 @@ async function main(argv = process.argv.slice(2)) {
     done += 1;
     stringsDone += result.translated;
 
-    if (done % progressEvery === 0 || done === activeTasks.length) {
-      log(`  ... ${done}/${activeTasks.length} file(s) | ${number(stringsDone)} string(s) | `
+    if (done % progressEvery === 0 || done === ordered.length) {
+      log(`  ... ${done}/${ordered.length} file(s) | ${number(stringsDone)} string(s) | `
         + `${number(spent)} char(s)`);
     }
   });
 
   // ---- summary -----------------------------------------------------------
-  const summary = { created: 0, updated: 0, unchanged: 0, translated: 0, reused: 0, characters: 0 };
+  const summary = { created: 0, updated: 0, unchanged: 0, translated: 0, reused: 0, stubs: 0, characters: 0 };
   const errors = [];
   for (const result of results) {
     if (!result) continue;
@@ -726,6 +747,7 @@ async function main(argv = process.argv.slice(2)) {
     else summary.unchanged += 1;
     summary.translated += result.translated;
     summary.reused += result.reused;
+    summary.stubs += result.stubs ?? 0;
     summary.characters += result.characters;
     errors.push(...result.errors);
   }
@@ -747,6 +769,9 @@ async function main(argv = process.argv.slice(2)) {
   console.log(`Files:      ${number(summary.created)} created, ${number(summary.updated)} updated, `
     + `${number(summary.unchanged)} unchanged`);
   console.log(`Strings:    ${number(summary.translated)} translated, ${number(summary.reused)} kept from existing files`);
+  if (summary.stubs) {
+    console.log(`Stubs:      ${number(summary.stubs)} value(s) were still English and got a real translation`);
+  }
   console.log(`Characters: ${number(summary.characters)} billed by DeepL`);
   if (skipped.length || skippedByBudget) {
     console.log(`Skipped:    ${number(skippedByBudget)} file(s) past the --max-characters budget, `

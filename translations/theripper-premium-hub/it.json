@@ -1,0 +1,63 @@
+{
+    "theripper-premium-hub": {
+        "settings": {
+            "autoCheck": {
+                "name": "Verifica la presenza di aggiornamenti all'avvio",
+                "hint": "Verifica automaticamente, al caricamento del mondo, se uno dei miei moduli premium ha degli aggiornamenti."
+            },
+            "checkDisabled": {
+                "name": "Moduli di controllo non abilitati",
+                "hint": "Verifica la presenza di aggiornamenti per i moduli installati ma non abilitati."
+            }
+        },
+        "tweaks-menu": {
+            "title": "Miglioramenti",
+            "label": "Configura le impostazioni avanzate",
+            "hint": "Configura alcune funzionalità che migliorano l'esperienza d'uso, come le macro di avvio, i pulsanti per la pulizia dell'intestazione e le modifiche ai CSS.",
+            "tabs": {
+                "misc": "Varie",
+                "startup-macros": "Macro di avvio",
+                "css-tweaks": "Modifiche al CSS"
+            },
+            "initMacros": {
+                "name": "Macro di avvio",
+                "hint": "Esegui le macro al caricamento del mondo. Le macro vengono eseguite nell'ordine in cui sono elencate qui."
+            },
+            "readyMacros": {
+                "name": "Macro pronte all'uso",
+                "hint": "Esegui le macro quando il client è pronto. Le macro vengono eseguite nell'ordine in cui sono elencate qui."
+            },
+            "cssTweak": {
+                "name": "Modifiche al CSS",
+                "hint": "Scrivi codice CSS personalizzato per modificare gli stili di Foundry o dei moduli. Sono disponibili tre campi per organizzare il codice, ma puoi anche utilizzare un solo campo."
+            },
+            "cleanHeaderButtons": {
+                "name": "Pulsanti dell'intestazione puliti",
+                "hint": "Rimuovi il testo dai pulsanti delle intestazioni per renderli più puliti. Se utilizzi molti dei miei moduli, potresti ritrovarti con un gran numero di pulsanti nelle intestazioni delle finestre; questa opzione rimuove il testo da essi. (Richiede LibWrapper)"
+            },
+            "compactSidebar": {
+                "name": "Barra laterale compatta",
+                "hint": "Riduci le dimensioni delle voci della barra laterale per farne stare di più sullo schermo."
+            },
+            "enableSettingsSwap": {
+                "name": "Impostazioni client obbligatorie",
+                "hint": "Abilita la possibilità di modificare le impostazioni del client in impostazioni globali. In questo modo le impostazioni selezionate verranno applicate a tutti i client e i giocatori non potranno più visualizzarle."
+            },
+            "diceTray": {
+                "name": "Vassoio per dadi",
+                "hint": "Aggiungi un vassoio dei dadi alla cronologia della chat. Questo ti permetterà di lanciare i dadi e di applicare dei modificatori ai risultati."
+            },
+            "autoRotate": {
+                "name": "Rotazione automatica",
+                "hint": "Ruota automaticamente i token in modo che siano rivolti nella direzione di movimento e verso il token bersaglio.",
+                "none": "Disabile",
+                "defaultOn": "Abilitato (impostazione predefinita: attivo)",
+                "defaultOff": "Abilitato (impostazione predefinita: disattivato)",
+                "on": "Abilitato",
+                "off": "Disabile",
+                "default": "Predefinito"
+            }
+        },
+        "wtcNotification": "La configurazione per {impostazione} è stata impostata su {valore}. Per applicare le modifiche, ricarica il gioco. Le modifiche all'impostazione non verranno salvate fino al prossimo ricaricamento."
+    }
+}

@@ -1,4 +1,11 @@
 {
+    "TYPES": {
+        "JournalEntryPage": {
+            "mastercrafted": {
+                "mastercrafted": "Receita elaborada com maestria"
+            }
+        }
+    },
     "mastercrafted": {
         "mastercrafted": "Receita elaborada com maestria",
         "craft": "Artesanato",
@@ -199,6 +206,14 @@
             "migrateOnStartup": {
                 "name": "Migrar configurações na inicialização",
                 "hint": "Se ativado, o módulo migrará os dados do diário na inicialização. Você pode usar a macro 'game.modules.get(\"mastercrafted\").API.migration.showManualMigrationDialog()' para migrar manualmente suas configurações."
+            },
+            "dontShowButtonOnNpc": {
+                "name": "Ocultar botão no cabeçalho do NPC",
+                "hint": "Se essa opção estiver ativada, o botão para abrir o livro de receitas não será exibido nas fichas dos NPCs."
+            },
+            "mainFolderName": {
+                "name": "Nome da pasta principal",
+                "hint": "Se for definido um nome de pasta, apenas o conteúdo dessa pasta será exibido na interface do Mastercrafted. Caso contrário, o módulo tentará detectar automaticamente a pasta principal."
             }
         }
     }

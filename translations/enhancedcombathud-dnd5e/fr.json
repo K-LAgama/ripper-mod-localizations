@@ -36,6 +36,13 @@
             "macroPanel": {
                 "name": "Panneau Macros",
                 "hint": "Afficher un panneau de macros pour chaque personnage qui reflète les macros de la barre de raccourcis"
+            },
+            "explodeItemActivities": {
+                "name": "Développer les éléments en activités",
+                "hint": "Faut-il considérer chaque activité comme un bouton distinct dans le HUD ?",
+                "only-weapons": "Afficher uniquement les armes",
+                "always": "Toujours développer",
+                "never": "Ne jamais développer"
             }
         },
         "hud": {

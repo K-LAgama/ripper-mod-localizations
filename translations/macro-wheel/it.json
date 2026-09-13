@@ -1,0 +1,77 @@
+{
+    "macro-wheel": {
+        "bindings": {
+            "open": {
+                "name": "Apri/Chiudi rotella macro"
+            }
+        },
+        "settings": {
+            "folderSize": {
+                "name": "Dimensioni del pulsante “Cartella”",
+                "hint": "Dimensione in pixel dei pulsanti delle cartelle nella rotella delle macro."
+            },
+            "macroSize": {
+                "name": "Dimensione dei pulsanti macro",
+                "hint": "Dimensione in pixel dei pulsanti macro presenti sulla rotella macro."
+            },
+            "closeOnClick": {
+                "name": "Chiudi al clic",
+                "hint": "Chiudi la finestra delle macro quando clicchi su una macro. Puoi tenere premuto il tasto Ctrl per mantenere aperta la finestra."
+            },
+            "enableTooltips": {
+                "name": "Abilita i suggerimenti",
+                "hint": "Mostra i suggerimenti al passaggio del mouse su una macro o una cartella."
+            },
+            "useRoot": {
+                "name": "Usa la cartella principale",
+                "hint": "Utilizza l'intera directory delle macro come directory principale per la rotella delle macro."
+            },
+            "addHotbar": {
+                "name": "Mostra le macro della barra di accesso rapido",
+                "hint": "Aggiungi le macro della barra di accesso rapido alla rotella delle macro."
+            },
+            "useMiddleMouse": {
+                "name": "Usa il tasto centrale del mouse",
+                "hint": "Usa il tasto centrale del mouse per aprire la rotella delle macro."
+            },
+            "hoverDelay": {
+                "name": "Ritardo al passaggio del mouse",
+                "hint": "Ritardo in millisecondi prima che la ruota delle macro si apra quando si passa il mouse su una cartella della ruota delle macro."
+            }
+        },
+        "flags": {
+            "header": "Ruota macro",
+            "folderImg": {
+                "name": "Immagine"
+            },
+            "condition": {
+                "name": "Condizione personalizzata",
+                "placeholder": "Script di condizione"
+            },
+            "activeCondition": {
+                "name": "Condizione attiva",
+                "hint": "Questa condizione serve a verificare se la macro è attiva. Verrà utilizzata per determinare il colore dell'anello che circonda la macro nella rotella delle macro, in modo da poter controllare rapidamente gli stati."
+            },
+            "presetCondition": {
+                "name": "Condizione",
+                "options": {
+                    "custom": "Personalizzato",
+                    "tokens": "Livello attivo: token",
+                    "tiles": "Livello attivo: Piastrelle",
+                    "walls": "Livello attivo: Pareti",
+                    "sounds": "Livello attivo: Suoni",
+                    "notes": "Livello attivo: Note",
+                    "lights": "Livello attivo: Illuminazione",
+                    "templates": "Livello attivo: Modelli",
+                    "drawings": "Livello attivo: Disegni",
+                    "selectedtoken": "Token selezionato",
+                    "combat": "In combattimento",
+                    "enabled3d": "Funzionalità 3D Canvas abilitata"
+                }
+            }
+        },
+        "errors": {
+            "no-folder": "MacroWheel: cartella \"MacroWheel\" non trovata. Crea una cartella denominata \"MacroWheel\" nella cartella Macro oppure attiva l'opzione \"Usa cartella principale\" per disattivare questa notifica. All'interno della cartella \"MacroWheel\" crea delle sottocartelle per ciascuna rotella che desideri aggiungere, quindi inserisci le macro in tali cartelle."
+        }
+    }
+}

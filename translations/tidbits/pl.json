@@ -1,0 +1,67 @@
+{
+    "tidbits": {
+        "message": {
+            "didYouKnow": "Czy wiesz, że…?",
+            "tidbits": "Ciekawostki",
+            "reroll": "Jeszcze jeden!"
+        },
+        "settings": {
+            "showChatMessage": {
+                "name": "Pokaż wiadomość na czacie",
+                "hint": "Wyświetl krótką informację na czacie jako szept po zalogowaniu się",
+                "choices": {
+                    "everyone": "Wszyscy",
+                    "players": "Gracze",
+                    "gamemaster": "Mistrz gry",
+                    "none": "Brak"
+                }
+            },
+            "showLoadingScreen": {
+                "name": "Pokaż ekran ładowania",
+                "hint": "Wyświetl ciekawostkę podczas ładowania sceny",
+                "choices": {
+                    "everyone": "Wszyscy",
+                    "players": "Gracze",
+                    "gamemaster": "Mistrz gry",
+                    "none": "Brak"
+                }
+            },
+            "startupLoadingScreen": {
+                "name": "Czas na ciekawostki ze świata startupów",
+                "hint": "Czas w sekundach, po upływie którego ukrywana jest informacja o uruchomieniu; wartość 0 powoduje wyłączenie tej funkcji"
+            },
+            "loadingScreenMinimumDuration": {
+                "name": "Opóźnienie zanikania ekranu ładowania",
+                "hint": "Czas w sekundach, przez jaki ekran ładowania ma pozostawać widoczny po załadowaniu sceny"
+            },
+            "loadingScreenGradient": {
+                "name": "Gradient na ekranie ładowania",
+                "hint": "Zakryj połowę obrazu gradientem, aby tekst był bardziej czytelny, a następnie zastosuj do obrazu filtr rozmycia"
+            },
+            "pauseText": {
+                "name": "Wstrzymaj wyświetlanie tekstu",
+                "hint": "Wyświetlaj „Ciekawostki” zamiast tekstu „Gra wstrzymana”"
+            },
+            "useDefaultSources": {
+                "name": "Użyj domyślnych źródeł",
+                "hint": "Użyj domyślnych źródeł ciekawostek"
+            },
+            "customSource": {
+                "name": "Źródło niestandardowe",
+                "hint": "Plik JSON zdefiniowany przez użytkownika, który ma służyć jako źródło ciekawostek; aby wyłączyć tę funkcję, pozostaw pole puste."
+            },
+            "imageSource": {
+                "name": "Źródło zdjęcia",
+                "hint": "Folder do wykorzystania na ekranach ładowania; aby wyłączyć tę funkcję, pozostaw go pustym."
+            },
+            "autoCycle": {
+                "name": "Tryb automatyczny",
+                "hint": "Czas w sekundach, po upływie którego ma następować przełączanie między fragmentami tekstu wyświetlanego podczas pauzy. Wartość 0 wyłącza tę funkcję."
+            },
+            "didYouKnowText": {
+                "name": "Czy wiesz, że...",
+                "hint": "Tekst do wprowadzenia zamiast domyślnego tekstu „Czy wiesz, że…?”."
+            }
+        }
+    }
+}

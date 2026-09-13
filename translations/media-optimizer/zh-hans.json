@@ -1,0 +1,104 @@
+{
+    "media-optimizer": {
+        "converted": "媒体优化器：已转换",
+        "conversionFailed": "媒体优化器：转换失败，请查阅维基以获取更多信息。",
+        "audioConversionStarted": "媒体优化器：转换为 OGG | 文件：",
+        "videoConversionStarted": "媒体优化器：转换为 WEBM | 文件：",
+        "settings": {
+            "bloatDetector": {
+                "name": "膨胀检测器",
+                "label": "Open Bloat Detector",
+                "hint": "检测可能导致加载速度变慢或引发性能问题的条目。"
+            },
+            "enabled": {
+                "name": "已启用",
+                "hint": "是否应启用媒体优化器。如果禁用，图片、音频和视频将不会被优化。"
+            },
+            "compressionRatio": {
+                "name": "质量",
+                "hint": "优化图像时使用的质量参数。质量越高，图像质量越好，文件大小也越大；质量越低，图像质量越差，文件大小也越小。默认值为 0.75。注意：音频和视频的压缩率无法自定义。"
+            },
+            "maxResolution": {
+                "name": "最大分辨率",
+                "hint": "要优化的图像的最大分辨率。如果图像大于此分辨率，将在优化前将其调整为该分辨率。这有助于避免使用大多数显卡不支持的极高分辨率。",
+                "choices": {
+                    "1024": "1K（1024像素）",
+                    "2048": "2K（2048像素）",
+                    "4096": "4K（4096像素）",
+                    "8192": "8K（8192像素）",
+                    "16384": "16K（16384像素）"
+                }
+            },
+            "excludeFolders": {
+                "name": "排除文件夹",
+                "hint": "用逗号分隔的、需从优化中排除的文件夹列表。如果将图片、音频或视频上传到此位置，它们将不会被优化。"
+            },
+            "optimizeImages": {
+                "name": "优化图片",
+                "hint": "是否对图片进行优化。"
+            },
+            "optimizeAudio": {
+                "name": "优化音频",
+                "hint": "是否对音频进行优化。"
+            },
+            "optimizeVideo": {
+                "name": "优化视频",
+                "hint": "是否对视频进行优化。"
+            },
+            "slugifyFileNames": {
+                "name": "规范的文件名",
+                "hint": "是否清理文件名。请注意，此设置将适用于“媒体优化器”处理或创建的任何文件。该设置会删除特殊字符，并将其替换为连字符。这有助于避免不同操作系统上的文件名问题，以及由空格和特殊字符引起的其他问题。"
+            }
+        },
+        "tile-combiner": {
+            "title": "媒体优化器：平铺合并器",
+            "notes": "此功能将对场景进行永久性更改！强烈建议您先备份该场景。",
+            "info": "“合并器”将使用全局“媒体优化器”的压缩设置，您可以在模块设置中进行更改。",
+            "confirm": {
+                "title": "贴图合并器：确认",
+                "content": "您即将合并方块，这将对场景产生永久性更改！您确定要继续吗？",
+                "backup": "您即将进行合并操作，但尚未备份，不建议这样做！"
+            },
+            "buttons": {
+                "backup-combine": "备份与合并",
+                "combine": "合并",
+                "cancel": "取消"
+            },
+            "mode": {
+                "label": "组合模式：",
+                "background": "背景图块",
+                "foreground": "前景瓷砖",
+                "selected": "精选瓷砖",
+                "all": "所有磁贴"
+            },
+            "background": {
+                "label": "是否包含背景？",
+                "notes": "启用此选项后，合并操作的结果将被设置为场景背景。"
+            },
+            "folderPath": {
+                "label": "文件夹路径："
+            },
+            "fileName": {
+                "label": "文件名："
+            },
+            "deleteTiles": {
+                "label": "删除合并后的磁贴？"
+            }
+        },
+        "file-converter": {
+            "header-button": "优化媒体",
+            "title": "媒体优化器：批量优化器",
+            "buttons": {
+                "convert": "优化所选内容",
+                "select-all": "全选",
+                "select-none": "清除选中项"
+            }
+        },
+        "bloat-detector": {
+            "title": "媒体优化器：臃肿检测器",
+            "bloat": "检测到可能导致加载速度变慢或性能问题的条目。数量：",
+            "no-bloat": "未检测到膨胀。",
+            "large-collection": "该集合规模较大，建议将未使用的条目移至汇编中。"
+        }
+    }
+}

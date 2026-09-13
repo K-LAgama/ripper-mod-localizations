@@ -1,0 +1,121 @@
+{
+    "TYPES": {
+        "JournalEntryPage": {
+            "gatherer": {
+                "gatherer": "採集者"
+            }
+        }
+    },
+    "gatherer": {
+        "gatherer": "採集者",
+        "gathered": "彙整",
+        "found": "已找到",
+        "quantity": "數量",
+        "minigame": {
+            "title": "「採集者」小遊戲"
+        },
+        "sheet": {
+            "err": {
+                "noDraws": "這個聚集點已「耗盡」，必須重置後才能再次使用。",
+                "noActor": "沒有可執行聚會的演員。請選擇一個代幣，或為自己指派一個角色。",
+                "noReq": "您不符合在此聚集的條件。缺失：",
+                "noItem": "找不到該項目。請檢查拼寫並重新嘗試。",
+                "noExp": "你並未從此處收集任何資源……",
+                "noGM": "GM 使用者必須保持連線才能進行資源收集。"
+            },
+            "gather": "聚集",
+            "reset": "重設",
+            "edit": "編輯",
+            "remaining": "剩餘拉次數",
+            "time": "重置於",
+            "quantity": "數量",
+            "waitingFirst": "等待首次抽籤"
+        },
+        "flags": {
+            "table": {
+                "label": "可捲式桌子"
+            },
+            "time": {
+                "label": "時間",
+                "placeholder": "距離重置還有多少小時"
+            },
+            "quantity": {
+                "label": "數量",
+                "placeholder": "數字或擲骰表達式"
+            },
+            "draws": {
+                "label": "拉力",
+                "placeholder": "在該位置用盡之前就先抽取",
+                "notes": "若留空，則會從對應的彙整頁面中擷取內容"
+            },
+            "require": {
+                "label": "需要",
+                "placeholder": "以逗號分隔的項目清單"
+            },
+            "minigame": {
+                "label": "迷你遊戲",
+                "placeholder": "迷你遊戲所需時間（以毫秒為單位）"
+            },
+            "expression": {
+                "label": "表達",
+                "placeholder": "需滿足的巨集執行條件"
+            },
+            "systemAbil": {
+                "label": "檢查"
+            },
+            "DC": {
+                "label": "DC",
+                "placeholder": "DC"
+            },
+            "toolCheck": {
+                "label": "工具",
+                "placeholder": "工具名稱"
+            },
+            "toolDC": {
+                "label": "DC",
+                "placeholder": "DC"
+            },
+            "gatherSheet": {
+                "label": "收成表",
+                "placeholder": "在此處關閉「收集者」頁面"
+            },
+            "modifierList": {
+                "label": "修飾詞",
+                "add": "新增修飾符",
+                "hint": "若擲骰結果或表達式所返回的數值等於或大於 DC（以較高者為準），則收集到的物品數量將根據修正值表達式進行調整。 你可以在修飾式開頭加入數學運算子；若未提供運算子，預設會視為加號 (+)。例如，*1d4 表示將收集到的物品數量乘以 1d4。"
+            }
+        },
+        "gatherer-actor-config": {
+            "title": "Gatherer 設定",
+            "notes": "若要擷取特定代幣，請依下列內容建立一個巨集：",
+            "notes2": "或者使用鍵盤快捷鍵："
+        },
+        "error": {
+            "notGatherer": "這不是「彙整表」。請選擇一份「彙整表」，然後再試一次。",
+            "noDraws": "這隻生物已無資源可收集。",
+            "noJournal": "此代幣並無對應的集合點。請選擇一個具有有效集合點的代幣，然後再試一次。",
+            "cantHarvest": "尚未滿足領取此代幣的條件"
+        },
+        "settings": {
+            "resourcePath": {
+                "name": "Harvest 資源路徑",
+                "hint": "用於檢查是否可進行「收割」的路徑。以《龍與地下城第五版》（DnD5e）為例，若要檢查代幣是否存活，應使用 'attributes.hp.value'。"
+            },
+            "quantityPath": {
+                "name": "數量路徑",
+                "hint": "項目數量之資料路徑。從「system」開始（不包含「system」本身）。例如，對於 DnD5e，此路徑即為「quantity」。"
+            },
+            "resourceValue": {
+                "name": "發掘資源價值",
+                "hint": "用於檢查是否可進行收割的數值。例如在 DnD5e 中，此數值若為「0」，即表示檢查該標記是否已無剩餘生命值。"
+            },
+            "enableHarvesting": {
+                "name": "啟用採集功能"
+            },
+            "migrateOnStartup": {
+                "name": "在啟動時遷移設定",
+                "hint": "若啟用此功能，模組將在啟動時遷移日誌資料。您可以使用巨集 'game.modules.get(\"gatherer\").API.migration.showManualMigrationDialog()' 手動遷移您的設定。"
+            }
+        }
+    }
+}

@@ -1,34 +1,5 @@
 {
     "bossbar": {
-        "bar-style-configuration": {
-            "add": "スタイルの追加",
-            "background": "背景画像",
-            "bar": "バー画像",
-            "barHeight": "ボスバー高さ",
-            "delete-confirm": "このスタイルを削除してもよろしいですか?",
-            "delete-title": "スタイルの削除",
-            "edit": "スタイルの編集",
-            "font": "フォントファミリー",
-            "foreground": "前景画像",
-            "tempBarAlpha": "一時的なヘルスバー アルファ",
-            "tempBarColor": "一時的なヘルスバーの色",
-            "textAlign": "テキストの配置",
-            "textSize": "フォントサイズ",
-            "title": "ボスバースタイルの構成",
-            "type": "スタイルタイプ",
-            "type-hint": "スタイルタイプを選択してください"
-        },
-        "boss-bar": {
-            "title": "ボスバー"
-        },
-        "boss-bar-configuration": {
-            "edit-themes": "近い",
-            "hideNameHint": "ボスバーで俳優の名前を隠す",
-            "no-actors": "俳優が選択されていない、またはシーンに存在していません。",
-            "no-scene": "利用可能なシーンがありません。\nシーンを表示して再試行してください",
-            "save-pan": "保存",
-            "title": "ボスバーの構成"
-        },
         "controls": {
             "bossUI": {
                 "name": "ボスバーの切り替え",
@@ -36,35 +7,64 @@
             }
         },
         "settings": {
-            "BarStyleConfiguration": {
-                "label": "スタイルの構成",
-                "name": "ボスバーのスタイル"
-            },
             "barStyle": {
                 "classic": "クラシック",
                 "matchingImages": "一致する画像"
             },
             "currentHpPath": {
-                "hint": "アクターの現在の HP へのデータ パス",
-                "name": "現在の HP パス"
+                "name": "現在の HP パス",
+                "hint": "アクターの現在の HP へのデータ パス"
             },
             "maxHpPath": {
-                "hint": "アクターの最大 HP へのデータ パス",
-                "name": "最大HPパス"
+                "name": "最大HPパス",
+                "hint": "アクターの最大 HP へのデータ パス"
+            },
+            "BarStyleConfiguration": {
+                "name": "ボスバーのスタイル",
+                "label": "スタイルの構成"
             },
             "resetPosition": {
-                "hint": "ボスバーの位置をデフォルトにリセットします",
-                "name": "位置をリセットする"
+                "name": "位置をリセットする",
+                "hint": "ボスバーの位置をデフォルトにリセットします"
             },
             "textAlign": {
-                "center": "中心",
                 "left": "左",
+                "center": "中心",
                 "right": "右"
             },
             "woundsSystem": {
-                "hint": "システムがヒット ポイントの代わりに傷を使用する場合は、このオプションを有効にします。",
-                "name": "創傷システム"
+                "name": "創傷システム",
+                "hint": "システムがヒット ポイントの代わりに傷を使用する場合は、このオプションを有効にします。"
             }
+        },
+        "bar-style-configuration": {
+            "add": "スタイルの追加",
+            "title": "ボスバースタイルの構成",
+            "delete-title": "スタイルの削除",
+            "delete-confirm": "このスタイルを削除してもよろしいですか?",
+            "edit": "スタイルの編集",
+            "background": "背景画像",
+            "foreground": "前景画像",
+            "bar": "バー画像",
+            "tempBarColor": "一時的なヘルスバーの色",
+            "tempBarAlpha": "一時的なヘルスバー アルファ",
+            "barHeight": "ボスバー高さ",
+            "font": "フォントファミリー",
+            "textSize": "フォントサイズ",
+            "textAlign": "テキストの配置",
+            "type": "スタイルタイプ",
+            "type-hint": "スタイルタイプを選択してください"
+        },
+        "boss-bar-configuration": {
+            "title": "ボスバーの構成",
+            "no-actors": "俳優が選択されていない、またはシーンに存在していません。",
+            "no-scene": "利用可能なシーンがありません。\nシーンを表示して再試行してください",
+            "save-pan": "保存",
+            "edit-themes": "近い",
+            "hideNameHint": "ボスバーで俳優の名前を隠す"
+        },
+        "boss-bar": {
+            "title": "ボスバー"
         }
     }
 }

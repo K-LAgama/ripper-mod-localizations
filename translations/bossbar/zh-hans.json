@@ -1,0 +1,70 @@
+{
+    "bossbar": {
+        "controls": {
+            "bossUI": {
+                "name": "切换 Boss Bar",
+                "warn": "未选择代币。请选择一个或多个代币，然后重试"
+            }
+        },
+        "settings": {
+            "barStyle": {
+                "classic": "经典",
+                "matchingImages": "配对图片"
+            },
+            "currentHpPath": {
+                "name": "当前的HP路径",
+                "hint": "指向某个角色的当前生命值的数据路径"
+            },
+            "maxHpPath": {
+                "name": "最大生命值路线",
+                "hint": "获取角色最大生命值的数据路径"
+            },
+            "BarStyleConfiguration": {
+                "name": "Boss Bar 款式",
+                "label": "配置样式"
+            },
+            "resetPosition": {
+                "name": "重置位置",
+                "hint": "将 Boss Bar 的位置重置为默认值"
+            },
+            "textAlign": {
+                "left": "左",
+                "center": "中心",
+                "right": "对"
+            },
+            "woundsSystem": {
+                "name": "伤势系统",
+                "hint": "如果您的系统使用“伤势”而非“生命值”，请启用此选项。"
+            }
+        },
+        "bar-style-configuration": {
+            "add": "添加样式",
+            "title": "Boss Bar 样式配置",
+            "delete-title": "删除样式",
+            "delete-confirm": "您确定要删除此样式吗？",
+            "edit": "编辑样式",
+            "background": "背景图片",
+            "foreground": "前景图片",
+            "bar": "酒吧图片",
+            "tempBarColor": "临时生命值条颜色",
+            "tempBarAlpha": "临时生命值条 Alpha 版",
+            "barHeight": "Boss 吧台高度",
+            "font": "字体家族",
+            "textSize": "字体大小",
+            "textAlign": "文本对齐",
+            "type": "样式类型",
+            "type-hint": "选择样式类型"
+        },
+        "boss-bar-configuration": {
+            "title": "Boss Bar 配置",
+            "no-actors": "该场景中未选择或未出现任何演员。",
+            "no-scene": "没有可用场景。请选择一个场景后再试一次",
+            "save-pan": "保存并平移摄像机",
+            "edit-themes": "关闭和编辑主题",
+            "hideNameHint": "在“Boss Bar”中隐藏演员姓名"
+        },
+        "boss-bar": {
+            "title": "Boss Bar"
+        }
+    }
+}

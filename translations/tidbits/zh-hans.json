@@ -1,0 +1,67 @@
+{
+    "tidbits": {
+        "message": {
+            "didYouKnow": "你知道吗？",
+            "tidbits": "趣闻轶事",
+            "reroll": "又一个！"
+        },
+        "settings": {
+            "showChatMessage": {
+                "name": "显示聊天消息",
+                "hint": "登录时在聊天中以私语形式显示一条趣闻",
+                "choices": {
+                    "everyone": "大家",
+                    "players": "球员",
+                    "gamemaster": "游戏大师",
+                    "none": "无"
+                }
+            },
+            "showLoadingScreen": {
+                "name": "显示加载界面",
+                "hint": "在加载场景时显示一段小贴士",
+                "choices": {
+                    "everyone": "大家",
+                    "players": "球员",
+                    "gamemaster": "游戏大师",
+                    "none": "无"
+                }
+            },
+            "startupLoadingScreen": {
+                "name": "创业趣闻时间",
+                "hint": "隐藏启动提示所需的时间（单位：秒），0 表示禁用"
+            },
+            "loadingScreenMinimumDuration": {
+                "name": "加载画面淡出延迟",
+                "hint": "场景加载完成后，保持加载界面显示的时间（以秒为单位）"
+            },
+            "loadingScreenGradient": {
+                "name": "加载界面的渐变效果",
+                "hint": "用渐变效果覆盖图像的一半，以提高文字的可读性，并为图像应用模糊滤镜"
+            },
+            "pauseText": {
+                "name": "暂停文本",
+                "hint": "显示“趣闻”而非“游戏已暂停”字样"
+            },
+            "useDefaultSources": {
+                "name": "使用默认来源",
+                "hint": "使用默认的趣闻来源"
+            },
+            "customSource": {
+                "name": "自定义来源",
+                "hint": "自定义 JSON 文件，用作趣闻来源；留空则禁用。"
+            },
+            "imageSource": {
+                "name": "图片来源",
+                "hint": "加载界面中要使用的文件夹，留空即禁用。"
+            },
+            "autoCycle": {
+                "name": "自动循环",
+                "hint": "暂停文本中的提示信息循环显示所需的间隔时间（以秒为单位）。设置为 0 则禁用该功能。"
+            },
+            "didYouKnowText": {
+                "name": "你知道吗？",
+                "hint": "用于替换默认“你知道吗？”文本的自定义文本。"
+            }
+        }
+    }
+}

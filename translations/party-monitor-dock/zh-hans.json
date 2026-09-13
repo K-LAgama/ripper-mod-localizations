@@ -1,0 +1,73 @@
+{
+    "party-monitor-dock": {
+        "title": "派对显示器底座",
+        "settings": {
+            "onlyConnected": {
+                "name": "仅显示已联机的玩家",
+                "hint": "仅显示已连接到服务器的玩家"
+            },
+            "portraitSize": {
+                "name": "肖像尺寸",
+                "hint": "被告席上肖像画的尺寸"
+            },
+            "position": {
+                "name": "泊位位置",
+                "hint": "屏幕上dock的位置",
+                "choices": {
+                    "docked": "已停靠",
+                    "horizontal": "水平（浮动）",
+                    "vertical": "垂直（悬浮）",
+                    "hidden": "隐藏"
+                }
+            },
+            "dockAlignment": {
+                "name": "HUD 对齐",
+                "hint": "HUD 在停靠状态下在屏幕上的对齐方式",
+                "choices": {
+                    "flex-start": "顶部",
+                    "center": "中心",
+                    "flex-end": "底部"
+                }
+            },
+            "hideInCombat": {
+                "name": "战斗中隐身",
+                "hint": "战斗进行时隐藏HUD"
+            },
+            "hideCompanions": {
+                "name": "隐藏同伴",
+                "hint": "在队伍成员列表中隐藏随从"
+            },
+            "cornerImage": {
+                "name": "角落图片",
+                "hint": "要在Dock的四个角处显示的图片。若留空则禁用该功能。"
+            },
+            "edgeImage": {
+                "name": "边缘图像",
+                "hint": "用于填充 Dock 各角之间空隙的图片。留空即禁用。"
+            }
+        },
+        "app": {
+            "buttons": {
+                "toggle-nav": "切换导航按钮",
+                "toggle-dock": "Toggle Dock",
+                "reduce": "缩小尺寸",
+                "enlarge": "放大",
+                "start-follow": "开始关注",
+                "stop-follow": "取消关注",
+                "context": {
+                    "follow": "关注",
+                    "mount": "安装",
+                    "epicRoll": "所需骰子",
+                    "raise-hand": "举手"
+                }
+            }
+        },
+        "flags": {},
+        "notifications": {
+            "follow": " 现在正在关注",
+            "unfollow": " 不再关注",
+            "mounted": " 已安装",
+            "dismounted": " 已下马"
+        }
+    }
+}

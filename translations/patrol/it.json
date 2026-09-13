@@ -1,0 +1,117 @@
+{
+    "patrol": {
+        "patrol-app": {
+            "title": "Pannello di pattuglia",
+            "selectAll": "Passo per passo",
+            "selectSingle": "Passaggio selezionato",
+            "stepBackward": "Un passo indietro",
+            "stepForward": "Un passo avanti",
+            "toggleStepping": "Attiva/disattiva pattuglia",
+            "toggleSteppingDisabled": "La funzione \"Pattuglia automatica\" è disattivata in combattimento e durante lo spostamento di singoli gettoni"
+        },
+        "settings": {
+            "patrolMaxSuspicious": {
+                "name": "Numero massimo di cicli sospetti",
+                "hint": "Numero di cicli durante i quali un token si guarda intorno prima di tentare di inseguire un PC"
+            },
+            "patrolMaxAlerted": {
+                "name": "Numero massimo di cicli di allerta",
+                "hint": "Numero di turni durante i quali un personaggio deve avere una linea di vista su un personaggio controllato prima di individuarlo effettivamente"
+            },
+            "patrolSound": {
+                "name": "Spotted Sound",
+                "hint": "Suono da riprodurre quando un PC viene individuato da un nemico"
+            },
+            "patrolAlert": {
+                "name": "Suono di avviso",
+                "hint": "Suono da riprodurre quando un nemico viene allertato da un personaggio giocante"
+            },
+            "openApplication": {
+                "name": "Pannello di pattuglia",
+                "hint": "Apri il pannello \"Patrol\". Puoi anche fare clic con il tasto Alt premuto sul pulsante \"Patrol\" nei controlli di scena di Token oppure utilizzare il comando macro 'ui.patrolApp.render({ force: true })'.",
+                "label": "Apri il pannello di pattuglia"
+            },
+            "minStepDelay": {
+                "name": "Ritardo minimo di ciclo",
+                "hint": "Ritardo minimo tra i cicli in millisecondi. Se inferiore alla durata dell'animazione, verrà utilizzata quest'ultima. Il tempo effettivo tra i movimenti dipenderà dagli aggiornamenti dei token di Foundry e dal loro spostamento sulla mappa. Valori più bassi possono comportare un elevato consumo di risorse."
+            },
+            "animationDuration": {
+                "name": "Durata dell'animazione",
+                "hint": "Durata delle animazioni di movimento dei token in millisecondi."
+            },
+            "hidePatrolButtonInSidebar": {
+                "name": "Nascondi il pulsante \"Pannello di pattuglia\" nella barra laterale",
+                "hint": "Nascondi il pulsante \"Patrol Panel\" nella barra laterale della Directory degli attori. Puoi comunque utilizzare il comando macro 'ui.patrolApp.render({ force: true })' oppure premere Alt+clic sinistro sul pulsante \"Patrol\" nei controlli della scena dei token."
+            },
+            "migrateOnStartupDialog": {
+                "name": "Apri la finestra di dialogo \"Migrazione\" all'avvio",
+                "hint": "Se abilitato, all'avvio il modulo aprirà una finestra di dialogo per eseguire la migrazione dei dati dalla struttura V13 a quella V14."
+            }
+        },
+        "tokenConfig": {
+            "enablePatrol": {
+                "name": "Attiva pattuglia"
+            },
+            "enableSpotting": {
+                "name": "Personaggi giocanti spot",
+                "hint": "Avere più gettoni di individuazione può richiedere molte risorse. Usare con cautela."
+            },
+            "doorBehavior": {
+                "name": "Può passare attraverso le porte?",
+                "choices": {
+                    "useRegionSettings": "Usa le impostazioni della regione (utilizza anche l'opzione \"Lascia la porta aperta\" della regione)",
+                    "unlocked": "Porte aperte",
+                    "locked": "Porte chiuse a chiave",
+                    "secret": "Porte segrete"
+                }
+            },
+            "leaveDoorOpen": {
+                "name": "Lascia la porta aperta",
+                "hint": "Probabilità che il Token lasci una porta aperta dopo averla attraversata"
+            }
+        },
+        "statusEffects": {
+            "patrolundetectable": {
+                "name": "Pattuglia - Non rilevabile"
+            }
+        },
+        "tools": {
+            "patrolToggle": {
+                "app": "Attiva/disattiva il pannello di pattuglia",
+                "stepping": "Attiva/disattiva Token Patrol"
+            }
+        }
+    },
+    "TYPES": {
+        "RegionBehavior": {
+            "patrol": {
+                "patrolArea": "Area di pattugliamento",
+                "whitelist": "Lista bianca",
+                "blacklist": "Lista nera",
+                "type": {
+                    "label": "Tipo",
+                    "hint": "Scegli se i personaggi pattuglieranno l'area o ne sorveglieranno i confini",
+                    "choices": {
+                        "area": "Area",
+                        "edge": "Edge"
+                    }
+                },
+                "weight": {
+                    "label": "Peso",
+                    "hint": "Quanto peso ha quest’area nell’algoritmo di pattugliamento. I pesi più elevati saranno preferiti rispetto a quelli più bassi."
+                },
+                "darkness": {
+                    "min": {
+                        "label": "Oscurità Min",
+                        "hint": "Livello minimo di oscurità affinché quest’area possa essere presa in considerazione per il pattugliamento."
+                    },
+                    "max": {
+                        "label": "Darkness Max",
+                        "hint": "Livello massimo di oscurità per quest'area affinché possa essere presa in considerazione per il pattugliamento."
+                    },
+                    "validationError": "Il valore minimo di oscurità deve essere inferiore a quello massimo."
+                }
+            }
+        }
+    }
+}

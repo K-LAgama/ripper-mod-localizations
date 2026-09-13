@@ -1,0 +1,91 @@
+{
+    "hp": {
+        "settings": {
+            "disable": {
+                "name": "停用計時器",
+                "hint": "停用戰鬥計時器"
+            },
+            "timerDuration": {
+                "name": "計時器持續時間",
+                "hint": "計時器的持續時間（以秒為單位）"
+            },
+            "style": {
+                "name": "風格",
+                "hint": "計時器的樣式",
+                "digits": "數字",
+                "circle": "圓圈",
+                "sand": "沙"
+            },
+            "countup": {
+                "name": "累計計算",
+                "hint": "計時器以遞增方式計時，而非遞減（僅限「數字」和「圓圈」樣式）"
+            },
+            "overtime": {
+                "name": "加班",
+                "hint": "計時器在達到最大允許時間後仍繼續運行"
+            },
+            "size": {
+                "name": "尺寸",
+                "hint": "計時器的尺寸"
+            },
+            "secondary-size": {
+                "name": "次要尺寸",
+                "hint": "次級計時器的尺寸"
+            },
+            "secondary-direction": {
+                "name": "次要方向",
+                "hint": "次級計時器的方向"
+            },
+            "windowless": {
+                "name": "無窗",
+                "hint": "在不開啟視窗的情況下顯示計時器"
+            },
+            "critical": {
+                "name": "關鍵閾值",
+                "hint": "達到此閾值後，計時器將進入臨界狀態並開始閃爍"
+            },
+            "secondsInsteadOfPercentage": {
+                "name": "關鍵時間應以秒為單位，而非百分比",
+                "hint": "預設情況下，關鍵閾值以總時間的百分比為單位。勾選此設定後，單位將改為秒。"
+            },
+            "goNext": {
+                "name": "繼續",
+                "hint": "計時結束後，切換至下一名戰士。"
+            },
+            "runForNpc": {
+                "name": "參選全國人民代表大會",
+                "hint": "在 NPC 的回合中啟動計時器"
+            },
+            "showOnUpdateCombatOnly": {
+                "name": "下回合的「首場演出新手」",
+                "hint": "當按下「開始戰鬥」、「下一回合」或「結束回合」時，首先顯示戰鬥計時器"
+            },
+            "critSoundPath": {
+                "name": "《Critical Sound》",
+                "hint": "計時器進入倒數階段時播放的聲音"
+            },
+            "endSoundPath": {
+                "name": "結束音效",
+                "hint": "計時器結束時播放的聲音"
+            },
+            "soundVol": {
+                "name": "音量",
+                "hint": "播放聲音的音量"
+            }
+        },
+        "contextMenu": {
+            "pause": "暫停",
+            "unpause": "履歷",
+            "reset": "重設",
+            "close": "關閉"
+        },
+        "create": {
+            "title": "快點！",
+            "paused": "暫停",
+            "time": "時間",
+            "timeError": "「時間」必須是一個大於 0 的數",
+            "name": "姓名",
+            "color": "顏色"
+        }
+    }
+}

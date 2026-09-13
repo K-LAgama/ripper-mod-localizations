@@ -1,157 +1,22 @@
 {
     "hexplorer": {
-        "cell-config": {
-            "brush-name": {
-                "label": "Nome del pennello"
-            },
-            "color": {
-                "label": "Colore"
-            },
-            "discover-button": {
-                "label": "Attiva l'azione Esplora",
-                "no-token": "Nessun gettone esploratore trovato."
-            },
-            "discovered": {
-                "hint": "Una cella esplorata è stata attraversata da un segnalino esploratore.",
-                "label": "Esplorato"
-            },
-            "execute-only-on-explore": {
-                "hint": "Esegui le attività della cella solo se la cella non è stata precedentemente esplorata.",
-                "label": "Esegui solo in Esplora"
-            },
-            "first-time-only": {
-                "hint": "Esegui l'attività di cui sopra solo la prima volta che l'esploratore si sposta in questa cella.",
-                "label": "Solo la prima volta"
-            },
-            "journal-entry": {
-                "hint": "Voce del diario da aprire con un clic.",
-                "label": "Voce nel diario"
-            },
-            "macros": {
-                "hint": "Macro da eseguire quando viene eseguita questa attività.",
-                "label": "Macro"
-            },
-            "region": {
-                "label": "Regione"
-            },
-            "remove-hidden": {
-                "hint": "Documenti da cui rimuovere lo stato nascosto quando viene eseguita questa attività. \nPossono essere luci, tessere, suoni, gettoni, ecc.",
-                "label": "Rimuovi nascosto"
-            },
-            "reveal": {
-                "hint": "Elenco di celle separate da virgole da rivelare. \nMaiusc Fare clic sull'area di disegno per aggiungere celle.",
-                "label": "Rivela celle",
-                "notification": "Cella aggiunta all'elenco di rivelazione."
-            },
-            "reveal-journal-entry": {
-                "hint": "Consenti ai giocatori di aprire la voce del diario associata a questa cella nella scheda Generale.",
-                "label": "Rivela la voce del diario"
-            },
-            "reveal-map-notes": {
-                "hint": "Dai il permesso di osservatore ai giocatori a tutte le note della mappa della scena presenti in questa cella.",
-                "label": "Rivela le note della mappa"
-            },
-            "reveal-tooltip": {
-                "hint": "Concedi il permesso di osservatore ai giocatori per la pagina del diario associata al tooltip.",
-                "label": "Rivela descrizione comando"
-            },
-            "revealRadius": {
-                "hint": "Il raggio da rivelare attorno a questa cella quando la si rivela. \nUn valore pari a 0 o più sovrascriverà l'impostazione del token Hexplorer.",
-                "label": "Rivela il raggio"
-            },
-            "revealed": {
-                "hint": "Una cella rivelata sarà visibile ai giocatori.",
-                "label": "Rivelato"
-            },
-            "roll-tables": {
-                "hint": "Roll Tabelle da rotolare quando si entra o si attraversa la cella.",
-                "label": "Tabelle a rulli"
-            },
-            "save-as-brush": {
-                "label": "Salva come pennello"
-            },
-            "speed-multiplier": {
-                "label": "Moltiplicatore di velocità"
-            },
-            "tabs": {
-                "activities": {
-                    "label": "Attività"
-                },
-                "basic": {
-                    "label": "Di base"
-                },
-                "discover-activities": {
-                    "hint": "Queste attività verranno eseguite quando l'esploratore attraversa la cella o termina il suo movimento al suo interno. \nAlcune attività possono essere eseguite solo la prima volta che l'esploratore si sposta nella cella.",
-                    "label": "Esplora le attività"
-                },
-                "explore-activities": {
-                    "hint": "Queste attività verranno eseguite quando la cella verrà rivelata per la prima volta.",
-                    "label": "Rivela attività"
-                }
-            },
-            "title": "Configura cella",
-            "tooltip": {
-                "label": "Descrizione comando"
-            }
-        },
-        "err": {
-            "gridless": "Heexplorer non è compatibile con le scene senza griglia. \nSeleziona un tipo di griglia."
+        "request": {
+            "explore": "Esplorare",
+            "reveal": "Svelare",
+            "advance-time": "Tempo d'anticipo",
+            "total-time": "Tempo totale",
+            "roll-tables": "Rotolare sul tavolo",
+            "move": "Mossa",
+            "journal-entry": "Rivela pagina",
+            "not-in-scene": "Esploratore: devi essere nella stessa scena del movimento richiesto per confermarlo.",
+            "player-message": "Richiesta di movimento inoltrata al Game Master."
         },
         "fog": {
             "showColor": "Attiva/disattiva la visualizzazione dei colori delle celle nelle celle rivelate"
         },
-        "hexplorer-app": {
-            "brushes": {
-                "apply": {
-                    "notification": "Pennello applicato a {count} celle.",
-                    "sameColor": "Stesso colore",
-                    "sameColorHint": "Applica il pennello a tutte le celle con lo stesso colore",
-                    "sameName": "Stesso nome",
-                    "sameNameHint": "Applica il pennello a tutte le celle con lo stesso nome della regione",
-                    "title": "Applica il pennello",
-                    "tooltip": "Applicare il pennello"
-                },
-                "hint": "Fare clic su una cella nell'area di disegno per configurarla e/o salvarla come pennello. \nFai clic sulle celle con un pennello selezionato per dipingere le celle invece di configurarle.",
-                "legend": "Spazzole",
-                "radius": "Raggio del pennello"
-            },
-            "reset-fow": {
-                "content": "Sei sicuro di voler reimpostare le celle rivelate? \nQuesta azione non può essere annullata.",
-                "label": "Reimposta le celle rivelate",
-                "title": "Reimpostare le celle rivelate?"
-            },
-            "settings": {
-                "legend": "Impostazioni",
-                "show-color": {
-                    "label": "Visualizza i colori delle celle nelle celle rivelate"
-                }
-            },
-            "title": "Esploratore"
-        },
-        "request": {
-            "advance-time": "Tempo d'anticipo",
-            "explore": "Esplorare",
-            "journal-entry": "Rivela pagina",
-            "move": "Mossa",
-            "not-in-scene": "Esploratore: devi essere nella stessa scena del movimento richiesto per confermarlo.",
-            "player-message": "Richiesta di movimento inoltrata al Game Master.",
-            "reveal": "Svelare",
-            "roll-tables": "Rotolare sul tavolo",
-            "total-time": "Tempo totale"
-        },
         "scene": {
             "enable": {
                 "name": "Abilita Hesploratore"
-            }
-        },
-        "settings": {
-            "autoTriggerExplore": {
-                "hint": "Attiva automaticamente le attività di esplorazione quando un token si sposta in una cella. \nSe il tuo sistema richiede un'azione manuale da parte dei giocatori per esplorare una cella, questa può essere disabilitata.",
-                "name": "Azione Esplora con attivazione automatica"
-            },
-            "hexTime": {
-                "hint": "Il tempo di animazione in millisecondi per spostare una cella.",
-                "name": "Animazione del movimento"
             }
         },
         "token": {
@@ -159,13 +24,161 @@
                 "name": "è HeExplorer?"
             },
             "revealRadius": {
-                "hint": "Il raggio dell'area rivelata in esagoni. \n0 significa che viene rivelato solo l'esagono su cui si trova il segnalino.",
-                "name": "Rivela il raggio"
+                "name": "Rivela il raggio",
+                "hint": "Il raggio dell'area rivelata in esagoni. \n0 significa che viene rivelato solo l'esagono su cui si trova il segnalino."
             },
             "speed": {
-                "hint": "La velocità di movimento del segnalino esploratore in unità di scena all'ora. \nViene utilizzato per calcolare l'avanzamento temporale.",
-                "name": "Velocità"
+                "name": "Velocità",
+                "hint": "La velocità di movimento del segnalino esploratore in unità di scena all'ora. \nViene utilizzato per calcolare l'avanzamento temporale."
             }
+        },
+        "settings": {
+            "hexTime": {
+                "name": "Animazione del movimento",
+                "hint": "Il tempo di animazione in millisecondi per spostare una cella."
+            },
+            "autoTriggerExplore": {
+                "name": "Azione Esplora con attivazione automatica",
+                "hint": "Attiva automaticamente le attività di esplorazione quando un token si sposta in una cella. \nSe il tuo sistema richiede un'azione manuale da parte dei giocatori per esplorare una cella, questa può essere disabilitata."
+            }
+        },
+        "hexplorer-app": {
+            "title": "Esploratore",
+            "brushes": {
+                "legend": "Spazzole",
+                "radius": "Raggio del pennello",
+                "hint": "Fare clic su una cella nell'area di disegno per configurarla e/o salvarla come pennello. \nFai clic sulle celle con un pennello selezionato per dipingere le celle invece di configurarle.",
+                "apply": {
+                    "title": "Applica il pennello",
+                    "sameColor": "Stesso colore",
+                    "sameColorHint": "Applica il pennello a tutte le celle con lo stesso colore",
+                    "sameName": "Stesso nome",
+                    "sameNameHint": "Applica il pennello a tutte le celle con lo stesso nome della regione",
+                    "tooltip": "Applicare il pennello",
+                    "notification": "Pennello applicato a {count} celle."
+                }
+            },
+            "settings": {
+                "legend": "Impostazioni",
+                "show-color": {
+                    "label": "Visualizza i colori delle celle nelle celle rivelate"
+                },
+                "always-banner": {
+                    "label": "Mostra sempre il banner della regione"
+                }
+            },
+            "reset-fow": {
+                "label": "Reimposta le celle rivelate",
+                "title": "Reimpostare le celle rivelate?",
+                "content": "Sei sicuro di voler reimpostare le celle rivelate? \nQuesta azione non può essere annullata."
+            },
+            "reset-discovered": {
+                "label": "Reimposta le regioni individuate",
+                "title": "Reimpostare le regioni individuate?",
+                "content": "Sei sicuro di voler azzerare le regioni individuate? Il banner verrà visualizzato nuovamente al primo accesso a ciascuna regione."
+            }
+        },
+        "cell-config": {
+            "title": "Configura cella",
+            "tabs": {
+                "basic": {
+                    "label": "Di base"
+                },
+                "activities": {
+                    "label": "Attività"
+                },
+                "discover-activities": {
+                    "label": "Esplora le attività",
+                    "hint": "Queste attività verranno eseguite quando l'esploratore attraversa la cella o termina il suo movimento al suo interno. \nAlcune attività possono essere eseguite solo la prima volta che l'esploratore si sposta nella cella."
+                },
+                "explore-activities": {
+                    "label": "Rivela attività",
+                    "hint": "Queste attività verranno eseguite quando la cella verrà rivelata per la prima volta."
+                }
+            },
+            "revealed": {
+                "label": "Rivelato",
+                "hint": "Una cella rivelata sarà visibile ai giocatori."
+            },
+            "revealRadius": {
+                "label": "Rivela il raggio",
+                "hint": "Il raggio da rivelare attorno a questa cella quando la si rivela. \nUn valore pari a 0 o più sovrascriverà l'impostazione del token Hexplorer."
+            },
+            "discovered": {
+                "label": "Esplorato",
+                "hint": "Una cella esplorata è stata attraversata da un segnalino esploratore."
+            },
+            "execute-only-on-explore": {
+                "label": "Esegui solo in Esplora",
+                "hint": "Esegui le attività della cella solo se la cella non è stata precedentemente esplorata."
+            },
+            "first-time-only": {
+                "label": "Solo la prima volta",
+                "hint": "Esegui l'attività di cui sopra solo la prima volta che l'esploratore si sposta in questa cella."
+            },
+            "hide-unrevealed-tooltip": {
+                "label": "Nascondi il tooltip non visualizzato",
+                "hint": "Nascondi il suggerimento quando i giocatori passano il mouse su una cella non ancora rivelata."
+            },
+            "reveal-tooltip": {
+                "label": "Rivela descrizione comando",
+                "hint": "Concedi il permesso di osservatore ai giocatori per la pagina del diario associata al tooltip."
+            },
+            "reveal-journal-entry": {
+                "label": "Rivela la voce del diario",
+                "hint": "Consenti ai giocatori di aprire la voce del diario associata a questa cella nella scheda Generale."
+            },
+            "reveal-map-notes": {
+                "label": "Rivela le note della mappa",
+                "hint": "Dai il permesso di osservatore ai giocatori a tutte le note della mappa della scena presenti in questa cella."
+            },
+            "color": {
+                "label": "Colore"
+            },
+            "region": {
+                "label": "Regione"
+            },
+            "reveal": {
+                "label": "Rivela celle",
+                "hint": "Elenco di celle separate da virgole da rivelare. \nMaiusc Fare clic sull'area di disegno per aggiungere celle.",
+                "notification": "Cella aggiunta all'elenco di rivelazione."
+            },
+            "remove-hidden": {
+                "label": "Rimuovi nascosto",
+                "hint": "Documenti da cui rimuovere lo stato nascosto quando viene eseguita questa attività. \nPossono essere luci, tessere, suoni, gettoni, ecc."
+            },
+            "macros": {
+                "label": "Macro",
+                "hint": "Macro da eseguire quando viene eseguita questa attività."
+            },
+            "speed-multiplier": {
+                "label": "Moltiplicatore di velocità"
+            },
+            "roll-tables": {
+                "label": "Tabelle a rulli",
+                "hint": "Roll Tabelle da rotolare quando si entra o si attraversa la cella."
+            },
+            "tooltip": {
+                "label": "Descrizione comando"
+            },
+            "journal-entry": {
+                "label": "Voce nel diario",
+                "hint": "Voce del diario da aprire con un clic."
+            },
+            "brush-name": {
+                "label": "Nome del pennello"
+            },
+            "save-as-brush": {
+                "label": "Salva come pennello"
+            },
+            "discover-button": {
+                "label": "Attiva l'azione Esplora",
+                "no-token": "Nessun gettone esploratore trovato."
+            }
+        },
+        "flags": {},
+        "err": {
+            "gridless": "Heexplorer non è compatibile con le scene senza griglia. \nSeleziona un tipo di griglia."
         }
     }
 }

@@ -1,0 +1,335 @@
+{
+    "puzzle-locks": {
+        "settings": {},
+        "general-lock-config": {
+            "header-buttons": {
+                "copyContentLink": "Skopiuj link do treści",
+                "unlock": "Otwórz układankę"
+            },
+            "title": "Ogólna konfiguracja zamków",
+            "permissionWarning": "Domyślnym właścicielem tego dokumentu nie jest ustawiona opcja „Brak”. W pewnych okolicznościach gracze mogą obejść tę blokadę. Zaleca się ustawienie domyślnego właściciela na „Brak”.",
+            "fixPermission": "Popraw przynależność",
+            "label": {
+                "label": "Etykieta",
+                "placeholder": "System zabezpieczeń drzwi"
+            },
+            "description": {
+                "label": "Opis",
+                "placeholder": "Jest to system zabezpieczający do drzwi."
+            },
+            "unlocked": {
+                "label": "Odblokowane"
+            },
+            "attempts": {
+                "label": "Próby",
+                "notes": "Dopuszczalna liczba prób; wartość -1 oznacza nieograniczoną liczbę prób."
+            },
+            "lockType": {
+                "label": "Typ zamka",
+                "configure": "Skonfiguruj",
+                "none": "Brak (wyłączone)",
+                "optgroupContext": "Wymaga kontekstu",
+                "optgroupNoContext": "Nie wymaga kontekstu",
+                "notes": "Rodzaj zagadki, który zostanie wykorzystany do zabezpieczenia dokumentu. Niektóre zagadki wymagają znajomości kontekstu, podczas gdy inne można rozwiązać bez żadnych informacji zewnętrznych."
+            },
+            "unlockSound": {
+                "label": "Odblokuj dźwięk"
+            },
+            "interactionSound": {
+                "label": "Dźwięk interakcji"
+            },
+            "backgroundImage": {
+                "label": "Obraz tła"
+            },
+            "glow": {
+                "label": "Efekt poświaty",
+                "notes": "Włącz efekty świecenia/cieniowania obramowań i tekstu – dzięki temu motyw będzie lepiej pasował do scenerii science fiction."
+            },
+            "textColor": {
+                "label": "Kolor tekstu"
+            },
+            "primaryColor": {
+                "label": "Kolor podstawowy",
+                "notes": "Niektóre typy zamków mogą nie korzystać z tego koloru. Pozostaw to pole puste, aby użyć domyślnego koloru zamka."
+            },
+            "secondaryColor": {
+                "label": "Kolor drugorzędny",
+                "notes": "Niektóre typy zamków mogą nie obsługiwać tego koloru. Pozostaw to pole puste, aby użyć domyślnego koloru zamka."
+            },
+            "primaryFont": {
+                "label": "Główna czcionka"
+            },
+            "secondaryFont": {
+                "label": "Czcionka dodatkowa",
+                "notes": "Niektóre typy zamków mogą nie korzystać z tej czcionki."
+            },
+            "font": {
+                "inherit": "Dziedziczyć"
+            },
+            "unlockMacro": {
+                "label": "Odblokuj makro",
+                "notes": "Makro uruchamiane po odblokowaniu dokumentu. W ramach tego makra można uzyskać dostęp do zmiennej „object”, aby pobrać odblokowany dokument, oraz do zmiennej „user”, aby pobrać dane użytkownika, który go odblokował."
+            },
+            "permission": {
+                "label": "O uprawnieniach do odblokowywania",
+                "notes": "Określa, jaki poziom uprawnień otrzymuje gracz w odniesieniu do dokumentu po jego odblokowaniu oraz czy uprawnienie to ma zostać przyznane wyłącznie graczowi, który go odblokował, czy wszystkim graczom. Jeśli dokumentem są drzwi, to ustawienie zostanie zignorowane, a drzwi zostaną odblokowane.",
+                "noChange": "Bez zmian",
+                "all": "Wszyscy gracze",
+                "unlocking": "Odblokowanie gracza"
+            }
+        },
+        "number-lock": {
+            "name": "Liczba/Znak",
+            "description": "Zabezpieczenie w stylu kodu PIN. Gracz musi wprowadzić prawidłowy kod, aby odblokować dokument. Aby nadać zabezpieczeniu bardziej tematyczny charakter, cyfry można zastąpić symbolami lub obrazkami.",
+            "playerInfo": "Ponieważ nie jest to zagadka, prowadzący będzie musiał udzielić graczom wskazówek lub instrukcji, jak wprowadzić prawidłowy kod.",
+            "code": {
+                "label": "Kod"
+            },
+            "keypad": {
+                "label": "Klawiatura"
+            }
+        },
+        "password-lock": {
+            "name": "Hasło",
+            "description": "Prosta blokada hasłem. Użytkownik musi wprowadzić prawidłowe hasło, aby odblokować dokument.",
+            "playerInfo": "Ponieważ nie jest to zagadka, prowadzący będzie musiał udzielić graczom wskazówek lub instrukcji, jak wprowadzić prawidłowe hasło.",
+            "password": {
+                "label": "Hasło",
+                "placeholder": "a$$w0rd"
+            }
+        },
+        "item-lock": {
+            "name": "Pozycja",
+            "description": "Zamykanie, które wymaga od gracza przeciągnięcia i upuszczenia jednego lub kilku przedmiotów w odpowiednie miejsca, aby odblokować dokument.",
+            "playerInfo": "Aby rozwiązać tę łamigłówkę, możesz albo podać graczom wskazówki kontekstowe lub podpowiedzi pozwalające ustalić, które przedmioty należy umieścić w poszczególnych miejscach, albo użyć konkretnych obrazków w polach, które zawierają informacje niezbędne do odgadnięcia właściwych przedmiotów.",
+            "item": {
+                "label": "Nazwa pozycji"
+            },
+            "itemImage": {
+                "label": "Zdjęcie automatu"
+            },
+            "deleteItems": {
+                "label": "Usuń elementy",
+                "notes": "Jeśli to pole zostanie zaznaczone, przedmioty zostaną usunięte z ekwipunku gracza po odblokowaniu zamka."
+            }
+        },
+        "switches-lock": {
+            "name": "Przełączniki",
+            "description": "Zamek, który wymaga od gracza ustawienia zestawu przełączników binarnych w odpowiednich pozycjach, aby odblokować dokument.",
+            "playerInfo": "Ponieważ nie jest to zagadka, prowadzący będzie musiał udzielić graczom wskazówek lub instrukcji, jak prawidłowo ustawić przełączniki.",
+            "switchesSolution": {
+                "label": "Konfiguracja przełączników",
+                "notes": "Rozwiązanie i konfiguracja przełączników w formacie „0110”. Każda cyfra oznacza jeden przełącznik, gdzie 0 oznacza pozycję wyłączoną, a 1 – włączoną. Liczba przełączników jest dowolna."
+            },
+            "showSwitches": {
+                "label": "Pokaż przełączniki",
+                "notes": "Czy wyświetlać przyciski przełącznika. Jeśli opcja jest wyłączona, wyświetlane będą jedynie kontrolki stanu włączenia/wyłączenia."
+            }
+        },
+        "cryptex-lock": {
+            "name": "Cryptex",
+            "description": "Zamek, w którym gracz musi obrócić zestaw cylindrów do właściwego położenia, aby uzyskać prawidłową kombinację. Do oznaczenia znaków na cylindrach można używać emoji lub glifów. Poszczególne cylindry mogą mieć różne zestawy znaków.",
+            "playerInfo": "Aby rozwiązać tę zagadkę, można albo podać graczom zewnętrzne wskazówki kontekstowe pozwalające poznać niektóre lub wszystkie postacie, albo – poprzez ograniczenie liczby postaci na każdym cylindrze – umożliwić graczom odgadnięcie rozwiązania metodą prób i błędów.",
+            "solution": {
+                "label": "Rozwiązanie"
+            },
+            "cylinder": {
+                "label": "Cylinder",
+                "notes": "Cylinder stosowany w kryptekse. Poszczególne znaki cylindra należy oddzielać przecinkami."
+            },
+            "glyphs": {
+                "label": "Glify",
+                "notes": "Symbole, które można wykorzystać w kryptexie. Poszczególne symbole należy oddzielać przecinkami."
+            }
+        },
+        "sudoku-lock": {
+            "name": "Sudoku",
+            "description": "Zamek, który wymaga od gracza rozwiązania łamigłówki sudoku, aby odblokować dokument. Domyślne liczby można zastąpić obrazkami lub symbolami, aby zamek lepiej pasował do tematyki.",
+            "playerInfo": "Aby rozwiązać tę łamigłówkę, gracze będą potrzebowali wiedzy na temat zasad sudoku; można też podać im wskazówkę lub instrukcje dotyczące sposobu rozwiązania.",
+            "generate": "Wygeneruj Sudoku",
+            "difficulty": {
+                "label": "Poziom trudności"
+            },
+            "grid": {
+                "4": "4x4",
+                "9": "9×9",
+                "label": "Siatka"
+            },
+            "sudoku": {
+                "label": "Sudoku"
+            },
+            "key": {
+                "label": "Klucz"
+            }
+        },
+        "image-wheel": {
+            "name": "Koło obrazów",
+            "description": "Zamek, który wymaga od gracza obrócenia zestawu koncentrycznych pierścieni do właściwej pozycji w celu dopasowania obrazu.",
+            "playerInfo": "Do rozwiązania tej łamigłówki nie jest potrzebny żaden dodatkowy kontekst — gracze mogą po prostu obracać koła, aż obraz się ułoży.",
+            "image": {
+                "label": "Obraz"
+            },
+            "wheelCount": {
+                "label": "Liczba kół"
+            },
+            "angleStep": {
+                "label": "Krok kątowy"
+            },
+            "fixed": {
+                "label": "Koło stałe",
+                "notes": "Koło, którego nie należy obracać. Gdzie 1 oznacza koło znajdujące się najbardziej na zewnątrz."
+            }
+        },
+        "mastermind-lock": {
+            "name": "Mastermind",
+            "description": "Zamek, który wymaga od gracza odgadnięcia prawidłowej kombinacji kolorów lub liter, aby odblokować dokument. Za każdym razem, gdy gracz próbuje odblokować dokument, otrzymuje informację zwrotną o tym, ile kolorów lub liter jest poprawnych i znajduje się we właściwym miejscu. Kolor zielony oznacza poprawny kolor i pozycję, żółty – poprawny kolor, ale niewłaściwą pozycję, a czerwony – nieprawidłowy kolor.",
+            "playerInfo": "Aby rozwiązać tę zagadkę, gracze mogą wykorzystać informacje uzyskane podczas poprzednich prób, aby na tej podstawie sformułować uzasadnione przypuszczenia co do prawidłowej kombinacji. Chociaż wiedza metarelacyjna nie jest bezwzględnie konieczna, może pomóc graczom w formułowaniu bardziej świadomych przypuszczeń.",
+            "reset": "Resetuj",
+            "solution": {
+                "label": "Rozwiązanie",
+                "notes": "Rozwiązanie zagadki z zamkiem „Mastermind”. Każdy kolor lub literę należy oddzielić przecinkiem. Można używać nazw kolorów CSS, takich jak „red”, lub kodów szesnastkowych, takich jak „#ff0000”."
+            },
+            "pipOptions": {
+                "label": "Kołki",
+                "notes": "Kolory lub litery, których gracz może używać do odgadnięcia rozwiązania. Każdy kolor lub literę należy oddzielić przecinkiem. Można używać kolorów CSS, takich jak „red”, lub kodów szesnastkowych, takich jak „#ff0000”."
+            }
+        },
+        "fill-blanks-lock": {
+            "name": "Wypełnij luki",
+            "description": "Zamykanie, które wymaga od gracza uzupełnienia luk w tekście, aby odblokować dokument. Gracz musi wpisać właściwe znaki we właściwej kolejności.",
+            "playerInfo": "Aby rozwiązać tę zagadkę, gracze mogą wykorzystać kontekst zagadki do uzupełnienia brakujących słów. Można również udzielić im wskazówek lub instrukcji dotyczących sposobu rozwiązania zagadki.",
+            "solution": {
+                "label": "Rozwiązanie",
+                "notes": "Rozwiązanie zadania polegającego na uzupełnieniu luk. Powinien to być pełny, kompletny tekst z uzupełnionymi lukami.",
+                "placeholder": "Szybki brązowy lis przeskakuje leniwego psa."
+            },
+            "text": {
+                "label": "Tekst",
+                "notes": "Tekst zawierający luki, które gracz musi wypełnić. Luki należy oznaczyć znakami podkreślenia.",
+                "placeholder": "Brązowy lis _____ przeskakuje ____ psa."
+            },
+            "caseSensitive": {
+                "label": "Wyróżnianie wielkości liter"
+            }
+        },
+        "mosaic-lock": {
+            "name": "Mozaika",
+            "description": "Zamek, który wymaga od gracza ułożenia układanki mozaikowej, aby odblokować dokument. Gracz musi klikać na płytki, aby je obracać i ułożyć obrazek.",
+            "playerInfo": "Do rozwiązania tej łamigłówki nie jest potrzebny żaden kontekst zewnętrzny – gracze mogą po prostu obracać płytki, aż obrazek się ułoży.",
+            "mosaicImage": {
+                "label": "Obraz mozaikowy",
+                "notes": "Obraz, który gracz musi uzupełnić. Aby uzyskać najlepsze efekty, zaleca się użycie obrazu o kształcie kwadratu."
+            },
+            "mosaicSize": {
+                "label": "Rozmiar mozaiki",
+                "notes": "Liczba wierszy i kolumn w mozaice."
+            }
+        },
+        "sound-lock": {
+            "name": "Melody",
+            "description": "Zamek, który wymaga od gracza wysłuchania melodii i wprowadzenia prawidłowej sekwencji nut, aby odblokować dokument.",
+            "playerInfo": "Chociaż do rozwiązania tej zagadki nie jest potrzebna żadna dodatkowa wiedza, gracze będą musieli wykazać się dobrym słuchem muzycznym. Gracze lepiej zaznajomieni z teorią muzyki będą mieli łatwiejsze zadanie przy rozwiązywaniu tej zagadki.",
+            "sequence": {
+                "label": "Sekwencja",
+                "notes": "Sekwencja nut, które gracz musi wprowadzić, aby odblokować dokument. Poszczególne nuty należy oddzielać przecinkami. Można używać następujących nut: C, C#, D, D#, E, F, F#, G, G#, A, A#, B. Można również używać następujących oznaczeń do podwyższania lub obniżania oktawy: +C, -C, ++A, --B. Aby ustawić niestandardowy czas trwania każdej nuty (w milisekundach), można użyć następującej notacji: C500, D#1000."
+            },
+            "chordDuration": {
+                "label": "Czas trwania",
+                "notes": "Czas trwania każdej nuty w milisekundach."
+            },
+            "pauseBetweenNotes": {
+                "label": "Przerwa między nutami",
+                "notes": "Czas trwania przerwy między poszczególnymi nutami wyrażony w milisekundach."
+            }
+        },
+        "fifteen-lock": {
+            "name": "Płytki przesuwne",
+            "description": "Zamek, który wymaga od gracza rozwiązania układanki przesuwanej, aby odblokować dokument. Gracz musi przesuwać płytki tak, aby ułożyć prawidłowy obrazek. Pusta płytka musi znajdować się w prawym dolnym rogu, aby odblokować dokument.",
+            "playerInfo": "Do rozwiązania tej łamigłówki nie jest potrzebny żaden kontekst zewnętrzny – gracze mogą po prostu przesuwać płytki, aż obrazek będzie kompletny.",
+            "shuffleDialog": "Losowe ruchy:",
+            "image": {
+                "label": "Obraz",
+                "notes": "Obraz, który gracz musi ułożyć, przesuwając kafelki. Aby uzyskać najlepsze efekty, zaleca się użycie obrazu w kształcie kwadratu."
+            },
+            "size": {
+                "label": "Siatka",
+                "notes": "Liczba wierszy i kolumn w układance przesuwnej."
+            }
+        },
+        "four-by-four-lock": {
+            "name": "Pionki i gwiazdy",
+            "description": "Zagadka polegająca na tym, że gracz musi umieścić pionki na planszy tak, aby utworzyły określony wzór. Niektóre pola zawierają gwiazdki, które muszą zostać zakryte przez pionki; liczba gwiazdek, które należy zakryć, jest podana poniżej i zależy od rozmiaru planszy. Każdy wiersz i każda kolumna muszą zawierać dokładnie taką liczbę pionków, jaka jest wskazana w nagłówkach odpowiednich kolumn lub wierszy.",
+            "playerInfo": "Jeśli opcja „Gwiazdki” jest włączona, gracze będą potrzebowali wskazówki, aby dowiedzieć się, ile gwiazdek muszą zakryć. W przeciwnym razie zagadkę można rozwiązać bez żadnych dodatkowych informacji.",
+            "pawnImage": {
+                "label": "Obrazka zastawu",
+                "notes": "Obrazek przedstawiający pionki."
+            },
+            "starImage": {
+                "label": "Zdjęcie gwiazdy",
+                "notes": "Obraz przedstawiający gwiazdy."
+            },
+            "noStars": {
+                "label": "Zignoruj gwiazdki",
+                "notes": "Jeśli opcja ta zostanie zaznaczona, gwiazdki zostaną usunięte, a gracz będzie musiał jedynie umieścić pionki we właściwych pozycjach."
+            },
+            "gridSize": {
+                "label": "Rozmiar siatki",
+                "notes": "Liczba wierszy i kolumn w tabeli."
+            },
+            "generate": "Utwórz układankę",
+            "puzzleGrid": {
+                "label": "Siatka puzzli",
+                "notes": "Siatka krzyżówki. Jeśli chcesz stworzyć własną krzyżówkę, trzymaj się składni wygenerowanej krzyżówki. Poniżej przedstawiono stan po rozwiązaniu, gdzie 0 oznacza puste pole, 1 – pionek, 2 – gwiazdkę, a 3 – pionek na gwiazdce."
+            },
+            "pawnNumber": "Pionki do ustawienia",
+            "starNumber": "Gwiazdy, o których będziemy pisać"
+        },
+        "match-lock": {
+            "name": "Dopasowanie słów i obrazków",
+            "description": "Zamek, który wymaga od gracza dopasowania słów w celu odblokowania dokumentu. Jeśli ustawiono hasło, nieprawidłowe litery zostaną przekreślone, a pozostałe utworzą hasło. W takim przypadku gracze muszą wpisać hasło, aby odblokować dokument.",
+            "playerInfo": "Aby rozwiązać tę zagadkę, gracze mogą wykorzystać jej kontekst do dopasowania słów. Można im również podać wskazówki lub instrukcje dotyczące jej rozwiązania.",
+            "enterSecretWord": "Wpisz hasło.",
+            "matchTable": {
+                "label": "Tabela meczów",
+                "notes": "W tabeli zawierającej słowa do dopasowania można zamiast słów używać również ścieżek do obrazów. Pierwsza kolumna zawiera słowa, które mają zostać dopasowane, a druga kolumna – słowa, z którymi mają zostać dopasowane. Każda para słów powinna być oddzielona znakiem „|” (pionowa kreska).\nLewa kolumna zostanie wyświetlona w niezmienionej postaci, natomiast prawa kolumna zostanie przetasowana."
+            },
+            "secretWord": {
+                "label": "Słowo-klucz",
+                "notes": "Jeśli ta opcja zostanie włączona, w środkowej części układanki pojawią się losowo rozmieszczone litery; gdy gracz poprawnie dopasuje słowa, błędne litery zostaną przekreślone, a pozostałe utworzą tajne słowo."
+            },
+            "dictionary": {
+                "label": "Słownik",
+                "notes": "Słownik, który będzie wykorzystywany do generowania losowych liter."
+            }
+        },
+        "flags": {},
+        "attempts": "Pozostałe próby",
+        "headerConfig": "Zamek-łamigłówka",
+        "unlocked": "Odblokowane",
+        "how-to": "Jak to działa?",
+        "how-to-player": "Instrukcje dla graczy",
+        "chatMessage": "próbuje odblokować",
+        "sidebar-buttons": {
+            "unlock": "Próba odblokowania",
+            "configure": "Skonfiguruj blokadę",
+            "shareToChat": "Udostępnij na czacie",
+            "zoomPlus": "Powiększ",
+            "zoomMinus": "Pomniejsz",
+            "shuffle": "Łamigłówka z przetasowaniem",
+            "close": "Zamknij"
+        },
+        "notifications": {
+            "noLock": "Ten dokument nie został zablokowany.",
+            "alreadyUnlocked": "Ten dokument jest już odblokowany.",
+            "noLockSelected": "Nie wybrano żadnego typu zamka.",
+            "unlocked": "Odblokowane.",
+            "noGM": "Aby odblokować ten dokument, konieczne jest zalogowanie się jako GM.",
+            "failedAttempt": "Nie udało się odblokować.",
+            "contentLinkCopied": "Link do treści został skopiowany do schowka.",
+            "locked": "Ten dokument jest zablokowany. Jako GM możesz go otworzyć w zwykły sposób.",
+            "resetSuccess": "Puzzle zostały pomyślnie zresetowane.",
+            "ownershipFixed": "Domyślna opcja własności ustawiona na „Brak”.",
+            "noAttempts": "Nie pozostały już żadne próby."
+        }
+    }
+}

@@ -1,0 +1,184 @@
+{
+    "hexplorer": {
+        "request": {
+            "explore": "Odkryj",
+            "reveal": "Ujawnić",
+            "advance-time": "Czas z wyprzedzeniem",
+            "total-time": "Czas całkowity",
+            "roll-tables": "Stół rolkowy",
+            "move": "Przenieś",
+            "journal-entry": "Strona podglądu",
+            "not-in-scene": "Hexplorer: Aby zatwierdzić żądany ruch, musisz znajdować się w tej samej scenie, w której ma on zostać wykonany.",
+            "player-message": "Prośba o przemieszczenie została przekazana mistrzowi gry."
+        },
+        "fog": {
+            "showColor": "Włącz/wyłącz wyświetlanie kolorów komórek w odsłoniętych komórkach"
+        },
+        "scene": {
+            "enable": {
+                "name": "Włącz Hexplorer"
+            }
+        },
+        "token": {
+            "enable": {
+                "name": "Czy to Hexplorer?"
+            },
+            "revealRadius": {
+                "name": "Promień ujawnienia",
+                "hint": "Promień odsłoniętego obszaru w heksach. Wartość 0 oznacza, że odsłonięty jest tylko heks, na którym znajduje się żeton."
+            },
+            "speed": {
+                "name": "Prędkość",
+                "hint": "Prędkość ruchu żetona eksploratora w jednostkach scenicznych na godzinę. Służy to do obliczania upływu czasu."
+            }
+        },
+        "settings": {
+            "hexTime": {
+                "name": "Animacja ruchu",
+                "hint": "Czas animacji w milisekundach potrzebny do przesunięcia jednej komórki."
+            },
+            "autoTriggerExplore": {
+                "name": "Automatyczne uruchamianie akcji „Explore”",
+                "hint": "Automatycznie uruchamiaj działania związane z eksploracją, gdy pionek wejdzie do pola. Jeśli Twój system wymaga od graczy ręcznego wykonania czynności w celu zbadania pola, funkcję tę można wyłączyć."
+            }
+        },
+        "hexplorer-app": {
+            "title": "Hexplorer",
+            "brushes": {
+                "legend": "Pędzle",
+                "radius": "Promień pędzla",
+                "hint": "Kliknij komórkę na obszarze roboczym, aby ją skonfigurować i/lub zapisać jako pędzel. Kliknij komórki przy wybranym pędzlu, aby je pomalować zamiast konfigurować.",
+                "apply": {
+                    "title": "Zastosuj pędzel",
+                    "sameColor": "Ten sam kolor",
+                    "sameColorHint": "Zaznacz wszystkie komórki o tym samym kolorze za pomocą pędzla",
+                    "sameName": "Ta sama nazwa",
+                    "sameNameHint": "Zastosuj pędzel do wszystkich komórek o tej samej nazwie regionu",
+                    "tooltip": "Nałóż pędzlem",
+                    "notification": "Zastosowano pędzel do {count} komórek."
+                }
+            },
+            "settings": {
+                "legend": "Ustawienia",
+                "show-color": {
+                    "label": "Wyświetlanie kolorów komórek w komórkach ujawnionych"
+                },
+                "always-banner": {
+                    "label": "Zawsze wyświetlaj baner regionu"
+                }
+            },
+            "reset-fow": {
+                "label": "Zresetuj zaznaczone komórki",
+                "title": "Czy zresetować zaznaczone komórki?",
+                "content": "Czy na pewno chcesz zresetować zaznaczone komórki? Tego działania nie można cofnąć."
+            },
+            "reset-discovered": {
+                "label": "Zresetuj wykryte regiony",
+                "title": "Czy zresetować odkryte regiony?",
+                "content": "Czy na pewno chcesz zresetować wykryte regiony? Baner pojawi się ponownie przy pierwszym wejściu do poszczególnych regionów."
+            }
+        },
+        "cell-config": {
+            "title": "Konfiguruj komórkę",
+            "tabs": {
+                "basic": {
+                    "label": "Podstawowe"
+                },
+                "activities": {
+                    "label": "Działania"
+                },
+                "discover-activities": {
+                    "label": "Odkryj atrakcje",
+                    "hint": "Czynności te zostaną wykonane, gdy postać przechodzi przez pole lub kończy na nim swój ruch. Niektóre czynności mogą zostać wykonane tylko wtedy, gdy postać po raz pierwszy wkracza na dane pole."
+                },
+                "explore-activities": {
+                    "label": "Zobacz zadania",
+                    "hint": "Czynności te zostaną wykonane w momencie pierwszego wyświetlenia komórki."
+                }
+            },
+            "revealed": {
+                "label": "Ujawniono",
+                "hint": "Odkryta komórka będzie widoczna dla graczy."
+            },
+            "revealRadius": {
+                "label": "Promień ujawnienia",
+                "hint": "Promień, w którym mają być wyświetlane elementy wokół tej komórki podczas jej ujawniania. Wartość równa 0 lub większa zastąpi ustawienie tokenu w programie Hexplorer."
+            },
+            "discovered": {
+                "label": "Zbadane",
+                "hint": "Komórka została zbadana przez pionek „hexplorer”."
+            },
+            "execute-only-on-explore": {
+                "label": "Wykonaj tylko podczas eksploracji",
+                "hint": "Wykonaj czynności związane z komórką tylko wtedy, gdy nie została ona wcześniej zbadana."
+            },
+            "first-time-only": {
+                "label": "Tylko przy pierwszym zakupie",
+                "hint": "Powyższą czynność należy wykonać tylko wtedy, gdy program „hexplorer” po raz pierwszy przejdzie do tej komórki."
+            },
+            "hide-unrevealed-tooltip": {
+                "label": "Ukryj nieujawnioną podpowiedź",
+                "hint": "Ukryj podpowiedź, gdy gracz najeżdża kursorem na komórkę, która nie została odsłonięta."
+            },
+            "reveal-tooltip": {
+                "label": "Pokaż podpowiedź",
+                "hint": "Przyznaj graczom uprawnienia obserwatora do strony dziennika powiązanej z podpowiedzią."
+            },
+            "reveal-journal-entry": {
+                "label": "Pokaż wpis w dzienniku",
+                "hint": "Umożliw graczom otwarcie wpisu dziennika powiązanego z tą komórką w zakładce „Ogólne”."
+            },
+            "reveal-map-notes": {
+                "label": "Pokaż uwagi na mapie",
+                "hint": "Przyznaj graczom uprawnienia obserwatora do wszystkich notatek dotyczących mapy sceny znajdujących się w tej komórce."
+            },
+            "color": {
+                "label": "Kolor"
+            },
+            "region": {
+                "label": "Region"
+            },
+            "reveal": {
+                "label": "Pokaż komórki",
+                "hint": "Lista komórek do wyświetlenia, rozdzielonych przecinkami. Aby dodać komórki, naciśnij klawisz Shift i kliknij na obszarze roboczym.",
+                "notification": "Komórka dodana do listy ujawnionych."
+            },
+            "remove-hidden": {
+                "label": "Usuń ukryte",
+                "hint": "Elementy, z których ma zostać usunięty status ukrycia po wykonaniu tej czynności. Mogą to być światła, płytki, dźwięki, tokeny itp."
+            },
+            "macros": {
+                "label": "Makra",
+                "hint": "Makra, które mają zostać uruchomione podczas wykonywania tej czynności."
+            },
+            "speed-multiplier": {
+                "label": "Współczynnik przyspieszenia"
+            },
+            "roll-tables": {
+                "label": "Stoły rolkowe",
+                "hint": "Tabele rzutów, z których należy skorzystać przy wchodzeniu do komórki lub przemieszczaniu się przez nią."
+            },
+            "tooltip": {
+                "label": "Podpowiedź"
+            },
+            "journal-entry": {
+                "label": "Wpis do dziennika",
+                "hint": "Wpis do dziennika, który otwiera się po kliknięciu."
+            },
+            "brush-name": {
+                "label": "Nazwa pędzla"
+            },
+            "save-as-brush": {
+                "label": "Zapisz jako pędzel"
+            },
+            "discover-button": {
+                "label": "Wyzwalacz, Eksploracja, Działanie",
+                "no-token": "Nie znaleziono żetonu heksplorer."
+            }
+        },
+        "flags": {},
+        "err": {
+            "gridless": "Hexplorer nie obsługuje scen bez siatki. Wybierz typ siatki."
+        }
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "fvtt-youtube-player": {
+        "deleteTrack": "Usunąć utwór?",
+        "deleteTrackContent": "Czy na pewno chcesz usunąć ten utwór?",
+        "deletePlaylist": "Usunąć playlistę?",
+        "deletePlaylistContent": "Czy na pewno chcesz usunąć tę playlistę?",
+        "fetchingTitle": "Pobieranie tytułu filmu...",
+        "playlistName": "Nazwa listy odtwarzania",
+        "playlistNameContent": "Importujesz listę odtwarzania. Czy chcesz utworzyć nową listę odtwarzania, czy dodać utwory do bieżącej listy odtwarzania? Pozostaw to pole puste, aby dodać utwory do bieżącej listy odtwarzania.",
+        "TOOLTIP": {
+            "play": "Zagraj",
+            "stop": "Stop",
+            "toggle-playlists": "Przełącz listy odtwarzania",
+            "add-to-playlist": "Dodaj do listy odtwarzania",
+            "create-playlist": "Utwórz listę odtwarzania",
+            "delete-playlist": "Usuń playlistę",
+            "delete-track": "Usuń utwór",
+            "rename-playlist": "Zmień nazwę listy odtwarzania",
+            "sound-library": "Biblioteka dźwięków",
+            "loop": "Włącz/wyłącz powtarzanie",
+            "toggle-playlist": "Włącz/wyłącz automatyczne odtwarzanie",
+            "search": "Wyszukaj w serwisie YouTube",
+            "copy-url": "Skopiuj adres URL",
+            "configure-track": "Konfiguruj ścieżkę",
+            "add-to-sound-library": "Dodaj do biblioteki dźwięków"
+        },
+        "settings": {
+            "googleApiKey": {
+                "name": "Klucz API serwisu YouTube",
+                "hint": "API służy do analizowania list odtwarzania i przeprowadzania wyszukiwań. Żądanie zostanie przekierowane przez moje serwery, ale możesz użyć własnego klucza API, aby ominąć ograniczenia częstotliwości. Klucz API jest wymagany do korzystania z funkcji wyszukiwania. Możesz go uzyskać pod adresem https://console.developers.google.com/apis/credentials"
+            },
+            "importExport": {
+                "name": "Import/Eksport",
+                "label": "Otwórz okno dialogowe importu/eksportu",
+                "hint": "Importuj lub eksportuj listy odtwarzania"
+            }
+        },
+        "import-export": {
+            "title": "Importowanie/eksportowanie list odtwarzania",
+            "import": "Importuj",
+            "export": "Eksport",
+            "imported": "Listy odtwarzania zostały pomyślnie zaimportowane"
+        },
+        "track-configuration": {
+            "title": "Konfiguracja toru",
+            "track-title": "Tytuł utworu",
+            "track-url": "Adres URL lub identyfikator utworu",
+            "url": "Adres URL",
+            "tags": "Tagi",
+            "rename-track": "Zmień nazwę utworu"
+        },
+        "tags-configuration": {
+            "title": "Konfiguracja tagów",
+            "create-tag": "Utwórz tag",
+            "tag-name": "Nazwa tagu",
+            "tag-color": "Kolor tagu",
+            "tag-label": "Nazwa tagu",
+            "delete-tag": "Usuń tag",
+            "create-tag-error": "Wprowadź nazwę tagu i kolor tagu"
+        },
+        "sound-library": {
+            "title": "Biblioteka dźwięków",
+            "add-tracks": "Dodaj utwory",
+            "import-tracks": "Importuj utwory",
+            "import-tracks-textarea": "W tym miejscu wklej adresy URL lub identyfikatory utworów/list odtwarzania"
+        },
+        "app": {},
+        "flags": {},
+        "noApiKey": "Ostrzeżenie: Nie ustawiono klucza API. Aby uzyskać dostęp do funkcji wyszukiwania, należy ustawić klucz API serwisu YouTube w ustawieniach modułu. Więcej informacji znajdziesz na stronie Wiki."
+    }
+}

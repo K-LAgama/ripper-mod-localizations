@@ -1,0 +1,98 @@
+{
+    "fvtt-paper-doll-ui": {
+        "settings": {
+            "globalConfigMenu": {
+                "name": "Paper Doll 全局设置",
+                "hint": "自定义每种类型的空白图片和槽位数量。",
+                "label": "配置纸娃娃"
+            },
+            "hideActorHeaderText": {
+                "name": "隐藏“演员标题”按钮上的文字",
+                "hint": "隐藏“演员标题”按钮中的文本。"
+            },
+            "paperDollPosition": {
+                "name": "纸娃娃姿势",
+                "hint": "纸娃娃展开后的位置。请注意，如果左右两侧空间不足，纸娃娃将被放置在中间。",
+                "label": "职位",
+                "choices": {
+                    "left": "左",
+                    "right": "对",
+                    "center": "中心"
+                }
+            },
+            "autoOpen": {
+                "name": "自动打开",
+                "hint": "打开角色卡时，自动打开纸娃娃。"
+            },
+            "allowNonOwned": {
+                "name": "允许使用非自有物品",
+                "hint": "允许将非自有物品（例如，来自侧边栏或资料汇编的物品）添加到纸娃娃中。此设置适用于没有物品栏系统的自定义系统，通常应保持关闭状态。"
+            },
+            "playerOwnedOnly": {
+                "name": "仅限玩家拥有",
+                "hint": "仅对玩家拥有的角色启用“纸娃娃”功能。"
+            }
+        },
+        "app": {
+            "paper-doll": {
+                "title": "纸娃娃",
+                "config": "配置",
+                "disallowed": "该物品无法装备在此插槽中。"
+            },
+            "actor-config": {
+                "title": "参与者配置",
+                "img": {
+                    "label": "图片",
+                    "placeholder": "使用演员照片"
+                },
+                "objectFit": {
+                    "label": "图像适配",
+                    "contain": "包含",
+                    "cover": "封面"
+                },
+                "autoOpen": {
+                    "label": "自动打开",
+                    "useDefault": "使用默认设置",
+                    "true": "永远",
+                    "false": "绝不"
+                },
+                "playerOwnedOnly": {
+                    "label": "仅限玩家拥有",
+                    "hint": "仅对玩家拥有的角色启用“纸娃娃”功能。"
+                }
+            },
+            "paper-doll-global-config": {
+                "title": "Paper Doll 全局配置",
+                "img": "图标",
+                "filter": {
+                    "label": "自定义筛选器",
+                    "hint": "一个用于创建包含可装备到该插槽的物品的窗口的脚本。“item”指正在检查的物品。示例：return item.type === 'weapon';"
+                },
+                "simpleFilter": {
+                    "label": "基本筛选器",
+                    "hint": "仅筛选具有此类型的项目。"
+                },
+                "how": {
+                    "add": "点击 `+ 添加` 按钮，添加一个新插槽。",
+                    "remove": "右键单击插槽即可将其删除。",
+                    "image": "左键单击图片，将其选定为该插槽的图片。"
+                },
+                "HUE_ROTATE": {
+                    "label": "色相"
+                },
+                "EQUIPPED_PATH": {
+                    "label": "装备路径"
+                },
+                "MAIN_COLOR": {
+                    "label": "颜色"
+                }
+            }
+        },
+        "hotkeys": {
+            "togglePaperDoll": {
+                "name": "切换纸娃娃"
+            }
+        },
+        "flags": {}
+    }
+}

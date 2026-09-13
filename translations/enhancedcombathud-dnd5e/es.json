@@ -36,6 +36,13 @@
             "macroPanel": {
                 "name": "Panel de macros",
                 "hint": "Mostrar un panel de macros para cada personaje que refleja las macros de la barra de acceso rápido"
+            },
+            "explodeItemActivities": {
+                "name": "Desglosar elementos en actividades",
+                "hint": "Si se debe tratar cada actividad como un botón independiente en el HUD",
+                "only-weapons": "Mostrar solo las armas",
+                "always": "Mostrar siempre",
+                "never": "No ampliar nunca"
             }
         },
         "hud": {

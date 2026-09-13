@@ -1,4 +1,11 @@
 {
+    "TYPES": {
+        "JournalEntryPage": {
+            "mastercrafted": {
+                "mastercrafted": "Ein meisterhaftes Rezept"
+            }
+        }
+    },
     "mastercrafted": {
         "mastercrafted": "Meisterhaftes Rezept",
         "craft": "Basteln",
@@ -199,6 +206,14 @@
             "migrateOnStartup": {
                 "name": "Einstellungen beim Start migrieren",
                 "hint": "Wenn diese Option aktiviert ist, migriert das Modul die Journal-Daten beim Start. Mit dem Makro „game.modules.get(„mastercrafted“).API.migration.showManualMigrationDialog()“ können Sie Ihre Einstellungen manuell migrieren."
+            },
+            "dontShowButtonOnNpc": {
+                "name": "Schaltfläche „Ausblenden“ in der NPC-Kopfzeile",
+                "hint": "Wenn diese Option aktiviert ist, wird die Schaltfläche zum Öffnen des Rezeptbuchs auf den NPC-Karten nicht angezeigt."
+            },
+            "mainFolderName": {
+                "name": "Name des Hauptordners",
+                "hint": "Wenn ein Ordnername angegeben wird, wird in der Mastercrafted-Benutzeroberfläche nur der Inhalt dieses Ordners angezeigt. Andernfalls versucht das Modul, den Hauptordner automatisch zu erkennen."
             }
         }
     }

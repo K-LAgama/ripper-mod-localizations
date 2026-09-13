@@ -116,6 +116,10 @@
                 "label": "Sólo la primera vez",
                 "hint": "Solo ejecute la actividad anterior la primera vez que el heexplorador se mueva a esta celda."
             },
+            "hide-unrevealed-tooltip": {
+                "label": "Ocultar la información sobre herramientas no mostrada",
+                "hint": "Ocultar la información emergente cuando los jugadores pasen el cursor por encima de una celda que no esté revelada."
+            },
             "reveal-tooltip": {
                 "label": "Mostrar información sobre herramientas",
                 "hint": "Otorgue permiso de observador a los jugadores para la página del diario asociada con la información sobre herramientas."

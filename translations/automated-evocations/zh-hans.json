@@ -1,0 +1,74 @@
+{
+    "AE": {
+        "custombindings": {
+            "add": "添加绑定",
+            "bindingstitle": "编辑自定义键位绑定",
+            "bindingtitle": "编辑绑定",
+            "tt": {
+                "spellname": "法术名称",
+                "edit": "编辑",
+                "delete": "删除",
+                "creaturename": "生物名称"
+            },
+            "sett": {
+                "label": "配置自定义绑定",
+                "name": "自定义绑定",
+                "hint": "配置自定义快捷键"
+            }
+        },
+        "pick3d": "点击3D画布中的某一点即可召唤。",
+        "dialogs": {
+            "companionManager": {
+                "title": "伴侣管理员",
+                "confirm": {
+                    "title": "删除伴侣",
+                    "content": "<p>您确定要删除这位同伴吗？</p>"
+                }
+            }
+        },
+        "actorSheetBtn": "同伴",
+        "animations": {
+            "fire": "火",
+            "air": "空气",
+            "lightning": "闪电",
+            "water": "水",
+            "energy1": "能源",
+            "magic1": "魔法",
+            "heart": "Doki-Doki",
+            "music": "渐强",
+            "fourelements": "四大元素",
+            "music2": "和弦",
+            "darkness": "黑暗",
+            "ice1": "冰",
+            "magic2": "咒术",
+            "lightning2": "风暴"
+        },
+        "groups": {
+            "elemental": "元素",
+            "magical": "神奇的",
+            "z-none": "其他"
+        },
+        "settings": {
+            "storeonactor": {
+                "title": "将伴侣存储在Actor中",
+                "hint": "默认情况下，将随从存储在角色上，而不是用户上。"
+            },
+            "enableautomations": {
+                "title": "启用自动化",
+                "hint": "在施法时启用随从自动化系统。"
+            },
+            "autoclose": {
+                "title": "自动关闭",
+                "hint": "召唤后自动关闭伙伴窗口。"
+            },
+            "hidebutton": {
+                "title": "隐藏“伴侣”按钮",
+                "hint": "隐藏角色面板上的随从按钮。"
+            },
+            "restrictOwned": {
+                "title": "仅限自有演员",
+                "hint": "将随从列表限制为仅显示已拥有的随从角色。"
+            }
+        }
+    }
+}

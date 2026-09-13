@@ -1,0 +1,91 @@
+{
+    "hp": {
+        "settings": {
+            "disable": {
+                "name": "禁用计时器",
+                "hint": "禁用战斗计时器"
+            },
+            "timerDuration": {
+                "name": "计时器时长",
+                "hint": "计时器的持续时间（以秒为单位）"
+            },
+            "style": {
+                "name": "风格",
+                "hint": "计时器的样式",
+                "digits": "数字",
+                "circle": "圆",
+                "sand": "沙"
+            },
+            "countup": {
+                "name": "累加",
+                "hint": "计时器计数方向为正向（仅限“数字”和“圆圈”样式）"
+            },
+            "overtime": {
+                "name": "加班",
+                "hint": "超过最大允许时间后，计时器仍继续运行"
+            },
+            "size": {
+                "name": "尺寸",
+                "hint": "计时器的尺寸"
+            },
+            "secondary-size": {
+                "name": "次要尺寸",
+                "hint": "二级定时器的尺寸"
+            },
+            "secondary-direction": {
+                "name": "次要方向",
+                "hint": "辅助计时器的方向"
+            },
+            "windowless": {
+                "name": "无窗的",
+                "hint": "在不显示窗口的情况下显示计时器"
+            },
+            "critical": {
+                "name": "临界阈值",
+                "hint": "达到该阈值后，计时器将进入临界状态并开始闪烁"
+            },
+            "secondsInsteadOfPercentage": {
+                "name": "关键时间使用“秒”而非“百分比”",
+                "hint": "默认情况下，临界阈值以总时间的百分比为单位。勾选此设置后，单位将改为秒。"
+            },
+            "goNext": {
+                "name": "继续",
+                "hint": "计时器结束时，转到下一名参战者。"
+            },
+            "runForNpc": {
+                "name": "竞选全国人大代表",
+                "hint": "在NPC回合时启动计时器"
+            },
+            "showOnUpdateCombatOnly": {
+                "name": "下回合首次登场",
+                "hint": "当点击“开始战斗”、“下一回合”或“结束回合”时，首先显示战斗计时器"
+            },
+            "critSoundPath": {
+                "name": "《Critical Sound》",
+                "hint": "计时器进入倒计时关键阶段时播放的音效"
+            },
+            "endSoundPath": {
+                "name": "结束音效",
+                "hint": "计时器结束时播放的声音"
+            },
+            "soundVol": {
+                "name": "音量",
+                "hint": "播放声音的音量"
+            }
+        },
+        "contextMenu": {
+            "pause": "暂停",
+            "unpause": "简历",
+            "reset": "重置",
+            "close": "关闭"
+        },
+        "create": {
+            "title": "快点！",
+            "paused": "已暂停",
+            "time": "时间",
+            "timeError": "time 必须是一个大于 0 的数值",
+            "name": "姓名",
+            "color": "颜色"
+        }
+    }
+}

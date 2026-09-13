@@ -1,37 +1,37 @@
 {
     "tokenflip": {
-        "settings": {
-            "enableAutoFlip": {
-                "hint": "Abilita il lancio automatico dei token. \nSe non stai utilizzando la funzione di capovolgimento automatico, puoi disattivare questa impostazione per risparmiare un po' di prestazioni.",
-                "name": "Abilita capovolgimento automatico"
-            },
-            "flipSpeed": {
-                "hint": "La velocità con cui i gettoni girano la faccia. \nL'impostazione predefinita è 0,1.",
-                "name": "Velocità di rotazione"
-            }
-        },
         "token-flip-config": {
+            "title": "Configura il lancio del token",
             "add": "Aggiungi nuovo volto",
-            "autoFlip": {
-                "inCombat": "In combattimento",
-                "label": "Capovolgimento automatico",
-                "none": "Nessuno",
-                "outOfCombat": "Fuori combattimento"
-            },
-            "autoFlipMacro": {
-                "hint": "Una macro viene eseguita quando l'attore o uno dei suoi elementi viene aggiornato e quando un GM viene caricato in una scena. \nRestituisci vero per capovolgere questa faccia. \nConsulta la wiki per ulteriori informazioni.",
-                "label": "Macro di capovolgimento automatico"
-            },
-            "copiedId": "ID copiato negli appunti",
-            "copyID": "Copia documento d'identità",
-            "faceId": "ID viso",
             "flip": "Gira gettone",
             "model3d": "Modello 3D",
+            "faceId": "ID viso",
             "protoWarning": "ATTENZIONE: a causa dei bug del Core Foundry che interessano i token prototipo, si consiglia vivamente di impostare il lancio del token su un token nella scena, quindi assegnare il token al token prototipo.",
-            "title": "Configura il lancio del token",
+            "copiedId": "ID copiato negli appunti",
+            "copyID": "Copia documento d'identità",
+            "autoFlip": {
+                "label": "Capovolgimento automatico",
+                "none": "Nessuno",
+                "inCombat": "In combattimento",
+                "outOfCombat": "Fuori combattimento"
+            },
             "transition": {
-                "flip": "Capovolgi",
-                "label": "Transizione"
+                "label": "Transizione",
+                "flip": "Capovolgi"
+            },
+            "autoFlipMacro": {
+                "label": "Macro di capovolgimento automatico",
+                "hint": "Una macro viene eseguita quando l'attore o uno dei suoi elementi viene aggiornato e quando un GM viene caricato in una scena. \nRestituisci vero per capovolgere questa faccia. \nConsulta la wiki per ulteriori informazioni."
+            }
+        },
+        "settings": {
+            "flipSpeed": {
+                "name": "Velocità di rotazione",
+                "hint": "La velocità con cui i gettoni girano la faccia. \nL'impostazione predefinita è 0,1."
+            },
+            "enableAutoFlip": {
+                "name": "Abilita capovolgimento automatico",
+                "hint": "Abilita il lancio automatico dei token. \nSe non stai utilizzando la funzione di capovolgimento automatico, puoi disattivare questa impostazione per risparmiare un po' di prestazioni."
             }
         }
     }

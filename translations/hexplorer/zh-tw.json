@@ -1,0 +1,184 @@
+{
+    "hexplorer": {
+        "request": {
+            "explore": "探索",
+            "reveal": "揭曉",
+            "advance-time": "預付時間",
+            "total-time": "總時間",
+            "roll-tables": "捲在桌上",
+            "move": "移動",
+            "journal-entry": "顯示頁面",
+            "not-in-scene": "Hexplorer：您必須與被請求移動的對象位於同一個場景中，才能確認該移動。",
+            "player-message": "移動請求已轉交給遊戲主持人。"
+        },
+        "fog": {
+            "showColor": "切換已顯示儲存格的儲存格顏色顯示"
+        },
+        "scene": {
+            "enable": {
+                "name": "啟用 Hexplorer"
+            }
+        },
+        "token": {
+            "enable": {
+                "name": "Hexplorer 是什麼？"
+            },
+            "revealRadius": {
+                "name": "顯示半徑",
+                "hint": "已揭露區域的半徑（以六邊形為單位）。若為 0，則僅揭露該標記所在的六邊形。"
+            },
+            "speed": {
+                "name": "速度",
+                "hint": "「六角探險家」標記的移動速度，單位為每小時的場景單位。此數值用於計算時間推進。"
+            }
+        },
+        "settings": {
+            "hexTime": {
+                "name": "動作動畫",
+                "hint": "移動一個儲存格所需的動畫時間（以毫秒為單位）。"
+            },
+            "autoTriggerExplore": {
+                "name": "自動觸發探索動作",
+                "hint": "當代幣移動到某個格子時，會自動觸發探索活動。若您的系統需要玩家手動操作才能探索該格子，則可將此功能停用。"
+            }
+        },
+        "hexplorer-app": {
+            "title": "Hexplorer",
+            "brushes": {
+                "legend": "畫筆",
+                "radius": "筆刷半徑",
+                "hint": "點擊畫布上的單元格以進行設定，並/或將其儲存為筆刷。當選取筆刷時，點擊單元格可進行塗繪，而非進行設定。",
+                "apply": {
+                    "title": "套用筆刷",
+                    "sameColor": "同色",
+                    "sameColorHint": "將筆刷套用至所有顏色相同的儲存格",
+                    "sameName": "同名",
+                    "sameNameHint": "將筆刷套用至所有具有相同區域名稱的儲存格",
+                    "tooltip": "套用筆刷",
+                    "notification": "已將筆刷套用至 {count} 個儲存格。"
+                }
+            },
+            "settings": {
+                "legend": "設定",
+                "show-color": {
+                    "label": "在已揭示的儲存格中顯示儲存格顏色"
+                },
+                "always-banner": {
+                    "label": "始終顯示地區橫幅"
+                }
+            },
+            "reset-fow": {
+                "label": "重設已顯示的儲存格",
+                "title": "重置已揭露的儲存格？",
+                "content": "您確定要重設已揭示的格子嗎？此操作無法撤銷。"
+            },
+            "reset-discovered": {
+                "label": "重設已發現的區域",
+                "title": "重置已發現的區域？",
+                "content": "您確定要重置已探索的區域嗎？當您首次進入這些區域時，此提示橫幅將會再次顯示。"
+            }
+        },
+        "cell-config": {
+            "title": "設定儲存單元",
+            "tabs": {
+                "basic": {
+                    "label": "基礎"
+                },
+                "activities": {
+                    "label": "活動"
+                },
+                "discover-activities": {
+                    "label": "探索活動",
+                    "hint": "當六角探索者經過該格或在其上結束移動時，這些動作將會執行。某些動作僅能在六角探索者首次移動至該格時執行。"
+                },
+                "explore-activities": {
+                    "label": "顯示活動",
+                    "hint": "這些動作將在儲存格首次顯示時執行。"
+                }
+            },
+            "revealed": {
+                "label": "揭曉",
+                "hint": "被揭示的格子將對玩家可見。"
+            },
+            "revealRadius": {
+                "label": "顯示半徑",
+                "hint": "顯示此儲存格時，其周圍要顯示的半徑。若設定為 0 或更大，將覆寫 hexplorer 的標記設定。"
+            },
+            "discovered": {
+                "label": "已探索",
+                "hint": "一個已探索的格子已被六邊形探索標記穿越過。"
+            },
+            "execute-only-on-explore": {
+                "label": "僅在探索時執行",
+                "hint": "僅當該單元格先前尚未被探索過時，才執行該單元格的活動。"
+            },
+            "first-time-only": {
+                "label": "僅限首次",
+                "hint": "僅在 hexplorer 首次移動到此格時，才執行上述操作。"
+            },
+            "hide-unrevealed-tooltip": {
+                "label": "隱藏未顯示的工具提示",
+                "hint": "當玩家將游標懸停在未揭示的儲存格上時，隱藏工具提示。"
+            },
+            "reveal-tooltip": {
+                "label": "顯示工具提示",
+                "hint": "授予玩家對與工具提示相關的日誌頁面的「觀察者」權限。"
+            },
+            "reveal-journal-entry": {
+                "label": "顯示日誌條目",
+                "hint": "允許玩家在「一般」分頁中開啟與此儲存格相關的日誌條目。"
+            },
+            "reveal-map-notes": {
+                "label": "顯示地圖註解",
+                "hint": "授予玩家對此儲存格內所有場景地圖筆記的「觀察者」權限。"
+            },
+            "color": {
+                "label": "顏色"
+            },
+            "region": {
+                "label": "地區"
+            },
+            "reveal": {
+                "label": "顯示儲存格",
+                "hint": "以逗號分隔的待顯示儲存格清單。按住 Shift 鍵並點擊畫布以新增儲存格。",
+                "notification": "已將該儲存格新增至顯示清單中。"
+            },
+            "remove-hidden": {
+                "label": "取消隱藏",
+                "hint": "執行此活動時，用於解除隱藏狀態的物件。可以是燈光、磁磚、聲音、代幣等。"
+            },
+            "macros": {
+                "label": "巨集",
+                "hint": "當此活動執行時，將執行的巨集。"
+            },
+            "speed-multiplier": {
+                "label": "速度倍數"
+            },
+            "roll-tables": {
+                "label": "擲骰表",
+                "hint": "進入或穿越該格時，請擲骰子決定移動步數。"
+            },
+            "tooltip": {
+                "label": "工具提示"
+            },
+            "journal-entry": {
+                "label": "日記條目",
+                "hint": "點擊後開啟日誌條目。"
+            },
+            "brush-name": {
+                "label": "筆刷名稱"
+            },
+            "save-as-brush": {
+                "label": "另存為筆刷"
+            },
+            "discover-button": {
+                "label": "觸發 探索 行動",
+                "no-token": "未找到 hexplorer 代幣。"
+            }
+        },
+        "flags": {},
+        "err": {
+            "gridless": "Hexplorer 不相容於無網格場景。請選擇一種網格類型。"
+        }
+    }
+}

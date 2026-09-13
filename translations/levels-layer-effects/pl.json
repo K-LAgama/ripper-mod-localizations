@@ -1,0 +1,10 @@
+{
+    "levels-layer-effects": {
+        "settings": {
+            "disableBlur": {
+                "name": "Wyłącz rozmycie",
+                "hint": "Wyłącz efekt rozmycia – włącz tę opcję na słabszych urządzeniach."
+            }
+        }
+    }
+}

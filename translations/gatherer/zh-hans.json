@@ -1,0 +1,121 @@
+{
+    "TYPES": {
+        "JournalEntryPage": {
+            "gatherer": {
+                "gatherer": "采集者"
+            }
+        }
+    },
+    "gatherer": {
+        "gatherer": "采集者",
+        "gathered": "汇集",
+        "found": "已找到",
+        "quantity": "数量",
+        "minigame": {
+            "title": "“采集者”小游戏"
+        },
+        "sheet": {
+            "err": {
+                "noDraws": "该聚集点已“耗尽”，必须重置后才能再次使用。",
+                "noActor": "没有演员来执行聚会。请选择一个代币或为自己分配一个角色。",
+                "noReq": "您不符合在此聚集的条件。缺失：",
+                "noItem": "未找到该项目。请检查拼写并重试。",
+                "noExp": "你没有从这个地点采集到任何资源……",
+                "noGM": "GM用户必须保持在线状态才能进行资源采集。"
+            },
+            "gather": "聚集",
+            "reset": "重置",
+            "edit": "编辑",
+            "remaining": "剩余拉力",
+            "time": "重置于",
+            "quantity": "数量",
+            "waitingFirst": "等待首次抽签"
+        },
+        "flags": {
+            "table": {
+                "label": "可卷式桌子"
+            },
+            "time": {
+                "label": "时间",
+                "placeholder": "距离重置还有多少小时"
+            },
+            "quantity": {
+                "label": "数量",
+                "placeholder": "数字或卷数表达式"
+            },
+            "draws": {
+                "label": "拉力",
+                "placeholder": "在该位置用尽之前就已提取",
+                "notes": "留空即使用来自相应聚合页面的内容"
+            },
+            "require": {
+                "label": "要求",
+                "placeholder": "以逗号分隔的项目列表"
+            },
+            "minigame": {
+                "label": "小游戏",
+                "placeholder": "迷你游戏所需时间（以毫秒为单位）"
+            },
+            "expression": {
+                "label": "表达",
+                "placeholder": "要执行的宏条件"
+            },
+            "systemAbil": {
+                "label": "检查"
+            },
+            "DC": {
+                "label": "DC",
+                "placeholder": "DC"
+            },
+            "toolCheck": {
+                "label": "工具",
+                "placeholder": "工具名称"
+            },
+            "toolDC": {
+                "label": "DC",
+                "placeholder": "DC"
+            },
+            "gatherSheet": {
+                "label": "收获表",
+                "placeholder": "在此处添加“Drop Gatherer”页面"
+            },
+            "modifierList": {
+                "label": "修饰词",
+                "add": "添加修饰符",
+                "hint": "如果骰子掷出的结果或表达式返回的值等于或大于DC（取较高者），则根据修正值表达式调整收集到的物品数量。 你可以在修正表达式的开头添加一个数学运算符；如果未提供运算符，则默认使用加号（+）。例如，*1d4 表示将收集到的物品数量乘以 1d4。"
+            }
+        },
+        "gatherer-actor-config": {
+            "title": "收集器配置",
+            "notes": "为了获取目标令牌，请按以下内容创建一个宏：",
+            "notes2": "或者使用键盘快捷键："
+        },
+        "error": {
+            "notGatherer": "这不是一份“Gatherer”表格。请选择一份“Gatherer”表格，然后重试。",
+            "noDraws": "从这只生物身上已经无法再获取任何资源了。",
+            "noJournal": "该代币没有关联的集合点。请选择一个具有有效集合点的代币，然后重试。",
+            "cantHarvest": "尚未满足获取该代币的条件"
+        },
+        "settings": {
+            "resourcePath": {
+                "name": "Harvest 资源路径",
+                "hint": "用于检查是否可以“收获”的路径。例如，对于《龙与地下城5版》（DnD5e），这将是“attributes.hp.value”，用于检查该代币是否还活着。"
+            },
+            "quantityPath": {
+                "name": "数量路径",
+                "hint": "项目数量的数据路径。从“system”（不包括该项）开始。例如，对于 DnD5e，该路径为“quantity”。"
+            },
+            "resourceValue": {
+                "name": "挖掘资源价值",
+                "hint": "用于判断是否可以进行“收割”的数值。例如在《龙与地下城第五版》（DnD5e）中，该数值为“0”，用于判断该标记是否已无生命值。"
+            },
+            "enableHarvesting": {
+                "name": "启用采集功能"
+            },
+            "migrateOnStartup": {
+                "name": "启动时迁移设置",
+                "hint": "如果启用了此功能，该模块将在启动时迁移日志数据。您可以使用宏 'game.modules.get(\"gatherer\").API.migration.showManualMigrationDialog()' 手动迁移您的设置。"
+            }
+        }
+    }
+}

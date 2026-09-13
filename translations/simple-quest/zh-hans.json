@@ -1,0 +1,896 @@
+{
+    "TYPES.JournalEntryPage": {
+        "simple-quest": {
+            "quest": "SQ Quest",
+            "character": "SQ 角色",
+            "lore": "SQ 背景故事",
+            "map": "SQ 地图",
+            "event": "SQ活动",
+            "era": "SQ时代",
+            "achievement": "SQ 成就",
+            "creature": "SQ 生物",
+            "location": "SQ 位置",
+            "faction": "SQ阵营",
+            "investigation": "SQ调查"
+        }
+    },
+    "simple-quest": {
+        "tutorialTips": {
+            "tipsExplaination": {
+                "title": "教程提示",
+                "text": "这是一条教程提示。您可以在模块设置中关闭提示。点击“关闭”按钮可隐藏提示，直至下次刷新；或点击骰子按钮阅读另一条提示。"
+            },
+            "quickVisibility": {
+                "title": "快速查看",
+                "text": "使用 <kbd>Alt + 左键点击</kbd> 可快速隐藏或显示玩家的“简单任务”元素。在侧边栏中，<kbd>Alt + 左键点击</kbd> 某页面可切换其“观察者”权限。 您还可以<kbd>按住 Alt 键并左键单击</kbd>任务目标的复选框来切换其隐藏状态，并对 Simple Quest 地图页面上的标记执行同样的操作。"
+            },
+            "quickModal": {
+                "title": "以模态窗口形式打开",
+                "text": "在“简单任务”页面上，对内容链接使用 <kbd>Alt + 左键单击</kbd> 可打开一个模态窗口。这将以模态窗口的形式打开该页面，让您无需切换当前页面即可查看该页面的内容。 您可以在任意位置 <kbd>双击左键</kbd>，或点击右上角的“X”按钮来关闭模态窗口。"
+            },
+            "questRecap": {
+                "title": "任务回顾",
+                "text": "在“任务”标签页侧边栏中切换“摘要”按钮，即可按任务状态（进行中、已完成、失败和未发现）对任务进行分组，而无需浏览文件夹树。每个组均可展开或折叠，且系统会记住折叠状态，以便您下次访问时使用。"
+            },
+            "tabContextMenu": {
+                "title": "标签自定义",
+                "text": "<kbd>右键单击</kbd>任意标签页标题，即可打开“文件夹”上下文菜单。您还可以在“Simple Quest”根目录内创建新的子文件夹。新文件夹将作为新的动态标签页显示。"
+            },
+            "staticTabs": {
+                "title": "特殊目录",
+                "text": "侧边栏顶部的四个图标标签页（“我的日记”、“派对日记”、“时间线”和“成就”）是特殊的静态标签页，与初始设置时创建的专用文件夹相关联。 <kbd>右键单击</kbd>任何静态标签页，即可编辑其对应的文件夹。如果标签页对应的文件夹尚未创建，该标签页将显示为灰色。您可以在文件夹配置窗口中将某个文件夹指定为特殊目录。"
+            },
+            "sectionOrder": {
+                "title": "章节排序",
+                "text": "编辑日志页面时，每个结构化部分（如图标列表、属性栏或表格）都设有“顺序”字段。设置一个数字即可控制该部分在页面上的显示位置。数字越小的部分显示在前面。"
+            },
+            "insertPage": {
+                "title": "更多文本样式",
+                "text": "您可以使用 ProseMirror 工具栏中的“注释”和“插入页面”下拉菜单，添加主题文本样式，例如用于背景设定、生物或 NPC 的彩色注释，以及装饰性的羊皮纸笔记或卷轴。"
+            },
+            "sectionHidden": {
+                "title": "隐藏章节",
+                "text": "日志页面上的每个结构化部分都有一个“隐藏”复选框。勾选后，该部分将对非所有者玩家隐藏。作为页面所有者，您仍然可以看到该部分，但其周围会显示虚线边框，以表明该部分对您的玩家是隐藏的。"
+            },
+            "pageVisibility": {
+                "title": "页面可见性",
+                "text": "侧边栏中日志条目和页面右侧显示的彩色圆点，表示哪些玩家可以看到该文档。如果某页面没有圆点，则任何玩家都无法看到该页面。 每个圆点代表一位权限与默认设置不同的用户。当默认权限高于“无”时，会显示“所有玩家”的圆点。这些指示符仅对游戏管理员可见，并可通过“显示日志所有权”设置进行切换。"
+            }
+        },
+        "collapseSidebar": {
+            "collapse": "折叠侧边栏",
+            "expand": "展开侧边栏"
+        },
+        "givePermission": {
+            "none": "{pageName} 已被对玩家隐藏",
+            "observer": "{pageName} 已对玩家开放"
+        },
+        "modal": {
+            "doubleClickToClose": "双击以关闭"
+        },
+        "app": {
+            "title": "简单的任务",
+            "myJournal": "我的日记",
+            "partyJournal": "《党刊》",
+            "timeline": "时间轴",
+            "achievements": "成就",
+            "search": "搜索"
+        },
+        "achievements": {
+            "openAll": "显示全部",
+            "uncategorized": "未分类"
+        },
+        "ColorHtmlBlock": {
+            "color": "HTML 颜色",
+            "order": "订单",
+            "hidden": "隐藏"
+        },
+        "HtmlBlock": {
+            "order": "订单",
+            "hidden": "隐藏"
+        },
+        "createExtendedStructure": {
+            "title": "创建扩展结构",
+            "content": "这将为 Simple Quest 创建一个新的文件夹结构。如果您是新用户和/或希望充分发掘该模块的全部潜力，建议您执行此操作。"
+        },
+        "IconListBlock": {
+            "label": "图标列表标签",
+            "name": "姓名",
+            "description": "描述",
+            "icon": "图标",
+            "hidden": "隐藏",
+            "order": "订单"
+        },
+        "StatsBlock": {
+            "label": "统计标签",
+            "name": "姓名",
+            "color": "颜色",
+            "value": "值",
+            "min": "最小值",
+            "max": "最大值",
+            "hidden": "隐藏",
+            "order": "订单"
+        },
+        "TableBlock": {
+            "label": "表格标签",
+            "name": "姓名",
+            "value": "值",
+            "icon": "图标",
+            "hidden": "隐藏",
+            "order": "订单"
+        },
+        "ColorTagsBlock": {
+            "label": "彩色标签",
+            "tag": "标签",
+            "color": "颜色",
+            "hidden": "隐藏",
+            "order": "订单"
+        },
+        "ResourcesBlock": {
+            "label": "资源标签",
+            "name": "姓名",
+            "current": "当前",
+            "max": "最大值",
+            "color": "颜色",
+            "hidden": "隐藏",
+            "order": "订单"
+        },
+        "MainTagBlock": {
+            "color": "主标签颜色",
+            "value": "主要标签文本",
+            "hidden": "隐藏"
+        },
+        "data-model-config": {
+            "title": "项目配置"
+        },
+        "journal": {
+            "name": "姓名",
+            "description": "描述",
+            "header": "页眉",
+            "subtitle": "副标题",
+            "tags": "标签",
+            "status": "状态",
+            "rename": "编辑名称",
+            "color": "颜色",
+            "image": "图片",
+            "caption": "图注",
+            "type": "类型",
+            "width": "宽度",
+            "height": "高度",
+            "aspectRatio": {
+                "label": "宽高比",
+                "auto": "原文",
+                "landscape": "风景",
+                "portrait": "肖像",
+                "square": "正方形"
+            },
+            "imageFilter": {
+                "label": "图像滤镜"
+            },
+            "checkbox": {
+                "tooltip": "左键单击以切换“已完成”状态<br>右键单击以切换“失败”状态",
+                "tooltip-hide": "<br>按 Alt 键并左键单击以显示/隐藏"
+            },
+            "location": {
+                "population": "人口",
+                "area": "区域",
+                "government": "政府",
+                "demonym": "地名词",
+                "ruler": "直尺",
+                "founded": "成立"
+            },
+            "faction": {
+                "leader": "领导者",
+                "headquarters": "总部",
+                "memberCount": "会员数量",
+                "alignment": "对齐",
+                "goals": "目标",
+                "rivals": "竞争对手",
+                "allies": "盟友"
+            },
+            "awardedTo": {
+                "label": "授予",
+                "hint": "请选择拥有此成就的用户。"
+            },
+            "showTitle": {
+                "label": "显示标题",
+                "hint": "向尚未获得该成就的玩家显示成就名称。"
+            },
+            "showContent": {
+                "label": "显示内容",
+                "hint": "向尚未获得该成就的玩家显示成就描述。"
+            },
+            "showImage": {
+                "label": "显示图片",
+                "hint": "向尚未获得该成就的玩家显示成就图片。"
+            },
+            "showColor": {
+                "label": "显示颜色",
+                "hint": "向尚未获得该成就的玩家显示成就的强调色。"
+            },
+            "assign": {
+                "title": "你确定吗？",
+                "add": "将该成就授予 {name} 吗？",
+                "remove": "从{name}处移除此成就？"
+            },
+            "observerObjectivePermission": {
+                "label": "观察者 目标 权限",
+                "hint": "覆盖全局设置。“默认”遵循模块设置，“允许”和“拒绝”则会覆盖该设置。",
+                "choices": {
+                    "default": "默认（遵循设置）",
+                    "allow": "允许",
+                    "deny": "拒绝"
+                }
+            },
+            "quest": {
+                "questGiver": "任务发布者",
+                "location": "位置",
+                "difficulty": "难度",
+                "deadline": "截止日期"
+            },
+            "event": {
+                "year": "年",
+                "duration": "持续时间（年）",
+                "icon": "图标",
+                "flipped": "翻转",
+                "offset": "偏移量（像素）",
+                "banner": "横幅",
+                "label": "标签",
+                "hidden": "隐藏"
+            },
+            "era": {
+                "eraStart": "时代的开端",
+                "eraEnd": "一个时代的终结",
+                "color": "颜色",
+                "banner": "横幅",
+                "label": "标签",
+                "hidden": "隐藏"
+            },
+            "investigation": {
+                "saveViewport": "保存视口",
+                "tools": "工具",
+                "background": "背景",
+                "backgroundType": {
+                    "label": "背景类型",
+                    "choices": {
+                        "centered": "居中",
+                        "repeating": "重复",
+                        "pattern": "图案"
+                    }
+                },
+                "stamp": {
+                    "completed": "印章：已完成",
+                    "failed": "标记：失败",
+                    "skull": "印章：骷髅头"
+                },
+                "tooltip": {
+                    "createConnection": "建立连接",
+                    "edit": "编辑项目",
+                    "duplicate": "重复项目",
+                    "delete": "删除项目"
+                },
+                "add": "添加项目",
+                "type": {
+                    "polaroid": "宝丽来",
+                    "newspaper": "报纸",
+                    "sticky-note": "便签",
+                    "note": "注",
+                    "card": "卡片"
+                },
+                "color": "颜色",
+                "thickness": "厚度",
+                "text": "文本",
+                "item": {
+                    "title": "项目配置",
+                    "name": "姓名",
+                    "color": "颜色",
+                    "textColor": "文字颜色",
+                    "image": "图片",
+                    "caption": "图注",
+                    "width": "宽度",
+                    "height": "高度",
+                    "rotation": "旋转",
+                    "order": "订单",
+                    "delete": {
+                        "title": "删除此项？",
+                        "content": "您确定要删除此项目吗？此操作无法撤销。"
+                    },
+                    "type": {
+                        "label": "类型",
+                        "default": "基础",
+                        "polaroid": "宝丽来",
+                        "newspaper": "报纸",
+                        "sticky-note": "便签",
+                        "note": "注",
+                        "simple-label": "简单标签",
+                        "paper-sheet": "纸张",
+                        "image": "图片"
+                    },
+                    "x": "X",
+                    "y": "Y",
+                    "description": "描述",
+                    "hidden": "隐藏"
+                },
+                "connection": {
+                    "title": "连接配置",
+                    "origin": {
+                        "id": "来源",
+                        "anchorX": "Anchor X",
+                        "anchorY": "锚 Y",
+                        "locked": "已锁定"
+                    },
+                    "destination": {
+                        "id": "目的地",
+                        "anchorX": "Anchor X",
+                        "anchorY": "锚 Y",
+                        "locked": "已锁定"
+                    },
+                    "color": "颜色",
+                    "thickness": "厚度",
+                    "text": "文本",
+                    "physics": {
+                        "label": "物理学",
+                        "choices": {
+                            "straight": "直的",
+                            "droopy": "垂头丧气",
+                            "very-droopy": "非常下垂"
+                        }
+                    },
+                    "style": {
+                        "label": "风格",
+                        "choices": {
+                            "solid": "实心",
+                            "dashed": "虚线",
+                            "dotted": "带点的"
+                        }
+                    }
+                }
+            }
+        },
+        "deleteItem": {
+            "title": "删除？",
+            "content": "您确定要删除此项目吗？此操作无法撤销。"
+        },
+        "settings": {
+            "betterOwnership": {
+                "name": "简单的任务权限处理",
+                "hint": "创建新页面时，自动将默认所有权级别设置为“无”。在侧边栏中显示页面时，跳过“权限处理”对话框。",
+                "dialog": {
+                    "title": "权限处理",
+                    "content": "您正在显示一个页面，但该页面的日志默认权限为“无”。玩家将无法查看此页面。您是否要将该日志的默认权限更改为“观察者”，并将其他“继承”页面的权限设为“无”？"
+                }
+            },
+            "showHistory": {
+                "name": "显示历史记录",
+                "hint": "在“简单任务”窗口顶部显示一条历史记录栏。"
+            },
+            "showJournalOwnership": {
+                "name": "显示期刊所有权",
+                "hint": "在侧边栏的日记条目和页面下方显示彩色所有权指示点。"
+            },
+            "tabConfig": {
+                "name": "选项卡配置",
+                "hint": "配置“简单任务”选项卡的名称。",
+                "label": "配置选项卡名称"
+            },
+            "themeConfig": {
+                "name": "主题配置",
+                "hint": "配置 Simple Quest 主题。",
+                "label": "配置主题"
+            },
+            "allowObserverCheckboxToggle": {
+                "name": "允许观察者完成目标",
+                "hint": "在任务页面上拥有“观察者”权限的玩家可以切换目标复选框。此设置可针对每个任务进行覆盖。"
+            },
+            "rootDir": {
+                "name": "根目录",
+                "hint": "“Simple Quest”的根文件夹名称。动态标签页位于该目录的子文件夹中。",
+                "default": "simple-quest简体中文（大陆）"
+            },
+            "partyJournalDir": {
+                "name": "派对期刊目录",
+                "hint": "“党内期刊”选项卡的文件夹名称。",
+                "default": "聚会"
+            },
+            "timelineDir": {
+                "name": "时间轴目录",
+                "hint": "“时间轴”选项卡的文件夹名称。",
+                "default": "时间轴"
+            },
+            "achievementsDir": {
+                "name": "成就目录",
+                "hint": "“成就”选项卡的文件夹名称。",
+                "default": "成就"
+            },
+            "backgroundColor": {
+                "name": "背景色",
+                "hint": "《Simple Quest》的背景色"
+            },
+            "backgroundImage": {
+                "name": "背景图片",
+                "hint": "《Simple Quest》的背景图片"
+            },
+            "labelColor": {
+                "name": "全局标签颜色",
+                "hint": "如果启用此设置，所有地图标签的颜色都将被此颜色覆盖。输入“none”可禁用此功能。"
+            },
+            "matchJournalStyle": {
+                "name": "比赛日志样式",
+                "hint": "如果启用此选项，系统将尝试匹配应用于期刊的特殊样式。根据主题的不同，可能会产生一些副作用。"
+            },
+            "textColor": {
+                "name": "文字颜色",
+                "hint": "Simple Quest 的文字颜色"
+            },
+            "secretColor": {
+                "name": "秘密之色",
+                "hint": "Simple Quest 中秘密任务目标的颜色"
+            },
+            "failedColor": {
+                "name": "颜色显示异常",
+                "hint": "Simple Quest 中任务目标未达成时的颜色"
+            },
+            "hideFolderFromPlayers": {
+                "name": "向玩家隐藏文件夹",
+                "hint": "是否向玩家隐藏“Simple Quest”文件夹"
+            },
+            "fontFamily": {
+                "name": "字体家族",
+                "hint": "《Simple Quest》应使用的字体家族"
+            },
+            "showQuestNotifications": {
+                "name": "显示任务通知",
+                "hint": "任务更新或分享到聊天时是否显示通知"
+            },
+            "newQuestSoundEffect": {
+                "name": "新任务音效",
+                "hint": "显示新任务通知时播放的音效"
+            },
+            "updateQuestSoundEffect": {
+                "name": "更新任务音效",
+                "hint": "显示任务更新通知时播放的音效"
+            },
+            "matchJournalPermission": {
+                "name": "比赛日志权限",
+                "hint": "“是否与‘简易任务’匹配”应同时考虑任务的用户权限设置，而不仅仅是隐藏状态。当此设置被禁用时，除非任务已被设为隐藏，否则所有玩家都能看到所有任务。请注意，启用此设置后，玩家将能够通过打开常规任务日志查看隐藏的任务目标。"
+            },
+            "openJournalPinsAsModals": {
+                "name": "将地图标记作为模态窗口打开",
+                "hint": "如果地图标记与日志页面相关联，且该页面不是“简单任务”页面，则应在地图上方以模态窗口的形式打开该页面，而不是在日志中打开该页面。"
+            },
+            "enableQuests": {
+                "name": "启用任务",
+                "hint": "是否启用“任务”选项卡"
+            },
+            "enablePartyJournal": {
+                "name": "启用“派对日志”",
+                "hint": "是否启用“党刊”标签页"
+            },
+            "enableMyJournal": {
+                "name": "启用“我的日记”",
+                "hint": "是否启用“我的日志”选项卡"
+            },
+            "enableMaps": {
+                "name": "启用地图",
+                "hint": "是否启用“地图”选项卡"
+            },
+            "enableTimeline": {
+                "name": "启用时间轴",
+                "hint": "是否启用“时间轴”选项卡"
+            },
+            "enableAchievements": {
+                "name": "启用成就",
+                "hint": "是否启用“成就”选项卡"
+            },
+            "enableLore": {
+                "name": "启用背景故事",
+                "hint": "是否启用“背景故事”标签页"
+            },
+            "headerOnlyFont": {
+                "name": "标题字体",
+                "hint": "标题所用的字体；如果选择“默认”，则使用默认字体"
+            },
+            "imagePageMask": {
+                "name": "“战争迷雾”图片",
+                "hint": "用于“战争迷雾”的效果图层。若留空，则使用黑色图层。"
+            },
+            "secondaryFontSize": {
+                "name": "次要字体大小",
+                "hint": "次要元素的字号。"
+            },
+            "showTutorialTips": {
+                "name": "显示教程提示",
+                "choices": {
+                    "always": "是的",
+                    "never": "不",
+                    "reset": "重置"
+                }
+            }
+        },
+        "simple-quest": {
+            "title": "简单的任务",
+            "windowedModeToggle": "切换窗口模式",
+            "tabs": {
+                "quests": "任务",
+                "map": "地图",
+                "lore": "背景故事",
+                "timeline": "时间轴",
+                "achievements": "成就",
+                "my-journal": "我的日记",
+                "party-journal": "《党刊》",
+                "tab": "Tab"
+            },
+            "move-to": "移至……",
+            "moveQuest": {
+                "error": "您没有权限将任务移动到该分类中。"
+            },
+            "tooltip": {
+                "add-quest": "添加任务",
+                "add-map": "添加地图",
+                "add-lore": "添加背景故事",
+                "add-page": "添加页面",
+                "edit-lore": "编辑背景故事",
+                "configure-lore-permissions": "配置权限",
+                "map-help": "如何使用“地图”选项卡",
+                "edit-quest": "编辑任务",
+                "delete-quest": "删除任务",
+                "delete-lore": "删除背景故事",
+                "share-quest": "发送至聊天窗口",
+                "duplicate-quest": "重复任务",
+                "duplicate-map": "重复地图",
+                "delete-map": "删除地图",
+                "duplicate-lore": "重复的背景故事",
+                "mark-updated": "将“Quest”标记为已更新",
+                "add-category": "添加分类",
+                "edit-map": "编辑地图",
+                "reset-fow": "重置/启用“战争迷雾”",
+                "fow-brush-size": "战争迷雾画笔大小",
+                "measure": "100像素 = 1英里",
+                "lock-pins": "锁定/解锁标记",
+                "show-players": "面向玩家开放",
+                "edit": "编辑",
+                "duplicate": "重复项",
+                "delete": "删除",
+                "toggle-completed": "节目已结束"
+            }
+        },
+        "timeline": {
+            "addEvent": "添加活动",
+            "addEra": "添加时代",
+            "create": "创建时间轴",
+            "delete": "删除时间线",
+            "edit": "编辑时间轴"
+        },
+        "timeline-config": {
+            "title": "编辑时间轴事件",
+            "label": "标签",
+            "labelNote": "事件的标签。该标签将显示在年份上方。可用于标注特定日期或其他信息。",
+            "banner": "横幅",
+            "hidden": "隐藏",
+            "year": "年",
+            "duration": "持续时间（年）",
+            "era": "时代",
+            "event": "活动",
+            "general": "全球",
+            "to": "到",
+            "generalNote": "这些设置将应用于整个时间轴。",
+            "icon": "图标",
+            "isEra": "是Era吗？",
+            "eraStart": "时代的开端",
+            "eraEnd": "一个时代的终结",
+            "flipped": "翻转",
+            "offset": "偏移量（像素）",
+            "description": "编辑目录",
+            "negativeAbb": "负年份缩写",
+            "showMinus": "显示减号",
+            "positiveAbb": "正数年份的缩写",
+            "timeScale": "时间尺度",
+            "dynamicTimeScale": "动态时间尺度",
+            "dynamicTimeScaleNote": "时间轴的大小不再采用绝对值设定，而是根据每个时代中的事件数量来确定，同时仍会乘以时间比例。",
+            "content": "内容可见性",
+            "ignoreDataValidation": "忽略数据验证",
+            "ignoreDataValidationNote": "如果您需要重新组织“时代”，可以忽略数据验证，以便在重新组织“时代”期间允许它们暂时重叠。",
+            "contentChoices": {
+                "always": "始终显示",
+                "toggleOn": "切换（默认展开）",
+                "toggleOff": "切换（默认折叠）"
+            },
+            "errors": {
+                "noEra": "未找到任何时代。请先创建一个时代。",
+                "noYear": "未找到年份。您必须为该活动设置年份。",
+                "yearOutOfBounds": "年份必须属于某个时代。",
+                "noEraStart": "未找到“时代起始时间”。您必须为该时代设置起始时间。",
+                "noEraEnd": "未找到“时代结束”时间。您必须为该时代设置结束时间。",
+                "eraStartAfterEnd": "“时代开始”的时间必须早于“时代结束”。",
+                "eraNotConnected": "“时代开始”或“时代结束”必须与另一个时代相关联。",
+                "eraOverlap": "一个时代不能与另一个时代重叠。"
+            }
+        },
+        "tab-config": {
+            "title": "选项卡配置"
+        },
+        "theme-config": {
+            "title": "主题配置",
+            "info": "主题会应用一些预设设置。如果您愿意，可以从模块设置中进入此菜单，在那里您还可以单独自定义每个主题的各个方面。",
+            "themes": {
+                "default": "简单的任务",
+                "classicFantasy": "经典奇幻",
+                "basicDark": "基础暗色",
+                "basicLight": "基础光",
+                "foundryDark": "Foundry Dark",
+                "foundryLight": "铸造厂之光",
+                "redDragon": "红龙",
+                "typewriter": "打字机",
+                "postApocalypticWasteland": "末日后的荒原",
+                "galacticAdventure": "银河冒险",
+                "steampunkWorkshop": "蒸汽朋克工作坊",
+                "dystopianFuture": "反乌托邦的未来",
+                "virtualRealityOasis": "虚拟现实绿洲",
+                "mysticForest": "神秘森林",
+                "vintageFilmNoir": "复古黑色电影",
+                "sciFiConsole": "科幻游戏主机",
+                "futuristicTech": "未来科技",
+                "alienInvasion": "外星人入侵",
+                "ancientScrolls": "古代卷轴",
+                "crtTerminal": "终端",
+                "crtScreen": "CRT显示器"
+            }
+        },
+        "importQuests": {
+            "title": "导入任务：",
+            "content": "您确定要从该日志中导入任务吗？如果已经存在同名的分类，这些任务将被添加到该分类中。"
+        },
+        "markerConfig": {
+            "title": "标记配置",
+            "icon": "图标",
+            "journal": "请将日志或页面拖放到此处",
+            "hidden": "隐藏",
+            "displayLabel": "始终显示标签",
+            "fixedScale": "固定比例"
+        },
+        "mapControls": {
+            "addMarker": "添加标记",
+            "editMarker": "编辑标记",
+            "deleteMarker": "删除标记"
+        },
+        "deleteQuest": {
+            "title": "删除任务？ -",
+            "content": "您确定要删除这个任务吗？此操作无法撤销。"
+        },
+        "deleteLore": {
+            "title": "删除背景故事？ -",
+            "content": "您确定要删除这段背景故事吗？此操作无法撤销。"
+        },
+        "deleteMap": {
+            "title": "删除地图？ -",
+            "content": "您确定要删除这张地图吗？此操作无法撤销。"
+        },
+        "deletePage": {
+            "title": "删除页面？ -",
+            "content": "您确定要删除此页面吗？此操作无法撤销。"
+        },
+        "shareQuest": {
+            "title": "将页面发送至聊天",
+            "content": "您确定要向聊天群组发送“新页面”通知吗？",
+            "changeOwnership": "<p class='notification info'>“所有玩家”在此页面的权限级别将更改为“观察者”。</p>",
+            "chatMessage": "新 {questType} 页面已上线：{questName}",
+            "shareMessage": "解锁了新的 {questType}！"
+        },
+        "shareLore": {
+            "title": "将背景故事发送至聊天窗口",
+            "content": "您确定要将“新背景故事”通知发送至聊天群吗？",
+            "chatMessage": "新背景故事曝光！"
+        },
+        "shareAchievement": {
+            "title": "将成就发送至聊天室",
+            "content": "您确定要将“新成就”通知发送到聊天频道吗？",
+            "chatMessage": "你解锁了一项成就：{questName}"
+        },
+        "showQuest": {
+            "title": "显示任务"
+        },
+        "welcomeScreen": {
+            "title": "欢迎来到《Simple Quest》！",
+            "content": "欢迎来到《Simple Quest》！<hr>按下 <span class='hotkey'>J</span> 即可打开《Simple Quest》窗口。"
+        },
+        "welcomeMaps": {
+            "title": "《Simple Quest》：地图标签页",
+            "content": "欢迎来到“地图”标签页！<hr><span class='hotkey'>右键点击并拖动</span>可在地图上平移。<br><span class='hotkey'>滚动</span>可缩放地图。<br><span class='hotkey'>左键单击</span>以添加标记。<br><span class='hotkey'>左键单击</span>以打开标记的备注或任务。<br><span class='hotkey'>右键单击</span>标记以对其进行编辑。<hr>战争迷雾<hr><span class='hotkey'>Shift + 左键点击</span> 以隐藏地图。<br><span class='hotkey'>Shift + 右键点击</span> 以显示地图。<hr>测量<hr> <span class='hotkey'>Ctrl + 左键单击</span> 进行测量。"
+        },
+        "flags": {},
+        "noPermission": "您无权查看此文档。",
+        "time-enricher": {
+            "expired": "已过期"
+        },
+        "questNotification": {
+            "text": "{questType} 页面：{questName} 已更新"
+        },
+        "hotkeys": {
+            "toggleSimpleQuest": {
+                "name": "切换“简单任务”"
+            }
+        },
+        "notifications": {
+            "defaultStructureCreated": "简单任务：已创建默认文件夹和日志结构。",
+            "playerJournalUpdated": "简单任务：玩家日志已更新。",
+            "noPage": "简单任务：请选择要删除的页面。",
+            "uuidNotFound": "Simple Quest：找不到 uuid {{uuid}} 的页面",
+            "noTab": "Simple Quest：未找到“{{tab}}”标签。"
+        },
+        "resetFow": {
+            "title": "重置“战争迷雾”？",
+            "content": "您确定要重置/启用此地图的“战争迷雾”吗？此操作无法撤销。"
+        },
+        "proseMirrorMenu": {
+            "callout": {
+                "title": "说明",
+                "callout-lore": "背景故事",
+                "callout-magic": "魔法",
+                "callout-item": "项目",
+                "callout-creature": "生物",
+                "callout-event": "活动",
+                "callout-time": "时间",
+                "callout-npc": "NPC",
+                "callout-location": "位置"
+            },
+            "pageInsert": {
+                "title": "插入页面",
+                "parchment-note-1": "羊皮纸笔记 1",
+                "parchment-note-2": "《羊皮纸笔记》第2篇",
+                "parchment-note-3": "《羊皮纸笔记》第3篇",
+                "parchment-note-4": "《羊皮纸笔记》第4篇",
+                "parchment-book-1": "第一卷",
+                "parchment-book-2": "第二卷",
+                "parchment-scroll-1": "滚动"
+            },
+            "text": {
+                "initial": "大写首字母"
+            }
+        },
+        "page-template": {
+            "label": "页面模板",
+            "description": "这是一组用于格式化日志页面的 HTML 模板。即使禁用了“Simple Quest”模块，这些格式设置仍会继续生效。点击按钮即可将模板追加到页面末尾。"
+        },
+        "injected": {
+            "fowMask": {
+                "label": "简单任务：战争迷雾面具"
+            }
+        },
+        "tours": {
+            "interface": {
+                "1": {
+                    "title": "章节",
+                    "content": "此区域显示了“Simple Quest”的各个部分，您可以点击某个部分跳转至该部分，右键单击可编辑标签名称，将鼠标悬停在右上角可调出“切换全屏”按钮。"
+                },
+                "2": {
+                    "title": "任务列表",
+                    "content": "此区域显示了任务分类列表及其下的任务。您可以右键单击某个分类来编辑其名称。在右上角，您会看到“添加新任务”和“添加新分类”按钮。将鼠标悬停在任务标题左侧，即可显示“切换隐藏”按钮。"
+                },
+                "3": {
+                    "title": "任务详情",
+                    "content": "此区域显示所选任务的详细信息。在右上角，您会看到用于管理任务的按钮，将鼠标悬停在按钮上即可查看说明其功能的提示信息。"
+                },
+                "4": {
+                    "title": "字体大小",
+                    "content": "在此区域中，您可以更改《Simple Quest》的字体大小"
+                },
+                "name": "界面导览与任务标签页",
+                "description": "本教程将向您介绍如何使用 Simple Quest 的主界面以及“任务”选项卡。"
+            },
+            "lore-tab": {
+                "1": {
+                    "title": "背景故事标签页",
+                    "content": "“背景故事”标签页会在“简单任务”界面中显示“背景故事”文件夹内的所有日志。虽然该标签页没有提供任何特殊功能，但它是查看背景故事的便捷途径。查看“背景故事”页面的权限设置与“Core Foundry”日志权限设置一致。"
+                },
+                "2": {
+                    "title": "背景故事列表",
+                    "content": "此区域显示了背景故事分类列表及其下的背景故事内容。您可以右键单击某个分类来编辑其名称。在右上角，您会看到“添加新背景故事”和“添加新分类”按钮。将鼠标悬停在背景故事标题的左侧，即可显示“切换隐藏”按钮。"
+                },
+                "3": {
+                    "title": "背景故事详情",
+                    "content": "此区域显示所选背景故事的详细信息。在右上角，您会看到用于管理该背景故事的按钮，将鼠标悬停在按钮上即可查看说明其功能的工具提示。"
+                },
+                "name": "背景故事标签页",
+                "description": "本指南将向您介绍如何使用“背景”选项卡。"
+            },
+            "map-tab": {
+                "1": {
+                    "title": "“地图”选项卡",
+                    "content": "“地图”选项卡会显示“任务”文件夹内“地图日志”中包含的所有地图。"
+                },
+                "2": {
+                    "title": "地图列表",
+                    "content": "此区域显示地图列表，在右上角，您会看到“添加新地图”按钮以及一个用于说明高级控制功能的按钮。将鼠标悬停在地图标题左侧，即可显示“切换隐藏”按钮。"
+                },
+                "3": {
+                    "title": "地图详情",
+                    "content": "此区域显示所选地图。您可以通过点击并拖动来平移地图，使用鼠标滚轮进行缩放。在右上角，您会看到用于管理地图的按钮，将鼠标悬停在按钮上即可查看说明其功能的工具提示。"
+                },
+                "4": {
+                    "title": "标记",
+                    "content": "您可以在地图上右键单击（长按可预览）以添加标记。您还可以右键单击标记进行编辑，或右键单击并拖动标记来移动它。 您可以左键单击标记以打开其笔记、任务或关联文档。将任何文档拖放到地图上，即可创建一个与该文档关联的标记。"
+                },
+                "5": {
+                    "title": "战争迷雾",
+                    "content": "按住 Shift 键可显示“战争迷雾”画笔。左键单击可隐藏地图，右键单击可显示地图。"
+                },
+                "6": {
+                    "title": "测量",
+                    "content": "您可以按住 Ctrl 键以启用测量工具。按住 Ctrl 键的同时，单击并拖动鼠标进行测量。"
+                },
+                "name": "“地图”选项卡",
+                "description": "本教程将向您介绍如何使用“地图”选项卡。"
+            },
+            "my-journal-tab": {
+                "1": {
+                    "title": "“我的日记”标签页",
+                    "content": "“我的日志”选项卡显示的是一本个人日志，只有你和游戏管理员才能查看。"
+                },
+                "2": {
+                    "title": "目录",
+                    "content": "此区域显示您的日记的目录。您在日记中创建的任何标题都会显示在此处，以便于浏览。"
+                },
+                "3": {
+                    "title": "期刊内容",
+                    "content": "此区域显示您的日记内容。您可以点击右上角的“编辑”按钮来编辑日记内容。"
+                },
+                "name": "“我的日志”标签页",
+                "description": "本指南将向您介绍如何使用“我的日志”选项卡。"
+            },
+            "party-journal-tab": {
+                "1": {
+                    "title": "“派对日志”标签页",
+                    "content": "“派对日志”选项卡显示了一个日志，所有用户均可查看和编辑该日志。"
+                },
+                "2": {
+                    "title": "目录",
+                    "content": "此区域显示了您的《派对日记》的目录。您在此日记中创建的任何标题都会显示在此处，以便于浏览。"
+                },
+                "3": {
+                    "title": "期刊内容",
+                    "content": "此区域显示了“党内日记”的内容。您可以点击右上角的“编辑”按钮来编辑该日记的内容。"
+                },
+                "name": "“派对日志”标签页",
+                "description": "本指南将向您介绍如何使用“派对日志”选项卡。"
+            },
+            "journal-page": {
+                "1": {
+                    "title": "页面模板",
+                    "content": "Simple Quest 新增了页面模板功能。这是一项便捷的功能，可让您快速将预先格式化的模板或版块添加到日志页面中。点击此按钮即可查看可用模板。"
+                },
+                "2": {
+                    "title": "格式设置",
+                    "content": "在此下拉菜单中，您将看到新的“注释框”和“插入页面”选项，这些功能可为您的文档增添更多亮点。"
+                },
+                "name": "期刊页面特色",
+                "description": "本指南将向您介绍如何使用“日志页面”。"
+            },
+            "timeline-tab": {
+                "1": {
+                    "title": "“时间轴”选项卡",
+                    "content": "“时间轴”选项卡显示了事件的时间轴。"
+                },
+                "2": {
+                    "title": "时间轴列表",
+                    "content": "此区域显示了事件和时期的列表，您可以单击跳转至相应事件或时期，或右键单击进行编辑。"
+                },
+                "3": {
+                    "title": "添加事件或时代",
+                    "content": "只需点击此按钮，即可在时间轴上添加新的事件或时代。在配置表单中，您可以设置该事件或时代的详细信息。要开始操作，请先创建一个时代。"
+                },
+                "name": "“时间轴”选项卡",
+                "description": "本教程将向您展示如何使用“时间轴”选项卡。"
+            }
+        },
+        "default-structure": {
+            "in-progress": "进行中",
+            "completed": "已完成",
+            "failed": "失败",
+            "locations": "地点",
+            "npcs": "NPC",
+            "organizations": "组织",
+            "history": "历史",
+            "bestiary": "怪物图鉴"
+        }
+    }
+}

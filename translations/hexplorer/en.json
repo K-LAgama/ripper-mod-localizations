@@ -116,6 +116,10 @@
                 "label": "First Time Only",
                 "hint": "Only execute the above activity the first time the hexplorer moves to this cell."
             },
+            "hide-unrevealed-tooltip": {
+                "label": "Hide Unrevealed Tooltip",
+                "hint": "Hide the tooltip when players hover a cell that is not revealed."
+            },
             "reveal-tooltip": {
                 "label": "Reveal Tooltip",
                 "hint": "Give observer permission to players for the journal page associated with the tooltip."

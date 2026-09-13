@@ -1,0 +1,104 @@
+{
+    "media-optimizer": {
+        "converted": "媒體優化工具：已轉換",
+        "conversionFailed": "媒體最佳化工具：轉換失敗，請參閱維基以獲取更多資訊。",
+        "audioConversionStarted": "媒體最佳化工具：轉換為 OGG | 檔案：",
+        "videoConversionStarted": "媒體最佳化工具：轉換為 WEBM | 檔案：",
+        "settings": {
+            "bloatDetector": {
+                "name": "脹氣偵測器",
+                "label": "Open Bloat Detector",
+                "hint": "偵測可能導致載入速度變慢或引發效能問題的項目。"
+            },
+            "enabled": {
+                "name": "已啟用",
+                "hint": "是否應啟用媒體最佳化功能。若停用此功能，圖片、音訊及影片將不會被最佳化。"
+            },
+            "compressionRatio": {
+                "name": "品質",
+                "hint": "優化圖片時應使用的品質設定。較高的品質會產生畫質較佳的圖片，但檔案大小也會較大；較低的品質則會產生畫質較差的圖片，但檔案大小也會較小。預設值為 0.75。注意：音訊和影片的壓縮比無法自訂。"
+            },
+            "maxResolution": {
+                "name": "最大解析度",
+                "hint": "要進行優化的影像之最大解析度。若影像大於此值，系統會在進行優化前將其調整為此解析度。此設定有助於避免使用多數顯示卡不支援的極高解析度。",
+                "choices": {
+                    "1024": "1K（1024 像素）",
+                    "2048": "2K（2048 像素）",
+                    "4096": "4K (4096 像素)",
+                    "8192": "8K（8192 像素）",
+                    "16384": "16K（16384 像素）"
+                }
+            },
+            "excludeFolders": {
+                "name": "排除資料夾",
+                "hint": "以逗號分隔的資料夾清單，這些資料夾將被排除在優化範圍之外。若將圖片、音訊或影片上傳至此處，系統將不會對其進行優化。"
+            },
+            "optimizeImages": {
+                "name": "優化圖片",
+                "hint": "是否要對圖片進行優化。"
+            },
+            "optimizeAudio": {
+                "name": "優化音訊",
+                "hint": "是否要優化音訊。"
+            },
+            "optimizeVideo": {
+                "name": "優化影片",
+                "hint": "是否該對影片進行優化。"
+            },
+            "slugifyFileNames": {
+                "name": "簡潔的檔案名稱",
+                "hint": "是否要清理檔案名稱。請注意，此設定將套用至所有由 Media Optimizer 處理或建立的檔案。此設定會移除特殊字元，並將其替換為連字號。此功能有助於避免不同作業系統間的檔案名稱問題，以及因空格和特殊字元所導致的其他問題。"
+            }
+        },
+        "tile-combiner": {
+            "title": "媒體優化器：磁磚組合器",
+            "notes": "此功能將對場景進行永久性變更！強烈建議您先備份該場景。",
+            "info": "「組合器」將採用全域「媒體優化器」的壓縮設定，您可在模組設定中進行變更。",
+            "confirm": {
+                "title": "磁磚組合器：確認",
+                "content": "您即將合併方塊，這將對場景造成永久性變更！您確定要繼續嗎？",
+                "backup": "您即將在未備份的情況下進行合併，不建議這樣做！"
+            },
+            "buttons": {
+                "backup-combine": "備份與合併",
+                "combine": "結合",
+                "cancel": "取消"
+            },
+            "mode": {
+                "label": "組合模式：",
+                "background": "背景磁磚",
+                "foreground": "前景磁磚",
+                "selected": "精選磁磚",
+                "all": "所有磁磚"
+            },
+            "background": {
+                "label": "是否包含背景？",
+                "notes": "啟用此選項後，合併操作的結果將被設為場景背景。"
+            },
+            "folderPath": {
+                "label": "資料夾路徑："
+            },
+            "fileName": {
+                "label": "檔案名稱："
+            },
+            "deleteTiles": {
+                "label": "刪除合併的磁磚嗎？"
+            }
+        },
+        "file-converter": {
+            "header-button": "媒體優化",
+            "title": "媒體優化工具：批量優化工具",
+            "buttons": {
+                "convert": "優化選取項目",
+                "select-all": "全選",
+                "select-none": "清除選取項目"
+            }
+        },
+        "bloat-detector": {
+            "title": "媒體優化工具：臃腫檢測器",
+            "bloat": "偵測到可能導致載入速度變慢或引發效能問題的項目。數量：",
+            "no-bloat": "未偵測到膨脹現象。",
+            "large-collection": "該集合的規模龐大，建議將未使用的條目移至彙編中。"
+        }
+    }
+}

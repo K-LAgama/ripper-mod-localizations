@@ -1,0 +1,10 @@
+{
+    "levels-layer-effects": {
+        "settings": {
+            "disableBlur": {
+                "name": "ぼかしを無効にする",
+                "hint": "ぼかし効果を無効にする。低スペック端末ではこのオプションを有効にしてください。"
+            }
+        }
+    }
+}

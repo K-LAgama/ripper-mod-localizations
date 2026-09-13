@@ -1,0 +1,98 @@
+{
+    "fvtt-paper-doll-ui": {
+        "settings": {
+            "globalConfigMenu": {
+                "name": "Ustawienia ogólne Paper Doll",
+                "hint": "Dostosuj puste obrazy i liczbę miejsc dla każdego typu.",
+                "label": "Skonfiguruj lalkę z papieru"
+            },
+            "hideActorHeaderText": {
+                "name": "Ukryj tekst przycisku nagłówka aktora",
+                "hint": "Ukryj tekst na przycisku w nagłówku aktora."
+            },
+            "paperDollPosition": {
+                "name": "Pozycja „papierowej lalki”",
+                "hint": "Pozycja papierowej lalki po rozłożeniu. Należy pamiętać, że jeśli po lewej lub prawej stronie nie ma wystarczającej ilości miejsca, papierowa lalka zostanie umieszczona pośrodku.",
+                "label": "Stanowisko",
+                "choices": {
+                    "left": "Po lewej stronie",
+                    "right": "Racja",
+                    "center": "Centrum"
+                }
+            },
+            "autoOpen": {
+                "name": "Automatyczne otwieranie",
+                "hint": "Automatycznie otwórz lalkę papierową po otwarciu karty postaci."
+            },
+            "allowNonOwned": {
+                "name": "Zezwól na przedmioty, które nie są własnością użytkownika",
+                "hint": "Zezwól na dodawanie do lalki papierowej przedmiotów, których gracz nie posiada (np. przedmiotów z paska bocznego lub kompendium). To ustawienie jest przeznaczone dla niestandardowych systemów, które nie posiadają systemu ekwipunku, i zasadniczo powinno pozostać wyłączone."
+            },
+            "playerOwnedOnly": {
+                "name": "Wyłącznie dla graczy",
+                "hint": "Włącz funkcję „Paper Doll” wyłącznie dla postaci należących do graczy."
+            }
+        },
+        "app": {
+            "paper-doll": {
+                "title": "Lalka z papieru",
+                "config": "Konfiguracja",
+                "disallowed": "Tego przedmiotu nie można umieścić w tym slocie."
+            },
+            "actor-config": {
+                "title": "Konfiguracja aktora",
+                "img": {
+                    "label": "Obraz",
+                    "placeholder": "Użyj zdjęcia aktora"
+                },
+                "objectFit": {
+                    "label": "Dopasowanie obrazu",
+                    "contain": "Zawiera",
+                    "cover": "Okładka"
+                },
+                "autoOpen": {
+                    "label": "Automatyczne otwieranie",
+                    "useDefault": "Użyj domyślnego",
+                    "true": "Zawsze",
+                    "false": "Nigdy"
+                },
+                "playerOwnedOnly": {
+                    "label": "Wyłącznie dla graczy",
+                    "hint": "Włącz funkcję „Paper Doll” wyłącznie dla postaci należących do graczy."
+                }
+            },
+            "paper-doll-global-config": {
+                "title": "Globalna konfiguracja Paper Doll",
+                "img": "Ikona",
+                "filter": {
+                    "label": "Filtr niestandardowy",
+                    "hint": "Skrypt służący do tworzenia okna z przedmiotami, które można wyposażyć w tym slocie. „item” odnosi się do sprawdzanego przedmiotu. Przykład: return item.type === 'weapon';"
+                },
+                "simpleFilter": {
+                    "label": "Filtr podstawowy",
+                    "hint": "Filtruj tylko pozycje tego typu."
+                },
+                "how": {
+                    "add": "Aby dodać nowe miejsce, kliknij przycisk `+ Dodaj`.",
+                    "remove": "Aby usunąć slot, kliknij go prawym przyciskiem myszy.",
+                    "image": "Wybierz obrazek do miejsca, klikając go lewym przyciskiem myszy."
+                },
+                "HUE_ROTATE": {
+                    "label": "Hue"
+                },
+                "EQUIPPED_PATH": {
+                    "label": "Wytyczona trasa"
+                },
+                "MAIN_COLOR": {
+                    "label": "Kolor"
+                }
+            }
+        },
+        "hotkeys": {
+            "togglePaperDoll": {
+                "name": "Przełącz „Paper Doll”"
+            }
+        },
+        "flags": {}
+    }
+}

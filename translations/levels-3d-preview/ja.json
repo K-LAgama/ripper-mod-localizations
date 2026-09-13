@@ -1,0 +1,2486 @@
+{
+    "levels3dpreview": {
+        "controls": {
+            "preview3d": "3Dモードの切り替え",
+            "miniCanvas": "キャンバスのポップアウト／復元",
+            "tile3dPolygon": "図形を描いて押し出しを行う",
+            "tips": {
+                "templatePlacement": "3Dテンプレートの配置：マウスホイールを回して回転させます。Controlキーとマウスホイールを同時に押して高さを変更します。Altキーとマウスホイールを同時に押して傾斜を調整します。"
+            },
+            "loading": {
+                "load": "3Dキャンバスの読み込み中...",
+                "env": "3D環境の作成中...",
+                "gravity": "重力の計算……",
+                "shaders": "シェーダーをコンパイル中..."
+            },
+            "loadingScreen": {
+                "navtools": "シーンナビゲーションツール（左側の",
+                "showcontrols": "コントロールを表示（切り替え）",
+                "togglecamera": "ゲームカメラの表示を切り替える",
+                "cameracontrols": "カメラの操作",
+                "tokencontrols": "トークンの制御",
+                "pan": "パン",
+                "rotate": "回転",
+                "zoom": "ズーム",
+                "topdown": "トップダウン",
+                "firstperson": "一人称",
+                "unlock": "ロック解除",
+                "lockon": "ロックオン",
+                "move": "移動",
+                "elevation": "Fly",
+                "snapping": "アースへのスナップ",
+                "rebind": "設定画面でキーの割り当てを変更できます。",
+                "holddrag": "長押ししてドラッグ",
+                "toggle": "切り替え",
+                "manualpan": "手動でパンする",
+                "dragdrop": "ドラッグ＆ドロップ",
+                "tap": "タップ",
+                "scroll": "スクロール",
+                "loadingdone": "3D Canvasの準備完了！ - <i class='fas fa-question control-highlighted'></i> を押して、この画面を閉じてください。",
+                "loadingarrow": "矢印が指している場所にある「？」アイコンをクリックして、読み込み画面を閉じてください。"
+            }
+        },
+        "errors": {
+            "initfailed": "3D Canvas：初期化に失敗しました。キャッシュの問題の可能性があります。CTRL+F5 キーを押してページを更新してみてください。 また、アクティブなシーンが存在するかどうかを確認してください。あるいは、3D Canvas またはその依存関係のいずれかが古くなっているか、破損している可能性があります。モジュールが最新であることを確認し、それでも解決しない場合は再インストールを試みてください。",
+            "noActiveScene": "3D Canvas：アクティブなシーンが見つかりませんでした。シーンが自動的に有効化されましたので、ページを再読み込みしてください。",
+            "noScenes": "3D Canvas：シーンが見つかりませんでした。デフォルトのシーンが作成されました。ページを再読み込みしてください。",
+            "attachmentNotFound": "3D Canvas：添付ファイルが見つかりません。トークン：%token% | 添付ファイル：%attachment%",
+            "gamecameradisabled": "3D Canvas：ゲームカメラの無効化 - ゲームカメラは有効になっているが、「視界の計算に3Dジオメトリを使用する」が無効になっている。",
+            "filenotsupported": "ファイル形式がサポートされていないか、ファイルが見つかりません",
+            "nomapgencells": "マップジェネレータ「Dynamic Mesh」で生成されたマップ内に、セルまたは有効な素材が見つかりませんでした。",
+            "toofarfromdoor": "トークンが遠すぎてドアを開けることができません",
+            "tokenNotGrounded": "その動きは許可されておらず、トークンは接地されていません。",
+            "3dnotactive": "キャンバスのポップアウトを開くことができません。3Dモードが有効になっていません。",
+            "canping": "このユーザーには、地図上にピングを表示する権限がありません。",
+            "canpingpan": "ユーザーにはカメラ位置を送信する権限がありません。",
+            "overmaxelevation": "その移動の試みは、このシーンの最大標高を超えています。",
+            "particleSystem": {
+                "type": "パーティクルシステム：「%type%」タイプはサポートされていません。有効なタイプは以下の通りです：",
+                "fromto": "パーティクルシステム：指定されていない、または未定義のターゲットおよび／またはソース。",
+                "onend": "パーティクルシステム：.onEnd() - 1つ以上の引数がParticle3Dのインスタンスではありませんでした。"
+            },
+            "critical": "3D Canvas：レンダリングループで致命的なエラーが発生しました。復旧を試みています...",
+            "notarget": "3Dキャンバス：ドラッグ＆ドロップ先の対象が見つかりませんでした。3Dオブジェクトが少なくとも1つあるか、背景が有効になっていることを確認してください。"
+        },
+        "notifications": {
+            "initialviewcleared": "初期表示位置がリセットされました",
+            "initialviewcaptured": "初期表示位置の取得"
+        },
+        "clipNavigator": {
+            "disabled": "すべて表示",
+            "sync": "プレイヤーと同期する",
+            "gamecamera": "ゲームカメラの表示を切り替える",
+            "syncNotification": "{{level}}のレベルビュー：すべてのプレイヤーと同期済み",
+            "cameraToToken": "選択したトークンにカメラを合わせる",
+            "automode": "フォローモード",
+            "controls": "コントロールを表示",
+            "lockon": "ロックオンを切り替える",
+            "performance": "パフォーマンスモードの設定",
+            "performancereport": "実績報告書",
+            "wireframe": "コライダーの表示を切り替える",
+            "fog": "距離フォグの表示/非表示を切り替える"
+        },
+        "mapgen": {
+            "title": "マップジェネレーター - セル高さが1の場合、",
+            "tooltips": {
+                "fit-to-scene": "タイルの自動サイズ調整と配置",
+                "select-all": "すべて選択",
+                "deselect-all": "すべて選択解除",
+                "set-elevation": "選択したセルの高さを設定する",
+                "add-material": "素材を追加する",
+                "apply-material": "選択したセルに素材を適用する",
+                "select-material": "この素材を含むセルを選択する",
+                "select-elevation": "この高さのセルを選択する",
+                "delete-material": "素材を削除する",
+                "invert": "選択範囲を反転",
+                "toggle-material": "資料を展開／折りたたむ",
+                "clear-material": "透明な素材"
+            },
+            "generator": {
+                "title": "地図を生成する",
+                "content": "新しいマップを生成してもよろしいですか？これにより、現在設定されているすべての標高が上書きされ、この操作は元に戻せません！\n最初のマテリアルスロットは地面のマテリアルとして使用され、残りのスロットはセルの高さに基づいて自動的に割り当てられます。",
+                "height": "最大高さ",
+                "cave": "洞窟",
+                "dungeon": "ダンジョン",
+                "landscape": "カスタム",
+                "generate": "生成",
+                "theme": "テーマ",
+                "shore": "海岸",
+                "hills": "丘",
+                "mountains": "山",
+                "plateau": "高原",
+                "valley": "バレー",
+                "island": "島"
+            },
+            "themes": {
+                "firelands": "ファイアランズ",
+                "desert": "砂漠",
+                "plains": "平原",
+                "wood": "木材",
+                "frost": "フロスト",
+                "jungle": "ジャングルの遺跡",
+                "crypt": "クリプト",
+                "alien": "エイリアン",
+                "tech": "テクノロジー",
+                "tmcArabianNights": "アラビアン・ナイト",
+                "tmcNature": "自然",
+                "tmcDungeon": "ダンジョン"
+            },
+            "material": {
+                "name": "名前",
+                "cellColor": "セルの色",
+                "tint": "ティントカラー",
+                "texture": "質感",
+                "repeat": "繰り返し",
+                "rotate": "ランダム化",
+                "metalness": "メタル感",
+                "roughness": "粗さ",
+                "opacity": "不透明度",
+                "emissive": "発光性"
+            },
+            "bevel": "ベベル",
+            "zoom": "ズーム",
+            "rows": "行",
+            "columns": "コラム"
+        },
+        "sharing": {
+            "sharemap": {
+                "agreement": "このマップを共有することにより、あなたは、その共有権を有していること、および使用されているアセットのいずれについても利用規約に違反していないことを認めるものとします。また、マップが3D Canvasサーバーに保存されること、およびいつでも削除される可能性があることに同意するものとします。",
+                "imageinfo": "imgurにマップのスクリーンショットをアップロードし、そのリンクを画像欄に貼り付けてください。正しくアップロードされると、プレビューに画像が表示されます。",
+                "title": "地図を共有する",
+                "name": "地図名",
+                "description": "説明",
+                "author": "著者",
+                "image": "画像",
+                "imageplaceholder": "画像のURL",
+                "share": "シェア",
+                "error": "エラーが発生しました",
+                "preview": "画像のプレビュー",
+                "secret": "秘密鍵",
+                "secretinfo": "なお、キーは暗号化された形式で保存されないため、自動生成されたランダムなキーを使用することをお勧めします。このキーは、マップの新しいバージョンを再提出することになった場合に備えて、将来の使用のために自動的に保存されます。",
+                "missingfields": "3D Canvas - マップの共有 | 1つ以上のフィールドが入力されていないか、アセットパックが選択されていません",
+                "gamemaster": "「Gamemaster」は許可されている著者名ではありません。",
+                "assetpacks": "アセットパック",
+                "assetinfo": "共有マップにはカスタムアセットは含まれません。主に許可されているパックに含まれるアセットをご利用ください。Ctrlキーを押しながらクリックすると、複数のパックを選択できます。",
+                "confirm": {
+                    "title": "地図の共有確認",
+                    "content": "このマップを共有してもよろしいですか？共有すると、共有したコンテンツを編集することはできなくなります。"
+                },
+                "success": {
+                    "titleupdated": "地図が更新されました",
+                    "title": "地図の共有",
+                    "content": "マップの共有が完了しました。これで、どなたでもこのマップをお楽しみいただけます。共有していただき、ありがとうございます！"
+                }
+            },
+            "mapbrowser": {
+                "title": "マップブラウザ：{count} 枚のマップが利用可能です",
+                "createJournal": "インポートしたシーンに関する情報を記載した「シーンノート」を作成する",
+                "imported": "インポートされたシーン",
+                "search": "検索するには、文字を入力してください..."
+            },
+            "packs": {
+                "baileywiki": "ベイリーウィキ",
+                "mapmakingpack": "地図作成パック",
+                "tokencollection": "トークンの収集"
+            },
+            "error": "リクエストが多すぎます。後ほどもう一度お試しください。",
+            "scenedirbutton": "コミュニティの3Dマップを閲覧する",
+            "contextbutton": "シーンを共有する"
+        },
+        "keybindings": {
+            "dialog": {
+                "title": "3D Canvas：主要なキーバインドを削除する",
+                "content": "3D Canvas コントロールがコアコントロールと重ならないようにするため、WASD キーのデフォルトのキーバインドを削除することを強くお勧めします。矢印キーやテンキーを使用すれば、トークンやその他のエンティティを移動することは引き続き可能です。これらを削除しますか？"
+            },
+            "lockcamera": "カメラの自動モードを有効にする（ゲームカメラのみ）",
+            "gameCameraTopDown": "トップダウンカメラの切り替え（ゲームカメラのみ）",
+            "removeWaypoint": "ルーラーのウェイポイントを取り除く",
+            "toggleFirstPerson": "一人称視点の切り替え",
+            "toggleCameraLockPosition": "カメラを所定の位置に固定する（ホールド）",
+            "rotate": "タイルエディタ：回転",
+            "translate": "タイルエディタ：翻訳",
+            "toggleGizmo": "タイルエディタ：ギズモの表示/非表示を切り替える",
+            "toggleSelect": "グループの選択（ドラッグ中に長押し）",
+            "resetView": "カメラの表示をリセット",
+            "topdownView": "トップダウン視点",
+            "cameraToToken": "選択したトークンにカメラを合わせる",
+            "panUp": "カメラ：上へパン",
+            "panDown": "カメラ：下へパン",
+            "panLeft": "カメラ：左へパン",
+            "panRight": "カメラ：右へパン",
+            "freeMode": "フリー配置モード",
+            "pingcamera": "すべてのクライアントに対して、pingを実行し、カメラを現在のビューに移動する",
+            "ping": "すべてのクライアントに対して、マウスの現在の位置情報を送信する",
+            "scaleWidth": "タイルエディタ：幅の拡大・縮小",
+            "scaleHeight": "タイルエディタ：高さの拡大・縮小",
+            "scaleGap": "タイルエディタ：スケールギャップ",
+            "scale": "タイルエディタ：拡大・縮小",
+            "scaleScale": "タイルエディタ：タイルの拡大・縮小",
+            "toggleMode": "タイルエディタ：塗りつぶしスタイルの切り替え",
+            "tiltX": "タイルエディタ：X軸の傾き",
+            "tiltY": "タイルエディタ：Y軸の傾き"
+        },
+        "flags": {
+            "emote": {
+                "header": "3Dキャンバス",
+                "label": "エモート",
+                "notes": "3D Canvasの戦術ピンで使用するためのカスタムプレイヤーエモートを選択してください。"
+            },
+            "meshStats": "頂点数: %v% | 三角形数: %t% | メッシュ数: %m% | インスタンス数: %i%",
+            "maxElevation": {
+                "label": "最高標高",
+                "notes": "このシーンにおけるトークンの最大許容標高。"
+            },
+            "grounding": {
+                "label": "アース",
+                "notes": "プレイヤートークンが空中での移動を終えるのを防ぎます。",
+                "options": {
+                    "none": "なし",
+                    "notFlying": "「飛行中」でない場合のみ",
+                    "always": "いつも"
+                }
+            },
+            "offset": {
+                "x": {
+                    "label": "オフセット X"
+                },
+                "y": {
+                    "label": "Y軸のオフセット"
+                },
+                "z": {
+                    "label": "Z軸オフセット"
+                }
+            },
+            "positional": {
+                "label": "3Dキャンバス：位置情報オーディオ",
+                "notes": "カメラからの距離に基づいて、この音の音量を緩やかに変化させます。「音量イージング」が有効になっている必要があります。"
+            },
+            "doorType": {
+                "options": {
+                    "none": "なし",
+                    "door": "ドア",
+                    "secret": "秘密"
+                }
+            },
+            "textureMode": {
+                "label": "テクスチャモード",
+                "options": {
+                    "stretch": "ストレッチ",
+                    "repeat": "繰り返し"
+                }
+            },
+            "textureRepeat": {
+                "label": "テクスチャの繰り返し"
+            },
+            "flipY": {
+                "label": "テクスチャを垂直方向に反転"
+            },
+            "doorState": {
+                "options": {
+                    "open": "開く",
+                    "closed": "終了",
+                    "locked": "ロック中"
+                }
+            },
+            "doorStyle": {
+                "label": "ドアのスタイル",
+                "options": {
+                    "transparent": "透明",
+                    "animate": "アニメーション（ピボット）",
+                    "slide": "アニメーション（スライド - サイド）",
+                    "slideVertical": "アニメーション（スライド - 縦向き）",
+                    "linkWithAnimation": "3Dモデルアニメーションへのリンク",
+                    "linkWithAnimationReversed": "単一の3Dモデルアニメーションへのリンク"
+                }
+            },
+            "doorAnimateAngle": {
+                "label": "ドアのアニメーション角度"
+            },
+            "doorAnimationDuration": {
+                "label": "ドアのアニメーションの持続時間",
+                "units": "ms"
+            },
+            "doorSlidePercent": {
+                "label": "ドアのスライド率"
+            },
+            "doorGrabTokens": {
+                "label": "トークンの取得",
+                "notes": "ドアが動き始めた際に、ドアの近くにあるトークンを捕捉します。「Transparent」スタイルでは機能しません。なお、トークンは移動中に捕捉されることはなく、ドアが動き始めた時点でのみ捕捉されることにご注意ください。"
+            },
+            "isFog": {
+                "label": "『Fog of War』はボックス版ですか？",
+                "notes": "カメラがこのテンプレートに入ったときに画面がぼやける。長方形のテンプレートでのみ発生する。"
+            },
+            "enablePlayers": {
+                "label": "プレイヤー向けに有効にする",
+                "notes": "プレイヤーがこのシーンの3Dビューを開けるようにします。フォグ・オブ・ウォーが有効になっていない場合、マップ全体が表示されます。"
+            },
+            "auto3d": {
+                "label": "読み込み時に3Dを有効にする"
+            },
+            "pixel": {
+                "label": "ピクセル化"
+            },
+            "bloom": {
+                "label": "ブルーム"
+            },
+            "bloomThreshold": {
+                "label": "開花閾値"
+            },
+            "bloomStrength": {
+                "label": "ブルーム・ストレングス"
+            },
+            "bloomRadius": {
+                "label": "開花半径"
+            },
+            "filter": {
+                "label": "フィルター",
+                "options": {
+                    "none": "なし",
+                    "grayscale": "グレースケール",
+                    "sepia": "セピア",
+                    "invert": "反転",
+                    "brightness": "明るさ",
+                    "contrast": "コントラスト",
+                    "saturate": "飽和度",
+                    "hue": "色相",
+                    "custom": "カスタム"
+                }
+            },
+            "filterStrength": {
+                "label": "フィルターの強度"
+            },
+            "filterCustom": {
+                "label": "カスタムフィルター",
+                "placeholder": "例：明るさ(0.5)、コントラスト(1.5)、彩度(0.5)"
+            },
+            "skybox": {
+                "label": "スカイボックス画像",
+                "placeholder": "スカイボックス画像",
+                "notes": "そのファイルは、計6つのファイルが格納されているフォルダ内にある必要があります。また、ファイル名には必ず「_ft」、「_bk」、「_up」、「_dn」、「_rt」、「_lf」が含まれている必要があります。"
+            },
+            "exr": {
+                "label": "スカイボックス",
+                "placeholder": "EXRファイルまたは360°パノラマ画像",
+                "notes": ".EXRファイル、または360°パノラマ形式の画像に対応しています。HDRIは背景として、またシーンの照明として使用されます。"
+            },
+            "exposure": {
+                "label": "露出",
+                "notes": "HDRIの露出設定です。1がデフォルト、2が最も明るく、0が最も暗くなります。"
+            },
+            "renderTable": {
+                "label": "パディング領域",
+                "notes": "3Dビューでパディング領域を表示する方法。",
+                "options": {
+                    "none": "なし",
+                    "table": "テーブル（カスタム）",
+                    "matpaper": "インフィニット・マット（紙）",
+                    "matwood": "インフィニット・マット（木製）",
+                    "matcloth": "インフィニットマット（布製）",
+                    "matblueprint": "インフィニット・マット（設計図）",
+                    "matcustom": "インフィニット・マット（カスタム）"
+                }
+            },
+            "tableTex": {
+                "label": "パディングテクスチャ",
+                "placeholder": "パディングテクスチャ"
+            },
+            "tableHeightmap": {
+                "label": "パディング高さマップ",
+                "placeholder": "パディング高さマップ"
+            },
+            "tableHeightmapScale": {
+                "label": "ハイトマップのスケール"
+            },
+            "tableColor": {
+                "label": "パディング・ティント"
+            },
+            "renderBackground": {
+                "label": "背景の表示",
+                "notes": "シーンの背景画像をボードとして表示します。"
+            },
+            "enableGrid": {
+                "label": "グリッドを有効にする"
+            },
+            "enableRuler": {
+                "label": "ルーラーを有効にする"
+            },
+            "enableAnimationScripts": {
+                "label": "アニメーションスクリプトを有効にする",
+                "notes": "警告：シーンの出典が信頼できるものであることを確認してください。これを利用されて悪意のあるコードが実行される可能性があります。タイルのアニメーションスクリプトの実行を有効にしてください。"
+            },
+            "enableFogOfWar": {
+                "label": "「フォグ・オブ・ウォー」を有効にする（パフォーマンス重視）",
+                "notes": "パフォーマンス重視。このオプションを有効にすると、3Dでの「戦場の霧」が有効になります。「視界の計算に3Dジオメトリを使用する」が有効になっている場合、「戦場の霧」は3Dジオメトリに基づいて計算されます（表示は依然として2次元となります）。"
+            },
+            "bakeLights": {
+                "label": "予熱ランプ",
+                "notes": "シーンの読み込み時に、ライトの影を事前にベイクしておけば、動的にはなりませんが、壁を通り抜けることはありません。"
+            },
+            "enableFog": {
+                "label": "Fogを有効にする"
+            },
+            "fogColor": {
+                "label": "霧の色"
+            },
+            "fogDistance": {
+                "label": "霧の視程距離"
+            },
+            "sceneTint": {
+                "label": "シーンの色調"
+            },
+            "timeSync": {
+                "label": "自動照明",
+                "options": {
+                    "off": "オフ",
+                    "time": "位置を世界標準時と同期する",
+                    "darkness": "シーンの明るさに合わせて露出を調整する",
+                    "both": "両方を同期（SmallTimeとの相性が最も良い）"
+                }
+            },
+            "lockCamera": {
+                "label": "カメラの視点を固定する",
+                "options": {
+                    "off": "オフ",
+                    "players": "プレイヤー限定",
+                    "all": "皆さん"
+                }
+            },
+            "sunPosition": {
+                "label": "時刻（24時間制）"
+            },
+            "sunDistance": {
+                "label": "太陽との距離"
+            },
+            "sunTilt": {
+                "label": "サン・ティルト"
+            },
+            "sunIntensity": {
+                "label": "日射強度"
+            },
+            "ambientLightIntensity": {
+                "label": "周囲の光の強度",
+                "notes": "すべての表面を均等に照らすグローバル光源の強度を制御します。この光は均一であり、影を落とすことも、受けることもありません。"
+            },
+            "ambientLightColor": {
+                "label": "周囲の光の色"
+            },
+            "shadowBias": {
+                "label": "シャドウバイアス",
+                "notes": "影の描画方法を決定する数値です。シーン内のオブジェクトに黒い縞模様が見られる場合は、この数値を調整してください。この数値の適切な値は通常非常に小さい値となるため、0.00001以下の単位で増減させることをお勧めします。"
+            },
+            "showSceneWalls": {
+                "label": "壁のレンダリング"
+            },
+            "showSceneDoors": {
+                "label": "ドアのレンダリング"
+            },
+            "showSceneFloors": {
+                "label": "タイルのレンダリング"
+            },
+            "initialview": {
+                "label": "初期表示位置",
+                "notes": "シーンの読み込み時のデフォルトのカメラ位置 - カメラビューをキャプチャする前に、ping を使用してターゲットを設定してください。",
+                "button": "カメラの映像をキャプチャする",
+                "buttondel": "保存済みのカメラビューを消去する"
+            },
+            "font": {
+                "label": "フォント",
+                "notes": "テキスト・ダイナミック・メッシュで使用されるJSONフォント。"
+            },
+            "wallFloorAlpha": {
+                "label": "壁／床のアルファ値"
+            },
+            "renderSceneLights": {
+                "label": "シーンのライトをレンダリングする"
+            },
+            "mirrorLevels": {
+                "label": "ミラーレベルによるタイルの表示可視性"
+            },
+            "object3dSight": {
+                "label": "視界の計算には3Dジオメトリを使用する"
+            },
+            "enableGameCamera": {
+                "label": "ゲームカメラを有効にする",
+                "notes": "このシーンでゲームカメラを有効にします。これを機能させるには、3D キャンバスの設定でゲームカメラをグローバルに有効にしておく必要があります。"
+            },
+            "model3d": {
+                "label": "3Dモデル"
+            },
+            "rotation": {
+                "label": "回転"
+            },
+            "dynaMesh": {
+                "label": "ダイナミックメッシュ",
+                "options": {
+                    "optgroup": {
+                        "basic": "基本",
+                        "complex": "複合体",
+                        "advanced": "上級",
+                        "interactive": "インタラクティブ",
+                        "special": "スペシャル"
+                    },
+                    "default": "なし（3Dモデルを使用）",
+                    "box": "ボックス",
+                    "plane": "飛行機",
+                    "sphere": "スフィア",
+                    "cylinder": "シリンダー",
+                    "cone": "円錐",
+                    "tube": "チューブ",
+                    "dome": "ドーム",
+                    "billboard": "ビルボード",
+                    "billboard2": "ビルボード（クロス）",
+                    "text": "テキスト（テキストには「3Dモデル」フィールドを使用してください）",
+                    "decal": "デカール",
+                    "stairs": "階段",
+                    "vines": "つる植物",
+                    "paper": "切り絵",
+                    "rock": "ロック（キューブ）",
+                    "rocksphere": "ロック（スフィア）",
+                    "rockcylinder": "岩（円柱）",
+                    "rockcone": "岩（円錐形）",
+                    "polygon": "ポリゴン",
+                    "polygonbevel": "ポリゴン（ベベル）",
+                    "polygonsolidify": "ポリゴン（ソリディファイ）",
+                    "polygonbevelsolidify": "ポリゴン（ベベル＋ソリダイズ）",
+                    "polygonbevelsolidifyjagged": "多角形（ギザギザの曲線）",
+                    "polygonbevelsolidifyjaggeddouble": "ポリゴン（ジャグド・ダブル）",
+                    "polygonbevelsolidifyjaggedstraight": "ポリゴン（ギザギザの直線）",
+                    "polygonlathe": "ポリゴン（旋盤）",
+                    "polygonchain": "ポリゴン（チェーン）",
+                    "counter": "カウンター",
+                    "counterradial": "カウンター - パイ",
+                    "mapGen": "マップジェネレーター"
+                }
+            },
+            "dynaMeshResolution": {
+                "label": "動的メッシュ解像度"
+            },
+            "imageTexture": {
+                "label": "質感"
+            },
+            "gmOnlyInteractive": {
+                "label": "GM限定のやり取り"
+            },
+            "displacementMap": {
+                "label": "ハイトマップ／ヒートマップ"
+            },
+            "invertDisplacementMap": {
+                "label": "ハイトマップ／ヒートマップの反転"
+            },
+            "displacementIntensity": {
+                "label": "ハイトマップの強度"
+            },
+            "displacementMatrix": {
+                "label": "ハイトマップ行列"
+            },
+            "wallSidesTexture": {
+                "label": "側面の質感"
+            },
+            "wallSidesTint": {
+                "label": "サイドの着色"
+            },
+            "onAnimation": {
+                "label": "アニメーション機能"
+            },
+            "fillType": {
+                "header": "タイル張り",
+                "tabNotes": "3Dモデルを複数回繰り返すか、タイルに合わせて引き伸ばすかを設定します。",
+                "label": "充填タイプ",
+                "options": {
+                    "stretch": "シングル",
+                    "tile": "繰り返し",
+                    "merged": "結合されたタイル"
+                }
+            },
+            "enableGravity": {
+                "label": "重力",
+                "options": {
+                    "none": "無効",
+                    "gravity": "重力のみ",
+                    "gravityRotation": "重力と地表の自転"
+                }
+            },
+            "depth": {
+                "label": "深さ"
+            },
+            "material": {
+                "label": "素材",
+                "header": "素材",
+                "tabNotes": "このタイルに適用されるマテリアルの視覚的なプロパティを設定します。スライダーを-0.01に設定すると、マテリアルのデフォルト値が使用されます。",
+                "options": {
+                    "none": "デフォルト",
+                    "optgroup": {
+                        "presets": "プリセット",
+                        "advanced": "上級"
+                    },
+                    "presets": {
+                        "basic-plastic": "基本的なプラスチック",
+                        "premium-plastic": "プレミアムプラスチック",
+                        "steel": "鋼",
+                        "bronze": "ブロンズ",
+                        "copper": "銅",
+                        "hammered-steel": "ハンマー仕上げの鋼",
+                        "leather": "レザー",
+                        "marble": "大理石",
+                        "wood": "木材"
+                    },
+                    "basic": "基本（照明・影なし）",
+                    "texcol": "質感・色",
+                    "plastic": "プラスチック",
+                    "wood": "木材",
+                    "metal": "メタル",
+                    "pbr": "PBR"
+                }
+            },
+            "color": {
+                "label": "色",
+                "notes": "「素材」と「色」の設定は、一部のモデル（通常はグレーでテクスチャが適用されていないもの）でのみ有効です。"
+            },
+            "tint": {
+                "label": "ティントの色"
+            },
+            "shading": {
+                "label": "陰影",
+                "options": {
+                    "default": "デフォルト",
+                    "flat": "フラット",
+                    "smooth": "滑らか"
+                }
+            },
+            "sides": {
+                "label": "サイド",
+                "options": {
+                    "default": "デフォルト",
+                    "FrontSide": "表側",
+                    "BackSide": "裏面",
+                    "DoubleSide": "両面"
+                }
+            },
+            "basic": {
+                "header": "基本",
+                "tabNotes": "3Dモデルの設定、配置、および拡大縮小のオプションを設定します。"
+            },
+            "effects": {
+                "header": "効果",
+                "tabNotes": "このタイルに適用する特殊効果を設定します。"
+            },
+            "noise": {
+                "header": "ノイズ",
+                "tabNotes": "モデル上に手続き型ノイズを設定して、歪みを適用します。",
+                "label": "ノイズの種類",
+                "options": {
+                    "none": "なし",
+                    "simplex": "シンプレックス",
+                    "perlin": "パーリン"
+                }
+            },
+            "noiseScale": {
+                "label": "騒音レベル"
+            },
+            "noiseHeight": {
+                "label": "高さ"
+            },
+            "noisePersistence": {
+                "label": "粘り強さ"
+            },
+            "noiseOctaves": {
+                "label": "オクターブ"
+            },
+            "noiseLacunarity": {
+                "label": "ラクナリティ"
+            },
+            "noiseExponent": {
+                "label": "指数"
+            },
+            "noiseFlattening": {
+                "label": "平坦化"
+            },
+            "shaderIntensity": {
+                "label": "シェーダーの強度"
+            },
+            "shaderSpeed": {
+                "label": "速度"
+            },
+            "shaderOther": {
+                "label": "シェーダー その他"
+            },
+            "shaderOther2": {
+                "label": "シェーダー その他 2"
+            },
+            "shaderAlt": {
+                "label": "代替モードを使用する"
+            },
+            "baseColor": {
+                "label": "ベースカラー"
+            },
+            "disableBase": {
+                "label": "ベースを無効にする"
+            },
+            "removeBase": {
+                "label": "ベースを取り外す",
+                "notes": "元のモデルのベースを削除します。これは、3Dモデルデータ内でベースの名前が「base」と指定されている場合にのみ機能します。"
+            },
+            "solidBaseMode": {
+                "label": "基本モード",
+                "options": {
+                    "default": "デフォルト",
+                    "merge": "結合",
+                    "ontop": "トップ"
+                }
+            },
+            "draggable": {
+                "label": "ドラッグ可能"
+            },
+            "alwaysVisible": {
+                "label": "常に表示される"
+            },
+            "enableAnim": {
+                "label": "アニメーションを有効にする（ある場合）"
+            },
+            "animIndex": {
+                "label": "アニメーション一覧"
+            },
+            "animationOnce": {
+                "label": "1回再生"
+            },
+            "linkWithDoorState": {
+                "label": "ドアの状態との連動"
+            },
+            "animSpeed": {
+                "label": "アニメーションの速度"
+            },
+            "forceFlyingMode": {
+                "label": "飛行モードを強制する"
+            },
+            "paused": {
+                "label": "一時停止中"
+            },
+            "faceCamera": {
+                "label": "顔カメラモード",
+                "options": {
+                    "default": "グローバル設定（デフォルト）",
+                    "face": "フロントカメラ",
+                    "noface": "カメラに向かないでください"
+                }
+            },
+            "rotationAxis": {
+                "label": "回転軸",
+                "options": {
+                    "x": "X",
+                    "z": "Z",
+                    "y": "Y"
+                },
+                "notes": "元のトークンの回転が変更された場合に使用する軸。元のファイルがSTL形式の場合は通常Z軸となり、それ以外の場合はY軸となります。"
+            },
+            "autoCenter": {
+                "label": "オートセンター"
+            },
+            "autoGround": {
+                "label": "自動接地"
+            },
+            "rotationX": {
+                "label": "回転 X"
+            },
+            "rotationY": {
+                "label": "Y軸の回転"
+            },
+            "rotationZ": {
+                "label": "Z軸の回転"
+            },
+            "rotateBase": {
+                "label": "ベースの回転を修正する",
+                "notes": "モデルによっては、選択インジケーターを回転させる必要がある場合があります。必要に応じて有効にしてください。（通常、STLから変換されたファイルの場合）"
+            },
+            "offsetX": {
+                "label": "オフセット X"
+            },
+            "offsetY": {
+                "label": "Y軸のオフセット"
+            },
+            "offsetZ": {
+                "label": "Z軸オフセット"
+            },
+            "scale": {
+                "label": "スケール"
+            },
+            "yScale": {
+                "label": "Yスケール"
+            },
+            "tileScale": {
+                "label": "タイルの縮尺"
+            },
+            "gap": {
+                "label": "ギャップ"
+            },
+            "tilt": {
+                "label": "チルト"
+            },
+            "tiltX": {
+                "label": "Tilt X"
+            },
+            "tiltZ": {
+                "label": "Y軸の傾き"
+            },
+            "randomRotation": {
+                "label": "回転のランダム化"
+            },
+            "randomColor": {
+                "label": "色をランダムにする"
+            },
+            "randomDepth": {
+                "label": "深さのランダム化"
+            },
+            "randomScale": {
+                "label": "スケールのランダム化"
+            },
+            "randomPosition": {
+                "label": "位置をランダムに配置する"
+            },
+            "randomSeed": {
+                "label": "乱数シード"
+            },
+            "maxInstances": {
+                "label": "最大インスタンス数"
+            },
+            "tiling": {
+                "label": "タイルの配置オプション"
+            },
+            "shader": {
+                "header": "シェーダー"
+            },
+            "attachments": {
+                "header": "添付ファイル",
+                "tabNotes": "このトークンへの添付設定を行います。添付を追加するには、トークンを選択し、「タイルレイヤー」に移動して、トークンに添付したいタイルを配置し、そのタイルを右クリックして、「タイルをトークンに添付」オプションをクリックします。",
+                "filename": "添付ファイル名",
+                "info": "トークンに %s タイルが紐付けられています"
+            },
+            "wallOpacity": {
+                "label": "不透明度"
+            },
+            "roughness": {
+                "label": "粗さ"
+            },
+            "metalness": {
+                "label": "反射率"
+            },
+            "transparency": {
+                "label": "不透明度"
+            },
+            "alphaClip": {
+                "label": "アルファ・クリップ"
+            },
+            "transmission": {
+                "label": "トランスミッション"
+            },
+            "ior": {
+                "label": "IoR"
+            },
+            "wallDepth": {
+                "label": "壁の厚さ"
+            },
+            "joinWall": {
+                "label": "Wallに参加する"
+            },
+            "stretchTex": {
+                "label": "ストレッチテクスチャ"
+            },
+            "tcollision": {
+                "label": "ブロックの移動"
+            },
+            "tsight": {
+                "header": "ビジョン",
+                "tabNotes": "このタイルの視認性、遮光性、および衝突に関するプロパティを設定します。",
+                "label": "視界の遮断"
+            },
+            "aura": {
+                "header": "オーラ"
+            },
+            "advanced": {
+                "header": "上級"
+            },
+            "position": {
+                "header": "役職",
+                "tabNotes": "位置、スケール、回転を設定します。さらに、オフセットも設定します（このオフセットはタイルのピボットポイントを変更するために使用されるもので、結合されたタイルでは機能しません）。幅、高さ、回転など、一部のプロパティは、タイル設定の通常の「基本」タブでも確認できます。"
+            },
+            "auraRange": {
+                "label": "オーラ範囲"
+            },
+            "auraColor": {
+                "label": "オーラの色"
+            },
+            "tcameraCollision": {
+                "label": "カメラコライダー"
+            },
+            "sightMeshComplexity": {
+                "label": "コライダーの解像度"
+            },
+            "highlightOnHover": {
+                "label": "マウスオーバー時のハイライト表示"
+            },
+            "enableCollision": {
+                "label": "「衝突」を有効にする",
+                "options": {
+                    "0": "オフ",
+                    "1": "オン（トークンから）",
+                    "2": "オン（スカイより）"
+                }
+            },
+            "stem": {
+                "label": "Stemを有効にする"
+            },
+            "collisionPlane": {
+                "label": "衝突平面"
+            },
+            "castShadow": {
+                "label": "「キャストア・シャドウ」",
+                "notes": "ライトの影の表示を有効にする - 警告：パフォーマンスに大きな影響があります！"
+            },
+            "visibleWhenDisabled": {
+                "label": "無効化時に表示される",
+                "notes": "ライトが無効になっている場合でも、そのライトは表示されます。視界の光源としては機能しませんが、照明による視覚効果は適用されます。"
+            },
+            "postprocessing": {
+                "header": "後処理",
+                "notes": "シーンに適用された後処理エフェクト。",
+                "enabled": {
+                    "label": "有効"
+                },
+                "vignette": {
+                    "label": "ヴィネット"
+                },
+                "chromaticAberration": {
+                    "label": "色収差"
+                },
+                "grain": {
+                    "label": "穀物"
+                },
+                "tint": {
+                    "label": "ティント"
+                },
+                "contrast": {
+                    "label": "コントラスト"
+                },
+                "brightness": {
+                    "label": "明るさ"
+                },
+                "saturation": {
+                    "label": "飽和"
+                }
+            },
+            "particlePreset": {
+                "label1": "パーティクルプリセット 1",
+                "label2": "パーティクルプリセット 2",
+                "notes": "パーティクルエフェクトに使用するプリセット。",
+                "options": {
+                    "none": "なし",
+                    "rain": "雨",
+                    "heavyrain": "豪雨",
+                    "snow": "雪",
+                    "hail": "雹",
+                    "sand": "砂嵐",
+                    "leaves": "葉",
+                    "embers": "残り火",
+                    "mysteriouslights": "謎の光",
+                    "stars": "スター",
+                    "starfall": "スターフォール (JB2A)",
+                    "smoke": "煙",
+                    "toxic": "有毒ガス",
+                    "dust": "ほこり",
+                    "custom": "カスタム"
+                }
+            },
+            "particleTexture": {
+                "label": "質感"
+            },
+            "particleColor": {
+                "label": "色"
+            },
+            "particleSize": {
+                "label": "サイズ"
+            },
+            "particleSpeed": {
+                "label": "速度"
+            },
+            "particleDensity": {
+                "label": "密度"
+            },
+            "particleDirection": {
+                "label": "方向"
+            },
+            "particleOpacity": {
+                "label": "不透明度"
+            },
+            "particleVelocity": {
+                "label": "ベロシティ"
+            },
+            "particleBlending": {
+                "label": "ブレンド"
+            },
+            "particleGroundOffset": {
+                "label": "グラウンドオフセット"
+            },
+            "particleRandomRotation": {
+                "label": "ランダムな回転"
+            },
+            "particleRandomScale": {
+                "label": "ランダムサイズ"
+            },
+            "particleRotationspeed": {
+                "label": "回転速度"
+            },
+            "particleBlend": {
+                "label": "ブレンド"
+            },
+            "lightParticleEffect": {
+                "ParticleType": {
+                    "label": "パーティクルプリセット",
+                    "options": {
+                        "optgroup": "指向性（放射角が必要）"
+                    }
+                },
+                "ParticlePosition": {
+                    "label": "役職",
+                    "options": {
+                        "surface": "サーフェス",
+                        "center": "センター"
+                    }
+                },
+                "ParticleRadius": {
+                    "label": "半径"
+                },
+                "ParticleIntensity": {
+                    "label": "強度"
+                },
+                "ParticleSprite": {
+                    "label": "スプライト"
+                },
+                "ParticleScale": {
+                    "label": "スケール"
+                },
+                "ParticleEmitterSizeMultiplier": {
+                    "label": "面積乗数"
+                },
+                "ParticleColor": {
+                    "label": "プライマリカラー"
+                },
+                "ParticleColor2": {
+                    "label": "色（副色）"
+                },
+                "ParticleForce": {
+                    "label": "力"
+                },
+                "ParticleLife": {
+                    "label": "人生"
+                },
+                "ParticleCount": {
+                    "label": "カウント"
+                },
+                "ParticleEmitTime": {
+                    "label": "放出時刻"
+                },
+                "ParticleMass": {
+                    "label": "質量"
+                },
+                "ParticleGravity": {
+                    "label": "重力"
+                },
+                "enableParticle": {
+                    "label": "パーティクルエフェクトを有効にする"
+                },
+                "enableParticleHidden": {
+                    "label": "非表示／無効化されているときにパーティクルエフェクトを有効にする。"
+                },
+                "ParticleAlphaStart": {
+                    "label": "初期不透明度"
+                },
+                "ParticleAlphaEnd": {
+                    "label": "終了時の不透明度"
+                },
+                "ParticlePushX": {
+                    "label": "Xを押す"
+                },
+                "ParticlePushY": {
+                    "label": "Yを押す"
+                },
+                "ParticlePushZ": {
+                    "label": "Zキーを押す"
+                },
+                "header": {
+                    "title": "パーティクルエフェクト",
+                    "notes": "光に使用するパーティクルエフェクト。"
+                }
+            }
+        },
+        "settings": {
+            "autoApply": {
+                "name": "マテリアルを自動的に適用する",
+                "hint": "素材を選択すると、その素材は選択したオブジェクトに即座に適用されます。"
+            },
+            "autoClose": {
+                "name": "マテリアルブラウザを閉じる",
+                "hint": "素材を選択すると、素材ブラウザが閉じられます。"
+            },
+            "allTokens": {
+                "name": "すべてのトークンを表示",
+                "hint": "無効にしている場合は色付けされたトークンのみを表示し、有効にしている場合は利用可能なすべてのトークンを表示します。"
+            },
+            "autoAssignToken": {
+                "name": "3Dモデルの自動割り当て",
+                "hint": "キャンバスに「Unlinked」トークンを配置する際、3Dモデルが割り当てられていない場合は、自動的に3Dモデルを割り当てる。",
+                "options": {
+                    "0": "無効",
+                    "1": "3Dモデルのみ",
+                    "2": "3Dモデルとトップダウントークン"
+                }
+            },
+            "assetBrowserCustomPath": {
+                "name": "カスタムアセットパス",
+                "hint": "アセットブラウザでカスタムパスを使用したい場合は、ここで設定してください。"
+            },
+            "rangeFinder": {
+                "name": "距離計",
+                "hint": "トークンにカーソルを合わせると、そのトークンまでの距離を表示する。",
+                "options": {
+                    "none": "無効",
+                    "combat": "戦闘中のみ",
+                    "always": "いつも"
+                }
+            },
+            "useRaycastRuler": {
+                "name": "実験版：適応型定規",
+                "hint": "この設定を有効にすると、トークンが飛行していない限り、定規はその下の地形に密着します。"
+            },
+            "resolutionMultiplier": {
+                "name": "解像度倍率",
+                "hint": "警告：この設定を変更すると、2D ビューの解像度にも影響します。更新が必要です。"
+            },
+            "fogDebounce": {
+                "name": "「Fog of War」アップデートの配信制限",
+                "hint": "「無効」に設定されている場合、視界と「戦場の霧」は常に更新されます。"
+            },
+            "sharedContext": {
+                "name": "共有コンテキスト",
+                "hint": "この機能を有効にすると、「フォグ・オブ・ウォー」のパフォーマンスは大幅に向上しますが、ミニキャンバスは使用できなくなります。"
+            },
+            "preapplyShaders": {
+                "name": "シェーダーのプリロード",
+                "hint": "このオプションを有効にすると、シェーダーはレンダリングループが開始される前に適用されます。これにより、シェーダーを初めて有効にした際のカクつきを防ぐことができますが、パフォーマンスや読み込み時間にわずかな影響が出る可能性があります。"
+            },
+            "lightCacheSize": {
+                "name": "ライトキャッシュのサイズ",
+                "hint": "各シーンでキャッシュするライトの数。この数のライトであれば、カクつきを引き起こすことなく配置・有効化できます。"
+            },
+            "showAdvanced": {
+                "show": "詳細設定を表示",
+                "wiki": "詳細はこちら",
+                "hide": "詳細設定を非表示にする",
+                "name": "「詳細設定」を常に表示する",
+                "hint": "設定メニューで、デフォルトで詳細設定を表示するようにします。"
+            },
+            "navigatorAuto": {
+                "name": "ナビゲーター追従モード",
+                "hint": "シーンの読み込み時に、3Dナビゲーターの「フォローモード」を自動的に有効にします。",
+                "options": {
+                    "none": "誰もいない",
+                    "players": "プレイヤー限定",
+                    "all": "プレイヤーとGM"
+                }
+            },
+            "headers": {
+                "basics": {
+                    "title": "基本",
+                    "notes": "この3Dシーンの基本設定を行います。"
+                },
+                "environment": {
+                    "title": "環境",
+                    "notes": "3D環境およびエフェクトの設定。"
+                },
+                "lighting": {
+                    "title": "照明",
+                    "notes": "シーンのグローバルライティングを設定します。"
+                },
+                "particles": {
+                    "title": "粒子",
+                    "notes": "パーティクルエフェクトを設定します。"
+                },
+                "visibility": {
+                    "title": "可視性",
+                    "notes": "3Dオブジェクトの表示設定を行います。"
+                }
+            },
+            "canping": {
+                "name": "プレイヤーは「ping」を送信できます",
+                "hint": "プレイヤーが場所に対してpingを送信できる機能を有効にします（デフォルトはShift+E）。"
+            },
+            "canpingpan": {
+                "name": "プレイヤーはカメラの位置を送信できる",
+                "hint": "プレイヤーに対してカメラ位置を送信する機能を有効にします（デフォルトは Shift+Q）。"
+            },
+            "enableGameCamera": {
+                "name": "ゲームカメラを有効にする",
+                "hint": "「ビデオゲーム」風のカメラ機能を有効にします。プレイヤーには強制的に適用されますが、GMはオン／オフを切り替えることができます。"
+            },
+            "gameCameraMinAngle": {
+                "name": "最小角度",
+                "hint": "カメラを回転させることができる最小角度（垂直方向の回転）。"
+            },
+            "gameCameraMaxAngle": {
+                "name": "最大角度",
+                "hint": "カメラを回転させることができる最大角度（垂直方向の回転）。"
+            },
+            "gameCameraMinAzimuth": {
+                "name": "最小方位角",
+                "hint": "カメラが回転できる最小の方位角（水平回転）。"
+            },
+            "gameCameraMaxAzimuth": {
+                "name": "最大方位角",
+                "hint": "カメラが回転できる最大方位角（水平回転）。"
+            },
+            "gameCameraMaxZoom": {
+                "name": "最大ズーム",
+                "hint": "カメラで設定できる最大ズームレベルです。値が大きいほど、画面が広角になります。"
+            },
+            "gameCameraClipping": {
+                "name": "クリッピング",
+                "hint": "有効にすると、現在のカメラのターゲットを覆っているオブジェクトを非表示にします。"
+            },
+            "gameCameraDefaultGm": {
+                "name": "GMのデフォルト設定がオン",
+                "hint": "GMは、シーンを初めて読み込む際にゲームカメラをオンにしておくべきかどうか。"
+            },
+            "gameCameraAutoLock": {
+                "name": "自動再ロック",
+                "hint": "ゲームカメラがターゲットからロック解除された場合、ターゲットが変更されたら自動的に再ロックする。"
+            },
+            "gameCameraWarnings": {
+                "name": "警告を表示する",
+                "hint": "有効にすると、ゲームカメラの機能について警告が表示されます。"
+            },
+            "configApp": {
+                "title": "3Dキャンバスの設定",
+                "name": "グローバル設定",
+                "label": "グローバル設定の構成",
+                "hint": "グローバル 3D キャンバスの設定を行います。これらの設定はすべてのクライアントに適用されます。この設定より下にあるその他の設定は、クライアントごとに異なります。",
+                "save": "設定を保存",
+                "tabs": {
+                    "canvas": "キャンバス",
+                    "token": "トークン",
+                    "base": "ベース",
+                    "misc": "その他",
+                    "perm": "権限",
+                    "gc": "ゲーム用カメラ",
+                    "tools": "ツール"
+                }
+            },
+            "baseStyle": {
+                "name": "基本スタイル",
+                "hint": "すべてのトークンに適用する基本スタイル。",
+                "options": {
+                    "image": "画像",
+                    "solid": "ソリッド",
+                    "solidindicator": "点灯＋方向指示灯"
+                }
+            },
+            "solidBaseMode": {
+                "name": "基本モード",
+                "hint": "「結合」では元のモデルは移動されず、「上に乗せる」ではモデルがベースの上部にオフセットされます。",
+                "options": {
+                    "merge": "マージ",
+                    "ontop": "トップ"
+                }
+            },
+            "solidBaseColor": {
+                "name": "ベースカラー",
+                "hint": "実線のベースの色。16進数または色名（あるいは任意のCSSカラー）を指定できます。デフォルトは #1c1c1c です。"
+            },
+            "highlightCombat": {
+                "name": "戦闘のハイライト",
+                "hint": "現在選択されている戦闘員をハイライト表示します。"
+            },
+            "startMarker": {
+                "name": "ターン開始マーカー",
+                "hint": "戦闘中は、ターン開始時にトークンが置かれていた場所にマーカーを置きます。そのトークンの所有者だけが、そのマーカーを確認できます。"
+            },
+            "selectedImage": {
+                "name": "特集のハイライト画像",
+                "hint": "トークンを選択した際に表示する画像。"
+            },
+            "colorizeInidcator": {
+                "name": "ハイライト画像に色を付ける",
+                "hint": "ハイライト画像を、Foundryのデフォルトの枠の色に合わせて色付けします。"
+            },
+            "enableReticule": {
+                "name": "レティクルの表示を有効にする",
+                "hint": "ターゲットレティクルを有効にすると、現在のユーザーがターゲットにしているトークンがハイライト表示されます。これにより、2Dのレティクルと同様のレティクルが表示されます。"
+            },
+            "hideTarget": {
+                "name": "ターゲットインジケーターを非表示にする（ベースが実線の場合）",
+                "hint": "トークンの「ベース」機能が有効になっている場合、ターゲットインジケーターを非表示にし、ターゲットはベースリングのハイライト部分に表示されます。"
+            },
+            "hideEffects": {
+                "name": "エフェクトを非表示にする",
+                "hint": "トークンの上に表示されているエフェクトインジケーターを非表示にする。"
+            },
+            "rotateIndicator": {
+                "name": "ベースを回転させる",
+                "hint": "3Dベースを回転させて、トークンの回転に合わせてください。"
+            },
+            "templateEffects": {
+                "name": "テンプレート効果を有効にする",
+                "hint": "ダメージの種類に基づいて、テンプレートにシェーダーを自動的に適用します。現在、dnd5eのみがサポートされています。"
+            },
+            "templateAuto3D": {
+                "name": "自動3Dテンプレート",
+                "hint": "テンプレートに3番目の次元が指定されていない場合は、それを推測する（例：幅5フィートの光線は、高さ5フィートとなる）。"
+            },
+            "lightHelpers": {
+                "name": "ライトヘルパーを有効にする",
+                "hint": "ライトヘルパーを有効にします。これにより、ライティングレイヤーで光源とその光の影響範囲が表示されます。"
+            },
+            "templateSyle": {
+                "name": "テンプレートのスタイル",
+                "hint": "測定用テンプレートに適用するスタイル。",
+                "options": {
+                    "wireframe": "ワイヤーフレーム",
+                    "solid": "ソリッド"
+                }
+            },
+            "paddingAppearance": {
+                "name": "パディングの外観",
+                "hint": "パディングのデフォルトの外観です。これはシーンごとにカスタマイズすることも可能です。"
+            },
+            "gridMode": {
+                "name": "グリッド描画モード",
+                "hint": "グリッドの描画方法。一般的に「Fast」の方が高速ですが、正方形のグリッドのみに対応しています。「Mirror」は、Foundryグリッドを1:1で鏡像化しますが、レンダリングにコストがかかります。",
+                "options": {
+                    "fast": "速い",
+                    "mirror": "鏡"
+                }
+            },
+            "autoPan": {
+                "name": "オートパン",
+                "hint": "3Dカメラのパン操作を2Dカメラに連動させます。主に、トークンを移動させるとカメラがそれに追従するようになります。この機能を無効にしている場合でも、Ctrl+Xキーを押せばいつでも選択したトークンにカメラをパンさせることができます。",
+                "options": {
+                    "none": "無効",
+                    "player": "プレイヤーのみ",
+                    "all": "皆さん"
+                }
+            },
+            "conservativeHitbox": {
+                "name": "保守的なヒットボックス",
+                "hint": "トークンのヒットボックスのサイズを制限し、トークンのベースの範囲外にはみ出さないようにする。"
+            },
+            "screenspacepanning": {
+                "name": "スクリーンスペース・パンを有効にする",
+                "hint": "3Dビューでスクリーンスペースパンニングを有効にします（マップコントロールスタイル）。"
+            },
+            "altCameraControls": {
+                "name": "その他のカメラ操作方法",
+                "hint": "この機能を有効にすると、左クリックではカメラが回転しなくなります。代わりに、中央のマウスボタンでカメラを回転させることができます。"
+            },
+            "enabledamping": {
+                "name": "ダンピングを有効にする",
+                "hint": "カメラのダンピングを有効にします。乗り物酔いを感じる場合は、このオプションを無効にしてください。（3DビューでShift+Rを押すと、カメラがリセットされ、この変更が反映されます）。"
+            },
+            "camerafocuszoom": {
+                "name": "カメラのフォーカスズームを有効にする",
+                "hint": "Shift+X キーを押しながらカメラをトークンに合わせると、そのトークンを拡大表示します"
+            },
+            "standupFace": {
+                "name": "スタンダップ芸人がカメラに向き合う",
+                "hint": "スタンドアップ形式で表示される2Dトークンは、常にカメラの方を向いています。"
+            },
+            "flatTokenStyle": {
+                "name": "2Dトークンスタイル",
+                "hint": "3Dモデルが設定されていない場合に、2Dトークンに適用するスタイル。",
+                "options": {
+                    "flat": "フラット（正面カメラ）",
+                    "extruded": "押し出し成形（直立状態）",
+                    "coin": "コイン（トップダウン）"
+                }
+            },
+            "useMultithreading": {
+                "name": "マルチスレッドを使用する",
+                "hint": "マルチスレッドを使用して、「フォグ・オブ・ウォー」の計算パフォーマンスを向上させます。フォグ・オブ・ウォーを使用していない場合、この設定は効果を発揮しません。"
+            },
+            "miniCanvas": {
+                "name": "Canvasのポップアウト機能を有効にする",
+                "hint": "3Dモードが有効になったときに、2Dキャンバスを別のウィンドウとしてポップアウトする"
+            },
+            "pingsound": {
+                "name": "ピン音",
+                "hint": "場所をピンで指定したときに再生される音。"
+            },
+            "preventNegative": {
+                "name": "負の高さを防ぐ",
+                "hint": "トークンがゲームボードの下へ移動するのを防ぎます"
+            },
+            "outline": {
+                "name": "概要",
+                "hint": "ホバー時および選択時にキャンバスオブジェクトの輪郭を表示します。パフォーマンスを向上させるには、この機能を無効にしてください。"
+            },
+            "fullTransparency": {
+                "name": "真の透明性",
+                "hint": "視覚的なアーティファクトを防ぐため、3D Canvas ではアルファクリッピングを使用して透明度を処理していますが、これによりエッジがギザギザに見える場合があります。透明なテクスチャの使用量が非常に少ない場合や、透明部分が重なり合わない場合は、この設定を有効にすることで、透明なテクスチャの表示品質を向上させることができます。使用は自己責任で行ってください。視覚的な不具合が発生する可能性があります。"
+            },
+            "globalCollision": {
+                "name": "グローバルコリジョンを有効にする",
+                "hint": "ボード上のすべてのトークンに対して衝突判定を有効にします。"
+            },
+            "antialiasing": {
+                "name": "アンチエイリアシング",
+                "hint": "パフォーマンスを多少犠牲にしてアンチエイリアシングを有効にします。FXAAはパフォーマンスへの影響がほぼゼロです。SMAAはより良い結果が得られますが、パフォーマンスへの負荷が若干高くなる可能性があります。",
+                "options": {
+                    "none": "無効",
+                    "fxaa": "FXAA",
+                    "smaa": "SMAA"
+                }
+            },
+            "fowQuality": {
+                "name": "「戦場の霧」の品質",
+                "hint": "「フォグ・オブ・ウォー」の解像度を設定します。",
+                "options": {
+                    "native": "ネイティブ",
+                    "high": "高い",
+                    "medium": "中",
+                    "low": "低",
+                    "verylow": "極めて低い"
+                }
+            },
+            "dofblur": {
+                "name": "被写界深度",
+                "hint": "「被写界深度によるボケ」を有効にします。これにより、カメラがトークンに近づいた際に背景がぼやけ、まるでテーブルの前にいるかのような臨場感が得られます。設定値を高くするほどボケ効果は強くなりますが、ボケのレベルによってパフォーマンスに影響は生じません。ただし、この機能を有効にすると、パフォーマンスに大きな影響が出る場合があります。",
+                "options": {
+                    "off": "無効",
+                    "low": "低",
+                    "medium": "中",
+                    "high": "高い"
+                }
+            },
+            "disableLighting": {
+                "name": "影を無効にする",
+                "hint": "パフォーマンスを向上させるために、影を無効にしてください。"
+            },
+            "shadowQuality": {
+                "name": "シャドウの品質",
+                "hint": "影の解像度。影を無効にするには、「無効」に設定してください。",
+                "options": {
+                    "none": "無効",
+                    "low": "低",
+                    "medium": "中",
+                    "high": "高い",
+                    "ultra": "ウルトラ",
+                    "gamer": "ゲーマー"
+                }
+            },
+            "enableShaders": {
+                "name": "シェーダーを有効にする",
+                "hint": "シェーダーの特殊効果を有効にします。ハードウェアや効果の数によっては、一部の効果が処理負荷を高める場合があります。パフォーマンスを向上させるには、この機能を無効にしてください。"
+            },
+            "enableEffects": {
+                "name": "エフェクトを有効にする",
+                "hint": "天候エフェクトとパーティクルエフェクトを有効にします。エフェクトによっては、ハードウェアの性能や表示量によっては処理負荷が高くなる場合があります。パフォーマンスを向上させたい場合は、無効にしてください。"
+            },
+            "softShadows": {
+                "name": "柔らかな影",
+                "hint": "パフォーマンスをわずかに犠牲にして、ソフトシャドウを有効にします。画面の再描画が必要です。"
+            },
+            "resolution": {
+                "name": "決議",
+                "hint": "3Dキャンバスの解像度は、パフォーマンスに影響を与えます。",
+                "options": {
+                    "full": "高い",
+                    "half": "中",
+                    "quarter": "低"
+                }
+            },
+            "cameralockzero": {
+                "name": "ネガティブカメラを防ぐ",
+                "hint": "カメラがゼロ未満の角度でピボットまたはパンしないようにする（更新が必要）。"
+            },
+            "debugMode": {
+                "name": "デバッグモード",
+                "hint": "トラブルシューティングに役立つデバッグ情報を表示します。"
+            }
+        },
+        "exporter": {
+            "title": "オブジェクトをGLTF形式でエクスポートする",
+            "tokens": "トークン",
+            "interactive": "ドラッグ可能なトークンを含める",
+            "tiles": "タイル",
+            "all": "シーン全体",
+            "doors": "ドア",
+            "walls": "壁",
+            "background": "背景",
+            "export": "エクスポート",
+            "cancel": "キャンセル"
+        },
+        "particleSystems": {
+            "optgroup-projectiles": "投射物",
+            "optgroup-rays": "レイズ",
+            "optgroup-sprites": "オブジェクト",
+            "optgroup-directional": "方向性",
+            "optgroup-explosions": "爆発",
+            "optgroup-targetonly": "的を射る",
+            "custom": "カスタム",
+            "torch": "トーチ",
+            "magiccircle": "マジック・サークル",
+            "fire": "火",
+            "vortex": "ボルテックス",
+            "sparks": "スパークス",
+            "holy": "聖なる光",
+            "ghostly": "幽玄な光",
+            "fairy": "フェアリー・ダスト",
+            "smokecloud": "煙の雲",
+            "mysteriouslights": "謎の光",
+            "sunburst": "サンバースト",
+            "tesla": "テスラ",
+            "magicsphere": "マジック・スフィア",
+            "mist": "霧",
+            "mist2": "ミスト 2",
+            "gravitywell": "重力井戸",
+            "optgroup": "指向性（放射角が必要）",
+            "directionalfire": "火炎放射器",
+            "directionalshock": "エレクトリック・バースト",
+            "directionalpoison": "毒雲",
+            "directionalwave": "Wave",
+            "directionallaser": "レーザー",
+            "directionalfrost": "フロスト",
+            "projectile": "投射体",
+            "blackdart": "ブラック・ダート",
+            "shotgun": "ショットガン",
+            "earthprojectile": "地球への飛来物",
+            "earthexplosion": "地球の爆発",
+            "ray": "レイ",
+            "voidray": "ヴォイド・レイ",
+            "runicray": "ルーン・レイ",
+            "runicshot": "ルーンショット",
+            "explosion": "爆発",
+            "sprite": "3Dモデル",
+            "slash": "スラッシュ",
+            "magicburst": "マジックバースト",
+            "json": "カスタム（JSON）",
+            "jb2aexplosion": "爆発（JB2A アニメーション版）",
+            "jb2aexplosionnolight": "爆発（JB2A アニメーション、ライトなし）",
+            "arrow": "矢印",
+            "bolt": "ボルト",
+            "javelin": "ジャベリン",
+            "magicarrow": "魔法の矢",
+            "bullet": "弾丸",
+            "swing": "スイング（3Dオブジェクト）",
+            "thrust": "スラスト（3Dオブジェクト）",
+            "thrustswing": "スイング／スラスト（3Dオブジェクト）",
+            "starburst": "スターバースト",
+            "lightning": "稲妻",
+            "castingsign": "儀式"
+        },
+        "macrodialog": {
+            "title": "パーティクルエフェクトのエクスポート",
+            "label": "名前：",
+            "export": "マクロとして保存",
+            "cancel": "キャンセル",
+            "placeholder": "マクロの名前を入力してください"
+        },
+        "welcome": {
+            "title": "3D Canvasへようこそ",
+            "content": "<h1>3Dへようこそ！</h1>\n3D Canvasへようこそ！まず、私の開発活動をサポートしてくださり、このプロジェクトを実現させてくださったことに感謝いたします！\n<b><i class='fas fa-cube'></i>ボタン</b>（左上のトークンコントロール）をクリックするだけで、シーンを3Dに切り替えることができます。<p><h2>重要なモジュール</h2>\n3D Canvas を始める前に、以下をインストールしてください：<ul><li><a href='https://wiki.theripper93.com/levels-3d-preview/canvas3dcompendium'>Mapmaking Pack</a></li><li><a href='https://wiki.theripper93.com/levels-3d-preview/canvas3dtokencompendium'>トークンコレクション</a></li></ul> 数多くの3D小道具やトークン、そして簡単に作成できるツールが多数手に入ります！<p><h2>はじめに</h2>\n <b>マップ作成パック</b>を有効にすると、簡単かつ迅速な <b>クイックスタートチュートリアル</b>にアクセスできるようになります。 クイックスタート終了後、詳細な設定についてさらに深く学びたい場合は、<b>ドキュメント</b>を<b><i class='fas fa-book'></i>「はじめに」</b>ボタンをクリックして<b>読むことを強くお勧めします。ドキュメントは、いつでもコンペンディウムで確認できます！ ドキュメントには、参考になる動画チュートリアルのコレクションも収録されています。<p><h2>トラブルシューティング</h2>\nもし<b>問題</b>が発生した場合や、<b>設定</b>、<b>3Dモデル</b>に関して困ったことがあれば、遠慮なくDiscordチャンネルで<b>ご連絡</b>ください！<hr>",
+            "ok": "閉じる",
+            "dontshowagain": "今後表示しない",
+            "opencompendium": "はじめに"
+        },
+        "newuserexperience": {
+            "title": "3D Canvasへようこそ",
+            "content": "<h1>3D クイックスタート！</h1> 3D Canvas へようこそ。このクイックスタートチュートリアルでは、すぐに簡単にマップを作成できるようになります！<b>ツアーを開始！</b> ボタンをクリックして、ツアーを始めましょう。<hr>",
+            "starttour": "ツアーを始めよう！"
+        },
+        "performance": {
+            "verylow": "極めて低い",
+            "low": "低",
+            "medium": "中",
+            "high": "高い",
+            "veryhigh": "極めて高い",
+            "custom": "カスタム",
+            "dialog": {
+                "title": "3D Canvas：パフォーマンス設定",
+                "content": "ご希望の画質をお選びください（ページが再読み込みされます）："
+            },
+            "buttonTooltip": {
+                "verylow": "旧型の統合型GPUにおすすめ",
+                "low": "旧型の専用GPUや最新の統合型GPUにおすすめ",
+                "medium": "最新の専用GPUにおすすめ",
+                "high": "ハイエンドの専用GPUにおすすめ",
+                "veryhigh": "ハイエンドの専用GPUにおすすめ"
+            },
+            "settings": {
+                "header": "グラフィック設定",
+                "presetHint": "画質プリセットを選択すると、以下の設定が自動的に適用されます。設定は後からいつでも個別に変更できます。ボタンにカーソルを合わせると、推奨ハードウェアが表示されます。",
+                "resolution": "現在の設定では、3D Canvas は {resolution} の解像度で動作します。",
+                "resolutionTooltip": "3D Canvasを高解像度で利用すると、特に2K以上の解像度で動作させる場合、性能の低いハードウェアでは大きな負荷がかかることがあります。パフォーマンスの問題が発生した場合は、解像度を下げてみてください。"
+            },
+            "notification": "3D Canvas：パフォーマンスモードを {performancemode} に設定します。"
+        },
+        "tileEditor": {
+            "controlsReference": {
+                "title": "3Dキャンバスタイルエディタの操作項目",
+                "translate": "翻訳",
+                "rotate": "回転",
+                "scale": "スケール",
+                "toggleGizmo": "ギズモの表示/非表示を切り替える",
+                "nogizmo": "ギズモを無効にしている場合、タイルをドラッグすると地形にスナップされます",
+                "scaleWidth": "幅",
+                "scaleHeight": "高さ",
+                "tiltX": "Tilt X",
+                "tiltZ": "Y軸の傾き",
+                "scaleGap": "ギャップ",
+                "scaleScale": "タイルの縮尺",
+                "toggleMode": "塗りつぶしモード",
+                "wheel": "マウスホイールで値を増減させる",
+                "clone": "変換を開始する前に、CTRL キーを押したままにして複製します"
+            }
+        },
+        "tokenAnimations": {
+            "title": "アニメーション",
+            "twirl": "トゥイール",
+            "slash": "スラッシュ",
+            "charge": "請求",
+            "swipe": "スワイプ",
+            "buff": "筋肉をつける",
+            "debuff": "バルクダウン",
+            "bow": "お辞儀",
+            "breath": "息",
+            "shake": "シェイク",
+            "knockback": "ノックバック"
+        },
+        "baseStyles": {
+            "roundDoubleRing": "ラウンド・ダブルリング",
+            "sharp": "シャープ",
+            "sharpIndicator": "シャープ + インジケーター",
+            "rounded": "丸みを帯びた",
+            "ringHollow": "リング・ホロウ",
+            "ringSimple": "リング・シンプル",
+            "ringSimpleSmall": "リング シンプル スモール",
+            "jb2ahex1": "ヘックス 1 (JB2A)",
+            "jb2ahex1Indicator": "Hex 1 + インジケーター (JB2A)",
+            "jb2ahex2": "Hex 2 (JB2A)",
+            "jb2ahex2Indicator": "Hex 2 + インジケーター (JB2A)",
+            "jb2around1": "第1ラウンド (JB2A)",
+            "jb2around1Indicator": "第1ラウンド + インジケーター (JB2A)",
+            "jb2around2": "第2ラウンド（JB2A）",
+            "jb2around2Indicator": "第2ラウンド + インジケーター (JB2A)",
+            "jb2asquare1": "スクエア1（JB2A）",
+            "jb2asquare1Indicator": "Square 1 + インジケーター (JB2A)",
+            "jb2asquare2": "2番スクエア (JB2A)",
+            "jb2asquare2Indicator": "スクエア2 + インジケーター (JB2A)"
+        },
+        "units": {
+            "ms": "ミリ秒",
+            "gu": "グリッド単位",
+            "gs": "グリッドマス"
+        },
+        "shaders": {
+            "config": {
+                "title": "シェーダーの設定",
+                "save": "保存",
+                "autosave": "自動保存",
+                "apply": "応募する",
+                "macro-btn": "マクロ",
+                "enabled": "有効になっていますか？",
+                "label": "シェーダーの設定",
+                "button": "シェーダーの設定",
+                "notes": "この3Dオブジェクトで使用する視覚効果を設定します。",
+                "slow": "警告：このシェーダーを多数使用すると、パフォーマンスの問題が発生する可能性があります。",
+                "macro": {
+                    "title": "シェーダーマクロを作成する",
+                    "content": "マクロ名：",
+                    "created": "マクロ「%s」が正常に作成されました！",
+                    "enabled": "「エクスポート」のみ有効",
+                    "players": "プレイヤーの許可"
+                }
+            },
+            "clipping": {
+                "name": "クリッピング",
+                "description": "トークンやカメラの近くにあるこのタイルをフェードアウトさせる。",
+                "speed": "速度",
+                "diameter": "半径",
+                "heightOffset": "高さオフセット",
+                "noiseScale": "騒音レベル",
+                "useCamera": "カメラを使用する",
+                "useCameraAdvanced": "高度なカメラ計算を使用する"
+            },
+            "wind": {
+                "name": "風",
+                "description": "植物に動きを加えるための、風のような効果。",
+                "speed": "速度",
+                "direction": "方向",
+                "intensity": "強度",
+                "affect_model": "アンカー（％）",
+                "convoluted": "入り組んだ",
+                "ground_blend": "グラウンド・ブレンディング",
+                "ground_color": "地色",
+                "reactive": "反応性",
+                "reactive_intensity": "反応強度"
+            },
+            "distortion": {
+                "name": "歪み",
+                "description": "溶岩のプールやその他の粘性の高い液体にぴったりのディストーション効果です。",
+                "speed": "速度",
+                "direction": "方向",
+                "intensity": "強度",
+                "convoluted": "入り組んだ"
+            },
+            "water": {
+                "name": "水",
+                "description": "シンプルで、正弦波をベースにした水の演出。効果的で、パフォーマンスへの負荷も非常に少ない。",
+                "speed": "速度",
+                "direction": "方向",
+                "wave_amplitude": "波数",
+                "wave_height": "波の高さ"
+            },
+            "oil": {
+                "name": "石油",
+                "description": "オイル／液体金属エフェクト。このエフェクトには色付けやサイズ変更が可能ですが、エフェクトによって色が歪んでしまう点にご注意ください。",
+                "speed": "速度",
+                "intensity": "強度",
+                "scale": "スケール",
+                "color": "色",
+                "blendMode": "ミックス・ブレンディング"
+            },
+            "ocean": {
+                "name": "海",
+                "description": "複数の波を用いた複雑な水のシミュレーション。単純な水のシェーダーよりもパフォーマンスへの負荷が大きい。",
+                "speed": "速度",
+                "scale": "スケール",
+                "waveA_wavelength": "波Aの波長",
+                "waveA_steepness": "波のAの急峻度",
+                "waveA_direction": "波の方向",
+                "waveB_wavelength": "波Bの波長",
+                "waveB_steepness": "波Bの急峻度",
+                "waveB_direction": "ウェーブBの方向",
+                "waveC_wavelength": "波Cの波長",
+                "waveC_steepness": "波Cの急峻度",
+                "waveC_direction": "波Cの方向",
+                "foam": "見どころ",
+                "reflections": "振り返り"
+            },
+            "orbit": {
+                "name": "オービット",
+                "description": "軌道効果。オブジェクトに回転と軌道を設定します。最良の結果を得るためには、モデルが単一のメッシュである必要があることに注意してください。",
+                "orbit_speed": "軌道速度",
+                "pivot_speed": "ピボット速度",
+                "radius": "軌道半径"
+            },
+            "bounce": {
+                "name": "バウンス",
+                "description": "バウンス効果。オブジェクトにバウンス効果を適用します。最良の結果を得るためには、モデルが単一のメッシュである必要がある点に注意してください。",
+                "speed": "速度",
+                "strength": "強度",
+                "axisX": "X軸",
+                "axisY": "Z軸",
+                "axisZ": "Y軸"
+            },
+            "grid": {
+                "name": "グリッド",
+                "description": "この3Dオブジェクトにシーングリッドを投影します。正方形のグリッドのみ対応しています。このシェーダーは、シーン設定で設定されたグリッドの色と不透明度を使用します。",
+                "normalCulling": "通常のカリング",
+                "heightCulling": "高さのカリング",
+                "showBounds": "境界を表示"
+            },
+            "triplanar": {
+                "name": "トリプレーナー",
+                "description": "急な角度の面で、テクスチャが引き伸ばされてしまうような表面にも、正確にテクスチャを適用するための高度なテクスチャ投影技術。",
+                "roughnessAdjust": "反射調整"
+            },
+            "textureScroll": {
+                "name": "スクロール",
+                "description": "「Parallaxia」モジュールに似た、シンプルなテクスチャのスクロール効果。",
+                "speedX": "スピード X",
+                "speedY": "速度 Y",
+                "direction": "方向"
+            },
+            "fire": {
+                "name": "火",
+                "description": "炎のエフェクト。このエフェクトは、色付けや拡大・縮小を行うことで、単なる炎にとどまらない様々な表現を生み出すことができます。",
+                "speed": "速度",
+                "intensity": "強度",
+                "scale": "スケール",
+                "color": "色",
+                "blendMode": "ミックス・ブレンディング"
+            },
+            "lightning": {
+                "name": "稲妻",
+                "description": "動く電気アークによる稲妻のような効果。",
+                "speed": "速度",
+                "intensity": "強度",
+                "scale": "スケール",
+                "color": "色",
+                "blendMode": "ミックス・ブレンディング"
+            },
+            "ice": {
+                "name": "氷",
+                "description": "非常に控えめなアニメーションを伴う、つや消し風の表面効果。",
+                "speed": "速度",
+                "grain": "穀物",
+                "intensity": "強度",
+                "scale": "スケール",
+                "color": "色",
+                "blendMode": "ミックス・ブレンディング"
+            },
+            "idle": {
+                "name": "アイドル",
+                "description": "トークンに適用して、より生き生きとした印象を与えることを目的とした、シンプルな変位効果です。",
+                "speed": "速度",
+                "direction": "方向",
+                "intensity": "強度",
+                "affect_model": "アンカー（％）"
+            },
+            "colorwarp": {
+                "name": "色",
+                "description": "色調歪みエフェクトは、複数同時に設定できます。「グロー」は、シーン設定で「ブルーム」エフェクトを有効にした状態で最も効果を発揮します。",
+                "speed": "速度",
+                "glow": "グロー",
+                "hue_angle": "色相シフト",
+                "flicker": "ちらつき",
+                "animate_range": "アニメーション範囲"
+            },
+            "colorswap": {
+                "name": "色の入れ替え",
+                "description": "色の入れ替え効果。モデルの色を別の色に入れ替えます。",
+                "sourceColor1": "ソースカラー1",
+                "targetColor1": "ターゲットカラー1",
+                "threshold1": "閾値 1",
+                "sourceColor2": "ソースカラー 2",
+                "targetColor2": "ターゲットカラー 2",
+                "threshold2": "閾値 2",
+                "sourceColor3": "ソースカラー3",
+                "targetColor3": "ターゲットカラー3",
+                "threshold3": "閾値 3"
+            },
+            "textureRotate": {
+                "name": "回転",
+                "description": "テクスチャの回転効果。この効果を適用するには、テクスチャと、テクスチャの繰り返し設定が必要です。",
+                "speed": "速度",
+                "centerx": "X アンカー",
+                "centery": "Yアンカー",
+                "offsetAngle": "角度オフセット"
+            },
+            "mask": {
+                "name": "マスク",
+                "description": "マスク効果。テクスチャマスクを使用してテクスチャにマスクを適用します。テクスチャとマスクテクスチャが必要です。",
+                "textureMask": "マスクのテクスチャ",
+                "textureDiffuse": "質感",
+                "repeat": "繰り返し",
+                "color": "色"
+            },
+            "noiseMask": {
+                "name": "ノイズ",
+                "description": "ノイズマスク効果。2つのノイズテクスチャを使用して、テクスチャをマスクします。テクスチャ1つと、2つのノイズテクスチャが必要です。",
+                "textureNoise1": "ノイズテクスチャ 1",
+                "noise1Repeat": "繰り返し",
+                "noise1ScrollX": "スクロール X",
+                "noise1ScrollY": "Y軸スクロール",
+                "textureNoise2": "ノイズ・テクスチャ 2",
+                "noise2Repeat": "繰り返し",
+                "noise2ScrollX": "スクロール X",
+                "noise2ScrollY": "Y軸スクロール",
+                "invert": "反転",
+                "textureDiffuse": "質感",
+                "color": "色",
+                "repeat": "繰り返し",
+                "strength": "強さ",
+                "maskThreshold": "マスクの閾値"
+            },
+            "overlay": {
+                "name": "オーバーレイ",
+                "description": "テクスチャオーバーレイ。テクスチャを設定する必要があります。背景が白のテクスチャには「乗算ブレンド」、背景が黒のテクスチャには「黒ブレンド」を使用してください。",
+                "textureDiffuse": "質感",
+                "coveragePercent": "適用率",
+                "inclination": "傾斜角",
+                "color": "色",
+                "strength": "強さ",
+                "repeat": "繰り返し",
+                "rotation_angle": "回転角（度）",
+                "offsetX": "オフセット X（UV）",
+                "offsetY": "Y軸オフセット（UV）",
+                "black_alpha": "ブラック・ブレンディング",
+                "add_blend": "添加剤の混合",
+                "mult_blend": "乗算ブレンド"
+            },
+            "splatMap": {
+                "name": "スプラットマップ",
+                "description": "スプラットマップ。テクスチャの設定が必要です。これは高度なシェーダーです。スプラットマップテクスチャのRGBAチャンネルを、4つの異なるテクスチャにマッピングします。",
+                "textureSplatMap": "スプラットマップ",
+                "repeatSplatMap": "スプラットマップの繰り返し",
+                "flipY": "Flip Y",
+                "useAlpha": "アルファチャンネルを使用する",
+                "upNormals": "「上面」のみ",
+                "textureDiffuse0": "テクスチャ R",
+                "color0": "カラーR",
+                "repeat0": "Rを繰り返し",
+                "textureDiffuse1": "テクスチャ G",
+                "color1": "カラーG",
+                "repeat1": "Gを繰り返す",
+                "textureDiffuse2": "テクスチャ B",
+                "color2": "色 B",
+                "repeat2": "Bを繰り返す",
+                "textureDiffuse3": "テクスチャ A",
+                "color3": "色A",
+                "repeat3": "Aを繰り返す"
+            },
+            "textureGradient": {
+                "name": "勾配",
+                "description": "テクスチャのグラデーション。テクスチャを設定する必要があります。テクスチャを標高または傾斜にマッピングします。\n「傾斜」を使用する場合、1 は平坦な面、0 は垂直な面に対応します。",
+                "texCount": "テクスチャ数",
+                "useNormals": "傾斜を利用する",
+                "smoothing": "平滑化",
+                "tex0Begin": "テクスチャ 1 開始",
+                "tex1Begin": "テクスチャ 2 開始",
+                "tex2Begin": "テクスチャ 3 開始",
+                "tex3Begin": "テクスチャ 4 開始",
+                "textureDiffuse0": "テクスチャ 1",
+                "color0": "色 1",
+                "repeat0": "1を繰り返し",
+                "textureDiffuse1": "テクスチャ 2",
+                "color1": "色 2",
+                "repeat1": "2を繰り返し",
+                "textureDiffuse2": "テクスチャ 3",
+                "color2": "色 3",
+                "repeat2": "3を繰り返し",
+                "textureDiffuse3": "テクスチャ 4",
+                "color3": "色 4",
+                "repeat3": "4を繰り返し"
+            },
+            "sound": {
+                "name": "サウンド",
+                "description": "音が再生されている必要があります。パフォーマンスの都合上、複数の音が再生されている場合は、最初に再生されている音のみが使用されます。",
+                "intensity": "強度",
+                "glow": "グロー",
+                "chroma": "Chroma",
+                "flat_bottom": "平底",
+                "croma_offset_angle": "クロマ・オフセット"
+            }
+        },
+        "tours": {
+            "dialog": {
+                "title": "はじめに",
+                "content": "「3D Canvas 入門ツアー」を開始しますか？"
+            },
+            "getting-started": {
+                "title": "基本：はじめに",
+                "description": "このツアーでは、3D Canvasの基礎中の基礎をご案内します。",
+                "requires": "このツアーを開始するには、3Dビューがアクティブになっていない必要があります。",
+                "step-0": {
+                    "title": "3Dビューへの移動（1/2）",
+                    "content": "トークンコントロールを有効にします。"
+                },
+                "step-1": {
+                    "title": "3Dビューへの移動（2/2）",
+                    "content": "「キューブ」ボタンをクリックして、3Dビューを有効にしてください。"
+                },
+                "step-2": {
+                    "title": "操作方法",
+                    "content": "「ロード画面」には、3Dキャンバスカメラおよびトークンコントロールに関する役立つ情報が掲載されています。"
+                }
+            },
+            "first-tile": {
+                "title": "中級：3Dタイルの操作とカスタムアセット",
+                "description": "このツアーでは、3Dタイルの操作やカスタムアセットの使い方について、基礎から学んでいきます。",
+                "requires": "このツアーを開始するには、3Dビューがアクティブになっており、3Dキャンバス・マップ作成パックがインストールされている必要があります。",
+                "step-0": {
+                    "title": "タイルレイヤー",
+                    "content": "「タイル」レイヤーに移動します。"
+                },
+                "step-1": {
+                    "title": "ファイルブラウザ",
+                    "content": "ファイルブラウザを開きます。"
+                },
+                "step-2": {
+                    "title": "3Dアセットに移動する",
+                    "content": "以下の手順に従って、「3D Canvas Mapmaking Pack Tiles」フォルダに移動してください。"
+                },
+                "step-3": {
+                    "title": "3Dアセットに移動する",
+                    "content": "以下の手順に従って、「3D Canvas Mapmaking Pack Tiles」フォルダに移動してください。"
+                },
+                "step-4": {
+                    "title": "3Dアセットに移動する",
+                    "content": "以下の手順に従って、「3D Canvas Mapmaking Pack Tiles」フォルダを開いてください。"
+                },
+                "step-5": {
+                    "title": "3Dアセットに移動する",
+                    "content": "以下の手順に従って、「3D Canvas Mapmaking Pack Tiles」フォルダに移動してください。"
+                },
+                "step-6": {
+                    "title": "3Dアセットに移動する",
+                    "content": "以下の手順に従って、「3D Canvas Mapmaking Pack Tiles」フォルダに移動してください。"
+                },
+                "step-7": {
+                    "title": "ドラッグ＆ドロップ",
+                    "content": "3Dモデルは、2Dタイルと同じ要領でドラッグ＆ドロップします。「コントロールリファレンス」を参照して、タイルを自由に操作してください。「3Dキャンバスマクロ大辞典」には、タイルを操作するための便利なマクロが収録されています。"
+                }
+            },
+            "scene-configuration": {
+                "title": "上級編：3Dシーンの設定",
+                "description": "このツアーでは、シーンの設定オプションについてご説明します。",
+                "requires": "このツアーをご覧になるには、3Dビューがアクティブになっている必要があります。",
+                "step-0": {
+                    "title": "「3D」タブに移動してください",
+                    "content": "「3D」タブには、3Dシーンに関するすべての設定が含まれています。"
+                },
+                "step-1": {
+                    "title": "プレイヤー向けに有効にする",
+                    "content": "この設定を有効にしていない場合、プレイヤーは3Dビューに入ることができません。"
+                },
+                "step-2": {
+                    "title": "読み込み時に3Dを有効にする",
+                    "content": "この設定を有効にすると、シーンをアクティブにした際に、3Dビューに自動的に読み込まれます。"
+                },
+                "step-3": {
+                    "title": "視力",
+                    "content": "デフォルトでは、3D Canvasは、トークンの視界を計算する際に、2Dビューの表示状態を反映し、その壁（表示状態にかかわらず）を使用して視界を算出します。この設定を有効にすると、2Dの視界を無視し、3D環境に基づいて視界を計算するようになります。"
+                },
+                "step-4": {
+                    "title": "戦場の霧",
+                    "content": "3Dモードでは、2Dモードで「フォグ・オブ・ウォー（FoW）」が有効になっていても、デフォルトでは無効になっています。3DモードでFoWが無効になっている間、プレイヤーは環境全体を見渡すことができますが、トークンは視界に基づいて引き続き非表示になります。 「フォグ・オブ・ウォー」を使用する場合は、3D Canvas モジュールの設定で「Shared Context」を有効にすることを強く推奨します。"
+                },
+                "step-5": {
+                    "title": "環境",
+                    "content": "HDRI（2:1の画像）は、シーンの照明や背景の表現に寄与します（グローバルイルミネーションのようなものと考えてください）。HDRIを変更すると、シーンの見た目が劇的に変わります！3D Canvas Mapmaking Packに含まれているオプションの中から、いくつかHDRIを設定してみてください！"
+                },
+                "step-6": {
+                    "title": "照明",
+                    "content": "このセクションでは、シーンのグローバルライティングを調整できます。基本的なスライダーをいろいろ試してみてください！"
+                },
+                "step-7": {
+                    "title": "天気",
+                    "content": "ここでは、シーンの「ウェザー／パーティクルエフェクト」を設定できます。ぜひ有効にして、シーンがどのように引き立つか試してみてください！"
+                },
+                "step-8": {
+                    "title": "上級",
+                    "content": "「シーン設定」にはさらに多くのオプションが用意されています。基本的な設定に慣れたら、ここをクリックしてすべての上級者向けオプションを表示してください。"
+                }
+            },
+            "first-scene": {
+                "title": "基礎：初めての3Dシーンの作成",
+                "description": "このツアーでは、3Dシーンの作成の基礎を学べます。",
+                "requires": "このツアーを開始するには、「3D Canvas Mapmaking Pack」がインストールされている必要があります。",
+                "step-0": {
+                    "title": "「シーン」タブに移動してください",
+                    "content": "[シーン] タブには、そのワールド内のすべてのシーンが表示されます。"
+                },
+                "step-1": {
+                    "title": "新しいシーンを作成する",
+                    "content": "「シーンを作成」ボタンをクリックして、新しいシーンを作成してください。"
+                },
+                "step-2": {
+                    "title": "「クイック3Dシーン作成」を有効にする",
+                    "content": "「クイック3Dシーン作成」を有効にするには、このチェックボックスにチェックを入れてください。"
+                },
+                "step-3": {
+                    "title": "シーンを作成する",
+                    "content": "「新しいシーンを作成」ボタンをクリックして、シーンの作成を確定してください。"
+                },
+                "step-4": {
+                    "title": "操作方法",
+                    "content": "「ロード画面」には、3Dキャンバスカメラおよびトークンコントロールに関する役立つ情報が掲載されています。"
+                },
+                "step-5": {
+                    "title": "3Dシーンパネル",
+                    "content": "このパネルを使えば、シーンを素早く作成できます。ツアーの終了後にボタンにカーソルを合わせると、それぞれの機能を確認できます！"
+                },
+                "step-6": {
+                    "title": "操作リファレンス",
+                    "content": "このボタンをクリックすれば、いつでも操作方法のリファレンスを表示させることができます。"
+                },
+                "step-7": {
+                    "title": "タイルの操作",
+                    "content": "タイルを配置した後、そのタイルを移動、拡大・縮小、回転させることができます。このボタンをクリックすると、操作方法の参考情報をチャットメッセージとして表示できます。"
+                },
+                "step-8": {
+                    "title": "さあ、作り始めよう！",
+                    "content": "これさえあれば、すぐに始められます！「クイック・テレイン」と「3Dシーンパネル」を使って、シーンを作成してみてください。3Dキャンバスに慣れてきたら、「ツアー」ページに移動して、より高度なツアーに挑戦してみましょう！"
+                }
+            },
+            "tile-configuration": {
+                "title": "上級：タイル構成",
+                "description": "このツアーでは、タイルの設定オプションやシェーダーについて解説します。",
+                "requires": "このツアーを開始するには、タイルを1つ選択しておく必要があります。",
+                "step-0": {
+                    "title": "「3D」タブに移動してください",
+                    "content": "「3D」タブには、3Dタイルに関するすべての設定が含まれています。"
+                },
+                "step-1": {
+                    "title": "3Dモデル",
+                    "content": "この設定では、タイルの3Dモデルを設定できます。2D画像と同様に、3Dファイルを参照してアップロードすることができます。"
+                },
+                "step-2": {
+                    "title": "ダイナミックメッシュ",
+                    "content": "「ダイナミックメッシュ」オプションは非常に強力なツールであり、シンプルな3D形状の生成など、さまざまなことが可能です。"
+                },
+                "step-3": {
+                    "title": "質感",
+                    "content": "この設定では、タイルのテクスチャを設定できます。通常のFoundryのファイル参照機能を使用することもできますが、「マテリアルブラウザを開く」ボタンを使用して、付属の豊富なテクスチャを閲覧することも可能です。"
+                },
+                "step-4": {
+                    "title": "ビジョン",
+                    "content": "この設定により、タイルがビジョンとどのように連携するかを決定できます。3D環境では壁は必要なく、タイルがすべての役割を果たします！"
+                },
+                "step-5": {
+                    "title": "シェーダー",
+                    "content": "このセクションでは、タイルにシェーダーを適用することができます。シェーダーは、さまざまなエフェクトを作成できる強力なツールです。ぜひタイルにシェーダーを適用して、その効果を確認してみてください！"
+                },
+                "step-6": {
+                    "title": "シェーダーウィンドウ",
+                    "content": "このウィンドウでは、シェーダーのパラメータを編集できます。タブを切り替えて、さまざまなエフェクトを有効にし、試してみてください！"
+                }
+            },
+            "tokens": {
+                "title": "基本：3Dトークン",
+                "description": "このツアーでは、3Dトークンを設定するためのトークン設定の手順をご案内します。",
+                "requires": "このツアーを開始するには、トークンを1つ選択し、「3D Canvas Mapmaking Pack」と「3D Canvas Token Collection」を用意する必要があります。",
+                "step-0": {
+                    "title": "「3D」タブに移動してください",
+                    "content": "「3D」タブには、3Dトークンに関するすべての設定が含まれています。"
+                },
+                "step-1": {
+                    "title": "3Dモデル",
+                    "content": "この設定では、トークンの3Dモデルを設定できます。2D画像と同様に、3Dファイルを参照してアップロードすることができます。"
+                },
+                "step-2": {
+                    "title": "素材",
+                    "content": "この設定では、トークンの素材を設定できます。プリセットから選択するか、カスタム素材を使用することができます。"
+                },
+                "step-3": {
+                    "title": "色",
+                    "content": "この設定では、プリセットのマテリアルや無色のトークンを使用している場合に、トークンの色を設定することができます。"
+                },
+                "step-4": {
+                    "title": "トークンブラウザ",
+                    "content": "このボタンをクリックすると、トークンブラウザが開きます。"
+                },
+                "step-5": {
+                    "title": "トークンブラウザ",
+                    "content": "このウィンドウでは、同梱されているトークンを閲覧できます。デフォルトでは色付けされたトークンのみが表示されますが、「3D Canvas Mappmaking Pack」モジュールの設定で該当する設定を有効にすることで、すべてのトークンを表示することができます。"
+                }
+            },
+            "asset-browser": {
+                "title": "パネル：アセットブラウザ",
+                "description": "このツアーでは、アセットブラウザの高度な機能について解説します。",
+                "requires": "このツアーを開始するには、「3D Canvas Mapmaking Pack」がインストールされており、アセットブラウザが開いている必要があります。",
+                "step-0": {
+                    "title": "アセットブラウザウィンドウ",
+                    "content": "このウィンドウでは、同梱されているアセットを閲覧できます。"
+                },
+                "step-1": {
+                    "title": "検索バー",
+                    "content": "検索バーを使って、特定のアセットを探すことができます。また、「自然」や「SF」などのキーワードを使って、特定のテーマに合致するアセットを探すこともできます。"
+                },
+                "step-2": {
+                    "title": "[アセット] パネル",
+                    "content": "このパネルには、検索条件に一致するすべてのアセットが表示されています。これらをシーンにドラッグ＆ドロップするか、クリック（複数選択する場合はCtrl/Shiftキーを押しながらクリック）して選択することができます。"
+                },
+                "step-3": {
+                    "title": "無作為化",
+                    "content": "これらのトグルを使用すると、アセットの配置をランダムにすることができます。回転、拡大縮小、色調もランダムに設定できます。"
+                },
+                "step-4": {
+                    "title": "配置",
+                    "content": "これらのトグルを使用すると、アセットの配置方法を指定できます。たとえば、アセットをグリッドに合わせて配置したい場合などです。"
+                },
+                "step-5": {
+                    "title": "衝突",
+                    "content": "これらのトグルを使用すると、配置したアセットが視界や移動を遮るかどうかを設定できます。"
+                },
+                "step-6": {
+                    "title": "絵画",
+                    "content": "このボタンでアセットペインティングモードのオン／オフを切り替えることができます。有効にすると、シーン上でクリックしてドラッグすることで、複数のアセットを配置することができます。"
+                },
+                "step-7": {
+                    "title": "外観",
+                    "content": "これらのフィールドは、アセットの基本的な外観設定を決定します。例えば、スケール、回転、色調などです。"
+                },
+                "step-8": {
+                    "title": "ユーティリティ",
+                    "content": "[ユーティリティ] タブには、一括処理へのクイックショートカットが含まれています。"
+                },
+                "step-9": {
+                    "title": "最適化",
+                    "content": "シーンの構築が完了したら、「タイルを結合」ボタンを使用して、類似したタイルをすべて1つのタイルに結合し、パフォーマンスを向上させてください。"
+                }
+            },
+            "quick-environment": {
+                "title": "パネル：環境",
+                "description": "このツアーでは、環境パネルの見どころをご案内します。",
+                "requires": "このツアーを開始するには、「3D Canvas Mapmaking Pack」がインストールされており、「環境パネル」が開いている必要があります。",
+                "step-0": {
+                    "title": "環境委員会",
+                    "content": "このパネルを使えば、数回のクリックでシーンの雰囲気を素早く設定できます。"
+                },
+                "step-1": {
+                    "title": "時間帯",
+                    "content": "時刻を24時間制で設定してください。これにより、照明や影の設定に影響が出ます。より詳細な設定を行うには、シーン設定画面に移動してください。"
+                },
+                "step-2": {
+                    "title": "天気",
+                    "content": "天気はプリセットの中から1つを選択するか、シーン設定に移動して、複数のエフェクトやカスタムエフェクトを設定することができます。"
+                },
+                "step-3": {
+                    "title": "スカイボックス",
+                    "content": "スカイボックスは、シーンの背景だけでなく、照明にも影響を与えます。さまざまなスカイボックスがシーンの雰囲気をいかに劇的に変えるか、ぜひご自身で試してみてください。"
+                }
+            },
+            "quick-terrain": {
+                "title": "パネル：地形",
+                "description": "このツアーでは、「地形パネル」についてご案内します。",
+                "requires": "このツアーを開始するには、「3D Canvas Mapmaking Pack」がインストールされており、かつ「Terrain Panel」が開いている必要があります。",
+                "step-0": {
+                    "title": "地形パネル",
+                    "content": "このパネルを使用すると、シーンのベースとなる地形をすばやく設定することができます。"
+                },
+                "step-1": {
+                    "title": "テーマ",
+                    "content": "このセクションでは、地形用のプリセットテーマからいくつかを選択できます。「テーマを適用」ボタンをクリックすると、選択したテーマが現在の地形に適用されます。"
+                },
+                "step-2": {
+                    "title": "地形",
+                    "content": "このセクションでは、地形をランダムに生成できます。ドロップダウンメニューから、さまざまな地形タイプを選択してください。「微調整」ボタンを使用すると、地形に使用されるハイトマップのオフセットやスケールを手動で調整できます。"
+                },
+                "step-3": {
+                    "title": "流体",
+                    "content": "さまざまな流体ボタンをクリックして、流体のタイルを作成してください。地形によっては、流体のサイズ変更や位置調整が必要になる場合がありますのでご注意ください。必要に応じて、ギズモツールを使用して調整してください。"
+                },
+                "step-4": {
+                    "title": "ツール",
+                    "content": "このセクションには、地形を操作するのに役立つツールがいくつか用意されています。「ロック／ロック解除」ボタンを使用すると、左クリックで地形が選択されないようにできます。また、「グリッド」ボタンを使用すると、地形上のグリッド表示のオン／オフを切り替えることができます。"
+                }
+            },
+            "material-browser": {
+                "title": "パネル：素材",
+                "description": "このツアーでは、「マテリアルパネル」についてご案内します。",
+                "requires": "このツアーを開始するには、「3D Canvas Mapmaking Pack」がインストールされており、マテリアルパネルが開いている必要があります。",
+                "step-0": {
+                    "title": "素材パネル",
+                    "content": "このパネルを使用すると、選択したタイルの素材をすばやく確認・変更することができます。"
+                },
+                "step-1": {
+                    "title": "検索バー",
+                    "content": "検索バーを使って、特定の資料を探すことができます。"
+                },
+                "step-2": {
+                    "title": "テクスチャの繰り返し",
+                    "content": "このフィールドでは、選択したタイルのテクスチャの繰り返し設定を変更できます。これにより、タイル上のテクスチャのタイリングに影響します。"
+                },
+                "step-3": {
+                    "title": "材料一覧",
+                    "content": "このリストには、検索条件に一致するすべての素材が含まれています。素材をクリックすると、選択したすべてのタイルにその素材が適用されます。"
+                }
+            },
+            "effect-browser": {
+                "title": "パネル：エフェクト",
+                "description": "このツアーでは、エフェクトパネルの使い方を解説します。",
+                "requires": "このツアーを開始するには、「3D Canvas Mapmaking Pack」がインストールされており、エフェクトパネルが開いている必要があります。",
+                "step-0": {
+                    "title": "エフェクトパネル",
+                    "content": "このパネルを使用すると、エフェクトをシーン上にドラッグ＆ドロップできます。<hr>エフェクトはデカールとして投影されるテクスチャであり、配置すると投影方向を示す赤い円錐が表示されます。これは、タイルレイヤー上でGMのみが確認できます。"
+                },
+                "step-1": {
+                    "title": "スケール",
+                    "content": "このフィールドでは、選択したエフェクトのスケールを変更できます。"
+                },
+                "step-2": {
+                    "title": "検索バー",
+                    "content": "検索バーを使って、特定のエフェクトを探すことができます。"
+                },
+                "step-3": {
+                    "title": "エフェクト一覧",
+                    "content": "このリストには、検索条件に一致するすべてのエフェクトが表示されています。エフェクトをシーンにドラッグ＆ドロップして配置してください。<hr><strong>Token Attacher</strong>モジュールをお持ちの場合は、エフェクトをトークンにドロップすると、そのエフェクトがトークンにアタッチされます。"
+                }
+            },
+            "cutscene-panel": {
+                "title": "パネル：カットシーン",
+                "description": "このツアーでは、「カットシーン・パネル」についてご案内します。",
+                "requires": "このツアーを開始するには、「3D Canvas Mapmaking Pack」がインストールされており、「カットシーンパネル」が開いている必要があります。",
+                "step-0": {
+                    "title": "カットシーンパネル",
+                    "content": "このパネルを使用すると、シーンに1つまたは複数のシネマティクスをすばやく設定できます。"
+                },
+                "step-1": {
+                    "title": "クリップの作成",
+                    "content": "新しいクリップを作成するには、<strong>クリップを追加</strong>ボタンをクリックしてください。これにより、新しいクリップが作成され、クリップの設定画面が開きます。"
+                },
+                "step-2": {
+                    "title": "クリップの設定",
+                    "content": "このセクションでは、現在のクリップの設定を行うことができます。クリップ名の編集、再生、削除が可能です。"
+                },
+                "step-3": {
+                    "title": "キーフレームの追加",
+                    "content": "キーフレームを追加するには、<strong>「キーフレームを追加」</strong>ボタンをクリックします。これにより、新しいキーフレームが作成されます。<hr>キーフレームとは、カメラの位置や向きが決まる時点のことです。シネマティックを作成するために、キーフレームはいくつでも追加できます。"
+                },
+                "step-4": {
+                    "title": "キーフレームの取得",
+                    "content": "現在のカメラの位置と回転を取得するには、<strong>キャプチャ</strong>ボタンをクリックしてください。これにより、キーフレームとして現在のカメラの位置と回転が保存されます。"
+                },
+                "step-5": {
+                    "title": "所要時間",
+                    "content": "このフィールドでは、現在のキーフレームの持続時間を変更できます。これにより、カメラが前のキーフレームからこのキーフレームまで移動するのにかかる時間が決まります。<hr><strong>トランジション</strong>フィールドが<strong>クロスフェード</strong>に設定されている場合、この持続時間は、カメラがフェードアウトしてからフェードインするまでの時間を指します。"
+                },
+                "step-6": {
+                    "title": "立ち寄る",
+                    "content": "このフィールドでは、カメラが次のキーフレームに移動するまでに、現在のキーフレームに留まる時間を変更できます。"
+                },
+                "step-7": {
+                    "title": "移行",
+                    "content": "このフィールドでは、トランジションの種類を変更できます。<strong>Chain</strong> と <strong>Cross-Fade</strong> のいずれかを選択できます。「Chain」を選択すると、カメラが1つのキーフレームから次のキーフレームへと移動し、「Cross-Fade」を選択すると、キーフレーム間でカメラがフェードアウトおよびフェードインします。"
+                },
+                "step-8": {
+                    "title": "緩和",
+                    "content": "このフィールドでは、イージングの種類を変更できます。イージングの詳細については、<a href='https://easings.net/en'>こちら</a>をご覧ください。"
+                },
+                "step-9": {
+                    "title": "編集",
+                    "content": "このボタンをクリックすると、このクリップのキーフレーム設定を切り替えることができます。"
+                },
+                "step-10": {
+                    "title": "再生",
+                    "content": "カットシーンの作成が完了したら、<strong>再生</strong>ボタンをクリックして再生できます。その後、どのプレイヤーにこのカットシーンを表示するかを選択するよう求められます。"
+                }
+            },
+            "room-builder": {
+                "title": "パネル：ダンジョンと室内",
+                "description": "このツアーでは、「ダンジョン＆インテリア」パネルをご案内いたします。",
+                "requires": "このツアーを開始するには、「3D Canvas Mapmaking Pack」がインストールされており、「Dungeons & Interiors」パネルが開いている必要があります。",
+                "step-0": {
+                    "title": "「ダンジョン＆インテリア」パネル",
+                    "content": "このパネルを使用すると、ダンジョンや洞窟、建物の内部を作成することができます。"
+                },
+                "step-1": {
+                    "title": "ビルド",
+                    "content": "このセクションには、レイアウトを作成するために必要なすべてのツールが揃っています。"
+                },
+                "step-2": {
+                    "title": "追加",
+                    "content": "このモードでは、シーン上に描画された図形がレイアウトに追加されます"
+                },
+                "step-3": {
+                    "title": "引き算",
+                    "content": "このモードでは、シーン上に描画された図形はレイアウトから差し引かれます"
+                },
+                "step-4": {
+                    "title": "ナイフ",
+                    "content": "このモードでは、壁の一部を切り取って開口部を作ることができます"
+                },
+                "step-5": {
+                    "title": "図形",
+                    "content": "このセクションでは、描画モード<h3>「長方形と楕円」</h3><p>を設定します。このモードでは、シーン上でクリックしてドラッグすることで図形を描画し、満足のいく形になったらマウスボタンを離します。</p><h3>多角形とスプライン</h3><p>このモードでは、クリックしてドラッグすると多角形の描画が開始されます。マウスの左ボタンを押したまま、右ボタンをクリックすると点を追加できます。満足したら左ボタンを離してください。図形を閉じないと、壁だけが作成されます。</p>"
+                },
+                "step-6": {
+                    "title": "壁の種類",
+                    "content": "このフィールドでは、壁の種類を変更できます。<strong>滑らか</strong>を選択すると、室内のような壁が作成され、<strong>粗い</strong>を選択すると、洞窟のような壁が作成されます。"
+                },
+                "step-7": {
+                    "title": "壁と床",
+                    "content": "このセクションでは、壁、床、あるいはその両方を描画するかどうかを選択できます。"
+                },
+                "step-8": {
+                    "title": "テーマ",
+                    "content": "このセクションでは、ダンジョンのテーマを選択できます。ドロップダウンメニューから<strong>カスタム</strong>を選択し、壁や床のテクスチャを選ぶことで、カスタムテーマを設定できます。"
+                },
+                "step-9": {
+                    "title": "寸法",
+                    "content": "このセクションでは、壁の高さと厚さ（ピクセル単位）を変更できます。"
+                },
+                "step-10": {
+                    "title": "さあ、始めましょう！",
+                    "content": "パネルの使い方がわかったところで、さっそく組み立てを始めましょう！平らな場所で組み立てることを強くお勧めします。"
+                }
+            },
+            "asset-browser-paint": {
+                "title": "パネル：アセットブラウザ - ペインティング",
+                "description": "このツアーでは、アセットブラウザのペイントモードについて解説します。",
+                "requires": "このツアーを開始するには、「3D Canvas Mapmaking Pack」がインストールされており、アセットブラウザが開いている必要があります。",
+                "step-0": {
+                    "title": "ペイントモード",
+                    "content": "「ペイント」モードを使えば、シーン上にタイルを素早く配置することができます。"
+                },
+                "step-1": {
+                    "title": "1つ以上のアセットを選択してください",
+                    "content": "ペイントを開始するには、アセットブラウザで1つ以上のアセットを選択する必要があります。アセットをクリックして選択するか、Ctrlキーを押しながらクリックして複数のアセットを選択してください。"
+                },
+                "step-2": {
+                    "title": "選考結果のお知らせ",
+                    "content": "1つ以上のアセットを選択すると、ウィンドウの下部に通知が表示されます。"
+                },
+                "step-3": {
+                    "title": "絵画：長方形",
+                    "content": "「タイル配置」ツールが有効になっている間、シーン上でクリックしてドラッグすることで、長方形を描画できます。その長方形には、選択されているアセットが配置されます。"
+                },
+                "step-4": {
+                    "title": "絵画：ポリゴン",
+                    "content": "「ポリゴン」ツールが有効になっている状態で、クリックしてドラッグし、ポリゴンの作成を開始します。マウスの左ボタンを押したまま、右ボタンをクリックして点を追加します。満足いく形になったら、マウスの左ボタンを離してください。図形を閉じない場合、アセットはそのセグメント上に散らばって配置されますが、閉じるとその領域全体がアセットで埋め尽くされます。"
+                },
+                "step-5": {
+                    "title": "絵画：フリーハンド",
+                    "content": "「選択」ツールが有効になっている状態で、Shift キーを押しながらクリックしてドラッグし、シーンにアセットを配置します。"
+                }
+            }
+        },
+        "mergeTiles": {
+            "title": "タイルを結合する",
+            "occlusionGroup": " - オクルージョン ID：",
+            "content": "タイルの結合は元に戻せない操作です。大量のタイルを結合する前に、シーンのバックアップを作成することをお勧めします。<br><strong>%count% 個のタイル</strong>を結合しようとしています。選択したタイルは除外されます。本当に続行しますか？"
+        },
+        "extrudeWalls": {
+            "title": "壁の押し出し",
+            "content": "この処理では、シーン内の壁をタイルに変換しようとします。本当に続行しますか？"
+        },
+        "dynamicSkyConfig": {
+            "title": "ダイナミック・スカイの構成",
+            "sceneConfig": {
+                "label": "ダイナミック・スカイの構成",
+                "button": "設定を開く",
+                "notes": "「ダイナミック・スカイ」機能により、空はよりリアルで動きのあるものになりますが、シーン内の実際の色や反射は、依然として上記の「空」セクションにある静止画像に基づいています。"
+            },
+            "enabled": {
+                "label": "有効"
+            },
+            "turbidity": {
+                "label": "濁度",
+                "notes": "濁度は、空気中に含まれる粒子の量を表す指標です。濁度が高いと、空はより霞んで見えます。"
+            },
+            "rayleigh": {
+                "label": "レイリー",
+                "notes": "レイリー散乱とは、光の波長よりもはるかに小さい粒子による光の散乱のことです。これは、日中の空が青く見える原因となっています。"
+            },
+            "mieCoefficient": {
+                "label": "ミエ係数",
+                "notes": "ミー散乱とは、光の波長よりも大きな粒子による光の散乱のことです。これは、日の出や日没時に空が赤やオレンジ色に見える原因となっています。"
+            },
+            "mieDirectionalG": {
+                "label": "三重方向性G"
+            },
+            "starDensity": {
+                "label": "星の密度",
+                "notes": "空に見える星の数。"
+            },
+            "color": {
+                "label": "色",
+                "notes": "空の色。"
+            },
+            "enableClouds": {
+                "label": "「雲」を有効にする"
+            },
+            "cloudsSpeed": {
+                "label": "雲の速度"
+            },
+            "cloudsAlpha": {
+                "label": "雲の不透明度"
+            },
+            "cloudsTint": {
+                "label": "雲の色"
+            },
+            "cloudsScale": {
+                "label": "雲の規模"
+            }
+        }
+    }
+}

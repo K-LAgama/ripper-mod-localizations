@@ -1,42 +1,42 @@
 {
     "recycle-bin": {
         "app": {
-            "deleteOnRefresh": "このアイテムは更新時に完全に削除されます。",
-            "deleteOnRefreshTitle": "1 つ以上の削除保留中のアイテム",
-            "noParent": "一次文書",
-            "permanently-delete": "アイテムを完全に削除",
-            "preview-item": "アイテムのプレビュー",
+            "title": "🗑️ ゴミ箱",
             "restore-item": "アイテムを復元する",
+            "preview-item": "アイテムのプレビュー",
+            "permanently-delete": "アイテムを完全に削除",
+            "noParent": "一次文書",
             "search": "検索",
             "time": "{time}前に削除されました",
-            "title": "🗑️ ゴミ箱"
-        },
-        "dialog": {
-            "permanentlyDelete": {
-                "content": "この項目を完全に削除してもよろしいですか?\nこの操作は元に戻すことができません。",
-                "title": "完全に削除"
-            },
-            "restoreParent": {
-                "content": "このアイテムの親はワールド内で見つかりませんでしたが、ごみ箱に存在します。\n復元しますか?",
-                "title": "親を復元する"
-            }
-        },
-        "error": {
-            "preview": "{item} をプレビューできませんでした。\n親が見つかりません。",
-            "restore": "{item} を復元できませんでした。\n親が見つかりません:"
+            "deleteOnRefresh": "このアイテムは更新時に完全に削除されます。",
+            "deleteOnRefreshTitle": "1 つ以上の削除保留中のアイテム"
         },
         "settings": {
             "maxPermanentItems": {
-                "hint": "リロードの間に保存されるアイテムの数。",
-                "name": "最大の永久履歴"
+                "name": "最大の永久履歴",
+                "hint": "リロードの間に保存されるアイテムの数。"
             },
             "maxTemporaryItems": {
-                "hint": "保存されるアイテムの数。 \n「最大永続履歴」を超える一時アイテムは、リロード時に失われます。",
-                "name": "最大一時履歴"
+                "name": "最大一時履歴",
+                "hint": "保存されるアイテムの数。 \n「最大永続履歴」を超える一時アイテムは、リロード時に失われます。"
             }
+        },
+        "error": {
+            "restore": "{item} を復元できませんでした。\n親が見つかりません:",
+            "preview": "{item} をプレビューできませんでした。\n親が見つかりません。"
         },
         "success": {
             "restore": "{item} が正常に復元されました。"
+        },
+        "dialog": {
+            "restoreParent": {
+                "title": "親を復元する",
+                "content": "このアイテムの親はワールド内で見つかりませんでしたが、ごみ箱に存在します。\n復元しますか?"
+            },
+            "permanentlyDelete": {
+                "title": "完全に削除",
+                "content": "この項目を完全に削除してもよろしいですか?\nこの操作は元に戻すことができません。"
+            }
         }
     }
 }

@@ -1,256 +1,162 @@
 {
     "simple-timekeeping": {
-        "app": {
-            "controls": {
-                "configure": {
-                    "tooltip": "Konfiguracja"
-                },
-                "create-event": {
-                    "tooltip": "Utwórz Wydarzenie"
-                },
-                "day-back": {
-                    "tooltip": "Cofnij o Jeden Dzień (Ctrl 1 Tydzień, Shift 3 Dni, Alt 2 Dni)"
-                },
-                "day-forward": {
-                    "tooltip": "Postąp o Jeden Dzień (Ctrl 1 Tydzień, Shift 3 Dni, Alt 2 Dni)"
-                },
-                "hour-back": {
-                    "tooltip": "Cofnij o Godzinę (Ctrl 30 min, Shift 10 min, Alt 5 min)"
-                },
-                "hour-forward": {
-                    "tooltip": "Postąp o Godzinę (Ctrl 30 min, Shift 10 min, Alt 5 min)"
-                },
-                "midday": {
-                    "tooltip": "Południe"
-                },
-                "midnight": {
-                    "tooltip": "Północ"
-                },
-                "sunrise": {
-                    "tooltip": "Wschód Słońca"
-                },
-                "sunset": {
-                    "tooltip": "Zachód Słońca"
-                },
-                "toggle-events": {
-                    "tooltip": "Wydarzenia"
-                }
-            },
-            "create-event": {
-                "duration": {
-                    "label": "Czas Trwania Wydarzenia (godziny)"
-                },
-                "edit": {
-                    "label": "Edycja Daty/Godziny Wydarzenia"
-                },
-                "eventEnd": {
-                    "label": "Koniec Wydarzenia (opcjonalnie)"
-                },
-                "eventTime": {
-                    "label": "Początek Wydarzenia"
-                },
-                "repeat": {
-                    "label": "Powtarzanie",
-                    "options": {
-                        "day": "Codziennie",
-                        "month": "Co Miesiąc",
-                        "none": "Nie Powtarzaj",
-                        "week": "Co Tydzień",
-                        "year": "Co Rok"
-                    }
-                }
-            },
-            "searchEvents": "Wyszukaj Wydarzenia",
-            "weather": {
-                "generate": "Wygeneruj"
+        "day": "Dzień",
+        "days": "Dni",
+        "in-progress": "W Toku",
+        "paused": "Wstrzymane",
+        "paused-info": "Simple Timekeeping — postęp czasu jest wstrzymany, kliknij, aby wznowić.",
+        "unpaused-info": "Simple Timekeeping — wznowiono odliczanie czasu, kliknij, aby wstrzymać. Czas będzie nadal wstrzymany, jeśli gra jest wstrzymana lub jeśli walka jest aktywna.",
+        "calendar-dusk-dawn": "Kalendarz ten zawiera godziny świtu i zmierzchu, wszelkie wartości ustawione w ustawieniach lub w oparciu o strefę klimatyczną zostaną zignorowane i zostanie użyty kalendarz.",
+        "settings": {
+            "config-menu": {
+                "label": "Konfiguracja",
+                "name": "Konfiguracja",
+                "hint": "Skonfiguruj ustawienia modułu."
             }
         },
-        "calendar-dusk-dawn": "Kalendarz ten zawiera godziny świtu i zmierzchu, wszelkie wartości ustawione w ustawieniach lub w oparciu o strefę klimatyczną zostaną zignorowane i zostanie użyty kalendarz.",
+        "weather": {
+            "clear": "Czyste Niebo",
+            "partlyCloudy": "Częściowe Zachmurzenie",
+            "cloudy": "Pochmurno",
+            "overcast": "Zachmurzenie",
+            "rain": "Deszcz",
+            "thunderstorm": "Burza",
+            "drizzle": "Mżawka",
+            "snow": "Śnieg",
+            "blizzard": "Zamieć",
+            "hail": "Grad",
+            "fog": "Mgła",
+            "mist": "Mgiełka",
+            "windy": "Wiatr",
+            "tornado": "Tornado",
+            "hurricane": "Huragan",
+            "ashfall": "Pył",
+            "sandstorm": "Burza Piaskowa",
+            "luminousSky": "Zorza",
+            "bloodRain": "Krwawy Deszcz",
+            "manaStorm": "Burza Many",
+            "arcaneFog": "Tajemna Mgła",
+            "voidstorm": "Pustkoburza",
+            "celestialEclipse": "Niebiańskie Zaćmienie",
+            "meteorShower": "Deszcz Meteorów",
+            "frozenHell": "Mroźne Piekło",
+            "sunshower": "Słoneczny Deszcz",
+            "spectralStorm": "Widmowa Burza",
+            "etherealDrizzle": "Eteryczna Mżawka",
+            "wildMagicWinds": "Wiatry Dzikiej Magii"
+        },
+        "moonPhase": {
+            "new": "Nów",
+            "waxingCrescent": "Sierp Przybywający",
+            "firstQuarter": "Pierwsza Kwarta",
+            "waxingGibbous": "Garb Przybywający",
+            "full": "Pełnia",
+            "waningGibbous": "Garb Ubywający",
+            "lastQuarter": "Ostatnia Kwarta",
+            "waningCrescent": "Siep Ubywający",
+            "bloodMoon": "Krwawy Księżyc",
+            "eclipse": "Zaćmienie",
+            "voidMoon": "Księżyc Pustki",
+            "twinMoons": "Bliźniacze Księżyce",
+            "manaMoon": "Księżyc Many",
+            "celestialAlignment": "Niebiańska Koniunkcja",
+            "shatteredMoon": "Strzaskany Księżyc",
+            "spiritMoon": "Duchowy Księżyc"
+        },
         "configuration": {
-            "badgeColor": {
-                "label": "Kolor"
-            },
-            "badgeLabel": {
-                "label": "Etykieta"
-            },
-            "calendar": {
-                "custom": "Niestandardowy",
-                "default": "Domyślne Ustawienia Systemowe",
-                "hint": "Niestandardowy kalendarz zdefiniowany w JSONie Niestandardowego Kalendarza",
-                "label": "Kalendarz"
-            },
-            "climateData": {
-                "hint": "Definicja JSON do generowania pogody i temperatury. Nie ma wsparcia dla niestandardowego klimatu ani sposobu konfiguracji pliku JSON.",
-                "label": "Dane Klimatyczne"
-            },
-            "clockSeconds": {
-                "label": "Częstotliwość Aktualizacji (w sekundach)"
-            },
-            "copyButton": {
-                "label": "Kopiuj z bieżącej konfiguracji (Zapisz i otwórz ponownie w celu sformatowania)"
-            },
-            "customBadge": {
-                "label": "Niestandardowa Plakietka"
-            },
-            "customCalendar": {
-                "error": "Nieprawidłowy format JSON dla niestandardowego kalendarza, ustawienie zostało przywrócone do poprzedniego stanu. Sprawdź konsolę, aby uzyskać więcej informacji.",
-                "hint": "Definicja JSON dla kalendarza niestandardowego. Nie ma wsparcia dla niestandardowego kalendarza ani sposobu konfiguracji pliku JSON. Przykładowe kalendarze można znaleźć na wiki.",
-                "label": "JSON Niestandardowego Kalendarza"
-            },
-            "customMoons": {
-                "error": "Nieprawidłowy format JSON dla niestandardowych księżyców, ustawienie zostało przywrócone do poprzedniego stanu. Sprawdź konsolę, aby uzyskać więcej informacji.",
-                "hint": "Definicja JSON dla niestandardowych księżyców. Chociaż księżyce można również zdefiniować w JSON kalendarza, pozwala to na nadpisanie księżyców bez konieczności zmiany JSON kalendarza w przypadkach, gdy na przykład używasz kalendarza zdefiniowanego przez system lub inny moduł i chcesz dodać do niego księżyce. Nie ma wsparcia dla niestandardowych księżyców ani jak skonfigurować plik JSON, zobacz wiki dla przykładów.",
-                "label": "JSON Niestandardowych Księżyców"
-            },
-            "darknessSync": {
-                "hint": "Określa czy ciemność sceny i pogoda powinny być automatycznie określane na podstawie obecnego czasu i pogody w kalendarzu. Tę opcję można też skonfigurować dla każdej sceny, na dole zakładki oświetlenia.",
-                "label": "Synchronizacja Ciemności Sceny i Pogody",
-                "options": {
-                    "darknessOnly": "Synchronizuj Tylko Ciemność",
-                    "default": "Użyj Domyślnych Ustawień Globalnych",
-                    "noSync": "Nie Synchronizuj",
-                    "sync": "Synchronizuj Pogodę i Ciemność",
-                    "weatherOnly": "Synchronizuj Tylko Pogodę"
-                }
-            },
-            "dawn": {
-                "hint": "Pora dnia wyrażona w procentach, na przykład jeśli doba ma 24 godziny, 0.5 oznacza godzinę 12:00, a 0.25 godzinę 06:00.",
-                "label": "Świt"
-            },
-            "dawnMacros": {
-                "label": "Makra Świtu"
-            },
-            "dayColor": {
-                "label": "Zabarwienie Dnia"
-            },
-            "dayOffset": {
-                "hint": "Przesunięcie stosowane do liczby dni podczas korzystania z opcji \"Od początku kalendarza\" w opcji \"Wyświetlanie dni\".",
-                "label": "Przesunięcie Dnia Początkowego"
-            },
-            "daysDisplay": {
-                "label": "Wyświetlanie Dni",
-                "options": {
-                    "dayOfYear": "Dzień Roku",
-                    "none": "Brak",
-                    "sinceEpoch": "Od Początku Kalendarza"
-                }
-            },
-            "dusk": {
-                "hint": "Pora dnia wyrażona w procentach, na przykład jeśli doba ma 24 godziny, 0.5 oznacza godzinę 12:00, a 0.75 godzinę 18:00.",
-                "label": "Zmierzch"
-            },
-            "duskMacros": {
-                "label": "Makra Zmierzchu"
-            },
+            "title": "Menu Konfiguracji",
             "firstTimeTitle": "Pierwszorazowa Konfiguracja",
-            "genWeather": {
-                "hint": "Generuje nową pogodę każdego dnia. Do określenia klimatu wykorzystuje strefę klimatyczną.",
-                "label": "Generowanie Pogody",
-                "options": {
-                    "no": "Nie",
-                    "noTemp": "Tak (Bez Temperatury)",
-                    "tempC": "Tak + Celsjusz",
-                    "tempF": "Tak + Fahrenheit"
-                }
-            },
-            "hideExpired": {
-                "label": "Ukryj Przedawnione Wydarzenia"
-            },
-            "hideInCombat": {
-                "label": "Ukryj Podczas Walki"
-            },
-            "hueIntensity": {
-                "hint": "Gdy funkcja Simple Timekeeping ustawi poziom przyciemnienia, zastosuje również odcień do sceny w oparciu o kolory dzienne i nocne.",
-                "label": "Intensywność odcienia sceny"
-            },
-            "journalEntryEvents": {
-                "label": "Nazwa Wpisu w Dzienniku dla Zdarzeń"
-            },
-            "latitude": {
-                "hint": "Wybierz strefę klimatyczną dla swojego świata. Jeśli zostanie ustawiona, będzie stanowić podstawę do ustalania pogody, temperatury oraz czasu świtu/zmierzchu (ignorując inne ustawienia świtu/zmierzchu)",
-                "label": "Strefa Klimatyczna",
-                "options": {
-                    "boreal": "Polarna",
-                    "coolTemperate": "Chłodna Umiarkowana",
-                    "disabled": "Wyłączona",
-                    "equatorial": "Równikowa",
-                    "hotDesert": "Gorąca Pustynna",
-                    "mediterranean": "Śródziemnomorska",
-                    "subpolar": "Podbiegunowa",
-                    "subtropical": "Podzwrotnikowa",
-                    "temperate": "Umiarkowana",
-                    "tropical": "Tropikalna"
-                }
-            },
-            "macrosFieldset": {
-                "hint": "Makra uruchamiane o określonych porach dnia. Makra będą wykonywane dla wszystkich połączonych użytkowników, którzy mają uprawnienia do ich uruchamiania.",
-                "label": "Makra Automatyzacji"
-            },
-            "middayMacros": {
-                "label": "Makra Południa"
-            },
-            "moonAutomation": {
-                "hint": "Jeśli księżyce są zdefiniowane w kalendarzu, Simple Timekeeping automatycznie zaktualizuje plakietkę księżyca oznaczając obecną fazę.",
-                "label": "Automatyzacja Faz Księżyca"
-            },
-            "moonColor": {
-                "label": "Kolor Fazy Księżyca"
-            },
-            "moonLabel": {
-                "label": "Etykieta Fazy Księżyca"
-            },
-            "newDayMacros": {
-                "label": "Makra Nowego Dnia"
-            },
-            "nightColor": {
-                "label": "Zabarwienie Nocy"
-            },
-            "noPills": {
-                "label": "Zwykły styl"
+            "tabs": {
+                "configuration": "Konfiguracja",
+                "visibility": "Widoczność",
+                "aspect": "Aspekt",
+                "badges": "Plakietki",
+                "time": "Czas",
+                "calendar": "Kalendarz",
+                "automation": "Automatyzacja",
+                "environment": "Środowisko"
             },
             "seasons": {
                 "label": "Kolory Pór Roku"
             },
-            "secondsPerRealSecond": {
-                "label": "Sekunda na Sekundę Czasu Rzeczywistego"
+            "macrosFieldset": {
+                "label": "Makra Automatyzacji",
+                "hint": "Makra uruchamiane o określonych porach dnia. Makra będą wykonywane dla wszystkich połączonych użytkowników, którzy mają uprawnienia do ich uruchamiania."
             },
-            "secondsPerRound": {
-                "label": "Sekundy na Rundę Walki"
+            "newDayMacros": {
+                "label": "Makra Nowego Dnia"
             },
-            "setDateTime": {
-                "label": "Ustawianie Bieżącej Daty/Godziny"
+            "dawnMacros": {
+                "label": "Makra Świtu"
             },
-            "showFullDate": {
-                "label": "Pokaż pełny identyfikator daty"
+            "duskMacros": {
+                "label": "Makra Zmierzchu"
             },
-            "tabs": {
-                "aspect": "Aspekt",
-                "automation": "Automatyzacja",
-                "badges": "Plakietki",
-                "calendar": "Kalendarz",
-                "configuration": "Konfiguracja",
-                "environment": "Środowisko",
-                "time": "Czas",
-                "visibility": "Widoczność"
-            },
-            "title": "Menu Konfiguracji",
-            "topOffset": {
-                "label": "Górny margines (px)"
+            "middayMacros": {
+                "label": "Makra Południa"
             },
             "use24HourClock": {
                 "label": "Używaj Zegara 24-godzinnego"
             },
-            "useCustomMoons": {
-                "label": "Dostosuj Księżyce"
-            },
-            "useFullWidth": {
-                "label": "Maksymalna szerokość siły"
+            "wideLetterSpacing": {
+                "label": "Szerokie Odstępy Między Literami"
             },
             "useMonospace": {
                 "label": "Używaj Czcionki Monospace"
             },
-            "weatherColor": {
-                "label": "Kolor Pogody"
+            "noPills": {
+                "label": "Zwykły styl"
+            },
+            "useFullWidth": {
+                "label": "Maksymalna szerokość siły"
+            },
+            "hideInCombat": {
+                "label": "Ukryj Podczas Walki"
+            },
+            "topOffset": {
+                "label": "Górny margines (px)"
+            },
+            "hideExpired": {
+                "label": "Ukryj Przedawnione Wydarzenia"
+            },
+            "copyButton": {
+                "label": "Kopiuj z bieżącej konfiguracji (Zapisz i otwórz ponownie w celu sformatowania)"
+            },
+            "customCalendar": {
+                "label": "JSON Niestandardowego Kalendarza",
+                "hint": "Definicja JSON dla kalendarza niestandardowego. Nie ma wsparcia dla niestandardowego kalendarza ani sposobu konfiguracji pliku JSON. Przykładowe kalendarze można znaleźć na wiki.",
+                "error": "Nieprawidłowy format JSON dla niestandardowego kalendarza, ustawienie zostało przywrócone do poprzedniego stanu. Sprawdź konsolę, aby uzyskać więcej informacji."
+            },
+            "useCustomMoons": {
+                "label": "Dostosuj Księżyce"
+            },
+            "customMoons": {
+                "label": "JSON Niestandardowych Księżyców",
+                "hint": "Definicja JSON dla niestandardowych księżyców. Chociaż księżyce można również zdefiniować w JSON kalendarza, pozwala to na nadpisanie księżyców bez konieczności zmiany JSON kalendarza w przypadkach, gdy na przykład używasz kalendarza zdefiniowanego przez system lub inny moduł i chcesz dodać do niego księżyce. Nie ma wsparcia dla niestandardowych księżyców ani jak skonfigurować plik JSON, zobacz wiki dla przykładów.",
+                "error": "Nieprawidłowy format JSON dla niestandardowych księżyców, ustawienie zostało przywrócone do poprzedniego stanu. Sprawdź konsolę, aby uzyskać więcej informacji."
+            },
+            "climateData": {
+                "label": "Dane Klimatyczne",
+                "hint": "Definicja JSON do generowania pogody i temperatury. Nie ma wsparcia dla niestandardowego klimatu ani sposobu konfiguracji pliku JSON."
+            },
+            "customBadge": {
+                "label": "Niestandardowa Plakietka"
+            },
+            "calendar": {
+                "label": "Kalendarz",
+                "hint": "Niestandardowy kalendarz zdefiniowany w JSONie Niestandardowego Kalendarza",
+                "default": "Domyślne Ustawienia Systemowe",
+                "custom": "Niestandardowy"
+            },
+            "moonLabel": {
+                "label": "Etykieta Fazy Księżyca"
+            },
+            "moonColor": {
+                "label": "Kolor Fazy Księżyca"
+            },
+            "moonAutomation": {
+                "label": "Automatyzacja Faz Księżyca",
+                "hint": "Jeśli księżyce są zdefiniowane w kalendarzu, Simple Timekeeping automatycznie zaktualizuje plakietkę księżyca oznaczając obecną fazę."
             },
             "weatherLabel": {
                 "label": "Etykieta Pogody"
@@ -258,70 +164,175 @@
             "weatherOverlay": {
                 "label": "Animacje Pogody"
             },
-            "wideLetterSpacing": {
-                "label": "Szerokie Odstępy Między Literami"
+            "weatherColor": {
+                "label": "Kolor Pogody"
+            },
+            "showFullDate": {
+                "label": "Pokaż pełny identyfikator daty"
+            },
+            "daysDisplay": {
+                "label": "Wyświetlanie Dni",
+                "options": {
+                    "none": "Brak",
+                    "sinceEpoch": "Od Początku Kalendarza",
+                    "dayOfYear": "Dzień Roku"
+                }
+            },
+            "dayOffset": {
+                "label": "Przesunięcie Dnia Początkowego",
+                "hint": "Przesunięcie stosowane do liczby dni podczas korzystania z opcji \"Od początku kalendarza\" w opcji \"Wyświetlanie dni\"."
+            },
+            "dawn": {
+                "label": "Świt",
+                "hint": "Pora dnia wyrażona w procentach, na przykład jeśli doba ma 24 godziny, 0.5 oznacza godzinę 12:00, a 0.25 godzinę 06:00."
+            },
+            "dusk": {
+                "label": "Zmierzch",
+                "hint": "Pora dnia wyrażona w procentach, na przykład jeśli doba ma 24 godziny, 0.5 oznacza godzinę 12:00, a 0.75 godzinę 18:00."
+            },
+            "latitude": {
+                "label": "Strefa Klimatyczna",
+                "hint": "Wybierz strefę klimatyczną dla swojego świata. Jeśli zostanie ustawiona, będzie stanowić podstawę do ustalania pogody, temperatury oraz czasu świtu/zmierzchu (ignorując inne ustawienia świtu/zmierzchu)",
+                "options": {
+                    "disabled": "Wyłączona",
+                    "equatorial": "Równikowa",
+                    "tropical": "Tropikalna",
+                    "subtropical": "Podzwrotnikowa",
+                    "hotDesert": "Gorąca Pustynna",
+                    "mediterranean": "Śródziemnomorska",
+                    "temperate": "Umiarkowana",
+                    "coolTemperate": "Chłodna Umiarkowana",
+                    "subpolar": "Podbiegunowa",
+                    "boreal": "Polarna"
+                }
+            },
+            "genWeather": {
+                "label": "Generowanie Pogody",
+                "hint": "Generuje nową pogodę każdego dnia. Do określenia klimatu wykorzystuje strefę klimatyczną.",
+                "options": {
+                    "no": "Nie",
+                    "noTemp": "Tak (Bez Temperatury)",
+                    "tempC": "Tak + Celsjusz",
+                    "tempF": "Tak + Fahrenheit"
+                }
+            },
+            "dayColor": {
+                "label": "Zabarwienie Dnia"
+            },
+            "nightColor": {
+                "label": "Zabarwienie Nocy"
+            },
+            "hueIntensity": {
+                "label": "Intensywność odcienia sceny",
+                "hint": "Gdy funkcja Simple Timekeeping ustawi poziom przyciemnienia, zastosuje również odcień do sceny w oparciu o kolory dzienne i nocne."
+            },
+            "badgeLabel": {
+                "label": "Etykieta"
+            },
+            "badgeColor": {
+                "label": "Kolor"
+            },
+            "secondsPerRound": {
+                "label": "Sekundy na Rundę Walki"
+            },
+            "secondsPerRealSecond": {
+                "label": "Sekunda na Sekundę Czasu Rzeczywistego"
+            },
+            "journalEntryEvents": {
+                "label": "Nazwa Wpisu w Dzienniku dla Zdarzeń"
+            },
+            "clockSeconds": {
+                "label": "Częstotliwość Aktualizacji (w sekundach)"
+            },
+            "setDateTime": {
+                "label": "Ustawianie Bieżącej Daty/Godziny"
+            },
+            "darknessSync": {
+                "label": "Synchronizacja Ciemności Sceny i Pogody",
+                "hint": "Określa czy ciemność sceny i pogoda powinny być automatycznie określane na podstawie obecnego czasu i pogody w kalendarzu. Tę opcję można też skonfigurować dla każdej sceny, na dole zakładki oświetlenia.",
+                "options": {
+                    "default": "Użyj Domyślnych Ustawień Globalnych",
+                    "sync": "Synchronizuj Pogodę i Ciemność",
+                    "noSync": "Nie Synchronizuj",
+                    "weatherOnly": "Synchronizuj Tylko Pogodę",
+                    "darknessOnly": "Synchronizuj Tylko Ciemność"
+                }
             }
         },
-        "day": "Dzień",
-        "days": "Dni",
-        "in-progress": "W Toku",
-        "moonPhase": {
-            "bloodMoon": "Krwawy Księżyc",
-            "celestialAlignment": "Niebiańska Koniunkcja",
-            "eclipse": "Zaćmienie",
-            "firstQuarter": "Pierwsza Kwarta",
-            "full": "Pełnia",
-            "lastQuarter": "Ostatnia Kwarta",
-            "manaMoon": "Księżyc Many",
-            "new": "Nów",
-            "shatteredMoon": "Strzaskany Księżyc",
-            "spiritMoon": "Duchowy Księżyc",
-            "twinMoons": "Bliźniacze Księżyce",
-            "voidMoon": "Księżyc Pustki",
-            "waningCrescent": "Siep Ubywający",
-            "waningGibbous": "Garb Ubywający",
-            "waxingCrescent": "Sierp Przybywający",
-            "waxingGibbous": "Garb Przybywający"
-        },
-        "paused": "Wstrzymane",
-        "paused-info": "Simple Timekeeping — postęp czasu jest wstrzymany, kliknij, aby wznowić.",
-        "settings": {
-            "config-menu": {
-                "hint": "Skonfiguruj ustawienia modułu.",
-                "label": "Konfiguracja",
-                "name": "Konfiguracja"
+        "app": {
+            "searchEvents": "Wyszukaj Wydarzenia",
+            "create-event": {
+                "eventTime": {
+                    "label": "Początek Wydarzenia"
+                },
+                "eventEnd": {
+                    "label": "Koniec Wydarzenia (opcjonalnie)"
+                },
+                "duration": {
+                    "label": "Czas Trwania Wydarzenia (godziny)"
+                },
+                "edit": {
+                    "label": "Edycja Daty/Godziny Wydarzenia"
+                },
+                "eventAlreadyEnded": {
+                    "label": "Wydarzenie już się zakończyło"
+                },
+                "eventIn": {
+                    "label": "W"
+                },
+                "eventTimeLeft": {
+                    "label": "Po lewej stronie"
+                },
+                "repeat": {
+                    "label": "Powtarzanie",
+                    "options": {
+                        "none": "Nie Powtarzaj",
+                        "day": "Codziennie",
+                        "week": "Co Tydzień",
+                        "month": "Co Miesiąc",
+                        "year": "Co Rok"
+                    }
+                }
+            },
+            "controls": {
+                "create-event": {
+                    "tooltip": "Utwórz Wydarzenie"
+                },
+                "day-back": {
+                    "tooltip": "Cofnij o Jeden Dzień (Ctrl 1 Tydzień, Shift 3 Dni, Alt 2 Dni)"
+                },
+                "hour-back": {
+                    "tooltip": "Cofnij o Godzinę (Ctrl 30 min, Shift 10 min, Alt 5 min)"
+                },
+                "hour-forward": {
+                    "tooltip": "Postąp o Godzinę (Ctrl 30 min, Shift 10 min, Alt 5 min)"
+                },
+                "day-forward": {
+                    "tooltip": "Postąp o Jeden Dzień (Ctrl 1 Tydzień, Shift 3 Dni, Alt 2 Dni)"
+                },
+                "sunrise": {
+                    "tooltip": "Wschód Słońca"
+                },
+                "sunset": {
+                    "tooltip": "Zachód Słońca"
+                },
+                "midday": {
+                    "tooltip": "Południe"
+                },
+                "midnight": {
+                    "tooltip": "Północ"
+                },
+                "configure": {
+                    "tooltip": "Konfiguracja"
+                },
+                "toggle-events": {
+                    "tooltip": "Wydarzenia"
+                }
+            },
+            "weather": {
+                "generate": "Wygeneruj"
             }
         },
-        "unpaused-info": "Simple Timekeeping — wznowiono odliczanie czasu, kliknij, aby wstrzymać. Czas będzie nadal wstrzymany, jeśli gra jest wstrzymana lub jeśli walka jest aktywna.",
-        "weather": {
-            "arcaneFog": "Tajemna Mgła",
-            "ashfall": "Pył",
-            "blizzard": "Zamieć",
-            "bloodRain": "Krwawy Deszcz",
-            "celestialEclipse": "Niebiańskie Zaćmienie",
-            "clear": "Czyste Niebo",
-            "cloudy": "Pochmurno",
-            "drizzle": "Mżawka",
-            "etherealDrizzle": "Eteryczna Mżawka",
-            "fog": "Mgła",
-            "frozenHell": "Mroźne Piekło",
-            "hail": "Grad",
-            "hurricane": "Huragan",
-            "luminousSky": "Zorza",
-            "manaStorm": "Burza Many",
-            "meteorShower": "Deszcz Meteorów",
-            "mist": "Mgiełka",
-            "overcast": "Zachmurzenie",
-            "partlyCloudy": "Częściowe Zachmurzenie",
-            "rain": "Deszcz",
-            "sandstorm": "Burza Piaskowa",
-            "snow": "Śnieg",
-            "spectralStorm": "Widmowa Burza",
-            "sunshower": "Słoneczny Deszcz",
-            "thunderstorm": "Burza",
-            "voidstorm": "Pustkoburza",
-            "wildMagicWinds": "Wiatry Dzikiej Magii",
-            "windy": "Wiatr"
-        }
+        "flags": {}
     }
 }

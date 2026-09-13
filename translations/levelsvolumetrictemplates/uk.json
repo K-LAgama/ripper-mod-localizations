@@ -1,0 +1,12 @@
+{
+    "levelsvolumetrictemplates.settings.volPercent.name": "Об'ємний відсоток",
+    "levelsvolumetrictemplates.settings.volPercent.hint": "Відсоток об’єму або площі, який вважається дійсною ціллю",
+    "levelsvolumetrictemplates.settings.ignoreSelf.name": "Ігнорувати себе",
+    "levelsvolumetrictemplates.settings.ignoreSelf.hint": "При розміщенні регіонів ігнорувати «Self»",
+    "levelsvolumetrictemplates.settings.ignoreFriendly.name": "Ігнорувати дружніх персонажів",
+    "levelsvolumetrictemplates.settings.ignoreFriendly.hint": "При розміщенні регіонів ігнорувати дружні персонажі",
+    "levelsvolumetrictemplates.settings.targetOnChange.name": "Зміни як мета",
+    "levelsvolumetrictemplates.settings.targetOnChange.hint": "Зміни у попередньому перегляді цільового регіону",
+    "levelsvolumetrictemplates.settings.targetOnPlacement.name": "Ціль щодо працевлаштування",
+    "levelsvolumetrictemplates.settings.targetOnPlacement.hint": "Параметр розміщення за регіоном (вимкніть, щоб використовувати модуль як API)"
+}

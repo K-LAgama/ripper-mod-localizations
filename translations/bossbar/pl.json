@@ -1,0 +1,70 @@
+{
+    "bossbar": {
+        "controls": {
+            "bossUI": {
+                "name": "Przełącz pasek Boss",
+                "warn": "Nie wybrano żadnego tokenu. Wybierz jeden lub kilka tokenów i spróbuj ponownie"
+            }
+        },
+        "settings": {
+            "barStyle": {
+                "classic": "Klasyka",
+                "matchingImages": "Dopasowywanie obrazków"
+            },
+            "currentHpPath": {
+                "name": "Aktualna ścieżka HP",
+                "hint": "Ścieżka dostępu do aktualnej wartości hp postaci"
+            },
+            "maxHpPath": {
+                "name": "Ścieżka maksymalnego HP",
+                "hint": "Ścieżka danych prowadząca do maksymalnej liczby punktów zdrowia postaci"
+            },
+            "BarStyleConfiguration": {
+                "name": "Modele Boss Bar",
+                "label": "Konfiguruj style"
+            },
+            "resetPosition": {
+                "name": "Przywróć pozycję",
+                "hint": "Przywróć domyślne ustawienie pozycji paska Boss Bar"
+            },
+            "textAlign": {
+                "left": "Po lewej stronie",
+                "center": "Centrum",
+                "right": "Racja"
+            },
+            "woundsSystem": {
+                "name": "System ran",
+                "hint": "Jeśli w twojej grze zamiast punktów życia stosuje się rany, włącz tę opcję."
+            }
+        },
+        "bar-style-configuration": {
+            "add": "Dodaj styl",
+            "title": "Konfiguracja stylu paska „Boss Bar”",
+            "delete-title": "Usuń styl",
+            "delete-confirm": "Czy na pewno chcesz usunąć ten styl?",
+            "edit": "Edytuj styl",
+            "background": "Obraz tła",
+            "foreground": "Zdjęcie na pierwszym planie",
+            "bar": "Zdjęcie baru",
+            "tempBarColor": "Tymczasowy kolor paska zdrowia",
+            "tempBarAlpha": "Tymczasowa wersja alfa paska zdrowia",
+            "barHeight": "Wysokość baru Boss",
+            "font": "Rodzina czcionek",
+            "textSize": "Rozmiar czcionki",
+            "textAlign": "Wyrównanie tekstu",
+            "type": "Rodzaj stylu",
+            "type-hint": "Wybierz rodzaj stylu"
+        },
+        "boss-bar-configuration": {
+            "title": "Konfiguracja paska Boss Bar",
+            "no-actors": "W tej scenie nie wybrano żadnych aktorów ani nie ma ich na ekranie.",
+            "no-scene": "Brak dostępnej sceny. Proszę wybrać scenę i spróbować ponownie",
+            "save-pan": "Zapisz i przesuń kamerę",
+            "edit-themes": "Zamknij i edytuj motywy",
+            "hideNameHint": "Ukryj nazwisko aktora w pasku „Boss Bar”"
+        },
+        "boss-bar": {
+            "title": "Boss Bar"
+        }
+    }
+}

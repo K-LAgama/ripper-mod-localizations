@@ -1,0 +1,16 @@
+{
+    "tile-scroll": {
+        "flags": {
+            "header": "Scorrimento delle piastrelle",
+            "enableScroll": "Scorri",
+            "enabled": "Abilitato",
+            "scrollSpeed": "Velocità",
+            "scrollDirection": "Direzione",
+            "enableRotate": "Abilita rotazione",
+            "repeat": "Ripetizione del motivo",
+            "pivot": "Perno di rotazione",
+            "offset": "Offset",
+            "parallax": "Forza di parallasse"
+        }
+    }
+}

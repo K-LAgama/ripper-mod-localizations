@@ -1,0 +1,16 @@
+{
+    "tile-scroll": {
+        "flags": {
+            "header": "Zwoje z płytek",
+            "enableScroll": "Przewiń",
+            "enabled": "Włączone",
+            "scrollSpeed": "Prędkość",
+            "scrollDirection": "Kierunek",
+            "enableRotate": "Włącz obrót",
+            "repeat": "Powtarzanie wzoru",
+            "pivot": "Oś obrotu",
+            "offset": "Offset",
+            "parallax": "Siła paralaksy"
+        }
+    }
+}

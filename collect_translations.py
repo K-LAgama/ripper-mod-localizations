@@ -341,7 +341,10 @@ def harvest_subset(source, target, stats: dict):
     if isinstance(source, str):
         if source.strip() == "":
             return None
-        if not isinstance(target, str) or target.strip() == "":
+        if not isinstance(target, str):
+            return None
+        if target.strip() == "":
+            stats["empty"] += 1
             return None
         if target == source:
             stats["stubs"] += 1
@@ -375,6 +378,42 @@ def harvest_subset(source, target, stats: dict):
         return items or None
 
     return None  # numbers, booleans and nulls are not translatable
+
+
+def flatten_leaves(node, prefix: str = ""):
+    """Yield ``(dotted path, value)`` for every leaf of a JSON document."""
+    if isinstance(node, dict):
+        for key, value in node.items():
+            yield from flatten_leaves(value, f"{prefix}.{key}" if prefix else key)
+    elif isinstance(node, list):
+        for index, value in enumerate(node):
+            yield from flatten_leaves(value, f"{prefix}[{index}]")
+    else:
+        yield prefix, node
+
+
+def diff_sources(previous, current) -> dict:
+    """Compare two English sources.
+
+    ``characters`` counts the English text in keys that are new or whose text
+    changed: exactly the strings a fresh translation pass would have to pay for.
+    """
+    old = dict(flatten_leaves(previous)) if isinstance(previous, dict) else {}
+    new = dict(flatten_leaves(current)) if isinstance(current, dict) else {}
+
+    added = [path for path in new if path not in old]
+    removed = [path for path in old if path not in new]
+    changed = [path for path in new
+               if path in old and old[path] != new[path]]
+    characters = sum(len(new[path]) for path in added + changed
+                     if isinstance(new[path], str))
+
+    return {
+        "added": len(added),
+        "changed": len(changed),
+        "removed": len(removed),
+        "characters": characters,
+    }
 
 
 def merge_harvest(destination: dict, harvested: dict, prefer_upstream: bool) -> int:
@@ -426,35 +465,27 @@ def copy_source(source: Path, destination: Path, dry_run: bool) -> bool:
     return True
 
 
+def count_orphan_leaves(source, target) -> int:
+    """Count leaves of *target* whose path no longer exists in *source*."""
+    source_paths = {path for path, _ in flatten_leaves(source)} if isinstance(source, dict) else set()
+    return sum(1 for path, _ in flatten_leaves(target) if path not in source_paths)
+
+
 def harvest_module(module_dir: Path, module_id: str, translations_dir: Path, source_data,
                    languages: list[str], args) -> dict:
-    """Harvest every declared language of one module. Returns per-language stats."""
+    """Harvest and clean up every declared language of one module.
+
+    For each language this
+    1. drops values that are not real translations (English stubs, blank strings
+       and keys that no longer exist in the source), then
+    2. fills the remaining gaps from the module's upstream translation file.
+    """
     harvested: dict[str, dict] = {}
     for code in languages:
-        upstream = find_upstream_file(module_dir, code)
-        if upstream is None:
-            continue
-
-        stats = {"keys": 0, "characters": 0, "stubs": 0}
-        try:
-            target_data = read_json_file(upstream)
-        except ModuleError:
-            # Upstream placeholder files are sometimes empty or broken; that just
-            # means there is nothing to harvest for this language.
-            harvested[code] = {"unreadable": True, "upstream": upstream}
-            continue
-        if not isinstance(target_data, dict):
-            harvested[code] = {"unreadable": True, "upstream": upstream}
-            continue
-
-        subset = harvest_subset(source_data, target_data, stats)
-        if not subset:
-            harvested[code] = {"empty": True, "stubs": stats["stubs"], "upstream": upstream}
-            continue
-
         destination = translations_dir / module_id / f"{code.lower()}.json"
+        destination_exists = destination.is_file()
         existing: dict = {}
-        if destination.is_file():
+        if destination_exists:
             try:
                 loaded = read_json_file(destination)
                 if isinstance(loaded, dict):
@@ -462,10 +493,37 @@ def harvest_module(module_dir: Path, module_id: str, translations_dir: Path, sou
             except ModuleError:
                 existing = {}
 
-        changed = merge_harvest(existing, subset, args.prefer_upstream)
-        written = changed > 0 or not destination.is_file()
+        upstream = find_upstream_file(module_dir, code)
+        if upstream is None and not destination_exists:
+            continue
+
+        # 1. clean the file we already have
+        clean_stats = {"keys": 0, "characters": 0, "stubs": 0, "empty": 0}
+        orphans = count_orphan_leaves(source_data, existing) if existing else 0
+        cleaned = harvest_subset(source_data, existing, clean_stats) or {}
+        removed = clean_stats["stubs"] + clean_stats["empty"] + orphans
+
+        # 2. fill the gaps from upstream, when the module ships this language
+        stats = {"keys": 0, "characters": 0, "stubs": 0, "empty": 0}
+        subset = None
+        unreadable = False
+        if upstream is not None:
+            try:
+                target_data = read_json_file(upstream)
+            except ModuleError:
+                # Upstream placeholder files are sometimes empty or broken; that
+                # just means there is nothing to harvest for this language.
+                target_data = None
+                unreadable = True
+            if isinstance(target_data, dict):
+                subset = harvest_subset(source_data, target_data, stats)
+            elif target_data is not None:
+                unreadable = True
+
+        merged = merge_harvest(cleaned, subset, args.prefer_upstream) if subset else 0
+        written = removed > 0 or merged > 0 or (bool(cleaned) and not destination_exists)
         if written and not args.dry_run:
-            write_text(destination, serialise(existing))
+            write_text(destination, serialise(cleaned))
 
         harvested[code] = {
             "upstream": upstream,
@@ -473,8 +531,10 @@ def harvest_module(module_dir: Path, module_id: str, translations_dir: Path, sou
             "keys": stats["keys"],
             "characters": stats["characters"],
             "stubs": stats["stubs"],
-            "changed": changed,
+            "cleaned": removed,
+            "changed": removed + merged,
             "written": written,
+            "unreadable": unreadable,
         }
     return harvested
 
@@ -514,6 +574,11 @@ def main(argv: list[str] | None = None) -> int:
     copied = up_to_date = no_source = errors = processed = crawled = 0
     skipped_existing = 0
     harvest_files = 0
+    updated_sources = 0
+    first_time = 0
+    new_characters = 0
+    cleaned_values = 0
+    shrinking: list[str] = []
     unreadable: list[str] = []
     per_language: dict[str, dict] = {code: {"modules": 0, "files": 0, "keys": 0,
                                             "characters": 0, "stubs": 0} for code in languages}
@@ -562,6 +627,25 @@ def main(argv: list[str] | None = None) -> int:
                 f"(wanted translations/{module_id}/{DEST_FILE_NAME})")
             continue
 
+        # Read both sides so the report can say what changed since the last
+        # collection (new/changed strings are what a translation pass costs).
+        previous = None
+        previously_collected = destination.is_file()
+        if previously_collected:
+            try:
+                loaded = read_json_file(destination)
+                if isinstance(loaded, dict):
+                    previous = loaded
+            except ModuleError:
+                previous = None
+        try:
+            source_data = read_json_file(source)
+        except ModuleError as exc:
+            source_data = None
+            source_error = str(exc)
+        else:
+            source_error = None
+
         try:
             written = copy_source(source, destination, args.dry_run)
         except OSError as exc:
@@ -569,47 +653,69 @@ def main(argv: list[str] | None = None) -> int:
             print(f"[error]  {module_dir.name}: copy failed ({exc})", file=sys.stderr)
             continue
 
+        diff = None
+        if written and previously_collected and previous is not None and source_data is not None:
+            diff = diff_sources(previous, source_data)
+            if diff["added"] or diff["changed"] or diff["removed"]:
+                updated_sources += 1
+                new_characters += diff["characters"]
+                if diff["removed"]:
+                    shrinking.append(f"{module_dir.name} (-{diff['removed']})")
+        elif written and not previously_collected:
+            first_time += 1
+
         if written:
             copied += 1
         else:
             up_to_date += 1
 
         harvested = {}
-        if languages:
-            try:
-                source_data = read_json_file(source)
-            except ModuleError as exc:
-                errors += 1
-                print(f"[error]  {module_dir.name}: {exc}", file=sys.stderr)
-                continue
+        if languages and source_data is not None:
             harvested = harvest_module(module_dir, module_id, translations_dir, source_data,
                                        languages, args)
             for code, info in harvested.items():
                 if info.get("unreadable"):
                     unreadable.append(f"{module_dir.name}/{code}")
-                    continue
-                entry = per_language[code]
-                entry["modules"] += 1
-                entry["stubs"] += info.get("stubs", 0)
+                else:
+                    entry = per_language[code]
+                    entry["modules"] += 1
+                    entry["stubs"] += info.get("stubs", 0)
+                cleaned_values += info.get("cleaned", 0)
                 if info.get("written"):
+                    entry = per_language[code]
                     entry["files"] += 1
                     entry["keys"] += info.get("keys", 0)
                     entry["characters"] += info.get("characters", 0)
                     harvest_files += 1
                     if args.verbose:
-                        log(f"         + {code} <- {info['upstream'].relative_to(module_dir)} "
-                            f"({number(info['keys'])} keys)")
+                        source_label = (info["upstream"].relative_to(module_dir)
+                                        if info.get("upstream") else "cleanup")
+                        log(f"         + {code} <- {source_label} "
+                            f"({number(info['keys'])} keys, {number(info['cleaned'])} cleaned)")
+
+        if written and source_error is not None:
+            errors += 1
+            print(f"[error]  {module_dir.name}: {source_error}", file=sys.stderr)
 
         parts = []
-        if written:
-            parts.append("en.json copied")
-        else:
+        if not written:
             parts.append("en.json up to date")
+        elif diff is not None:
+            parts.append(
+                f"en.json updated: +{diff['added']} new, ~{diff['changed']} changed, "
+                f"-{diff['removed']} removed, {number(diff['characters'])} chars to translate"
+            )
+        else:
+            parts.append("en.json collected")
         if harvested:
-            kept = [code for code, info in harvested.items() if info.get("written")]
-            if kept:
-                parts.append(f"harvested {len(kept)} language file(s)")
-            else:
+            gained = [code for code, info in harvested.items()
+                      if info.get("written") and info.get("keys")]
+            cleaned = [code for code, info in harvested.items() if info.get("cleaned")]
+            if gained:
+                parts.append(f"harvested {len(gained)} language file(s)")
+            if cleaned:
+                parts.append(f"cleaned {len(cleaned)} file(s)")
+            if not gained and not cleaned:
                 parts.append("nothing new to harvest")
         log(f"[ok]     {module_dir.name}: {' | '.join(parts)}")
 
@@ -633,7 +739,7 @@ def main(argv: list[str] | None = None) -> int:
             print(f"{'total'.ljust(width)}  {'':>7}  {number(total_files).rjust(6)}  "
                   f"{number(total_keys).rjust(7)}  {number(total_chars).rjust(11)}  "
                   f"{number(total_stubs).rjust(6)}")
-            print("(chars saved = English characters that no longer need translating)")
+            print("(upstream chars = English text covered by the modules' own human translations)")
 
     print("\n" + "-" * 60)
     prefix = "Dry run: " if args.dry_run else ""
@@ -645,8 +751,22 @@ def main(argv: list[str] | None = None) -> int:
     if skipped_existing:
         print(f"{prefix}{skipped_existing} module(s) not in translations/ were left alone "
               f"(--all-modules to add them)")
+    if updated_sources or first_time:
+        print(f"{prefix}{updated_sources} English source(s) changed since the last collection "
+              f"({number(new_characters)} new/changed characters to translate)")
+        if first_time:
+            print(f"{prefix}{first_time} English source(s) collected for the first time")
+        print(f"{prefix}run 'node translate-modules.js --dry-run' to see the per-language cost")
+    if shrinking:
+        shown = ", ".join(shrinking[:8])
+        more = "" if len(shrinking) <= 8 else f" (+{len(shrinking) - 8} more)"
+        print(f"! {len(shrinking)} source(s) lost strings, check for an outdated checkout: "
+              f"{shown}{more}")
     if languages:
         print(f"{prefix}{harvest_files} harvested language file(s) written")
+    if cleaned_values:
+        print(f"{prefix}{number(cleaned_values)} value(s) dropped from translations/: English "
+              f"stubs, blank strings and keys that are gone from the source")
     if unreadable:
         shown = ", ".join(unreadable[:6])
         more = "" if len(unreadable) <= 6 else f" (+{len(unreadable) - 6} more)"

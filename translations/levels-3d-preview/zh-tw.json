@@ -1,0 +1,2486 @@
+{
+    "levels3dpreview": {
+        "controls": {
+            "preview3d": "切換 3D 模式",
+            "miniCanvas": "彈出／還原畫布",
+            "tile3dPolygon": "繪製形狀以進行擠出",
+            "tips": {
+                "templatePlacement": "3D 模板定位：使用滑鼠滾輪旋轉。按下 Control 鍵並轉動滑鼠滾輪以調整高度。按下 Alt 鍵並轉動滑鼠滾輪以傾斜視角。"
+            },
+            "loading": {
+                "load": "正在載入 3D Canvas...",
+                "env": "正在建立 3D 環境...",
+                "gravity": "計算重力……",
+                "shaders": "正在編譯著色器..."
+            },
+            "loadingScreen": {
+                "navtools": "場景導覽工具（位於",
+                "showcontrols": "顯示控制項（切換）",
+                "togglecamera": "切換遊戲鏡頭",
+                "cameracontrols": "相機控制功能",
+                "tokencontrols": "代幣控制",
+                "pan": "Pan",
+                "rotate": "旋轉",
+                "zoom": "Zoom",
+                "topdown": "自上而下",
+                "firstperson": "第一人稱",
+                "unlock": "解鎖",
+                "lockon": "鎖定",
+                "move": "移動",
+                "elevation": "飛",
+                "snapping": "對齊至地平線",
+                "rebind": "您可以在設定中重新設定鍵盤按鍵的對應。",
+                "holddrag": "按住並拖曳",
+                "toggle": "切換",
+                "manualpan": "手動平移",
+                "dragdrop": "拖放",
+                "tap": "輕點",
+                "scroll": "捲動",
+                "loadingdone": "3D Canvas 已就緒！ - 按下 <i class='fas fa-question control-highlighted'></i> 以關閉此畫面。",
+                "loadingarrow": "點擊箭頭所指處的「？」圖示，即可關閉載入畫面。"
+            }
+        },
+        "errors": {
+            "initfailed": "3D Canvas：初始化失敗。這可能是快取問題，請試著按下 CTRL+F5 重新整理頁面。 請同時確認您是否擁有一個「已啟用」的場景。此外，3D Canvas 或其依賴項之一可能已過時或損毀。請確保模組已更新至最新版本，若其他方法皆無效，請嘗試重新安裝。",
+            "noActiveScene": "3D Canvas：未找到任何已啟用的場景。系統已自動啟用一個場景，請重新載入頁面。",
+            "noScenes": "3D Canvas：未找到任何場景。已建立預設場景，請重新載入頁面。",
+            "attachmentNotFound": "3D Canvas：找不到附件。代碼：%token% | 附件：%attachment%",
+            "gamecameradisabled": "3D Canvas：停用遊戲攝影機 — 遊戲攝影機已啟用，但「使用 3D 幾何體進行視野計算」已停用。",
+            "filenotsupported": "不支援此檔案格式或檔案遺失",
+            "nomapgencells": "在「動態網格」地圖生成器所產生的地圖中，未發現任何網格單元或有效資料",
+            "toofarfromdoor": "您的代幣距離太遠，無法開啟門",
+            "tokenNotGrounded": "此移動嘗試不被允許，該棋子未與棋盤接觸。",
+            "3dnotactive": "無法開啟畫布彈出視窗，3D 模式未啟用。",
+            "canping": "使用者無權在地圖上顯示「ping」標記。",
+            "canpingpan": "使用者無權傳送相機位置。",
+            "overmaxelevation": "此移動嘗試超出了此場景的最大高度限制。",
+            "particleSystem": {
+                "type": "粒子系統：不支援類型「%type%」，有效的類型包括：",
+                "fromto": "粒子系統：若未指定或未定義，則為目標和／或來源。",
+                "onend": "粒子系統：.onEnd() — 一個或多個參數並非 Particle3D 的實例。"
+            },
+            "critical": "3D Canvas：渲染迴圈中發生了致命錯誤。正在嘗試恢復...",
+            "notarget": "3D 畫布：未找到可進行拖放操作的目標。請確保您至少有一個 3D 物件，或已啟用背景。"
+        },
+        "notifications": {
+            "initialviewcleared": "初始視圖位置已清除",
+            "initialviewcaptured": "已擷取初始視圖位置"
+        },
+        "clipNavigator": {
+            "disabled": "顯示全部",
+            "sync": "與玩家同步",
+            "gamecamera": "切換遊戲鏡頭",
+            "syncNotification": "{{level}} 的關卡視圖已與所有玩家同步",
+            "cameraToToken": "將鏡頭對準選定的標記",
+            "automode": "追蹤模式",
+            "controls": "顯示控制項",
+            "lockon": "切換「鎖定目標」功能",
+            "performance": "設定效能模式",
+            "performancereport": "績效報告",
+            "wireframe": "切換碰撞體",
+            "fog": "切換「遠光/霧燈」模式"
+        },
+        "mapgen": {
+            "title": "地圖生成器 - 1 格的高度等於",
+            "tooltips": {
+                "fit-to-scene": "自動調整大小並定位磁磚",
+                "select-all": "全選",
+                "deselect-all": "取消全選",
+                "set-elevation": "為選取的儲存格設定高度",
+                "add-material": "新增材料",
+                "apply-material": "將素材套用至選取的儲存格",
+                "select-material": "選取具有此材質的儲存格",
+                "select-elevation": "選取高度為此的儲存格",
+                "delete-material": "刪除材料",
+                "invert": "反選取",
+                "toggle-material": "展開／收起內容",
+                "clear-material": "透明材質"
+            },
+            "generator": {
+                "title": "產生地圖",
+                "content": "您確定要產生一張新地圖嗎？此操作將覆寫所有目前設定的海拔高度，且無法撤銷！\n第一個材質槽將用作地面材質，其餘材質將根據網格高度自動映射。",
+                "height": "最大高度",
+                "cave": "洞穴",
+                "dungeon": "地牢",
+                "landscape": "自訂",
+                "generate": "產生",
+                "theme": "主題",
+                "shore": "海岸",
+                "hills": "山丘",
+                "mountains": "山脈",
+                "plateau": "高原",
+                "valley": "山谷",
+                "island": "島嶼"
+            },
+            "themes": {
+                "firelands": "火焰之地",
+                "desert": "沙漠",
+                "plains": "平原",
+                "wood": "木材",
+                "frost": "霜",
+                "jungle": "叢林遺跡",
+                "crypt": "Crypt",
+                "alien": "《異形》",
+                "tech": "科技",
+                "tmcArabianNights": "《天方夜譚》",
+                "tmcNature": "《自然》",
+                "tmcDungeon": "地牢"
+            },
+            "material": {
+                "name": "姓名",
+                "cellColor": "儲存格顏色",
+                "tint": "色調顏色",
+                "texture": "質地",
+                "repeat": "重複",
+                "rotate": "隨機化",
+                "metalness": "金屬感",
+                "roughness": "粗糙度",
+                "opacity": "不透明度",
+                "emissive": "發光性"
+            },
+            "bevel": "斜面",
+            "zoom": "Zoom",
+            "rows": "行",
+            "columns": "專欄"
+        },
+        "sharing": {
+            "sharemap": {
+                "agreement": "透過分享此地圖，您確認您擁有分享該地圖的權利，且未違反所使用任何素材的使用條款。您亦同意該地圖將儲存於 3D Canvas 伺服器上，且該地圖可能隨時被移除。",
+                "imageinfo": "請將地圖的螢幕截圖上傳至 imgur，並將連結貼到圖片欄位中。若操作正確，圖片將會顯示在預覽中。",
+                "title": "分享地圖",
+                "name": "地圖名稱",
+                "description": "說明",
+                "author": "作者",
+                "image": "圖片",
+                "imageplaceholder": "圖片網址",
+                "share": "分享",
+                "error": "發生錯誤",
+                "preview": "圖片預覽",
+                "secret": "密鑰",
+                "secretinfo": "請注意，金鑰並非以加密格式儲存，建議使用系統自動生成的隨機金鑰；若您日後決定重新提交地圖的新版本，該金鑰將會自動儲存以供日後使用。",
+                "missingfields": "3D Canvas - 地圖分享 | 缺少一個或多個欄位，或未選取任何資產包",
+                "gamemaster": "「Gamemaster」並非允許使用的作者名稱。",
+                "assetpacks": "資源包",
+                "assetinfo": "共享地圖將不包含自訂資源。請主要使用允許的資源包中所包含的資源。按住 Ctrl 鍵並點擊以選取多個資源包。",
+                "confirm": {
+                    "title": "地圖分享確認",
+                    "content": "您確定要分享這張地圖嗎？一旦分享，您將無法編輯已分享的內容。"
+                },
+                "success": {
+                    "titleupdated": "地圖已更新",
+                    "title": "地圖已分享",
+                    "content": "地圖已成功分享。現在所有人都可以欣賞這份地圖了，感謝您的分享！"
+                }
+            },
+            "mapbrowser": {
+                "title": "地圖瀏覽器：共有 {count} 張地圖",
+                "createJournal": "建立包含已匯入場景相關資訊的「場景筆記」",
+                "imported": "匯入的場景",
+                "search": "開始輸入以進行搜尋..."
+            },
+            "packs": {
+                "baileywiki": "Baileywiki",
+                "mapmakingpack": "製圖套組",
+                "tokencollection": "代幣收藏"
+            },
+            "error": "請求次數過多，請稍後再試。",
+            "scenedirbutton": "瀏覽社群 3D 地圖",
+            "contextbutton": "分享場景"
+        },
+        "keybindings": {
+            "dialog": {
+                "title": "3D Canvas：移除核心鍵位設定",
+                "content": "為了避免 3D Canvas 控制項與核心控制項重疊，強烈建議移除核心的 WASD 鍵位設定。您仍可使用方向鍵或數字鍵盤來移動代幣或其他實體。您要移除這些設定嗎？"
+            },
+            "lockcamera": "啟用相機自動模式（僅限遊戲相機）",
+            "gameCameraTopDown": "切換俯視視角（僅限遊戲鏡頭）",
+            "removeWaypoint": "移除直尺路點",
+            "toggleFirstPerson": "切換第一人稱視角",
+            "toggleCameraLockPosition": "將相機鎖定在原位（鎖定）",
+            "rotate": "磁磚編輯器：旋轉",
+            "translate": "磁磚編輯器：翻譯",
+            "toggleGizmo": "磁磚編輯器：切換操控器",
+            "toggleSelect": "群組選取（拖曳時按住不放）",
+            "resetView": "重設相機視角",
+            "topdownView": "俯視鏡頭視角",
+            "cameraToToken": "將鏡頭對準選定的標記",
+            "panUp": "鏡頭：向上平移",
+            "panDown": "鏡頭：向下平移",
+            "panLeft": "鏡頭：向左平移",
+            "panRight": "鏡頭：向右平移",
+            "freeMode": "自由定位模式",
+            "pingcamera": "對所有客戶端執行「平移並將相機移動至當前視圖」操作",
+            "ping": "向所有客戶端發送當前滑鼠位置的訊號",
+            "scaleWidth": "磁磚編輯器：調整寬度比例",
+            "scaleHeight": "磁磚編輯器：高度比例",
+            "scaleGap": "磁磚編輯器：縮放間隙",
+            "scale": "磁磚編輯器：縮放比例",
+            "scaleScale": "磁磚編輯器：調整磁磚比例",
+            "toggleMode": "磁磚編輯器：循環填充樣式",
+            "tiltX": "磁磚編輯器：X 軸傾斜",
+            "tiltY": "磁磚編輯器：Y 軸傾斜"
+        },
+        "flags": {
+            "emote": {
+                "header": "3D 畫布",
+                "label": "表情符號",
+                "notes": "選擇一個自訂玩家表情，用來搭配 3D Canvas 戰術標記。"
+            },
+            "meshStats": "頂點：%v% | 三角形：%t% | 網格：%m% | 實例：%i%",
+            "maxElevation": {
+                "label": "最高海拔",
+                "notes": "此場景中代幣的最大允許高度。"
+            },
+            "grounding": {
+                "label": "接地",
+                "notes": "防止玩家標記在空中結束移動。",
+                "options": {
+                    "none": "無",
+                    "notFlying": "僅限非飛行狀態時",
+                    "always": "永遠"
+                }
+            },
+            "offset": {
+                "x": {
+                    "label": "X 偏移量"
+                },
+                "y": {
+                    "label": "Y 偏移量"
+                },
+                "z": {
+                    "label": "Z 偏移量"
+                }
+            },
+            "positional": {
+                "label": "3D Canvas：定位音效",
+                "notes": "根據與相機的距離，調整此聲音的音量變化。需啟用「音量平滑」功能。"
+            },
+            "doorType": {
+                "options": {
+                    "none": "無",
+                    "door": "門",
+                    "secret": "秘密"
+                }
+            },
+            "textureMode": {
+                "label": "紋理模式",
+                "options": {
+                    "stretch": "伸展",
+                    "repeat": "重複"
+                }
+            },
+            "textureRepeat": {
+                "label": "紋理重複"
+            },
+            "flipY": {
+                "label": "垂直翻轉貼圖"
+            },
+            "doorState": {
+                "options": {
+                    "open": "開啟",
+                    "closed": "已關閉",
+                    "locked": "已鎖定"
+                }
+            },
+            "doorStyle": {
+                "label": "門款",
+                "options": {
+                    "transparent": "透明",
+                    "animate": "動畫（Pivot）",
+                    "slide": "動畫（滑動 - 側邊）",
+                    "slideVertical": "動畫（投影片 - 直式）",
+                    "linkWithAnimation": "附帶 3D 模型動畫的連結",
+                    "linkWithAnimationReversed": "附帶單一 3D 模型動畫的連結"
+                }
+            },
+            "doorAnimateAngle": {
+                "label": "門的動畫角度"
+            },
+            "doorAnimationDuration": {
+                "label": "門的動畫持續時間",
+                "units": "ms"
+            },
+            "doorSlidePercent": {
+                "label": "門滑動百分比"
+            },
+            "doorGrabTokens": {
+                "label": "擷取代幣",
+                "notes": "當門開始移動時，擷取位於門附近的物件。此功能不適用於「透明」樣式。請注意，系統不會在門移動過程中擷取物件，僅在門開始移動時進行擷取。"
+            },
+            "isFog": {
+                "label": "《戰爭迷霧》是盒裝版嗎？",
+                "notes": "當相機進入此範本時，畫面會變得模糊。此功能僅適用於矩形範本。"
+            },
+            "enablePlayers": {
+                "label": "為玩家啟用",
+                "notes": "允許玩家開啟此場景的 3D 視圖；若未啟用戰場迷霧，地圖將完全可見。"
+            },
+            "auto3d": {
+                "label": "載入時啟用 3D"
+            },
+            "pixel": {
+                "label": "像素化"
+            },
+            "bloom": {
+                "label": "布魯姆"
+            },
+            "bloomThreshold": {
+                "label": "開花閾值"
+            },
+            "bloomStrength": {
+                "label": "開花強度"
+            },
+            "bloomRadius": {
+                "label": "開花半徑"
+            },
+            "filter": {
+                "label": "篩選",
+                "options": {
+                    "none": "無",
+                    "grayscale": "灰階",
+                    "sepia": "褐色",
+                    "invert": "反轉",
+                    "brightness": "亮度",
+                    "contrast": "對比",
+                    "saturate": "飽和度",
+                    "hue": "色調",
+                    "custom": "自訂"
+                }
+            },
+            "filterStrength": {
+                "label": "濾網強度"
+            },
+            "filterCustom": {
+                "label": "自訂篩選器",
+                "placeholder": "例如：亮度(0.5)、對比度(1.5)、飽和度(0.5)"
+            },
+            "skybox": {
+                "label": "Skybox 圖像",
+                "placeholder": "Skybox 影像",
+                "notes": "該檔案必須位於包含總共 6 個檔案的同一個資料夾中，且這些檔案的名稱必須包含 _ft、_bk、_up、_dn、_rt、_lf。"
+            },
+            "exr": {
+                "label": "Skybox",
+                "placeholder": "EXR 檔案或 360° 全景圖",
+                "notes": "支援 .EXR 檔案或 360° 全景格式的影像。HDRI 將用作背景，並用於為場景打光。"
+            },
+            "exposure": {
+                "label": "曝光",
+                "notes": "HDRI 的曝光值。1 為預設值，2 最亮，0 最暗。"
+            },
+            "renderTable": {
+                "label": "填充區域",
+                "notes": "如何在 3D 視圖中顯示填充區域。",
+                "options": {
+                    "none": "無",
+                    "table": "表格（自訂）",
+                    "matpaper": "無限墊（紙質）",
+                    "matwood": "無限墊（木質）",
+                    "matcloth": "無限墊（布質）",
+                    "matblueprint": "無限墊（藍圖）",
+                    "matcustom": "無限墊（客製化）"
+                }
+            },
+            "tableTex": {
+                "label": "填充紋理",
+                "placeholder": "填充紋理"
+            },
+            "tableHeightmap": {
+                "label": "高度圖的填充",
+                "placeholder": "高度圖的填充"
+            },
+            "tableHeightmapScale": {
+                "label": "高度圖比例尺"
+            },
+            "tableColor": {
+                "label": "填充色調"
+            },
+            "renderBackground": {
+                "label": "顯示背景",
+                "notes": "將場景的背景圖片顯示為一塊板子。"
+            },
+            "enableGrid": {
+                "label": "啟用網格"
+            },
+            "enableRuler": {
+                "label": "啟用標尺"
+            },
+            "enableAnimationScripts": {
+                "label": "啟用動畫腳本",
+                "notes": "警告：請務必確認該場景的來源可信，否則可能會被用來執行惡意程式碼。啟用圖塊動畫腳本的執行功能。"
+            },
+            "enableFogOfWar": {
+                "label": "啟用「戰場迷霧」（效能需求較高）",
+                "notes": "效能優先。此選項將啟用 3D 模式下的「戰場迷霧」；若已啟用「使用 3D 幾何體進行視野計算」，則「戰場迷霧」將根據 3D 幾何體進行計算（但仍為二維顯示）。"
+            },
+            "bakeLights": {
+                "label": "預烤指示燈",
+                "notes": "在載入場景時預先烘焙光源的投影，雖然這些投影不會是動態的，但也不會穿透牆壁。"
+            },
+            "enableFog": {
+                "label": "啟用 Fog"
+            },
+            "fogColor": {
+                "label": "霧色"
+            },
+            "fogDistance": {
+                "label": "霧中能見度"
+            },
+            "sceneTint": {
+                "label": "場景色調"
+            },
+            "timeSync": {
+                "label": "自動照明",
+                "options": {
+                    "off": "關閉",
+                    "time": "將位置與世界時間同步",
+                    "darkness": "根據場景亮度調整曝光",
+                    "both": "同步兩者（與 SmallTime 搭配使用效果最佳）"
+                }
+            },
+            "lockCamera": {
+                "label": "鎖定相機視角",
+                "options": {
+                    "off": "關閉",
+                    "players": "僅限玩家",
+                    "all": "大家"
+                }
+            },
+            "sunPosition": {
+                "label": "時間（24小時制）"
+            },
+            "sunDistance": {
+                "label": "日地距離"
+            },
+            "sunTilt": {
+                "label": "《日傾》"
+            },
+            "sunIntensity": {
+                "label": "日照強度"
+            },
+            "ambientLightIntensity": {
+                "label": "環境光強度",
+                "notes": "控制全域光源的強度，該光源會均勻地照亮所有表面。此光源光線均勻，不會投射或接收陰影。"
+            },
+            "ambientLightColor": {
+                "label": "環境光顏色"
+            },
+            "shadowBias": {
+                "label": "陰影偏差",
+                "notes": "此數值決定陰影的渲染方式；若您發現場景中的物件出現黑色條紋，即可調整此數值。此數值的正確取值通常非常小，建議以 0.00001 或更小的幅度進行增減。"
+            },
+            "showSceneWalls": {
+                "label": "抹灰牆"
+            },
+            "showSceneDoors": {
+                "label": "渲染門"
+            },
+            "showSceneFloors": {
+                "label": "渲染圖塊"
+            },
+            "initialview": {
+                "label": "初始視圖位置",
+                "notes": "載入場景時的預設相機位置——在擷取相機視角之前，請透過「ping」指令設定目標。",
+                "button": "擷取相機畫面",
+                "buttondel": "清除儲存的攝影機畫面"
+            },
+            "font": {
+                "label": "字型",
+                "notes": "一個用於「動態文字網格」的 JSON 字型。"
+            },
+            "wallFloorAlpha": {
+                "label": "牆面／地板 阿爾法"
+            },
+            "renderSceneLights": {
+                "label": "渲染場景光源"
+            },
+            "mirrorLevels": {
+                "label": "鏡像層級的磁磚可見性"
+            },
+            "object3dSight": {
+                "label": "使用 3D 幾何進行視線計算"
+            },
+            "enableGameCamera": {
+                "label": "啟用遊戲攝影機",
+                "notes": "為此場景啟用遊戲鏡頭。若要使此功能生效，必須在 3D 畫布設定中全域啟用遊戲鏡頭。"
+            },
+            "model3d": {
+                "label": "3D 模型"
+            },
+            "rotation": {
+                "label": "旋轉"
+            },
+            "dynaMesh": {
+                "label": "動態網格",
+                "options": {
+                    "optgroup": {
+                        "basic": "基礎",
+                        "complex": "複合體",
+                        "advanced": "進階",
+                        "interactive": "互動式",
+                        "special": "特別版"
+                    },
+                    "default": "無（使用 3D 模型）",
+                    "box": "方框",
+                    "plane": "飛機",
+                    "sphere": "球體",
+                    "cylinder": "圓柱體",
+                    "cone": "錐體",
+                    "tube": "管",
+                    "dome": "圓頂",
+                    "billboard": "《告示牌》",
+                    "billboard2": "《告示牌》（Cross）",
+                    "text": "文字（請在「3D 模型」欄位中輸入文字）",
+                    "decal": "貼紙",
+                    "stairs": "樓梯",
+                    "vines": "藤蔓",
+                    "paper": "剪紙",
+                    "rock": "岩石（立方體）",
+                    "rocksphere": "岩石（球體）",
+                    "rockcylinder": "岩石（圓柱體）",
+                    "rockcone": "岩石（錐形）",
+                    "polygon": "Polygon",
+                    "polygonbevel": "多邊形（倒角）",
+                    "polygonsolidify": "多邊形（固態化）",
+                    "polygonbevelsolidify": "多邊形（倒角 + 實心化）",
+                    "polygonbevelsolidifyjagged": "多邊形（鋸齒狀曲線）",
+                    "polygonbevelsolidifyjaggeddouble": "多邊形（鋸齒雙音）",
+                    "polygonbevelsolidifyjaggedstraight": "多邊形（鋸齒狀直線）",
+                    "polygonlathe": "多邊形（車床）",
+                    "polygonchain": "Polygon（鏈）",
+                    "counter": "計數器",
+                    "counterradial": "櫃檯 - 派",
+                    "mapGen": "地圖生成器"
+                }
+            },
+            "dynaMeshResolution": {
+                "label": "動態網格解析度"
+            },
+            "imageTexture": {
+                "label": "質地"
+            },
+            "gmOnlyInteractive": {
+                "label": "僅限遊戲主持人互動"
+            },
+            "displacementMap": {
+                "label": "高度圖／熱力圖"
+            },
+            "invertDisplacementMap": {
+                "label": "反轉高度圖／熱力圖"
+            },
+            "displacementIntensity": {
+                "label": "高度圖強度"
+            },
+            "displacementMatrix": {
+                "label": "高度圖矩陣"
+            },
+            "wallSidesTexture": {
+                "label": "側面紋理"
+            },
+            "wallSidesTint": {
+                "label": "側邊染色"
+            },
+            "onAnimation": {
+                "label": "動畫功能"
+            },
+            "fillType": {
+                "header": "鋪磚",
+                "tabNotes": "設定 3D 模型應重複顯示多次，或是拉伸以適應磁磚大小。",
+                "label": "填充類型",
+                "options": {
+                    "stretch": "單曲",
+                    "tile": "重複",
+                    "merged": "合併磁磚"
+                }
+            },
+            "enableGravity": {
+                "label": "重力",
+                "options": {
+                    "none": "已停用",
+                    "gravity": "僅限重力",
+                    "gravityRotation": "重力 + 表面自轉"
+                }
+            },
+            "depth": {
+                "label": "深度"
+            },
+            "material": {
+                "label": "材料",
+                "header": "材料",
+                "tabNotes": "設定套用至此磁磚的材質之視覺屬性。若將滑桿設定為 -0.01，則該材質將採用預設值。",
+                "options": {
+                    "none": "預設",
+                    "optgroup": {
+                        "presets": "預設",
+                        "advanced": "進階"
+                    },
+                    "presets": {
+                        "basic-plastic": "基礎塑膠",
+                        "premium-plastic": "優質塑膠",
+                        "steel": "鋼",
+                        "bronze": "青銅",
+                        "copper": "銅",
+                        "hammered-steel": "錘打鋼",
+                        "leather": "皮革",
+                        "marble": "大理石",
+                        "wood": "木材"
+                    },
+                    "basic": "基本版（無光影效果）",
+                    "texcol": "質地／顏色",
+                    "plastic": "塑膠",
+                    "wood": "木材",
+                    "metal": "金屬",
+                    "pbr": "PBR"
+                }
+            },
+            "color": {
+                "label": "顏色",
+                "notes": "「材質與顏色」功能僅適用於部分機型，通常是灰色／無紋理的機型。"
+            },
+            "tint": {
+                "label": "色調顏色"
+            },
+            "shading": {
+                "label": "陰影",
+                "options": {
+                    "default": "預設",
+                    "flat": "平房",
+                    "smooth": "流暢"
+                }
+            },
+            "sides": {
+                "label": "側面",
+                "options": {
+                    "default": "預設",
+                    "FrontSide": "正面",
+                    "BackSide": "背面",
+                    "DoubleSide": "雙面"
+                }
+            },
+            "basic": {
+                "header": "基礎",
+                "tabNotes": "設定 3D 模型、定位及縮放選項。"
+            },
+            "effects": {
+                "header": "效果",
+                "tabNotes": "設定要套用至此磁磚的特殊效果。"
+            },
+            "noise": {
+                "header": "噪音",
+                "tabNotes": "在模型上設定程序性噪點，以施加變形效果。",
+                "label": "噪音類型",
+                "options": {
+                    "none": "無",
+                    "simplex": "Simplex",
+                    "perlin": "珀林"
+                }
+            },
+            "noiseScale": {
+                "label": "噪音等級"
+            },
+            "noiseHeight": {
+                "label": "高度"
+            },
+            "noisePersistence": {
+                "label": "堅持"
+            },
+            "noiseOctaves": {
+                "label": "八度"
+            },
+            "noiseLacunarity": {
+                "label": "缺失性"
+            },
+            "noiseExponent": {
+                "label": "指數"
+            },
+            "noiseFlattening": {
+                "label": "壓平"
+            },
+            "shaderIntensity": {
+                "label": "著色器強度"
+            },
+            "shaderSpeed": {
+                "label": "速度"
+            },
+            "shaderOther": {
+                "label": "著色器 其他"
+            },
+            "shaderOther2": {
+                "label": "著色器 其他 2"
+            },
+            "shaderAlt": {
+                "label": "使用替代模式"
+            },
+            "baseColor": {
+                "label": "底色"
+            },
+            "disableBase": {
+                "label": "停用 Base"
+            },
+            "removeBase": {
+                "label": "移除底座",
+                "notes": "移除原始模型的底座；此操作僅在 3D 模型資料中底座的名稱為「base」時才有效。"
+            },
+            "solidBaseMode": {
+                "label": "基本模式",
+                "options": {
+                    "default": "預設",
+                    "merge": "合併",
+                    "ontop": "位居榜首"
+                }
+            },
+            "draggable": {
+                "label": "可拖曳"
+            },
+            "alwaysVisible": {
+                "label": "始終可見"
+            },
+            "enableAnim": {
+                "label": "啟用動畫（如有）"
+            },
+            "animIndex": {
+                "label": "動畫索引"
+            },
+            "animationOnce": {
+                "label": "播放一次"
+            },
+            "linkWithDoorState": {
+                "label": "與門狀態的關聯"
+            },
+            "animSpeed": {
+                "label": "動畫速度"
+            },
+            "forceFlyingMode": {
+                "label": "強制飛行模式"
+            },
+            "paused": {
+                "label": "暫停"
+            },
+            "faceCamera": {
+                "label": "臉部攝影模式",
+                "options": {
+                    "default": "全域設定（預設）",
+                    "face": "前置鏡頭",
+                    "noface": "請勿直視鏡頭"
+                }
+            },
+            "rotationAxis": {
+                "label": "旋轉軸",
+                "options": {
+                    "x": "X",
+                    "z": "Z",
+                    "y": "Y"
+                },
+                "notes": "當原始代幣的旋轉方向發生變化時，應使用的軸。若原始檔案為 STL 格式，此軸通常為 Z 軸；否則則為 Y 軸"
+            },
+            "autoCenter": {
+                "label": "汽車中心"
+            },
+            "autoGround": {
+                "label": "自動接地"
+            },
+            "rotationX": {
+                "label": "旋轉 X"
+            },
+            "rotationY": {
+                "label": "Y 軸旋轉"
+            },
+            "rotationZ": {
+                "label": "Z 軸旋轉"
+            },
+            "rotateBase": {
+                "label": "修正基座旋轉",
+                "notes": "某些模型需要旋轉選取指標，請視需要啟用此功能。（通常是從 STL 格式轉換而來的檔案）"
+            },
+            "offsetX": {
+                "label": "X 偏移量"
+            },
+            "offsetY": {
+                "label": "Y 偏移量"
+            },
+            "offsetZ": {
+                "label": "Z 軸偏移量"
+            },
+            "scale": {
+                "label": "比例尺"
+            },
+            "yScale": {
+                "label": "Y 比例尺"
+            },
+            "tileScale": {
+                "label": "磁磚比例尺"
+            },
+            "gap": {
+                "label": "Gap"
+            },
+            "tilt": {
+                "label": "傾斜"
+            },
+            "tiltX": {
+                "label": "Tilt X"
+            },
+            "tiltZ": {
+                "label": "Y 軸傾角"
+            },
+            "randomRotation": {
+                "label": "隨機化旋轉"
+            },
+            "randomColor": {
+                "label": "隨機生成顏色"
+            },
+            "randomDepth": {
+                "label": "隨機化深度"
+            },
+            "randomScale": {
+                "label": "隨機調整比例"
+            },
+            "randomPosition": {
+                "label": "隨機排列位置"
+            },
+            "randomSeed": {
+                "label": "隨機種子"
+            },
+            "maxInstances": {
+                "label": "最大執行個體數"
+            },
+            "tiling": {
+                "label": "平鋪選項"
+            },
+            "shader": {
+                "header": "著色器"
+            },
+            "attachments": {
+                "header": "附件",
+                "tabNotes": "設定此代幣的附屬物件。若要新增附屬物件，請選取該代幣，切換至「磁磚層」，將您欲附加至代幣的磁磚定位至代幣上，右鍵點擊該磁磚，然後點選「將磁磚附加至代幣」選項。",
+                "filename": "附件名稱",
+                "info": "磁磚 %s 已附加至代幣"
+            },
+            "wallOpacity": {
+                "label": "不透明度"
+            },
+            "roughness": {
+                "label": "粗糙度"
+            },
+            "metalness": {
+                "label": "反射率"
+            },
+            "transparency": {
+                "label": "不透明度"
+            },
+            "alphaClip": {
+                "label": "Alpha Clip"
+            },
+            "transmission": {
+                "label": "變速箱"
+            },
+            "ior": {
+                "label": "IoR"
+            },
+            "wallDepth": {
+                "label": "牆體深度"
+            },
+            "joinWall": {
+                "label": "加入 Wall"
+            },
+            "stretchTex": {
+                "label": "彈性紋理"
+            },
+            "tcollision": {
+                "label": "阻擋移動"
+            },
+            "tsight": {
+                "header": "願景",
+                "tabNotes": "設定此磁磚的視覺、遮光及碰撞屬性。",
+                "label": "遮擋視線"
+            },
+            "aura": {
+                "header": "光環"
+            },
+            "advanced": {
+                "header": "進階"
+            },
+            "position": {
+                "header": "職位",
+                "tabNotes": "設定位置、縮放比例和旋轉角度。此外，請設定偏移量（此偏移量旨在用於變更磁磚的旋轉中心點，但對合併後的磁磚無效）。部分屬性（例如寬度、高度和旋轉角度）可於磁磚設定中的「基本」分頁中找到。"
+            },
+            "auraRange": {
+                "label": "Aura 系列"
+            },
+            "auraColor": {
+                "label": "氣場顏色"
+            },
+            "tcameraCollision": {
+                "label": "相機碰撞器"
+            },
+            "sightMeshComplexity": {
+                "label": "碰撞體解析度"
+            },
+            "highlightOnHover": {
+                "label": "懸停時高亮顯示"
+            },
+            "enableCollision": {
+                "label": "啟用碰撞檢測",
+                "options": {
+                    "0": "關閉",
+                    "1": "於（來自 Token）",
+                    "2": "在（來自 Sky）"
+                }
+            },
+            "stem": {
+                "label": "啟用 STEM"
+            },
+            "collisionPlane": {
+                "label": "碰撞平面"
+            },
+            "castShadow": {
+                "label": "投下陰影",
+                "notes": "啟用光源的投影功能 —— 警告：將大幅影響系統效能！"
+            },
+            "visibleWhenDisabled": {
+                "label": "停用時仍可見",
+                "notes": "即使燈光已被停用，它仍會顯示。雖然它不會提供光源，但仍會呈現照明的視覺效果。"
+            },
+            "postprocessing": {
+                "header": "後處理",
+                "notes": "套用至場景的後製效果。",
+                "enabled": {
+                    "label": "已啟用"
+                },
+                "vignette": {
+                    "label": "小品"
+                },
+                "chromaticAberration": {
+                    "label": "色差"
+                },
+                "grain": {
+                    "label": "穀物"
+                },
+                "tint": {
+                    "label": "色調"
+                },
+                "contrast": {
+                    "label": "對比"
+                },
+                "brightness": {
+                    "label": "亮度"
+                },
+                "saturation": {
+                    "label": "飽和度"
+                }
+            },
+            "particlePreset": {
+                "label1": "粒子預設 1",
+                "label2": "粒子預設 2",
+                "notes": "用於粒子特效的預設設定。",
+                "options": {
+                    "none": "無",
+                    "rain": "雨",
+                    "heavyrain": "《暴雨》",
+                    "snow": "雪",
+                    "hail": "雹",
+                    "sand": "沙塵暴",
+                    "leaves": "葉子",
+                    "embers": "餘燼",
+                    "mysteriouslights": "神秘的光芒",
+                    "stars": "星星",
+                    "starfall": "星落 (JB2A)",
+                    "smoke": "煙",
+                    "toxic": "有毒煙霧",
+                    "dust": "灰塵",
+                    "custom": "自訂"
+                }
+            },
+            "particleTexture": {
+                "label": "質地"
+            },
+            "particleColor": {
+                "label": "顏色"
+            },
+            "particleSize": {
+                "label": "尺寸"
+            },
+            "particleSpeed": {
+                "label": "速度"
+            },
+            "particleDensity": {
+                "label": "密度"
+            },
+            "particleDirection": {
+                "label": "方向"
+            },
+            "particleOpacity": {
+                "label": "不透明度"
+            },
+            "particleVelocity": {
+                "label": "速度"
+            },
+            "particleBlending": {
+                "label": "調和"
+            },
+            "particleGroundOffset": {
+                "label": "地面偏移量"
+            },
+            "particleRandomRotation": {
+                "label": "隨機旋轉"
+            },
+            "particleRandomScale": {
+                "label": "隨機尺寸"
+            },
+            "particleRotationspeed": {
+                "label": "轉速"
+            },
+            "particleBlend": {
+                "label": "Blend"
+            },
+            "lightParticleEffect": {
+                "ParticleType": {
+                    "label": "粒子預設",
+                    "options": {
+                        "optgroup": "定向型（需指定發射角）"
+                    }
+                },
+                "ParticlePosition": {
+                    "label": "職位",
+                    "options": {
+                        "surface": "Surface",
+                        "center": "中心"
+                    }
+                },
+                "ParticleRadius": {
+                    "label": "半徑"
+                },
+                "ParticleIntensity": {
+                    "label": "強度"
+                },
+                "ParticleSprite": {
+                    "label": "Sprite"
+                },
+                "ParticleScale": {
+                    "label": "比例尺"
+                },
+                "ParticleEmitterSizeMultiplier": {
+                    "label": "面積乘數"
+                },
+                "ParticleColor": {
+                    "label": "主色"
+                },
+                "ParticleColor2": {
+                    "label": "次要顏色"
+                },
+                "ParticleForce": {
+                    "label": "力量"
+                },
+                "ParticleLife": {
+                    "label": "生活"
+                },
+                "ParticleCount": {
+                    "label": "計數"
+                },
+                "ParticleEmitTime": {
+                    "label": "發射時間"
+                },
+                "ParticleMass": {
+                    "label": "彌撒"
+                },
+                "ParticleGravity": {
+                    "label": "重力"
+                },
+                "enableParticle": {
+                    "label": "啟用粒子特效"
+                },
+                "enableParticleHidden": {
+                    "label": "當隱藏／停用時啟用粒子特效。"
+                },
+                "ParticleAlphaStart": {
+                    "label": "初始不透明度"
+                },
+                "ParticleAlphaEnd": {
+                    "label": "結尾不透明度"
+                },
+                "ParticlePushX": {
+                    "label": "按下 X"
+                },
+                "ParticlePushY": {
+                    "label": "按下 Y 鍵"
+                },
+                "ParticlePushZ": {
+                    "label": "按下 Z 鍵"
+                },
+                "header": {
+                    "title": "粒子特效",
+                    "notes": "用於光線的粒子特效。"
+                }
+            }
+        },
+        "settings": {
+            "autoApply": {
+                "name": "自動套用材質",
+                "hint": "選取材質後，該材質將立即套用至所選的物件上。"
+            },
+            "autoClose": {
+                "name": "關閉材料瀏覽器",
+                "hint": "選取材質後，材質瀏覽器將會關閉。"
+            },
+            "allTokens": {
+                "name": "顯示所有代幣",
+                "hint": "若已停用，僅顯示已上色的標記；若已啟用，則顯示所有可用的標記。"
+            },
+            "autoAssignToken": {
+                "name": "自動指派 3D 模型",
+                "hint": "當將一個「未連結」的代幣放置在畫布上時，若該代幣尚未被指派 3D 模型，則自動為其指派一個 3D 模型。",
+                "options": {
+                    "0": "已停用",
+                    "1": "僅限 3D 模型",
+                    "2": "3D 模型與自上而下代幣"
+                }
+            },
+            "assetBrowserCustomPath": {
+                "name": "自訂資產路徑",
+                "hint": "若要為資產瀏覽器設定自訂路徑，請在此處進行設定。"
+            },
+            "rangeFinder": {
+                "name": "測距儀",
+                "hint": "當游標懸停在代幣上時，顯示與代幣的距離。",
+                "options": {
+                    "none": "已停用",
+                    "combat": "僅限戰鬥中",
+                    "always": "永遠"
+                }
+            },
+            "useRaycastRuler": {
+                "name": "實驗性功能：自適應尺規",
+                "hint": "啟用此設定後，只要該標記沒有在飛行，刻度尺就會緊貼其下方的地形"
+            },
+            "resolutionMultiplier": {
+                "name": "解析度倍增因子",
+                "hint": "警告：變更此設定也會影響 2D 視圖的解析度。需重新整理。"
+            },
+            "fogDebounce": {
+                "name": "《戰爭迷霧》更新流量限制",
+                "hint": "若已停用，視野與戰場迷霧將持續更新。"
+            },
+            "sharedContext": {
+                "name": "共享背景",
+                "hint": "若啟用此功能，戰場迷霧的運作效能將大幅提升，但您將無法使用迷你畫布。"
+            },
+            "preapplyShaders": {
+                "name": "預載著色器",
+                "hint": "若啟用此選項，著色器將在渲染迴圈開始前即被套用。此舉可避免首次啟用著色器時出現畫面卡頓，但可能會對效能和／或載入時間造成輕微影響。"
+            },
+            "lightCacheSize": {
+                "name": "輕量快取大小",
+                "hint": "每個場景中要預先載入的燈光數量。在此數量範圍內，可放置或啟用燈光而不會造成畫面卡頓。"
+            },
+            "showAdvanced": {
+                "show": "顯示進階設定",
+                "wiki": "了解更多",
+                "hide": "隱藏進階設定",
+                "name": "始終顯示進階設定",
+                "hint": "預設情況下，在設定選單中顯示進階設定。"
+            },
+            "navigatorAuto": {
+                "name": "導航員跟隨模式",
+                "hint": "在載入場景時，會自動為 3D 導覽器啟用「跟隨模式」。",
+                "options": {
+                    "none": "沒有人",
+                    "players": "僅限玩家",
+                    "all": "玩家與遊戲主持人"
+                }
+            },
+            "headers": {
+                "basics": {
+                    "title": "基礎知識",
+                    "notes": "為此 3D 場景設定基本設定。"
+                },
+                "environment": {
+                    "title": "環境",
+                    "notes": "3D 環境與特效的設定。"
+                },
+                "lighting": {
+                    "title": "照明",
+                    "notes": "設定場景的全域照明。"
+                },
+                "particles": {
+                    "title": "粒子",
+                    "notes": "設定粒子效果。"
+                },
+                "visibility": {
+                    "title": "可見度",
+                    "notes": "設定 3D 物件的顯示狀態。"
+                }
+            },
+            "canping": {
+                "name": "玩家可以發送「Ping」訊息",
+                "hint": "啟用玩家對地點進行「ping」的功能（預設為 Shift+E）。"
+            },
+            "canpingpan": {
+                "name": "玩家可以傳送相機位置",
+                "hint": "啟用向玩家傳送相機位置的功能（預設為 Shift+Q）。"
+            },
+            "enableGameCamera": {
+                "name": "啟用遊戲鏡頭",
+                "hint": "啟用「電玩風格」的鏡頭模式。此模式將對玩家強制啟用，而遊戲主持人則可自行切換此模式。"
+            },
+            "gameCameraMinAngle": {
+                "name": "最小角度",
+                "hint": "相機可旋轉至的最小角度（垂直旋轉）。"
+            },
+            "gameCameraMaxAngle": {
+                "name": "最大角度",
+                "hint": "相機可旋轉至的最大角度（垂直旋轉）。"
+            },
+            "gameCameraMinAzimuth": {
+                "name": "最小方位角",
+                "hint": "攝影機可旋轉至的最小方位角（水平旋轉）。"
+            },
+            "gameCameraMaxAzimuth": {
+                "name": "最大方位角",
+                "hint": "攝影機可旋轉至的最大方位角（水平旋轉）。"
+            },
+            "gameCameraMaxZoom": {
+                "name": "最大縮放",
+                "hint": "相機可設定的最大縮放等級。數值越高，畫面會越拉遠。"
+            },
+            "gameCameraClipping": {
+                "name": "剪報",
+                "hint": "若啟用此功能，將隱藏遮擋當前鏡頭目標的物件。"
+            },
+            "gameCameraDefaultGm": {
+                "name": "GM 預設開啟",
+                "hint": "遊戲主持人（GM）在首次載入場景時，是否應開啟「遊戲攝影機」功能。"
+            },
+            "gameCameraAutoLock": {
+                "name": "自動重新上鎖",
+                "hint": "如果遊戲鏡頭已從其目標處解鎖，當目標發生變化時，請自動重新鎖定。"
+            },
+            "gameCameraWarnings": {
+                "name": "顯示警告",
+                "hint": "若啟用此功能，將針對「遊戲攝影機」功能顯示警告訊息。"
+            },
+            "configApp": {
+                "title": "3D 畫布設定",
+                "name": "全域設定",
+                "label": "設定全域設定",
+                "hint": "設定全域 3D 畫布設定。這些設定將套用至所有客戶端。此設定之下所有其他設定均為客戶端專屬。",
+                "save": "儲存設定",
+                "tabs": {
+                    "canvas": "Canvas",
+                    "token": "代幣",
+                    "base": "基地",
+                    "misc": "雜項",
+                    "perm": "權限",
+                    "gc": "遊戲攝影機",
+                    "tools": "工具"
+                }
+            },
+            "baseStyle": {
+                "name": "基本樣式",
+                "hint": "適用於所有標記的基本樣式。",
+                "options": {
+                    "image": "圖片",
+                    "solid": "實心",
+                    "solidindicator": "恆亮 + 方向指示燈"
+                }
+            },
+            "solidBaseMode": {
+                "name": "基本模式",
+                "hint": "「合併」操作不會移動原始模型；而「置頂」則會將模型偏移至基底的頂部。",
+                "options": {
+                    "merge": "合併",
+                    "ontop": "位居榜首"
+                }
+            },
+            "solidBaseColor": {
+                "name": "底色",
+                "hint": "實心底色的顏色。可以是十六進位值、顏色名稱（或任何 CSS 顏色）。預設值為 #1c1c1c"
+            },
+            "highlightCombat": {
+                "name": "戰鬥精華",
+                "hint": "標示當前的戰鬥單位。"
+            },
+            "startMarker": {
+                "name": "轉彎起點標記",
+                "hint": "在戰鬥中，請在該標記物本回合開始時所在的位置放置一個標記。僅該標記物的擁有者才能看見該標記。"
+            },
+            "selectedImage": {
+                "name": "精選亮點圖片",
+                "hint": "選取代幣時要顯示的圖片。"
+            },
+            "colorizeInidcator": {
+                "name": "為突出顯示的圖片上色",
+                "hint": "將高亮顯示的圖片上色，使其與預設的 Foundry 邊框顏色相符。"
+            },
+            "enableReticule": {
+                "name": "啟用十字線",
+                "hint": "啟用瞄準十字線，以標示當前使用者正在鎖定的目標。這將產生一個類似於 2D 版本的十字線。"
+            },
+            "hideTarget": {
+                "name": "隱藏目標指示器（若為實心底座）",
+                "hint": "若該代幣已啟用「基礎」功能，則隱藏目標指示器；此時，目標將顯示於基礎環的亮起區域中。"
+            },
+            "hideEffects": {
+                "name": "隱藏特效",
+                "hint": "隱藏浮動於代幣上方的效果指示器。"
+            },
+            "rotateIndicator": {
+                "name": "旋轉底座",
+                "hint": "旋轉 3D 底座，使其與代幣的旋轉方向一致。"
+            },
+            "templateEffects": {
+                "name": "啟用範本效果",
+                "hint": "根據傷害類型，自動將著色器套用至模板。目前僅支援 dnd5e。"
+            },
+            "templateAuto3D": {
+                "name": "自動 3D 範本",
+                "hint": "若模板未指定第三維度，則應予以推斷（例如：寬 5 英尺的光束，其高度即為 5 英尺）。"
+            },
+            "lightHelpers": {
+                "name": "啟用「Light Helpers」",
+                "hint": "啟用光源輔助功能。如此一來，當您位於「照明」圖層時，系統便會顯示光源及其作用範圍。"
+            },
+            "templateSyle": {
+                "name": "範本樣式",
+                "hint": "測量模板應使用的樣式。",
+                "options": {
+                    "wireframe": "線框圖",
+                    "solid": "實心"
+                }
+            },
+            "paddingAppearance": {
+                "name": "填充效果",
+                "hint": "內邊距的預設樣式。此設定亦可針對每個場景進行自訂。"
+            },
+            "gridMode": {
+                "name": "網格繪製模式",
+                "hint": "網格的繪製方式。一般來說，「快速」模式較佳，但僅支援正方形網格。「鏡像」模式會將 Foundry 網格以 1:1 比例鏡像，但渲染成本較高。",
+                "options": {
+                    "fast": "快速",
+                    "mirror": "鏡子"
+                }
+            },
+            "autoPan": {
+                "name": "自動平移",
+                "hint": "將 3D 相機的平移功能與 2D 相機連動。主要功能是當移動某個標記時，相機會隨之跟隨。若此功能已停用，您仍可隨時透過 Ctrl+X 鍵將視角平移至選中的標記",
+                "options": {
+                    "none": "已停用",
+                    "player": "僅限玩家",
+                    "all": "大家"
+                }
+            },
+            "conservativeHitbox": {
+                "name": "保守型擊中框",
+                "hint": "限制代幣的碰撞框大小，使其不會溢出至代幣底座之外。"
+            },
+            "screenspacepanning": {
+                "name": "啟用螢幕空間平移",
+                "hint": "為 3D 視圖啟用螢幕空間平移功能（地圖控制項樣式）。"
+            },
+            "altCameraControls": {
+                "name": "替代性相機控制方式",
+                "hint": "啟用此功能後，左鍵點擊將不會旋轉鏡頭。旋轉功能將改由滑鼠中鍵執行。"
+            },
+            "enabledamping": {
+                "name": "啟用阻尼",
+                "hint": "啟用相機的減震功能。若您有暈動症，請停用此選項。（在 3D 視圖中按下 Shift+R 可重置相機並套用此變更）。"
+            },
+            "camerafocuszoom": {
+                "name": "啟用相機對焦變焦功能",
+                "hint": "當將相機對準某個代幣時，按下 Shift+X 即可放大該代幣"
+            },
+            "standupFace": {
+                "name": "單口喜劇演員面對鏡頭",
+                "hint": "以直立式呈現的 2D 代幣，其正面將始終朝向相機。"
+            },
+            "flatTokenStyle": {
+                "name": "2D 代幣風格",
+                "hint": "當未設定 3D 模型時，2D 代幣應採用之樣式。",
+                "options": {
+                    "flat": "平放（正面相機）",
+                    "extruded": "擠出（直立）",
+                    "coin": "硬幣（自上而下）"
+                }
+            },
+            "useMultithreading": {
+                "name": "使用多執行緒",
+                "hint": "使用多執行緒來提升「戰場迷霧」運算的效能。若您未啟用「戰場迷霧」功能，此設定將無效。"
+            },
+            "miniCanvas": {
+                "name": "啟用 Canvas 彈出視窗",
+                "hint": "當 3D 模式被啟用時，將 2D 畫布彈出至獨立視窗中"
+            },
+            "pingsound": {
+                "name": "「Ping」聲",
+                "hint": "點擊某個位置時播放的聲音。"
+            },
+            "preventNegative": {
+                "name": "防止負高程",
+                "hint": "防止棋子移動到遊戲板下方"
+            },
+            "outline": {
+                "name": "大綱",
+                "hint": "當滑鼠懸停或選取時，顯示畫布物件的輪廓。為提升效能，請停用此功能。"
+            },
+            "fullTransparency": {
+                "name": "真正的透明度",
+                "hint": "為避免視覺瑕疵，3D Canvas 採用 Alpha 裁剪來處理透明度，這可能會導致邊緣出現鋸齒。若您使用的透明貼圖極少，或沒有重疊的透明區域，可啟用此設定以改善透明貼圖的顯示效果。請自行承擔風險使用此功能，可能會導致視覺異常。"
+            },
+            "globalCollision": {
+                "name": "啟用全域碰撞",
+                "hint": "為棋盤上所有代幣啟用碰撞功能。"
+            },
+            "antialiasing": {
+                "name": "抗鋸齒",
+                "hint": "啟用抗鋸齒功能會犧牲部分效能。FXAA 對效能的影響幾乎為零。SMAA 雖然能提供更好的效果，但可能會稍微消耗更多效能。",
+                "options": {
+                    "none": "已停用",
+                    "fxaa": "FXAA",
+                    "smaa": "SMAA"
+                }
+            },
+            "fowQuality": {
+                "name": "「戰爭迷霧」的品質",
+                "hint": "設定「戰場迷霧」的解析度。",
+                "options": {
+                    "native": "原生",
+                    "high": "高",
+                    "medium": "中",
+                    "low": "低",
+                    "verylow": "極低"
+                }
+            },
+            "dofblur": {
+                "name": "景深",
+                "hint": "啟用景深模糊效果。當鏡頭靠近棋子時，此功能會使背景產生模糊效果，營造出彷彿身處棋桌前的臨場感。設定值越高，模糊效果越明顯；系統效能不受模糊程度影響。啟用此功能可能會對系統效能造成顯著影響。",
+                "options": {
+                    "off": "已停用",
+                    "low": "低",
+                    "medium": "中",
+                    "high": "高"
+                }
+            },
+            "disableLighting": {
+                "name": "停用陰影",
+                "hint": "為提升效能，請停用陰影效果。"
+            },
+            "shadowQuality": {
+                "name": "陰影品質",
+                "hint": "陰影的解析度。將此選項設為「停用」即可停用陰影。",
+                "options": {
+                    "none": "已停用",
+                    "low": "低",
+                    "medium": "中",
+                    "high": "高",
+                    "ultra": "Ultra",
+                    "gamer": "遊戲玩家"
+                }
+            },
+            "enableShaders": {
+                "name": "啟用著色器",
+                "hint": "啟用著色器特效。視硬體規格及特效數量而定，部分特效可能會大幅消耗系統效能。若要提升效能，請將其停用。"
+            },
+            "enableEffects": {
+                "name": "啟用特效",
+                "hint": "啟用天氣與粒子特效。視硬體規格及特效數量而定，部分特效可能會對效能造成較大負擔。若需提升效能，請將其停用。"
+            },
+            "softShadows": {
+                "name": "柔和的陰影",
+                "hint": "以微小的效能代價啟用柔和陰影。需重新整理頁面。"
+            },
+            "resolution": {
+                "name": "決議",
+                "hint": "3D 畫布的解析度，這會影響效能。",
+                "options": {
+                    "full": "高",
+                    "half": "中篇",
+                    "quarter": "低"
+                }
+            },
+            "cameralockzero": {
+                "name": "防止相機出現負面狀況",
+                "hint": "防止攝影機在零以下進行旋轉或平移（需重新整理）。"
+            },
+            "debugMode": {
+                "name": "除錯模式",
+                "hint": "顯示有助於疑難排解的實用除錯資訊。"
+            }
+        },
+        "exporter": {
+            "title": "將物件匯出為 GLTF 格式",
+            "tokens": "代幣",
+            "interactive": "包含可拖曳的標記",
+            "tiles": "磁磚",
+            "all": "完整場景",
+            "doors": "門",
+            "walls": "牆壁",
+            "background": "背景",
+            "export": "匯出",
+            "cancel": "取消"
+        },
+        "particleSystems": {
+            "optgroup-projectiles": "投射物",
+            "optgroup-rays": "光線",
+            "optgroup-sprites": "物件",
+            "optgroup-directional": "定向",
+            "optgroup-explosions": "爆炸",
+            "optgroup-targetonly": "一擊即中",
+            "custom": "自訂",
+            "torch": "火炬",
+            "magiccircle": "魔法圈",
+            "fire": "火",
+            "vortex": "漩渦",
+            "sparks": "火花",
+            "holy": "神聖之光",
+            "ghostly": "幽靈之光",
+            "fairy": "仙塵",
+            "smokecloud": "煙雲",
+            "mysteriouslights": "神秘的燈光",
+            "sunburst": "陽光輻射",
+            "tesla": "特斯拉",
+            "magicsphere": "魔法球",
+            "mist": "霧",
+            "mist2": "霧 2",
+            "gravitywell": "引力井",
+            "optgroup": "定向型（需指定發射角）",
+            "directionalfire": "火焰噴射器",
+            "directionalshock": "電能爆發",
+            "directionalpoison": "毒雲",
+            "directionalwave": "Wave",
+            "directionallaser": "雷射",
+            "directionalfrost": "霜",
+            "projectile": "投射物",
+            "blackdart": "黑箭",
+            "shotgun": "霰彈槍",
+            "earthprojectile": "地球彈體",
+            "earthexplosion": "地球大爆炸",
+            "ray": "雷",
+            "voidray": "虛空光束",
+            "runicray": "符文光束",
+            "runicshot": "符文射擊",
+            "explosion": "爆炸",
+            "sprite": "3D 模型",
+            "slash": "斜線",
+            "magicburst": "魔法爆發",
+            "json": "自訂 (JSON)",
+            "jb2aexplosion": "爆炸（JB2A 動畫版）",
+            "jb2aexplosionnolight": "爆炸（JB2A 動畫版，無光效）",
+            "arrow": "箭頭",
+            "bolt": "博爾特",
+            "javelin": "標槍",
+            "magicarrow": "魔法箭",
+            "bullet": "子彈",
+            "swing": "鞦韆（3D 物件）",
+            "thrust": "推力（3D 物件）",
+            "thrustswing": "擺動／推力（3D 物件）",
+            "starburst": "星爆",
+            "lightning": "閃電",
+            "castingsign": "儀式"
+        },
+        "macrodialog": {
+            "title": "匯出粒子特效",
+            "label": "姓名：",
+            "export": "儲存為巨集",
+            "cancel": "取消",
+            "placeholder": "輸入巨集的名稱"
+        },
+        "welcome": {
+            "title": "歡迎來到 3D Canvas",
+            "content": "<h1>歡迎來到 3D 世界！</h1>\n歡迎來到 3D Canvas！首先，感謝您支持我的開發工作，讓這個專案得以實現！\n只需 <b>點擊 <i class='fas fa-cube'></i> 按鈕</b>（左上角的 Token 控制項），即可將場景切換為 3D 模式。<p><h2>重要模組</h2>\n在開始使用 3D Canvas 之前，請先安裝：<ul><li><a href='https://wiki.theripper93.com/levels-3d-preview/canvas3dcompendium'>地圖製作套件</a></li><li><a href='https://wiki.theripper93.com/levels-3d-preview/canvas3dtokencompendium'>代幣收藏集</a></li></ul> 您將獲得大量 3D 道具、代幣以及許多簡易建構工具！<p><h2>開始使用</h2>\n 啟用 <b>地圖製作套件</b> 後，您將可存取簡易且快速的 <b>快速入門教學</b>。 完成快速入門後，若您想深入了解進階設定，強烈建議您 <b>閱讀文件說明</b>（請點擊下方的 <b><i class='fas fa-book'></i> 開始使用</b> 按鈕）。您日後隨時都能在您的彙編手冊中找到這些文件說明！ 文件中還收錄了一系列可供參考的影片教學。<p><h2>疑難排解</h2>\n若您遇到任何 <b>問題</b>，或在 <b>設定</b> 或 <b>3D 模型</b> 方面遇到困難，請務必 <b>聯絡我們</b>，歡迎至 Discord 頻道！<hr>",
+            "ok": "關閉",
+            "dontshowagain": "不再顯示",
+            "opencompendium": "開始使用"
+        },
+        "newuserexperience": {
+            "title": "歡迎來到 3D Canvas",
+            "content": "<h1>3D 快速入門！</h1> 歡迎使用 3D Canvas，這是一份快速入門教學，讓您能立即輕鬆地開始製作地圖！點擊 <b>開始導覽！</b> 按鈕以開始導覽。<hr>",
+            "starttour": "開始導覽！"
+        },
+        "performance": {
+            "verylow": "極低",
+            "low": "低",
+            "medium": "中",
+            "high": "高",
+            "veryhigh": "極高",
+            "custom": "自訂",
+            "dialog": {
+                "title": "3D Canvas：效能設定",
+                "content": "請選擇您偏好的圖像品質（頁面將重新載入）："
+            },
+            "buttonTooltip": {
+                "verylow": "建議用於較舊款的整合式顯示卡",
+                "low": "建議用於較舊的獨立顯示卡或現代的整合式顯示卡",
+                "medium": "推薦用於現代專用顯示卡",
+                "high": "推薦用於高階專用 GPU",
+                "veryhigh": "推薦用於高階專用 GPU"
+            },
+            "settings": {
+                "header": "圖形設定",
+                "presetHint": "選擇一個畫質預設值，即可自動設定以下選項。您之後隨時可以個別調整這些設定。將游標懸停在按鈕上，即可查看硬體建議。",
+                "resolution": "根據目前的設定，3D Canvas 將以 {resolution} 解析度運行。",
+                "resolutionTooltip": "在低階硬體上以高解析度使用 3D Canvas 可能會造成相當大的負擔，特別是在解析度超過 2K 時。若您遇到效能問題，請嘗試降低解析度。"
+            },
+            "notification": "3D Canvas：效能模式設定為 {performancemode}。"
+        },
+        "tileEditor": {
+            "controlsReference": {
+                "title": "3D 畫布磁磚編輯器控制項",
+                "translate": "翻譯",
+                "rotate": "旋轉",
+                "scale": "比例尺",
+                "toggleGizmo": "切換小工具",
+                "nogizmo": "當 Gizmo 處於停用狀態時，拖曳磁磚會使其對齊地形",
+                "scaleWidth": "寬度",
+                "scaleHeight": "高度",
+                "tiltX": "Tilt X",
+                "tiltZ": "Y 軸傾斜角",
+                "scaleGap": "Gap",
+                "scaleScale": "磁磚比例尺",
+                "toggleMode": "填寫模式",
+                "wheel": "使用滑鼠滾輪增加／減少數值",
+                "clone": "在開始變形之前，請按住 CTRL 鍵以進行複製"
+            }
+        },
+        "tokenAnimations": {
+            "title": "動畫",
+            "twirl": "旋轉",
+            "slash": "斜線",
+            "charge": "指控",
+            "swipe": "滑動",
+            "buff": "增肌",
+            "debuff": "減脂",
+            "bow": "鞠躬",
+            "breath": "呼吸",
+            "shake": "搖一搖",
+            "knockback": "擊退"
+        },
+        "baseStyles": {
+            "roundDoubleRing": "圓形雙圈",
+            "sharp": "夏普",
+            "sharpIndicator": "夏普 + 指示器",
+            "rounded": "圓角",
+            "ringHollow": "環形空洞",
+            "ringSimple": "Ring Simple",
+            "ringSimpleSmall": "簡約小戒指",
+            "jb2ahex1": "十六進位 1 (JB2A)",
+            "jb2ahex1Indicator": "Hex 1 + 指示燈 (JB2A)",
+            "jb2ahex2": "Hex 2 (JB2A)",
+            "jb2ahex2Indicator": "Hex 2 + 指示燈 (JB2A)",
+            "jb2around1": "第 1 輪 (JB2A)",
+            "jb2around1Indicator": "第 1 輪 + 指示燈 (JB2A)",
+            "jb2around2": "第 2 輪 (JB2A)",
+            "jb2around2Indicator": "第 2 輪 + 指示器 (JB2A)",
+            "jb2asquare1": "第一區 (JB2A)",
+            "jb2asquare1Indicator": "Square 1 + 指示器 (JB2A)",
+            "jb2asquare2": "第 2 區（JB2A）",
+            "jb2asquare2Indicator": "方波 2 + 指示器 (JB2A)"
+        },
+        "units": {
+            "ms": "毫秒",
+            "gu": "網格單位",
+            "gs": "網格方格"
+        },
+        "shaders": {
+            "config": {
+                "title": "著色器設定",
+                "save": "儲存",
+                "autosave": "自動儲存",
+                "apply": "申請",
+                "macro-btn": "宏",
+                "enabled": "已啟用？",
+                "label": "著色器設定",
+                "button": "設定著色器",
+                "notes": "設定此 3D 物件要使用的視覺效果。",
+                "slow": "警告：若使用過多此著色器的實例，可能會導致效能問題。",
+                "macro": {
+                    "title": "建立著色器巨集",
+                    "content": "巨集名稱：",
+                    "created": "巨集「%s」已成功建立！",
+                    "enabled": "僅限匯出",
+                    "players": "允許玩家"
+                }
+            },
+            "clipping": {
+                "name": "剪報",
+                "description": "當此磁磚位於代幣或相機附近時，使其漸隱。",
+                "speed": "速度",
+                "diameter": "半徑",
+                "heightOffset": "高度偏移量",
+                "noiseScale": "噪音等級",
+                "useCamera": "使用相機",
+                "useCameraAdvanced": "使用進階相機運算"
+            },
+            "wind": {
+                "name": "風",
+                "description": "風吹效果，為您的植被增添些許動感。",
+                "speed": "速度",
+                "direction": "方向",
+                "intensity": "強度",
+                "affect_model": "錨點 (%)",
+                "convoluted": "曲折複雜的",
+                "ground_blend": "地面攪拌",
+                "ground_color": "底色",
+                "reactive": "反應性",
+                "reactive_intensity": "反應強度"
+            },
+            "distortion": {
+                "name": "失真",
+                "description": "這種扭曲效果非常適合用於熔岩池或其他黏稠液體。",
+                "speed": "速度",
+                "direction": "方向",
+                "intensity": "強度",
+                "convoluted": "曲折複雜的"
+            },
+            "water": {
+                "name": "水",
+                "description": "簡單的、基於正弦波的水效應。效果顯著，且在效能方面非常經濟實惠。",
+                "speed": "速度",
+                "direction": "方向",
+                "wave_amplitude": "波密度",
+                "wave_height": "波高"
+            },
+            "oil": {
+                "name": "石油",
+                "description": "油/液態金屬效果。此效果可進行上色與調整大小，請注意，顏色會因該效果而產生變形。",
+                "speed": "速度",
+                "intensity": "強度",
+                "scale": "比例尺",
+                "color": "顏色",
+                "blendMode": "混合調配"
+            },
+            "ocean": {
+                "name": "海洋",
+                "description": "運用多種波浪的複雜水面模擬。相較於簡單的水面著色器，對系統效能的要求更高。",
+                "speed": "速度",
+                "scale": "比例",
+                "waveA_wavelength": "波 A 波長",
+                "waveA_steepness": "波形 A 的陡度",
+                "waveA_direction": "揮手示意方向",
+                "waveB_wavelength": "B波的波長",
+                "waveB_steepness": "B波陡度",
+                "waveB_direction": "B波方向",
+                "waveC_wavelength": "C波的波長",
+                "waveC_steepness": "C波的陡峭度",
+                "waveC_direction": "C波方向",
+                "foam": "重點摘要",
+                "reflections": "反思"
+            },
+            "orbit": {
+                "name": "軌道",
+                "description": "軌道效果。為物件設定旋轉和軌道，請注意，為獲得最佳效果，模型必須為單一網格。",
+                "orbit_speed": "軌道速度",
+                "pivot_speed": "轉向速度",
+                "radius": "軌道半徑"
+            },
+            "bounce": {
+                "name": "彈跳",
+                "description": "彈跳效果。為物件添加彈跳效果，請注意，為獲得最佳效果，模型必須是單一網格。",
+                "speed": "速度",
+                "strength": "強度",
+                "axisX": "X 軸",
+                "axisY": "Z 軸",
+                "axisZ": "Y 軸"
+            },
+            "grid": {
+                "name": "網格",
+                "description": "將場景網格投影至此 3D 物件上。僅支援正方形網格。此著色器將使用在場景設定中設定的網格顏色與不透明度。",
+                "normalCulling": "常規剔除",
+                "heightCulling": "高度篩選",
+                "showBounds": "顯示範圍"
+            },
+            "triplanar": {
+                "name": "三平面",
+                "description": "一種先進的紋理投影技術，可正確地為表面貼圖，否則在陡峭的角度下，紋理將會出現拉伸現象。",
+                "roughnessAdjust": "反射 副詞"
+            },
+            "textureScroll": {
+                "name": "捲動",
+                "description": "類似於「Parallaxia」模組的簡易紋理捲動效果。",
+                "speedX": "Speed X",
+                "speedY": "Y 速度",
+                "direction": "方向"
+            },
+            "fire": {
+                "name": "火",
+                "description": "火焰特效。此特效可調整色彩與比例，呈現出遠超於火焰的視覺效果。",
+                "speed": "速度",
+                "intensity": "強度",
+                "scale": "比例尺",
+                "color": "顏色",
+                "blendMode": "混合調配"
+            },
+            "lightning": {
+                "name": "閃電",
+                "description": "宛如閃電般的視覺效果，伴隨著移動的電弧。",
+                "speed": "速度",
+                "intensity": "強度",
+                "scale": "比例尺",
+                "color": "顏色",
+                "blendMode": "混合調配"
+            },
+            "ice": {
+                "name": "冰",
+                "description": "帶有極為細微動畫效果的霧面質感。",
+                "speed": "速度",
+                "grain": "穀物",
+                "intensity": "強度",
+                "scale": "比例尺",
+                "color": "顏色",
+                "blendMode": "混合調配"
+            },
+            "idle": {
+                "name": "閒置",
+                "description": "一種簡單的位移效果，旨在應用於代幣上，使其更具生氣。",
+                "speed": "速度",
+                "direction": "方向",
+                "intensity": "強度",
+                "affect_model": "錨點 (%)"
+            },
+            "colorwarp": {
+                "name": "顏色",
+                "description": "色彩變形效果，可同時設定多種效果。若要在場景設定中啟用「光暈」效果，則「光暈」效果將呈現最佳效果。",
+                "speed": "速度",
+                "glow": "光芒",
+                "hue_angle": "色相偏移",
+                "flicker": "閃爍",
+                "animate_range": "動畫範圍"
+            },
+            "colorswap": {
+                "name": "顏色互換",
+                "description": "顏色替換效果。將模型的某種顏色替換為另一種顏色。",
+                "sourceColor1": "來源顏色 1",
+                "targetColor1": "目標顏色 1",
+                "threshold1": "閾值 1",
+                "sourceColor2": "來源顏色 2",
+                "targetColor2": "目標顏色 2",
+                "threshold2": "閾值 2",
+                "sourceColor3": "來源顏色 3",
+                "targetColor3": "目標顏色 3",
+                "threshold3": "閾值 3"
+            },
+            "textureRotate": {
+                "name": "旋轉",
+                "description": "貼圖旋轉效果，需搭配一張貼圖及若干貼圖重複設定才能運作。",
+                "speed": "速度",
+                "centerx": "X 錨點",
+                "centery": "Y 型錨",
+                "offsetAngle": "角度偏移"
+            },
+            "mask": {
+                "name": "面具",
+                "description": "遮罩效果。使用紋理遮罩對紋理進行遮罩處理。需提供一張紋理與一張遮罩紋理。",
+                "textureMask": "遮罩紋理",
+                "textureDiffuse": "質地",
+                "repeat": "重複",
+                "color": "顏色"
+            },
+            "noiseMask": {
+                "name": "噪音",
+                "description": "「噪點遮罩」效果。使用 2 張噪點貼圖對紋理進行遮罩處理。需提供一張紋理貼圖及兩張噪點貼圖。",
+                "textureNoise1": "噪點紋理 1",
+                "noise1Repeat": "重複",
+                "noise1ScrollX": "捲軸 X",
+                "noise1ScrollY": "Y 軸滾動",
+                "textureNoise2": "噪點紋理 2",
+                "noise2Repeat": "重複",
+                "noise2ScrollX": "捲軸 X",
+                "noise2ScrollY": "Y 軸捲動",
+                "invert": "反轉",
+                "textureDiffuse": "質地",
+                "color": "顏色",
+                "repeat": "重複",
+                "strength": "力量",
+                "maskThreshold": "遮罩閾值"
+            },
+            "overlay": {
+                "name": "疊加層",
+                "description": "紋理疊加。需先設定紋理。若紋理背景為白色，請使用「乘法混合」；若紋理背景為黑色，請使用「黑色混合」。",
+                "textureDiffuse": "質地",
+                "coveragePercent": "覆蓋率",
+                "inclination": "傾角",
+                "color": "顏色",
+                "strength": "力量",
+                "repeat": "重複",
+                "rotation_angle": "旋轉角度（度）",
+                "offsetX": "X 偏移量 (UV)",
+                "offsetY": "Y 偏移量 (UV)",
+                "black_alpha": "黑色混合",
+                "add_blend": "添加劑混合",
+                "mult_blend": "乘法混合"
+            },
+            "splatMap": {
+                "name": "Splat 地圖",
+                "description": "Splat Map。需設定一組貼圖。這是一個進階著色器。將 Splat Map 貼圖的 RGBA 通道映射至 4 張不同的貼圖。",
+                "textureSplatMap": "Splat 地圖",
+                "repeatSplatMap": "《Splat Map》重播",
+                "flipY": "Flip Y",
+                "useAlpha": "使用 Alpha 通道",
+                "upNormals": "僅限「朝上」的表面",
+                "textureDiffuse0": "紋理 R",
+                "color0": "顏色 R",
+                "repeat0": "重複 R",
+                "textureDiffuse1": "紋理 G",
+                "color1": "顏色 G",
+                "repeat1": "重複 G",
+                "textureDiffuse2": "紋理 B",
+                "color2": "顏色 B",
+                "repeat2": "重複 B",
+                "textureDiffuse3": "紋理 A",
+                "color3": "顏色 A",
+                "repeat3": "重複 A"
+            },
+            "textureGradient": {
+                "name": "梯度",
+                "description": "紋理漸變。需先設定一組紋理。將紋理映射至高程或坡度。\n使用「坡度」時，1 代表平坦表面，0 代表垂直表面。",
+                "texCount": "紋理數量",
+                "useNormals": "使用傾斜角",
+                "smoothing": "平滑處理",
+                "tex0Begin": "紋理 1 開始",
+                "tex1Begin": "紋理 2 開始",
+                "tex2Begin": "紋理 3 開始",
+                "tex3Begin": "紋理 4 開始",
+                "textureDiffuse0": "紋理 1",
+                "color0": "顏色 1",
+                "repeat0": "重複步驟 1",
+                "textureDiffuse1": "紋理 2",
+                "color1": "顏色 2",
+                "repeat1": "重複步驟 2",
+                "textureDiffuse2": "紋理 3",
+                "color2": "顏色 3",
+                "repeat2": "重複 3 次",
+                "textureDiffuse3": "紋理 4",
+                "color3": "顏色 4",
+                "repeat3": "重複第 4 次"
+            },
+            "sound": {
+                "name": "聲音",
+                "description": "必須正在播放某個聲音。若有多個聲音正在播放，則僅會使用第一個正在播放的聲音以確保效能。",
+                "intensity": "強度",
+                "glow": "光芒",
+                "chroma": "Chroma",
+                "flat_bottom": "平底",
+                "croma_offset_angle": "色差偏移"
+            }
+        },
+        "tours": {
+            "dialog": {
+                "title": "開始使用",
+                "content": "您要開始「3D Canvas 入門導覽」嗎？"
+            },
+            "getting-started": {
+                "title": "基礎：入門指南",
+                "description": "本導覽將引導您了解 3D Canvas 的基礎知識。",
+                "requires": "您必須先關閉 3D 視圖，才能開始這趟導覽。",
+                "step-0": {
+                    "title": "進入 3D 視圖（1/2）",
+                    "content": "啟用代幣控制功能。"
+                },
+                "step-1": {
+                    "title": "進入 3D 視圖（2/2）",
+                    "content": "點擊「立方體」按鈕以啟用 3D 視圖。"
+                },
+                "step-2": {
+                    "title": "控制項",
+                    "content": "「載入畫面」中包含有關 3D 畫布相機和代幣控制項的有用資訊。"
+                }
+            },
+            "first-tile": {
+                "title": "中級：3D 磁磚操作與自訂資源",
+                "description": "本教學將引導您入門 3D Tiles 的操作，並介紹如何使用自訂資源。",
+                "requires": "您必須先開啟 3D 視圖，並安裝 3D 畫布製圖套件，才能開始這趟導覽。",
+                "step-0": {
+                    "title": "磁磚圖層",
+                    "content": "前往「磁磚圖層」。"
+                },
+                "step-1": {
+                    "title": "檔案瀏覽器",
+                    "content": "開啟檔案瀏覽器。"
+                },
+                "step-2": {
+                    "title": "導覽至 3D 資產",
+                    "content": "請依照以下步驟，前往「3D Canvas 製圖套件」的 Tiles 資料夾。"
+                },
+                "step-3": {
+                    "title": "導覽至 3D 資源",
+                    "content": "請依照以下步驟，前往「3D Canvas 製圖套件」的 Tiles 資料夾。"
+                },
+                "step-4": {
+                    "title": "導覽至 3D 資產",
+                    "content": "請依照以下步驟，前往「3D Canvas 製圖套件」的 Tiles 資料夾。"
+                },
+                "step-5": {
+                    "title": "導覽至 3D 資產",
+                    "content": "請按照以下步驟前往「3D Canvas 製圖套件」的 Tiles 資料夾。"
+                },
+                "step-6": {
+                    "title": "導覽至 3D 資產",
+                    "content": "請依照以下步驟，前往「3D Canvas 製圖套件」的 Tiles 資料夾。"
+                },
+                "step-7": {
+                    "title": "拖放",
+                    "content": "以與處理 2D 圖塊相同的方式，將 3D 模型拖放至畫布上。請參閱《控制項參考指南》，依個人喜好操作圖塊。《3D 畫布巨集彙編》收錄了多項用於操作圖塊的實用巨集。"
+                }
+            },
+            "scene-configuration": {
+                "title": "進階：3D 場景配置",
+                "description": "本導覽將帶您了解各項場景設定選項。",
+                "requires": "您必須先開啟 3D 視圖，才能瀏覽此導覽。",
+                "step-0": {
+                    "title": "前往「3D」分頁",
+                    "content": "「3D」分頁包含所有與 3D 場景相關的設定。"
+                },
+                "step-1": {
+                    "title": "為玩家啟用",
+                    "content": "若未啟用此設定，您的玩家將無法進入 3D 視圖。"
+                },
+                "step-2": {
+                    "title": "載入時啟用 3D",
+                    "content": "啟用此設定後，當您啟動該場景時，它將會自動載入至 3D 視圖中。"
+                },
+                "step-3": {
+                    "title": "視力",
+                    "content": "預設情況下，3D Canvas 會透過其牆面（無論牆面是否可見）來計算單位的視野，並以此鏡像 2D 視圖的可見性。啟用此設定可忽略 2D 視野，並改以 3D 環境來計算視野。"
+                },
+                "step-4": {
+                    "title": "戰爭迷霧",
+                    "content": "在 3D 模式下，「戰爭迷霧」預設為關閉狀態，即使在 2D 模式中已啟用亦然。雖然在 3D 模式下「戰爭迷霧」處於關閉狀態，玩家仍能看見整個環境，但標記仍會根據視野範圍被隱藏。 若您希望使用「戰場迷霧」，強烈建議您在 3D Canvas 模組設定中啟用「共享上下文」。"
+                },
+                "step-5": {
+                    "title": "環境",
+                    "content": "HDRI（一張 2:1 的圖像）會影響場景的照明與背景（可將其視為全局照明）。變更 HDRI 會大幅改變場景的外觀！試著將 HDRI 設定為「3D Canvas 製圖套件」中包含的某些選項吧！"
+                },
+                "step-6": {
+                    "title": "照明",
+                    "content": "本節可讓您調整場景的全域光照。試著調整這些基本滑桿吧！"
+                },
+                "step-7": {
+                    "title": "天氣",
+                    "content": "您可以在這裡為場景設定天氣／粒子特效。試著啟用其中一種，看看它能如何提升您的場景效果！"
+                },
+                "step-8": {
+                    "title": "進階",
+                    "content": "「場景設定」提供了更多選項，當您熟悉基本設定後，可點擊此處以顯示所有進階選項。"
+                }
+            },
+            "first-scene": {
+                "title": "基礎：建立您的第一個 3D 場景",
+                "description": "本教學將引導您開始建立 3D 場景。",
+                "requires": "您需要安裝「3D Canvas 製圖套件」，才能開始這趟導覽。",
+                "step-0": {
+                    "title": "前往「場景」分頁",
+                    "content": "「場景」分頁包含您世界中的所有場景。"
+                },
+                "step-1": {
+                    "title": "建立一個新的場景",
+                    "content": "點擊「建立場景」按鈕以建立一個新場景。"
+                },
+                "step-2": {
+                    "title": "啟用快速 3D 場景建立",
+                    "content": "勾選此方塊以啟用「快速 3D 場景建立」功能。"
+                },
+                "step-3": {
+                    "title": "營造場景",
+                    "content": "點擊「建立新場景」按鈕，以確認建立該場景。"
+                },
+                "step-4": {
+                    "title": "控制項",
+                    "content": "「載入畫面」中包含有關 3D 畫布相機與代幣控制項的有用資訊。"
+                },
+                "step-5": {
+                    "title": "3D 場景面板",
+                    "content": "透過這個面板，您可以快速建立場景。導覽結束後，將游標懸停在按鈕上，即可查看它們的功能！"
+                },
+                "step-6": {
+                    "title": "控制項參考",
+                    "content": "您隨時可以點擊此按鈕，重新顯示控制項參考資料。"
+                },
+                "step-7": {
+                    "title": "磁磚操作",
+                    "content": "放置磁磚後，您可以移動、縮放及旋轉它。點擊此按鈕，即可透過聊天訊息查看控制項的說明。"
+                },
+                "step-8": {
+                    "title": "開始打造吧！",
+                    "content": "這就足夠讓你開始了！試著使用「快速地形」和「3D 場景面板」來建立一個場景。當你對 3D Canvas 更熟悉後，就可以前往「導覽」頁面，開始進行更進階的導覽了！"
+                }
+            },
+            "tile-configuration": {
+                "title": "進階：磁磚配置",
+                "description": "本導覽將帶您了解磁磚配置選項與著色器。",
+                "requires": "您必須先選取一塊磁磚，才能開始這趟導覽。",
+                "step-0": {
+                    "title": "前往「3D」分頁",
+                    "content": "「3D」分頁包含所有與 3D 磁磚相關的設定。"
+                },
+                "step-1": {
+                    "title": "3D 模型",
+                    "content": "此設定可讓您設定磁磚的 3D 模型。與 2D 圖片類似，您可以瀏覽並上傳 3D 檔案。"
+                },
+                "step-2": {
+                    "title": "動態網格",
+                    "content": "「動態網格」選項是一項非常強大的工具，它能讓您生成簡單的 3D 形狀，甚至更多。"
+                },
+                "step-3": {
+                    "title": "質地",
+                    "content": "此設定可讓您設定磁磚的紋理。除了可使用 Foundry 標準的檔案瀏覽功能外，您也可以點擊「開啟材質瀏覽器」按鈕，瀏覽內建的眾多紋理。"
+                },
+                "step-4": {
+                    "title": "願景",
+                    "content": "此設定可讓您決定磁磚將如何與視覺系統互動。在 3D 環境中，無需使用牆面，磁磚便能勝任所有工作！"
+                },
+                "step-5": {
+                    "title": "著色器",
+                    "content": "本節可讓您將著色器套用至圖塊上。著色器是一種強大的工具，可用於創造多種特效。試著將一些著色器套用至您的圖塊上，看看它們如何運作吧！"
+                },
+                "step-6": {
+                    "title": "著色器視窗",
+                    "content": "在此視窗中，您可以編輯著色器參數。請在各分頁之間切換以啟用各種效果，並親自試試看吧！"
+                }
+            },
+            "tokens": {
+                "title": "基礎：3D 代幣",
+                "description": "本導覽將引導您完成代幣設定流程，以設定 3D 代幣。",
+                "requires": "您必須先選取一個代幣，並擁有「3D Canvas 製圖套件」及「3D Canvas 代幣收藏集」，才能開始這趟導覽。",
+                "step-0": {
+                    "title": "前往「3D」分頁",
+                    "content": "「3D」分頁包含所有與 3D 代幣相關的設定。"
+                },
+                "step-1": {
+                    "title": "3D 模型",
+                    "content": "此設定可讓您設定代幣的 3D 模型。與 2D 圖片類似，您可以瀏覽並上傳 3D 檔案。"
+                },
+                "step-2": {
+                    "title": "材料",
+                    "content": "此設定可讓您設定代幣的材質。您可以從預設選項中選擇，或使用自訂材質。"
+                },
+                "step-3": {
+                    "title": "顏色",
+                    "content": "若您使用的是預設材質或無顏色的代幣，此設定可讓您設定代幣的顏色。"
+                },
+                "step-4": {
+                    "title": "代幣瀏覽器",
+                    "content": "此按鈕將開啟「Token 瀏覽器」。"
+                },
+                "step-5": {
+                    "title": "代幣瀏覽器",
+                    "content": "此視窗可讓您瀏覽內建的圖塊。預設情況下僅顯示彩色圖塊，您可透過在「3D Canvas 地圖製作套件」模組設定中啟用對應的設定，來查看所有圖塊。"
+                }
+            },
+            "asset-browser": {
+                "title": "面板：資產瀏覽器",
+                "description": "本導覽將帶領您了解「資產瀏覽器」的進階功能。",
+                "requires": "您必須先安裝「3D Canvas 製圖套件」，並開啟「資產瀏覽器」，才能開始這趟導覽。",
+                "step-0": {
+                    "title": "資產瀏覽器視窗",
+                    "content": "在此視窗中，您可以瀏覽內附的資源。"
+                },
+                "step-1": {
+                    "title": "搜尋欄",
+                    "content": "您可以使用搜尋欄來尋找特定的素材。您也可以使用「自然」或「科幻」等關鍵字，來尋找符合特定主題的素材。"
+                },
+                "step-2": {
+                    "title": "「資產」面板",
+                    "content": "此面板包含所有符合您搜尋條件的素材。您可以將它們拖放至場景中，或點擊（或按住 Ctrl/Shift 鍵並點擊以進行多重選取）來選取它們。"
+                },
+                "step-3": {
+                    "title": "隨機分組",
+                    "content": "您可以使用這些切換按鈕來隨機調整資源的擺放位置。您可以隨機調整旋轉、縮放和色調。"
+                },
+                "step-4": {
+                    "title": "安置",
+                    "content": "您可以使用這些切換鈕來決定資產的排列方式。例如，如果您希望將它們對齊到網格上。"
+                },
+                "step-5": {
+                    "title": "碰撞",
+                    "content": "這些切換開關可讓您決定已放置的資產是否應阻擋視野和／或移動路線。"
+                },
+                "step-6": {
+                    "title": "繪畫",
+                    "content": "此按鈕用於切換「資產繪製」模式。啟用後，您即可在場景中點擊並拖曳，以放置多個資產。"
+                },
+                "step-7": {
+                    "title": "外觀",
+                    "content": "這些欄位用於設定資產的基本外觀設定，例如「縮放」、「旋轉」和「色調」。"
+                },
+                "step-8": {
+                    "title": "實用性",
+                    "content": "「工具」標籤頁包含批次操作的快速捷徑。"
+                },
+                "step-9": {
+                    "title": "優化",
+                    "content": "完成場景建構後，請使用「合併磁磚」按鈕，將所有相似的磁磚合併為單一磁磚，以提升效能。"
+                }
+            },
+            "quick-environment": {
+                "title": "專題討論會：環境",
+                "description": "本次導覽將帶您深入了解「環境」專題板。",
+                "requires": "您必須已安裝「3D 畫布製圖套件」，並開啟「環境面板」，才能開始這趟導覽。",
+                "step-0": {
+                    "title": "環境事務委員會",
+                    "content": "透過這個面板，您只需點擊幾下，即可快速營造出場景氛圍。"
+                },
+                "step-1": {
+                    "title": "一天中的時間",
+                    "content": "請以 24 小時制設定時間。這將影響光照與陰影效果，您可進入場景設定進行更進階的配置。"
+                },
+                "step-2": {
+                    "title": "天氣",
+                    "content": "您可以將天氣效果設定為預設選項之一，或前往場景設定選單，以取得多種預設及自訂效果。"
+                },
+                "step-3": {
+                    "title": "Skybox",
+                    "content": "天空盒不僅會影響場景的背景，還會影響光照效果。不妨親自嘗試一下，看看不同的天空盒如何能大幅改變場景的氛圍。"
+                }
+            },
+            "quick-terrain": {
+                "title": "面板：地形",
+                "description": "本導覽將帶領您逐步了解「地形」面板。",
+                "requires": "您必須先安裝「3D 畫布製圖套件」，並開啟「地形面板」，才能開始這趟導覽。",
+                "step-0": {
+                    "title": "地形面板",
+                    "content": "透過此面板，您可以快速設定一處地形，作為場景的基礎。"
+                },
+                "step-1": {
+                    "title": "主題",
+                    "content": "在此區段中，您可以從若干預設的地形主題中進行選擇。請點擊「套用主題」按鈕，將選定的主題套用至當前地形。"
+                },
+                "step-2": {
+                    "title": "地形",
+                    "content": "本節可讓您隨機生成地形，請使用下拉式選單選擇不同的地形類型。「微調」按鈕可讓您手動調整地形所使用的高度圖的偏移量與比例。"
+                },
+                "step-3": {
+                    "title": "流體",
+                    "content": "點擊不同的流體按鈕來建立流體磁磚。請注意，視地形而定，流體可能需要調整大小或重新定位。如有需要，請使用操作工具來進行調整。"
+                },
+                "step-4": {
+                    "title": "工具",
+                    "content": "本節提供了一些有助於處理地形的工具。請使用「鎖定／解鎖」按鈕，防止地形被左鍵選中；或使用「網格」按鈕，以切換地形的網格顯示。"
+                }
+            },
+            "material-browser": {
+                "title": "面板：材料",
+                "description": "本導覽將帶領您瀏覽「素材面板」。",
+                "requires": "您必須先安裝「3D Canvas 製圖套件」，並開啟「材質面板」，才能開始這趟導覽。",
+                "step-0": {
+                    "title": "材料面板",
+                    "content": "透過此面板，您可以快速瀏覽並變更選取磁磚上的材質。"
+                },
+                "step-1": {
+                    "title": "搜尋欄",
+                    "content": "您可以使用搜尋欄來尋找特定的資料。"
+                },
+                "step-2": {
+                    "title": "紋理重複",
+                    "content": "此欄位可讓您變更所選磁磚的紋理重複設定。此設定將影響紋理在磁磚上的鋪貼效果。"
+                },
+                "step-3": {
+                    "title": "材料清單",
+                    "content": "此清單包含所有符合您搜尋條件的材質。點擊某種材質，即可將其套用至所有已選中的磁磚。"
+                }
+            },
+            "effect-browser": {
+                "title": "面板：效果",
+                "description": "本導覽將帶領您深入了解「效果」面板。",
+                "requires": "您需要先安裝「3D Canvas 製圖套件」，並開啟「效果面板」，才能開始這趟導覽。",
+                "step-0": {
+                    "title": "效果面板",
+                    "content": "此面板可讓您將特效以拖放方式放置至場景中。<hr>特效是以貼花形式投影的紋理，放置後您會看到一個紅色錐體，用以標示投影方向。此錐體僅在格子圖層上時，遊戲主持人（GM）才能看見。"
+                },
+                "step-1": {
+                    "title": "比例尺",
+                    "content": "此欄位可讓您調整所選特效的縮放比例。"
+                },
+                "step-2": {
+                    "title": "搜尋欄",
+                    "content": "您可以使用搜尋欄來尋找特定的特效。"
+                },
+                "step-3": {
+                    "title": "效果清單",
+                    "content": "此清單包含所有符合您搜尋條件的特效。將特效拖曳至場景中即可放置。<hr>如果您擁有 <strong>Token Attacher</strong> 模組，將特效拖曳至代幣上，即可將其附加至該代幣。"
+                }
+            },
+            "cutscene-panel": {
+                "title": "分鏡：過場動畫",
+                "description": "本導覽將帶領您了解「過場動畫面板」。",
+                "requires": "您必須已安裝「3D 畫布製圖套件」，並開啟「過場動畫面板」，才能開始這趟導覽。",
+                "step-0": {
+                    "title": "過場動畫面板",
+                    "content": "透過此面板，您可以快速為場景設定一個或多個過場動畫。"
+                },
+                "step-1": {
+                    "title": "建立片段",
+                    "content": "若要建立新的片段，請點擊 <strong>新增片段</strong> 按鈕。此操作將建立一個新片段，並開啟片段設定。"
+                },
+                "step-2": {
+                    "title": "片段設定",
+                    "content": "本節將引導您設定當前片段的相關設定。您可以編輯名稱、播放或刪除該片段。"
+                },
+                "step-3": {
+                    "title": "新增關鍵幀",
+                    "content": "要新增關鍵幀，請點擊 <strong>新增關鍵幀</strong> 按鈕。這將建立一個新的關鍵幀。<hr>關鍵幀是指相機將被定位並旋轉的特定時間點。您可以依需求新增任意數量的關鍵幀，以製作電影級的動畫。"
+                },
+                "step-4": {
+                    "title": "擷取關鍵幀",
+                    "content": "若要擷取當前的相機位置與旋轉角度，請點擊 <strong>擷取</strong> 按鈕。此操作將把當前的相機位置與旋轉角度儲存為關鍵幀。"
+                },
+                "step-5": {
+                    "title": "持續時間",
+                    "content": "此欄位可讓您變更當前關鍵影格的持續時間。這將影響攝影機從上一個關鍵影格移動到此關鍵影格所需的時間。<hr>若 <strong>轉場</strong> 欄位設定為 <strong>交叉淡入淡出</strong>，則此持續時間即代表攝影機淡出與淡入所需的時間。"
+                },
+                "step-6": {
+                    "title": "停下來，為了……",
+                    "content": "此欄位可讓您調整攝影機在移至下一個關鍵幀之前，停留在當前關鍵幀的時間長度。"
+                },
+                "step-7": {
+                    "title": "過渡",
+                    "content": "此欄位可讓您變更轉場類型。您可以選擇 <strong>鏈接</strong> 或 <strong>交叉淡入淡出</strong>。選擇「鏈接」時，相機將從一個關鍵幀移動到下一個關鍵幀；選擇「交叉淡入淡出」時，相機將在關鍵幀之間淡出並淡入。"
+                },
+                "step-8": {
+                    "title": "放鬆",
+                    "content": "此欄位可讓您變更緩動類型。您可<a href='https://easings.net/en'>在此</a></a>進一步了解緩動相關資訊。"
+                },
+                "step-9": {
+                    "title": "編輯",
+                    "content": "此按鈕可讓您切換此片段的關鍵幀設定。"
+                },
+                "step-10": {
+                    "title": "播放",
+                    "content": "完成過場動畫的編輯後，您可以點擊 <strong>播放</strong> 按鈕來播放它。系統會提示您選擇哪些玩家能夠觀看這段過場動畫。"
+                }
+            },
+            "room-builder": {
+                "title": "分鏡：地牢與室內場景",
+                "description": "本次導覽將帶您深入了解「地牢與室內場景」專題展區。",
+                "requires": "您必須已安裝「3D 畫布製圖套件」，並開啟「地城與室內場景面板」，才能開始這趟導覽。",
+                "step-0": {
+                    "title": "《地下城與內景》座談會",
+                    "content": "透過這個面板，您可以建立地牢、洞穴及建築物內部場景。"
+                },
+                "step-1": {
+                    "title": "建置",
+                    "content": "本節包含您建立版面配置所需的所有工具。"
+                },
+                "step-2": {
+                    "title": "新增",
+                    "content": "在此模式下，在場景中繪製的圖形將會被加入至版面配置中"
+                },
+                "step-3": {
+                    "title": "減法",
+                    "content": "在此模式下，於場景中繪製的圖形將從版面中扣除"
+                },
+                "step-4": {
+                    "title": "刀",
+                    "content": "在此模式下，您可以切割牆壁以開闢開口"
+                },
+                "step-5": {
+                    "title": "形狀",
+                    "content": "本節將說明繪圖模式<h3>矩形與橢圓</h3><p>在此模式下，請在場景中點擊並拖曳以繪製圖形，待繪製完成後放開滑鼠即可。</p><h3>多邊形與樣條線</h3><p>在此模式下，點擊並拖曳以開始繪製多邊形。按住滑鼠左鍵的同時，點擊滑鼠右鍵以新增一個點。當您滿意時放開滑鼠左鍵；若未關閉形狀，則僅會建立一道牆面。</p>"
+                },
+                "step-6": {
+                    "title": "牆體類型",
+                    "content": "此欄位可讓您變更牆面類型。<strong>光滑</strong> 會生成類似室內牆面的效果，<strong>粗糙</strong> 則會生成類似洞穴牆面的效果。"
+                },
+                "step-7": {
+                    "title": "牆面與地板",
+                    "content": "在此區段中，您可以選擇要繪製牆壁、地板，或是兩者皆繪製。"
+                },
+                "step-8": {
+                    "title": "主題",
+                    "content": "本節將讓您選擇地牢的主題。您可以透過在下拉式選單中選擇 <strong>自訂</strong>，然後選取牆壁和地板的紋理，來設定自訂主題。"
+                },
+                "step-9": {
+                    "title": "尺寸",
+                    "content": "在此區段中，您可以調整牆壁的高度與厚度（以像素為單位）。"
+                },
+                "step-10": {
+                    "title": "開始吧！",
+                    "content": "既然您已經了解如何使用這塊面板，那就開始組裝吧！強烈建議在平坦的表面上進行組裝。"
+                }
+            },
+            "asset-browser-paint": {
+                "title": "面板：資產瀏覽器 - 繪畫",
+                "description": "本導覽將引導您了解「資產瀏覽器」的繪圖模式。",
+                "requires": "您必須已安裝「3D Canvas 製圖套件」，並開啟「資源瀏覽器」，才能開始這趟導覽。",
+                "step-0": {
+                    "title": "繪畫模式",
+                    "content": "「繪圖」模式可讓您快速在場景中散佈磁磚。"
+                },
+                "step-1": {
+                    "title": "請選取一項或多項資產",
+                    "content": "要開始繪圖，您需要在「資產瀏覽器」中選取一個或多個資產。點擊資產即可選取，或按住 Ctrl 鍵並點擊以選取多個資產。"
+                },
+                "step-2": {
+                    "title": "錄取通知",
+                    "content": "選取一項或多項資產後，您將在視窗底部看到一則通知。"
+                },
+                "step-3": {
+                    "title": "繪畫：《矩形》",
+                    "content": "當「放置磁磚」工具啟用時，您可以點擊並拖曳場景中的位置來繪製一個矩形。該矩形將填滿所選的資產。"
+                },
+                "step-4": {
+                    "title": "畫作：《多邊形》",
+                    "content": "在「多邊形」工具啟用時，點擊並拖曳以開始繪製多邊形。按住滑鼠左鍵的同時，點擊滑鼠右鍵可新增一個點。確認形狀後放開滑鼠左鍵；若未關閉形狀，資源將散佈於該線段上；否則，資源將填滿該區域。"
+                },
+                "step-5": {
+                    "title": "繪畫：自由手繪",
+                    "content": "當「選取」工具處於啟用狀態時，請按住 Shift 鍵，然後點擊並拖曳，將資產放置於場景中。"
+                }
+            }
+        },
+        "mergeTiles": {
+            "title": "合併方塊",
+            "occlusionGroup": " - 阻塞識別碼：",
+            "content": "合併磁磚是一項不可逆的操作，建議在合併大量磁磚之前，先備份該場景。<br>您即將合併 <strong>%count% 個磁磚</strong>。已選取的磁磚將被排除在外。您確定要繼續嗎？"
+        },
+        "extrudeWalls": {
+            "title": "擠出牆體",
+            "content": "此程序將嘗試將場景中的牆面轉換為磁磚。您確定要繼續嗎？"
+        },
+        "dynamicSkyConfig": {
+            "title": "動態天空配置",
+            "sceneConfig": {
+                "label": "動態天空配置",
+                "button": "開啟設定",
+                "notes": "「動態天空」功能能讓天空看起來更逼真且富有動態感，但場景中的實際色彩與反射效果，仍源自上方「天空」區段中的靜態圖像。"
+            },
+            "enabled": {
+                "label": "已啟用"
+            },
+            "turbidity": {
+                "label": "濁度",
+                "notes": "濁度是用來衡量空氣中微粒數量的指標。濁度越高，天空就會越朦朧。"
+            },
+            "rayleigh": {
+                "label": "雷利",
+                "notes": "瑞利散射是指光被遠小於光波長的小粒子所散射的現象。這正是白天天空呈現藍色的原因。"
+            },
+            "mieCoefficient": {
+                "label": "米氏係數",
+                "notes": "米氏散射是指光線被大於光波長顆粒所產生的散射現象。日出與日落時分，天空呈現的紅色與橙色，正是由這種散射現象所造成。"
+            },
+            "mieDirectionalG": {
+                "label": "Mie 方向性 G"
+            },
+            "starDensity": {
+                "label": "恆星密度",
+                "notes": "天空中可見的星星數量。"
+            },
+            "color": {
+                "label": "顏色",
+                "notes": "天空的顏色。"
+            },
+            "enableClouds": {
+                "label": "啟用雲端功能"
+            },
+            "cloudsSpeed": {
+                "label": "雲速"
+            },
+            "cloudsAlpha": {
+                "label": "雲的不透明度"
+            },
+            "cloudsTint": {
+                "label": "雲的顏色"
+            },
+            "cloudsScale": {
+                "label": "雲層規模"
+            }
+        }
+    }
+}

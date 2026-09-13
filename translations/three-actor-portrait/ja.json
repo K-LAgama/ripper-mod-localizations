@@ -1,0 +1,45 @@
+{
+    "three-actor-portrait": {
+        "settings": {
+            "authKey": {
+                "name": "HeroForge 認証キー",
+                "hint": "ここに認証キーを入力してください。認証キーは、HeroForgeのアカウント設定（[アカウント] → [個人情報] → [アクセスキー]）で確認できます。HeroForgeのパスワードを変更した場合は、認証キーも更新する必要があります。"
+            },
+            "disablePortrait": {
+                "name": "3Dポートレートを無効にする",
+                "hint": "すべての登場人物の3Dポートレートを無効にします。低スペックの端末やネットワーク速度が遅い場合に推奨されます。"
+            },
+            "playerCanEditPortrait": {
+                "name": "プレイヤーがカメラの位置を編集できるようにする",
+                "hint": "プレイヤーが3Dポートレート上のカメラの位置を編集できるようにする。"
+            },
+            "autoRotate": {
+                "name": "自動回転",
+                "hint": "3Dポートレートでカメラを自動回転させる。"
+            },
+            "rotationSpeed": {
+                "name": "回転速度",
+                "hint": "「3Dポートレート」におけるカメラの回転速度。"
+            },
+            "license-agreement": {
+                "name": "利用規約に同意する",
+                "hint": "この設定を有効にすることで、3D Portraitsの利用規約に同意したものとみなされます。本モジュールはHeroForge APIを使用しており、Sky Castle Studioの許可なくAPIのリバースエンジニアリング、抽出、または使用を試みることは、利用規約に違反します。 ご自身のプロジェクトでHeroForge APIを利用したい場合は、Sky Castle Studio（support@heroforge.com）までご連絡ください。"
+            },
+            "maxContexts": {
+                "name": "最大同時撮影可能ポートレート数",
+                "hint": "同時に表示できるポートレートの最大数です。他のモジュールやブラウザの他のタブでキャンバスコンテキストが使用されている可能性があります。WebGLがクラッシュする場合は、この値を下げてみてください。WebGLのコンテキスト数の上限は16です。"
+            }
+        },
+        "portrait-preview": {
+            "save-pose": "ポーズを保存",
+            "download": "ダウンロード",
+            "toggle-rotate": "自動回転のオン／オフを切り替える",
+            "camera-position-saved": "カメラの位置が保存されました",
+            "topdown": "俯瞰図",
+            "outline": "アウトラインの表示/非表示を切り替える"
+        },
+        "notifications": {
+            "maxContextExceeded": "同時に表示できる3Dポートレートの最大数に達したため、最も古いものが閉じられました。この設定はモジュールの設定画面で変更できます。"
+        }
+    }
+}

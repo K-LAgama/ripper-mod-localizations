@@ -1,44 +1,51 @@
 {
     "filepicker-plus": {
         "settings": {
-            "audiopreview": {
-                "hint": "Riproduzione di un'anteprima audio quando si passa il mouse sui suoni nel selezionatore di file",
-                "name": "Anteprima audio"
-            },
-            "audiopreviewdelay": {
-                "hint": "Ritardo in ms prima dell'inizio della riproduzione dell'anteprima sonora",
-                "name": "Ritardo dell'anteprima audio"
-            },
-            "audiopreviewvol": {
-                "hint": "Volume dell'anteprima sonora",
-                "name": "Volume dell'anteprima audio"
-            },
-            "enablecolortheme": {
-                "hint": "Abilitare il tema di colore scuro per il filepicker; se si dispone di un modulo o di un sistema che applica un tema al filepicker, si consiglia di disabilitarlo.",
-                "name": "Abilita il tema colore"
-            },
-            "imagepreview": {
-                "hint": "Visualizzazione dell'anteprima dell'immagine o del video quando si passa il mouse su di essi nel filepicker",
-                "name": "Anteprima immagine-video"
-            },
             "sidebarFilepicker": {
-                "hint": "Aggiunta di una nuova scheda alla barra laterale che consente di sfogliare e caricare file, nonché di trascinare e rilasciare immagini/modelli 3D sulla scena.",
-                "name": "Abilitare la scheda della barra laterale del Filepicker"
+                "name": "Abilitare la scheda della barra laterale del Filepicker",
+                "hint": "Aggiunta di una nuova scheda alla barra laterale che consente di sfogliare e caricare file, nonché di trascinare e rilasciare immagini/modelli 3D sulla scena."
+            },
+            "placeastokens": {
+                "name": "Inserisci le immagini come token",
+                "hint": "Quando trascini un'immagine sulla scena, posizionala come token anziché come tessere se ti trovi sul livello dei token (solo con il selettore della barra laterale)"
             },
             "size": {
+                "name": "Dimensione del Filepicker",
+                "hint": "Larghezza del filepicker",
                 "choices": {
                     "default": "Predefinito",
                     "large": "Grande",
+                    "extraLarge": "Extra Large",
                     "massive": "Massiccio"
-                },
-                "hint": "Larghezza del filepicker",
-                "name": "Dimensione del Filepicker"
+                }
+            },
+            "imagepreview": {
+                "name": "Anteprima immagine-video",
+                "hint": "Visualizzazione dell'anteprima dell'immagine o del video quando si passa il mouse su di essi nel filepicker"
             },
             "threepreview": {
-                "hint": "Mostra anteprime 3D, richiede Ritratti 3D. Se questa impostazione è disattivata, verrà utilizzata l'anteprima del file 3D (se presente).",
-                "name": "Anteprima 3D"
+                "name": "Anteprima 3D",
+                "hint": "Mostra anteprime 3D, richiede Ritratti 3D. Se questa impostazione è disattivata, verrà utilizzata l'anteprima del file 3D (se presente)."
+            },
+            "audiopreview": {
+                "name": "Anteprima audio",
+                "hint": "Riproduzione di un'anteprima audio quando si passa il mouse sui suoni nel selezionatore di file"
+            },
+            "audiopreviewdelay": {
+                "name": "Ritardo dell'anteprima audio",
+                "hint": "Ritardo in ms prima dell'inizio della riproduzione dell'anteprima sonora"
+            },
+            "audiopreviewvol": {
+                "name": "Volume dell'anteprima audio",
+                "hint": "Volume dell'anteprima sonora"
+            },
+            "enablecolortheme": {
+                "name": "Abilita il tema colore",
+                "hint": "Abilitare il tema di colore scuro per il filepicker; se si dispone di un modulo o di un sistema che applica un tema al filepicker, si consiglia di disabilitarlo."
             }
         },
+        "app": {},
+        "flags": {},
         "sidebar": {
             "no-filepicker": "Il Browser dei file è aperto in una finestra separata. Una volta chiusa la finestra, il File Browser torna nella barra laterale.",
             "open": "La barra laterale del File Browser è attiva, il File Browser selezionato è stato aperto nella barra laterale."

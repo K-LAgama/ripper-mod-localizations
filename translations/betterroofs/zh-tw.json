@@ -1,0 +1,15 @@
+{
+    "betterroofs": {
+        "tileConfig": {
+            "showInFog.name": "揭開戰爭迷霧",
+            "showInFog.hint": "當一個單位能看見此格時，該格將穿透「戰爭迷霧」而顯現。此效果不適用於「光源」。",
+            "occlusionLinkId": "遮擋連結 ID",
+            "occlusionLinkIdHint": "可以是任何文字。當顯示「遮擋連結來源？」的方塊被遮擋（下方有代幣）時，所有「遮擋連結 ID」相同的方塊也會被遮擋。使用範例：將屋頂相互連結。",
+            "occlusionLinkSource": "遮蔽連結來源？"
+        },
+        "settings": {
+            "hoverFade.name": "懸停淡入淡出",
+            "hoverFade.hint": "啟用此功能後，當您將游標懸停在屋頂上時，屋頂會逐漸淡出。這是 Core Foundry VTT 的功能，此設定僅供您關閉該功能。"
+        }
+    }
+}

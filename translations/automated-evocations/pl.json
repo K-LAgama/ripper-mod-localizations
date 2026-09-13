@@ -1,0 +1,74 @@
+{
+    "AE": {
+        "custombindings": {
+            "add": "Dodaj oprawę",
+            "bindingstitle": "Edytuj niestandardowe skróty klawiszowe",
+            "bindingtitle": "Edytuj powiązanie",
+            "tt": {
+                "spellname": "Nazwa zaklęcia",
+                "edit": "Edytuj",
+                "delete": "Usuń",
+                "creaturename": "Nazwa stworzenia"
+            },
+            "sett": {
+                "label": "Konfiguracja niestandardowych powiązań",
+                "name": "Niestandardowe wiązania",
+                "hint": "Konfiguracja niestandardowych skrótów klawiszowych"
+            }
+        },
+        "pick3d": "Kliknij punkt na płótnie 3D, aby przywołać.",
+        "dialogs": {
+            "companionManager": {
+                "title": "Menedżer ds. osób towarzyszących",
+                "confirm": {
+                    "title": "Usuń osobę towarzyszącą",
+                    "content": "<p>Czy na pewno chcesz usunąć tego towarzysza?</p>"
+                }
+            }
+        },
+        "actorSheetBtn": "Towarzysze",
+        "animations": {
+            "fire": "Pożar",
+            "air": "Powietrze",
+            "lightning": "Błyskawica",
+            "water": "Woda",
+            "energy1": "Energia",
+            "magic1": "Magia",
+            "heart": "Doki-Doki",
+            "music": "Crescendo",
+            "fourelements": "Cztery żywioły",
+            "music2": "Akord",
+            "darkness": "Ciemność",
+            "ice1": "Lód",
+            "magic2": "Zaklęcie",
+            "lightning2": "Burza"
+        },
+        "groups": {
+            "elemental": "Elemental",
+            "magical": "Magiczne",
+            "z-none": "Inne"
+        },
+        "settings": {
+            "storeonactor": {
+                "title": "Zapisywanie obiektów typu „Companion” w obiekcie typu „Actor”",
+                "hint": "Domyślnie przechowuj towarzyszy przy aktorze, a nie przy użytkowniku."
+            },
+            "enableautomations": {
+                "title": "Włącz automatyzacje",
+                "hint": "Włącz system automatyzacji pomocniczej podczas rzucania zaklęcia."
+            },
+            "autoclose": {
+                "title": "Automatyczne zamykanie",
+                "hint": "Automatycznie zamknij okno towarzysza po jego przywołaniu."
+            },
+            "hidebutton": {
+                "title": "Ukryj przycisk towarzysza",
+                "hint": "Ukryj przycisk towarzysza na karcie postaci."
+            },
+            "restrictOwned": {
+                "title": "Wyłącznie aktorzy zatrudnieni na stałe",
+                "hint": "Ogranicz listę towarzyszy tak, aby wyświetlała wyłącznie postacie towarzyszy, których posiadasz."
+            }
+        }
+    }
+}

@@ -1,42 +1,71 @@
 {
     "fvtt-youtube-player": {
+        "deleteTrack": "Eliminare la traccia?",
+        "deleteTrackContent": "Sei sicuro di voler eliminare questa traccia?",
+        "deletePlaylist": "Eliminare la playlist?",
+        "deletePlaylistContent": "Sei sicuro di voler eliminare questa playlist?",
+        "fetchingTitle": "Recupero titolo video...",
+        "playlistName": "Nome della playlist",
+        "playlistNameContent": "Stai importando una playlist. \nVuoi creare una nuova playlist o aggiungere i brani alla playlist corrente? \nLascia il campo vuoto per aggiungere alla playlist corrente.",
         "TOOLTIP": {
+            "play": "Giocare",
+            "stop": "Fermare",
+            "toggle-playlists": "Attiva/disattiva playlist",
             "add-to-playlist": "Aggiungi a playlist",
             "create-playlist": "Crea playlist",
             "delete-playlist": "Elimina playlist",
             "delete-track": "Elimina traccia",
-            "loop": "Attiva/disattiva Ripeti",
-            "play": "Giocare",
             "rename-playlist": "Premere \"Invio\" per rinominare",
-            "search": "Cerca su YouTube",
-            "stop": "Fermare",
+            "sound-library": "Libreria audio",
+            "loop": "Attiva/disattiva Ripeti",
             "toggle-playlist": "Attiva/disattiva la riproduzione automatica",
-            "toggle-playlists": "Attiva/disattiva playlist"
+            "search": "Cerca su YouTube",
+            "copy-url": "Copia l'URL",
+            "configure-track": "Configura traccia",
+            "add-to-sound-library": "Aggiungi alla libreria audio"
         },
-        "deletePlaylist": "Eliminare la playlist?",
-        "deletePlaylistContent": "Sei sicuro di voler eliminare questa playlist?",
-        "deleteTrack": "Eliminare la traccia?",
-        "deleteTrackContent": "Sei sicuro di voler eliminare questa traccia?",
-        "fetchingTitle": "Recupero titolo video...",
-        "import-export": {
-            "export": "Esportare",
-            "import": "Importare",
-            "imported": "Playlist importate correttamente",
-            "title": "Importa/Esporta playlist"
-        },
-        "noApiKey": "Avviso: nessuna chiave API impostata. \nPer accedere alla funzionalità di ricerca, è necessario impostare una chiave API di YouTube nelle impostazioni del modulo. \nPuoi controllare il Wiki per ulteriori informazioni.",
-        "playlistName": "Nome della playlist",
-        "playlistNameContent": "Stai importando una playlist. \nVuoi creare una nuova playlist o aggiungere i brani alla playlist corrente? \nLascia il campo vuoto per aggiungere alla playlist corrente.",
         "settings": {
             "googleApiKey": {
-                "hint": "La richiesta verrà instradata attraverso i miei server, ma puoi utilizzare la tua chiave API per evitare limiti di velocità. \nOttienine uno su https://console.developers.google.com/apis/credentials",
-                "name": "Chiave API di YouTube"
+                "name": "Chiave API di YouTube",
+                "hint": "La richiesta verrà instradata attraverso i miei server, ma puoi utilizzare la tua chiave API per evitare limiti di velocità. \nOttienine uno su https://console.developers.google.com/apis/credentials"
             },
             "importExport": {
-                "hint": "Importa o esporta playlist",
+                "name": "Importa/Esporta",
                 "label": "Apri la finestra di dialogo Importa/Esporta",
-                "name": "Importa/Esporta"
+                "hint": "Importa o esporta playlist"
             }
-        }
+        },
+        "import-export": {
+            "title": "Importa/Esporta playlist",
+            "import": "Importare",
+            "export": "Esportare",
+            "imported": "Playlist importate correttamente"
+        },
+        "track-configuration": {
+            "title": "Configurazione della pista",
+            "track-title": "Titolo del brano",
+            "track-url": "URL o ID della traccia",
+            "url": "URL",
+            "tags": "Tag",
+            "rename-track": "Rinomina traccia"
+        },
+        "tags-configuration": {
+            "title": "Configurazione dei tag",
+            "create-tag": "Crea tag",
+            "tag-name": "Nome tag",
+            "tag-color": "Colore del tag",
+            "tag-label": "Nome tag",
+            "delete-tag": "Elimina tag",
+            "create-tag-error": "Inserisci il nome e il colore di un tag"
+        },
+        "sound-library": {
+            "title": "Libreria audio",
+            "add-tracks": "Aggiungi brani",
+            "import-tracks": "Importa brani",
+            "import-tracks-textarea": "Inserisci qui gli URL o gli ID dei brani/delle playlist"
+        },
+        "app": {},
+        "flags": {},
+        "noApiKey": "Avviso: nessuna chiave API impostata. \nPer accedere alla funzionalità di ricerca, è necessario impostare una chiave API di YouTube nelle impostazioni del modulo. \nPuoi controllare il Wiki per ulteriori informazioni."
     }
 }

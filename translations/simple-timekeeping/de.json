@@ -274,6 +274,15 @@
                 "edit": {
                     "label": "Ereigniszeit bearbeiten"
                 },
+                "eventAlreadyEnded": {
+                    "label": "Die Veranstaltung ist bereits beendet"
+                },
+                "eventIn": {
+                    "label": "In"
+                },
+                "eventTimeLeft": {
+                    "label": "Links"
+                },
                 "repeat": {
                     "label": "Wiederholen",
                     "options": {

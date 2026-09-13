@@ -1,256 +1,162 @@
 {
     "simple-timekeeping": {
-        "app": {
-            "controls": {
-                "configure": {
-                    "tooltip": "設定"
-                },
-                "create-event": {
-                    "tooltip": "イベント作成"
-                },
-                "day-back": {
-                    "tooltip": "ある日戻る"
-                },
-                "day-forward": {
-                    "tooltip": "前日"
-                },
-                "hour-back": {
-                    "tooltip": "1時間戻る"
-                },
-                "hour-forward": {
-                    "tooltip": "1時間前"
-                },
-                "midday": {
-                    "tooltip": "真昼"
-                },
-                "midnight": {
-                    "tooltip": "ミッドナイト"
-                },
-                "sunrise": {
-                    "tooltip": "日の出"
-                },
-                "sunset": {
-                    "tooltip": "サンセット"
-                },
-                "toggle-events": {
-                    "tooltip": "イベント"
-                }
-            },
-            "create-event": {
-                "duration": {
-                    "label": "開催時間（時間）"
-                },
-                "edit": {
-                    "label": "イベント時間の編集"
-                },
-                "eventEnd": {
-                    "label": "イベント終了（オプション）"
-                },
-                "eventTime": {
-                    "label": "イベント開始"
-                },
-                "repeat": {
-                    "label": "リピート",
-                    "options": {
-                        "day": "毎日",
-                        "month": "毎月",
-                        "none": "繰り返してはならない",
-                        "week": "毎週",
-                        "year": "毎年"
-                    }
-                }
-            },
-            "searchEvents": "イベント検索",
-            "weather": {
-                "generate": "生成する"
+        "day": "日",
+        "days": "日数",
+        "in-progress": "進行中",
+        "paused": "休止",
+        "paused-info": "シンプルな計時 - 時刻の進みが一時停止され、クリックすると再開されます。",
+        "unpaused-info": "シンプルな計時 - 時間の進みが再開され、クリックすると一時停止します。ゲームが一時停止していたり、戦闘中であったりしても、時間は一時停止したままです。",
+        "calendar-dusk-dawn": "このカレンダーには夜明けと夕暮れの時間が含まれており、設定で設定された値や気候ゾーンに基づく値は無視され、カレンダーの値が使用されます。",
+        "settings": {
+            "config-menu": {
+                "label": "設定",
+                "name": "構成",
+                "hint": "モジュールの設定を行う。"
             }
         },
-        "calendar-dusk-dawn": "このカレンダーには夜明けと夕暮れの時間が含まれており、設定で設定された値や気候ゾーンに基づく値は無視され、カレンダーの値が使用されます。",
+        "weather": {
+            "clear": "クリア",
+            "partlyCloudy": "一部曇り",
+            "cloudy": "曇り",
+            "overcast": "曇り",
+            "rain": "雨",
+            "thunderstorm": "雷雨",
+            "drizzle": "霧雨",
+            "snow": "雪",
+            "blizzard": "ブリザード",
+            "hail": "ヘイル",
+            "fog": "霧",
+            "mist": "ミスト",
+            "windy": "リフト",
+            "tornado": "トルネード",
+            "hurricane": "ハリケーン",
+            "ashfall": "アッシュフォール",
+            "sandstorm": "サンドストーム",
+            "luminousSky": "ルミナススカイ",
+            "bloodRain": "血の雨",
+            "manaStorm": "マナストーム",
+            "arcaneFog": "アルケイン・フォグ",
+            "voidstorm": "ヴォイドストーム",
+            "celestialEclipse": "天食",
+            "meteorShower": "流星群",
+            "frozenHell": "凍てつく地獄",
+            "sunshower": "サンシャワー",
+            "spectralStorm": "スペクトラル・ストーム",
+            "etherealDrizzle": "霧雨",
+            "wildMagicWinds": "ワイルド・マジック・ウィンズ"
+        },
+        "moonPhase": {
+            "new": "新月",
+            "waxingCrescent": "ワキシング・クレセント",
+            "firstQuarter": "第1四半期",
+            "waxingGibbous": "上弦の月",
+            "full": "満月",
+            "waningGibbous": "衰えるギブス",
+            "lastQuarter": "前四半期",
+            "waningCrescent": "ウイング・クレセント",
+            "bloodMoon": "ブラッド・ムーン",
+            "eclipse": "エクリプス",
+            "voidMoon": "ヴォイド・ムーン",
+            "twinMoons": "ツイン・ムーン",
+            "manaMoon": "マナ・ムーン",
+            "celestialAlignment": "セレスティアル・アライメント",
+            "shatteredMoon": "砕かれた月",
+            "spiritMoon": "スピリット・ムーン"
+        },
         "configuration": {
-            "badgeColor": {
-                "label": "カラー"
-            },
-            "badgeLabel": {
-                "label": "ラベル"
-            },
-            "calendar": {
-                "custom": "カスタム",
-                "default": "システム・デフォルト",
-                "hint": "カスタムカレンダーJSONで定義されたカスタムカレンダー",
-                "label": "カレンダー"
-            },
-            "climateData": {
-                "hint": "天気と気温を生成するためのJSON定義。カスタム気候やJSONファイルのセットアップ方法のサポートはありません。",
-                "label": "気候データ"
-            },
-            "clockSeconds": {
-                "label": "更新頻度（秒）"
-            },
-            "copyButton": {
-                "label": "現在のコンフィギュレーションからコピーする（フォーマットのために保存して再度開く）"
-            },
-            "customBadge": {
-                "label": "カスタムバッジ"
-            },
-            "customCalendar": {
-                "error": "カスタムカレンダーのJSONフォーマットが無効です。詳細はコンソールをご確認ください。",
-                "hint": "カスタムカレンダー用のJSON定義。カスタムカレンダーのサポートや、JSONファイルのセットアップ方法は提供されていません。wikiにいくつかのサンプルカレンダーがあります。",
-                "label": "カスタムカレンダーJSON"
-            },
-            "customMoons": {
-                "error": "カスタムムーンのJSONフォーマットが無効なため、設定を以前の状態に戻しました。詳細はコンソールをご確認ください。",
-                "hint": "カスタム月のJSON定義。ムーンはカレンダーJSONで定義することもできますが、例えば、システムや他のモジュールで定義されたカレンダーを使用していて、ムーンを追加したい場合、カレンダーJSONを変更することなく、ムーンを上書きすることができます。カスタムムーンやJSONファイルのセットアップ方法についてのサポートはありません。",
-                "label": "カスタム・ムーンJSON"
-            },
-            "darknessSync": {
-                "hint": "シンクはライティングタブの下部でシーンごとに設定できます。",
-                "label": "シンクシーンの暗さ",
-                "options": {
-                    "darknessOnly": "シンク・ダークネスのみ",
-                    "default": "グローバル・デフォルトを使用",
-                    "noSync": "同期しない",
-                    "sync": "同期",
-                    "weatherOnly": "シンク・ウェザー専用"
-                }
-            },
-            "dawn": {
-                "hint": "時間帯のパーセンテージ、例えば1日が24時間の場合、0.5は12:00、0.25は06:00となる",
-                "label": "ドーン"
-            },
-            "dawnMacros": {
-                "label": "ドーン・マクロ"
-            },
-            "dayColor": {
-                "label": "デイ・カラー"
-            },
-            "dayOffset": {
-                "hint": "日数表示」の「カレンダーの開始日からの日数」オプションを使用する際に、日数に適用するオフセット。",
-                "label": "開始日オフセット"
-            },
-            "daysDisplay": {
-                "label": "日数表示",
-                "options": {
-                    "dayOfYear": "年",
-                    "none": "なし",
-                    "sinceEpoch": "カレンダー開始日"
-                }
-            },
-            "dusk": {
-                "hint": "時間帯のパーセンテージ、例えば1日が24時間の場合、0.5は12:00、0.75は18:00となります。",
-                "label": "夕暮れ"
-            },
-            "duskMacros": {
-                "label": "夕暮れマクロ"
-            },
+            "title": "設定メニュー",
             "firstTimeTitle": "初回セットアップ",
-            "genWeather": {
-                "hint": "毎日新しい天気を生成します。緯度を使用して気候を決定します。",
-                "label": "天気の生成",
-                "options": {
-                    "no": "いいえ",
-                    "noTemp": "はい（温度なし）",
-                    "tempC": "はい＋摂氏",
-                    "tempF": "はい＋華氏"
-                }
-            },
-            "hideExpired": {
-                "label": "期限切れイベントの非表示"
-            },
-            "hideInCombat": {
-                "label": "戦闘中に隠れる"
-            },
-            "hueIntensity": {
-                "hint": "Simple Timekeepingが暗さのレベルを設定すると、昼と夜の色に基づいた色合いもシーンに適用されます。",
-                "label": "シーンの色合いの強さ"
-            },
-            "journalEntryEvents": {
-                "label": "イベント・ジャーナル項目名"
-            },
-            "latitude": {
-                "hint": "緯度を0以外に設定した場合、夕暮れと夜明けの値は無視され、代わりに緯度に基づいて動的に計算されます。緯度は天気の計算にも使われます。典型的な緯度の範囲：赤道（0-15°）、熱帯（15-23.5°）、亜熱帯（23.5-35°）、温帯（35-55°）、亜極（55-66.5°）、極（66.5-90°）。",
-                "label": "緯度",
-                "options": {
-                    "boreal": "ボレアル",
-                    "coolTemperate": "涼しい温帯",
-                    "disabled": "無効",
-                    "equatorial": "赤道直下",
-                    "hotDesert": "熱い砂漠",
-                    "mediterranean": "地中海",
-                    "subpolar": "サブポーラー",
-                    "subtropical": "亜熱帯",
-                    "temperate": "温帯",
-                    "tropical": "トロピカル"
-                }
-            },
-            "macrosFieldset": {
-                "hint": "特定の時間帯に実行するマクロ。マクロは、実行権限を持つすべての接続ユーザーに対して実行されます。",
-                "label": "オートメーション・マクロ"
-            },
-            "middayMacros": {
-                "label": "真昼のマクロ"
-            },
-            "moonAutomation": {
-                "hint": "月がカレンダーJSONで定義されている場合、Simple Timekeepingは自動的に月のバッジを更新します。",
-                "label": "シンク・ムーン・バッジ"
-            },
-            "moonColor": {
-                "label": "ムーンフェイズ・カラー"
-            },
-            "moonLabel": {
-                "label": "ムーンフェイズ・ラベル"
-            },
-            "newDayMacros": {
-                "label": "新しい日のマクロ"
-            },
-            "nightColor": {
-                "label": "ナイトカラー"
-            },
-            "noPills": {
-                "label": "プレーンスタイル"
+            "tabs": {
+                "configuration": "構成",
+                "visibility": "視認性",
+                "aspect": "アスペクト",
+                "badges": "バッジ",
+                "time": "時間",
+                "calendar": "カレンダー",
+                "automation": "オートメーション",
+                "environment": "環境"
             },
             "seasons": {
                 "label": "シーズンカラー"
             },
-            "secondsPerRealSecond": {
-                "label": "秒/リアルタイム秒"
+            "macrosFieldset": {
+                "label": "オートメーション・マクロ",
+                "hint": "特定の時間帯に実行するマクロ。マクロは、実行権限を持つすべての接続ユーザーに対して実行されます。"
             },
-            "secondsPerRound": {
-                "label": "戦闘ラウンドあたりの秒数"
+            "newDayMacros": {
+                "label": "新しい日のマクロ"
             },
-            "setDateTime": {
-                "label": "現在の日付/時刻の設定"
+            "dawnMacros": {
+                "label": "ドーン・マクロ"
             },
-            "showFullDate": {
-                "label": "全日程を表示"
+            "duskMacros": {
+                "label": "夕暮れマクロ"
             },
-            "tabs": {
-                "aspect": "アスペクト",
-                "automation": "オートメーション",
-                "badges": "バッジ",
-                "calendar": "カレンダー",
-                "configuration": "構成",
-                "environment": "環境",
-                "time": "時間",
-                "visibility": "視認性"
-            },
-            "title": "設定メニュー",
-            "topOffset": {
-                "label": "トップマージン (px)"
+            "middayMacros": {
+                "label": "真昼のマクロ"
             },
             "use24HourClock": {
                 "label": "24時間時計を使用"
             },
-            "useCustomMoons": {
-                "label": "ムーンのカスタマイズ"
-            },
-            "useFullWidth": {
-                "label": "フォース最大幅"
+            "wideLetterSpacing": {
+                "label": "広い文字間隔"
             },
             "useMonospace": {
                 "label": "等幅フォントを使用する"
             },
-            "weatherColor": {
-                "label": "天候の色"
+            "noPills": {
+                "label": "プレーンスタイル"
+            },
+            "useFullWidth": {
+                "label": "フォース最大幅"
+            },
+            "hideInCombat": {
+                "label": "戦闘中に隠れる"
+            },
+            "topOffset": {
+                "label": "トップマージン (px)"
+            },
+            "hideExpired": {
+                "label": "期限切れイベントの非表示"
+            },
+            "copyButton": {
+                "label": "現在のコンフィギュレーションからコピーする（フォーマットのために保存して再度開く）"
+            },
+            "customCalendar": {
+                "label": "カスタムカレンダーJSON",
+                "hint": "カスタムカレンダー用のJSON定義。カスタムカレンダーのサポートや、JSONファイルのセットアップ方法は提供されていません。wikiにいくつかのサンプルカレンダーがあります。",
+                "error": "カスタムカレンダーのJSONフォーマットが無効です。詳細はコンソールをご確認ください。"
+            },
+            "useCustomMoons": {
+                "label": "ムーンのカスタマイズ"
+            },
+            "customMoons": {
+                "label": "カスタム・ムーンJSON",
+                "hint": "カスタム月のJSON定義。ムーンはカレンダーJSONで定義することもできますが、例えば、システムや他のモジュールで定義されたカレンダーを使用していて、ムーンを追加したい場合、カレンダーJSONを変更することなく、ムーンを上書きすることができます。カスタムムーンやJSONファイルのセットアップ方法についてのサポートはありません。",
+                "error": "カスタムムーンのJSONフォーマットが無効なため、設定を以前の状態に戻しました。詳細はコンソールをご確認ください。"
+            },
+            "climateData": {
+                "label": "気候データ",
+                "hint": "天気と気温を生成するためのJSON定義。カスタム気候やJSONファイルのセットアップ方法のサポートはありません。"
+            },
+            "customBadge": {
+                "label": "カスタムバッジ"
+            },
+            "calendar": {
+                "label": "カレンダー",
+                "hint": "カスタムカレンダーJSONで定義されたカスタムカレンダー",
+                "default": "システム・デフォルト",
+                "custom": "カスタム"
+            },
+            "moonLabel": {
+                "label": "ムーンフェイズ・ラベル"
+            },
+            "moonColor": {
+                "label": "ムーンフェイズ・カラー"
+            },
+            "moonAutomation": {
+                "label": "シンク・ムーン・バッジ",
+                "hint": "月がカレンダーJSONで定義されている場合、Simple Timekeepingは自動的に月のバッジを更新します。"
             },
             "weatherLabel": {
                 "label": "ウェザーレーベル"
@@ -258,69 +164,175 @@
             "weatherOverlay": {
                 "label": "天気アニメ"
             },
-            "wideLetterSpacing": {
-                "label": "広い文字間隔"
+            "weatherColor": {
+                "label": "天候の色"
+            },
+            "showFullDate": {
+                "label": "全日程を表示"
+            },
+            "daysDisplay": {
+                "label": "日数表示",
+                "options": {
+                    "none": "なし",
+                    "sinceEpoch": "カレンダー開始日",
+                    "dayOfYear": "年"
+                }
+            },
+            "dayOffset": {
+                "label": "開始日オフセット",
+                "hint": "日数表示」の「カレンダーの開始日からの日数」オプションを使用する際に、日数に適用するオフセット。"
+            },
+            "dawn": {
+                "label": "ドーン",
+                "hint": "時間帯のパーセンテージ、例えば1日が24時間の場合、0.5は12:00、0.25は06:00となる"
+            },
+            "dusk": {
+                "label": "夕暮れ",
+                "hint": "時間帯のパーセンテージ、例えば1日が24時間の場合、0.5は12:00、0.75は18:00となります。"
+            },
+            "latitude": {
+                "label": "緯度",
+                "hint": "緯度を0以外に設定した場合、夕暮れと夜明けの値は無視され、代わりに緯度に基づいて動的に計算されます。緯度は天気の計算にも使われます。典型的な緯度の範囲：赤道（0-15°）、熱帯（15-23.5°）、亜熱帯（23.5-35°）、温帯（35-55°）、亜極（55-66.5°）、極（66.5-90°）。",
+                "options": {
+                    "disabled": "無効",
+                    "equatorial": "赤道直下",
+                    "tropical": "トロピカル",
+                    "subtropical": "亜熱帯",
+                    "hotDesert": "熱い砂漠",
+                    "mediterranean": "地中海",
+                    "temperate": "温帯",
+                    "coolTemperate": "涼しい温帯",
+                    "subpolar": "サブポーラー",
+                    "boreal": "ボレアル"
+                }
+            },
+            "genWeather": {
+                "label": "天気の生成",
+                "hint": "毎日新しい天気を生成します。緯度を使用して気候を決定します。",
+                "options": {
+                    "no": "いいえ",
+                    "noTemp": "はい（温度なし）",
+                    "tempC": "はい＋摂氏",
+                    "tempF": "はい＋華氏"
+                }
+            },
+            "dayColor": {
+                "label": "デイ・カラー"
+            },
+            "nightColor": {
+                "label": "ナイトカラー"
+            },
+            "hueIntensity": {
+                "label": "シーンの色合いの強さ",
+                "hint": "Simple Timekeepingが暗さのレベルを設定すると、昼と夜の色に基づいた色合いもシーンに適用されます。"
+            },
+            "badgeLabel": {
+                "label": "ラベル"
+            },
+            "badgeColor": {
+                "label": "カラー"
+            },
+            "secondsPerRound": {
+                "label": "戦闘ラウンドあたりの秒数"
+            },
+            "secondsPerRealSecond": {
+                "label": "秒/リアルタイム秒"
+            },
+            "journalEntryEvents": {
+                "label": "イベント・ジャーナル項目名"
+            },
+            "clockSeconds": {
+                "label": "更新頻度（秒）"
+            },
+            "setDateTime": {
+                "label": "現在の日付/時刻の設定"
+            },
+            "darknessSync": {
+                "label": "シンクシーンの暗さ",
+                "hint": "シンクはライティングタブの下部でシーンごとに設定できます。",
+                "options": {
+                    "default": "グローバル・デフォルトを使用",
+                    "sync": "同期",
+                    "noSync": "同期しない",
+                    "weatherOnly": "シンク・ウェザー専用",
+                    "darknessOnly": "シンク・ダークネスのみ"
+                }
             }
         },
-        "day": "日",
-        "days": "日数",
-        "in-progress": "進行中",
-        "moonPhase": {
-            "bloodMoon": "ブラッド・ムーン",
-            "celestialAlignment": "セレスティアル・アライメント",
-            "eclipse": "エクリプス",
-            "full": "満月",
-            "lastQuarter": "前四半期",
-            "manaMoon": "マナ・ムーン",
-            "new": "新月",
-            "shatteredMoon": "砕かれた月",
-            "spiritMoon": "スピリット・ムーン",
-            "twinMoons": "ツイン・ムーン",
-            "voidMoon": "ヴォイド・ムーン",
-            "waningCrescent": "ウイング・クレセント",
-            "waningGibbous": "衰えるギブス",
-            "waxingCrescent": "ワキシング・クレセント"
-        },
-        "paused": "休止",
-        "paused-info": "シンプルな計時 - 時刻の進みが一時停止され、クリックすると再開されます。",
-        "settings": {
-            "config-menu": {
-                "hint": "モジュールの設定を行う。",
-                "label": "設定",
-                "name": "構成"
+        "app": {
+            "searchEvents": "イベント検索",
+            "create-event": {
+                "eventTime": {
+                    "label": "イベント開始"
+                },
+                "eventEnd": {
+                    "label": "イベント終了（オプション）"
+                },
+                "duration": {
+                    "label": "開催時間（時間）"
+                },
+                "edit": {
+                    "label": "イベント時間の編集"
+                },
+                "eventAlreadyEnded": {
+                    "label": "イベントはすでに終了しました"
+                },
+                "eventIn": {
+                    "label": "In"
+                },
+                "eventTimeLeft": {
+                    "label": "左"
+                },
+                "repeat": {
+                    "label": "リピート",
+                    "options": {
+                        "none": "繰り返してはならない",
+                        "day": "毎日",
+                        "week": "毎週",
+                        "month": "毎月",
+                        "year": "毎年"
+                    }
+                }
+            },
+            "controls": {
+                "create-event": {
+                    "tooltip": "イベント作成"
+                },
+                "day-back": {
+                    "tooltip": "ある日戻る"
+                },
+                "hour-back": {
+                    "tooltip": "1時間戻る"
+                },
+                "hour-forward": {
+                    "tooltip": "1時間前"
+                },
+                "day-forward": {
+                    "tooltip": "前日"
+                },
+                "sunrise": {
+                    "tooltip": "日の出"
+                },
+                "sunset": {
+                    "tooltip": "サンセット"
+                },
+                "midday": {
+                    "tooltip": "真昼"
+                },
+                "midnight": {
+                    "tooltip": "ミッドナイト"
+                },
+                "configure": {
+                    "tooltip": "設定"
+                },
+                "toggle-events": {
+                    "tooltip": "イベント"
+                }
+            },
+            "weather": {
+                "generate": "生成する"
             }
         },
-        "unpaused-info": "シンプルな計時 - 時間の進みが再開され、クリックすると一時停止します。ゲームが一時停止していたり、戦闘中であったりしても、時間は一時停止したままです。",
-        "weather": {
-            "arcaneFog": "アルケイン・フォグ",
-            "ashfall": "アッシュフォール",
-            "blizzard": "ブリザード",
-            "bloodRain": "血の雨",
-            "celestialEclipse": "天食",
-            "clear": "クリア",
-            "cloudy": "曇り",
-            "drizzle": "霧雨",
-            "etherealDrizzle": "霧雨",
-            "fog": "霧",
-            "frozenHell": "凍てつく地獄",
-            "hail": "ヘイル",
-            "hurricane": "ハリケーン",
-            "luminousSky": "ルミナススカイ",
-            "manaStorm": "マナストーム",
-            "meteorShower": "流星群",
-            "mist": "ミスト",
-            "overcast": "曇り",
-            "partlyCloudy": "一部曇り",
-            "rain": "雨",
-            "sandstorm": "サンドストーム",
-            "snow": "雪",
-            "spectralStorm": "スペクトラル・ストーム",
-            "sunshower": "サンシャワー",
-            "thunderstorm": "雷雨",
-            "tornado": "トルネード",
-            "voidstorm": "ヴォイドストーム",
-            "wildMagicWinds": "ワイルド・マジック・ウィンズ",
-            "windy": "リフト"
-        }
+        "flags": {}
     }
 }

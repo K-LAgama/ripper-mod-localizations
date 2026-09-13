@@ -1,0 +1,16 @@
+{
+    "tile-scroll": {
+        "flags": {
+            "header": "タイルスクロール",
+            "enableScroll": "スクロール",
+            "enabled": "有効",
+            "scrollSpeed": "速度",
+            "scrollDirection": "方向",
+            "enableRotate": "回転を有効にする",
+            "repeat": "テクスチャの繰り返し",
+            "pivot": "回転軸",
+            "offset": "オフセット",
+            "parallax": "パララックス強度"
+        }
+    }
+}

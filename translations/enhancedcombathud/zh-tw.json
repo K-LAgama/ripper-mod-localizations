@@ -1,0 +1,263 @@
+{
+    "enhancedcombathud": {
+        "controls": {
+            "toggle": {
+                "title": "切換 Argon 戰鬥 HUD",
+                "warning": "Argon Combat HUD：尚未選取任何代幣。請選取一個代幣以啟用 HUD"
+            }
+        },
+        "settings": {
+            "color": {
+                "label": "顏色",
+                "text": "主色調",
+                "hint": "「動作」分頁的顏色以及 HUD 的其他主要功能"
+            },
+            "fore-color": {
+                "text": "文字顏色",
+                "hint": "文字顏色"
+            },
+            "color-bonus-action": {
+                "text": "額外動作顏色",
+                "hint": "「額外動作」分頁的顏色"
+            },
+            "color-free-action": {
+                "text": "自由行動色彩",
+                "hint": "「自由動作」分頁的顏色"
+            },
+            "color-reaction": {
+                "text": "反應色",
+                "hint": "「反應」分頁的顏色"
+            },
+            "color-end-turn": {
+                "text": "結束轉向顏色",
+                "hint": "末端轉角標籤的顏色"
+            },
+            "color-tooltip": {
+                "text": "工具提示顏色",
+                "hint": "工具提示以及「儲存／技能／工具」彈出視窗的顏色"
+            },
+            "theme": {
+                "name": "主題",
+                "hint": "HUD 的主題",
+                "custom": "自訂",
+                "helium": "氦",
+                "neon": "霓虹",
+                "argon": "氬",
+                "krypton": "氪",
+                "xenon": "氙",
+                "radon": "氡",
+                "oganesson": "奧加內森"
+            },
+            "globalTheme": {
+                "name": "主題模式",
+                "hint": "若設定為「玩家」，每位玩家都能選擇自己的主題；若設定為「世界」，則所有玩家將統一採用 GM 所選的主題。",
+                "choices": {
+                    "client": "客戶",
+                    "world": "世界"
+                }
+            },
+            "scale": {
+                "name": "比例尺",
+                "hint": "HUD 縮放比例 — 若已啟用自動縮放功能，此設定將作為計算出的縮放比例之乘數"
+            },
+            "dialogTheme": {
+                "name": "對話主題",
+                "hint": "將 Argon 主題套用至從 HUD 開啟的對話方塊"
+            },
+            "autoScale": {
+                "name": "自動縮放",
+                "hint": "根據螢幕大小自動調整 HUD 比例。忽略比例設定"
+            },
+            "alwaysOn": {
+                "name": "隨時在線",
+                "hint": "每當選取代幣時，自動顯示 HUD"
+            },
+            "leftPos": {
+                "name": "左側位置",
+                "hint": "距離左邊界之像素數"
+            },
+            "botPos": {
+                "name": "底部位置",
+                "hint": "距離底部邊框的像素數"
+            },
+            "playerDetailsBottom": {
+                "name": "底部顯示的球員詳細資料",
+                "hint": "在縱向畫面中，將玩家名稱與職業資訊置於畫面底部"
+            },
+            "preparedSpells": {
+                "name": "僅限已準備的法術",
+                "hint": "僅顯示已準備的法術"
+            },
+            "showTooltips": {
+                "name": "顯示工具提示",
+                "hint": "將滑鼠懸停時顯示工具提示"
+            },
+            "showTooltipsSpecial": {
+                "name": "顯示特殊動作的工具提示",
+                "hint": "當游標懸停在特殊動作（閃避、脫身、推開……）上時，顯示工具提示"
+            },
+            "showTooltipsAbilityMenuAbilities": {
+                "name": "顯示技能的工具提示",
+                "hint": "在技能選單中，當滑鼠懸停於技能上時顯示工具提示"
+            },
+            "showTooltipsAbilityMenuSkills": {
+                "name": "顯示技能的工具提示",
+                "hint": "在「能力」選單中，將技能的工具提示設定為懸停時顯示"
+            },
+            "showTooltipsAbilityMenuTools": {
+                "name": "顯示工具的工具提示",
+                "hint": "在「能力」選單中，當游標懸停於工具上時顯示工具提示"
+            },
+            "fadeOutInactive": {
+                "name": "淡出",
+                "hint": "若滑鼠未懸停在 HUD 上達 5 秒，則讓 HUD 漸隱"
+            },
+            "fadeoutDelay": {
+                "name": "淡出延遲",
+                "hint": "HUD 淡出前的延遲時間（以秒為單位）"
+            },
+            "fadeoutOpacity": {
+                "name": "淡出不透明度",
+                "hint": "HUD 淡出時的透明度"
+            },
+            "hideMacroPlayers": {
+                "name": "隱藏巨集列與播放清單",
+                "hint": "當 HUD 開啟時，隱藏巨集列和播放器清單"
+            },
+            "openCombatStart": {
+                "name": "在「戰鬥開始」時開啟",
+                "hint": "在戰鬥開始時開啟 HUD"
+            },
+            "tooltipScale": {
+                "name": "工具提示比例",
+                "hint": "工具提示的縮放比例"
+            },
+            "switchEquip": {
+                "name": "自動裝備",
+                "hint": "切換裝備組時自動裝備／卸下物品"
+            },
+            "showWeaponsItems": {
+                "name": "在「使用物品」區塊中顯示武器",
+                "hint": "在「使用物品」區塊中顯示武器。若您的武器欄位不足時，此功能相當實用"
+            },
+            "noAA": {
+                "name": "請勿套用動態效果",
+                "hint": "使用特殊動作時，請勿套用主動效果。（需重新載入）"
+            },
+            "noBlur": {
+                "name": "停用模糊效果",
+                "hint": "停用 HUD 上的模糊效果。此為效能設定，僅在遇到效能問題時才應啟用。"
+            },
+            "suppressWarnings": {
+                "name": "抑制警告",
+                "hint": "若發生錯誤，請勿顯示警告訊息，而應在背景中靜默失敗。"
+            },
+            "rangefinder": {
+                "name": "3D Canvas - 測距儀",
+                "hint": "當游標懸停於 HUD 中的項目時，啟用「3D 畫布測距儀」。啟用後將顯示與目標之間的距離——若目標超出範圍，距離數值將以紅色顯示。"
+            },
+            "rangepicker": {
+                "name": "目標選擇器",
+                "hint": "當使用需要選定目標的項目或動作時，系統會顯示一個目標計數器，該計數器會跟隨滑鼠游標移動，直到選定正確數量的目標為止；如有需要，請使用 +/- 鍵手動調整所需的目標數量。"
+            },
+            "rangepickerclear": {
+                "name": "目標選擇器 - 清除目標",
+                "hint": "使用需要選定目標的物品或動作時，請在進入「目標選擇器」模式之前，先清除所有目標。"
+            },
+            "thememenu": {
+                "name": "佈景主題自訂",
+                "hint": "設定、選擇並自訂 Argon 主題",
+                "label": "設定主題"
+            }
+        },
+        "hud": {
+            "pass": {
+                "name": "通過"
+            },
+            "endturn": {
+                "name": "結束回合"
+            },
+            "macro": {
+                "name": "宏",
+                "page": "頁面"
+            }
+        },
+        "themeOptions": {
+            "save": "儲存變更",
+            "export": "匯出主題",
+            "savePermanent": {
+                "label": "為所有使用者儲存自訂主題",
+                "tooltip": "將當前的自訂主題儲存至模組的儲存空間中。這樣一來，該主題便可在您所有的遊戲中供所有玩家使用。若要移除已儲存的主題，您需要透過檔案總管手動刪除其檔案（導航至：modules/enhancedcombathud/storage/themes）。 Foundry 目前不支援在程式內刪除檔案。"
+            },
+            "autoTextColorTitle": "根據背景自動設定文字顏色",
+            "autoTextColorHint": "此設定會根據背景顏色，將文字顏色調整為易於辨識的顏色。",
+            "exportThemeName": "匯出主題名稱：",
+            "exportTheme": {
+                "save": "儲存",
+                "cancel": "取消"
+            },
+            "themeTitle": "選擇主題",
+            "themeHint": "選擇主題後，系統會將預設的配色方案套用至 Argon。",
+            "portrait": "肖像色彩",
+            "mainAction": "主要動作色彩",
+            "bonusAction": "額外動作配色",
+            "freeAction": "免費動作色彩",
+            "reaction": "反應顏色",
+            "endTurn": "結束轉向顏色",
+            "tooltip": "工具提示顏色",
+            "abilityMenu": "技能選單顏色",
+            "buttons": "按鈕顏色",
+            "movement": "運動箱顏色",
+            "background": "背景顏色",
+            "color": "文字顏色",
+            "border": "邊框顏色",
+            "boxShadow": "盒陰影顏色",
+            "portraitBase": "當滑鼠未懸停在元素上時，背景／前景／邊框顏色",
+            "mainActionBase": "當滑鼠未懸停在元素上時的背景／前景／邊框顏色",
+            "mainActionHover": "滑鼠懸停在元素上時的背景色／前景色／邊框色",
+            "bonusActionBase": "當滑鼠未懸停在元素上時，背景／前景／邊框顏色",
+            "bonusActionHover": "滑鼠懸停在元素上時的背景色／前景色／邊框色",
+            "freeActionBase": "當滑鼠未懸停在元素上時，背景／前景／邊框顏色",
+            "freeActionHover": "滑鼠懸停在元素上時的背景色／前景色／邊框色",
+            "reactionBase": "當滑鼠未懸停在元素上時，背景／前景／邊框顏色",
+            "reactionHover": "滑鼠懸停在元素上時的背景色／前景色／邊框色",
+            "endTurnBase": "當滑鼠未懸停在元素上時，背景／前景／邊框顏色",
+            "endTurnHover": "滑鼠懸停在元素上時的背景色／前景色／邊框色",
+            "tooltipHeader": "工具提示／視窗標題列的背景色／前景色／邊框色",
+            "tooltipSubtitle": "工具提示中字幕的背景色／前景色／邊框色",
+            "tooltipBody": "工具提示／視窗主體的背景色／前景色／邊框色",
+            "abilityMenuBase": "當滑鼠未懸停在元素上時的前景／盒子陰影顏色",
+            "abilityMenuHover": "滑鼠懸停在元素上時的前景色／盒陰影色",
+            "buttonsBase": "當滑鼠未懸停於元素上時，背景／前景／邊框顏色",
+            "buttonsHover": "滑鼠懸停在元素上時的背景色／前景色／邊框色",
+            "movementUsed": "背景／顯示已使用移動格數的方框陰影",
+            "movementBaseMovement": "背景／顯示可用移動格位的方框外框陰影",
+            "movementDashMovement": "背景／顯示短橫線移動格數的方框陰影",
+            "movementDangerMovement": "背景／顯示移動格數超限的方框外框陰影"
+        },
+        "hotkey": {
+            "toggle": {
+                "name": "切換 Argon 戰鬥 HUD"
+            }
+        },
+        "err": {
+            "unsupportedActorType": "Argon：Argon Combat HUD 不支援「%t」類型的 Actor。",
+            "moduleNotActive": "Argon CORE：系統專用模組尚未安裝或未啟用，請安裝並啟用 %m 模組（如有）。"
+        },
+        "targetPicker": {
+            "dialog": {
+                "title": "目標選擇器教學",
+                "list": {
+                    "0": "「已選取／必選」目標的數量將隨您的游標移動而變化",
+                    "1": "<span>左鍵點擊</span>或按下 <span>T</span> 來鎖定一個標記",
+                    "2": "<span>右鍵點擊</span>以取消目標選取",
+                    "3": "按下 <span>+</span> 或 <span>-</span> 鍵，以手動增加／減少所需目標的數量"
+                }
+            }
+        },
+        "deleteEffectTitle": "刪除效果",
+        "deleteEffectContent": "您確定要刪除這個特效嗎？",
+        "confirmRerollInitiativeTitle": "「重擲」倡議",
+        "confirmRerollInitiativeContent": "你確定要重新擲先攻骰嗎？"
+    }
+}

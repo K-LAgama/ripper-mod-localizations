@@ -1,0 +1,12 @@
+{
+    "levelsvolumetrictemplates.settings.volPercent.name": "Объемная доля",
+    "levelsvolumetrictemplates.settings.volPercent.hint": "Процент от объема или площади, который считается допустимой целью",
+    "levelsvolumetrictemplates.settings.ignoreSelf.name": "Игнорировать себя",
+    "levelsvolumetrictemplates.settings.ignoreSelf.hint": "При размещении регионов игнорировать «Self»",
+    "levelsvolumetrictemplates.settings.ignoreFriendly.name": "Игнорировать дружественных персонажей",
+    "levelsvolumetrictemplates.settings.ignoreFriendly.hint": "При размещении регионов игнорировать дружественные персонажи",
+    "levelsvolumetrictemplates.settings.targetOnChange.name": "Цель — перемены",
+    "levelsvolumetrictemplates.settings.targetOnChange.hint": "Цель: изменение предварительного просмотра региона",
+    "levelsvolumetrictemplates.settings.targetOnPlacement.name": "Цель по трудоустройству",
+    "levelsvolumetrictemplates.settings.targetOnPlacement.hint": "Настройка размещения по региону (отключить, чтобы использовать модуль в качестве API)"
+}

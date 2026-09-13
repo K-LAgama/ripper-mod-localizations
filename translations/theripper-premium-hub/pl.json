@@ -1,0 +1,63 @@
+{
+    "theripper-premium-hub": {
+        "settings": {
+            "autoCheck": {
+                "name": "Sprawdzaj dostępność aktualizacji przy uruchomieniu systemu",
+                "hint": "Podczas ładowania świata automatycznie sprawdzać, czy któreś z moich modułów premium mają aktualizacje."
+            },
+            "checkDisabled": {
+                "name": "Sprawdź moduły, które nie są włączone",
+                "hint": "Sprawdź dostępność aktualizacji dla modułów, które są zainstalowane, ale nie są włączone."
+            }
+        },
+        "tweaks-menu": {
+            "title": "Poprawki",
+            "label": "Konfiguracja ustawień zaawansowanych",
+            "hint": "Skonfiguruj niektóre funkcje ułatwiające korzystanie z programu, takie jak makra startowe, przyciski czyszczenia nagłówków oraz poprawki CSS.",
+            "tabs": {
+                "misc": "Różne",
+                "startup-macros": "Makra uruchamiające",
+                "css-tweaks": "Poprawki w CSS"
+            },
+            "initMacros": {
+                "name": "Makra startowe",
+                "hint": "Uruchom makra przy wczytywaniu świata. Makra są uruchamiane w kolejności, w jakiej zostały tutaj wymienione."
+            },
+            "readyMacros": {
+                "name": "Gotowe makra",
+                "hint": "Uruchom makra, gdy klient będzie gotowy. Makra są uruchamiane w kolejności, w jakiej zostały tutaj wymienione."
+            },
+            "cssTweak": {
+                "name": "Poprawki w CSS",
+                "hint": "Napisz własny kod CSS, aby zmodyfikować style Foundry lub modułów. Dostępne są trzy pola ułatwiające organizację, ale można też skorzystać tylko z jednego pola."
+            },
+            "cleanHeaderButtons": {
+                "name": "Przejrzyste przyciski w nagłówku",
+                "hint": "Usuń tekst z przycisków w nagłówkach, aby wyglądały bardziej przejrzyście. Jeśli korzystasz z wielu moich modułów, w nagłówkach okien może pojawić się sporo przycisków – ta opcja usuwa z nich tekst. (Wymaga biblioteki LibWrapper)"
+            },
+            "compactSidebar": {
+                "name": "Kompaktowy pasek boczny",
+                "hint": "Zmniejsz rozmiar pozycji w pasku bocznym, aby na ekranie zmieściło się więcej elementów."
+            },
+            "enableSettingsSwap": {
+                "name": "Wymuszone ustawienia klienta",
+                "hint": "Włącz opcję zmiany ustawień klienta na ustawienia globalne. Spowoduje to zastosowanie wybranych ustawień dla wszystkich klientów, a gracze nie będą już mogli ich zobaczyć."
+            },
+            "diceTray": {
+                "name": "Taca na kości",
+                "hint": "Dodaj tacę na kości do okna czatu. Dzięki temu będziesz mógł rzucać kośćmi i dodawać do wyników modyfikatory."
+            },
+            "autoRotate": {
+                "name": "Automatyczne obracanie",
+                "hint": "Automatycznie obracaj tokeny tak, aby były skierowane w kierunku ruchu i w stronę docelowego tokenu.",
+                "none": "Niepełnosprawni",
+                "defaultOn": "Włączone (domyślnie włączone)",
+                "defaultOff": "Włączone (domyślnie wyłączone)",
+                "on": "Włączone",
+                "off": "Niepełnosprawni",
+                "default": "Domyślnie"
+            }
+        },
+        "wtcNotification": "Konfiguracja parametru {setting} została ustawiona na {value}. Aby zmiany zaczęły obowiązywać, należy ponownie uruchomić grę. Zmiany w ustawieniach zostaną zapisane dopiero po ponownym uruchomieniu gry."
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "three-actor-portrait": {
+        "settings": {
+            "authKey": {
+                "name": "HeroForge 驗證金鑰",
+                "hint": "請在此處輸入您的認證金鑰。您可以在 HeroForge 帳戶設定中找到它（帳戶 → 個人資料 → 存取金鑰）。若您變更了 HeroForge 密碼，則需更新認證金鑰。"
+            },
+            "disablePortrait": {
+                "name": "停用 3D 人像",
+                "hint": "停用所有角色的 3D 人像功能。建議用於低階裝置及網路速度較慢的情況。"
+            },
+            "playerCanEditPortrait": {
+                "name": "允許玩家編輯鏡頭位置",
+                "hint": "允許玩家編輯 3D 人像中鏡頭的位置。"
+            },
+            "autoRotate": {
+                "name": "自動旋轉",
+                "hint": "在 3D 人像模式下自動旋轉相機。"
+            },
+            "rotationSpeed": {
+                "name": "轉速",
+                "hint": "在「3D 肖像」模式下，相機的旋轉速度。"
+            },
+            "license-agreement": {
+                "name": "接受服務條款",
+                "hint": "啟用此設定即表示您同意《3D Portraits》的服務條款。本模組使用 HeroForge API，任何未經 Sky Castle Studio 許可而試圖對 API 進行逆向工程、擷取或使用的行為，均違反服務條款。 若您希望在自己的專案中使用 HeroForge API，請透過 support@heroforge.com 聯絡 Sky Castle Studio。"
+            },
+            "maxContexts": {
+                "name": "最大同時拍攝的人像數量",
+                "hint": "可同時顯示的肖像最大數量。其他模組或其他瀏覽器分頁可能會使用 Canvas 上下文；若您遇到 WebGL 當機的情況，建議降低此數值。WebGL 的上下文數量上限為 16 個。"
+            }
+        },
+        "portrait-preview": {
+            "save-pose": "儲存姿勢",
+            "download": "下載",
+            "toggle-rotate": "切換自動旋轉",
+            "camera-position-saved": "已儲存相機位置",
+            "topdown": "俯視圖",
+            "outline": "切換大綱"
+        },
+        "notifications": {
+            "maxContextExceeded": "您已達到可同時顯示的 3D 肖像最大數量，最舊的那張已關閉。您可以在模組設定中更改此設定。"
+        }
+    }
+}

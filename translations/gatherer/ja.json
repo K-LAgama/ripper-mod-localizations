@@ -1,0 +1,121 @@
+{
+    "TYPES": {
+        "JournalEntryPage": {
+            "gatherer": {
+                "gatherer": "収集者"
+            }
+        }
+    },
+    "gatherer": {
+        "gatherer": "収集者",
+        "gathered": "まとめ",
+        "found": "見つかりました",
+        "quantity": "数量",
+        "minigame": {
+            "title": "「ギャザラー」ミニゲーム"
+        },
+        "sheet": {
+            "err": {
+                "noDraws": "この集合場所は使用不可となっており、リセットされるまで再び使用することはできません。",
+                "noActor": "ギャザリングを実行するアクターがいません。トークンを選択するか、ご自身にキャラクターを割り当ててください。",
+                "noReq": "ここに集まるための要件を満たしていません。不足しているもの：",
+                "noItem": "該当する項目が見つかりません。スペルを確認の上、もう一度お試しください。",
+                "noExp": "この場所からは、資源を一切集めませんでした……",
+                "noGM": "GMユーザーは、収集を行うために接続されている必要があります。"
+            },
+            "gather": "集まる",
+            "reset": "リセット",
+            "edit": "編集",
+            "remaining": "残りのプル数",
+            "time": "リセットは",
+            "quantity": "数量",
+            "waitingFirst": "最初の抽選を待っている"
+        },
+        "flags": {
+            "table": {
+                "label": "折りたたみ式テーブル"
+            },
+            "time": {
+                "label": "時間",
+                "placeholder": "リセットまでの残り時間（時間単位）"
+            },
+            "quantity": {
+                "label": "数量",
+                "placeholder": "数値またはロール式"
+            },
+            "draws": {
+                "label": "プル",
+                "placeholder": "スポットが使い果たされる前に引き出す",
+                "notes": "該当するギャザラーページからのデータを取得するには、この欄を空白のままにしてください"
+            },
+            "require": {
+                "label": "必要条件",
+                "placeholder": "カンマ区切りの項目リスト"
+            },
+            "minigame": {
+                "label": "ミニゲーム",
+                "placeholder": "ミニゲームの所要時間（ミリ秒単位）"
+            },
+            "expression": {
+                "label": "表現",
+                "placeholder": "実行すべきマクロの条件"
+            },
+            "systemAbil": {
+                "label": "確認"
+            },
+            "DC": {
+                "label": "DC",
+                "placeholder": "DC"
+            },
+            "toolCheck": {
+                "label": "ツール",
+                "placeholder": "ツール名"
+            },
+            "toolDC": {
+                "label": "DC",
+                "placeholder": "DC"
+            },
+            "gatherSheet": {
+                "label": "収穫記録表",
+                "placeholder": "「ドロップギャザラー」のページはこちら"
+            },
+            "modifierList": {
+                "label": "修飾子",
+                "add": "修飾子を追加",
+                "hint": "ダイスの出目または式によって返された値のいずれかがDC以上である場合（より大きい方の値を用いる）、収集できるアイテムの数は修正式に従って調整されます。 修飾子の先頭に算術演算子を指定することができます。指定がない場合は、デフォルトで「＋（プラス）」とみなされます。例えば、「*1d4」とすると、収集したアイテムの数が1d4倍されます。"
+            }
+        },
+        "gatherer-actor-config": {
+            "title": "Gathererの設定",
+            "notes": "対象のトークンを取得するには、以下の内容でマクロを作成してください：",
+            "notes2": "または、キーボードショートカットを使用してください："
+        },
+        "error": {
+            "notGatherer": "これは「ギャザラーシート」ではありません。別の「ギャザラーシート」を選択して、もう一度お試しください。",
+            "noDraws": "このクリーチャーからは、これ以上資源を採取することはできません。",
+            "noJournal": "このトークンには集合場所が設定されていません。有効な集合場所が設定されているトークンを選択して、もう一度お試しください。",
+            "cantHarvest": "このトークンを獲得するための条件が満たされていません"
+        },
+        "settings": {
+            "resourcePath": {
+                "name": "ハーベスト・リソース・パス",
+                "hint": "ハーベスティングが可能かどうかを確認するためのパス。たとえば、DnD5eの場合、トークンが生存しているかどうかを確認するには「attributes.hp.value」となります。"
+            },
+            "quantityPath": {
+                "name": "数量パス",
+                "hint": "アイテムの数量へのデータパス。「system」から始まる（「system」自体は除く）。たとえば、DnD5eの場合、これは「quantity」となります。"
+            },
+            "resourceValue": {
+                "name": "収穫資源の価値",
+                "hint": "収穫が可能かどうかを確認するための値。たとえばDnD5eの場合、トークンのHPがゼロかどうかを確認するには「0」を指定します。"
+            },
+            "enableHarvesting": {
+                "name": "ハーベスティングを有効にする"
+            },
+            "migrateOnStartup": {
+                "name": "起動時に設定を移行する",
+                "hint": "この機能が有効になっている場合、モジュールは起動時にジャーナルデータを移行します。マクロ「game.modules.get(\"gatherer\").API.migration.showManualMigrationDialog()」を使用すると、設定を手動で移行することができます。"
+            }
+        }
+    }
+}

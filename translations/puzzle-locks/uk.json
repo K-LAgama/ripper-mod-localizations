@@ -1,0 +1,335 @@
+{
+    "puzzle-locks": {
+        "settings": {},
+        "general-lock-config": {
+            "header-buttons": {
+                "copyContentLink": "Скопіювати посилання на вміст",
+                "unlock": "Відкрити головоломку"
+            },
+            "title": "Загальні налаштування блокування",
+            "permissionWarning": "За замовчуванням для цього документа не встановлено право власності «Немає». За певних обставин гравці можуть обійти блокування. Рекомендується встановити право власності за замовчуванням як «Немає».",
+            "fixPermission": "Виправити право власності",
+            "label": {
+                "label": "Етикетка",
+                "placeholder": "Система безпеки дверей"
+            },
+            "description": {
+                "label": "Опис",
+                "placeholder": "Це система безпеки для дверей."
+            },
+            "unlocked": {
+                "label": "Розблоковано"
+            },
+            "attempts": {
+                "label": "Спроби",
+                "notes": "Кількість дозволених спроб; для необмеженої кількості встановіть значення -1."
+            },
+            "lockType": {
+                "label": "Тип замка",
+                "configure": "Налаштувати",
+                "none": "Немає (Вимкнено)",
+                "optgroupContext": "Потрібен контекст",
+                "optgroupNoContext": "Контекст не потрібен",
+                "notes": "Тип задачі, який буде використано для захисту документа. Деякі задачі вимагають врахування контексту для їхнього вирішення, тоді як інші можна вирішити без будь-якої зовнішньої інформації."
+            },
+            "unlockSound": {
+                "label": "Увімкнути звук"
+            },
+            "interactionSound": {
+                "label": "Звук взаємодії"
+            },
+            "backgroundImage": {
+                "label": "Фонове зображення"
+            },
+            "glow": {
+                "label": "Ефект світіння",
+                "notes": "Увімкніть ефекти підсвічування/тіні для рамок і тексту — це зробить тему більш підходящою для науково-фантастичних сцен."
+            },
+            "textColor": {
+                "label": "Колір тексту"
+            },
+            "primaryColor": {
+                "label": "Основний колір",
+                "notes": "Деякі типи замків можуть не підтримувати цей колір. Залиште поле порожнім, щоб використовувати колір за замовчуванням для цього замка."
+            },
+            "secondaryColor": {
+                "label": "Додатковий колір",
+                "notes": "Деякі типи замків можуть не використовувати цей колір. Залиште поле порожнім, щоб використовувати колір за замовчуванням для цього замка."
+            },
+            "primaryFont": {
+                "label": "Основний шрифт"
+            },
+            "secondaryFont": {
+                "label": "Додатковий шрифт",
+                "notes": "Деякі типи замків можуть не використовувати цей шрифт."
+            },
+            "font": {
+                "inherit": "Успадкувати"
+            },
+            "unlockMacro": {
+                "label": "Розблокувати макрос",
+                "notes": "Макрос, який виконується після розблокування блокування. У цьому макросі можна скористатися змінною «object», щоб отримати документ, який було розблоковано, та змінною «user», щоб отримати ім’я користувача, який його розблокував."
+            },
+            "permission": {
+                "label": "Про права доступу до розблокування",
+                "notes": "Визначає, який рівень доступу отримує гравець до документа після його розблокування, а також чи надавати цей доступ лише гравцеві, який його розблокував, чи всім гравцям. Якщо документ є «Дверями», це налаштування ігноруватиметься, і двері будуть розблоковані.",
+                "noChange": "Без змін",
+                "all": "Усі гравці",
+                "unlocking": "Розблокування гравця"
+            }
+        },
+        "number-lock": {
+            "name": "Число/Символ",
+            "description": "Замок у вигляді PIN-коду. Гравцеві потрібно ввести правильний код, щоб розблокувати документ. Для створення більш тематичного замка цифри можна замінити символами або зображеннями.",
+            "playerInfo": "Оскільки це не головоломка, ведучий повинен надати гравцям підказки або вказівки щодо введення правильного коду.",
+            "code": {
+                "label": "Код"
+            },
+            "keypad": {
+                "label": "Клавіатура"
+            }
+        },
+        "password-lock": {
+            "name": "Пароль",
+            "description": "Проста блокування паролем. Користувач повинен ввести правильний пароль, щоб розблокувати документ.",
+            "playerInfo": "Оскільки це не головоломка, ведучий повинен надати гравцям підказки або вказівки щодо введення правильного пароля.",
+            "password": {
+                "label": "Пароль",
+                "placeholder": "a$$w0rd"
+            }
+        },
+        "item-lock": {
+            "name": "Позиція",
+            "description": "Замок, для розблокування якого гравцеві потрібно перетягнути один або кілька предметів у відповідні слоти.",
+            "playerInfo": "Щоб вирішити цю головоломку, можна або надати гравцям контекстні підказки чи натяки, які допоможуть зрозуміти, які предмети куди поміщати, або ж використати для відповідних місць конкретні зображення, що містять необхідну інформацію для вгадування правильних предметів.",
+            "item": {
+                "label": "Назва товару"
+            },
+            "itemImage": {
+                "label": "Зображення слота"
+            },
+            "deleteItems": {
+                "label": "Видалити елементи",
+                "notes": "Якщо цей прапорець встановлено, предмети будуть видалені з інвентарю гравця після розблокування замка."
+            }
+        },
+        "switches-lock": {
+            "name": "Перемикачі",
+            "description": "Замок, для розблокування якого гравцеві потрібно встановити набір бінарних перемикачів у правильне положення.",
+            "playerInfo": "Оскільки це не головоломка, ведучий повинен надати гравцям підказки або інструкції щодо правильного налаштування перемикачів.",
+            "switchesSolution": {
+                "label": "Налаштування комутаторів",
+                "notes": "Розв’язок — конфігурація перемикачів у форматі «0110». Кожна цифра позначає перемикач: 0 — вимкнено, 1 — увімкнено. Кількість перемикачів може бути довільною."
+            },
+            "showSwitches": {
+                "label": "Показати перемикачі",
+                "notes": "Чи відображати кнопки перемикача. Якщо ця опція вимкнена, відображатимуться лише індикатори стану увімкнення/вимкнення."
+            }
+        },
+        "cryptex-lock": {
+            "name": "Криптекс",
+            "description": "Замок, для відкриття якого гравцеві потрібно повернути набір циліндрів у правильне положення, щоб утворити правильну комбінацію. Для позначення символів на циліндрах можуть використовуватися емодзі або гліфи. Різні циліндри можуть мати різні набори символів.",
+            "playerInfo": "Щоб розгадати цю загадку, можна або надати гравцям зовнішні контекстні підказки, які допоможуть їм дізнатися про деяких або всіх персонажів, або, обмеживши кількість символів на кожному циліндрі, дати гравцям можливість відгадати відповідь методом проб і помилок.",
+            "solution": {
+                "label": "Рішення"
+            },
+            "cylinder": {
+                "label": "Циліндр",
+                "notes": "Циліндр, який використовує криптекс. Кожен символ циліндра слід відокремлювати комою."
+            },
+            "glyphs": {
+                "label": "Гліфи",
+                "notes": "Символи, які можна використовувати в криптексі. Кожен символ слід відокремлювати комою."
+            }
+        },
+        "sudoku-lock": {
+            "name": "Судоку",
+            "description": "Замок, для розблокування якого гравцеві потрібно вирішити головоломку «судоку». Числа, вказані за замовчуванням, можна замінити зображеннями або символами, щоб замок краще відповідав тематиці.",
+            "playerInfo": "Щоб розв’язати цю головоломку, гравцям знадобляться метазнання про правила судоку, або ви можете надати їм підказку чи інструкції щодо її розв’язання.",
+            "generate": "Створити судоку",
+            "difficulty": {
+                "label": "Складність"
+            },
+            "grid": {
+                "4": "4x4",
+                "9": "9×9",
+                "label": "Сітка"
+            },
+            "sudoku": {
+                "label": "Судоку"
+            },
+            "key": {
+                "label": "Ключ"
+            }
+        },
+        "image-wheel": {
+            "name": "Колесо зображень",
+            "description": "Замок, який вимагає від гравця повернути набір концентричних кілець у правильне положення, щоб вирівняти зображення.",
+            "playerInfo": "Для вирішення цієї головоломки не потрібно жодного зовнішнього контексту — гравці можуть просто обертати коліщатка, доки зображення не вирівняється.",
+            "image": {
+                "label": "Зображення"
+            },
+            "wheelCount": {
+                "label": "Кількість коліс"
+            },
+            "angleStep": {
+                "label": "Кут сходинки"
+            },
+            "fixed": {
+                "label": "Фіксований колесо",
+                "notes": "Колесо, яке не слід обертати. При цьому 1 — це найзовнішнє колесо."
+            }
+        },
+        "mastermind-lock": {
+            "name": "«Майстер-майнд»",
+            "description": "Замок, який вимагає від гравця вгадати правильну комбінацію кольорів або літер, щоб розблокувати документ. Щоразу, коли гравець намагається розблокувати документ, він отримує інформацію про те, скільки кольорів або літер вказано правильно та знаходяться у правильному положенні. Зелений колір означає правильний колір і правильне положення, жовтий — правильний колір, але неправильне положення, а червоний — неправильний колір.",
+            "playerInfo": "Щоб розгадати цю головоломку, гравці можуть скористатися досвідом попередніх спроб, щоб зробити обґрунтовані припущення щодо правильної комбінації. Хоча метазнання не є обов’язковим, воно може допомогти гравцям робити більш обґрунтовані припущення.",
+            "reset": "Скинути",
+            "solution": {
+                "label": "Рішення",
+                "notes": "Відповідь на загадку про замок «Мастермайн». Кожен колір або букву слід відокремлювати комою. Можна використовувати кольори CSS, наприклад «red», або шістнадцяткові коди, наприклад «#ff0000»."
+            },
+            "pipOptions": {
+                "label": "Колки",
+                "notes": "Кольори або літери, які гравець може використовувати для вгадування відповіді. Кожен колір або літеру слід відокремлювати комою. Можна використовувати кольори CSS, наприклад «red», або шестнадцяткові коди, наприклад «#ff0000»."
+            }
+        },
+        "fill-blanks-lock": {
+            "name": "Заповніть пропуски",
+            "description": "Замок, для розблокування якого гравцеві потрібно заповнити пропуски в тексті. Гравцеві необхідно ввести правильні символи у правильному порядку.",
+            "playerInfo": "Щоб розгадати цю головоломку, гравці можуть скористатися контекстом головоломки, щоб заповнити пропуски. Ви також можете надати їм підказки або інструкції щодо її розв’язання.",
+            "solution": {
+                "label": "Solution",
+                "notes": "The solution to the fill in the blanks lock. This should be the full complete text with the blanks filled in.",
+                "placeholder": "The quick brown fox jumps over the lazy dog."
+            },
+            "text": {
+                "label": "Text",
+                "notes": "The text with the blanks that the player must fill in. Use underscores to represent the blanks.",
+                "placeholder": "The _____ brown fox jumps ____ the ____ dog."
+            },
+            "caseSensitive": {
+                "label": "Case Sensitive"
+            }
+        },
+        "mosaic-lock": {
+            "name": "Mosaic",
+            "description": "A lock that requires the player to complete a mosaic puzzle to unlock the document. The player must click on the tiles to rotate them and complete the image.",
+            "playerInfo": "No outside context is needed to solve this puzzle, players can simply rotate the tiles until the image is complete.",
+            "mosaicImage": {
+                "label": "Mosaic Image",
+                "notes": "The image that the player must complete. It's recommended to use a square image for best results."
+            },
+            "mosaicSize": {
+                "label": "Mosaic Size",
+                "notes": "The number of rows and columns in the mosaic."
+            }
+        },
+        "sound-lock": {
+            "name": "Melody",
+            "description": "A lock that requires the player to listen to a melody and enter the correct note sequence to unlock the document.",
+            "playerInfo": "While no outside context is needed to solve this puzzle, players will need to have a good ear for music to solve it. Players more familiar with music theory will have an easier time solving this puzzle.",
+            "sequence": {
+                "label": "Sequence",
+                "notes": "The sequence of notes that the player must enter to unlock the document. Each note should be separated by a comma. You can use the following notes: C, C#, D, D#, E, F, F#, G, G#, A, A#, B. You can also use the following notation to increase or decrease the octave: +C, -C, ++A, --B. To set a custom duration per note (in milliseconds) you can use the following notation: C500, D#1000."
+            },
+            "chordDuration": {
+                "label": "Duration",
+                "notes": "The duration of each note in milliseconds."
+            },
+            "pauseBetweenNotes": {
+                "label": "Pause Between Notes",
+                "notes": "The duration of the pause between each note in milliseconds."
+            }
+        },
+        "fifteen-lock": {
+            "name": "Sliding Tiles",
+            "description": "A lock that requires the player to solve a sliding puzzle to unlock the document. The player must slide the tiles to form the correct image. The empty tile needs to be in the bottom right corner to unlock the document.",
+            "playerInfo": "No outside context is needed to solve this puzzle, players can simply slide the tiles until the image is complete.",
+            "shuffleDialog": "Random moves:",
+            "image": {
+                "label": "Image",
+                "notes": "The image that the player must form by sliding the tiles. It's recommended to use a square image for best results."
+            },
+            "size": {
+                "label": "Grid",
+                "notes": "The number of rows and columns in the sliding puzzle."
+            }
+        },
+        "four-by-four-lock": {
+            "name": "Pawns and Stars",
+            "description": "A lock that requires the player place pawns on a grid to form a specific pattern. Certain cells contain stars that must be covered by pawns, the amount of stars that needs to be covered is specified below and depends on the grid size. Every row and column must contain exactly the number of pawns indicated on the column or row headers.",
+            "playerInfo": "If Stars are enabled, players will need an hint to know how many stars they need to cover. Otherwise, it's possible to solve the puzzle without any external information.",
+            "pawnImage": {
+                "label": "Pawn Image",
+                "notes": "The image that represents the pawns."
+            },
+            "starImage": {
+                "label": "Star Image",
+                "notes": "The image that represents the stars."
+            },
+            "noStars": {
+                "label": "Ignore Stars",
+                "notes": "If checked, the stars will be removed and the player only needs to place the pawns in the correct positions."
+            },
+            "gridSize": {
+                "label": "Grid Size",
+                "notes": "The number of rows and columns in the grid."
+            },
+            "generate": "Generate Puzzle",
+            "puzzleGrid": {
+                "label": "Puzzle Grid",
+                "notes": "The puzzle grid. Please follow the syntax of a generated puzzle if you want to create your own. This shows the solved state, where 0 is an empty cell, 1 is a pawn, and 2 is a star and 3 is a pawn on a star."
+            },
+            "pawnNumber": "Pawns to place",
+            "starNumber": "Stars to cover"
+        },
+        "match-lock": {
+            "name": "Word/Image Match",
+            "description": "A lock that requires the player to match words to unlock the document. If a secret word is set, the incorrect letters will be stroked out and the remaining letters will form the secret word. In this case, the players must enter the secret word to unlock the document.",
+            "playerInfo": "In order to solve this puzzle, players can use the context of the puzzle to match the words. You can also provide them with hints or instructions on how to solve it.",
+            "enterSecretWord": "Enter the secret word.",
+            "matchTable": {
+                "label": "Match Table",
+                "notes": "The table that contains the words to match, you can also use image paths instead of words. The first column is the words to match, the second column is the words to match with. Each word pair should be separated by a '|' (pipe) character.\nThe left column will be displayed as written, the right column will be shuffled."
+            },
+            "secretWord": {
+                "label": "Secret Word",
+                "notes": "If set, random letters will be scattered around the center area of the puzzle, once the player has matched the words correctly, the incorrect letters will be stroked out and the remaining letters will form the secret word."
+            },
+            "dictionary": {
+                "label": "Dictionary",
+                "notes": "The dictionary that will be used for the random letters."
+            }
+        },
+        "flags": {},
+        "attempts": "Attempts Left",
+        "headerConfig": "Puzzle Lock",
+        "unlocked": "Unlocked",
+        "how-to": "How does this work?",
+        "how-to-player": "Player Instructions",
+        "chatMessage": "is attempting to unlock",
+        "sidebar-buttons": {
+            "unlock": "Attempt Unlock",
+            "configure": "Configure Lock",
+            "shareToChat": "Share to Chat",
+            "zoomPlus": "Zoom In",
+            "zoomMinus": "Zoom Out",
+            "shuffle": "Shuffle Puzzle",
+            "close": "Close"
+        },
+        "notifications": {
+            "noLock": "A lock has not been set on this document.",
+            "alreadyUnlocked": "This document is already unlocked.",
+            "noLockSelected": "No lock type has been selected.",
+            "unlocked": "Unlocked.",
+            "noGM": "A GM is required to be logged for you to be able to unlock this document.",
+            "failedAttempt": "Failed to unlock.",
+            "contentLinkCopied": "Content link copied to clipboard.",
+            "locked": "This document is locked. As a GM you are able to open it normally.",
+            "resetSuccess": "Puzzle reset successfully.",
+            "ownershipFixed": "Default Ownership set to 'None'.",
+            "noAttempts": "No attempts left."
+        }
+    }
+}

@@ -1,0 +1,73 @@
+{
+    "party-monitor-dock": {
+        "title": "Stacja dokująca Party Monitor",
+        "settings": {
+            "onlyConnected": {
+                "name": "Pokaż tylko graczy, którzy są online",
+                "hint": "Pokaż tylko graczy podłączonych do serwera"
+            },
+            "portraitSize": {
+                "name": "Rozmiar portretowy",
+                "hint": "Wielkość portretów w ławie oskarżonych"
+            },
+            "position": {
+                "name": "Pozycja doku",
+                "hint": "Położenie okna na ekranie",
+                "choices": {
+                    "docked": "Zadokowany",
+                    "horizontal": "Poziomy (pływający)",
+                    "vertical": "Pionowy (pływający)",
+                    "hidden": "Ukryte"
+                }
+            },
+            "dockAlignment": {
+                "name": "Dopasowanie HUD",
+                "hint": "Ustawienie wyświetlacza HUD na ekranie w pozycji zadokowanej",
+                "choices": {
+                    "flex-start": "Na górę",
+                    "center": "Centrum",
+                    "flex-end": "Na dole"
+                }
+            },
+            "hideInCombat": {
+                "name": "Ukrycie się podczas walki",
+                "hint": "Ukryj HUD podczas trwania walki"
+            },
+            "hideCompanions": {
+                "name": "Ukryj towarzyszy",
+                "hint": "Ukryj towarzyszy z listy członków drużyny"
+            },
+            "cornerImage": {
+                "name": "Zdjęcie w rogu",
+                "hint": "Obraz, który ma być wyświetlany w rogach paska aplikacji. Aby wyłączyć tę opcję, pozostaw pole puste."
+            },
+            "edgeImage": {
+                "name": "Obraz krawędzi",
+                "hint": "Obraz, który ma wypełnić przestrzeń między narożnikami doku. Aby wyłączyć tę opcję, pozostaw pole puste."
+            }
+        },
+        "app": {
+            "buttons": {
+                "toggle-nav": "Przełącz przyciski nawigacyjne",
+                "toggle-dock": "Przełącz dok",
+                "reduce": "Zmniejsz rozmiar",
+                "enlarge": "Zwiększ rozmiar",
+                "start-follow": "Zacznij obserwować",
+                "stop-follow": "Przestań obserwować",
+                "context": {
+                    "follow": "Obserwuj",
+                    "mount": "Góra",
+                    "epicRoll": "Wymagany rzut",
+                    "raise-hand": "Podnieś rękę"
+                }
+            }
+        },
+        "flags": {},
+        "notifications": {
+            "follow": " teraz śledzę ",
+            "unfollow": " przestałem obserwować ",
+            "mounted": " został zamontowany ",
+            "dismounted": " zsiadł z konia "
+        }
+    }
+}

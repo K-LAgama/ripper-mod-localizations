@@ -1,0 +1,12 @@
+{
+    "levelsvolumetrictemplates.settings.volPercent.name": "Percentuale in volume",
+    "levelsvolumetrictemplates.settings.volPercent.hint": "La percentuale di volume o di area considerata come obiettivo valido",
+    "levelsvolumetrictemplates.settings.ignoreSelf.name": "Ignora \"Self\"",
+    "levelsvolumetrictemplates.settings.ignoreSelf.hint": "Ignora \"Self\" quando si posizionano le regioni",
+    "levelsvolumetrictemplates.settings.ignoreFriendly.name": "Ignora i personaggi amici",
+    "levelsvolumetrictemplates.settings.ignoreFriendly.hint": "Ignora i personaggi alleati durante il posizionamento delle regioni",
+    "levelsvolumetrictemplates.settings.targetOnChange.name": "Obiettivo: il cambiamento",
+    "levelsvolumetrictemplates.settings.targetOnChange.hint": "Modifica dell'anteprima della regione di destinazione",
+    "levelsvolumetrictemplates.settings.targetOnPlacement.name": "Obiettivo di collocamento",
+    "levelsvolumetrictemplates.settings.targetOnPlacement.hint": "Impostazione della regione di destinazione (disattivare per utilizzare il modulo come API)"
+}

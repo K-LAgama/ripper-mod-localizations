@@ -1,0 +1,11 @@
+{
+    "tokenz": {
+        "tokenconfig": {
+            "zindex": "Przesunięcie wskaźnika Z"
+        },
+        "send-to-back": {
+            "name": "Wyślij token z powrotem",
+            "hint": "Gdy kursor myszy znajdzie się nad stosem żetonów, naciśnij ten klawisz, aby żeton znajdujący się na wierzchu przesunął się na dno stosu"
+        }
+    }
+}

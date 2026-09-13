@@ -1,77 +1,83 @@
 {
     "epic-rolls-5e": {
-        "button-tooltip": "配置史诗掷骰<hr>右键查看最近的掷骰",
         "check": "检定",
-        "complete-roll": "结束史诗掷骰",
-        "death": "死亡",
-        "epicRoll": "史诗掷骰",
-        "failure": "失败",
-        "get-roll-data": {
-            "ERROR": {
-                "noActors": "未选择任何角色进行掷骰，请至少选择一个角色",
-                "noContest": "选择了竞赛者，但未选择竞赛类型",
-                "noContestants": "选择了竞赛掷骰类型，但未选择竞赛者",
-                "noDC": "未输入掷骰的 DC，请输入一个 DC",
-                "noType": "未选择掷骰类型，请选择一种类型"
-            },
-            "VsDCNotes": "掷骰的 DC",
-            "allowReroll": "允许重掷",
-            "allowRerollNotes": "允许玩家重新掷骰",
-            "autoColor": "自动颜色",
-            "autoColorNotes": "根据掷骰类型自动着色掷骰横幅",
-            "available": "可用",
-            "blindRoll": "暗掷",
-            "blindRollNotes": "对玩家隐藏掷骰结果",
-            "color": "颜色",
-            "colorNotes": "掷骰横幅的颜色",
-            "contest": "竞赛",
-            "contestInfo": "要标记竞争者，请右键单击一个角色和/或一个掷骰",
-            "hideNames": "隐藏名称",
-            "hideNamesNotes": "对玩家隐藏非玩家所有者的角色名称",
-            "macro": "保存至宏",
-            "npc": "非玩家角色",
-            "player": "玩家角色",
-            "rollOptions": "掷骰选项",
-            "save-macro": "已创建史诗掷骰宏于",
-            "saveDefaultOptions": "保存为默认",
-            "saveDefaultOptionsNotification": "当前选项已保存为默认",
-            "selected": "已选",
-            "showDC": "显示 DC",
-            "showDCNotes": "启用后，玩家将能看到 DC",
-            "showRollResults": "显示结局文本",
-            "showRollResultsNotes": "显示成功/失败的结局文本",
-            "startRoll": "开始史诗掷骰",
-            "title": "配置史诗掷骰",
-            "useAverage": "使用平均值",
-            "useAverageNotes": "使用所有结果的平均值来确定成功或失败"
-        },
         "save": "豁免",
+        "death": "死亡",
+        "success": "成功",
+        "failure": "失败",
+        "button-tooltip": "配置史诗掷骰<hr>右键查看最近的掷骰",
+        "complete-roll": "结束史诗掷骰",
+        "epicRoll": "史诗掷骰",
         "settings": {
-            "cleanupMessages": {
-                "hint": "在史诗掷骰完成后删除掷骰消息",
-                "name": "清理消息"
+            "introSound": {
+                "name": "开场音效",
+                "hint": "掷骰开始时播放的音效"
+            },
+            "successSound": {
+                "name": "成功音效",
+                "hint": "掷骰成功时播放的音效"
             },
             "failureSound": {
-                "hint": "掷骰失败时播放的音效",
-                "name": "失败音效"
-            },
-            "introSound": {
-                "hint": "掷骰开始时播放的音效",
-                "name": "开场音效"
+                "name": "失败音效",
+                "hint": "掷骰失败时播放的音效"
             },
             "recapMessage": {
-                "hint": "配置谁能看到史诗掷骰完成后显示的消息",
                 "name": "总结消息",
+                "hint": "配置谁能看到史诗掷骰完成后显示的消息",
                 "options": {
                     "none": "无",
+                    "gm": "GM",
                     "public": "公开"
                 }
             },
-            "successSound": {
-                "hint": "掷骰成功时播放的音效",
-                "name": "成功音效"
+            "cleanupMessages": {
+                "name": "清理消息",
+                "hint": "在史诗掷骰完成后删除掷骰消息"
             }
         },
-        "success": "成功"
+        "get-roll-data": {
+            "customFormula": "自定义公式",
+            "customLabel": "标签",
+            "customLabelNotes": "卷筒的自定义引言标签",
+            "formula": "公式",
+            "title": "配置史诗掷骰",
+            "startRoll": "开始史诗掷骰",
+            "macro": "保存至宏",
+            "save-macro": "已创建史诗掷骰宏于",
+            "player": "玩家角色",
+            "npc": "非玩家角色",
+            "selected": "已选",
+            "available": "可用",
+            "rollOptions": "掷骰选项",
+            "VsDCNotes": "掷骰的 DC",
+            "showDC": "显示 DC",
+            "showDCNotes": "启用后，玩家将能看到 DC",
+            "useAverage": "使用平均值",
+            "useAverageNotes": "使用所有结果的平均值来确定成功或失败",
+            "allowReroll": "允许重掷",
+            "allowRerollNotes": "允许玩家重新掷骰",
+            "showRollResults": "显示结局文本",
+            "showRollResultsNotes": "显示成功/失败的结局文本",
+            "blindRoll": "暗掷",
+            "blindRollNotes": "对玩家隐藏掷骰结果",
+            "hideNames": "隐藏名称",
+            "hideNamesNotes": "对玩家隐藏非玩家所有者的角色名称",
+            "color": "颜色",
+            "colorNotes": "掷骰横幅的颜色",
+            "autoColor": "自动颜色",
+            "autoColorNotes": "根据掷骰类型自动着色掷骰横幅",
+            "contest": "竞赛",
+            "contestInfo": "要标记竞争者，请右键单击一个角色和/或一个掷骰",
+            "saveDefaultOptions": "保存为默认",
+            "saveDefaultOptionsNotification": "当前选项已保存为默认",
+            "ERROR": {
+                "noActors": "未选择任何角色进行掷骰，请至少选择一个角色",
+                "noType": "未选择掷骰类型，请选择一种类型",
+                "noContestants": "选择了竞赛掷骰类型，但未选择竞赛者",
+                "noContest": "选择了竞赛者，但未选择竞赛类型",
+                "noDC": "未输入掷骰的 DC，请输入一个 DC"
+            }
+        },
+        "flags": {}
     }
 }

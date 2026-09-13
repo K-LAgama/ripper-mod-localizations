@@ -1,0 +1,11 @@
+{
+    "tokenz": {
+        "tokenconfig": {
+            "zindex": "Offset dell'indice Z"
+        },
+        "send-to-back": {
+            "name": "Invia token a Back",
+            "hint": "Quando passi il mouse su una pila di gettoni, premi questo tasto per spostare il gettone in cima alla pila in fondo alla stessa"
+        }
+    }
+}

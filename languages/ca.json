@@ -1,1 +1,26 @@
-{}
+{
+    "simple-timekeeping": {
+        "configuration": {
+            "calendar": {
+                "hint": "Custom calendar as defined in he Custom Calendar JSON"
+            },
+            "darknessSync": {
+                "hint": "The sync can be configured per scene at the bottom of the lighting tab.",
+                "options": {
+                    "sync": "Sync"
+                }
+            },
+            "genWeather": {
+                "hint": "Generate a new weather every day. Uses latitude to determine the climate."
+            },
+            "latitude": {
+                "hint": "If a latitude different than 0 is set, dusk and dawn values will be ignored and instead dynamically calculated based on latitude. Latitude will also be used to calculate weather. Typical latitude ranges: Equatorial (0–15°), Tropical (15–23.5°), Subtropical (23.5–35°), Temperate (35–55°), Subpolar (55–66.5°), and Polar (66.5–90°).",
+                "label": "Latitude"
+            },
+            "moonAutomation": {
+                "hint": "If moons are defined in the calendar JSON, Simple Timekeeping will automatically update the moon badge.",
+                "label": "Sync Moon Badge"
+            }
+        }
+    }
+}

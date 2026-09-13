@@ -1,0 +1,184 @@
+{
+    "spotlight-omnisearch": {
+        "KEYBINDING": "キー割り当て",
+        "settings": {
+            "compendiumConfig": {
+                "name": "コンペンディウムの設定",
+                "hint": "検索結果に含めるコンペンディウムを設定する",
+                "label": "コンペンディウムの設定"
+            },
+            "gmOnly": {
+                "name": "GM限定",
+                "hint": "「スポットライト・オムニサーチ」を開けるのはGMのみです"
+            },
+            "compactMode": {
+                "name": "コンパクトモード",
+                "hint": "Spotlight Omnisearchにはコンパクトなレイアウトを使用してください。これにより、説明文が非表示になり、検索結果のサイズが縮小されます。"
+            },
+            "clickToDismiss": {
+                "name": "クリックして閉じる",
+                "hint": "Spotlight Omnisearchの外側をクリックすると、ウィンドウが閉じます"
+            },
+            "saveLastSearch": {
+                "name": "「最後の検索を保存」",
+                "hint": "次回Spotlight Omnisearchを開いた際に、前回の検索クエリと検索結果を保存する"
+            },
+            "useHistory": {
+                "name": "検索履歴を使用する",
+                "hint": "検索履歴を利用して、以前の検索を候補として表示する"
+            },
+            "enableCtrlSpace": {
+                "name": "Ctrl + Space を有効にする",
+                "hint": "Ctrl + Space ショートカットキーを有効にして、Spotlight オムニサーチを開くようにします。このキーバインドは Core Foundry のキーバインドシステムをバイパスするため、入力フィールドやテキストエリア内でも機能します。"
+            },
+            "position": {
+                "name": "役職",
+                "hint": "画面上の「Spotlight オムニサーチ」の位置を設定する",
+                "choices": {
+                    "default": "デフォルト（中央）",
+                    "save": "最終位置を保存する",
+                    "mouse": "マウスの位置で開く"
+                }
+            },
+            "alwaysOnTop": {
+                "name": "常に最前面に表示",
+                "hint": "「Spotlight Omnisearch」を他のウィンドウよりも常に最前面に表示する"
+            },
+            "spotlightWidth": {
+                "name": "スポットライトの幅",
+                "hint": "Spotlight オムニサーチの幅をピクセル単位で設定する"
+            },
+            "showImages": {
+                "name": "画像を表示",
+                "hint": "検索結果に画像を表示します。画像を表示すると、検索結果の読み込み時間が長くなり、検索結果の数や画像のサイズによっては、表示がカクつく場合があります。"
+            },
+            "searchFiles": {
+                "name": "ファイルを検索",
+                "hint": "ファイルの検索結果を含める（Dig Down モジュールの「ファイルインデックス」が必要です）"
+            },
+            "searchSettings": {
+                "name": "検索設定",
+                "hint": "検索結果にゲームの設定を含める"
+            },
+            "searchCompendium": {
+                "name": "コンペンディウムを検索",
+                "hint": "要覧の検索結果を含める"
+            },
+            "fullCompendiumJournalIndex": {
+                "name": "『フル・コンペンディウム』ジャーナル・インデックス",
+                "hint": "ジャーナルの総覧の索引作成にページとヘッダーを含めます。これにより、索引の初期化時間が長くなります。ジャーナルの総覧が多数ある場合は、この機能を無効にすることをお勧めします。"
+            },
+            "searchSidebar": {
+                "name": "サイドバーを検索",
+                "hint": "サイドバーのタブ検索結果を含める"
+            },
+            "searchUtils": {
+                "name": "検索ユーティリティ",
+                "hint": "ユーティリティの検索結果を含める"
+            },
+            "useMetricForLights": {
+                "name": "照明にはメートル法を使用する",
+                "hint": "メートル法単位を使った簡単な光の効果"
+            }
+        },
+        "hotkeys": {
+            "toggleSpotlight": {
+                "name": "スポットライトの表示/非表示を切り替える オムニサーチ"
+            }
+        },
+        "recent-searches": "最近の検索",
+        "recent-tooltip": "最近の検索履歴を消去する",
+        "app": {},
+        "flags": {},
+        "actions": {
+            "execute": "実行",
+            "activate": "有効にする",
+            "preload": "プリロード",
+            "view": "表示",
+            "roll-table": "ロールテーブル",
+            "play-playlist": "プレイリストを再生",
+            "stop-playlist": "プレイリストを停止する",
+            "use-item": "アイテムを使用する",
+            "playForEveryone": "誰もが楽しめる"
+        },
+        "notifications": {
+            "calc-clipboard": "結果がクリップボードにコピーされました",
+            "note": "「Omnisearch Notes」ジャーナルにメモが保存されました",
+            "timer-gm": "タイマーを開始できるのはGMのみです",
+            "tracker-gm": "成功・失敗の記録表を使用できるのはGMのみです"
+        },
+        "special": {
+            "note": {
+                "name": "ちょっとしたメモ",
+                "local-keyword": "注記"
+            },
+            "roll": {
+                "name": "クイックロール",
+                "local-keyword": "ロール"
+            },
+            "help": {
+                "name": "ヘルプ",
+                "local-keyword": "ヘルプ",
+                "list": [
+                    "Shift キーとスペースキーを同時に押すと、Spotlight オムニサーチが開きます",
+                    "「Escape」キーを押すか、画面外をクリック（オプション、デフォルトはオフ）して、Spotlightオムニサーチを閉じる",
+                    "最初の結果を確定するには、Enterキーを押してください",
+                    "Shift キーまたは Alt キー + Enter キーを押すと、最初の検索結果の 1 番目または 2 番目のアクションが実行されます",
+                    "特殊コマンド：help、note、roll、timer、tracker、counter、または計算したい数式を入力してください",
+                    "! 検索結果をタイプで絞り込む（!item、!actor）。絞り込み条件："
+                ]
+            },
+            "timer": {
+                "name": "タイマー",
+                "timeLeft": "残り時間",
+                "local-keyword": "タイマー",
+                "expired": "タイマーが切れました！"
+            },
+            "light": {
+                "torch": "トーチ",
+                "lantern": "ランタン",
+                "lantern-shut": "ランタン（カバー付き）",
+                "off": "ライトを削除",
+                "candle": "キャンドル",
+                "magical": "魔法の光",
+                "flashlight": "懐中電灯",
+                "info": "選択したトークンに光を当てる"
+            },
+            "tracker": {
+                "name": "成功・失敗トラッカー",
+                "local-keyword": "トラッカー"
+            },
+            "counter": {
+                "name": "カウンター",
+                "local-keyword": "カウンター"
+            },
+            "kill": {
+                "name": "殺す",
+                "description": "選択したトークンを削除する"
+            },
+            "heal": {
+                "name": "癒やし"
+            },
+            "damage": {
+                "name": "損害"
+            },
+            "restore": {
+                "name": "復元",
+                "description": "選択したトークンを完全な状態に戻す"
+            },
+            "reindex": {
+                "name": "目次",
+                "description": "Spotlight Omnisearch の検索インデックスを再構築する"
+            },
+            "darkness": {
+                "night": "夜",
+                "dawn": "夜明け",
+                "day": "日",
+                "dusk": "夕暮れ"
+            },
+            "attribute": {
+                "name": "属性"
+            }
+        }
+    }
+}

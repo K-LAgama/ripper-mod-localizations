@@ -1,0 +1,896 @@
+{
+    "TYPES.JournalEntryPage": {
+        "simple-quest": {
+            "quest": "SQ Quest",
+            "character": "Postać z serii SQ",
+            "lore": "SQ – historia",
+            "map": "Mapa SQ",
+            "event": "Wydarzenie SQ",
+            "era": "Era SQ",
+            "achievement": "Osiągnięcia SQ",
+            "creature": "SQ Creature",
+            "location": "Lokalizacja SQ",
+            "faction": "Frakcja SQ",
+            "investigation": "Dochodzenie SQ"
+        }
+    },
+    "simple-quest": {
+        "tutorialTips": {
+            "tipsExplaination": {
+                "title": "Wskazówki dotyczące samouczka",
+                "text": "To jest wskazówka z samouczka. Wskazówki można wyłączyć w ustawieniach modułu. Kliknij przycisk „Zamknij”, aby ukryć wskazówki do następnego odświeżenia strony, lub kliknij przycisk z kostką, aby przeczytać kolejną wskazówkę."
+            },
+            "quickVisibility": {
+                "title": "Szybki wgląd",
+                "text": "Użyj skrótu <kbd>Alt + lewy przycisk myszy</kbd>, aby szybko ukryć lub wyświetlić elementy „Simple Quest” dla graczy. W pasku bocznym naciśnij <kbd>Alt + lewy przycisk myszy</kbd> na stronie, aby włączyć lub wyłączyć uprawnienie „Obserwator”. Możesz również <kbd>Alt + lewy przycisk myszy</kbd> na polu wyboru celu zadania, aby przełączyć jego status ukrycia, i zrobić to samo w przypadku znaczników na stronach mapy Simple Quest."
+            },
+            "quickModal": {
+                "title": "Otwórz jako okno modalne",
+                "text": "Aby otworzyć okno modalne z linków do treści na stronie Simple Quest, użyj skrótu <kbd>Alt + lewy przycisk myszy</kbd>. Spowoduje to otwarcie strony w oknie modalnym, co pozwoli Ci zapoznać się z jej treścią bez zmiany aktualnie wyświetlanej strony. Możesz <kbd>dwukrotnie kliknąć lewym przyciskiem myszy</kbd> w dowolnym miejscu lub kliknąć przycisk „X” w prawym górnym rogu, aby zamknąć okno modalne."
+            },
+            "questRecap": {
+                "title": "Podsumowanie zadania",
+                "text": "Przełącz przycisk „Podsumowanie” na pasku bocznym w zakładce „Zadania”, aby pogrupować zadania według ich statusu (W toku, Ukończone, Nieudane i Nieodkryte) zamiast przeglądać drzewo folderów. Każdą grupę można rozwinąć lub zwinąć, a stan zwinięcia zostanie zapamiętany do następnej wizyty."
+            },
+            "tabContextMenu": {
+                "title": "Dostosowywanie zakładek",
+                "text": "<kbd>Kliknij prawym przyciskiem myszy</kbd> dowolny nagłówek karty, aby otworzyć menu kontekstowe folderu. Możesz również utworzyć nowy podfolder w katalogu głównym programu Simple Quest. Nowy folder pojawi się jako nowa karta dynamiczna."
+            },
+            "staticTabs": {
+                "title": "Katalogi specjalne",
+                "text": "Cztery zakładki z ikonami u góry paska bocznego („Mój dziennik”, „Dziennik imprezy”, „Oś czasu” i „Osiągnięcia”) to specjalne, statyczne zakładki powiązane z dedykowanymi folderami utworzonymi podczas wstępnej konfiguracji. <kbd>Kliknij prawym przyciskiem myszy</kbd> dowolną statyczną zakładkę, aby edytować powiązany z nią folder. Zakładka zostanie wyszarzona, jeśli jej folder nie został jeszcze utworzony. W oknie konfiguracji folderów możesz wyznaczyć folder jako katalog specjalny."
+            },
+            "sectionOrder": {
+                "title": "Sekcje zamówień",
+                "text": "Podczas edycji strony dziennika każda ustrukturyzowana sekcja, taka jak listy ikon, bloki statystyk czy tabele, posiada pole „Kolejność”. Wprowadź liczbę, aby określić pozycję tej sekcji na stronie. Sekcje o niższych numerach wyświetlane są jako pierwsze."
+            },
+            "insertPage": {
+                "title": "Więcej stylów tekstu",
+                "text": "Możesz skorzystać z menu rozwijanych „Callout” i „Page Insert” na pasku narzędzi ProseMirror, aby dodać stylizację tekstu zgodną z motywem, np. kolorowe ramki dla informacji fabularnych, stworzeń lub postaci niezależnych, a także ozdobne notatki na pergaminie lub zwoje."
+            },
+            "sectionHidden": {
+                "title": "Ukrywanie sekcji",
+                "text": "Każda sekcja strukturalna na stronie dziennika posiada pole wyboru „Ukryte”. Po zaznaczeniu tego pola sekcja jest ukryta przed graczami, którzy nie są jej właścicielami. Jako właściciel strony nadal będziesz widzieć tę sekcję z przerywaną ramką, która wskazuje, że jest ona ukryta przed Twoimi graczami."
+            },
+            "pageVisibility": {
+                "title": "Widoczność strony",
+                "text": "Kolorowe kropki wyświetlane po prawej stronie wpisów w dzienniku i stron na pasku bocznym wskazują, którzy gracze mogą wyświetlać dany dokument. Jeśli strona nie ma żadnych kropek, żaden gracz nie może jej wyświetlić. Każda kropka reprezentuje użytkownika, którego uprawnienia różnią się od domyślnych. Kropka oznaczająca „Wszyscy gracze” pojawia się, gdy domyślne uprawnienie jest wyższe niż „Brak”. Wskaźniki te są widoczne wyłącznie dla mistrza gry i można je włączać lub wyłączać za pomocą ustawienia „Pokaż właściciela dziennika”."
+            }
+        },
+        "collapseSidebar": {
+            "collapse": "Zwiń pasek boczny",
+            "expand": "Rozwiń pasek boczny"
+        },
+        "givePermission": {
+            "none": "{pageName} zostało ukryte przed graczami",
+            "observer": "Gra {pageName} została udostępniona graczom"
+        },
+        "modal": {
+            "doubleClickToClose": "Kliknij dwukrotnie, aby zamknąć"
+        },
+        "app": {
+            "title": "Prosta misja",
+            "myJournal": "Mój dziennik",
+            "partyJournal": "Dziennik imprezowy",
+            "timeline": "Oś czasu",
+            "achievements": "Osiągnięcia",
+            "search": "Wyszukiwanie"
+        },
+        "achievements": {
+            "openAll": "Pokaż wszystko",
+            "uncategorized": "Bez kategorii"
+        },
+        "ColorHtmlBlock": {
+            "color": "Kolor HTML",
+            "order": "Zamówienie",
+            "hidden": "Ukryte"
+        },
+        "HtmlBlock": {
+            "order": "Zamówienie",
+            "hidden": "Ukryte"
+        },
+        "createExtendedStructure": {
+            "title": "Utwórz rozszerzoną strukturę",
+            "content": "Spowoduje to utworzenie nowej struktury folderów dla modułu Simple Quest. Jest to zalecane, jeśli jesteś nowym użytkownikiem i/lub chcesz w pełni wykorzystać możliwości tego modułu."
+        },
+        "IconListBlock": {
+            "label": "Etykieta listy ikon",
+            "name": "Imię i nazwisko",
+            "description": "Opis",
+            "icon": "Ikona",
+            "hidden": "Ukryte",
+            "order": "Zamówienie"
+        },
+        "StatsBlock": {
+            "label": "Etykieta statystyk",
+            "name": "Imię i nazwisko",
+            "color": "Kolor",
+            "value": "Wartość",
+            "min": "Minimum",
+            "max": "Maksymalna",
+            "hidden": "Ukryte",
+            "order": "Zamówienie"
+        },
+        "TableBlock": {
+            "label": "Etykieta tabeli",
+            "name": "Imię i nazwisko",
+            "value": "Wartość",
+            "icon": "Ikona",
+            "hidden": "Ukryte",
+            "order": "Zamówienie"
+        },
+        "ColorTagsBlock": {
+            "label": "Etykiety kolorowe",
+            "tag": "Etykieta",
+            "color": "Kolor",
+            "hidden": "Ukryte",
+            "order": "Zamówienie"
+        },
+        "ResourcesBlock": {
+            "label": "Etykieta „Zasoby”",
+            "name": "Imię",
+            "current": "Obecny",
+            "max": "Maksymalna",
+            "color": "Kolor",
+            "hidden": "Ukryte",
+            "order": "Zamówienie"
+        },
+        "MainTagBlock": {
+            "color": "Główny kolor tagu",
+            "value": "Główny tekst tagu",
+            "hidden": "Ukryte"
+        },
+        "data-model-config": {
+            "title": "Konfiguracja produktu"
+        },
+        "journal": {
+            "name": "Imię i nazwisko",
+            "description": "Opis",
+            "header": "Nagłówek",
+            "subtitle": "Podtytuł",
+            "tags": "Tagi",
+            "status": "Status",
+            "rename": "Edytuj nazwę",
+            "color": "Kolor",
+            "image": "Obraz",
+            "caption": "Podpis",
+            "type": "Typ",
+            "width": "Szerokość",
+            "height": "Wysokość",
+            "aspectRatio": {
+                "label": "Proporcje ekranu",
+                "auto": "Oryginał",
+                "landscape": "Krajobraz",
+                "portrait": "Portret",
+                "square": "Kwadrat"
+            },
+            "imageFilter": {
+                "label": "Filtr obrazu"
+            },
+            "checkbox": {
+                "tooltip": "Kliknij lewym przyciskiem myszy, aby przełączyć status na „zakończone” <br> Kliknij prawym przyciskiem myszy, aby przełączyć status na „nieudane”",
+                "tooltip-hide": "<br>Alt + lewy przycisk myszy, aby wyświetlić/ukryć"
+            },
+            "location": {
+                "population": "Ludność",
+                "area": "Obszar",
+                "government": "Rząd",
+                "demonym": "Nazwa mieszkańców",
+                "ruler": "Linijka",
+                "founded": "Założona"
+            },
+            "faction": {
+                "leader": "Lider",
+                "headquarters": "Siedziba główna",
+                "memberCount": "Liczba członków",
+                "alignment": "Wyrównanie",
+                "goals": "Cele",
+                "rivals": "Rywale",
+                "allies": "Sojusznicy"
+            },
+            "awardedTo": {
+                "label": "Przyznano",
+                "hint": "Wybierz użytkowników, którzy posiadają to osiągnięcie."
+            },
+            "showTitle": {
+                "label": "Pokaż tytuł",
+                "hint": "Pokaż nazwę osiągnięcia graczom, którzy go jeszcze nie mają."
+            },
+            "showContent": {
+                "label": "Pokaż treść",
+                "hint": "Pokaż opis osiągnięcia graczom, którzy go jeszcze nie zdobyli."
+            },
+            "showImage": {
+                "label": "Pokaż zdjęcie",
+                "hint": "Pokaż obrazek osiągnięcia graczom, którzy go jeszcze nie mają."
+            },
+            "showColor": {
+                "label": "Pokaż kolor",
+                "hint": "Wyświetl kolor wyróżniający osiągnięcie graczom, którzy go nie mają."
+            },
+            "assign": {
+                "title": "Jesteś pewien?",
+                "add": "Czy przyznać {name} to osiągnięcie?",
+                "remove": "Czy usunąć to osiągnięcie z {name}?"
+            },
+            "observerObjectivePermission": {
+                "label": "Obserwator, cel, uprawnienie",
+                "hint": "Zastępuje ustawienie globalne. Opcja „Domyślnie” stosuje ustawienie modułu, natomiast opcje „Zezwól” i „Odmów” zastępują je.",
+                "choices": {
+                    "default": "Ustawienie domyślne (zgodnie z ustawieniem)",
+                    "allow": "Zezwól",
+                    "deny": "Odrzuć"
+                }
+            },
+            "quest": {
+                "questGiver": "Osoba zlecająca zadanie",
+                "location": "Lokalizacja",
+                "difficulty": "Poziom trudności",
+                "deadline": "Termin"
+            },
+            "event": {
+                "year": "Rok",
+                "duration": "Czas trwania (lata)",
+                "icon": "Ikona",
+                "flipped": "Odwrócone",
+                "offset": "Przesunięcie (px)",
+                "banner": "Baner",
+                "label": "Etykieta",
+                "hidden": "Ukryte"
+            },
+            "era": {
+                "eraStart": "Początek epoki",
+                "eraEnd": "Koniec epoki",
+                "color": "Kolor",
+                "banner": "Baner",
+                "label": "Etykieta",
+                "hidden": "Ukryte"
+            },
+            "investigation": {
+                "saveViewport": "Zapisz okno podglądu",
+                "tools": "Narzędzia",
+                "background": "Kontekst",
+                "backgroundType": {
+                    "label": "Rodzaj tła",
+                    "choices": {
+                        "centered": "Wyśrodkowane",
+                        "repeating": "Powtórzenie",
+                        "pattern": "Wzór"
+                    }
+                },
+                "stamp": {
+                    "completed": "Pieczęć: Zrealizowano",
+                    "failed": "Pieczęć: Nieudane",
+                    "skull": "Wzór: Czaszka"
+                },
+                "tooltip": {
+                    "createConnection": "Utwórz połączenie",
+                    "edit": "Edytuj pozycję",
+                    "duplicate": "Zduplikowany element",
+                    "delete": "Usuń pozycję"
+                },
+                "add": "Dodaj produkt",
+                "type": {
+                    "polaroid": "Polaroid",
+                    "newspaper": "Gazeta",
+                    "sticky-note": "Notatka samoprzylepna",
+                    "note": "Uwaga",
+                    "card": "Karta"
+                },
+                "color": "Kolor",
+                "thickness": "Grubość",
+                "text": "Tekst",
+                "item": {
+                    "title": "Konfiguracja produktu",
+                    "name": "Imię i nazwisko",
+                    "color": "Kolor",
+                    "textColor": "Kolor tekstu",
+                    "image": "Obraz",
+                    "caption": "Podpis",
+                    "width": "Szerokość",
+                    "height": "Wysokość",
+                    "rotation": "Obrót",
+                    "order": "Zamówienie",
+                    "delete": {
+                        "title": "Usunąć pozycję?",
+                        "content": "Czy na pewno chcesz usunąć tę pozycję? Tego działania nie da się cofnąć."
+                    },
+                    "type": {
+                        "label": "Typ",
+                        "default": "Podstawowe",
+                        "polaroid": "Polaroid",
+                        "newspaper": "Gazeta",
+                        "sticky-note": "Notatka samoprzylepna",
+                        "note": "Uwaga",
+                        "simple-label": "Prosta etykieta",
+                        "paper-sheet": "Arkusz papieru",
+                        "image": "Obraz"
+                    },
+                    "x": "X",
+                    "y": "Y",
+                    "description": "Opis",
+                    "hidden": "Ukryte"
+                },
+                "connection": {
+                    "title": "Konfiguracja połączenia",
+                    "origin": {
+                        "id": "Pochodzenie",
+                        "anchorX": "Kotwica X",
+                        "anchorY": "Kotwica Y",
+                        "locked": "Zablokowane"
+                    },
+                    "destination": {
+                        "id": "Miejsce docelowe",
+                        "anchorX": "Kotwica X",
+                        "anchorY": "Kotwica Y",
+                        "locked": "Zablokowane"
+                    },
+                    "color": "Kolor",
+                    "thickness": "Grubość",
+                    "text": "Tekst",
+                    "physics": {
+                        "label": "Fizyka",
+                        "choices": {
+                            "straight": "Prosty",
+                            "droopy": "Opadające",
+                            "very-droopy": "Bardzo opadające"
+                        }
+                    },
+                    "style": {
+                        "label": "Styl",
+                        "choices": {
+                            "solid": "Stały",
+                            "dashed": "Przerywana linia",
+                            "dotted": "Kropkowane"
+                        }
+                    }
+                }
+            }
+        },
+        "deleteItem": {
+            "title": "Usunąć?",
+            "content": "Czy na pewno chcesz usunąć tę pozycję? Nie będzie można cofnąć tej czynności."
+        },
+        "settings": {
+            "betterOwnership": {
+                "name": "Proste zarządzanie uprawnieniami w zadaniach",
+                "hint": "Podczas tworzenia nowej strony domyślny poziom uprawnień należy automatycznie ustawić na „Brak”. Powoduje to pominięcie okna dialogowego „Obsługa uprawnień” podczas wyświetlania strony w pasku bocznym.",
+                "dialog": {
+                    "title": "Obsługa uprawnień",
+                    "content": "Wyświetlasz stronę, ale jej dziennik ma domyślne uprawnienie „Brak”. Gracze nie będą mogli wyświetlić tej strony. Czy chcesz zmienić domyślne uprawnienie dziennika na „Obserwator”, a pozostałych stron dziedziczących – na „Brak”?"
+                }
+            },
+            "showHistory": {
+                "name": "Wyświetl historię",
+                "hint": "Wyświetl pasek historii u góry okna „Simple Quest”."
+            },
+            "showJournalOwnership": {
+                "name": "Pokaż właścicieli dziennika",
+                "hint": "Wyświetlaj kolorowe kropki wskazujące właściciela pod wpisami dziennika i stronami w pasku bocznym."
+            },
+            "tabConfig": {
+                "name": "Konfiguracja zakładek",
+                "hint": "Skonfiguruj nazwy zakładek w module „Simple Quest”.",
+                "label": "Konfiguracja nazw zakładek"
+            },
+            "themeConfig": {
+                "name": "Konfiguracja motywu",
+                "hint": "Skonfiguruj motyw „Simple Quest”.",
+                "label": "Skonfiguruj motyw"
+            },
+            "allowObserverCheckboxToggle": {
+                "name": "Zezwól obserwatorom na realizację zadań",
+                "hint": "Gracze posiadający uprawnienie „Obserwator” na stronie zadania mogą zaznaczać lub odznaczać pola wyboru celów. Ustawienie to można zmienić indywidualnie dla każdego zadania."
+            },
+            "rootDir": {
+                "name": "Katalog główny",
+                "hint": "Nazwa katalogu głównego gry „Simple Quest”. Zakładki dynamiczne znajdują się w podkatalogach tego katalogu.",
+                "default": "prosta misja"
+            },
+            "partyJournalDir": {
+                "name": "Katalog czasopism imprezowych",
+                "hint": "Nazwa folderu dla zakładki „Dziennik imprezy”.",
+                "default": "Impreza"
+            },
+            "timelineDir": {
+                "name": "Katalog osi czasu",
+                "hint": "Nazwa folderu dla zakładki „Oś czasu”.",
+                "default": "Oś czasu"
+            },
+            "achievementsDir": {
+                "name": "Katalog osiągnięć",
+                "hint": "Nazwa folderu dla zakładki „Osiągnięcia”.",
+                "default": "Osiągnięcia"
+            },
+            "backgroundColor": {
+                "name": "Kolor tła",
+                "hint": "Kolor tła gry „Simple Quest”"
+            },
+            "backgroundImage": {
+                "name": "Obraz tła",
+                "hint": "Obraz tła w grze „Simple Quest”"
+            },
+            "labelColor": {
+                "name": "Globalny kolor etykiety",
+                "hint": "Jeśli ta opcja zostanie włączona, ten kolor zastąpi kolory wszystkich etykiet na mapie. Wpisz „none”, aby wyłączyć tę funkcję."
+            },
+            "matchJournalStyle": {
+                "name": "Dostosuj styl dziennika meczowego",
+                "hint": "Jeśli opcja jest włączona, system będzie próbował dopasować specjalne style zastosowane w dziennikach. W zależności od motywu może to powodować skutki uboczne."
+            },
+            "textColor": {
+                "name": "Kolor tekstu",
+                "hint": "Kolor tekstu w grze „Simple Quest”"
+            },
+            "secretColor": {
+                "name": "Tajemniczy kolor",
+                "hint": "Kolor Simple Quest dla tajnych celów zadań"
+            },
+            "failedColor": {
+                "name": "Nieprawidłowy kolor",
+                "hint": "Kolor wyznaczony przez Simple Quest dla nieosiągniętych celów zadań"
+            },
+            "hideFolderFromPlayers": {
+                "name": "Ukryj folder przed graczami",
+                "hint": "Czy ukryć folder „Simple Quest” przed graczami"
+            },
+            "fontFamily": {
+                "name": "Rodzina czcionek",
+                "hint": "Rodzina czcionek, której należy używać w grze „Simple Quest”"
+            },
+            "showQuestNotifications": {
+                "name": "Pokaż powiadomienia o zadaniach",
+                "hint": "Czy wyświetlać powiadomienia w przypadku aktualizacji zadania lub udostępnienia go na czacie"
+            },
+            "newQuestSoundEffect": {
+                "name": "Nowy efekt dźwiękowy zadania",
+                "hint": "Efekt dźwiękowy, który ma zostać odtworzony po wyświetleniu powiadomienia o nowym zadaniu"
+            },
+            "updateQuestSoundEffect": {
+                "name": "Zaktualizuj efekt dźwiękowy zadania",
+                "hint": "Efekt dźwiękowy, który ma zostać odtworzony po wyświetleniu powiadomienia o aktualizacji zadania"
+            },
+            "matchJournalPermission": {
+                "name": "Zezwolenie na prowadzenie dziennika meczu",
+                "hint": "Opcja „Dopasuj do Simple Quest” powinna uwzględniać uprawnienia użytkowników dotyczące zadań, oprócz statusu ukrycia. Gdy to ustawienie jest wyłączone, wszystkie zadania będą widoczne dla wszystkich graczy, chyba że zostały ustawione jako ukryte. Należy pamiętać, że po włączeniu tego ustawienia gracze będą mogli zobaczyć ukryte cele zadań, otwierając zwykły dziennik."
+            },
+            "openJournalPinsAsModals": {
+                "name": "Otwieranie znaczników na mapie w okienkach modalnych",
+                "hint": "Jeśli znacznik na mapie jest powiązany ze stroną dziennika, a strona ta nie jest stroną „Prostego zadania”, należy otworzyć ją w oknie modalnym na tle mapy, zamiast otwierać ją w dzienniku."
+            },
+            "enableQuests": {
+                "name": "Włącz zadania",
+                "hint": "Czy włączyć zakładkę „Zadania”"
+            },
+            "enablePartyJournal": {
+                "name": "Włącz dziennik drużyny",
+                "hint": "Czy włączyć zakładkę „Czasopismo partyjne”"
+            },
+            "enableMyJournal": {
+                "name": "Włącz „Mój dziennik”",
+                "hint": "Czy włączyć zakładkę „Mój dziennik”"
+            },
+            "enableMaps": {
+                "name": "Włącz Mapy",
+                "hint": "Czy włączyć zakładkę „Mapy”"
+            },
+            "enableTimeline": {
+                "name": "Włącz oś czasu",
+                "hint": "Czy włączyć kartę „Oś czasu”"
+            },
+            "enableAchievements": {
+                "name": "Włącz osiągnięcia",
+                "hint": "Czy włączyć zakładkę „Osiągnięcia”"
+            },
+            "enableLore": {
+                "name": "Włącz fabułę",
+                "hint": "Czy włączyć zakładkę „Lore”"
+            },
+            "headerOnlyFont": {
+                "name": "Czcionka nagłówka",
+                "hint": "Czcionka, której należy używać w nagłówkach; jeśli wybrano opcję „domyślna”, zostanie użyta czcionka domyślna"
+            },
+            "imagePageMask": {
+                "name": "Ilustracja przedstawiająca mgłę wojny",
+                "hint": "Maska służąca do wyświetlania mgły wojny. Pozostaw puste pole, aby wyświetlić czarną maskę."
+            },
+            "secondaryFontSize": {
+                "name": "Rozmiar czcionki drugiego rzędu",
+                "hint": "Rozmiar czcionki dla elementów drugorzędnych."
+            },
+            "showTutorialTips": {
+                "name": "Pokaż wskazówki z samouczka",
+                "choices": {
+                    "always": "Tak",
+                    "never": "Nie",
+                    "reset": "Resetuj"
+                }
+            }
+        },
+        "simple-quest": {
+            "title": "Prosta misja",
+            "windowedModeToggle": "Włącz/wyłącz tryb okienkowy",
+            "tabs": {
+                "quests": "Zadania",
+                "map": "Mapa",
+                "lore": "Lore",
+                "timeline": "Oś czasu",
+                "achievements": "Osiągnięcia",
+                "my-journal": "Mój dziennik",
+                "party-journal": "Dziennik imprezowy",
+                "tab": "Zakładka"
+            },
+            "move-to": "Przejdź do...",
+            "moveQuest": {
+                "error": "Nie masz uprawnień do przenoszenia zadań do tej kategorii."
+            },
+            "tooltip": {
+                "add-quest": "Dodaj zadanie",
+                "add-map": "Dodaj mapę",
+                "add-lore": "Dodaj informacje o fabule",
+                "add-page": "Dodaj stronę",
+                "edit-lore": "Edytuj fabułę",
+                "configure-lore-permissions": "Konfiguracja uprawnień",
+                "map-help": "Jak korzystać z zakładki „Mapy”",
+                "edit-quest": "Edytuj zadanie",
+                "delete-quest": "Usuń zadanie",
+                "delete-lore": "Usuń opowieść",
+                "share-quest": "Wyślij na czat",
+                "duplicate-quest": "Zadanie powtórne",
+                "duplicate-map": "Duplikat mapy",
+                "delete-map": "Usuń mapę",
+                "duplicate-lore": "Powtórzenie informacji z kanonu",
+                "mark-updated": "Oznacz „Quest” jako zaktualizowane",
+                "add-category": "Dodaj kategorię",
+                "edit-map": "Edytuj mapę",
+                "reset-fow": "Zresetuj/Włącz „mgłę wojny”",
+                "fow-brush-size": "Rozmiar pędzla „Mgła wojny”",
+                "measure": "100 pikseli = 1 mil",
+                "lock-pins": "Zablokuj / Odblokuj znaczniki",
+                "show-players": "Otwarte dla graczy",
+                "edit": "Edytuj",
+                "duplicate": "Duplikat",
+                "delete": "Usuń",
+                "toggle-completed": "Spektakl zakończony"
+            }
+        },
+        "timeline": {
+            "addEvent": "Dodaj wydarzenie",
+            "addEra": "Dodaj epokę",
+            "create": "Utwórz oś czasu",
+            "delete": "Usuń oś czasu",
+            "edit": "Edytuj oś czasu"
+        },
+        "timeline-config": {
+            "title": "Edytuj wydarzenie na osi czasu",
+            "label": "Etykieta",
+            "labelNote": "Nazwa wydarzenia. Będzie ona wyświetlana nad rokiem. Można w niej umieścić konkretną datę lub inne informacje.",
+            "banner": "Baner",
+            "hidden": "Ukryte",
+            "year": "Rok",
+            "duration": "Czas trwania (w latach)",
+            "era": "Era",
+            "event": "Wydarzenie",
+            "general": "Globalny",
+            "to": "do",
+            "generalNote": "Te ustawienia będą miały zastosowanie do całej osi czasu.",
+            "icon": "Ikona",
+            "isEra": "Czy to Era?",
+            "eraStart": "Początek epoki",
+            "eraEnd": "Koniec epoki",
+            "flipped": "Odwrócone",
+            "offset": "Przesunięcie (px)",
+            "description": "Edytuj spis treści",
+            "negativeAbb": "Skrót oznaczający rok ujemny",
+            "showMinus": "Pokaż znak minus",
+            "positiveAbb": "Skrót oznaczający „rok dodatni”",
+            "timeScale": "Skala czasowa",
+            "dynamicTimeScale": "Dynamiczna skala czasowa",
+            "dynamicTimeScaleNote": "Zamiast ustalać rozmiar osi czasu w sposób bezwzględny, jej rozmiar będzie uzależniony od liczby wydarzeń w każdej epoce, przy czym nadal będzie pomnożony przez skalę czasową.",
+            "content": "Widoczność treści",
+            "ignoreDataValidation": "Zignoruj sprawdzanie poprawności danych",
+            "ignoreDataValidationNote": "Jeśli zajdzie potrzeba zmiany kolejności epok, można pominąć walidację danych, aby umożliwić tymczasowe nakładanie się epok na czas ich reorganizacji.",
+            "contentChoices": {
+                "always": "Zawsze wyświetlaj",
+                "toggleOn": "Przełącz (domyślnie rozwinięte)",
+                "toggleOff": "Przełącz (domyślnie zwinięte)"
+            },
+            "errors": {
+                "noEra": "Nie znaleziono żadnych epok. Proszę najpierw utworzyć epokę.",
+                "noYear": "Nie znaleziono roku. Należy wybrać rok, w którym miało miejsce wydarzenie.",
+                "yearOutOfBounds": "Rok musi należeć do danej epoki.",
+                "noEraStart": "Nie znaleziono daty rozpoczęcia epoki. Należy ustawić datę rozpoczęcia epoki.",
+                "noEraEnd": "Nie znaleziono końca epoki. Należy ustawić koniec epoki.",
+                "eraStartAfterEnd": "Data rozpoczęcia epoki musi poprzedzać datę zakończenia epoki.",
+                "eraNotConnected": "Początek lub koniec epoki musi być powiązany z inną epoką.",
+                "eraOverlap": "Era nie może pokrywać się z inną erą."
+            }
+        },
+        "tab-config": {
+            "title": "Konfiguracja zakładek"
+        },
+        "theme-config": {
+            "title": "Konfiguracja motywu",
+            "info": "Motywy stosują pewne domyślne ustawienia. Jeśli chcesz, możesz przejść do tego menu z poziomu ustawień modułu, gdzie możesz również dostosować każdy element motywu z osobna.",
+            "themes": {
+                "default": "Prosta misja",
+                "classicFantasy": "Klasyczna fantastyka",
+                "basicDark": "Basic Dark",
+                "basicLight": "Podstawowe oświetlenie",
+                "foundryDark": "Foundry Dark",
+                "foundryLight": "Światło odlewnicze",
+                "redDragon": "Czerwony Smok",
+                "typewriter": "Maszyna do pisania",
+                "postApocalypticWasteland": "Postapokaliptyczne pustkowie",
+                "galacticAdventure": "Galaktyczna przygoda",
+                "steampunkWorkshop": "Warsztaty steampunkowe",
+                "dystopianFuture": "Dystopijna przyszłość",
+                "virtualRealityOasis": "Oaza wirtualnej rzeczywistości",
+                "mysticForest": "Mistyczny Las",
+                "vintageFilmNoir": "Klasyczny film noir",
+                "sciFiConsole": "Konsola science fiction",
+                "futuristicTech": "Technologia przyszłości",
+                "alienInvasion": "Inwazja obcych",
+                "ancientScrolls": "Starożytne zwoje",
+                "crtTerminal": "Terminal",
+                "crtScreen": "Monitor CRT"
+            }
+        },
+        "importQuests": {
+            "title": "Zadania związane z importem: ",
+            "content": "Czy na pewno chcesz zaimportować zadania z tego dziennika? Jeśli istnieje już kategoria o tej samej nazwie, zadania zostaną do niej dodane."
+        },
+        "markerConfig": {
+            "title": "Konfiguracja znaczników",
+            "icon": "Ikona",
+            "journal": "Umieść tutaj dziennik lub stronę",
+            "hidden": "Ukryte",
+            "displayLabel": "Zawsze wyświetlaj etykietę",
+            "fixedScale": "Stała skala"
+        },
+        "mapControls": {
+            "addMarker": "Dodaj znacznik",
+            "editMarker": "Edytuj znacznik",
+            "deleteMarker": "Usuń znacznik"
+        },
+        "deleteQuest": {
+            "title": "Usunąć zadanie? - ",
+            "content": "Czy na pewno chcesz usunąć to zadanie? Nie da się tego cofnąć."
+        },
+        "deleteLore": {
+            "title": "Usunąć opowieść? - ",
+            "content": "Czy na pewno chcesz usunąć tę informację fabularną? Nie da się tego cofnąć."
+        },
+        "deleteMap": {
+            "title": "Usunąć mapę? - ",
+            "content": "Czy na pewno chcesz usunąć tę mapę? Nie da się tego cofnąć."
+        },
+        "deletePage": {
+            "title": "Usunąć stronę? - ",
+            "content": "Czy na pewno chcesz usunąć tę stronę? Nie da się tego cofnąć."
+        },
+        "shareQuest": {
+            "title": "Wyślij stronę na czat",
+            "content": "Czy na pewno chcesz wysłać powiadomienie „Nowa strona” na czacie?",
+            "changeOwnership": "<p class='notification info'>Poziom uprawnień grupy „Wszyscy gracze” zostanie zmieniony na „Obserwator” na tej stronie.</p>",
+            "chatMessage": "Dostępna jest nowa strona typu {questType}: {questName}",
+            "shareMessage": "Odblokowano nowy {questType}!"
+        },
+        "shareLore": {
+            "title": "Wyślij informacje o fabule na czat",
+            "content": "Czy na pewno chcesz wysłać powiadomienie „Nowa historia” na czacie?",
+            "chatMessage": "Ujawniono nowe informacje dotyczące fabuły!"
+        },
+        "shareAchievement": {
+            "title": "Wyślij osiągnięcie na czacie",
+            "content": "Czy na pewno chcesz wysłać powiadomienie o „nowym osiągnięciu” na czacie?",
+            "chatMessage": "Otrzymałeś osiągnięcie: {questName}"
+        },
+        "showQuest": {
+            "title": "Pokaż zadanie"
+        },
+        "welcomeScreen": {
+            "title": "Witamy w Simple Quest!",
+            "content": "Witamy w Simple Quest!<hr>Naciśnij klawisz <span class='hotkey'>J</span>, aby otworzyć okno Simple Quest."
+        },
+        "welcomeMaps": {
+            "title": "Prosta misja: Zakładka „Mapa”",
+            "content": "Witamy w zakładce „Mapy”!<hr><span class='hotkey'>Kliknij prawym przyciskiem myszy i przeciągnij</span>, aby przesuwać mapę.<br><span class='hotkey'>Przewiń</span>, aby powiększyć lub pomniejszyć mapę.<br><span class='hotkey'>Kliknij lewym przyciskiem myszy</span>, aby dodać znacznik.<br><span class='hotkey'>Kliknij lewym przyciskiem myszy</span>, aby otworzyć notatki lub zadanie związane ze znacznikiem.<br><span class='hotkey'>Kliknij prawym przyciskiem myszy</span> na znacznik, aby go edytować.<hr>Mgła wojny<hr><span class='hotkey'>Shift + lewy przycisk myszy</span>, aby ukryć mapę.<br><span class='hotkey'>Shift + prawy przycisk myszy</span>, aby odkryć mapę.<hr>Pomiar<hr> <span class='hotkey'>Ctrl + lewy przycisk myszy</span>, aby dokonać pomiaru."
+        },
+        "flags": {},
+        "noPermission": "Nie masz uprawnień do wyświetlenia tego dokumentu.",
+        "time-enricher": {
+            "expired": "Wygasło"
+        },
+        "questNotification": {
+            "text": "Strona {questType}: {questName} została zaktualizowana"
+        },
+        "hotkeys": {
+            "toggleSimpleQuest": {
+                "name": "Przełącz tryb „Proste zadania”"
+            }
+        },
+        "notifications": {
+            "defaultStructureCreated": "Proste zadanie: Utworzono domyślną strukturę folderów i dziennika.",
+            "playerJournalUpdated": "Prosta misja: Zaktualizowano dziennik gracza.",
+            "noPage": "Proste zadanie: Wybierz stronę, którą chcesz usunąć.",
+            "uuidNotFound": "Prosta misja: nie znaleziono strony o identyfikatorze UUID {{uuid}}",
+            "noTab": "Prosta misja: Nie znaleziono zakładki o nazwie „{{tab}}”."
+        },
+        "resetFow": {
+            "title": "Czy zresetować „mgłę wojny”?",
+            "content": "Czy na pewno chcesz zresetować/włączyć „mgłę wojny” na tej mapie? Nie da się tego cofnąć."
+        },
+        "proseMirrorMenu": {
+            "callout": {
+                "title": "Objaśnienie",
+                "callout-lore": "Lore",
+                "callout-magic": "Magia",
+                "callout-item": "Pozycja",
+                "callout-creature": "Stworzenie",
+                "callout-event": "Wydarzenie",
+                "callout-time": "Czas",
+                "callout-npc": "NPC",
+                "callout-location": "Lokalizacja"
+            },
+            "pageInsert": {
+                "title": "Wstaw stronę",
+                "parchment-note-1": "Notatka na pergaminie nr 1",
+                "parchment-note-2": "Notatka na pergaminie nr 2",
+                "parchment-note-3": "Notatka na pergaminie nr 3",
+                "parchment-note-4": "Notatka na pergaminie nr 4",
+                "parchment-book-1": "Książka 1",
+                "parchment-book-2": "Książka 2",
+                "parchment-scroll-1": "Przewiń"
+            },
+            "text": {
+                "initial": "Duża litera początkowa"
+            }
+        },
+        "page-template": {
+            "label": "Szablon strony",
+            "description": "Jest to zbiór szablonów HTML służących do formatowania stron dziennika. Formatowanie to będzie działać nawet wtedy, gdy moduł Simple Quest zostanie wyłączony. Kliknij przycisk, aby dołączyć szablon na końcu strony."
+        },
+        "injected": {
+            "fowMask": {
+                "label": "Prosta misja: Maska „Mgła wojny”"
+            }
+        },
+        "tours": {
+            "interface": {
+                "1": {
+                    "title": "Sekcje",
+                    "content": "W tym obszarze wyświetlane są różne sekcje programu Simple Quest. Możesz kliknąć daną sekcję, aby do niej przejść, kliknąć prawym przyciskiem myszy, aby edytować nazwy zakładek, a także najechać kursorem na prawy górny róg, aby wyświetlić przycisk przełączający tryb pełnoekranowy."
+                },
+                "2": {
+                    "title": "Lista zadań",
+                    "content": "W tym obszarze wyświetlana jest lista kategorii zadań oraz zadania w nich zawarte. Możesz kliknąć prawym przyciskiem myszy na kategorię, aby edytować jej nazwę. W prawym górnym rogu znajdują się przyciski umożliwiające dodanie nowego zadania oraz nowej kategorii. Najedź kursorem na lewą stronę tytułu zadania, aby wyświetlić przycisk „Przełącz ukryte”."
+                },
+                "3": {
+                    "title": "Szczegóły zadania",
+                    "content": "W tym obszarze wyświetlane są szczegóły wybranego zadania. W prawym górnym rogu znajdują się przyciski służące do zarządzania zadaniem; po najechaniu kursorem na przyciski wyświetli się podpowiedź wyjaśniająca ich działanie."
+                },
+                "4": {
+                    "title": "Rozmiar czcionki",
+                    "content": "W tym obszarze można zmienić rozmiar czcionki w grze Simple Quest"
+                },
+                "name": "Przewodnik po interfejsie i zakładka „Zadania”",
+                "description": "W ramach tej prezentacji dowiesz się, jak korzystać z głównego interfejsu programu Simple Quest oraz z zakładki „Zadania”."
+            },
+            "lore-tab": {
+                "1": {
+                    "title": "Zakładka „Lore”",
+                    "content": "Zakładka „Lore” wyświetla wszystkie dzienniki znajdujące się w folderze „Lore” w interfejsie „Simple Quest”. Chociaż zakładka ta nie oferuje żadnych specjalnych funkcji, stanowi wygodny sposób uzyskania dostępu do treści fabularnych. Uprawnienia do przeglądania stron „Lore” są identyczne jak uprawnienia do dzienników w Core Foundry."
+                },
+                "2": {
+                    "title": "Lista fabularna",
+                    "content": "W tym obszarze wyświetlana jest lista kategorii opowieści oraz same opowieści w nich zawarte. Możesz kliknąć prawym przyciskiem myszy na kategorię, aby edytować jej nazwę. W prawym górnym rogu znajdują się przyciski umożliwiające dodanie nowej opowieści oraz nowej kategorii. Najedź kursorem myszy na lewą stronę tytułu opowieści, aby wyświetlić przycisk „Ukryj”."
+                },
+                "3": {
+                    "title": "Szczegóły fabularne",
+                    "content": "W tym obszarze wyświetlane są szczegóły wybranej informacji. W prawym górnym rogu znajdują się przyciski służące do zarządzania informacją; po najechaniu kursorem na przyciski pojawi się podpowiedź wyjaśniająca ich funkcję."
+                },
+                "name": "Zakładka „Lore”",
+                "description": "W ramach tego przewodnika dowiesz się, jak korzystać z zakładki „Lore”."
+            },
+            "map-tab": {
+                "1": {
+                    "title": "Zakładka „Mapa”",
+                    "content": "W zakładce „Mapa” wyświetlane są wszystkie mapy znajdujące się w dzienniku map w folderze „Zadania”."
+                },
+                "2": {
+                    "title": "Lista map",
+                    "content": "W tym obszarze wyświetlana jest lista map. W prawym górnym rogu znajduje się przycisk umożliwiający dodanie nowej mapy oraz przycisk wyjaśniający bardziej zaawansowane funkcje. Najedź kursorem na lewą stronę tytułu mapy, aby wyświetlić przycisk „Przełącz ukryte”."
+                },
+                "3": {
+                    "title": "Szczegóły mapy",
+                    "content": "W tym obszarze wyświetlana jest wybrana mapa. Możesz przesuwać mapę, klikając i przeciągając, a także powiększać i pomniejszać ją za pomocą kółka myszy. W prawym górnym rogu znajdują się przyciski służące do obsługi mapy; po najechaniu kursorem na przyciski wyświetli się podpowiedź wyjaśniająca ich działanie."
+                },
+                "4": {
+                    "title": "Znaczniki",
+                    "content": "Aby dodać znacznik, kliknij prawym przyciskiem myszy na mapie (możesz przytrzymać, aby wyświetlić podgląd). Możesz również kliknąć prawym przyciskiem myszy na znaczniku, aby go edytować, lub kliknąć prawym przyciskiem myszy i przeciągnąć znacznik, aby go przesunąć. Możesz kliknąć lewym przyciskiem myszy na znacznik, aby otworzyć jego notatki, zadanie lub powiązany dokument. Przeciągnięcie i upuszczenie dowolnego dokumentu na mapę spowoduje utworzenie znacznika powiązanego z tym dokumentem."
+                },
+                "5": {
+                    "title": "Mgła wojny",
+                    "content": "Możesz przytrzymać klawisz Shift, aby wyświetlić pędzel „Mgła wojny”. Kliknij lewym przyciskiem myszy, aby ukryć mapę, a prawym przyciskiem, aby ją odsłonić."
+                },
+                "6": {
+                    "title": "Pomiar",
+                    "content": "Aby uruchomić narzędzie pomiarowe, należy przytrzymać klawisz Ctrl. Przytrzymując klawisz Ctrl, kliknij lewym przyciskiem myszy i przeciągnij, aby wykonać pomiar."
+                },
+                "name": "Zakładka „Mapa”",
+                "description": "W ramach tej prezentacji dowiesz się, jak korzystać z zakładki „Mapa”."
+            },
+            "my-journal-tab": {
+                "1": {
+                    "title": "Zakładka „Mój dziennik”",
+                    "content": "W zakładce „Mój dziennik” wyświetlany jest osobisty dziennik, który widzą tylko Ty i prowadzący grę."
+                },
+                "2": {
+                    "title": "Spis treści",
+                    "content": "W tym obszarze wyświetlany jest spis treści Twojego dziennika. Każdy nagłówek utworzony w dzienniku będzie widoczny w tym miejscu, co ułatwi nawigację."
+                },
+                "3": {
+                    "title": "Treść czasopisma",
+                    "content": "W tym obszarze wyświetlana jest treść Twojego dziennika. Możesz edytować treść dziennika, klikając przycisk „Edytuj” w prawym górnym rogu."
+                },
+                "name": "Zakładka „Mój dziennik”",
+                "description": "W ramach tej wycieczki dowiesz się, jak korzystać z zakładki „Mój dziennik”."
+            },
+            "party-journal-tab": {
+                "1": {
+                    "title": "Zakładka „Dziennik imprez”",
+                    "content": "W zakładce „Dziennik imprezy” wyświetlany jest dziennik, który jest widoczny i edytowalny dla wszystkich użytkowników."
+                },
+                "2": {
+                    "title": "Spis treści",
+                    "content": "W tym obszarze wyświetlany jest spis treści Twojego dziennika imprezowego. Każdy nagłówek utworzony w tym dzienniku będzie wyświetlany w tym miejscu, co ułatwi nawigację."
+                },
+                "3": {
+                    "title": "Treść czasopisma",
+                    "content": "W tym obszarze wyświetlana jest zawartość dziennika drużyny. Zawartość dziennika można edytować, klikając przycisk „Edytuj” w prawym górnym rogu."
+                },
+                "name": "Zakładka „Dziennik imprez”",
+                "description": "W ramach tej prezentacji dowiesz się, jak korzystać z zakładki „Party Journal”."
+            },
+            "journal-page": {
+                "1": {
+                    "title": "Szablony stron",
+                    "content": "Simple Quest wprowadza szablony stron. To wygodna funkcja, która pozwala szybko dodać do strony dziennika wstępnie sformatowany szablon lub sekcję. Kliknij ten przycisk, aby wyświetlić dostępne szablony."
+                },
+                "2": {
+                    "title": "Formatowanie",
+                    "content": "W tym menu rozwijanym znajdziesz nowe opcje „Oznaczenie” i „Wstawienie strony”, dzięki którym możesz nadać swoim dokumentom nieco więcej uroku."
+                },
+                "name": "Funkcje stron dziennika",
+                "description": "W ramach tej prezentacji dowiesz się, jak korzystać ze strony dziennika."
+            },
+            "timeline-tab": {
+                "1": {
+                    "title": "Zakładka „Oś czasu”",
+                    "content": "Zakładka „Oś czasu” wyświetla oś czasu wydarzeń."
+                },
+                "2": {
+                    "title": "Lista osi czasu",
+                    "content": "W tym obszarze wyświetlana jest lista wydarzeń i epok; możesz kliknąć, aby przejść do danego wydarzenia lub epoki, lub kliknąć prawym przyciskiem myszy, aby je edytować."
+                },
+                "3": {
+                    "title": "Dodaj wydarzenie lub epokę",
+                    "content": "Ten przycisk to wszystko, czego potrzebujesz, aby dodać nowe wydarzenie lub epokę do osi czasu. Formularz konfiguracyjny pozwoli Ci ustawić szczegóły wydarzenia lub epoki. Aby rozpocząć, utwórz epokę."
+                },
+                "name": "Zakładka „Oś czasu”",
+                "description": "W ramach tej prezentacji dowiesz się, jak korzystać z zakładki „Oś czasu”."
+            }
+        },
+        "default-structure": {
+            "in-progress": "W trakcie realizacji",
+            "completed": "Zakończono",
+            "failed": "Nie powiodło się",
+            "locations": "Lokalizacje",
+            "npcs": "postacie niezależne",
+            "organizations": "Organizacje",
+            "history": "Historia",
+            "bestiary": "Bestiariusz"
+        }
+    }
+}

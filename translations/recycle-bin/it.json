@@ -1,42 +1,42 @@
 {
     "recycle-bin": {
         "app": {
-            "deleteOnRefresh": "Questo elemento verrà eliminato definitivamente all'aggiornamento.",
-            "deleteOnRefreshTitle": "Uno o più elementi in attesa di eliminazione",
-            "noParent": "Documento primario",
-            "permanently-delete": "Elimina definitivamente l'elemento",
-            "preview-item": "Anteprima elemento",
+            "title": "🗑️ Cestino",
             "restore-item": "Ripristina oggetto",
+            "preview-item": "Anteprima elemento",
+            "permanently-delete": "Elimina definitivamente l'elemento",
+            "noParent": "Documento primario",
             "search": "Ricerca",
             "time": "Eliminato {time} fa",
-            "title": "🗑️ Cestino"
-        },
-        "dialog": {
-            "permanentlyDelete": {
-                "content": "Sei sicuro di voler eliminare definitivamente questo elemento? \nQuesta azione non può essere annullata.",
-                "title": "Elimina definitivamente"
-            },
-            "restoreParent": {
-                "content": "Il genitore di questo elemento non è stato trovato nel tuo mondo ma è presente nel cestino. \nVuoi ripristinarlo?",
-                "title": "Ripristina genitore"
-            }
-        },
-        "error": {
-            "preview": "Impossibile visualizzare l'anteprima di {item}. \nGenitore non trovato.",
-            "restore": "Impossibile ripristinare {item}. \nGenitore non trovato:"
+            "deleteOnRefresh": "Questo elemento verrà eliminato definitivamente all'aggiornamento.",
+            "deleteOnRefreshTitle": "Uno o più elementi in attesa di eliminazione"
         },
         "settings": {
             "maxPermanentItems": {
-                "hint": "Numero di elementi che verranno salvati tra le ricariche.",
-                "name": "Cronologia permanente massima"
+                "name": "Cronologia permanente massima",
+                "hint": "Numero di elementi che verranno salvati tra le ricariche."
             },
             "maxTemporaryItems": {
-                "hint": "Numero di elementi che verranno salvati. \nGli oggetti temporanei che superano la \"Cronologia permanente massima\" andranno persi alla ricarica.",
-                "name": "Cronologia temporanea massima"
+                "name": "Cronologia temporanea massima",
+                "hint": "Numero di elementi che verranno salvati. \nGli oggetti temporanei che superano la \"Cronologia permanente massima\" andranno persi alla ricarica."
             }
+        },
+        "error": {
+            "restore": "Impossibile ripristinare {item}. \nGenitore non trovato:",
+            "preview": "Impossibile visualizzare l'anteprima di {item}. \nGenitore non trovato."
         },
         "success": {
             "restore": "{item} ripristinato correttamente."
+        },
+        "dialog": {
+            "restoreParent": {
+                "title": "Ripristina genitore",
+                "content": "Il genitore di questo elemento non è stato trovato nel tuo mondo ma è presente nel cestino. \nVuoi ripristinarlo?"
+            },
+            "permanentlyDelete": {
+                "title": "Elimina definitivamente",
+                "content": "Sei sicuro di voler eliminare definitivamente questo elemento? \nQuesta azione non può essere annullata."
+            }
         }
     }
 }

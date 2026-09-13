@@ -588,7 +588,7 @@
                 "tabNotes": "Legen Sie fest, ob das 3D-Modell mehrfach wiederholt oder an die Kachel angepasst werden soll.",
                 "label": "Füllart",
                 "options": {
-                    "stretch": "Single",
+                    "stretch": "Einzel",
                     "tile": "Wiederholen",
                     "merged": "Zusammengeführte Kachel"
                 }
@@ -1641,7 +1641,7 @@
         },
         "tokenAnimations": {
             "title": "Animationen",
-            "twirl": "Twirl",
+            "twirl": "Wirbel",
             "slash": "Schrägstrich",
             "charge": "Anklage",
             "swipe": "Wischen",
@@ -1658,7 +1658,7 @@
             "sharpIndicator": "Sharp + Anzeige",
             "rounded": "Abgerundet",
             "ringHollow": "Ring Hollow",
-            "ringSimple": "Ring Simple",
+            "ringSimple": "Ring „Simple“",
             "ringSimpleSmall": "Einfacher kleiner Ring",
             "jb2ahex1": "Hex 1 (JB2A)",
             "jb2ahex1Indicator": "Hex 1 + Anzeige (JB2A)",

@@ -36,6 +36,13 @@
             "macroPanel": {
                 "name": "Painel de Macro",
                 "hint": "Mostra um painel de macro para cada personagem, que espelha as macros da barra de atalhos."
+            },
+            "explodeItemActivities": {
+                "name": "Expandir itens em atividades",
+                "hint": "Se cada atividade deve ser tratada como um botão separado no HUD",
+                "only-weapons": "Expandir apenas as armas",
+                "always": "Sempre expandir",
+                "never": "Nunca expandir"
             }
         },
         "hud": {

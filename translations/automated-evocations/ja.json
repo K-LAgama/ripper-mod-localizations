@@ -1,30 +1,47 @@
 {
     "AE": {
-        "actorSheetBtn": "コンパニオン設定",
-        "animations": {
-            "air": "風",
-            "darkness": "闇",
-            "energy1": "波動",
-            "fire": "炎",
-            "fourelements": "四大元素",
-            "heart": "ドキドキ",
-            "ice1": "氷",
-            "lightning": "雷",
-            "lightning2": "竜巻",
-            "magic1": "魔法",
-            "magic2": "コンジャンクション",
-            "music": "クレッシェンド",
-            "music2": "コード",
-            "water": "水"
+        "custombindings": {
+            "add": "バインディングを追加",
+            "bindingstitle": "カスタムバインディングの編集",
+            "bindingtitle": "バインディングの編集",
+            "tt": {
+                "spellname": "呪文名",
+                "edit": "編集",
+                "delete": "削除",
+                "creaturename": "クリーチャーの名前"
+            },
+            "sett": {
+                "label": "カスタムバインディングの設定",
+                "name": "カスタムバインディング",
+                "hint": "カスタムキーバインドの設定"
+            }
         },
+        "pick3d": "3Dキャンバス上の任意の地点をクリックして召喚してください。",
         "dialogs": {
             "companionManager": {
+                "title": "コンパニオンの管理",
                 "confirm": {
-                    "content": "<p>本当にこのコンパニオンを削除してよろしいですか？</p>",
-                    "title": "コンパニオンを削除"
-                },
-                "title": "コンパニオンの管理"
+                    "title": "コンパニオンを削除",
+                    "content": "<p>本当にこのコンパニオンを削除してよろしいですか？</p>"
+                }
             }
+        },
+        "actorSheetBtn": "コンパニオン設定",
+        "animations": {
+            "fire": "炎",
+            "air": "風",
+            "lightning": "雷",
+            "water": "水",
+            "energy1": "波動",
+            "magic1": "魔法",
+            "heart": "ドキドキ",
+            "music": "クレッシェンド",
+            "fourelements": "四大元素",
+            "music2": "コード",
+            "darkness": "闇",
+            "ice1": "氷",
+            "magic2": "コンジャンクション",
+            "lightning2": "竜巻"
         },
         "groups": {
             "elemental": "エレメンタル",
@@ -32,17 +49,25 @@
             "z-none": "その他"
         },
         "settings": {
-            "autoclose": {
-                "hint": "召喚後に自動的にコンパニオンのウインドウを自動で閉じる。 ",
-                "title": "自動的に閉じる"
+            "storeonactor": {
+                "title": "アクターにコンパニオンを設定",
+                "hint": "ユーザーではなくアクターにコンパニオンを設定します。"
             },
             "enableautomations": {
-                "hint": "呪文を使用時、コンパニオンの自動召喚機能を有効化します。",
-                "title": "オートメーションを有効化"
+                "title": "オートメーションを有効化",
+                "hint": "呪文を使用時、コンパニオンの自動召喚機能を有効化します。"
             },
-            "storeonactor": {
-                "hint": "ユーザーではなくアクターにコンパニオンを設定します。",
-                "title": "アクターにコンパニオンを設定"
+            "autoclose": {
+                "title": "自動的に閉じる",
+                "hint": "召喚後に自動的にコンパニオンのウインドウを自動で閉じる。 "
+            },
+            "hidebutton": {
+                "title": "コンパニオンボタンを非表示にする",
+                "hint": "キャラクターシート上のコンパニオンボタンを非表示にする。"
+            },
+            "restrictOwned": {
+                "title": "専属俳優のみ",
+                "hint": "コンパニオンリストを、所有しているコンパニオンキャラクターのみが表示されるように制限する。"
             }
         }
     }

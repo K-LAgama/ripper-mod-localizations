@@ -1,0 +1,42 @@
+{
+    "recycle-bin": {
+        "app": {
+            "title": "🗑️ Kosz",
+            "restore-item": "Przywróć element",
+            "preview-item": "Podgląd produktu",
+            "permanently-delete": "Trwale usuń element",
+            "noParent": "Dokument źródłowy",
+            "search": "Wyszukiwanie",
+            "time": "Usunięto {czas} temu",
+            "deleteOnRefresh": "Ta pozycja zostanie trwale usunięta po odświeżeniu strony.",
+            "deleteOnRefreshTitle": "Jedna lub więcej pozycji oczekujących na usunięcie"
+        },
+        "settings": {
+            "maxPermanentItems": {
+                "name": "Maksymalna długość historii stałej",
+                "hint": "Liczba elementów, które zostaną zachowane między ponownymi załadowaniami."
+            },
+            "maxTemporaryItems": {
+                "name": "Maksymalna długość historii tymczasowej",
+                "hint": "Liczba elementów, które zostaną zapisane. Elementy tymczasowe, których liczba przekroczy wartość „Maksymalnej długości historii”, zostaną utracone po ponownym załadowaniu strony."
+            }
+        },
+        "error": {
+            "restore": "Nie udało się przywrócić {elementu}. Nie znaleziono elementu nadrzędnego:",
+            "preview": "Nie udało się wyświetlić podglądu {elementu}. Nie znaleziono elementu nadrzędnego."
+        },
+        "success": {
+            "restore": "Pomyślnie przywrócono {element}."
+        },
+        "dialog": {
+            "restoreParent": {
+                "title": "Przywróć element nadrzędny",
+                "content": "Nie udało się znaleźć elementu nadrzędnego tego elementu w Twoim świecie, ale znajduje się on w koszu. Czy chcesz go przywrócić?"
+            },
+            "permanentlyDelete": {
+                "title": "Usuń na stałe",
+                "content": "Czy na pewno chcesz trwale usunąć ten element? Tego działania nie można cofnąć."
+            }
+        }
+    }
+}

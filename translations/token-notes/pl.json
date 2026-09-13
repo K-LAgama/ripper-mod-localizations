@@ -1,0 +1,34 @@
+{
+    "tokennotes": {
+        "togglenotes": "Przełącz notatki dotyczące tokenów",
+        "settings": {
+            "autoopen": {
+                "name": "Automatyczne otwieranie / zamykanie",
+                "hint": "Automatyczne otwieranie/zamykanie notatek po zaznaczeniu/odznaczeniu tokenu."
+            },
+            "allowplayers": {
+                "name": "Uprawnienia graczy",
+                "hint": "Ustawienia uprawnień dotyczących notatek przypisanych do tokenów dla graczy. Każda opcja będzie dostępna wyłącznie w odniesieniu do tokenów będących w posiadaniu danego gracza.",
+                "options": {
+                    "none": "Brak",
+                    "readonly": "Tylko do odczytu",
+                    "readwrite": "Odczyt/zapis"
+                }
+            },
+            "position": {
+                "name": "Stanowisko",
+                "hint": "Rozmieszczenie nut.",
+                "options": {
+                    "bottomleft": "W lewym dolnym rogu",
+                    "bottomright": "W prawym dolnym rogu",
+                    "topleft": "W lewym górnym rogu",
+                    "topright": "W prawym górnym rogu"
+                }
+            }
+        },
+        "tooltip": {
+            "toggle-edit": "Włącz tryb edycji",
+            "toggle-token-actor": "Przełącz token/aktor"
+        }
+    }
+}

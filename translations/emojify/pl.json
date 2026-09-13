@@ -1,0 +1,18 @@
+{
+    "emojify": {
+        "settings": {
+            "autoClose": {
+                "name": "Automatyczne zamykanie",
+                "hint": "Automatyczne zamykanie okna wyboru emoji po wybraniu emoji"
+            },
+            "preload": {
+                "name": "Wstępne obciążenie",
+                "hint": "Wczytaj bazę danych emoji przy uruchomieniu programu; spowoduje to załadowanie około 500 kb danych. Jeśli ta opcja jest wyłączona, baza danych zostanie załadowana przy pierwszym użyciu programu."
+            }
+        },
+        "noTokenSelected": "Nie wybrano żadnych tokenów. Wybierz co najmniej jeden token, aby przekształcić go w emoji.",
+        "toggleEmoji": "Otwórz selektor emoji",
+        "search": "Wyszukaj...",
+        "welcome": "😂 ❤️ 🙌 😍 🎉 | Witaj w Emojify – naciśnij Shift + V, aby otworzyć selektor emoji. | 🔥 😊 🤔 🌟 🥳"
+    }
+}

@@ -1,0 +1,104 @@
+{
+    "media-optimizer": {
+        "converted": "Media Optimizer: Przekonwertowano",
+        "conversionFailed": "Media Optimizer: Konwersja nie powiodła się. Więcej informacji znajdziesz na wiki.",
+        "audioConversionStarted": "Media Optimizer: Konwersja do formatu OGG | Plik: ",
+        "videoConversionStarted": "Media Optimizer: Konwersja do formatu WEBM | Plik: ",
+        "settings": {
+            "bloatDetector": {
+                "name": "Wykrywacz wzdęć",
+                "label": "Otwarty wykrywacz nadmiernego rozdęcia",
+                "hint": "Wykrywa wpisy, które mogą potencjalnie powodować wydłużenie czasu ładowania lub problemy z wydajnością."
+            },
+            "enabled": {
+                "name": "Włączone",
+                "hint": "Czy optymalizator multimediów powinien być włączony. Jeśli funkcja ta jest wyłączona, obrazy, pliki audio i wideo nie będą optymalizowane."
+            },
+            "compressionRatio": {
+                "name": "Jakość",
+                "hint": "Wartość jakości, której należy użyć podczas optymalizacji obrazów. Wyższa jakość zapewni lepszą jakość obrazu, ale spowoduje zwiększenie rozmiaru pliku. Niższa jakość zapewni gorszą jakość obrazu, ale spowoduje zmniejszenie rozmiaru pliku. Wartością domyślną jest 0,75. Uwaga: Współczynników kompresji dla plików audio i wideo nie można dostosowywać."
+            },
+            "maxResolution": {
+                "name": "Maksymalna rozdzielczość",
+                "hint": "Maksymalna rozdzielczość obrazu, który ma zostać zoptymalizowany. Jeśli obraz ma większą rozdzielczość, przed optymalizacją zostanie skalowany do tej wartości. Jest to przydatne, aby uniknąć stosowania bardzo wysokich rozdzielczości, które nie są obsługiwane przez większość kart graficznych.",
+                "choices": {
+                    "1024": "1K (1024 pikseli)",
+                    "2048": "2K (2048 pikseli)",
+                    "4096": "4K (4096 pikseli)",
+                    "8192": "8K (8192 pikseli)",
+                    "16384": "16K (16384 pikseli)"
+                }
+            },
+            "excludeFolders": {
+                "name": "Wyklucz foldery",
+                "hint": "Lista folderów, które należy wykluczyć z optymalizacji, rozdzielona przecinkami. Jeśli pliki graficzne, audio lub wideo zostaną przesłane do tej lokalizacji, nie zostaną zoptymalizowane."
+            },
+            "optimizeImages": {
+                "name": "Optymalizacja obrazów",
+                "hint": "Czy należy zoptymalizować obrazy, czy nie."
+            },
+            "optimizeAudio": {
+                "name": "Optymalizacja dźwięku",
+                "hint": "Czy zoptymalizować dźwięk, czy nie."
+            },
+            "optimizeVideo": {
+                "name": "Optymalizacja filmów",
+                "hint": "Czy należy optymalizować filmy, czy nie."
+            },
+            "slugifyFileNames": {
+                "name": "Czyste nazwy plików",
+                "hint": "Czy należy oczyszczać nazwy plików. Należy pamiętać, że to ustawienie będzie miało zastosowanie do wszystkich plików przetwarzanych lub tworzonych przez program Media Optimizer. Spowoduje to usunięcie znaków specjalnych i zastąpienie ich myślnikami. Jest to przydatne w celu uniknięcia problemów z nazwami plików w różnych systemach operacyjnych oraz innych problemów spowodowanych przez spacje i znaki specjalne."
+            }
+        },
+        "tile-combiner": {
+            "title": "Optymalizator multimediów: Łącznik kafelków",
+            "notes": "Ta funkcja spowoduje trwałe zmiany w scenie! Zdecydowanie zaleca się utworzenie kopii zapasowej sceny.",
+            "info": "Narzędzie Combiner będzie korzystać z globalnych ustawień kompresji programu Media Optimizer; można je zmienić w ustawieniach modułu.",
+            "confirm": {
+                "title": "Tile Combiner: Potwierdź",
+                "content": "Za chwilę połączysz kafelki, co spowoduje trwałe zmiany w scenie! Czy na pewno chcesz kontynuować?",
+                "backup": "Zamierzasz połączyć pliki bez utworzenia kopii zapasowej – nie jest to zalecane!"
+            },
+            "buttons": {
+                "backup-combine": "Kopia zapasowa i połączenie",
+                "combine": "Połącz",
+                "cancel": "Anuluj"
+            },
+            "mode": {
+                "label": "Tryb łączenia: ",
+                "background": "Kafelki w tle",
+                "foreground": "Płytki na pierwszym planie",
+                "selected": "Wybrane płytki",
+                "all": "Wszystkie płytki"
+            },
+            "background": {
+                "label": "Czy uwzględnić tło?",
+                "notes": "Gdy ta opcja jest włączona, wynik operacji „Połącz” zostanie ustawiony jako tło sceny."
+            },
+            "folderPath": {
+                "label": "Ścieżka do folderu: "
+            },
+            "fileName": {
+                "label": "Nazwa pliku: "
+            },
+            "deleteTiles": {
+                "label": "Czy usunąć połączone kafelki?"
+            }
+        },
+        "file-converter": {
+            "header-button": "Optymalizacja mediów",
+            "title": "Optymalizator multimediów: Optymalizator masowy",
+            "buttons": {
+                "convert": "Zoptymalizuj zaznaczone",
+                "select-all": "Zaznacz wszystko",
+                "select-none": "Wyczyść zaznaczenie"
+            }
+        },
+        "bloat-detector": {
+            "title": "Media Optimizer: Wykrywacz zbędnych plików",
+            "bloat": "Wykryto wpisy, które mogą potencjalnie powodować wydłużenie czasu ładowania lub problemy z wydajnością. Liczba: ",
+            "no-bloat": "Nie wykryto nadmiernego spęcznienia.",
+            "large-collection": "Zbiór jest obszerny, dlatego zaleca się przeniesienie nieużywanych wpisów do kompendium."
+        }
+    }
+}

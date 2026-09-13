@@ -1,0 +1,121 @@
+{
+    "TYPES": {
+        "JournalEntryPage": {
+            "gatherer": {
+                "gatherer": "Raccoglitore"
+            }
+        }
+    },
+    "gatherer": {
+        "gatherer": "Raccoglitore",
+        "gathered": "Raccolti",
+        "found": "Trovato",
+        "quantity": "Quantità",
+        "minigame": {
+            "title": "Minigioco \"Gatherer\""
+        },
+        "sheet": {
+            "err": {
+                "noDraws": "Questo punto di ritrovo è esaurito e non potrà essere utilizzato nuovamente finché non verrà ripristinato.",
+                "noActor": "Nessun attore per eseguire la raccolta. Seleziona un token oppure assegnati un personaggio.",
+                "noReq": "Non soddisfi i requisiti per partecipare a questo incontro. Mancano: ",
+                "noItem": "Elemento non trovato. Controlla l'ortografia e riprova.",
+                "noExp": "Non hai raccolto alcuna risorsa da questo punto...",
+                "noGM": "Per poter raccogliere, un utente GM deve essere connesso."
+            },
+            "gather": "Raccogliere",
+            "reset": "Reimposta",
+            "edit": "Modifica",
+            "remaining": "Tiri rimanenti",
+            "time": "Reimpostazioni in",
+            "quantity": "Quantità",
+            "waitingFirst": "In attesa del primo sorteggio"
+        },
+        "flags": {
+            "table": {
+                "label": "Tavolo pieghevole"
+            },
+            "time": {
+                "label": "Ora",
+                "placeholder": "Tempo rimanente fino al ripristino (in ore)"
+            },
+            "quantity": {
+                "label": "Quantità",
+                "placeholder": "Espressione “Numero” o “Rotolo”"
+            },
+            "draws": {
+                "label": "Tiri",
+                "placeholder": "Si tira prima che il punto sia esaurito",
+                "notes": "Lasciare vuoto per utilizzare i contenuti della pagina del raccoglitore corrispondente"
+            },
+            "require": {
+                "label": "Requisiti",
+                "placeholder": "Elenco di elementi separati da virgole"
+            },
+            "minigame": {
+                "label": "Minigioco",
+                "placeholder": "Tempo impiegato per il minigioco in millisecondi"
+            },
+            "expression": {
+                "label": "Espressione",
+                "placeholder": "Condizione macro da eseguire"
+            },
+            "systemAbil": {
+                "label": "Verifica"
+            },
+            "DC": {
+                "label": "DC",
+                "placeholder": "DC"
+            },
+            "toolCheck": {
+                "label": "Strumento",
+                "placeholder": "Nome dello strumento"
+            },
+            "toolDC": {
+                "label": "DC",
+                "placeholder": "DC"
+            },
+            "gatherSheet": {
+                "label": "Scheda di raccolta",
+                "placeholder": "Pagina \"Drop Gatherer\" qui"
+            },
+            "modifierList": {
+                "label": "Modificatore",
+                "add": "Aggiungi modificatore",
+                "hint": "Se il risultato del tiro o il valore restituito dall’espressione è uguale o superiore alla CD (utilizzando il valore più alto), il numero di oggetti raccolti viene modificato in base all’espressione modificatrice. È possibile includere un operatore matematico all’inizio del modificatore; se non ne viene fornito alcuno, per impostazione predefinita viene utilizzato il segno più (+). Ad esempio, *1d4 moltiplica il numero di oggetti raccolti per 1d4."
+            }
+        },
+        "gatherer-actor-config": {
+            "title": "Configurazione di Gatherer",
+            "notes": "Per ottenere un token specifico, crea una macro con le seguenti istruzioni:",
+            "notes2": "Oppure usa la scorciatoia da tastiera: "
+        },
+        "error": {
+            "notGatherer": "Questo non è un foglio di raccolta. Seleziona un foglio di raccolta e riprova.",
+            "noDraws": "Non ci sono più risorse da raccogliere da questa creatura.",
+            "noJournal": "Non esiste alcun punto di ritrovo associato a questo gettone. Seleziona un gettone con un punto di ritrovo valido e riprova.",
+            "cantHarvest": "Le condizioni per ottenere questo token non sono soddisfatte"
+        },
+        "settings": {
+            "resourcePath": {
+                "name": "Percorso delle risorse per il raccolto",
+                "hint": "Percorso da verificare per stabilire se è possibile effettuare l'harvesting. Ad esempio, per DnD5e, si tratterebbe di 'attributes.hp.value' per verificare se il token è vivo."
+            },
+            "quantityPath": {
+                "name": "Percorso quantità",
+                "hint": "Percorso dei dati relativo alla quantità dell'articolo. A partire da \"system\" (escluso). Ad esempio, per DnD5e, sarebbe \"quantity\"."
+            },
+            "resourceValue": {
+                "name": "Valore delle risorse raccolte",
+                "hint": "Valore da verificare per stabilire se è possibile effettuare la raccolta. Ad esempio, per DnD5e, questo valore sarebbe \"0\" per verificare se il gettone non ha più punti ferita (PF) rimanenti."
+            },
+            "enableHarvesting": {
+                "name": "Abilita la raccolta"
+            },
+            "migrateOnStartup": {
+                "name": "Migrare le impostazioni all'avvio",
+                "hint": "Se abilitato, il modulo eseguirà la migrazione dei dati del diario all'avvio. È possibile utilizzare la macro 'game.modules.get(\"gatherer\").API.migration.showManualMigrationDialog()' per eseguire manualmente la migrazione delle impostazioni."
+            }
+        }
+    }
+}

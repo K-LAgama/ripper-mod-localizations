@@ -116,6 +116,10 @@
                 "label": "Première fois seulement",
                 "hint": "N'exécutez l'activité ci-dessus que la première fois que hexplorer se déplace vers cette cellule."
             },
+            "hide-unrevealed-tooltip": {
+                "label": "Masquer l'infobulle non affichée",
+                "hint": "Masquer l'info-bulle lorsque les joueurs passent la souris sur une case qui n'est pas dévoilée."
+            },
             "reveal-tooltip": {
                 "label": "Révéler l'info-bulle",
                 "hint": "Donnez l'autorisation d'observateur aux joueurs pour la page de journal associée à l'info-bulle."

@@ -1,0 +1,74 @@
+{
+    "AE": {
+        "custombindings": {
+            "add": "新增綁定",
+            "bindingstitle": "編輯自訂鍵位設定",
+            "bindingtitle": "編輯綁定",
+            "tt": {
+                "spellname": "法術名稱",
+                "edit": "編輯",
+                "delete": "刪除",
+                "creaturename": "生物名稱"
+            },
+            "sett": {
+                "label": "設定自訂綁定",
+                "name": "自訂綁定",
+                "hint": "設定自訂鍵位綁定"
+            }
+        },
+        "pick3d": "點擊 3D 畫布上的某一點即可召喚。",
+        "dialogs": {
+            "companionManager": {
+                "title": "伴侶管理員",
+                "confirm": {
+                    "title": "刪除伴侶",
+                    "content": "<p>您確定要刪除此同伴嗎？</p>"
+                }
+            }
+        },
+        "actorSheetBtn": "同伴",
+        "animations": {
+            "fire": "火",
+            "air": "空氣",
+            "lightning": "閃電",
+            "water": "水",
+            "energy1": "能源",
+            "magic1": "魔法",
+            "heart": "Doki-Doki",
+            "music": "漸強",
+            "fourelements": "四大元素",
+            "music2": "和弦",
+            "darkness": "黑暗",
+            "ice1": "冰",
+            "magic2": "召喚術",
+            "lightning2": "風暴"
+        },
+        "groups": {
+            "elemental": "元素",
+            "magical": "神奇的",
+            "z-none": "其他"
+        },
+        "settings": {
+            "storeonactor": {
+                "title": "將 Companions 儲存至 Actor",
+                "hint": "預設情況下，將夥伴儲存於角色而非使用者身上。"
+            },
+            "enableautomations": {
+                "title": "啟用自動化功能",
+                "hint": "在施放法術時啟用隨從自動化系統。"
+            },
+            "autoclose": {
+                "title": "自動關閉",
+                "hint": "召喚後自動關閉夥伴視窗。"
+            },
+            "hidebutton": {
+                "title": "隱藏「伴侶」按鈕",
+                "hint": "隱藏角色資料頁上的夥伴按鈕。"
+            },
+            "restrictOwned": {
+                "title": "僅限自有演員",
+                "hint": "將夥伴清單限制為僅顯示已擁有的夥伴角色。"
+            }
+        }
+    }
+}

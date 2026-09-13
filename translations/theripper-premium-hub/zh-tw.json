@@ -1,0 +1,63 @@
+{
+    "theripper-premium-hub": {
+        "settings": {
+            "autoCheck": {
+                "name": "開機時檢查更新",
+                "hint": "在載入世界時，自動檢查我的任何付費模組是否有更新。"
+            },
+            "checkDisabled": {
+                "name": "「模組未啟用」檢查",
+                "hint": "檢查已安裝但尚未啟用的模組是否有更新。"
+            }
+        },
+        "tweaks-menu": {
+            "title": "微調",
+            "label": "設定微調選項",
+            "hint": "設定一些提升使用體驗的功能，例如「啟動巨集」、「清除標題按鈕」以及 CSS 微調。",
+            "tabs": {
+                "misc": "雜項",
+                "startup-macros": "啟動巨集",
+                "css-tweaks": "CSS 微調"
+            },
+            "initMacros": {
+                "name": "啟動巨集",
+                "hint": "在載入世界時執行巨集。巨集將依照此處列出的順序執行。"
+            },
+            "readyMacros": {
+                "name": "現成巨集",
+                "hint": "當客戶端就緒時，執行巨集。巨集將依照此處列出的順序執行。"
+            },
+            "cssTweak": {
+                "name": "CSS 微調",
+                "hint": "撰寫自訂 CSS 來修改 Foundry 或 Modules 的樣式。系統提供了三個欄位供您進行分類，但您也可以只使用其中一個欄位。"
+            },
+            "cleanHeaderButtons": {
+                "name": "簡潔的頁首按鈕",
+                "hint": "移除頁首按鈕上的文字，使其外觀更簡潔。若您大量使用我的模組，視窗頁首可能會出現許多按鈕，此選項可移除這些按鈕上的文字。（需安裝 LibWrapper）"
+            },
+            "compactSidebar": {
+                "name": "精簡側邊欄",
+                "hint": "將側邊欄中的項目縮小，以便在螢幕上顯示更多項目。"
+            },
+            "enableSettingsSwap": {
+                "name": "強制客戶端設定",
+                "hint": "啟用將客戶端設定變更為全服設定的功能。此設定將強制將所選設定套用至所有客戶端，玩家也將無法再查看這些設定。"
+            },
+            "diceTray": {
+                "name": "骰盤",
+                "hint": "在聊天記錄中新增一個骰盤。這樣一來，您就能擲骰子並為其添加修正值。"
+            },
+            "autoRotate": {
+                "name": "自動旋轉",
+                "hint": "自動將單位旋轉，使其面向移動方向及目標單位。",
+                "none": "已停用",
+                "defaultOn": "已啟用（預設為開啟）",
+                "defaultOff": "已啟用（預設為關閉）",
+                "on": "已啟用",
+                "off": "已停用",
+                "default": "預設"
+            }
+        },
+        "wtcNotification": "{setting} 的設定已設為 {value}。請重新載入遊戲以使變更生效。此設定的變更將不會被儲存，需等到下次重新載入後才會生效。"
+    }
+}

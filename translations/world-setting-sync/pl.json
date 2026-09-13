@@ -1,0 +1,88 @@
+{
+    "world-setting-sync": {
+        "settings": {
+            "masterAgnostic": {
+                "name": "Czy „Master World” jest przeznaczony dla światów agnostycznych?",
+                "hint": "Jeśli ta opcja zostanie włączona, ten świat będzie światem nadrzędnym dla ustawień niezależnych od systemu, użytkowników oraz modułów niezależnych od systemu."
+            },
+            "masterSystem": {
+                "name": "Czy „Master World” służy do konfiguracji systemu?",
+                "hint": "Jeśli ta opcja zostanie włączona, ten świat będzie światem nadrzędnym dla ustawień systemowych, użytkowników i modułów systemowych."
+            },
+            "autoCheckSync": {
+                "name": "Automatyczna synchronizacja",
+                "hint": "Jeśli ta opcja jest włączona, świat ten będzie automatycznie sprawdzał zmiany w ustawieniach ogólnych i systemowych podczas uruchamiania."
+            },
+            "autoPerformSync": {
+                "name": "Automatyczna synchronizacja",
+                "hint": "Jeśli ta opcja jest włączona, ten świat będzie automatycznie zapisywał ustawienia niezależne od platformy oraz ustawienia systemowe do pliku podczas uruchamiania."
+            },
+            "silentUpload": {
+                "name": "Ciche przesyłanie",
+                "hint": "Jeśli ta opcja jest włączona, ten świat nie będzie wyświetlał powiadomień podczas zapisywania ustawień ogólnych i systemowych do pliku."
+            },
+            "settingsSync": {
+                "name": "Menedżer synchronizacji",
+                "label": "Otwórz Menedżera synchronizacji",
+                "hint": "Otwórz menedżera synchronizacji, aby zapisać lub wczytać ustawienia ogólne i systemowe."
+            },
+            "syncModules": {
+                "name": "Synchronizacja modułów",
+                "hint": "Jeśli ta opcja jest włączona, ten świat będzie synchronizował aktywne moduły."
+            },
+            "syncUsers": {
+                "name": "Synchronizacja użytkowników",
+                "hint": "Jeśli ta opcja jest włączona, świat ten będzie synchronizował użytkowników między nimi."
+            },
+            "syncSettings": {
+                "name": "Zsynchronizuj ustawienia",
+                "hint": "Jeśli ta opcja jest włączona, ten świat będzie synchronizował ustawienia."
+            },
+            "exclusionList": {
+                "name": "Lista wykluczeń",
+                "label": "Otwórz listę wykluczeń",
+                "hint": "Otwórz listę wykluczeń, aby wykluczyć moduły, użytkowników i ustawienia z synchronizacji.",
+                "title": "Lista wykluczeń",
+                "info": "Ta lista posłuży do wykluczenia modułów, ustawień systemowych i podstawowych z synchronizacji.<br>W świecie głównym wykluczenia nie zostaną zapisane w pliku synchronizacji.<br>W świecie innym niż główny wykluczenia zostaną zignorowane podczas wczytywania ustawień z pliku synchronizacji.",
+                "core": "Rdzeń",
+                "coreSystem": "Rdzeń i system",
+                "modules": "Moduły",
+                "users": "Użytkownicy"
+            }
+        },
+        "settings-sync": {
+            "title": "Synchronizacja ustawień",
+            "activate": "Aktywuj",
+            "deactivate": "Wyłącz",
+            "expand": "Kliknij, aby rozwinąć",
+            "namespace": "Przestrzeń nazw",
+            "setting": "Ustawienia",
+            "user": "Użytkownik",
+            "change": "Zmiana",
+            "apply": "Zgłosić się?",
+            "confirm": {
+                "syncAll": "Zsynchronizuj wszystko",
+                "syncAgnostic": "Synchronizacja ustawień niezależnych od systemu",
+                "syncSystem": "Zsynchronizuj ustawienia systemowe",
+                "syncModules": "Synchronizacja modułów",
+                "syncUsers": "Synchronizacja użytkowników",
+                "content": "Czy na pewno chcesz kontynuować? Ta operacja jest nieodwracalna."
+            },
+            "tabs": {
+                "modules": "Moduły",
+                "users": "Użytkownicy",
+                "settingsAgnostic": "Ustawienia agnostyczne",
+                "settingsSystem": "Ustawienia systemowe"
+            },
+            "actions": {
+                "syncAll": "Zsynchronizuj wszystko",
+                "syncAgnostic": "Niezależność od synchronizacji",
+                "syncSystem": "System synchronizacji",
+                "syncModules": "Moduły synchronizacji",
+                "syncUsers": "Synchronizacja użytkowników",
+                "saveConfigurations": "Ręczne zapisanie ustawień w pliku"
+            }
+        },
+        "flags": {}
+    }
+}

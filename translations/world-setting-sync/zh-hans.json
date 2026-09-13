@@ -1,0 +1,88 @@
+{
+    "world-setting-sync": {
+        "settings": {
+            "masterAgnostic": {
+                "name": "《Master World》适合不可知论背景吗？",
+                "hint": "如果启用此选项，该世界将成为系统无关设置、用户以及系统无关模块的主世界。"
+            },
+            "masterSystem": {
+                "name": "“Master World”是指系统设置吗？",
+                "hint": "如果启用此选项，该世界将成为系统设置、用户和系统模块的主世界。"
+            },
+            "autoCheckSync": {
+                "name": "自动检查同步",
+                "hint": "如果启用此选项，该世界将在启动时自动检查通用设置和系统设置是否有变更。"
+            },
+            "autoPerformSync": {
+                "name": "自动执行同步",
+                "hint": "如果启用此选项，该世界将在启动时自动将通用设置和系统设置保存到文件中。"
+            },
+            "silentUpload": {
+                "name": "静默上传",
+                "hint": "如果启用此选项，当将无关设置和系统设置保存到文件时，该世界将不会向您发出通知。"
+            },
+            "settingsSync": {
+                "name": "同步管理器",
+                "label": "打开同步管理器",
+                "hint": "打开同步管理器，以保存或加载通用设置和系统设置。"
+            },
+            "syncModules": {
+                "name": "同步模块",
+                "hint": "如果启用此选项，该世界将同步活动模块。"
+            },
+            "syncUsers": {
+                "name": "同步用户",
+                "hint": "如果启用此功能，该世界将同步用户信息。"
+            },
+            "syncSettings": {
+                "name": "同步设置",
+                "hint": "如果启用此选项，该世界将同步设置。"
+            },
+            "exclusionList": {
+                "name": "排除列表",
+                "label": "公开排除列表",
+                "hint": "打开排除列表，将某些模块、用户和设置从同步中排除。",
+                "title": "排除列表",
+                "info": "此列表将用于将模块、系统和核心设置排除在同步范围之外。<br>在主世界中，排除项不会保存到同步文件中。<br>在非主世界中，从同步文件加载设置时，将忽略这些排除项。",
+                "core": "核心",
+                "coreSystem": "核心与系统",
+                "modules": "模块",
+                "users": "用户"
+            }
+        },
+        "settings-sync": {
+            "title": "设置同步",
+            "activate": "激活",
+            "deactivate": "停用",
+            "expand": "点击展开",
+            "namespace": "命名空间",
+            "setting": "设置",
+            "user": "用户",
+            "change": "更改",
+            "apply": "申请吗？",
+            "confirm": {
+                "syncAll": "同步一切",
+                "syncAgnostic": "同步与平台无关的设置",
+                "syncSystem": "同步系统设置",
+                "syncModules": "同步模块",
+                "syncUsers": "同步用户",
+                "content": "您确定要继续吗？此操作无法撤销。"
+            },
+            "tabs": {
+                "modules": "模块",
+                "users": "用户",
+                "settingsAgnostic": "不可知论设置",
+                "settingsSystem": "系统设置"
+            },
+            "actions": {
+                "syncAll": "全部同步",
+                "syncAgnostic": "与同步方式无关",
+                "syncSystem": "同步系统",
+                "syncModules": "同步模块",
+                "syncUsers": "同步用户",
+                "saveConfigurations": "手动将设置保存到文件中"
+            }
+        },
+        "flags": {}
+    }
+}

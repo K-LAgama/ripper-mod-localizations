@@ -1,0 +1,45 @@
+{
+    "three-actor-portrait": {
+        "settings": {
+            "authKey": {
+                "name": "Klucz uwierzytelniający HeroForge",
+                "hint": "Wpisz tutaj swój klucz uwierzytelniający. Znajdziesz go w ustawieniach konta HeroForge (Konto -> Dane osobowe -> Klucz dostępu). Jeśli zmienisz hasło do HeroForge, konieczne będzie zaktualizowanie klucza uwierzytelniającego."
+            },
+            "disablePortrait": {
+                "name": "Wyłącz portrety 3D",
+                "hint": "Wyłącz portrety 3D dla wszystkich aktorów. Zalecane w przypadku słabszych urządzeń i niskiej prędkości połączenia sieciowego."
+            },
+            "playerCanEditPortrait": {
+                "name": "Umożliw graczom edycję położenia kamery",
+                "hint": "Umożliw graczom edycję ustawienia kamery na portretach 3D."
+            },
+            "autoRotate": {
+                "name": "Automatyczne obracanie",
+                "hint": "Automatyczne obracanie aparatu podczas tworzenia portretów 3D."
+            },
+            "rotationSpeed": {
+                "name": "Prędkość obrotowa",
+                "hint": "Prędkość, z jaką obraca się kamera podczas tworzenia portretów 3D."
+            },
+            "license-agreement": {
+                "name": "Zaakceptuj Warunki korzystania z usługi",
+                "hint": "Włączając to ustawienie, akceptujesz Warunki korzystania z usługi 3D Portraits. Moduł ten korzysta z interfejsu API HeroForge; każda próba inżynierii odwrotnej, wyodrębnienia lub wykorzystania tego interfejsu bez zgody Sky Castle Studio stanowi naruszenie Warunków korzystania z usługi. Jeśli chcesz wykorzystać interfejs API HeroForge w swoim własnym projekcie, skontaktuj się ze Sky Castle Studio pod adresem support@heroforge.com."
+            },
+            "maxContexts": {
+                "name": "Maksymalna liczba portretów wyświetlanych jednocześnie",
+                "hint": "Maksymalna liczba portretów, które mogą być wyświetlane jednocześnie. Inne moduły lub inne karty przeglądarki mogą korzystać z kontekstów canvas; jeśli występują awarie WebGL, warto zmniejszyć tę wartość. WebGL ma limit maksymalnie 16 kontekstów."
+            }
+        },
+        "portrait-preview": {
+            "save-pose": "Zapisz pozycję",
+            "download": "Pobierz",
+            "toggle-rotate": "Włącz/wyłącz automatyczne obracanie",
+            "camera-position-saved": "Pozycja kamery zapisana",
+            "topdown": "Widok z góry",
+            "outline": "Przełącz widok konspektu"
+        },
+        "notifications": {
+            "maxContextExceeded": "Osiągnąłeś maksymalną liczbę portretów 3D, które można wyświetlać jednocześnie; najstarszy z nich został zamknięty. Możesz to zmienić w ustawieniach modułu."
+        }
+    }
+}

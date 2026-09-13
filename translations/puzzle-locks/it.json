@@ -1,0 +1,335 @@
+{
+    "puzzle-locks": {
+        "settings": {},
+        "general-lock-config": {
+            "header-buttons": {
+                "copyContentLink": "Copia il link al contenuto",
+                "unlock": "Puzzle aperto"
+            },
+            "title": "Configurazione generale delle serrature",
+            "permissionWarning": "La proprietà predefinita di questo documento non è impostata su \"Nessuna\". In determinate circostanze, i giocatori potrebbero riuscire ad aggirare il blocco. Si raccomanda di impostare la proprietà predefinita su \"Nessuna\".",
+            "fixPermission": "Correggi la proprietà",
+            "label": {
+                "label": "Etichetta",
+                "placeholder": "Sistema di sicurezza per porte"
+            },
+            "description": {
+                "label": "Descrizione",
+                "placeholder": "Si tratta di un sistema di sicurezza per la porta."
+            },
+            "unlocked": {
+                "label": "Sbloccato"
+            },
+            "attempts": {
+                "label": "Tentativi",
+                "notes": "Numero di tentativi consentiti; impostare su -1 per un numero illimitato."
+            },
+            "lockType": {
+                "label": "Tipo di serratura",
+                "configure": "Configura",
+                "none": "Nessuno (disattivato)",
+                "optgroupContext": "Richiede un contesto",
+                "optgroupNoContext": "Non è necessario alcun contesto",
+                "notes": "Il tipo di blocco che verrà utilizzato per proteggere il documento. Alcuni blocchi richiedono informazioni contestuali per essere risolti, mentre altri possono essere risolti senza alcuna informazione esterna."
+            },
+            "unlockSound": {
+                "label": "Sblocca l'audio"
+            },
+            "interactionSound": {
+                "label": "Suoni di interazione"
+            },
+            "backgroundImage": {
+                "label": "Immagine di sfondo"
+            },
+            "glow": {
+                "label": "Effetto luminoso",
+                "notes": "Attiva gli effetti di contorno e di bagliore/ombra sul testo: in questo modo il tema risulterà più adatto alle ambientazioni fantascientifiche."
+            },
+            "textColor": {
+                "label": "Colore del testo"
+            },
+            "primaryColor": {
+                "label": "Colore primario",
+                "notes": "Alcuni tipi di lucchetti potrebbero non utilizzare questo colore. Lasciare vuoto per utilizzare il colore predefinito del lucchetto."
+            },
+            "secondaryColor": {
+                "label": "Colore secondario",
+                "notes": "Alcuni tipi di lucchetto potrebbero non utilizzare questo colore. Lasciare vuoto per utilizzare il colore predefinito del lucchetto."
+            },
+            "primaryFont": {
+                "label": "Carattere principale"
+            },
+            "secondaryFont": {
+                "label": "Carattere secondario",
+                "notes": "Alcuni tipi di serrature potrebbero non utilizzare questo carattere."
+            },
+            "font": {
+                "inherit": "Ereditare"
+            },
+            "unlockMacro": {
+                "label": "Sblocca macro",
+                "notes": "Macro da eseguire quando il blocco viene sbloccato. All'interno della macro è possibile accedere a \"object\" per ottenere il documento che è stato sbloccato e a \"user\" per ottenere l'utente che lo ha sbloccato."
+            },
+            "permission": {
+                "label": "Informazioni sui permessi di sblocco",
+                "notes": "Determina il livello di autorizzazione che un giocatore ottiene sul documento quando lo sblocca e se tale autorizzazione debba essere concessa solo al giocatore che lo ha sbloccato o a tutti i giocatori. Se il documento è una porta, questa impostazione verrà ignorata e la porta verrà sbloccata.",
+                "noChange": "Nessuna modifica",
+                "all": "Tutti i giocatori",
+                "unlocking": "Sbloccare un giocatore"
+            }
+        },
+        "number-lock": {
+            "name": "Numero/Simbolo",
+            "description": "Un lucchetto simile a un codice PIN. Il giocatore deve inserire il codice corretto per sbloccare il documento. È possibile sostituire i numeri con simboli o immagini per creare un lucchetto più in tema.",
+            "playerInfo": "Poiché non si tratta di un rompicapo, il GM dovrà fornire ai giocatori degli indizi o delle istruzioni per inserire il codice corretto.",
+            "code": {
+                "label": "Codice"
+            },
+            "keypad": {
+                "label": "Tastiera"
+            }
+        },
+        "password-lock": {
+            "name": "Password",
+            "description": "Un semplice blocco con password. L'utente deve inserire la password corretta per sbloccare il documento.",
+            "playerInfo": "Poiché non si tratta di un rompicapo, il GM dovrà fornire ai giocatori indizi o istruzioni per inserire la password corretta.",
+            "password": {
+                "label": "Password",
+                "placeholder": "a$$w0rd"
+            }
+        },
+        "item-lock": {
+            "name": "Articolo",
+            "description": "Un lucchetto che richiede al giocatore di trascinare e rilasciare uno o più oggetti negli spazi corretti per sbloccare il documento.",
+            "playerInfo": "Per risolvere questo rompicapo, puoi fornire ai giocatori indizi contestuali o suggerimenti per capire dove vanno collocati gli oggetti, oppure puoi utilizzare immagini specifiche per gli spazi vuoti che forniscano le informazioni necessarie per indovinare gli oggetti corretti.",
+            "item": {
+                "label": "Nome articolo"
+            },
+            "itemImage": {
+                "label": "Immagine della slot"
+            },
+            "deleteItems": {
+                "label": "Elimina elementi",
+                "notes": "Se questa opzione è selezionata, gli oggetti verranno eliminati dall'inventario del giocatore quando il lucchetto verrà sbloccato."
+            }
+        },
+        "switches-lock": {
+            "name": "Interruttori",
+            "description": "Un blocco che richiede al giocatore di impostare una serie di interruttori binari nella posizione corretta per sbloccare il documento.",
+            "playerInfo": "Poiché non si tratta di un rompicapo, il GM dovrà fornire ai giocatori suggerimenti o istruzioni per impostare correttamente gli interruttori.",
+            "switchesSolution": {
+                "label": "Configurazione degli switch",
+                "notes": "La soluzione consiste nella configurazione degli interruttori nel formato \"0110\". Ogni cifra rappresenta un interruttore: 0 indica \"spento\" e 1 indica \"acceso\". È possibile utilizzare tutti gli interruttori che si desidera."
+            },
+            "showSwitches": {
+                "label": "Mostra i pulsanti",
+                "notes": "Se visualizzare i pulsanti di commutazione. Se disabilitata, verranno visualizzate solo le spie di stato di accensione/spegnimento."
+            }
+        },
+        "cryptex-lock": {
+            "name": "Cryptex",
+            "description": "Una serratura che richiede al giocatore di ruotare una serie di cilindri nella posizione corretta per ottenere la combinazione vincente. Per rappresentare i simboli sui cilindri è possibile utilizzare emoji o glifi. Ciascun cilindro può presentare una serie diversa di simboli.",
+            "playerInfo": "Per risolvere questo rompicapo, è possibile fornire ai giocatori indizi contestuali esterni che consentano loro di riconoscere alcuni o tutti i personaggi oppure, limitando il numero di personaggi per cilindro, lasciare che i giocatori indovinino la soluzione per tentativi.",
+            "solution": {
+                "label": "Soluzione"
+            },
+            "cylinder": {
+                "label": "Cilindro",
+                "notes": "Il cilindro utilizzato dal cryptex. Ogni carattere del cilindro deve essere separato da una virgola."
+            },
+            "glyphs": {
+                "label": "Glifi",
+                "notes": "I glifi che possono essere utilizzati nel cryptex. Ogni glifo deve essere separato da una virgola."
+            }
+        },
+        "sudoku-lock": {
+            "name": "Sudoku",
+            "description": "Un lucchetto che richiede al giocatore di risolvere un sudoku per sbloccare il documento. I numeri predefiniti possono essere sostituiti con immagini o simboli per rendere il lucchetto più in tema.",
+            "playerInfo": "Per risolvere questo rompicapo, i giocatori dovranno conoscere le regole del sudoku; in alternativa, è possibile fornire loro un suggerimento o delle istruzioni su come risolverlo.",
+            "generate": "Genera un Sudoku",
+            "difficulty": {
+                "label": "Difficoltà"
+            },
+            "grid": {
+                "4": "4x4",
+                "9": "9x9",
+                "label": "Griglia"
+            },
+            "sudoku": {
+                "label": "Sudoku"
+            },
+            "key": {
+                "label": "Chiave"
+            }
+        },
+        "image-wheel": {
+            "name": "Ruota delle immagini",
+            "description": "Un meccanismo di blocco che richiede al giocatore di ruotare una serie di anelli concentrici nella posizione corretta per allineare l'immagine.",
+            "playerInfo": "Per risolvere questo rompicapo non è necessario alcun contesto esterno: i giocatori devono semplicemente ruotare le rotelle finché l'immagine non risulta allineata.",
+            "image": {
+                "label": "Immagine"
+            },
+            "wheelCount": {
+                "label": "Numero di ruote"
+            },
+            "angleStep": {
+                "label": "Passo angolare"
+            },
+            "fixed": {
+                "label": "Ruota fissa",
+                "notes": "La ruota che non deve essere ruotata. Dove 1 indica la ruota più esterna."
+            }
+        },
+        "mastermind-lock": {
+            "name": "Il genio",
+            "description": "Un lucchetto che richiede al giocatore di indovinare la combinazione corretta di colori o lettere per sbloccare il documento. Ogni volta che il giocatore tenta di sbloccarlo, riceverà un feedback sul numero di colori o lettere corretti e nella posizione giusta. Il verde indica un colore e una posizione corretti, il giallo indica un colore corretto ma una posizione errata, mentre il rosso indica un colore errato.",
+            "playerInfo": "Per risolvere questo rompicapo, i giocatori possono avvalersi dei riscontri ottenuti dai tentativi precedenti per formulare ipotesi fondate sulla combinazione corretta. Sebbene la meta-conoscenza non sia strettamente necessaria, può aiutare i giocatori a formulare ipotesi più fondate.",
+            "reset": "Reimposta",
+            "solution": {
+                "label": "Soluzione",
+                "notes": "La soluzione al rompicapo \"Mastermind\". Ogni colore o lettera deve essere separato da una virgola. È possibile utilizzare colori CSS come \"red\" o codici esadecimali come \"#ff0000\"."
+            },
+            "pipOptions": {
+                "label": "Perni",
+                "notes": "I colori o le lettere che il giocatore può utilizzare per indovinare la soluzione. Ogni colore o lettera deve essere separato da una virgola. È possibile utilizzare colori CSS come \"red\" o codici esadecimali come \"#ff0000\"."
+            }
+        },
+        "fill-blanks-lock": {
+            "name": "Completa gli spazi vuoti",
+            "description": "Un lucchetto che richiede al giocatore di completare gli spazi vuoti in un testo per sbloccare il documento. Il giocatore deve inserire i caratteri corretti nell'ordine corretto.",
+            "playerInfo": "Per risolvere questo rompicapo, i giocatori possono avvalersi del contesto per compilare gli spazi vuoti. È inoltre possibile fornire loro suggerimenti o istruzioni su come risolverlo.",
+            "solution": {
+                "label": "Soluzione",
+                "notes": "La soluzione all'esercizio \"riempi gli spazi vuoti\". Questo dovrebbe essere il testo completo con gli spazi vuoti compilati.",
+                "placeholder": "La volpe bruna e veloce salta sopra il cane pigro."
+            },
+            "text": {
+                "label": "Testo",
+                "notes": "Il testo con gli spazi vuoti che il giocatore deve compilare. Usa i trattini bassi per indicare gli spazi vuoti.",
+                "placeholder": "La volpe marrone _____ salta ____ il cane ____."
+            },
+            "caseSensitive": {
+                "label": "Distinguendo tra maiuscole e minuscole"
+            }
+        },
+        "mosaic-lock": {
+            "name": "Mosaico",
+            "description": "Un lucchetto che richiede al giocatore di risolvere un puzzle a mosaico per sbloccare il documento. Il giocatore deve cliccare sulle tessere per ruotarle e completare l'immagine.",
+            "playerInfo": "Per risolvere questo rompicapo non è necessario alcun contesto esterno: i giocatori devono semplicemente ruotare le tessere fino a completare l'immagine.",
+            "mosaicImage": {
+                "label": "Immagine a mosaico",
+                "notes": "L'immagine che il giocatore deve completare. Per ottenere risultati ottimali, si consiglia di utilizzare un'immagine quadrata."
+            },
+            "mosaicSize": {
+                "label": "Dimensioni del mosaico",
+                "notes": "Il numero di righe e colonne del mosaico."
+            }
+        },
+        "sound-lock": {
+            "name": "Melody",
+            "description": "Un lucchetto che richiede al giocatore di ascoltare una melodia e inserire la sequenza corretta di note per sbloccare il documento.",
+            "playerInfo": "Sebbene non sia necessario alcun contesto esterno per risolvere questo rompicapo, i giocatori dovranno avere un buon orecchio musicale per riuscirci. Chi ha una maggiore familiarità con la teoria musicale avrà meno difficoltà a risolvere questo rompicapo.",
+            "sequence": {
+                "label": "Sequenza",
+                "notes": "La sequenza di note che l'utente deve inserire per sbloccare il documento. Ogni nota deve essere separata da una virgola. È possibile utilizzare le seguenti note: C, C#, D, D#, E, F, F#, G, G#, A, A#, Si può anche utilizzare la seguente notazione per aumentare o diminuire l'ottava: +C, -C, ++A, --B. Per impostare una durata personalizzata per ogni nota (in millisecondi) è possibile utilizzare la seguente notazione: C500, D#1000."
+            },
+            "chordDuration": {
+                "label": "Durata",
+                "notes": "La durata di ciascuna nota in millisecondi."
+            },
+            "pauseBetweenNotes": {
+                "label": "Pausa tra le note",
+                "notes": "La durata della pausa tra una nota e l'altra, espressa in millisecondi."
+            }
+        },
+        "fifteen-lock": {
+            "name": "Tessere scorrevoli",
+            "description": "Un lucchetto che richiede al giocatore di risolvere un puzzle a tessere per sbloccare il documento. Il giocatore deve far scorrere le tessere per ricomporre l'immagine corretta. La tessera vuota deve trovarsi nell'angolo in basso a destra per sbloccare il documento.",
+            "playerInfo": "Per risolvere questo rompicapo non serve alcun contesto esterno: basta che i giocatori facciano scorrere le tessere finché l'immagine non è completa.",
+            "shuffleDialog": "Mosse casuali:",
+            "image": {
+                "label": "Immagine",
+                "notes": "L'immagine che il giocatore deve ricomporre facendo scorrere le tessere. Per ottenere risultati ottimali, si consiglia di utilizzare un'immagine quadrata."
+            },
+            "size": {
+                "label": "Griglia",
+                "notes": "Il numero di righe e colonne del puzzle scorrevole."
+            }
+        },
+        "four-by-four-lock": {
+            "name": "Pedoni e stelle",
+            "description": "Un rompicapo in cui il giocatore deve posizionare delle pedine su una griglia per formare una figura specifica. Alcune caselle contengono delle stelle che devono essere coperte dalle pedine; il numero di stelle da coprire è specificato di seguito e dipende dalle dimensioni della griglia. Ogni riga e ogni colonna devono contenere esattamente il numero di pedine indicato nelle intestazioni delle colonne o delle righe.",
+            "playerInfo": "Se le stelle sono attivate, i giocatori avranno bisogno di un suggerimento per sapere quante stelle devono coprire. Altrimenti, è possibile risolvere il puzzle senza alcuna informazione esterna.",
+            "pawnImage": {
+                "label": "Immagine del pedone",
+                "notes": "L'immagine che rappresenta i pedoni."
+            },
+            "starImage": {
+                "label": "Immagine della stella",
+                "notes": "L'immagine che raffigura le stelle."
+            },
+            "noStars": {
+                "label": "Ignora le stelle",
+                "notes": "Se questa opzione è selezionata, le stelle verranno rimosse e il giocatore dovrà solo posizionare le pedine nelle posizioni corrette."
+            },
+            "gridSize": {
+                "label": "Dimensione della griglia",
+                "notes": "Il numero di righe e colonne della griglia."
+            },
+            "generate": "Genera un puzzle",
+            "puzzleGrid": {
+                "label": "Griglia del puzzle",
+                "notes": "La griglia del puzzle. Se desideri crearne uno tuo, ti preghiamo di seguire la sintassi di un puzzle generato. Questa immagine mostra lo stato risolto, dove 0 indica una casella vuota, 1 una pedina, 2 una stella e 3 una pedina su una stella."
+            },
+            "pawnNumber": "Pedoni da posizionare",
+            "starNumber": "Stelle da coprire"
+        },
+        "match-lock": {
+            "name": "Abbinamento parola/immagine",
+            "description": "Un lucchetto che richiede al giocatore di abbinare le parole per sbloccare il documento. Se è stata impostata una parola segreta, le lettere errate verranno barrate e quelle rimanenti formeranno la parola segreta. In questo caso, i giocatori devono inserire la parola segreta per sbloccare il documento.",
+            "playerInfo": "Per risolvere questo rompicapo, i giocatori possono avvalersi del contesto per abbinare le parole. È inoltre possibile fornire loro suggerimenti o istruzioni su come risolverlo.",
+            "enterSecretWord": "Inserisci la parola segreta.",
+            "matchTable": {
+                "label": "Tabella delle partite",
+                "notes": "La tabella contiene le parole da abbinare; è possibile utilizzare anche i percorsi delle immagini al posto delle parole. La prima colonna contiene le parole da abbinare, mentre la seconda colonna contiene le parole con cui effettuare l'abbinamento. Ogni coppia di parole deve essere separata dal carattere '|' (barra verticale).\nLa colonna di sinistra verrà visualizzata così come è scritta, mentre quella di destra verrà rimescolata."
+            },
+            "secretWord": {
+                "label": "Parola segreta",
+                "notes": "Se questa opzione è attivata, alcune lettere casuali verranno distribuite nell'area centrale del puzzle; una volta che il giocatore avrà abbinato correttamente le parole, le lettere errate verranno cancellate e quelle rimanenti formeranno la parola segreta."
+            },
+            "dictionary": {
+                "label": "Dizionario",
+                "notes": "Il dizionario che verrà utilizzato per le lettere casuali."
+            }
+        },
+        "flags": {},
+        "attempts": "Tentativi rimanenti",
+        "headerConfig": "Lucchetto a puzzle",
+        "unlocked": "Sbloccato",
+        "how-to": "Come funziona?",
+        "how-to-player": "Istruzioni per i giocatori",
+        "chatMessage": "sta cercando di sbloccare",
+        "sidebar-buttons": {
+            "unlock": "Tenta lo sblocco",
+            "configure": "Configura blocco",
+            "shareToChat": "Condividi nella chat",
+            "zoomPlus": "Ingrandisci",
+            "zoomMinus": "Riduci la visualizzazione",
+            "shuffle": "Puzzle Shuffle",
+            "close": "Chiudi"
+        },
+        "notifications": {
+            "noLock": "Questo documento non è protetto da blocco.",
+            "alreadyUnlocked": "Questo documento è già sbloccato.",
+            "noLockSelected": "Non è stato selezionato alcun tipo di serratura.",
+            "unlocked": "Sbloccato.",
+            "noGM": "Per poter sbloccare questo documento è necessario che un GM abbia effettuato l'accesso.",
+            "failedAttempt": "Sblocco non riuscito.",
+            "contentLinkCopied": "Il link al contenuto è stato copiato negli appunti.",
+            "locked": "Questo documento è bloccato. In qualità di GM, puoi aprirlo normalmente.",
+            "resetSuccess": "Il puzzle è stato ripristinato con successo.",
+            "ownershipFixed": "La proprietà predefinita è impostata su \"Nessuna\".",
+            "noAttempts": "Non ci sono più tentativi a disposizione."
+        }
+    }
+}

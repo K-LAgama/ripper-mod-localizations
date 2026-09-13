@@ -1,19 +1,12 @@
 {
-    "levels.controls.toggleCylinder.name": "Coloca un cilindro en lugar de una esfera",
-    "levels.controls.toggleVolumetric.name": "Plantilla volumétrica",
     "levelsvolumetrictemplates.settings.volPercent.name": "Porcentaje volumétrico",
     "levelsvolumetrictemplates.settings.volPercent.hint": "El porcentaje del volumen o la superficie que se considera un objetivo válido",
-    "levelsvolumetrictemplates.settings.checkCollision.name": "Comprobar si ha habido colisión",
-    "levelsvolumetrictemplates.settings.checkCollision.hint": "Comprueba si hay colisión entre las paredes y los suelos, entre el origen de la plantilla y el centro del token",
-    "levelsvolumetrictemplates.settings.3dtemplatedefault.name": "Habilitar las plantillas volumétricas de forma predeterminada",
-    "levelsvolumetrictemplates.settings.3dtemplatedefault.hint": "Establece si las plantillas volumétricas deben activarse al cargar el mundo o no",
-    "levelsvolumetrictemplates.settings.handModeDefault.name": "Activar el modo manual de forma predeterminada",
-    "levelsvolumetrictemplates.settings.handModeDefault.hint": "Si se activa, el modo «mano» se activará al cargar el mundo. Cuando este modo esté activado, las plantillas se colocarán por defecto a la altura de la «mano» del token, en lugar de a su elevación.",
-    "levelsvolumetrictemplates.settings.dynamicSwap.name": "Intercambio automático dinámico",
-    "levelsvolumetrictemplates.settings.dynamicSwap.hint": "Determina automáticamente si se debe utilizar una plantilla volumétrica o de área. Cuando este modo está activo, los círculos y los conos siempre serán volumétricos, y los conos se calcularán automáticamente a la altura de la mano.",
-    "levelsvolumetrictemplates.settings.debugMode.name": "Modo de depuración",
-    "levelsvolumetrictemplates.settings.debugMode.hint": "Mostrar los porcentajes de volumen/superficie en las fichas al colocar plantillas",
-    "levels.controls.handMode.name": "Coloca las plantillas a la altura de la mano",
-    "levels.controls.ignoreSelf.name": "Ignorar el «yo»",
-    "levels.controls.ignoreFriendly.name": "Ignorar a los personajes amigos"
+    "levelsvolumetrictemplates.settings.ignoreSelf.name": "Ignorar el «yo»",
+    "levelsvolumetrictemplates.settings.ignoreSelf.hint": "Ignorar «Self» al colocar regiones",
+    "levelsvolumetrictemplates.settings.ignoreFriendly.name": "Ignorar a los personajes amigos",
+    "levelsvolumetrictemplates.settings.ignoreFriendly.hint": "Ignorar los personajes «amigables» al colocar regiones",
+    "levelsvolumetrictemplates.settings.targetOnChange.name": "El cambio en el punto de mira",
+    "levelsvolumetrictemplates.settings.targetOnChange.hint": "Objetivo: cambio en la vista previa de la región",
+    "levelsvolumetrictemplates.settings.targetOnPlacement.name": "Objetivo de colocación",
+    "levelsvolumetrictemplates.settings.targetOnPlacement.hint": "Opción de ubicación regional (desactivarla para utilizar el módulo como API)"
 }

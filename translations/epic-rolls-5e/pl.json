@@ -1,0 +1,83 @@
+{
+    "epic-rolls-5e": {
+        "check": "Sprawdź",
+        "save": "Zapisz",
+        "death": "Śmierć",
+        "success": "Sukces",
+        "failure": "Niepowodzenie",
+        "button-tooltip": "Skonfiguruj Epic Roll <hr> Kliknij prawym przyciskiem myszy, aby wyświetlić ostatnie rzuty",
+        "complete-roll": "Zakończ epicki rzut",
+        "epicRoll": "Epicki rzut",
+        "settings": {
+            "introSound": {
+                "name": "Dźwięk wprowadzający",
+                "hint": "Dźwięk, który ma zostać odtworzony po rozpoczęciu rzutu"
+            },
+            "successSound": {
+                "name": "Dźwięk sukcesu",
+                "hint": "Dźwięk, który ma zostać odtworzony w przypadku udanego rzutu"
+            },
+            "failureSound": {
+                "name": "Dźwięk sygnalizujący awarię",
+                "hint": "Dźwięk, który ma zostać odtworzony w przypadku niepowodzenia rzutu"
+            },
+            "recapMessage": {
+                "name": "Podsumowanie wiadomości",
+                "hint": "Skonfiguruj, kto będzie mógł zobaczyć komunikat wyświetlany po zakończeniu epickiego rzutu",
+                "options": {
+                    "none": "Brak",
+                    "gm": "GM",
+                    "public": "Publiczne"
+                }
+            },
+            "cleanupMessages": {
+                "name": "Komunikaty dotyczące czyszczenia",
+                "hint": "Usuń komunikaty dotyczące losowania po zakończeniu losowania epickiego"
+            }
+        },
+        "get-roll-data": {
+            "customFormula": "Formuła niestandardowa",
+            "customLabel": "Etykieta",
+            "customLabelNotes": "Indywidualna etykieta wstępna na rolkę",
+            "formula": "Wzór",
+            "title": "Skonfiguruj rzut epicki",
+            "startRoll": "Rozpocznij epicką rzutkę",
+            "macro": "Zapisz jako makro",
+            "save-macro": "Utworzono makro „Epic Roll” dla ",
+            "player": "Postać gracza",
+            "npc": "Postać niezależna",
+            "selected": "Wybrane",
+            "available": "Dostępne",
+            "rollOptions": "Opcje rolowania",
+            "VsDCNotes": "Prąd stały dla rolki",
+            "showDC": "Pokaż DC",
+            "showDCNotes": "Po włączeniu tej opcji DC będzie widoczne dla graczy",
+            "useAverage": "Użyj średniej",
+            "useAverageNotes": "Aby ustalić, czy zadanie zakończyło się sukcesem czy porażką, należy wykorzystać średnią ze wszystkich wyników",
+            "allowReroll": "Zezwól na ponowne rzucenie kością",
+            "allowRerollNotes": "Umożliw graczom ponowne rzucenie kością",
+            "showRollResults": "Pokaż tekst zakończenia",
+            "showRollResultsNotes": "Wyświetl tekst końcowy informujący o powodzeniu lub niepowodzeniu",
+            "blindRoll": "Rolka ślepa",
+            "blindRollNotes": "Ukryj wyniki rzutów przed graczami",
+            "hideNames": "Ukryj nazwy",
+            "hideNamesNotes": "Ukryj przed graczami nazwy postaci, które nie należą do graczy",
+            "color": "Kolor",
+            "colorNotes": "Kolor banera rolkowego",
+            "autoColor": "Automatyczny dobór koloru",
+            "autoColorNotes": "Automatycznie nadaj kolor banerowi rolkowemu w zależności od rodzaju rolki",
+            "contest": "Konkurs",
+            "contestInfo": "Aby oznaczyć uczestników, kliknij prawym przyciskiem myszy na aktora i/lub rolę",
+            "saveDefaultOptions": "Ustaw jako domyślne",
+            "saveDefaultOptionsNotification": "Aktualne opcje zapisane jako domyślne",
+            "ERROR": {
+                "noActors": "Nie wybrano żadnego aktora do tej roli. Wybierz co najmniej jednego aktora.",
+                "noType": "Nie wybrano typu rolki – wybierz typ",
+                "noContestants": "Wybrano typ losowania z rywalizacją, ale nie wybrano żadnych uczestników",
+                "noContest": "Wybrano uczestników, ale nie wybrano rodzaju konkursu",
+                "noDC": "Nie podano współczynnika trudności (DC) dla rzutu – proszę wprowadzić współczynnik trudności (DC)"
+            }
+        },
+        "flags": {}
+    }
+}

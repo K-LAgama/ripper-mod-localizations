@@ -1,0 +1,10 @@
+{
+    "levels-layer-effects": {
+        "settings": {
+            "disableBlur": {
+                "name": "Disattiva sfocatura",
+                "hint": "Disattiva l'effetto sfocatura; attiva questa opzione sui dispositivi di fascia bassa."
+            }
+        }
+    }
+}

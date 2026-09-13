@@ -1,0 +1,70 @@
+{
+    "bossbar": {
+        "controls": {
+            "bossUI": {
+                "name": "切換 Boss Bar",
+                "warn": "尚未選取任何代幣。請選取一個或多個代幣，然後再試一次"
+            }
+        },
+        "settings": {
+            "barStyle": {
+                "classic": "經典",
+                "matchingImages": "配對圖片"
+            },
+            "currentHpPath": {
+                "name": "當前 HP 路徑",
+                "hint": "通往某個角色當前生命值的資料路徑"
+            },
+            "maxHpPath": {
+                "name": "最高生命值路線",
+                "hint": "計算角色最大生命值的運算路徑"
+            },
+            "BarStyleConfiguration": {
+                "name": "Boss Bar 款式",
+                "label": "設定樣式"
+            },
+            "resetPosition": {
+                "name": "重設位置",
+                "hint": "將 Boss Bar 的位置重設為預設值"
+            },
+            "textAlign": {
+                "left": "左",
+                "center": "中心",
+                "right": "對"
+            },
+            "woundsSystem": {
+                "name": "傷勢系統",
+                "hint": "如果您的系統採用「傷勢」而非「生命值」，請啟用此選項。"
+            }
+        },
+        "bar-style-configuration": {
+            "add": "新增樣式",
+            "title": "Boss Bar 樣式設定",
+            "delete-title": "刪除樣式",
+            "delete-confirm": "您確定要刪除此樣式嗎？",
+            "edit": "編輯樣式",
+            "background": "背景圖片",
+            "foreground": "前景圖片",
+            "bar": "酒吧圖片",
+            "tempBarColor": "臨時生命值條顏色",
+            "tempBarAlpha": "臨時生命值條 Alpha 版",
+            "barHeight": "Boss 吧檯高度",
+            "font": "字型家族",
+            "textSize": "字體大小",
+            "textAlign": "文字對齊",
+            "type": "樣式類型",
+            "type-hint": "選擇樣式類型"
+        },
+        "boss-bar-configuration": {
+            "title": "Boss Bar 設定",
+            "no-actors": "該場景中未選取或未出現任何演員。",
+            "no-scene": "目前沒有任何片段。請選擇一個片段後再試一次",
+            "save-pan": "儲存並平移攝影機",
+            "edit-themes": "關閉與編輯佈景主題",
+            "hideNameHint": "在「Boss Bar」中隱藏演員的名字"
+        },
+        "boss-bar": {
+            "title": "Boss Bar"
+        }
+    }
+}

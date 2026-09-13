@@ -1,0 +1,117 @@
+{
+    "patrol": {
+        "patrol-app": {
+            "title": "Panel patrolowy",
+            "selectAll": "Wykonaj wszystkie kroki",
+            "selectSingle": "Wybrany krok",
+            "stepBackward": "Krok wstecz",
+            "stepForward": "Krok naprzód",
+            "toggleStepping": "Włącz/wyłącz patrol",
+            "toggleSteppingDisabled": "Funkcja „Auto Patrol” jest wyłączona podczas walki oraz podczas przemieszczania pojedynczych żetonów"
+        },
+        "settings": {
+            "patrolMaxSuspicious": {
+                "name": "Maksymalna liczba podejrzanych cykli",
+                "hint": "Liczba cykli, przez które token rozgląda się, zanim spróbuje ścigać postać gracza"
+            },
+            "patrolMaxAlerted": {
+                "name": "Maksymalna liczba cykli z alarmem",
+                "hint": "Liczba cykli, przez które żeton musi mieć bezpośrednią widoczność ściganego bohatera, zanim faktycznie go dostrzeże"
+            },
+            "patrolSound": {
+                "name": "Spotted Sound",
+                "hint": "Dźwięk odtwarzany, gdy komputer zostanie wykryty przez wroga"
+            },
+            "patrolAlert": {
+                "name": "Sygnał dźwiękowy",
+                "hint": "Dźwięk, który ma zostać odtworzony, gdy postać gracza zaalarmuje wroga"
+            },
+            "openApplication": {
+                "name": "Panel patrolowy",
+                "hint": "Otwórz panel „Patrol”. Możesz również kliknąć przycisk „Patrol” w sekcji „Token Scene Controls”, przytrzymując klawisz Alt i klikając lewym przyciskiem myszy, lub użyć polecenia makra „ui.patrolApp.render({ force: true })”.",
+                "label": "Otwórz panel patrolowy"
+            },
+            "minStepDelay": {
+                "name": "Minimalne opóźnienie cyklu",
+                "hint": "Minimalne opóźnienie między cyklami w milisekundach. Jeśli wartość ta jest krótsza niż czas trwania animacji, zastosowany zostanie czas trwania animacji. Rzeczywisty czas między ruchami będzie zależał od aktualizacji tokenów w Foundry oraz od przemieszczania się tokenów na mapie. Niższe wartości mogą powodować większe obciążenie zasobów."
+            },
+            "animationDuration": {
+                "name": "Czas trwania animacji",
+                "hint": "Czas trwania animacji ruchu tokenów w milisekundach."
+            },
+            "hidePatrolButtonInSidebar": {
+                "name": "Ukryj przycisk „Panel patrolu” na pasku bocznym",
+                "hint": "Ukryj przycisk „Panel Patrol” na pasku bocznym katalogu aktorów. Nadal możesz korzystać z polecenia makro „ui.patrolApp.render({ force: true })” lub kliknąć przycisk „Patrol” w sekcji „Token Scene Controls” przytrzymując klawisz Alt i klikając lewym przyciskiem myszy."
+            },
+            "migrateOnStartupDialog": {
+                "name": "Otwórz okno dialogowe migracji przy uruchomieniu",
+                "hint": "Jeśli opcja ta jest włączona, moduł po uruchomieniu wyświetli okno dialogowe umożliwiające migrację danych ze struktury V13 do struktury V14."
+            }
+        },
+        "tokenConfig": {
+            "enablePatrol": {
+                "name": "Włącz patrol"
+            },
+            "enableSpotting": {
+                "name": "Postacie graczy w trybie Spot",
+                "hint": "Posiadanie wielu żetonów znaczników może wymagać znacznych zasobów. Należy obchodzić się z nimi ostrożnie."
+            },
+            "doorBehavior": {
+                "name": "Czy zmieści się w drzwiach?",
+                "choices": {
+                    "useRegionSettings": "Użyj ustawień regionu (wykorzystuje również opcję „Zostaw drzwi otwarte” dla tego regionu)",
+                    "unlocked": "Otwarte drzwi",
+                    "locked": "Zamknięte drzwi",
+                    "secret": "Tajne drzwi"
+                }
+            },
+            "leaveDoorOpen": {
+                "name": "Zostaw drzwi otwarte",
+                "hint": "Prawdopodobieństwo, że token pozostawi drzwi otwarte po przejściu przez nie"
+            }
+        },
+        "statusEffects": {
+            "patrolundetectable": {
+                "name": "Patrol – niewykrywalny"
+            }
+        },
+        "tools": {
+            "patrolToggle": {
+                "app": "Przełącz panel patrolowy",
+                "stepping": "Włącz/wyłącz patrol tokenów"
+            }
+        }
+    },
+    "TYPES": {
+        "RegionBehavior": {
+            "patrol": {
+                "patrolArea": "Obszar patrolowy",
+                "whitelist": "Lista dozwolonych adresów",
+                "blacklist": "Czarna lista",
+                "type": {
+                    "label": "Typ",
+                    "hint": "Wybierz, czy tokeny będą patrolować obszar, czy też strzec jego granic",
+                    "choices": {
+                        "area": "Obszar",
+                        "edge": "Krawędź"
+                    }
+                },
+                "weight": {
+                    "label": "Waga",
+                    "hint": "Jak dużą wagę ma ten obszar w algorytmie patrolowania. Wyższe wartości wagi będą miały pierwszeństwo przed niższymi."
+                },
+                "darkness": {
+                    "min": {
+                        "label": "Ciemność Min",
+                        "hint": "Minimalny poziom zaciemnienia, przy którym obszar ten zostanie uwzględniony w planie patroli."
+                    },
+                    "max": {
+                        "label": "Darkness Max",
+                        "hint": "Maksymalny poziom zaciemnienia dla tego obszaru, który należy uwzględnić przy planowaniu patrolu."
+                    },
+                    "validationError": "Minimalna wartość ciemności musi być niższa od maksymalnej wartości ciemności."
+                }
+            }
+        }
+    }
+}

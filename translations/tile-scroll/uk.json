@@ -1,0 +1,16 @@
+{
+    "tile-scroll": {
+        "flags": {
+            "header": "Прокрутка плиток",
+            "enableScroll": "Прокрутити",
+            "enabled": "Увімкнено",
+            "scrollSpeed": "Швидкість",
+            "scrollDirection": "Напрямок",
+            "enableRotate": "Увімкнути обертання",
+            "repeat": "Повторення візерунка",
+            "pivot": "Ось обертання",
+            "offset": "Зсув",
+            "parallax": "Інтенсивність ефекту паралакса"
+        }
+    }
+}

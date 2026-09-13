@@ -1,0 +1,91 @@
+{
+    "hp": {
+        "settings": {
+            "disable": {
+                "name": "Wyłącz licznik czasu",
+                "hint": "Wyłącz licznik czasu walki"
+            },
+            "timerDuration": {
+                "name": "Czas trwania timera",
+                "hint": "Czas trwania timera w sekundach"
+            },
+            "style": {
+                "name": "Styl",
+                "hint": "Styl licznika czasu",
+                "digits": "Cyfry",
+                "circle": "Okrąg",
+                "sand": "Piasek"
+            },
+            "countup": {
+                "name": "Liczenie w górę",
+                "hint": "Licznik czasu odlicza w górę zamiast w dół (tylko style „Cyfry” i „Okrąg”)"
+            },
+            "overtime": {
+                "name": "Nadgodziny",
+                "hint": "Licznik czasu nadal działa po upływie maksymalnego czasu"
+            },
+            "size": {
+                "name": "Rozmiar",
+                "hint": "Wielkość timera"
+            },
+            "secondary-size": {
+                "name": "Rozmiar dodatkowy",
+                "hint": "Wielkość liczników pomocniczych"
+            },
+            "secondary-direction": {
+                "name": "Kierunek drugorzędny",
+                "hint": "Kierunek działania liczników pomocniczych"
+            },
+            "windowless": {
+                "name": "Bez okien",
+                "hint": "Wyświetl licznik czasu bez okna"
+            },
+            "critical": {
+                "name": "Próg krytyczny",
+                "hint": "Próg, po przekroczeniu którego wskaźnik osiągnie stan krytyczny i zacznie migać"
+            },
+            "secondsInsteadOfPercentage": {
+                "name": "W przypadku czasu krytycznego należy stosować sekundy zamiast wartości procentowych",
+                "hint": "Domyślnie próg krytyczny jest wyrażony jako procent całkowitego czasu. Po zaznaczeniu tej opcji wartość ta zostanie zmieniona na sekundy."
+            },
+            "goNext": {
+                "name": "Dalej",
+                "hint": "Po upływie czasu przejdź do następnego przeciwnika."
+            },
+            "runForNpc": {
+                "name": "Kandyduj do NPC",
+                "hint": "Uruchom licznik czasu podczas tury postaci niezależnej"
+            },
+            "showOnUpdateCombatOnly": {
+                "name": "Pierwszy zegar startowy na następnym zakręcie",
+                "hint": "Najpierw wyświetl zegar walki po naciśnięciu przycisku „Rozpocznij walkę”, „Następna tura” lub „Zakończ turę”"
+            },
+            "critSoundPath": {
+                "name": "Krytyczny dźwięk",
+                "hint": "Dźwięk, który ma zostać odtworzony, gdy licznik czasu osiągnie stan krytyczny"
+            },
+            "endSoundPath": {
+                "name": "Dźwięk końcowy",
+                "hint": "Dźwięk, który ma zostać odtworzony po upływie czasu"
+            },
+            "soundVol": {
+                "name": "Głośność dźwięku",
+                "hint": "Głośność odtwarzanych dźwięków"
+            }
+        },
+        "contextMenu": {
+            "pause": "Pauza",
+            "unpause": "CV",
+            "reset": "Resetuj",
+            "close": "Zamknij"
+        },
+        "create": {
+            "title": "Pospiesz się!",
+            "paused": "Wstrzymane",
+            "time": "Czas",
+            "timeError": "Czas musi być liczbą większą od 0",
+            "name": "Imię i nazwisko",
+            "color": "Kolor"
+        }
+    }
+}

@@ -1,0 +1,117 @@
+{
+    "patrol": {
+        "patrol-app": {
+            "title": "巡逻面板",
+            "selectAll": "“全部”",
+            "selectSingle": "已选步骤",
+            "stepBackward": "倒退一步",
+            "stepForward": "迈出一步",
+            "toggleStepping": "切换巡逻",
+            "toggleSteppingDisabled": "在战斗中以及移动单个标记时，自动巡逻功能将被禁用"
+        },
+        "settings": {
+            "patrolMaxSuspicious": {
+                "name": "最大可疑周期",
+                "hint": "一个代币在尝试追击一名玩家角色之前会环顾四周的回合数"
+            },
+            "patrolMaxAlerted": {
+                "name": "最大警报周期",
+                "hint": "一个标记必须在追踪的目标玩家身上保持视线多少个回合，才能真正发现该目标"
+            },
+            "patrolSound": {
+                "name": "斑点海峡",
+                "hint": "当敌方发现玩家时播放的音效"
+            },
+            "patrolAlert": {
+                "name": "警报声",
+                "hint": "当敌人被玩家角色惊动时播放的声音"
+            },
+            "openApplication": {
+                "name": "巡逻面板",
+                "hint": "打开“巡逻”面板。您也可以在“令牌场景控制”中按住 Alt 键并左键单击“巡逻”按钮，或使用“ui.patrolApp.render({ force: true })”宏命令。",
+                "label": "打开巡逻面板"
+            },
+            "minStepDelay": {
+                "name": "最小周期延迟",
+                "hint": "相邻循环之间的最小延迟（单位：毫秒）。如果该值小于“动画时长”，则将使用“动画时长”作为替代。动作之间的实际间隔时间将取决于 Foundry 的标记更新以及标记在地图上的移动情况。较小的数值可能会消耗大量资源。"
+            },
+            "animationDuration": {
+                "name": "动画时长",
+                "hint": "令牌移动动画的持续时间（以毫秒为单位）。"
+            },
+            "hidePatrolButtonInSidebar": {
+                "name": "在侧边栏中隐藏“巡逻面板”按钮",
+                "hint": "隐藏“演员目录”侧边栏中的“巡逻面板”按钮。您仍然可以使用“ui.patrolApp.render({ force: true })”宏命令，或在“令牌场景控件”中按住 Alt 键并左键单击“巡逻”按钮。"
+            },
+            "migrateOnStartupDialog": {
+                "name": "启动时打开迁移对话框",
+                "hint": "如果启用了此功能，该模块将在启动时打开一个对话框，将数据从 V13 数据结构迁移到 V14 数据结构。"
+            }
+        },
+        "tokenConfig": {
+            "enablePatrol": {
+                "name": "启用巡逻"
+            },
+            "enableSpotting": {
+                "name": "玩家角色一览",
+                "hint": "拥有多个标记令牌可能会消耗大量资源。请谨慎使用。"
+            },
+            "doorBehavior": {
+                "name": "能通过门吗？",
+                "choices": {
+                    "useRegionSettings": "使用区域设置（同时使用该区域的“保持门敞开”功能）",
+                    "unlocked": "敞开的门",
+                    "locked": "紧闭的门",
+                    "secret": "秘密门"
+                }
+            },
+            "leaveDoorOpen": {
+                "name": "请将门敞开",
+                "hint": "令牌通过一扇门后，该门保持开启的概率"
+            }
+        },
+        "statusEffects": {
+            "patrolundetectable": {
+                "name": "巡逻 - 无法被探测到"
+            }
+        },
+        "tools": {
+            "patrolToggle": {
+                "app": "切换巡逻面板",
+                "stepping": "切换“令牌巡查”"
+            }
+        }
+    },
+    "TYPES": {
+        "RegionBehavior": {
+            "patrol": {
+                "patrolArea": "巡逻区域",
+                "whitelist": "白名单",
+                "blacklist": "黑名单",
+                "type": {
+                    "label": "类型",
+                    "hint": "选择令牌是巡逻该区域还是守卫其边界",
+                    "choices": {
+                        "area": "区域",
+                        "edge": "Edge"
+                    }
+                },
+                "weight": {
+                    "label": "重量",
+                    "hint": "该区域在巡逻算法中的权重是多少。权重越高，优先级就越高。"
+                },
+                "darkness": {
+                    "min": {
+                        "label": "黑暗·敏",
+                        "hint": "该区域被纳入巡逻范围所需的最低黑暗程度。"
+                    },
+                    "max": {
+                        "label": "黑暗极致",
+                        "hint": "该区域被纳入巡逻范围所需的最大黑暗程度。"
+                    },
+                    "validationError": "“黑暗最小值”必须小于“黑暗最大值”。"
+                }
+            }
+        }
+    }
+}

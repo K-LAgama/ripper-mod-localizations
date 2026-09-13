@@ -1,0 +1,73 @@
+{
+    "party-monitor-dock": {
+        "title": "派對監控底座",
+        "settings": {
+            "onlyConnected": {
+                "name": "僅顯示已連線的玩家",
+                "hint": "僅顯示已連線至伺服器的玩家"
+            },
+            "portraitSize": {
+                "name": "肖像尺寸",
+                "hint": "被告席上肖像畫的尺寸"
+            },
+            "position": {
+                "name": "泊位位置",
+                "hint": "螢幕上停靠欄的位置",
+                "choices": {
+                    "docked": "已停靠",
+                    "horizontal": "水平（浮動）",
+                    "vertical": "垂直（浮動）",
+                    "hidden": "隱藏"
+                }
+            },
+            "dockAlignment": {
+                "name": "HUD 對齊",
+                "hint": "當處於停靠狀態時，螢幕上 HUD 的對齊方式",
+                "choices": {
+                    "flex-start": "頂部",
+                    "center": "中心",
+                    "flex-end": "底部"
+                }
+            },
+            "hideInCombat": {
+                "name": "戰鬥中隱身",
+                "hint": "當戰鬥進行中時，隱藏 HUD"
+            },
+            "hideCompanions": {
+                "name": "隱藏同伴",
+                "hint": "從隊伍成員清單中隱藏夥伴"
+            },
+            "cornerImage": {
+                "name": "角落圖片",
+                "hint": "要在 Dock 角落顯示的圖片。若要停用此功能，請留空。"
+            },
+            "edgeImage": {
+                "name": "Edge 圖片",
+                "hint": "用於填補停靠區各角落之間空隙的圖片。若留空則表示停用此功能。"
+            }
+        },
+        "app": {
+            "buttons": {
+                "toggle-nav": "切換導覽按鈕",
+                "toggle-dock": "切換 Dock",
+                "reduce": "縮小尺寸",
+                "enlarge": "放大",
+                "start-follow": "開始追蹤",
+                "stop-follow": "取消追蹤",
+                "context": {
+                    "follow": "追蹤",
+                    "mount": "安裝",
+                    "epicRoll": "所需擲骰",
+                    "raise-hand": "舉手"
+                }
+            }
+        },
+        "flags": {},
+        "notifications": {
+            "follow": " 現在正在追看",
+            "unfollow": " 不再追蹤",
+            "mounted": " 已安裝",
+            "dismounted": " 已下馬"
+        }
+    }
+}

@@ -1,89 +1,104 @@
 {
     "media-optimizer": {
-        "audioConversionStarted": "Ottimizzatore multimediale: conversione audio avviata, sii paziente, potrebbe volerci un po'. \nSe lo desideri, puoi controllare l'avanzamento nella console (F12). \nFile:",
-        "conversionFailed": "Media Optimizer: conversione non riuscita, controlla il wiki per ulteriori informazioni.",
         "converted": "Ottimizzatore multimediale: convertito",
-        "file-converter": {
-            "buttons": {
-                "convert": "Ottimizza selezionato",
-                "select-all": "Seleziona tutto",
-                "select-none": "Cancella selezione"
-            },
-            "header-button": "Ottimizza contenuti multimediali",
-            "title": "Ottimizzatore multimediale: ottimizzatore di massa"
-        },
+        "conversionFailed": "Media Optimizer: conversione non riuscita, controlla il wiki per ulteriori informazioni.",
+        "audioConversionStarted": "Ottimizzatore multimediale: conversione audio avviata, sii paziente, potrebbe volerci un po'. \nSe lo desideri, puoi controllare l'avanzamento nella console (F12). \nFile:",
+        "videoConversionStarted": "Media Optimizer: conversione video avviata, sii paziente, potrebbe volerci un po'. \nSe lo desideri, puoi controllare l'avanzamento nella console (F12). \nFile:",
         "settings": {
-            "compressionRatio": {
-                "hint": "La qualità da utilizzare durante l'ottimizzazione delle immagini. \nUna qualità superiore si tradurrà in un'immagine di qualità superiore e in file di dimensioni maggiori. \nUna qualità inferiore si tradurrà in un'immagine di qualità inferiore e in file di dimensioni inferiori. \nIl valore predefinito è 0,75. \nNota: i rapporti di compressione per audio e video non possono essere personalizzati.",
-                "name": "Qualità"
+            "bloatDetector": {
+                "name": "Rilevatore di gonfiore",
+                "label": "Rilevatore di gonfiore Open",
+                "hint": "Individua le voci che potrebbero causare tempi di caricamento lenti o problemi di prestazioni."
             },
             "enabled": {
-                "hint": "Se l'ottimizzatore multimediale deve essere abilitato o meno. \nSe disabilitato, immagini, audio e video non saranno ottimizzati.",
-                "name": "Abilitato"
+                "name": "Abilitato",
+                "hint": "Se l'ottimizzatore multimediale deve essere abilitato o meno. \nSe disabilitato, immagini, audio e video non saranno ottimizzati."
             },
-            "excludeFolders": {
-                "hint": "Elenco di cartelle separate da virgole da escludere dall'ottimizzazione. \nSe immagini/audio/video vengono caricati in questa posizione, non verranno ottimizzati.",
-                "name": "Escludi cartelle"
+            "compressionRatio": {
+                "name": "Qualità",
+                "hint": "La qualità da utilizzare durante l'ottimizzazione delle immagini. \nUna qualità superiore si tradurrà in un'immagine di qualità superiore e in file di dimensioni maggiori. \nUna qualità inferiore si tradurrà in un'immagine di qualità inferiore e in file di dimensioni inferiori. \nIl valore predefinito è 0,75. \nNota: i rapporti di compressione per audio e video non possono essere personalizzati."
             },
             "maxResolution": {
-                "choices": {
-                    "4096": "4K (4096 pixel)"
-                },
+                "name": "Risoluzione massima",
                 "hint": "La risoluzione massima dell'immagine da ottimizzare. \nSe l'immagine è più grande di questa, verrà ridimensionata a questa risoluzione prima di essere ottimizzata. \nCiò è utile per evitare risoluzioni molto elevate non supportate dalla maggior parte delle schede grafiche.",
-                "name": "Risoluzione massima"
+                "choices": {
+                    "1024": "1K (1024 px)",
+                    "2048": "2K (2048 px)",
+                    "4096": "4K (4096 pixel)",
+                    "8192": "8K (8192 px)",
+                    "16384": "16K (16384 px)"
+                }
             },
-            "optimizeAudio": {
-                "hint": "Se ottimizzare o meno l'audio.",
-                "name": "Ottimizza l'audio"
+            "excludeFolders": {
+                "name": "Escludi cartelle",
+                "hint": "Elenco di cartelle separate da virgole da escludere dall'ottimizzazione. \nSe immagini/audio/video vengono caricati in questa posizione, non verranno ottimizzati."
             },
             "optimizeImages": {
-                "hint": "Se ottimizzare o meno le immagini.",
-                "name": "Ottimizza le immagini"
+                "name": "Ottimizza le immagini",
+                "hint": "Se ottimizzare o meno le immagini."
+            },
+            "optimizeAudio": {
+                "name": "Ottimizza l'audio",
+                "hint": "Se ottimizzare o meno l'audio."
             },
             "optimizeVideo": {
-                "hint": "Se ottimizzare o meno i video.",
-                "name": "Ottimizza i video"
+                "name": "Ottimizza i video",
+                "hint": "Se ottimizzare o meno i video."
             },
             "slugifyFileNames": {
-                "hint": "Se pulire o meno i nomi dei file. \nSi noti che questa impostazione si applicherà a qualsiasi file elaborato o creato da Media Optimizer. \nQuesto rimuoverà i caratteri speciali e li sostituirà con trattini. \nQuesto è utile per evitare problemi con i nomi dei file su diversi sistemi operativi e altri problemi causati da spazi e caratteri speciali.",
-                "name": "Pulisci i nomi dei file"
+                "name": "Pulisci i nomi dei file",
+                "hint": "Se pulire o meno i nomi dei file. \nSi noti che questa impostazione si applicherà a qualsiasi file elaborato o creato da Media Optimizer. \nQuesto rimuoverà i caratteri speciali e li sostituirà con trattini. \nQuesto è utile per evitare problemi con i nomi dei file su diversi sistemi operativi e altri problemi causati da spazi e caratteri speciali."
             }
         },
         "tile-combiner": {
+            "title": "Combinatore di piastrelle",
+            "notes": "Questa funzione apporterà modifiche permanenti alla scena! \nSi consiglia vivamente di eseguire un backup della scena.",
+            "info": "Il Combiner utilizzerà le impostazioni di compressione globali di Media Optimizer, è possibile modificarle nelle impostazioni del modulo.",
+            "confirm": {
+                "title": "Combinatore di tessere: conferma",
+                "content": "Stai per combinare le tessere, questo apporterà modifiche permanenti alla scena! \nSei sicuro di voler continuare?",
+                "backup": "Stai per combinare senza fare un backup, questo non è raccomandato!"
+            },
+            "buttons": {
+                "backup-combine": "Backup",
+                "combine": "Combina",
+                "cancel": "Annulla"
+            },
+            "mode": {
+                "label": "Combina modalità:",
+                "background": "Piastrelle Di Sfondo",
+                "foreground": "Piastrelle in primo piano",
+                "selected": "Piastrelle selezionate",
+                "all": "Tutte le tessere"
+            },
             "background": {
                 "label": "Includi sfondo?",
                 "notes": "Quando questa opzione è abilitata, il risultato dell'operazione Combina verrà impostato come sfondo della scena."
             },
-            "buttons": {
-                "backup-combine": "Backup",
-                "cancel": "Annulla",
-                "combine": "Combina"
-            },
-            "confirm": {
-                "backup": "Stai per combinare senza fare un backup, questo non è raccomandato!",
-                "content": "Stai per combinare le tessere, questo apporterà modifiche permanenti alla scena! \nSei sicuro di voler continuare?",
-                "title": "Combinatore di tessere: conferma"
-            },
-            "deleteTiles": {
-                "label": "Elimina tessere combinate?"
+            "folderPath": {
+                "label": "Percorso cartella:"
             },
             "fileName": {
                 "label": "Nome del file:"
             },
-            "folderPath": {
-                "label": "Percorso cartella:"
-            },
-            "info": "Il Combiner utilizzerà le impostazioni di compressione globali di Media Optimizer, è possibile modificarle nelle impostazioni del modulo.",
-            "mode": {
-                "all": "Tutte le tessere",
-                "background": "Piastrelle Di Sfondo",
-                "foreground": "Piastrelle in primo piano",
-                "label": "Combina modalità:",
-                "selected": "Piastrelle selezionate"
-            },
-            "notes": "Questa funzione apporterà modifiche permanenti alla scena! \nSi consiglia vivamente di eseguire un backup della scena.",
-            "title": "Combinatore di piastrelle"
+            "deleteTiles": {
+                "label": "Elimina tessere combinate?"
+            }
         },
-        "videoConversionStarted": "Media Optimizer: conversione video avviata, sii paziente, potrebbe volerci un po'. \nSe lo desideri, puoi controllare l'avanzamento nella console (F12). \nFile:"
+        "file-converter": {
+            "header-button": "Ottimizza contenuti multimediali",
+            "title": "Ottimizzatore multimediale: ottimizzatore di massa",
+            "buttons": {
+                "convert": "Ottimizza selezionato",
+                "select-all": "Seleziona tutto",
+                "select-none": "Cancella selezione"
+            }
+        },
+        "bloat-detector": {
+            "title": "Media Optimizer: Rilevatore di file superflui",
+            "bloat": "Sono state individuate voci che potrebbero causare tempi di caricamento lenti o problemi di prestazioni. Numero: ",
+            "no-bloat": "Non è stato rilevato alcun gonfiore.",
+            "large-collection": "La raccolta è di grandi dimensioni; si consiglia di spostare le voci inutilizzate in un compendio."
+        }
     }
 }

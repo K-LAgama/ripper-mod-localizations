@@ -1,143 +1,93 @@
 {
+    "TYPES": {
+        "JournalEntryPage": {
+            "mastercrafted": {
+                "mastercrafted": "Ricetta realizzata con maestria"
+            }
+        }
+    },
     "mastercrafted": {
-        "UI": {
-            "default-recipe-name": "Nuova ricetta",
-            "delete-recipe-book-content": "Sei sicuro di voler eliminare questo ricettario?",
-            "delete-recipe-book-title": "Elimina ricettario",
-            "delete-recipe-content": "Sei sicuro di voler eliminare questa ricetta?",
-            "delete-recipe-title": "Elimina ricetta",
-            "no-permission": "Non sei autorizzato ad aprire questa ricetta o questo libro.",
-            "open-recipe-app": "Responsabile ricette"
-        },
-        "cauldronApp": {
-            "brewFail": "Produzione di birra fallita! \nLa tua miscela non si è amalgamata bene. \nGli ingredienti erano consumati.",
-            "confirm": "Confermare",
-            "discovered": "Hai scoperto una nuova ricetta!",
-            "gmConfirm": "Un Game Master dovrà confermare questa scoperta prima che possa essere utilizzata.",
-            "hint": "Trascina e rilascia gli ingredienti nel calderone per mescolarli insieme. \nFare clic su un ingrediente per rimuoverlo dal calderone. \nFare clic sul pulsante \"Mescola ingredienti\" per mescolare gli ingredienti insieme. \nSe gli ingredienti si amalgamano bene, scoprirai una nuova ricetta. \nGli ingredienti verranno consumati.",
-            "noIngredients": "Devi mescolare almeno due ingredienti per scoprire una ricetta!",
-            "partial": {
-                "consumed": "Consumato:",
-                "extra1": "Era così vicino! \nCe l'avevi quasi fatta! \nForse hai aggiunto un po' troppo.",
-                "extra1missing1": "Sembrava che avrebbe funzionato, ma non è stato così. \nForse hai aggiunto troppo di qualcosa e non abbastanza di qualcos'altro.",
-                "extra2": "Sembrava che avrebbe funzionato, ma non è stato così. \nForse hai aggiunto troppo.",
-                "missing1": "Era così vicino! \nCe l'avevi quasi fatta! \nForse serve un po' di più.",
-                "missing2": "Sembrava che avrebbe funzionato, ma non è stato così. \nForse ha bisogno di più di qualcosa."
-            },
-            "title": "Calderone"
+        "mastercrafted": "Ricetta artigianale",
+        "craft": "Creazione",
+        "show-recipes": "Mostra ricette",
+        "craftDialog": {
+            "title": "Creazione",
+            "craft": "Mestiere",
+            "cancel": "Annulla",
+            "consumes": "Consuma",
+            "crafts": "Artigianato",
+            "crafted": "Realizzato"
         },
         "componentEditForm": {
-            "img": "Immagine",
+            "title": "Configurazione dei componenti",
             "name": {
-                "hint": "Nome utilizzato per identificare l'oggetto che verrà consumato come componente per la creazione.",
-                "label": "Nome"
+                "label": "Nome",
+                "hint": "Nome utilizzato per identificare l'oggetto che verrà consumato come componente per la creazione."
             },
+            "img": "Immagine",
             "quantity": "Quantità",
+            "uuid": {
+                "label": "Inoltre",
+                "hint": "Elemento che verrà visualizzato al clic. Si noti che la modifica di questo elemento non aggiornerà il nome o l'immagine del componente."
+            },
             "resourcePath": {
+                "title": "Configurazione delle risorse",
                 "hint": "Il percorso verso una risorsa dell'attore. Se l'oggetto non è presente nell'inventario, la creazione esaurirà la risorsa dell'attore di creazione invece dell'oggetto.",
-                "label": "Percorso delle risorse",
-                "title": "Configurazione delle risorse"
+                "label": "Percorso delle risorse"
             },
             "tags": {
+                "title": "Tag Configurazione",
                 "hint": "Un elenco di tag che definiscono gli oggetti alternativi per questo componente. Se l'oggetto principale non è presente nell'inventario, la creazione utilizzerà oggetti che corrispondono ad almeno un tag nella modalità Alcuni o a tutti i tag nella modalità Tutti.",
                 "label": "Tag",
                 "mode": {
-                    "every": "Ogni",
                     "label": "Richiedere",
+                    "every": "Ogni",
                     "some": "Alcuni"
-                },
-                "title": "Tag Configurazione"
-            },
-            "title": "Configurazione dei componenti",
-            "uuid": {
-                "hint": "Elemento che verrà visualizzato al clic. Si noti che la modifica di questo elemento non aggiornerà il nome o l'immagine del componente.",
-                "label": "Inoltre"
+                }
             }
         },
-        "craft": "Creazione",
-        "craftDialog": {
-            "cancel": "Annulla",
-            "consumes": "Consuma",
-            "craft": "Mestiere",
-            "crafted": "Realizzato",
-            "crafts": "Artigianato",
-            "title": "Creazione"
-        },
-        "itemConfig": {
-            "attributePath": {
-                "label": "Percorso attributo"
-            },
-            "tags": {
-                "label": "Tag",
-                "notes": "Elenco di tag separati da virgola. Durante la creazione, il giocatore deve avere nel proprio inventario oggetti con almeno uno di questi tag."
-            },
-            "title": "Mastercrafted - Configurazione dell'articolo"
-        },
-        "mastercrafted": "Ricetta artigianale",
         "recipeApp": {
-            "addRecipeBook": "Aggiungi ricettario",
-            "all": "Tutto",
+            "errors": {
+                "namemissing": "Campo nome obbligatorio!",
+                "alreadyingredient": "Questo articolo è già in un ingrediente di questa ricetta!",
+                "noJournal": "Apri un libro per configurare le categorie."
+            },
             "bookcontext": {
                 "add": "Aggiungi ricetta",
-                "delete": "Eliminare",
-                "duplicate": "Duplicare",
                 "edit": "Modificare",
+                "delete": "Eliminare",
+                "inspect": "Ispezionare",
+                "duplicate": "Duplicare",
                 "export": "Esportare",
-                "import": "Importare",
-                "inspect": "Ispezionare"
+                "import": "Importare"
             },
-            "cauldron": "Calderone",
-            "component": "Componente",
-            "configbookrecipe": {
-                "permissions": {
-                    "allow": "Permettere",
-                    "default": "Predefinito",
-                    "deny": "Negare"
-                }
-            },
-            "craft": "Crea - Tieni premuto Ctrl per creare velocemente",
-            "craftAs": "Artigianato come",
-            "craftAsInfo": "Questo attore eseguirà la creazione e tutti i controlli relativi alla creazione (strumenti, abilità, ecc.) saranno eseguiti da questo attore.",
-            "craftError": "Errore di creazione",
-            "craftFailConsumed": "Creazione fallita! \nLa condizione non è stata soddisfatta e gli ingredienti sono stati consumati.",
-            "craftFailNotConsumed": "Creazione fallita! \nLa condizione non è stata soddisfatta e gli ingredienti non sono stati consumati.",
-            "craftSuccess": "Creazione riuscita! \nAggiunto all'inventario:",
-            "craftSuccessTimed": "Creazione riuscita! \nI seguenti elementi verranno aggiunti una volta completata la creazione:",
-            "editMode": "Modifica",
             "editcreatebook": {
-                "abilityCheck": {
-                    "label": "Capacità del sistema",
-                    "placeholder": "Capacità del sistema"
+                "title": "Modifica/Crea libro",
+                "name": "Nome",
+                "namep": "Nuovo libro",
+                "description": "Descrizione",
+                "image": "Immagine",
+                "sound": "Suono",
+                "confirm": "Confermare",
+                "tools": "Utensili",
+                "toolsplaceholder": "Elenco separato da virgole dei nomi degli strumenti",
+                "macro": "Condizione",
+                "macroplaceholder": "Nome macro o comando",
+                "time": "Tempo",
+                "timeplaceholder": "Tempo di creazione in minuti",
+                "edit": "Modificare",
+                "create": "Creare",
+                "book": "Libro",
+                "recipe": "Ricetta",
+                "permission": "Autorizzazione del giocatore",
+                "expression": {
+                    "label": "Espressione",
+                    "placeholder": "Espressione"
                 },
                 "abilityDc": {
                     "label": "Distretto di Columbia",
                     "placeholder": "Distretto di Columbia"
                 },
-                "book": "Libro",
-                "confirm": "Confermare",
-                "create": "Creare",
-                "description": "Descrizione",
-                "edit": "Modificare",
-                "expression": {
-                    "label": "Espressione",
-                    "placeholder": "Espressione"
-                },
-                "image": "Immagine",
-                "macro": "Condizione",
-                "macroplaceholder": "Nome macro o comando",
-                "modifierList": {
-                    "add": "Aggiungi Modifica",
-                    "hint": "Se il risultato del tiro o il valore restituito dall'espressione è uguale o superiore al DC (utilizzando il valore più alto), il numero di oggetti raccolti viene modificato in base all'espressione modificatrice. È possibile includere un operatore matematico all'inizio del modificatore; se non viene fornito, viene assunto per impostazione predefinita un segno più (+). Ad esempio, *1d4 moltiplica il numero di oggetti raccolti per 1d4.",
-                    "label": "Modifica"
-                },
-                "name": "Nome",
-                "namep": "Nuovo libro",
-                "permission": "Autorizzazione del giocatore",
-                "recipe": "Ricetta",
-                "sound": "Suono",
-                "time": "Tempo",
-                "timeplaceholder": "Tempo di creazione in minuti",
-                "title": "Modifica/Crea libro",
                 "toolCheck": {
                     "label": "Controllo degli strumenti",
                     "placeholder": "Controllo degli strumenti"
@@ -146,59 +96,125 @@
                     "label": "Distretto di Columbia",
                     "placeholder": "Distretto di Columbia"
                 },
-                "tools": "Utensili",
-                "toolsplaceholder": "Elenco separato da virgole dei nomi degli strumenti"
+                "abilityCheck": {
+                    "label": "Capacità del sistema",
+                    "placeholder": "Capacità del sistema"
+                },
+                "modifierList": {
+                    "add": "Aggiungi Modifica",
+                    "hint": "Se il risultato del tiro o il valore restituito dall'espressione è uguale o superiore al DC (utilizzando il valore più alto), il numero di oggetti raccolti viene modificato in base all'espressione modificatrice. È possibile includere un operatore matematico all'inizio del modificatore; se non viene fornito, viene assunto per impostazione predefinita un segno più (+). Ad esempio, *1d4 moltiplica il numero di oggetti raccolti per 1d4.",
+                    "label": "Modifica"
+                }
             },
-            "errors": {
-                "alreadyingredient": "Questo articolo è già in un ingrediente di questa ricetta!",
-                "namemissing": "Campo nome obbligatorio!",
-                "noJournal": "Apri un libro per configurare le categorie."
+            "configbookrecipe": {
+                "permissions": {
+                    "default": "Predefinito",
+                    "allow": "Permettere",
+                    "deny": "Negare"
+                }
             },
-            "filter": "Attiva/disattiva Tutto/Creabile",
-            "ingredient": "Ingrediente",
-            "ingredientsEditInfo": "Trascina un oggetto su una casella per aggiungerlo come componente di creazione. Clicca sul pulsante + per aggiungere un componente vuoto. È possibile utilizzare più componenti nella stessa casella in modo intercambiabile. Per creare un oggetto è necessario almeno un componente per casella.",
-            "ingredientsTooltip": "Clicca con il tasto sinistro per selezionare gli ingredienti, clicca con il tasto destro per esaminare un ingrediente.",
-            "minutes": "minuti",
-            "noProficiency": "Non sei esperto in: ",
-            "noTools": "Strumenti mancanti! \nHai bisogno di uno di:",
-            "onlyCraftable": "Solo realizzabile",
-            "product": "Prodotto",
-            "readyIn": "Pronto in: ",
-            "recipeBooks": "Libri di ricette",
             "recipeconfig": {
-                "ingredients": "ingredienti",
-                "ingredientsInspection": "Ispezione degli ingredienti",
                 "inheritTools": "Eredita strumenti",
+                "ingredientsInspection": "Ispezione degli ingredienti",
                 "productInspection": "Ispezione del prodotto",
+                "ingredients": "ingredienti",
                 "result": "Risultato"
             },
-            "relinked": "A uno o più elementi mancavano i riferimenti e sono stati ricollegati.",
-            "resultEditInfo": "Trascina un oggetto su una casella per aggiungerlo come risultato della creazione. Gli oggetti multipli nella stessa casella saranno tutti assegnati nella creazione. È possibile selezionare solo una casella come risultato durante la creazione.",
-            "resultTooltip": "Clicca con il tasto sinistro del mouse sulla casella per selezionare il risultato, clicca con il tasto destro del mouse sull'elemento per esaminarlo.",
-            "searchRecipe": "Cerca Ricetta",
-            "time": "Tempo di creazione",
-            "timedCraftCompleted": "Creazione completata! \nAggiunto all'inventario:",
-            "timedCrafting": "Progressi nella creazione",
             "title": "Masterizzato",
+            "recipeBooks": "Libri di ricette",
+            "addRecipeBook": "Aggiungi ricettario",
+            "filter": "Attiva/disattiva Tutto/Creabile",
+            "relinked": "A uno o più elementi mancavano i riferimenti e sono stati ricollegati.",
+            "craft": "Crea - Tieni premuto Ctrl per creare velocemente",
+            "searchRecipe": "Cerca Ricetta",
             "tools": "Strumenti richiesti",
+            "time": "Tempo di creazione",
+            "minutes": "minuti",
+            "craftError": "Errore di creazione",
+            "craftSuccess": "Creazione riuscita! \nAggiunto all'inventario:",
+            "craftSuccessTimed": "Creazione riuscita! \nI seguenti elementi verranno aggiunti una volta completata la creazione:",
+            "timedCraftCompleted": "Creazione completata! \nAggiunto all'inventario:",
+            "craftFailConsumed": "Creazione fallita! \nLa condizione non è stata soddisfatta e gli ingredienti sono stati consumati.",
+            "craftFailNotConsumed": "Creazione fallita! \nLa condizione non è stata soddisfatta e gli ingredienti non sono stati consumati.",
+            "noTools": "Strumenti mancanti! \nHai bisogno di uno di:",
+            "noProficiency": "Non sei esperto in: ",
+            "ingredientsTooltip": "Clicca con il tasto sinistro per selezionare gli ingredienti, clicca con il tasto destro per esaminare un ingrediente.",
+            "resultTooltip": "Clicca con il tasto sinistro del mouse sulla casella per selezionare il risultato, clicca con il tasto destro del mouse sull'elemento per esaminarlo.",
+            "ingredientsEditInfo": "Trascina un oggetto su una casella per aggiungerlo come componente di creazione. Clicca sul pulsante + per aggiungere un componente vuoto. È possibile utilizzare più componenti nella stessa casella in modo intercambiabile. Per creare un oggetto è necessario almeno un componente per casella.",
+            "resultEditInfo": "Trascina un oggetto su una casella per aggiungerlo come risultato della creazione. Gli oggetti multipli nella stessa casella saranno tutti assegnati nella creazione. È possibile selezionare solo una casella come risultato durante la creazione.",
+            "cauldron": "Calderone",
+            "timedCrafting": "Progressi nella creazione",
+            "readyIn": "Pronto in: ",
+            "onlyCraftable": "Solo realizzabile",
+            "all": "Tutto",
             "useCraftingActor": "Usa Crafting Actor",
+            "editMode": "Modifica",
             "useInventory": "Utilizza l'inventario",
-            "useInventoryInfo": "Gli oggetti presenti nell'inventario di questo attore saranno utilizzati per la creazione. Anche i risultati della creazione e della creazione ritardata saranno inseriti nell'inventario di questo attore."
+            "craftAs": "Artigianato come",
+            "useInventoryInfo": "Gli oggetti presenti nell'inventario di questo attore saranno utilizzati per la creazione. Anche i risultati della creazione e della creazione ritardata saranno inseriti nell'inventario di questo attore.",
+            "craftAsInfo": "Questo attore eseguirà la creazione e tutti i controlli relativi alla creazione (strumenti, abilità, ecc.) saranno eseguiti da questo attore.",
+            "ingredient": "Ingrediente",
+            "product": "Prodotto",
+            "component": "Componente"
         },
-        "settings": {
-            "customQuantityPath": {
-                "hint": "Il percorso del valore dei dati della quantità dell'articolo (il percorso dei dati inizia da \"system\", ad esempio se la quantità è archiviata in item.system.itemQuantity.value, inseriresti \"itemQuantity.value\" in questa impostazione). \nLascia vuoto per utilizzare il percorso predefinito, personalizzalo solo se il tuo sistema non utilizza il percorso comune.",
-                "name": "Percorso quantità personalizzato"
-            },
-            "enableCauldron": {
-                "hint": "Abilita l'interfaccia del Calderone. \nCiò consentirà ai giocatori di mescolare insieme tutti gli ingredienti per scoprire ricette.",
-                "name": "Abilita Calderone"
-            },
-            "migrateOnStartup": {
-                "hint": "Se abilitato, il modulo migrerà i dati del diario all'avvio. È possibile utilizzare la macro 'game.modules.get(\"mastercrafted\").API.migration.showManualMigrationDialog()' per migrare manualmente le impostazioni.",
-                "name": "Migrare le impostazioni all'avvio"
+        "cauldronApp": {
+            "title": "Calderone",
+            "noIngredients": "Devi mescolare almeno due ingredienti per scoprire una ricetta!",
+            "brewFail": "Produzione di birra fallita! \nLa tua miscela non si è amalgamata bene. \nGli ingredienti erano consumati.",
+            "hint": "Trascina e rilascia gli ingredienti nel calderone per mescolarli insieme. \nFare clic su un ingrediente per rimuoverlo dal calderone. \nFare clic sul pulsante \"Mescola ingredienti\" per mescolare gli ingredienti insieme. \nSe gli ingredienti si amalgamano bene, scoprirai una nuova ricetta. \nGli ingredienti verranno consumati.",
+            "discovered": "Hai scoperto una nuova ricetta!",
+            "gmConfirm": "Un Game Master dovrà confermare questa scoperta prima che possa essere utilizzata.",
+            "confirm": "Confermare",
+            "partial": {
+                "consumed": "Consumato:",
+                "extra1": "Era così vicino! \nCe l'avevi quasi fatta! \nForse hai aggiunto un po' troppo.",
+                "extra2": "Sembrava che avrebbe funzionato, ma non è stato così. \nForse hai aggiunto troppo.",
+                "missing1": "Era così vicino! \nCe l'avevi quasi fatta! \nForse serve un po' di più.",
+                "missing2": "Sembrava che avrebbe funzionato, ma non è stato così. \nForse ha bisogno di più di qualcosa.",
+                "extra1missing1": "Sembrava che avrebbe funzionato, ma non è stato così. \nForse hai aggiunto troppo di qualcosa e non abbastanza di qualcos'altro."
             }
         },
-        "show-recipes": "Mostra ricette"
+        "itemConfig": {
+            "title": "Mastercrafted - Configurazione dell'articolo",
+            "sheetButton": "",
+            "attributePath": {
+                "label": "Percorso attributo"
+            },
+            "tags": {
+                "label": "Tag",
+                "notes": "Elenco di tag separati da virgola. Durante la creazione, il giocatore deve avere nel proprio inventario oggetti con almeno uno di questi tag."
+            }
+        },
+        "UI": {
+            "open-recipe-app": "Responsabile ricette",
+            "delete-recipe-book-title": "Elimina ricettario",
+            "delete-recipe-book-content": "Sei sicuro di voler eliminare questo ricettario?",
+            "delete-recipe-title": "Elimina ricetta",
+            "delete-recipe-content": "Sei sicuro di voler eliminare questa ricetta?",
+            "default-recipe-name": "Nuova ricetta",
+            "no-permission": "Non sei autorizzato ad aprire questa ricetta o questo libro."
+        },
+        "settings": {
+            "enableCauldron": {
+                "name": "Abilita Calderone",
+                "hint": "Abilita l'interfaccia del Calderone. \nCiò consentirà ai giocatori di mescolare insieme tutti gli ingredienti per scoprire ricette."
+            },
+            "customQuantityPath": {
+                "name": "Percorso quantità personalizzato",
+                "hint": "Il percorso del valore dei dati della quantità dell'articolo (il percorso dei dati inizia da \"system\", ad esempio se la quantità è archiviata in item.system.itemQuantity.value, inseriresti \"itemQuantity.value\" in questa impostazione). \nLascia vuoto per utilizzare il percorso predefinito, personalizzalo solo se il tuo sistema non utilizza il percorso comune."
+            },
+            "migrateOnStartup": {
+                "name": "Migrare le impostazioni all'avvio",
+                "hint": "Se abilitato, il modulo migrerà i dati del diario all'avvio. È possibile utilizzare la macro 'game.modules.get(\"mastercrafted\").API.migration.showManualMigrationDialog()' per migrare manualmente le impostazioni."
+            },
+            "dontShowButtonOnNpc": {
+                "name": "Nascondi il pulsante nell'intestazione dell'NPC",
+                "hint": "Se abilitata, il pulsante per aprire il ricettario non verrà visualizzato nelle schede degli NPC."
+            },
+            "mainFolderName": {
+                "name": "Nome della cartella principale",
+                "hint": "Se viene specificato il nome di una cartella, nell'interfaccia di Mastercrafted verrà visualizzato solo il contenuto di tale cartella. In caso contrario, il modulo tenterà di individuare automaticamente la cartella principale."
+            }
+        }
     }
 }

@@ -1,0 +1,83 @@
+{
+    "epic-rolls-5e": {
+        "check": "檢查",
+        "save": "儲存",
+        "death": "死亡",
+        "success": "成功",
+        "failure": "失敗",
+        "button-tooltip": "設定「史詩骰子」<hr> 右鍵點擊查看最近的擲骰紀錄",
+        "complete-roll": "結束史詩級擲骰",
+        "epicRoll": "史詩級擲骰",
+        "settings": {
+            "introSound": {
+                "name": "開場音效",
+                "hint": "開始擲骰時播放的音效"
+            },
+            "successSound": {
+                "name": "成功之聲",
+                "hint": "骰子擲出成功時播放的音效"
+            },
+            "failureSound": {
+                "name": "失敗音效",
+                "hint": "骰子擲出失敗時播放的音效"
+            },
+            "recapMessage": {
+                "name": "訊息摘要",
+                "hint": "設定在史詩輪抽結束後，哪些人可以查看顯示的訊息",
+                "options": {
+                    "none": "無",
+                    "gm": "GM",
+                    "public": "公開"
+                }
+            },
+            "cleanupMessages": {
+                "name": "清理訊息",
+                "hint": "在史詩級擲骰結束後，刪除擲骰訊息"
+            }
+        },
+        "get-roll-data": {
+            "customFormula": "自訂公式",
+            "customLabel": "標籤",
+            "customLabelNotes": "捲筒的自訂開頭標籤",
+            "formula": "公式",
+            "title": "設定「史詩骰」",
+            "startRoll": "開始史詩級擲骰",
+            "macro": "儲存為巨集",
+            "save-macro": "為 建立了一個名為「Epic Roll」的巨集，用於",
+            "player": "玩家角色",
+            "npc": "非玩家角色",
+            "selected": "已選取",
+            "available": "有貨",
+            "rollOptions": "擲骰選項",
+            "VsDCNotes": "該捲的直流電壓",
+            "showDC": "顯示 DC",
+            "showDCNotes": "啟用此功能後，DC 將對玩家可見",
+            "useAverage": "使用「平均值」",
+            "useAverageNotes": "以所有結果的平均值來判定成敗",
+            "allowReroll": "允許重新擲骰",
+            "allowRerollNotes": "允許玩家重新擲骰",
+            "showRollResults": "顯示結尾文字",
+            "showRollResultsNotes": "顯示成功／失敗的結尾文字",
+            "blindRoll": "盲捲",
+            "blindRollNotes": "將擲骰結果隱藏起來，讓玩家無法看見",
+            "hideNames": "隱藏名稱",
+            "hideNamesNotes": "隱藏非玩家擁有的角色名稱，使其不被玩家看見",
+            "color": "顏色",
+            "colorNotes": "捲軸橫幅的顏色",
+            "autoColor": "自動上色",
+            "autoColorNotes": "根據捲軸的類型，自動為捲軸橫幅上色",
+            "contest": "比賽",
+            "contestInfo": "要標記參賽者，請右鍵點擊一名演員和／或一個角色",
+            "saveDefaultOptions": "儲存為預設值",
+            "saveDefaultOptionsNotification": "當前選項已儲存為預設值",
+            "ERROR": {
+                "noActors": "尚未為此角色選定任何演員，請至少選定一位演員",
+                "noType": "尚未為此捲選取類型，請選擇類型",
+                "noContestants": "已選取「競逐擲骰」類型，但未選取任何參賽者",
+                "noContest": "已選取參賽者，但尚未選取比賽類型",
+                "noDC": "此擲骰未輸入困難度（DC），請輸入困難度（DC）"
+            }
+        },
+        "flags": {}
+    }
+}

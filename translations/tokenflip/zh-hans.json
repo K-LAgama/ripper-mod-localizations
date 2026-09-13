@@ -1,0 +1,38 @@
+{
+    "tokenflip": {
+        "token-flip-config": {
+            "title": "配置令牌翻转",
+            "add": "添加新面孔",
+            "flip": "翻转代币",
+            "model3d": "3D模型",
+            "faceId": "Face ID",
+            "protoWarning": "警告：由于 Core Foundry 中的错误会影响原型令牌，强烈建议先在场景中的某个令牌上设置令牌翻转功能，然后将该令牌分配给原型令牌。",
+            "copiedId": "已将ID复制到剪贴板",
+            "copyID": "复制 ID",
+            "autoFlip": {
+                "label": "自动翻转",
+                "none": "无",
+                "inCombat": "在战斗中",
+                "outOfCombat": "非战斗状态"
+            },
+            "transition": {
+                "label": "过渡",
+                "flip": "翻转"
+            },
+            "autoFlipMacro": {
+                "label": "自动翻转宏",
+                "hint": "当角色或其某件物品被更新时，以及当游戏管理员进入场景时，该宏会运行。返回 true 可切换至该面。更多信息请参阅维基。"
+            }
+        },
+        "settings": {
+            "flipSpeed": {
+                "name": "翻转速度",
+                "hint": "翻转动画的持续时间（单位：秒）。对于非翻转动画，该数值将乘以10。默认值为0.1。"
+            },
+            "enableAutoFlip": {
+                "name": "启用自动翻转",
+                "hint": "启用代币自动翻转功能。如果您未使用自动翻转功能，可以禁用此设置以提升性能。"
+            }
+        }
+    }
+}

@@ -1,0 +1,241 @@
+{
+    "combat-tracker-dock": {
+        "configureCarousel": "配置轮播图",
+        "combatConfig": {
+            "portraitResource": {
+                "label": "肖像吧",
+                "hint": "资源栏将作为叠加层显示在肖像图片上方，若要禁用，请将其设置为“无”。"
+            }
+        },
+        "settings": {
+            "systems": {
+                "crucible": {
+                    "alwaysShowActions": {
+                        "name": "显示敌方行动点",
+                        "hint": "如果启用了“显示系统图标”选项，则无论权限如何，都会向玩家显示行动点数。这样玩家就能看到盟友和敌人的总行动点数以及剩余行动点数。对于没有查看权限的玩家，专注点数仍将保持隐藏状态。"
+                    }
+                }
+            },
+            "integration": "整合",
+            "portraitSize": {
+                "name": "轮播图尺寸",
+                "hint": "轮播图中人物肖像的最大尺寸。请注意，如果参战者数量过多导致无法全部显示在屏幕上，系统会自动缩小人物肖像的尺寸。",
+                "choices": {
+                    "30px": "Tiny",
+                    "50px": "小",
+                    "70px": "正常",
+                    "90px": "大",
+                    "110px": "特大号",
+                    "150px": "XXL",
+                    "180px": "XXX-Large"
+                }
+            },
+            "carouselStyle": {
+                "name": "轮播样式",
+                "hint": "肖像在轮播图中的排列和移动方式：轮播图 - 居中：当前作战角色位于轮播图中央，其他作战角色围绕其旋转。\n- 旋转轮 - 左侧：当前行动中的战斗单位位于旋转轮左侧，其他战斗单位围绕其旋转。\n- 无旋转轮：战斗单位始终按行动顺序显示，当前行动中的战斗单位移动，而其他战斗单位保持原位。",
+                "choices": {
+                    "centerCarousel": "轮播图 - 居中",
+                    "leftCarousel": "轮播图 - 左侧",
+                    "basic": "无轮播图"
+                }
+            },
+            "overflowStyle": {
+                "name": "溢出样式",
+                "hint": "当战斗参与者过多而无法全部显示在屏幕上时，旋转木马的显示方式。",
+                "choices": {
+                    "hidden": "隐藏",
+                    "scroll": "滚动",
+                    "autofit": "缩小肖像"
+                }
+            },
+            "portraitAspect": {
+                "name": "人像画幅比例",
+                "hint": "肖像的照片宽高比。如果图片的宽高比与肖像不符，图片将被裁剪。",
+                "choices": {
+                    "square": "正方形",
+                    "portrait": "肖像",
+                    "long": "长"
+                }
+            },
+            "alignment": {
+                "name": "对齐",
+                "hint": "旋转木马的对齐。",
+                "choices": {
+                    "left": "左",
+                    "center": "中心",
+                    "right": "对"
+                }
+            },
+            "direction": {
+                "name": "方向",
+                "hint": "旋转木马的旋转方向。",
+                "choices": {
+                    "row": "水平",
+                    "column": "垂直"
+                }
+            },
+            "roundness": {
+                "name": "圆度",
+                "hint": "肖像和工具提示的圆角效果。",
+                "choices": {
+                    "sharp": "夏普",
+                    "soft": "柔和",
+                    "round": "圆形"
+                }
+            },
+            "showDispositionColor": {
+                "name": "显示处理状态颜色",
+                "hint": "在肖像画的底部边框中显示题跋。"
+            },
+            "hideDefeated": {
+                "name": "隐藏 已被击败",
+                "hint": "将战败的对手从轮播视图中隐藏。若您需要与他们进行交互，他们仍会在常规战斗追踪器中显示。"
+            },
+            "showInitiativeOnPortrait": {
+                "name": "在肖像画中展现主动性",
+                "hint": "在肖像的左上角显示先攻值。你随时可以在工具提示中查看先攻值！"
+            },
+            "portraitImageBorder": {
+                "name": "玩家边框",
+                "hint": "玩家角色周围将显示的特殊边框。留空即禁用。若要制作自定义图片，建议以默认图片为参考，以确保尺寸正确。"
+            },
+            "attributeColor": {
+                "name": "属性颜色",
+                "hint": "轮播图中主要跟踪属性文本和条形图的颜色。您可以使用任何有效的 CSS 颜色值（例如 #ff0000、red、rgba(255,0,0,0.5) 等）。"
+            },
+            "attributeColor2": {
+                "name": "次要属性颜色",
+                "hint": "轮播图中次要跟踪属性文本和条形框的颜色。您可以使用任何有效的 CSS 颜色值（例如 #ff0000、red、rgba(255,0,0,0.5) 等）。"
+            },
+            "attributeColorPortrait": {
+                "name": "肖像属性颜色",
+                "hint": "被追踪属性的肖像叠加条的颜色。您可以使用任何有效的 CSS 颜色值（例如 #ff0000、red、rgba(255,0,0,0.5) 等）。"
+            },
+            "barsPlacement": {
+                "name": "条形图的布局",
+                "hint": "轮播图中跟踪属性栏的位置。",
+                "choices": {
+                    "left": "左",
+                    "right": "对",
+                    "twinned": "结为姐妹城市"
+                }
+            },
+            "attributeVisibility": {
+                "name": "属性的可见性",
+                "hint": "轮播图中被追踪属性的可见性。",
+                "choices": {
+                    "text": "仅文本",
+                    "bars": "仅限酒吧",
+                    "both": "文本与条形图"
+                }
+            },
+            "playerPlayerPermission": {
+                "name": "始终显示玩家信息",
+                "hint": "允许所有玩家查看其他玩家的追踪属性、工具提示信息和系统图标。"
+            },
+            "displayDescriptions": {
+                "name": "显示描述",
+                "hint": "在工具提示中显示当前生效的效果描述。",
+                "choices": {
+                    "none": "无",
+                    "owner": "所有者/观察员",
+                    "all": "大家"
+                }
+            },
+            "tooltipColor": {
+                "name": "工具提示颜色",
+                "hint": "工具提示的配色方案。您可以使用任何有效的 CSS 颜色值（例如 #ff0000、red、rgba(255,0,0,0.5) 等）。默认值为 #888888。"
+            },
+            "portraitImage": {
+                "name": "肖像图片",
+                "hint": "是使用“演员”图片还是“代币”图片作为头像。",
+                "choices": {
+                    "actor": "演员",
+                    "token": "代币"
+                }
+            },
+            "portraitImageBackground": {
+                "name": "肖像背景",
+                "hint": "如果肖像为透明或未填满整个区域，则会显示肖像后方的背景图像。"
+            },
+            "showSystemIcons": {
+                "name": "显示系统图标",
+                "hint": "在被跟踪的资源下方、工具提示中，或两者中显示系统图标。请注意，这需要针对特定系统进行实现，且仅在部分系统上有效。",
+                "choices": {
+                    "none": "无",
+                    "tooltip": "工具提示",
+                    "resource": "肖像",
+                    "both": "两者"
+                }
+            },
+            "hideConflictingUIs": {
+                "name": "隐藏冲突的用户界面",
+                "hint": "当“战斗追踪器”停靠栏可见时，自动隐藏停靠在屏幕顶部的其他界面，以避免界面杂乱。"
+            },
+            "displayName": {
+                "name": "显示名称",
+                "hint": "是否在工具提示中显示战斗人员的姓名。“基于代币”选项仅在玩家能够看到代币名称时才显示该姓名。",
+                "choices": {
+                    "default": "永远",
+                    "token": "基于代币",
+                    "owner": "按所有权划分"
+                }
+            },
+            "hideFirstRound": {
+                "name": "隐藏至首回合",
+                "hint": "在敌人完成战斗中的首次回合之前将其隐藏。（需要 LibWrapper 才能在核心战斗追踪器中将其隐藏。）"
+            },
+            "hideEnemyInitiative": {
+                "name": "隐藏敌方行动顺序",
+                "hint": "在工具提示和角色肖像中隐藏敌人的先手值。"
+            },
+            "attributesMenu": {
+                "name": "工具提示属性",
+                "label": "配置属性",
+                "hint": "配置要在工具提示中显示的自定义属性。",
+                "reset": "恢复默认设置",
+                "resetWarning": "您确定要将属性重置为默认值吗？",
+                "form": {
+                    "attr": {
+                        "name": "属性",
+                        "choose": "选择属性"
+                    },
+                    "icon": {
+                        "name": "图标"
+                    },
+                    "units": {
+                        "name": "单位"
+                    },
+                    "save": "保存并关闭",
+                    "add": "添加属性",
+                    "reset": "恢复默认设置",
+                    "notes": "若要删除该字段，请将“属性”字段留空。"
+                }
+            },
+            "resource": {
+                "name": "辅助资源",
+                "hint": "辅助资源条。您应在战斗配置中进行设置。此选项供部分系统及有经验的用户手动调整。"
+            },
+            "portraitResource": {
+                "name": "肖像资源",
+                "hint": "该资源栏将作为叠加层显示在肖像图片上方。您应在战斗配置中进行设置。此选项供某些系统和有经验的用户手动调整。"
+            }
+        },
+        "hotkeys": {
+            "combatPrev": {
+                "name": "上一回合"
+            },
+            "combatNext": {
+                "name": "下一回合"
+            }
+        },
+        "add-event": {
+            "title": "添加活动",
+            "duration": "活动时长（轮次）",
+            "error": "错误：您必须为该事件提供名称、图片和倡议值。",
+            "expired": "事件 %n 已过期。"
+        },
+        "deleteEffectTitle": "删除效果",
+        "deleteEffectContent": "您确定要删除该特效吗？"
+    }
+}

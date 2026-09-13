@@ -1,0 +1,31 @@
+{
+    "rich-info-tooltips": {
+        "settings": {
+            "theme": {
+                "name": "主题",
+                "hint": "为丰富信息工具提示选择一个主题。",
+                "choices": {
+                    "default": "无主题",
+                    "dark-fantasy": "黑暗奇幻",
+                    "sci-fi": "科幻",
+                    "retro": "复古",
+                    "modern": "现代"
+                }
+            },
+            "addTitle": {
+                "name": "为工具提示添加标题",
+                "hint": "将信息页面的标题作为 H1 标题添加到工具提示中。"
+            },
+            "autoTooltips": {
+                "name": "自动工具提示",
+                "hint": "为所有带有描述的内容链接自动添加工具提示。需要重新加载"
+            },
+            "useImageBackground": {
+                "name": "使用图片背景",
+                "hint": "将文档的图片（如有）用作工具提示的背景装饰。"
+            }
+        },
+        "app": {},
+        "flags": {}
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "levelsvolumetrictemplates.settings.volPercent.name": "體積百分比",
+    "levelsvolumetrictemplates.settings.volPercent.hint": "被視為有效目標的體積或面積所佔的百分比",
+    "levelsvolumetrictemplates.settings.ignoreSelf.name": "忽略自我",
+    "levelsvolumetrictemplates.settings.ignoreSelf.hint": "放置區域時忽略「Self」",
+    "levelsvolumetrictemplates.settings.ignoreFriendly.name": "忽略友善角色",
+    "levelsvolumetrictemplates.settings.ignoreFriendly.hint": "在放置區域時忽略友善角色",
+    "levelsvolumetrictemplates.settings.targetOnChange.name": "以變革為目標",
+    "levelsvolumetrictemplates.settings.targetOnChange.hint": "關於區域預覽變更的目標",
+    "levelsvolumetrictemplates.settings.targetOnPlacement.name": "安置目標",
+    "levelsvolumetrictemplates.settings.targetOnPlacement.hint": "區域配置目標（若要將此模組用作 API，請停用此功能）"
+}
