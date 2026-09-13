@@ -41,8 +41,8 @@ So to translate **Better Roofs** into German, edit `translations/betterroofs/de.
 }
 ```
 
-- Keys you don't translate can simply be left out; missing keys and empty strings are fine.
-- Don't paste English as a placeholder: a value identical to the English source counts as untranslated, and the tools drop it and translate it again.
+- Translate as much or as little as you like: any key you leave out falls back to the original English, so a partly translated file works fine.
+- Leave untranslated keys out rather than setting them to `""`. An empty value replaces the English fallback with nothing.
 - Keep placeholders, tags and references exactly as they are: `%s`, `%n`, `{name}`, HTML tags, `@UUID[…]`.
 - 4-space indentation, UTF-8, and the module id always stays the top-level key.
 - **Never edit `languages/`**: those files are generated from `translations/` by `merge_translations.py` when a release is built.
