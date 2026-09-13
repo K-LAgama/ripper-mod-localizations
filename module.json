@@ -1,8 +1,8 @@
 {
-  "title": "Ripper Mod Localizations",
-  "description": "desc",
+  "title": "TheRipper93 Community Translations",
+  "description": "Community and Machine Translations for TheRipper93's Foundry VTT Modules",
   "id": "ripper-mod-localizations",
-  "version": "1.0",
+  "version": "1.0.0",
   "authors": [
     {
       "name": "theripper93",
@@ -93,27 +93,17 @@
     }
   ],
   "scripts": [],
-  "esmodules": [
-    "index.js"
-  ],
-  "styles": [
-    "styles/module.css"
-  ],
+  "esmodules": [],
+  "styles": [],
   "packs": [],
   "url": "https://github.com/theripper93/ripper-mod-localizations",
   "manifest": "https://github.com/theripper93/ripper-mod-localizations/releases/latest/download/module.json",
   "download": "",
   "relationships": {
-    "requires": [
-      {
-        "id": "lib-wrapper",
-        "type": "module",
-        "compatibility": {}
-      }
-    ]
+    "requires": []
   },
   "compatibility": {
     "minimum": "13",
-    "verified": "13"
+    "verified": "14"
   }
 }
