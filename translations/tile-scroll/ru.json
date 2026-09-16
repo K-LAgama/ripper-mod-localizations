@@ -1,7 +1,7 @@
 {
     "tile-scroll": {
         "flags": {
-            "header": "Прокрутка плиток",
+            "header": "Прокрутка тайлов",
             "enableScroll": "Прокрутка",
             "enabled": "Включено",
             "scrollSpeed": "Скорость",
