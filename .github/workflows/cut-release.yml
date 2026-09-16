@@ -1,0 +1,132 @@
+name: Cut Release
+
+# Merges translation pull requests when they are opened, and publishes a release
+# at most once a week. The Build Release workflow runs afterwards and attaches
+# module.json and module.zip.
+#
+# Triggered by pull_request_target rather than pull_request on purpose: a pull
+# request from a fork gets a read-only token, which cannot merge anything. This
+# event runs in the context of this repository and takes the workflow file from
+# the default branch, so a pull request can never change the checks that decide
+# whether it is merged. The job never checks out or runs code from a pull
+# request: it reads the JSON through the API and validates it as data.
+#
+# Can also be started by hand from Actions, "Cut Release", "Run workflow".
+
+on:
+  pull_request_target:
+    types: [opened]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release tag, for example 1.0.2. Leave empty to bump the last one
+        required: false
+        type: string
+      merge_method:
+        description: How the pull requests are merged
+        required: true
+        default: squash
+        type: choice
+        options:
+          - squash
+          - merge
+          - rebase
+      dry_run:
+        description: Only report what would be merged, change nothing
+        required: true
+        default: true
+        type: boolean
+      force_release:
+        description: Publish a release even if the last one is less than a week old
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: cut-release
+  cancel-in-progress: false
+
+jobs:
+  merge:
+    name: Merge translation pull requests
+    runs-on: ubuntu-latest
+    outputs:
+      tag: ${{ steps.version.outputs.tag }}
+      due: ${{ steps.due.outputs.due }}
+      merged: ${{ steps.merge.outputs.merged }}
+    steps:
+    - uses: actions/checkout@v7
+
+    # There is nobody to type a version, so it is derived from the latest release
+    # tag (1.0.1 becomes 1.0.2) or from today's date when that is not usable.
+    - name: Work out the version to release
+      id: version
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        REQUESTED_TAG: ${{ inputs.tag }}
+      run: |
+        if [ -n "$REQUESTED_TAG" ]; then
+          tag="$REQUESTED_TAG"
+        else
+          tag="$(node .github/scripts/next-tag.mjs)"
+        fi
+        echo "Next version would be $tag"
+        echo "tag=$tag" >> "$GITHUB_OUTPUT"
+
+    # Only pull requests whose diff is confined to translations/ and passes the
+    # JSON checks are merged; everything else is reported and left for a human.
+    # This runs before the release check so that a problem reading the release
+    # list can never stop translations being merged.
+    - name: Merge the open translation pull requests
+      id: merge
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        node .github/scripts/merge-translations.mjs \
+          --merge-method "${{ inputs.merge_method || 'squash' }}" \
+          ${{ inputs.dry_run && '--dry-run' || '' }}
+
+    # Releases stay at least a week apart, so a burst of translations produces one
+    # release rather than several. Merging always happens.
+    - name: Check whether a release is due
+      id: due
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        FORCE_RELEASE: ${{ inputs.force_release }}
+      run: |
+        due="$(node .github/scripts/release-due.mjs --min-days 7)"
+        echo "due=$due" >> "$GITHUB_OUTPUT"
+
+    - name: Create the release with generated notes
+      if: ${{ !inputs.dry_run && steps.merge.outputs.merged != '0' && steps.due.outputs.due == 'true' }}
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        gh release create "${{ steps.version.outputs.tag }}" \
+          --target "${{ github.event.repository.default_branch }}" \
+          --title "${{ steps.version.outputs.tag }}" \
+          --generate-notes
+
+    - name: Merged, but the last release is too recent
+      if: ${{ !inputs.dry_run && steps.merge.outputs.merged != '0' && steps.due.outputs.due != 'true' }}
+      run: |
+        echo "Merged the pull request(s). The last release is less than a week old,"
+        echo "so the translations will ship with the next release."
+        echo "Run this workflow by hand with force_release ticked to publish now."
+
+    - name: Nothing merged
+      if: ${{ !inputs.dry_run && steps.merge.outputs.merged == '0' }}
+      run: echo "No pull request was merged, so there was nothing to release."
+
+  build:
+    name: Build and attach the release files
+    needs: merge
+    if: ${{ !inputs.dry_run && needs.merge.outputs.merged != '0' && needs.merge.outputs.due == 'true' }}
+    uses: ./.github/workflows/main.yml
+    with:
+      tag: ${{ needs.merge.outputs.tag }}

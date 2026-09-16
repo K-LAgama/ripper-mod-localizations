@@ -1,0 +1,14 @@
+# Categories for the release notes GitHub generates when a release is created
+# with --generate-notes. Pull requests merged by the Cut Release workflow are
+# labelled "translations" so they are grouped together.
+changelog:
+  exclude:
+    labels:
+      - skip-changelog
+  categories:
+    - title: Translations
+      labels:
+        - translations
+    - title: Other changes
+      labels:
+        - "*"
